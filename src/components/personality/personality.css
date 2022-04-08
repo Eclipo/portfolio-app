@@ -1,0 +1,168 @@
+.edipBrain{
+  transform:scale(4);
+  margin-top: 1rem;
+  color: rgba(79, 241, 114, 0.945);
+  position: inherit;
+  z-index: -100;
+  opacity: 1;
+  }
+  
+.headerPersonality{
+ /* opacity: 1; */
+  color:rgb(72, 255, 112) !important;
+}
+  
+#personalityTableID{
+  opacity: 0;
+}
+  .personalityTable{
+    position: relative;
+    width: 50%;
+    margin:auto;    
+    border-spacing:0.5rem;
+    border-collapse: separate;
+    opacity: 0; 
+    
+  }
+
+  .personalityTable p{
+    /* border-color:rgb(72, 250, 52) !important;
+    border-width: 0.1rem;
+    border-style: solid; */
+    text-align: left;
+    text-indent: auto;
+    
+  }
+
+  .columnHeaderTraits{
+    width: 20%;
+  }
+  
+  
+  .personalityTraitsRow{
+  background-color:var(--navy) !important;
+  width: 100%;
+  }
+
+  .personalityBaseRow{
+    background-color:transparent !important;
+
+    padding-top:1.25rem !important;
+    border-color:var(--navy) !important;
+    border-width: 0.1rem;
+    border-style: solid;
+    color:black !important;
+
+  }
+
+  
+  .personalityBaseTraits{
+     position:relative;
+     padding:0.3rem;
+     margin:auto;
+     margin-bottom: 0.15rem;
+     margin-left:0.1rem;
+     margin-right:0.1rem;
+     margin-top: 0.15rem;
+     font-size: 2.25vh !important;
+     font-weight:700 !important;
+     color:black;
+     opacity: 1; 
+   }
+
+   #attributeID{
+    background-color: rgb(83, 255, 120);
+   }
+
+   #attributeOneID{
+    background-color: rgba(107, 255, 139, 0.70);
+   }
+
+   #attributeTwoID{
+    background-color: rgba(107, 255, 139, 0.75)
+   }
+
+   #attributeThreeID{
+    background-color: rgba(107, 255, 139, 0.80);
+   }
+
+   #attributeFourID{
+    background-color: rgba(107, 255, 139, 0.85);
+   }
+   
+   #attributeFiveID{
+    background-color: rgba(107, 255, 139, 0.90);
+   }
+
+   #attributeSixID{
+    background-color: rgba(107, 255, 139, 0.95);
+   }
+
+   #attributeSevenID{
+    background-color: rgba(107, 255, 139, 1.0);
+   }
+   
+
+  .personalityTraits{
+   /* background-color: var(--primary-orange); */
+    position:relative;
+    padding:0.3rem;
+    margin:auto;
+    margin-bottom: 0.15rem;
+    margin-left:0.1rem;
+    margin-right:0.1rem;
+    margin-top: 0.15rem;
+    font-size: 2.25vh !important;
+    font-weight:700 !important;
+    color:rgb(83, 255, 120)  !important;
+    opacity: 1; 
+
+
+  }
+
+  .gradeSeven{
+    background-color: rgba(107, 255, 139, 1.0);
+    margin-right: 15%;
+    opacity: 0; 
+
+  }
+
+  .gradeSix{
+    background-color: rgba(107, 255, 139, 0.95);
+    opacity: 0; 
+
+  }
+
+  .gradeFive{
+    background-color: rgba(107, 255, 139, 0.90);
+    opacity: 0; 
+
+  }
+
+  .gradeFour{
+    background-color: rgba(107, 255, 139, 0.85);
+    opacity: 0; 
+
+  }
+
+  .gradeThree{
+    background-color: rgba(107, 255, 139, 0.80);
+    opacity: 0; 
+
+  }
+
+  .gradeTwo{
+    background-color: rgba(107, 255, 139, 0.75);
+    opacity: 0; 
+
+  }
+
+  
+  .gradeOne{
+    background-color: rgba(107, 255, 139, 0.70);
+    opacity: 0; 
+
+  }
+
+  
+  

@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.resumeHeaderOne{
+  color:var(--primary-red) !important;
+}  
+
+#resumeOverview{
+  width: 95vw;
+  margin: auto;
+}
+
+.resumeTable{
+    background:var(--primary-red);
+    position: absolute;
+    width: 100%;
+    border-spacing:0;
+    opacity: 0;
+    margin-top: 5rem;
+
+    
+  }
+
+
+  .resumeTable td{
+    border-color:brown  !important;
+    border-width: 1rem !important;
+  }
+  .resumeTable h3{
+    color:var(--primary-white);
+    font-size: 3vh;
+    font-weight: 600;
+    margin: auto;
+    padding-top: 1vh;
+}
+
+.expPeriod{
+background-color: var(--navy);
+color:var(--primary-red);
+border-radius: 18px;
+padding: 0.5vh;
+font-size: 1.8vh;
+
+margin-top: 1vh;
+font-weight: 600;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.expOverviewPeriod{
+  background-color: var(--navy);
+  color:var(--primary-red);
+  border-color: var(--primary-red);
+  border-width: 0.16rem;
+  border-style: solid;
+  border-radius: 18px;
+  padding: 0.75vh;
+  font-size: 1.8vh;
+  /* width:98%; */
+  /* margin-left: -5vh; */
+  margin: 1vh;
+  margin-top: 1vh;
+  margin-top:1vh;
+  font-weight: 600;
+  }
+
+  .expOverviewPeriod td{
+    text-align: center;
+    vertical-align: middle !important ;
+
+  }
+  .expOverviewPeriod-dotted{
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    border-style: dashed ;
+  }
+
+  .expOverviewPeriod-reverseColor{
+    background-color: var(--primary-red);
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+  }
+
+
+.year{
+  background-color: var(--primary-white);
+  color:var(--primary-red);
+  border-radius: 18px;
+  font-size: 2vh;
+  font-weight: 500;
+  width:12vw;
+  margin-bottom: 0.5vh;  
+  }
+
+  .newExperienceRow{
+    margin-top: 0.5vh;
+  }
+
+  .yearExperience{
+    background-color: var(--primary-white);
+    color:var(--primary-red);
+    font-size: 1.60vh;
+    font-weight: 500;
+    margin-top: 0.25vh;
+    padding:0.30vw;
+    margin: auto;
+    margin-top: 0.5vh;
+    border-radius: 10px;
+    
+  }
+
+  .experienceHeaders{
+    background-color: var(--primary-white);
+    color:var(--primary-red);
+    font-size: 2vh;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .year{
+    background-color: var(--primary-white);
+    color:var(--primary-red);
+    border-radius: 18px;
+    font-size: 2vh;
+    width:12vw;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;  
+    }
+
+  .emptyYear{
+    background-color: var(--primary-white);
+    color:var(--primary-red);
+    font-size: 1.5vh;
+    margin: auto;
+    padding-left: 0.35vh;
+    border-radius: 10px;
+
+    }
+  
+
+  .resumeSection{
+      background-color: var(--dark-navy);
+      border-color: var(--primary-red);
+      border-width: 0.16rem;
+      border-style: solid;
+      border-radius: 18px;
+      padding:0.25rem;
+      color: var(--primary-red);
+      width:95%;
+      margin-bottom: 1vh !important;
+      margin:auto;
+    }
+
+    .resumeSection h3{
+      color: var(--primary-red);
+
+    }
+  .langFlag{
+      margin: auto;
+      width:10vw !important;
+      height:3vh !important
+      
+  }
+
+  .experience{
+      width:90vw;
+      border-style: solid;
+      border-width: 1vh;
+      border-radius: 0.35rem;
+      background-color:var(--primary-grey);   
+      border-color:var(--primary-lightGrey);   
+      margin:auto;
+      margin-bottom: 2vh;
+      padding-bottom: 1vh;
+  }
+
+  .header{
+    position: relative;
+    font-family: 'Roboto', sans-serif;    
+    color: var(--primary-red);
+    font-weight: 1000;
+    font-size: 2.5vh;
+    
+}
+
+.expHeader{
+  position: relative;
+  font-family: 'Roboto', sans-serif;    
+  color: var(--primary-red);
+  font-weight: 1000;
+  font-size: 2vh;
+  margin: auto;
+  word-wrap: break-word;
+  word-spacing: normal;
+}
+
+.header2 {
+    color: var(--primary-red);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    font-size: 1.75vh;
+    margin-top: 0.5rem;
+}
+
+.header3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary-red);
+  font-weight: 600;
+  font-size: 1.7vh;
+}
+
+.expHeader-reverseColor{
+color: black;
+}
+
+
+
+.normalText{
+  color: var(--primary-red);
+  font-weight: 100;
+  font-family: monospace;
+  color: var(--primary-red);
+  font-size: 2vh;
+}
+
+.expCorrectingText{
+  margin: auto !important;
+  text-align: center;
+}
+
+.expCorrectingHeader{
+  margin-bottom: 2.25vh;
+
+}
+
+
+
+
+
+.header2UnderLine{
+  background-color: var(--primary-black);
+  border-color: var(--primary-red);
+  border-width: 0.1vw;
+  border-style: solid;
+  height: 0.95vh;
+  width: 25vh;
+  margin: auto;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.header2VerticalUnderLine{
+  background-color: var(--primary-red);
+  height: 10vh;
+  width: 0.5vh;
+  margin: auto;
+  
+}
+
+.header3UnderLine{
+  background-color: var(--primary-red);
+  height: 0.75vh;
+  border-color: black;
+  border-width: 0.2vw;
+  border-style: solid;
+  width: 18vh;
+  margin: auto;
+}
+
+.header4UnderLine{
+  background-color: var(--primary-red);
+  height: 1.25vh;
+  border-color: black;
+  border-width: 0.2vw;
+  border-style: solid;
+  width: 25vh;
+  margin: auto;
+}
+
+
+.header3VerticalUnderLine{
+  background-color: var(--primary-red);
+  height: 10vh;
+  width: 0.5vh;
+
+  border-color: var(--primary-red);
+  border-width: 0.1vw;
+  border-style: solid;
+  margin: auto;
+
+  
+}
+
+.experienceTable{
+  margin: auto;
+}
+
+/* What you need: */
+.experienceTable td {
+  overflow: hidden;
+  display: inline-block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+}
+
+.experienceTable .with-ellipsis td {   
+  text-overflow: ellipsis;
+}
+
+.flag-text{
+    font-family: frankfurter-plain;
+    font-size:2vh;
+    color: var(--primary-red);
+    font-family: Arial, Helvetica, sans-serif;    
+    font-weight: 500;
+   
+}
+
+.experience-text-d {
+  font-family: frankfurter-plain;
+  font-size:1.75vh;
+  font-weight: 700;
+  padding-top:.5vh;
+ 
+  color: var(--primary-white);
+  font-family: Arial, Helvetica, sans-serif;    
+  text-align: center;
+}
+.firstRole{
+  background-color: rgba(255, 99, 133, 0.15);
+  border-color: rgb(255, 99, 133);
+  border-width: 0.1rem;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+
+  width:30vw;
+  height:1.5rem;
+}
+
+.firstRole{
+  background-color: rgba(255, 99, 133, 0.15);
+  border-color: rgb(255, 99, 133);
+  border-width: 0.1rem;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+
+  width:30vw;
+  height:1.5rem;
+}
+
+.expertience-chart{
+    width: 15vw;
+    height:15vw;
+    border-radius: 50%;
+    background-color: var(--primary-red);
+    padding-right: 10vw;
+    margin-bottom: 2vh;
+
+}
+
+  .personalityTraitsRow{
+  background-color:var(--primary-grey);
+  width: 100%;
+  }
+
+  .personalityBaseRow{
+    background-color:#d97f09;
+    padding-top:1.25rem !important;
+  }
+
+
+  .personalityTraits{
+   /* background-color: var(--primary-orange); */
+    position:relative;
+    padding:0.3rem;
+    margin:auto;
+    margin-bottom: 0.15rem;
+    margin-left:0.1rem;
+    margin-right:0.1rem;
+    margin-top: 0.15rem;
+    font-size: 1.96vh;
+    font-weight:600;
+    color:var(--primary-white);
+  }
+
+.rowLine{
+  background-color: var(--primary-white);
+  width:100%;
+  height: 1vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.rowLineInBetween{
+  background-color: var(--primary-white);
+  width:10vw    ;
+  height: 0.5vh;
+  margin-top: 1.75vh;
+  margin-bottom: 0.5vh;
+  margin: auto;
+}
+
+.firstExp{
+  background-color:rgb(122, 63, 189);
+  color:var(--primary-white)  ;
+}
+
+.{
+    background-color:rgb(63, 97, 189);
+    color: var(--primary-white);
+}
+
+.{
+  background-color:rgb(92, 200, 204);
+  color: var(--primary-white);
+}
+
+.{
+  background-color:rgb(106, 200, 93);
+  color: var(--primary-white);
+}
+
+.{
+  background-color:var(--primary-orange);
+    color: var(--primary-white);
+}
+
+.{
+  background-color:rgb(200, 31, 31);  color: var(--primary-white);
+}

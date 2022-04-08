@@ -1,0 +1,78 @@
+.lightSaberTable{
+    position: absolute;
+    border-collapse: collapse;
+    margin-top: 35rem;
+}
+
+.lightSaberTable td{
+  border-collapse: collapse;
+}
+
+.baseDarkLeft{
+    width:0.5rem;
+    height: 0.5rem;
+    background-color:rgb(117, 115, 115);
+    
+  }
+
+  .baseDarkCenter{
+    width:0.25rem;
+    height: 0.5rem;
+    background-color:rgb(80, 78, 78);
+  }
+
+  .baseDarkRight{
+    width:0.5rem;
+    height: 0.5rem;
+    background-color:rgb(53, 52, 52);
+  }
+
+
+
+  .baseCenter{
+    width:0.25rem;
+    height: 0.5rem;
+    background-color:rgb(170, 170, 170);
+  }
+
+  .baseLeft{
+    width:0.5rem;
+    height: 0.5rem;
+    background-color:rgb(226, 226, 226);
+  }
+
+  .baseRight{
+    width:0.5rem;
+    height: 0.5rem;
+    background-color:rgb(133, 133, 133);
+  }
+
+
+  .coreLightSaber{
+    width:0.25rem;
+    height: 18rem;
+    background-color:rgb(255, 255, 255);
+    
+    box-shadow: 
+    0rem -1rem 10.25rem .5rem rgb(255, 167, 167);
+    opacity: 0;
+  }
+
+  .outerLightSaber{
+    width:0.25rem;
+    height: 18rem;
+    background-color:rgb(255, 27, 27);
+    
+    box-shadow: 
+    0rem -1rem 5.25rem 0.5rem rgb(233, 51, 51);
+    opacity: 0;
+
+  }
+
+
+  .emptyLightSaberSquare{
+    width:0.25rem;
+    height: .25rem;
+    background-color: transparent;
+
+  }

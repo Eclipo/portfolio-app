@@ -1,0 +1,335 @@
+:root {
+    --size-skillDivisor: 1.5;
+}
+
+@media (min-width: 15rem) {
+    :root {
+        --size-skillDivisor: 6;
+    }
+  
+  
+}
+
+
+@media (min-width: 20rem) {
+    :root {
+        --size-skillDivisor: 5;
+    }
+
+    .skillCategory{
+      font-size: 0.95rem;
+    }
+
+    .skillPointGround{
+      font-size: 0.7rem;
+    }
+
+    .skill{
+      font-size: 0.65rem;
+    }
+    
+   /* .skillPointGround{
+        font-size: 0.68rem !important;
+        margin-left: 5rem !important;
+        margin-right: 1rem !important;
+    }
+    
+}
+
+@media (min-width: 22rem) {
+    :root {
+        --size-skillDivisor: 5;
+    }
+    /* .skillPointGround{
+        left:-2rem;
+        font-size: .6rem;
+    } */
+
+}
+
+
+
+@media (min-width: 25rem) {
+    :root {
+        --size-skillDivisor: 5;
+    }
+}
+
+
+
+
+@media (min-width: 36rem) {
+:root {
+    --size-skillDivisor: 3;
+}
+
+}
+
+
+@media (min-width: 48rem) {
+:root {
+    --size-skillDivisor: 5.5;
+}
+
+
+}
+
+
+@media (min-width: 62rem) { 
+:root {
+    --size-skillDivisor: 3.5;
+}
+
+.skillCategory{
+  font-size: 1.1rem;
+}
+
+.skillPointGround{
+  font-size: 0.95rem;
+}
+
+.skill{
+  font-size:0.85rem;
+}
+
+
+
+}
+@media (min-width: 75rem) { 
+:root {
+    --size-skillDivisor: 2.75;
+}
+
+
+}
+
+
+@media (min-width: 80rem) { 
+    :root {
+        --size-skillDivisor:2.25;
+    }
+
+    .skillCategory{
+      font-size: 1.15rem;
+    }
+   
+    .skillPointGround{
+      font-size: 1.1rem;
+    }
+
+    .skill{
+      font-size:0.95rem;
+    }
+    
+    
+
+}
+
+
+@media (min-width: 160rem) { 
+    :root {
+        --size-skillDivisor:1.7;
+    }
+   
+   
+ 
+
+}
+
+  /***************** SKILLS *********************/
+
+
+.skillContainer{
+  margin-top: -35vh;
+  margin: auto;
+  opacity: 0;
+}
+
+.headerSkills{
+  /* opacity: 1; */
+   color:rgb(97, 151, 253) !important;
+ }
+
+  .skillTable{
+    background:var(--navy)    ;
+    width: 100%;
+    table-layout: fixed;
+    border-radius: 18px;
+    transform: scale(0.95);
+    /* border-width: 0.25rem;
+    border-color: var(--primary-blue);
+    border-style: solid; */
+    
+  }
+/* 
+  #skillDividerTable{
+    opacity: 1;
+    border-collapse: separate;
+  } */
+
+#skillDividerTd{
+    width:15vw !important;
+    height:0.5rem !important;
+    margin: auto !important;
+    border-radius:10px !important;
+    opacity: 0;
+    /* width: 4rem; */
+    /* margin-left: 1vw; */
+}
+
+
+  .skillPoint{
+    height: 1rem;
+    /* background-color: var(--primary-orange); */
+    margin-left: -5rem;
+    
+  }
+
+
+  .skillCategory{
+    padding:5%;
+    margin:auto;
+    width: fit-content !important;
+   
+    font-weight: 700;
+    /* background-color:var(--primary-orange); */
+    /* position: absolute; */
+    opacity: 0;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    border-radius: 5px;
+    
+    /* border-radius: 18px; */
+    
+
+  }
+
+
+
+  .skillPointPelar{
+    height: 3rem;
+    width: 1.75rem;
+    background-color: var(--primary-lightGrey);
+    position: relative;
+    margin: auto;
+    z-index: 2;
+    border-radius: 10px;
+
+    
+
+  }
+
+  .skillPointGround{
+    background-color:var(--green-tint);
+    position:relative;
+    padding:1%;
+    margin: auto;
+    margin-top: 10%;
+    
+    margin-bottom: 2%;
+    width: 95%;
+    font-weight: 500;
+    color:var(--primary-white);
+    border-radius: 5px;
+
+  }
+  
+
+  .emptyPointGround{
+      background-color: var(--primary-lightDarkGrey);
+      position:relative;
+      padding:0.3rem;
+      margin:auto;
+      margin-bottom: 0.15rem;
+      margin-left:0.1rem;
+      margin-right:0.1rem;
+      /*font-size: 1.9rem; */
+      font-weight: 500;
+      color:var(--primary-white);
+    }
+
+  .skill-measurement-header {
+    position: absolute;
+    padding: 6px 10px 5px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: #00bff3;
+    font-family: frankfurter-medium-plain;
+    color: #0072bc;
+    font-size: 18px;
+  }
+
+
+  .skill{
+    background-color: var(--primary-blue);
+    font-weight: 600;
+ 
+    width:90%;
+    margin: auto;
+    margin-top: 0.25rem;
+    padding:0.2rem;
+    opacity: 0;
+    border-radius: 18px;
+   
+    /* width: 4rem; */
+    /* margin-left: 1vw; */
+  }
+
+  
+
+  #javascriptPoint #htmlPoint{
+    position: relative;
+    background-color: var(--primary-pink);
+    color: var(--primary-white);
+  }
+
+ #javaID
+  {
+    margin-left:-2.7vw;
+   
+  }
+
+   #powershellID
+  {
+    margin-left:-2.7vw;
+
+  }
+
+  #threeJsID{
+    width: 92%;
+  }
+
+
+
+  .bottomSkill{
+   margin-left:1vw;
+    
+    width:82%;
+  }
+
+  .frontEndTheme{
+    /* background-color: rgb(48, 79, 136)!important; */
+    background-color: #273a5c;
+    color: var(--primary-white) !important;
+  }
+
+
+  .backEndTheme{
+    background-color: rgb(48, 79, 136)!important; 
+    /* background-color: rgb(43, 83, 158)!important; */
+    color: var(--primary-white) !important;
+  }
+
+  .applicationsTheme{
+    /* background-color: rgb(60, 107, 194)!important; */
+    background-color: rgb(65, 107, 185)!important; 
+    color: var(--primary-white) !important;
+  }
+
+  .rolesTheme{
+    background-color: rgb(73, 132, 243)!important; 
+    color: var(--primary-white) !important;
+    /* width: 8rem; */
+  }

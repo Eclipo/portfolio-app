@@ -1,0 +1,12 @@
+
+    h1{
+        color: var(--primary-green);
+    }
+    
+    .typed-text{
+        font-size:5vh;
+        color:rgb(75, 240, 130);
+        font-weight: 500;
+        text-align: center;
+      }
+    
