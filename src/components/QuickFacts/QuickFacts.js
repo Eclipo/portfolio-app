@@ -8,8 +8,8 @@ import "./quickfacts.css";
 const QuickFacts = () => {
     return (
         <div id="quickFacts" className="sectionAnimation">
-            <div className="header-wraper">
-            <h1 className='flexCenter'>Quick facts!</h1>
+            <div className="container d-block">
+            <h1 className='flexCenter '>Quick facts!</h1>
 
                 <div className="flexCenter">
                     <Typed 

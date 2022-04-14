@@ -4,20 +4,20 @@
 
      @media (min-width: 15rem) {
         :root {
-            --size-edipDivisor: 3.5;
+            --size-edipDivisor: .5;
         }
       
     }
 
     @media (min-width: 20rem) {
         :root {
-            --size-edipDivisor: 3;
+            --size-edipDivisor: 4;
         }
       
     }
     @media (min-width: 25rem) {
         :root {
-            --size-edipDivisor: 2.75;
+            --size-edipDivisor: 3.75;
         }
     }
     
@@ -25,7 +25,7 @@
 
     @media (min-width: 36rem) {
     :root {
-        --size-edipDivisor: 2.5;
+        --size-edipDivisor: 3.5;
     }
  
     }
@@ -33,13 +33,13 @@
 
     @media (min-width: 48rem) { 
         :root {
-            --size-edipDivisor: 2.25
+            --size-edipDivisor: 3
         }
     }
     
     @media (min-width: 75rem) { 
         :root {
-            --size-edipDivisor:2;
+            --size-edipDivisor:2.5;
         }
     }
     
@@ -60,6 +60,7 @@
     #tableStartGuyID{
         transform:scale(calc(2/ var( --size-edipDivisor))) ;
         display:inline-flex;
+        margin-top: -5rem;
     }
 
     .wrapper {
