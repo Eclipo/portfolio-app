@@ -45,7 +45,7 @@ class Experiences extends Component  {
                <div className="main-info" style={{marginTop:"5rem"}}>
              
 
-                    <h1 className="experienceHeaderOne">Major Experiences</h1>
+                    <h1>Major Experiences</h1>
                     <PlayRefresh id='ExperienceAnimation' playBoolean={true}></PlayRefresh>
 
       

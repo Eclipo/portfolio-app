@@ -62,7 +62,7 @@
   max-width: initial;
 }
 
-.main-infoFamily h1{
+/* .main-infoFamily h1{
   color:var(--primary-orange);
   font-weight: 800;
   display:flex;
@@ -72,7 +72,7 @@
   right:0;
   justify-content: center;
  
-}
+} */
 
 
 
@@ -532,7 +532,7 @@
 
 .erika-nose
 {
-    background: #ffb6c1 !important;;
+    background: #ff8597 !important;;
     height: .625rem !important;;
     border-radius: 0rem 0rem 2.125rem 2.125rem !important;;
     margin-top: 1.25rem !important;;
@@ -541,7 +541,7 @@
 
 .noah-nose
 {
-    background: #ffb6c1 !important;
+    background: #ff8597 !important;
     height: .325rem !important;;
     border-radius: 0rem 0rem 2.125rem 2.125rem !important;;
     margin-top: 1.25rem !important;;
@@ -549,7 +549,7 @@
 
 .laleh-nose
 {
-    background: #ffb6c1 !important;
+    background: #ff8597 !important;
     height: .75rem !important;;
     border-radius: 0rem 0rem 2.125rem 2.125rem !important;;
     margin-top: 1.25rem !important;;

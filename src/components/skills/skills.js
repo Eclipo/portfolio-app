@@ -19,7 +19,7 @@ class Skills extends Component {
         <div  className="header-wraper">
             
             <div className="main-info">
-                <h1 className="headerSkills">Skills</h1>
+                <h1>Skills</h1>
                 <PlayRefresh id='SkillAnimation' playBoolean={true}></PlayRefresh>
 
                 <IntroSkill></IntroSkill>

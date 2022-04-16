@@ -1,6 +1,7 @@
 import React from "react";
 import TestimonialsCarousel from "./TestimonialsCarousel";
 import "../../IntersectionObserver.js";
+import "./about.css"
 const Testimonials = () => {
   return (
   <div id="aboutMe" className="sectionAnimation">

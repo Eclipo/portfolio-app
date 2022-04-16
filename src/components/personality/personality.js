@@ -22,7 +22,7 @@ class Personality extends Component  {
             <div  className="header-wraper " style={{marginTop:"-1.5rem",height:"120vh"}} >
             
                 <div className="main-info" style={{marginTop:"1rem"}}>
-                    <h1 className="headerPersonality">Personality</h1>
+                    <h1>Personality</h1>
                     
 
                     

@@ -1,10 +1,4 @@
 
-    h1{
-        color: var(--primary-green);
-        font-size:7vh;
-        font-weight: 800;
-    }
-    
     .typed-text{
         font-size:5vh;
         color:rgb(75, 240, 130);

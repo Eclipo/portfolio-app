@@ -205,12 +205,13 @@ display: flex;
   margin-top: -38rem;
   opacity: 0;
 }
-
+/* 
 #experiencesID h1{
   color:var(--primary-purple) !important;
   position: relative;
- 
-}  
+  }
+  */
+  
 
 
 #_container{

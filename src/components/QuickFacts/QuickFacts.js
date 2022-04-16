@@ -9,7 +9,7 @@ const QuickFacts = () => {
     return (
         <div id="quickFacts" className="sectionAnimation">
             <div className="container d-block">
-            <h1 className='flexCenter '>Quick facts!</h1>
+            <h1 className='flexCenter' style={{color:"var(--primary-green"}}>Quick facts!</h1>
 
                 <div className="flexCenter">
                     <Typed 

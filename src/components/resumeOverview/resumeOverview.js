@@ -14,7 +14,7 @@ const ResumeOverview = () => {
             <div  className="header-wraper" style={{marginTop:"-1.5rem"}} >
             
                 <div className="main-info" style={{marginTop:"1rem"}}>
-                    <h1 className="resumeHeaderOne">Resumé Overview</h1>
+                    <h1>Resumé Overview</h1>
                     <PlayRefresh id='ResumeAnimation' playBoolean={true}></PlayRefresh>
 
                     <LightSaber></LightSaber>
