@@ -8,7 +8,7 @@ const Testimonials = () => {
     <div id="testimonials" className="testimonials" >
 
       <h1 style={{color:"var(--primary-orange"}} >About me</h1>
-        <div className="testimonials-content ">
+        <div className="testimonials-content">
           <TestimonialsCarousel />
         </div>
    

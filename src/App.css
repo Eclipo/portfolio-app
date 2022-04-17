@@ -2,7 +2,7 @@
   :root
   {
     /* Colors */
-    --primary-white: #fff;
+    --primary-white:rgba(249, 247, 247, 0.969);
     --primary-blue: #3F7FBF;
     --primary-darker-blue: #2d6296;
 
@@ -53,8 +53,8 @@
     --fz-heading: 32px;
 
     /*Section sizes*/
-    --sectionHeightS: 110VH;
-    --sectionHeightM: 190VH;
+    --sectionHeightS: 190VH;
+    --sectionHeightM: 250VH;
 
 
     /*ResumeOverview sizes*/
@@ -210,7 +210,8 @@
   p{
     font-style: var(--font-mono) !important;
     font-weight: 700 !important;
-
+    padding: 0.25rem;
+    text-align: center;
     ;
   }
 

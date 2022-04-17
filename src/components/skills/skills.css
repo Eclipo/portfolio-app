@@ -13,7 +13,7 @@
 
 @media (min-width: 20rem) {
     :root {
-        --size-skillDivisor: 5;
+        --size-skillDivisor: 5.5;
     }
 
     .skillCategory{
@@ -28,23 +28,6 @@
       font-size: 0.65rem;
     }
     
-   /* .skillPointGround{
-        font-size: 0.68rem !important;
-        margin-left: 5rem !important;
-        margin-right: 1rem !important;
-    }
-    
-}
-
-@media (min-width: 22rem) {
-    :root {
-        --size-skillDivisor: 5;
-    }
-    /* .skillPointGround{
-        left:-2rem;
-        font-size: .6rem;
-    } */
-
 }
 
 
@@ -60,7 +43,7 @@
 
 @media (min-width: 36rem) {
 :root {
-    --size-skillDivisor: 3;
+    --size-skillDivisor: 4.5;
 }
 
 }
@@ -68,7 +51,7 @@
 
 @media (min-width: 48rem) {
 :root {
-    --size-skillDivisor: 5.5;
+    --size-skillDivisor:4;
 }
 
 
@@ -97,7 +80,7 @@
 }
 @media (min-width: 75rem) { 
 :root {
-    --size-skillDivisor: 2.75;
+    --size-skillDivisor: 3;
 }
 
 
@@ -106,7 +89,7 @@
 
 @media (min-width: 80rem) { 
     :root {
-        --size-skillDivisor:2.25;
+        --size-skillDivisor:2.5;
     }
 
     .skillCategory{
@@ -128,7 +111,7 @@
 
 @media (min-width: 160rem) { 
     :root {
-        --size-skillDivisor:1.7;
+        --size-skillDivisor:2;
     }
    
    
@@ -226,7 +209,7 @@
     margin: auto;
     margin-top: 10%;
     
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
     width: 95%;
     font-weight: 500;
     color:var(--primary-white);
@@ -240,7 +223,7 @@
       position:relative;
       padding:0.3rem;
       margin:auto;
-      margin-bottom: 0.15rem;
+      /* margin-bottom: 0.15rem; */
       margin-left:0.1rem;
       margin-right:0.1rem;
       /*font-size: 1.9rem; */
@@ -268,7 +251,6 @@
  
     width:90%;
     margin: auto;
-    margin-top: 0.25rem;
     padding:0.2rem;
     opacity: 0;
     border-radius: 18px;

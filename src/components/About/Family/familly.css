@@ -7,13 +7,13 @@
 
 @media (min-width: 20rem) {
   :root {
-    --size-familyDivisor: 4.5;
+    --size-familyDivisor: 4;
   }
 }
 
 @media (min-width: 25rem) {
   :root {
-    --size-familyDivisor: 4;
+    --size-familyDivisor: 3.75;
   }
 }
 
@@ -24,7 +24,7 @@
 }
 @media (min-width: 48rem) {
 :root {
-  --size-familyDivisor: 2.5;
+  --size-familyDivisor: 3;
 }
 }
 @media (min-width: 62rem) { 
@@ -34,60 +34,20 @@
 }
 @media (min-width: 75rem) { 
 :root {
-  --size-familyDivisor: 1.67;
+  --size-familyDivisor: 2.5;
 }
 }
 
 @media (min-width: 80rem) { 
   :root {
-    --size-familyDivisor:3;
+    --size-familyDivisor:2.75 ;
   }
 
-  .main-infoFamily .typedParagraph{
-  width: 40rem;
-}
-}
-.main-infoFamily{
-  display:flex;
-  position:relative;
-  top:0;
-  left:0;
-  right:0;
 
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-height: 22rem;
-  max-width: initial;
+
 }
 
-/* .main-infoFamily h1{
-  color:var(--primary-orange);
-  font-weight: 800;
-  display:flex;
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  justify-content: center;
- 
-} */
 
-
-
-.main-infoFamily .typedParagraph{
-
-    color:var(--primary-lightBlue);
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', "sans-serif";
- 
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align: center;
-  text-align: left;
-  
-}
 
   #tableFamilyID
   {
@@ -97,6 +57,7 @@
        border-collapse: collapse;
        margin: auto;
        position: absolute;
+       margin-bottom: 2rem;
   }
   
   #tableFamilyID td{
@@ -542,17 +503,17 @@
 .noah-nose
 {
     background: #ff8597 !important;
-    height: .325rem !important;;
+    height: .625rem !important;;
     border-radius: 0rem 0rem 2.125rem 2.125rem !important;;
     margin-top: 1.25rem !important;;
 }
 
 .laleh-nose
 {
-    background: #ff8597 !important;
-    height: .75rem !important;;
+    background: #fc3956 !important;
+    height: .9rem !important;;
     border-radius: 0rem 0rem 2.125rem 2.125rem !important;;
-    margin-top: 1.25rem !important;;
+    margin-top: 0.75rem !important;;
 }
 
 

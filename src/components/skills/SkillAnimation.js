@@ -10,7 +10,7 @@ export class SkillAnimation{
         this.mokaBaseTableGrid = [5,10];
         this.dividerTable = [1,5];
         
-       this.moveBetweenWidth=document.getElementById('skillBetweenJavascriptID');
+       this.moveBetweenWidth=document.getElementById('skillElemAndInter');
        const moveLeft='-'+this.moveBetweenWidth.offsetWidth.toString()+'px';
        
        const moveRight=this.moveBetweenWidth.offsetWidth.toString()+'px';
@@ -277,10 +277,11 @@ export class SkillAnimation{
                                             // alert(moveRight);
 
                                             anime({
-                                              targets:'#skillBetweenJavascriptID',
+                                              targets:'#skillElemAndInter',
                                               translateX:[0,moveRight],
                                               easing:'easeInOutQuad',
                                               direction:'alternate',
+                                              delay:anime.stagger(250),
                                               loop:true
                                             });
                                             }

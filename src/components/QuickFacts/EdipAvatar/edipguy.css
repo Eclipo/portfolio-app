@@ -2,12 +2,6 @@
         --size-edipDivisor: 1.5;
     }
 
-     @media (min-width: 15rem) {
-        :root {
-            --size-edipDivisor: .5;
-        }
-      
-    }
 
     @media (min-width: 20rem) {
         :root {
@@ -23,7 +17,7 @@
     
 
 
-    @media (min-width: 36rem) {
+    /* @media (min-width: 36rem) {
     :root {
         --size-edipDivisor: 3.5;
     }
@@ -33,11 +27,11 @@
 
     @media (min-width: 48rem) { 
         :root {
-            --size-edipDivisor: 3
+            --size-edipDivisor: 3.25
         }
-    }
+    } */
     
-    @media (min-width: 75rem) { 
+    /* @media (min-width: 75rem) { 
         :root {
             --size-edipDivisor:2.5;
         }
@@ -45,9 +39,9 @@
     
     @media (min-width: 87.5rem) { 
         :root {
-            --size-edipDivisor:1.8;
+            --size-edipDivisor:2.25;
         }
-    } 
+    }  */
 
     .aligner {
         display: flex;
@@ -59,8 +53,9 @@
 
     #tableStartGuyID{
         transform:scale(calc(2/ var( --size-edipDivisor))) ;
-        display:inline-flex;
-        margin-top: -5rem;
+        position: absolute;
+            margin-top: -5rem;
+
     }
 
     .wrapper {

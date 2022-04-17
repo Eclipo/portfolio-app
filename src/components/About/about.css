@@ -1,3 +1,15 @@
+@media (min-width: 80rem) { 
+  :root {
+    --size-familyDivisor:2.75 ;
+  }
+
+  .testimonials-content{
+    width: 50vw !important;
+  }
+  
+
+}
+
 .testimonials {
     background-size: cover;
     background-color: var(--navy);
@@ -10,8 +22,9 @@
   .testimonials-content {
     text-align: center;
     width: 90vw;
+    height: max-content;
     margin:auto;
-    margin-top:-2.5rem;
+    margin-top:-2rem;
     background:none;
   }
 
@@ -70,6 +83,23 @@
 
 .carousel .control-next.control-arrow:before {
   border-left: 0.75rem solid var(--primary-white)!important;
+}
+
+.containerSlide{
+  display:flex;
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 22rem;
+  max-width: initial;
+  margin: auto;
+  /* padding: 1rem; */
 }
 
 .basketContainer{

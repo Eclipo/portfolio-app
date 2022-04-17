@@ -28,9 +28,9 @@ const TestimonialsCarousel = () => {
 
       
       <>
-        <div className="main-infoFamily container" style={{background:"var(--primary-darker-green)",height:"26.5rem"}}>
+        <div className="containerSlide pt-4" style={{background:"var(--primary-darker-green)",height:"26.5rem"}}>
           <Family></Family>
-           <div style={{marginTop:"15rem"}}>
+           <div style={{display:"inline-block",marginTop:"15rem"}}>
             <h2>Family</h2>
             <p>Me, Erika, our son Noah and baby girl Laleh.</p>
            </div> 
@@ -38,7 +38,7 @@ const TestimonialsCarousel = () => {
       </>
 
       <>
-        <div className="main-infoFamily container"  style={{background:"var(--primary-darker-blue)"}}>
+        <div className="containerSlide container"  style={{background:"var(--primary-darker-blue)"}}>
           <Anime scale={[1,1.05]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}>
             <img className="cityHall"  src={stadshus} alt="Stockholm Stadshus" style={{transform:"scale(1.5)", marginTop:"5rem"}}/>     
           </Anime>
@@ -52,7 +52,7 @@ const TestimonialsCarousel = () => {
     
     <>
 
-      <div className="main-infoFamily basketContainer">
+      <div className="containerSlide container basketContainer">
         
       <img  src={cloud} alt="moln" style={{transform:"scale(0.6)", marginLeft:"-10rem",marginTop:"-15rem",position:"absolute"}}/>     
 
@@ -61,9 +61,9 @@ const TestimonialsCarousel = () => {
       
       <div style={{backgroundColor:"var(--primary-grey)",width:"100%",height:"9rem",marginTop:"13rem", position:"absolute",zIndex:"-1"}}>
       </div>
-      <div style={{height:"1rem",position:"absolute",marginTop:"10.25rem"}}>
+      <div style={{height:"1rem",position:"absolute",marginTop:"10rem"}}>
             <h2>Basket</h2>
-            <p>One of my passions. I love the game</p>
+            <p >One of my passions. I love the game</p>
           </div>  
       </div>    
        

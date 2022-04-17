@@ -39,7 +39,7 @@ const QuickFacts = () => {
                     </Typed>
                 </div>
                     
-                <div className="flexCenter mt-sm-5">
+                <div className="flexCenter">
                     <EdipGuy></EdipGuy>
                 </div>
                     
