@@ -202,16 +202,22 @@
   }
 
   h3{
-    font-style: var(--font-sans) !important;
-    font-weight: 800 !important;
+    font-style: var(--font-mono) !important;
+    font-weight: 700 !important;
+    padding: 0.5rem !important;
+    font-size: medium !important;
+
     
   }
 
   p{
     font-style: var(--font-mono) !important;
-    font-weight: 700 !important;
-    padding: 0.25rem;
-    text-align: center;
+    font-weight: 600 !important;
+    /* padding: 0.5rem; */
+    font-size:  smaller !important;
+
+    text-align: center !important;
+    vertical-align: middle !important;
     ;
   }
 

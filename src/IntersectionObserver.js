@@ -2,7 +2,6 @@ import {PlayAnimation} from "./PlayAnimation.js";
 
 setTimeout(function () {
 
-  const introSection = document.querySelector("#home");
   const quickFactsSection = document.querySelector("#quickFacts");
   const aboutMeSection = document.querySelector("#aboutMe");
   const skillsSection = document.querySelector("#skills");
@@ -18,8 +17,6 @@ setTimeout(function () {
         console.log('!!!!!!!!!!!!!!!!! CURRENTINDEX !!!!!!! '+currentIndex);
 
         if (entry.isIntersecting) {
-        // console.log(entry.target + 'yaaaalaaaa');
-        // header.innerHTML='HEELLOOOOO';
         switch(currentIndex) {
           
           // Intro Section - Turn off  ...
@@ -58,7 +55,7 @@ setTimeout(function () {
 
               //Resume Overview Section - Turn OFF Skills
               case 5:
-                // PlayAnimation('SkillAnimation',false);
+                PlayAnimation('SkillAnimation',false);
 
               break;
 
@@ -81,7 +78,6 @@ const options = {
   }
 
 const myObserver = new IntersectionObserver(callback, options);
-myObserver.observe(introSection);
 myObserver.observe(quickFactsSection);
 myObserver.observe(aboutMeSection);
 myObserver.observe(skillsSection);

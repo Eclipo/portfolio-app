@@ -14,6 +14,7 @@ export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID){
     anime({
         targets:'#'+inputRefreshID,
         rotate:'2turn',
+        opacity:0,
         duration:500,
         complete:function(){
           btnRefreshExp.style.pointerEvents='none';
@@ -38,6 +39,7 @@ console.log('END IS PLAYING');
     anime({
       targets:'#'+inputRefreshID,
       rotate:'360deg',
+      opacity:[0,1],
       duration:500,
       easing:'easeInOutQuad',
       complete:function(){
@@ -63,7 +65,7 @@ console.log('END IS PLAYING');
   }
 }
 
-export function PlayAnimation(inputID, inputPlayBoolean): number{
+export function PlayAnimation(inputID, inputPlayBoolean){
   console.log('MAIN IS PLAYING');
 
     const SkillAnime = new SkillAnimation();
@@ -98,7 +100,7 @@ export function PlayAnimation(inputID, inputPlayBoolean): number{
   } 
     
   if(currentObject === 'SkillAnimation'){
-    delayTime = 14500;
+    delayTime = 13500;
   } 
 
   objArray.forEach(element => {

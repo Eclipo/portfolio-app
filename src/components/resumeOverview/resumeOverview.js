@@ -25,10 +25,10 @@ const ResumeOverview = () => {
 
                               
                                 <div className="resumeSection" >
-                                <div className="row"  style={{margin:"auto",marginBottom:"2vh"}}>
+                                <div className="row"  style={{margin:"auto"}}>
 
                                     <div className="col">
-                                        <h3>Languages</h3>
+                                        <h2>Languages</h2>
                                     </div>
                                 </div>
                                     {/* style={{width:"10vw",height:"  10vh"}} */}
@@ -37,34 +37,30 @@ const ResumeOverview = () => {
                 <tr>
                     <td>
                         <div className="expOverviewPeriod expOverviewPeriod-dotted p-2" >
-                            <div className="expHeader ">Swedish
-                                <div className="header3UnderLine" style={{margin:"0.25rem"}}></div>
-                                <div className="header3 " >Native</div>
-                            </div>
+                            <h3>Swedish</h3>
+                                <div className="header3UnderLine"></div>
+                                <p className='m-auto p-1'>Native</p>
                         </div>
                     </td>
                     <td>
                         <div className="expOverviewPeriod expOverviewPeriod-dotted p-2" >
-                            <div className="expHeader ">English
-                            <div className="header3UnderLine" style={{margin:"0.25rem"}}></div>
-                                <div className="header3 " >Good</div>
-                            </div>
+                            <h3>English</h3>
+                            <div className="header3UnderLine"></div>
+                            <p className='m-auto p-1'>Good</p>
                         </div>
                     </td>
                     <td >
                         <div className="expOverviewPeriod expOverviewPeriod-dotted p-2" >
-                            <div className="expHeader ">Turkish
-                            <div className="header3UnderLine" style={{margin:"0.25rem"}}></div>
-                                <div className="header3 " >Basic</div>
-                            </div>
+                            <h3>Turkish</h3>
+                            <div className="header3UnderLine"></div>
+                            <p className='m-auto p-1'>Basic</p>
                         </div>
                     </td>
-                    <td width="75%">
+                    <td width="50%">
                         <div className="expOverviewPeriod expOverviewPeriod-dotted p-2" >
-                            <div className="expHeader ">Kurdish, French and Mandarin
+                            <h3>Kurdish, French and Mandarin</h3>
                                 <div className="header3UnderLine"></div>
-                                <div className="header3 " >Almost nothing</div>
-                            </div>
+                                <p className="m-auto p-1" >Almost nothing</p>
                         </div>
                     </td>
                 </tr>

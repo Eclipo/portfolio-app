@@ -146,6 +146,11 @@
     border-style: solid; */
   }
 
+  .skillTable tbody p{
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+  }
+
 #skillDividerTd{
     width:15vw !important;
     height:0.5rem !important;
@@ -305,7 +310,7 @@
   }
 
   .rolesTheme{
-    background-color: rgb(73, 132, 243)!important; 
+    background-color: rgb(52, 101, 193)!important; 
     color: var(--primary-white) !important;
     /* width: 8rem; */
   }

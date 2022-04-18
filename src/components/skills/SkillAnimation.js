@@ -303,11 +303,12 @@ export class SkillAnimation{
 
         if(input === true){
           anime.remove(".skillContainer");
-              anime.remove(".skillTable .table td");
-              anime.remove(".skillCategory");
-              anime.remove(".skillPointGround");
-              anime.remove("#skillDividerTd");
-              anime.remove("#skillBetweenJavascriptID");
+          anime.remove(".skillTable");
+          anime.remove(".skillTable tbody thead tr td p div");
+          anime.remove(".skillCategory");
+          anime.remove(".skillPointGround");
+          anime.remove("#skillDividerTd");
+          anime.remove("#skillElemAndInter");
               
             anime({
               targets:['.skillContainer','#skillDividerTd'],
@@ -318,14 +319,14 @@ export class SkillAnimation{
 
         if(input === false){
           console.log('!!!!!! SKILS IS TURNING OFF!!!!');
-            this.introSkillAnimation.restart();
-            this.introSkillAnimation.pause();
+          
               anime.remove(".skillContainer");
-              anime.remove(".skillTable .table td");
+              anime.remove(".skillTable");
+              anime.remove(".skillTable tbody thead tr td p div");
               anime.remove(".skillCategory");
               anime.remove(".skillPointGround");
               anime.remove("#skillDividerTd");
-              anime.remove("#skillBetweenJavascriptID");
+              anime.remove("#skillElemAndInter");
               
             anime({
               targets:['.skillContainer','#skillDividerTd'],
@@ -334,48 +335,7 @@ export class SkillAnimation{
         }
       }
 
-    
-
-    explodeCoffee(){
-    //   const explodeTop=
-    //   anime({
-    //     targets:"#mokaTopPixelID",
-    //     translateY: ()=>  anime.random(-ratio,ratio),
-    //     translateX: ()=> anime.random(-ratio,ratio),
-    //     delay: anime.stagger(25,{grid:this.mokaTopTableGrid,from: "first"}),
-    //     borderRadius:'50%',
-    //     opacity:[1,0],
-    //     backgroundColor:["rgb(70, 39, 22)","rgb(128, 62, 26)"],
-    //     easing:'steps(50)',
-    //     autoplay:false
-    //    });
-
-    //    const explodeCenter=anime({
-    //       targets:"#mokaCenterPixelID",
-    //    translateY: ()=>  anime.random(-ratio,ratio),
-    //    translateX: ()=> anime.random(-ratio,ratio),
-    //    delay: anime.stagger(50,{grid:this.mokaCenterTableGrid,from: "first"}),
-    //    borderRadius: ["0%","50%"],
-    //    opacity:[1,0],
-    //    backgroundColor:["rgb(70, 39, 22)","rgb(128, 62, 26)"],
-    //    easing:'steps(50)',
-    //    autoplay:false
-    //      });
-
-    //      const explodeLow=anime({
-    //       targets:"#mokaBasePixelID",
-    //       translateY: ()=>  anime.random(-ratio,ratio),
-    //       translateX: ()=> anime.random(-ratio,ratio),
-    //       delay: anime.stagger(50,{grid:this.mokaBaseTableGrid,from: "first"}),
-    //       borderRadius: ["0%","50%"],
-    //       opacity:[1,0],
-    //       backgroundColor:["rgb(70, 39, 22)","rgb(128, 62, 26)"],
-    //       easing:'steps(50)',
-    //       autoplay:false
-    //    });
-
-      
-    }
+  
   }
 
   

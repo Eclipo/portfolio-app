@@ -1,9 +1,31 @@
 @media (min-width: 20rem) {
   .lightSaberTable{
-    transform: scale(0.75);
+    transform: scale(0.7);
     margin-top: 20rem;
   }
 
+}
+
+@media (min-width: 40rem) {
+
+  .lightSaberTable{
+    transform: scale(0.85);
+    margin-top: 22rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .lightSaberTable{
+    transform: scale(0.90);
+    margin-top: 25rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .lightSaberTable{
+    transform: scale(0.95);
+    margin-top: 25rem;
+  }
 }
 
 
@@ -17,6 +39,8 @@
 
 .lightSaberTable td{
   border-collapse: collapse;
+  opacity: 0;
+
 }
 
 .baseDarkLeft{
@@ -56,6 +80,7 @@
     width:0.5rem;
     height: 0.5rem;
     background-color:rgb(133, 133, 133);
+    
   }
 
 
