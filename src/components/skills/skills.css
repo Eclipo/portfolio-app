@@ -139,21 +139,18 @@
     table-layout: fixed;
     border-radius: 18px;
     transform: scale(0.95);
+    border-collapse: separate;
+    
     /* border-width: 0.25rem;
     border-color: var(--primary-blue);
     border-style: solid; */
-    
   }
-/* 
-  #skillDividerTable{
-    opacity: 1;
-    border-collapse: separate;
-  } */
 
 #skillDividerTd{
     width:15vw !important;
     height:0.5rem !important;
     margin: auto !important;
+  
     border-radius:10px !important;
     opacity: 0;
     /* width: 4rem; */
@@ -197,9 +194,6 @@
     margin: auto;
     z-index: 2;
     border-radius: 10px;
-
-    
-
   }
 
   .skillPointGround{

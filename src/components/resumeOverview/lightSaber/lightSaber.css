@@ -1,7 +1,18 @@
+@media (min-width: 20rem) {
+  .lightSaberTable{
+    transform: scale(0.75);
+    margin-top: 20rem;
+  }
+
+}
+
+
 .lightSaberTable{
     position: absolute;
     border-collapse: collapse;
-    margin-top: 35rem;
+    display: block;
+    z-index: -1;
+    
 }
 
 .lightSaberTable td{

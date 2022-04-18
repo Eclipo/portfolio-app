@@ -28,7 +28,7 @@ class Skills extends Component {
         <div className="skillContainer" style={{width:"100%", marginTop:"-15rem"}}>
 
 
-                    <table className="skillTable .table">
+                    <table className="skillTable .table table-responsive">
                         <tr>
                             <td>
                                 <div className="skillCategory frontEndTheme">Front-End</div> 
@@ -45,7 +45,7 @@ class Skills extends Component {
                         </tr>
                     </table>
 
-                     <table className="skillTable .table" >
+                     <table className="skillTable table-responsive" >
                      <thead >
                         <tr>
                         <td> <div className="skillPointGround" id="Beginner" style={{marginBottom:'2%'}}>Beginner</div></td>
@@ -58,123 +58,117 @@ class Skills extends Component {
                      </thead>
                     <tbody>
                         <tr>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill frontEndTheme">Angular</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
 
                         <tr>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill frontEndTheme">ReactJS</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Intermediate</div></td>                       
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>                       
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
                         <tr> 
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill frontEndTheme">Typescript</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
 
                         <tr> 
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill frontEndTheme" id="skillElemAndInter">Javascript</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
 
                         <tr> 
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill frontEndTheme" id="skillElemAndInter">HTML/CSS</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
 
                         <tr>   
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill frontEndTheme">Boostrap</div></td>
-                            <td> <div className=" skillPointGround" style={{opacity:"0"}}>Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className=" skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
 
                         <tr>
-                            <td> <div cclassName="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div cclassName="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill frontEndTheme">AnimeJS</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
                    
                         <SkillDivider className="frontEndTheme"></SkillDivider>
 
                         <tr>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill backEndTheme" id="skillElemAndInter">C#</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}} >Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
 
                         <tr>
-                            <td> <div cclassName="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div cclassName="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill backEndTheme" id="skillElemAndInter">SQL</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}} >Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
     
                         <tr>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill backEndTheme" >Powershell</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}} >Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
                         
 
                         <SkillDivider className="backEndTheme"></SkillDivider>
 
                         <tr>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}} >Beginner</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Elementar</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Intermediate</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill applicationsTheme" >Platina</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
                         
                         <SkillDivider className="applicationsTheme"></SkillDivider>
 
                         <tr>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill rolesTheme" id="skillElemAndInter">Developer</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Intermediate</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
 
                         <tr>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Beginner</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Elementar</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skill rolesTheme">Consultant</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Advanced</div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}>Expert</div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
                     </tbody>
                 </table>
-            
-                  
-
             </div>
-
-            
-            
             </div>
         </div>
         
