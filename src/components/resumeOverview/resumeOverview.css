@@ -87,10 +87,25 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
   .expOverviewPeriod-reverseColor{
     background-color: var(--primary-red);
-    margin-bottom: 0.25rem;
-    margin-top: 0.25rem;
+    color:var(--dark-navy) !important;
+ 
+    
   }
 
+  .expOverviewPeriod-reverseColor h3{
+    color:var(--dark-navy) !important;
+
+  }
+
+  .expOverviewPeriod-reverseColor h4{
+    color:var(--dark-navy) !important;
+
+  }
+
+  .expOverviewPeriod-reverseColor p{
+    color:var(--dark-navy) !important;
+
+  }
 
 .year{
   background-color: var(--primary-white);
@@ -254,7 +269,7 @@ color: var(--navy);
   border-width: 0.1vw;
   border-style: solid;
   height: 0.95vh;
-  width: 25vh;
+  width: 100%;
   margin: auto;
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
@@ -262,10 +277,13 @@ color: var(--navy);
 
 .header2VerticalUnderLine{
   background-color: var(--primary-red);
-  height: 10vh;
-  width: 0.5vh;
-  margin: auto;
-  
+  height:4.5rem;
+  width: 0.2rem;
+  margin: auto !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+ 
+
 }
 
 .header3UnderLine{
@@ -274,8 +292,9 @@ color: var(--navy);
   border-color: var(--navy);
   border-width: 0.1vw;
   border-style: solid;
-  width: 90%;
+  width: 100%;
   margin: auto;
+
 }
 
 .header4UnderLine{

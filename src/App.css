@@ -41,8 +41,11 @@
     --blue: #57cbff;
 
 
-    -font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    
     --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     --fz-xxs: 12px;
     --fz-xs: 13px;
     --fz-sm: 14px;
@@ -196,28 +199,38 @@
 
   h2{
     font-style: var(--font-sans) !important;
-    font-weight: 900 !important;
+    font-weight: 800 !important;
     text-transform: uppercase !important;
 
   }
 
   h3{
-    font-style: var(--font-mono) !important;
-    font-weight: 700 !important;
+    font-style: var(--font-sans) !important;
+    font-weight: 750 !important;
+    padding: 0.5rem !important;
+    font-size: large !important;
+  }
+
+  h4{
+    font-style: var(--font-sans) !important;
+    font-weight: 650   !important;
     padding: 0.5rem !important;
     font-size: medium !important;
-
-    
   }
 
   p{
-    font-style: var(--font-mono) !important;
-    font-weight: 600 !important;
-    /* padding: 0.5rem; */
-    font-size:  smaller !important;
+    font-style: var(--font-familly) !important;
+    font-weight: 650 !important;
+    
+    font-size: small !important;
 
-    text-align: center !important;
+    /* padding: 0.5rem; */
+    /* font-size:  medium !important; */
+
+    /* text-align: center !important; */
     vertical-align: middle !important;
+    word-wrap: break-word;
+    word-spacing: normal;
     ;
   }
 

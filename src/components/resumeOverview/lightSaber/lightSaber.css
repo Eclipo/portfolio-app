@@ -23,8 +23,8 @@
 
 @media (min-width: 80rem) {
   .lightSaberTable{
-    transform: scale(0.95);
-    margin-top: 25rem;
+    transform: scale( 1.05);
+    margin-top: 30rem;
   }
 }
 

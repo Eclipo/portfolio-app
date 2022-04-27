@@ -25,38 +25,40 @@ const ResumeOverview = () => {
 
                               
                                 <div className="resumeSection" >
-                                <div className="row"  style={{margin:"auto"}}>
+                                <div className="row m-auto">
 
-                                    <div className="col">
+                                    <div className="col mt-1">
                                         <h2>Languages</h2>
                                     </div>
                                 </div>
                                     {/* style={{width:"10vw",height:"  10vh"}} */}
-            <div  style={{margin:"auto"}}>                            
+            <div >                            
             <table className="experienceTable">
                 <tr>
                     <td>
-                        <div className="expOverviewPeriod expOverviewPeriod-dotted p-2" >
+                        <div className="expOverviewPeriod expOverviewPeriod-dotted p-1" >
                             <h3>Swedish</h3>
                                 <div className="header3UnderLine"></div>
                                 <p className='m-auto p-1'>Native</p>
                         </div>
                     </td>
                     <td>
-                        <div className="expOverviewPeriod expOverviewPeriod-dotted p-2" >
+                        <div className="expOverviewPeriod expOverviewPeriod-dotted p-1" >
                             <h3>English</h3>
                             <div className="header3UnderLine"></div>
                             <p className='m-auto p-1'>Good</p>
                         </div>
                     </td>
                     <td >
-                        <div className="expOverviewPeriod expOverviewPeriod-dotted p-2" >
+                        <div className="expOverviewPeriod expOverviewPeriod-dotted p-1" >
                             <h3>Turkish</h3>
                             <div className="header3UnderLine"></div>
                             <p className='m-auto p-1'>Basic</p>
                         </div>
                     </td>
-                    <td width="50%">
+                    </tr>
+                    <tr>
+                    <td>
                         <div className="expOverviewPeriod expOverviewPeriod-dotted p-2" >
                             <h3>Kurdish, French and Mandarin</h3>
                                 <div className="header3UnderLine"></div>
@@ -77,45 +79,40 @@ const ResumeOverview = () => {
 
     
     <div className=" resumeSection">
-    <div className="row"  style={{margin:"auto",marginBottom:"2vh"}}>
+    <div className="row m-auto">
 
-        <div className="col">
-            <h3 className="header2">Education</h3>
+    <div className="col mt-1">
+            <h2>Education</h2>
         </div>
     </div>
 
 
         {/* style={{width:"10vw",height:"  10vh"}} */}
-         <div className="row" style={{margin:"auto"}}>
+         <div className="m-auto">
 
          <table className="experienceTable">
                 <tr>
-                    <td style={{padding:"0.5rem"}}>
+                    <td >
                         <div className="expOverviewPeriod expOverviewPeriod-dotted p-3">
-                            <div className="header">2015-2018</div>
-                            <div className="header2" >Mid Sweden Unviersity</div> 
+                            <h3 className="m-auto p-1">2015-2018</h3>
+                            <h3 className="m-auto p-1" >Mid Sweden Unviersity</h3> 
                             <div className="header2UnderLine"></div> 
-
-                            <div className="header3">Higher education diploma</div>
-                            <div className="header3UnderLine"></div> 
-
-                            <div className="normalText">Computer science</div>
-                            <div className="header4UnderLine"></div> 
+                            <h4 className="m-auto p-1"> Higher education diploma</h4>
+                            <div className="header3UnderLine mt-1"></div> 
+                            <p className="m-auto p-1"> Computer science</p>
                         </div>
                     </td>
                 
 
-                    <td style={{padding:"0.5rem"}}>
+                    <td >
                         <div className="expOverviewPeriod expOverviewPeriod-dotted p-3" >
-                            <div className="header">2009-2012</div>
-                            <div className="header2" >Jönköping University</div> 
+                            <h3 className="m-auto p-1">2009-2012</h3>
+                            <h3 className="m-auto p-1" >Jönköping University</h3> 
                             <div className="header2UnderLine"></div> 
+                            <h4 className="m-auto p-1">Bachelor degree</h4>
+                            <div className="header3UnderLine mt-1"></div> 
 
-                            <div className="header3">Bachelor degree</div>
-                            <div className="header3UnderLine"></div> 
-
-                            <div className="normalText">Business administration</div>
-                            <div className="header4UnderLine"></div> 
+                            <p className="m-auto p-1">Business administration</p>
                         </div>
                     </td>
                     
@@ -136,10 +133,10 @@ const ResumeOverview = () => {
 
 
         <div className="resumeSection">
-            <div className="row"  style={{margin:"auto"}}>
+        <div className="row m-auto">
 
-                <div className="col mb-2">
-                <h3>Experiences</h3>
+            <div className="col mt-1">
+                <h2>Experiences</h2>
                 </div>
             </div>
 
@@ -148,9 +145,8 @@ const ResumeOverview = () => {
                 <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted" >
                     <td width="30%">
-                        <div className="header2">2019-12 - Present
-                            <div className="header2 " >CGI Sverige AB</div>     
-                        </div>
+                        <p className="m-1">2019-12 - Present</p>
+                        <p className="m-1">CGI Sverige AB</p>     
                     </td>
                   
                     <td width="5%">
@@ -158,7 +154,8 @@ const ResumeOverview = () => {
                     </td>
 
                     <td width="25%">
-                        <div className="header2" >Developer consultant</div>
+                    <p className="m-1">Developer consultant</p>
+
                         
                     </td>
                     
@@ -167,17 +164,17 @@ const ResumeOverview = () => {
                     </td>
                     
                     <td width="30%">
-                        <div className="header2">Full-stack .Net</div>
+                        <p className="m-auto">Full-stack .Net</p>
+                        <p className="m-auto">Angular</p>
                     </td>
                     </div>
                 </tr>
                 <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-reverseColor">
                         <td>
-                            <div className="expHeader expHeader-reverseColor">2019-10 - 2019-12</div>
-                            <div className="expHeader expHeader-reverseColor">Unemployment</div> 
-                            <div className="header2 expHeader-reverseColor"><p>Bad luck</p></div> 
-
+                            <h3 className=" expHeader-reverseColor">2019-10 - 2019-12</h3>
+                            <h3 className=" expHeader-reverseColor">Unemployment</h3>
+                            <h4 className="expHeader-reverseColor">Bad luck</h4>
                         </td>
                     </div>
                 </tr>
@@ -236,21 +233,21 @@ const ResumeOverview = () => {
                 </tr>
 
                 <tr>
+               
+
                     <div className="expOverviewPeriod expOverviewPeriod-reverseColor">
                         <td>
-                            <div className="expHeader expHeader-reverseColor">2015-02 - 2015-08</div>
-                            <div className="expHeader expHeader-reverseColor" >Unemployment</div> 
-                            <div className="header2 expHeader-reverseColor">
-                                <p>The lifechanging decision</p>
-                            </div>
-                                <p  className="header3 expHeader-reverseColor">
-                                    I made a vow to never be unemployed again.
-                                    I decided to become a software developer. For almost three years I studied 50% at Midsweden University 
-                                    and worked 100% at CGI Sverige AB.
-                                </p> 
-
+                            <h3 className=" expHeader-reverseColor">2015-02 - 2015-08</h3>
+                            <h3 className=" expHeader-reverseColor">Unemployment</h3>
+                            <h4 className="expHeader-reverseColor">The lifechanging decision</h4>
+                            <p  className="expHeader-reverseColor mx-auto w-75">
+                                I made a vow to never be unemployed again.
+                                I decided to become a software developer. For almost three years I studied 50% at Midsweden University 
+                                and worked 100% at CGI Sverige AB.
+                            </p> 
                         </td>
                     </div>
+
                 </tr>
 
                 <tr>
