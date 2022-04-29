@@ -58,11 +58,24 @@
     /*Section sizes*/
     --sectionHeightS: 190VH;
     --sectionHeightM: 250VH;
+    --sectionHeightL: 135VH;
 
+
+   /* Intro sizes */
+    --introQuickAboutHeightS: 100VH;
+    --introQuickAboutHeightM: 105VH;
+    /* --introHeightL: 105VH; */
+    
+  /* Quick Facts sizes*/
+  --quickFactsHeightS: 100VH;
+  --quickFactsHeightM: 75VH;
 
     /*ResumeOverview sizes*/
-    --resumeOverviewHeightS: 410VH;
+    --resumeOverviewHeightXs: 460VH;
+    --resumeOverviewHeightS: 440VH;
     --resumeOverviewHeightM: 350VH;
+    --resumeOverviewHeightL: 70VH;
+
 
     /*Container Width */
     --generalWidthXS:10VW;
@@ -85,6 +98,37 @@
     .sectionAnimation{
        height:var(--sectionHeightS);
     }
+
+    #introSectionID{
+      height:var(--introQuickAboutHeightS);
+    }
+
+    #quickFacts{
+      height:var(--introQuickAboutHeightS);
+    }
+
+    #aboutMe{
+      height:var(--introQuickAboutHeightS);
+    }
+
+
+    #resumeOverview{
+      height:var(--resumeOverviewHeightXs);
+    }
+
+    .carousel-root{
+      transform:scale(var(--scaleCarouselS));
+    }
+
+  }
+
+  @media (min-width: 23rem) {
+  
+    .sectionAnimation{
+       height:var(--sectionHeightS);
+    }
+
+
     #resumeOverview{
       height:var(--resumeOverviewHeightS);
     }
@@ -99,14 +143,28 @@
 
     .sectionAnimation{
       height:var(--sectionHeightS);
-   }
+    }
 
+    #introSectionID{
+      height:var(--introQuickAboutHeightM);
+    }
+
+  
+   #quickFacts{
+    height:var(--introQuickAboutHeightM);
+  }
+
+  #aboutMe{
+    height:var(--introQuickAboutHeightM);
+  }
+
+   #resumeOverview{
+    height:var(--resumeOverviewHeightM);
+  }
     .carousel-root{
       transform:scale(var(--scaleCarouselM));
     }
-    #resumeOverview{
-      height:var(--resumeOverviewHeightM);
-    }
+   
 
   }
 
@@ -114,9 +172,13 @@
     .sectionAnimation{
       height:var(--sectionHeightM);
    }
+   
+   /* #introSectionID{
+    height:var(--introHeightL);
+  } */
 
-   .resumeOverview{
-    height:var(--sectionHeightL);
+   #resumeOverview{
+    height:var(--resumeOverviewHeightM);
   }
   }
 
@@ -126,9 +188,10 @@
     .sectionAnimation{
       height:var(--sectionHeightM);
    }
-
+   
+  
    .resumeOverview{
-    height:var(--sectionHeightL);
+    height:var(--resumeOverviewHeightM);
   }
 
   .carousel-root{
@@ -141,10 +204,10 @@
 
 
   /* CSS trick, markerar ut elementen  */
-  
-     /* *{
+/*   
+     *{
       outline: 1px solid red;
-    }     */
+    }      */
 
 
     /* Färgblindhet */
@@ -192,8 +255,12 @@
 
   h1{
     font-style: var(--font-sans) !important;
+    font-size: 7vh !important;
     font-weight: 1000 !important;
     text-transform: uppercase !important;
+    text-align: center !important;
+    
+    
 
   }
 
@@ -201,28 +268,35 @@
     font-style: var(--font-sans) !important;
     font-weight: 800 !important;
     text-transform: uppercase !important;
+    font-size: 4.5vh !important;
+
+    /* text-align: center !important;
+    justify-self: center !important; */
 
   }
 
   h3{
     font-style: var(--font-sans) !important;
     font-weight: 750 !important;
-    padding: 0.5rem !important;
-    font-size: large !important;
+  
+    font-size:2.75vh !important;
+    margin: auto !important;
+    text-align: center !important;
+    word-break: keep-all !important;
   }
 
   h4{
     font-style: var(--font-sans) !important;
     font-weight: 650   !important;
     padding: 0.5rem !important;
-    font-size: medium !important;
+    font-size:2.5vh !important;
   }
 
   p{
     font-style: var(--font-familly) !important;
     font-weight: 650 !important;
     
-    font-size: small !important;
+    font-size:2vh !important;
 
     /* padding: 0.5rem; */
     /* font-size:  medium !important; */

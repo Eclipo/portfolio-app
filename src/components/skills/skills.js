@@ -31,14 +31,14 @@ class Skills extends Component {
                     <table className="skillTable">
                         <tr>
                             <td>
-                                <h2 className="skillCategory frontEndTheme">Front-End</h2> 
+                                <h2 className="skillCategory frontEndTheme">Front <br></br> end</h2> 
                             </td>
                             <td>
-                                <h2 className="skillCategory backEndTheme">Back-End</h2>
+                                <h2 className="skillCategory backEndTheme">Back <br></br> end</h2>
                             </td>
                           
                             <td>
-                                <h2 className="skillCategory rolesTheme">Roles</h2>              
+                                <h2 className="skillCategory rolesTheme d-inline-flex justify-content-center">Work <br></br> roles</h2>              
                             </td>
                         </tr>
                     </table>
@@ -46,10 +46,10 @@ class Skills extends Component {
                      <table className="skillTable" >
                      <thead >
                         <tr>
-                        <td> <h3 className="skillPointGround" id="Beginner" style={{marginBottom:'2%'}}>Beginner</h3></td>
-                        <td> <h3 className="skillPointGround" id="Elementary" style={{marginBottom:'2%'}}>Elementary</h3></td>
-                        <td> <h3 className="skillPointGround" id="Intermediate" style={{marginBottom:'2%'}}>Intermediate</h3></td>
-                        <td> <h3 className="skillPointGround" id="Advanced" style={{marginBottom:'2%'}}> Advanced</h3></td>
+                        <td> <h3 className="skillPointGround" id="Beginner" style={{marginBottom:'2%'}}>Novice</h3></td>
+                        <td> <h3 className="skillPointGround" id="Elementary" style={{marginBottom:'2%'}}>Basic</h3></td>
+                        <td> <h3 className="skillPointGround" id="Intermediate" style={{marginBottom:'2%'}}>Solid</h3></td>
+                        <td> <h3 className="skillPointGround" id="Advanced" style={{marginBottom:'2%'}}>Pro</h3></td>
                         <td> <h3 className="skillPointGround" id="Expert" style={{marginBottom:'2%'}}>Expert</h3></td>
                     
                         </tr>
@@ -88,7 +88,7 @@ class Skills extends Component {
 
                         <tr> 
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill frontEndTheme" id="skillElemAndInter">HTML/CSS</p></td>
+                            <td> <p className="skill frontEndTheme" id="skillElemAndInter">HTML</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
@@ -96,7 +96,7 @@ class Skills extends Component {
 
                         <tr>   
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill frontEndTheme">Boostrap</p></td>
+                            <td> <p className="skill frontEndTheme" id="skillElemAndInter">CSS</p></td>
                             <td> <div className=" skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
@@ -104,7 +104,7 @@ class Skills extends Component {
 
                         <tr>
                             <td> <div cclassName="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill frontEndTheme">AnimeJS</p></td>
+                            <td> <p className="skill frontEndTheme" id="skillElemAndInter">AnimeJS</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>

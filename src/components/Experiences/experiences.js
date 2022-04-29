@@ -42,7 +42,7 @@ class Experiences extends Component  {
         
       <div className='sectionAnimation' id="experiencesID">
              <div  className="header-wraper">
-               <div className="main-info" style={{marginTop:"5rem"}}>
+               <div className="main-info">
              
 
                     <h1>Major Experiences</h1>

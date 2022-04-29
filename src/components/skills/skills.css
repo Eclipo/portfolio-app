@@ -16,25 +16,26 @@
         --size-skillDivisor: 5.5;
     }
 
-    .skillCategory{
+    /* .skillCategory{
       font-size: 0.95rem;
     }
 
     .skillPointGround{
       font-size: 0.7rem;
-    }
-
-    .skill{
-      font-size: 0.65rem;
-    }
+    } 
+ */
     
+     
 }
 
 
 
-@media (min-width: 25rem) {
+@media (max-width: 25rem) {
     :root {
         --size-skillDivisor: 5;
+    }
+    .skill{
+      font-size: 0.6rem !important;
     }
 }
 
@@ -63,7 +64,7 @@
     --size-skillDivisor: 3.5;
 }
 
-.skillCategory{
+/* .skillCategory{
   font-size: 1.1rem;
 }
 
@@ -73,7 +74,7 @@
 
 .skill{
   font-size:0.85rem;
-}
+} */
 
 
 
@@ -92,7 +93,7 @@
         --size-skillDivisor:2.5;
     }
 
-    .skillCategory{
+    /* .skillCategory{
       font-size: 1.15rem;
     }
    
@@ -102,7 +103,7 @@
 
     .skill{
       font-size:0.95rem;
-    }
+    } */
     
     
 
@@ -175,8 +176,8 @@
     padding:5%;
     margin:auto;
     width: fit-content !important;
-   
-    font-weight: 700;
+/*    
+    font-weight: 700; */
     /* background-color:var(--primary-orange); */
     /* position: absolute; */
     opacity: 0;
@@ -203,14 +204,15 @@
 
   .skillPointGround{
     background-color:var(--green-tint);
-    position:relative;
-    padding:1%;
-    margin: auto;
+    /* position:relative; */
+    /* padding:5% !important; */
+    /* margin-left: 0.5vh !important;
+    margin-right: 0.5vh !important; */
     margin-top: 10%;
     
     /* margin-bottom: 2%; */
-    width: 95%;
-    font-weight: 500;
+    /* width: 100%; */
+    /* font-weight: 500; */
     color:var(--primary-white);
     border-radius: 5px;
 
@@ -238,19 +240,18 @@
     padding-bottom: 5px;
     padding-left: 10px;
     background-color: #00bff3;
-    font-family: frankfurter-medium-plain;
+    /* font-family: frankfurter-medium-plain; */
     color: #0072bc;
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 
 
   .skill{
     background-color: var(--primary-blue);
-    font-weight: 600;
- 
-    width:90%;
+    width:100%;
     margin: auto;
-    padding:0.2rem;
+    height:100%;
+    padding:0.3rem;
     opacity: 0;
     border-radius: 18px;
    
