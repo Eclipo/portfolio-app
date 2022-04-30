@@ -46,9 +46,9 @@ export const animate = (inputID)=>{
 
     var rect = tabScrollLineEl.getBoundingClientRect();
 
-    var jobAtEl = document.getElementById('jobAtID');
+    // var jobAtEl = document.getElementById('jobAtID');
     
-    var jobAtText = '\u00A0@\u00A0'
+    // var jobAtText = '\u00A0@\u00A0'
 
     var tabContent = '#_container';
 
@@ -68,12 +68,17 @@ export const animate = (inputID)=>{
             anime({
                 targets:'.techCategory',
                 backgroundColor:'#0a192f',
+                color:'#d080ff',
+                borderColor:'#64ffda',
                 easing:'linear',
                 duration:50,
                 complete:function(){
                     anime({
                         targets:tab,
-                        backgroundColor: ["#0a192f","#233554"],
+                        // backgroundColor: ["#0a192f","#233554"],
+                        color:'#64ffda',
+                        borderColor:'#d080ff',
+
                         easing: 'linear',
                         duration:50,
                         complete:function(){
@@ -96,11 +101,11 @@ export const animate = (inputID)=>{
                                         
                                                 linkCustomerTitle = 'fintech industry';
                                                 linkToCustomer = '';
-                                                period.innerText='2020-02-14 - Present';
+                                                period.innerText='2020-02 - Present';
                                                 system.innerText='Full-stack application';
 
                                                 descOneEl.innerText="Currently active within the fintech industry where I operate as a full-stack developer.";
-                                                descTwoEl.innerText = 'The major technologies are Angular, C# and MS SQL.';
+                                                descTwoEl.innerText = "I am heavily involved within Angular where I have implemented forms, guards and overall improvements in the userinterface's mobile responsiveness. In  in the future I will also incorporate C# and MS SQL.";
                                                 descThreeEl.innerText = '';
                                                 descFourEl.innerText = '';
                                                 liThree.style.display='none';
@@ -108,8 +113,8 @@ export const animate = (inputID)=>{
                                                 chosenTechSkillContainer.style.display='block';
                                                 chosenTechSkillContainer.style.opacity='1';
                                                 jobTitleEl.innerText=jobTitle;
-                                                jobAtText = '\u00A0within the\u00A0';
-                                                jobAtEl.innerText=jobAtText;
+                                                // jobAtText = '\u00A0within the\u00A0';
+                                                // jobAtEl.innerText=jobAtText;
 
                                                 for(const el of linkEl){
                                                     el.innerText=linkCustomerTitle;
@@ -120,10 +125,10 @@ export const animate = (inputID)=>{
                                             if(inputID === 'stockholm'){
                                                 jobTitle = 'Developer Consultant';
                                         
-                                                linkCustomerTitle = ' City of Stockholm';
+                                                linkCustomerTitle = 'City of Stockholm';
                                                 linkToCustomer = 'https://international.stockholm.se/';
-                                                period.innerText='2020-08-01 - 2022-02-11';
-                                                system.innerText='Platina (.Net WebForms)';
+                                                period.innerText='2020-08 - 2022-02';
+                                                system.innerText='Platina';
                                                 liTwo.style.display='flex';
                                                 liThree.style.display='flex';
                                                 liFour.style.display='flex';
@@ -135,8 +140,8 @@ export const animate = (inputID)=>{
                                                 chosenTechSkillContainer.style.opacity='1';
                                         
                                                 jobTitleEl.innerText=jobTitle;
-                                                jobAtText = '\u00A0@\u00A0';
-                                                jobAtEl.innerText=jobAtText;
+                                                // jobAtText = '\u00A0@\u00A0';
+                                                // jobAtEl.innerText=jobAtText;
                                                 
                                                 for(const el of linkEl){
                                                     el.innerText=linkCustomerTitle;
@@ -149,8 +154,8 @@ export const animate = (inputID)=>{
                                         
                                                 linkCustomerTitle = 'Falu Municipality';
                                                 linkToCustomer = 'https://www.falun.se/';
-                                                period.innerText='2020-05-01 - 2020-10-01';
-                                                system.innerText='Platina (.Net WebForms) and Webdiary (.Net MVC)';
+                                                period.innerText='2020-05 - 2020-10';
+                                                system.innerText='Platina (.Net)';
 
                                                 descOneEl.innerText='Coupled together with a projectleader I acted as developer, deployer and solution architect.'
                                                 descTwoEl.innerText = 'Me and my colleague managed to upgrade Platina from its version of 7.2 to 11 and its module Webdiary from version 1.0 to 2.0.';
@@ -163,8 +168,8 @@ export const animate = (inputID)=>{
                                                 chosenTechSkillContainer.style.display='block';
                                                 chosenTechSkillContainer.style.opacity='1';
                                                 jobTitleEl.innerText=jobTitle;
-                                                jobAtText = '\u00A0@\u00A0';
-                                                jobAtEl.innerText=jobAtText;
+                                                // jobAtText = '\u00A0@\u00A0';
+                                                // jobAtEl.innerText=jobAtText;
 
                                                 for(const el of linkEl){
                                                     el.innerText=linkCustomerTitle;
@@ -177,8 +182,8 @@ export const animate = (inputID)=>{
                                         
                                                 linkCustomerTitle = 'Motala Municipality';
                                                 linkToCustomer = 'https://www.motala.se/';
-                                                period.innerText='2020-02-01 - 2020-06-01';
-                                                system.innerText='Platina (.Net WebForms)';
+                                                period.innerText='2020-02 - 2020-06';
+                                                system.innerText='Platina (.Net)';
 
                                                 descOneEl.innerText='In this project I acted as a full-stack developer and solution architect.'
                                                 descTwoEl.innerText = 'Together with a senior developer/deployer and a projectleader we upgraded Platina from version 7.2 to 10.3';
@@ -189,8 +194,8 @@ export const animate = (inputID)=>{
                                                 liFour.style.display='none';
                                                 chosenTechSkillContainer.style.display='block';
                                                 chosenTechSkillContainer.style.opacity='1';
-                                                jobAtText = '\u00A0@\u00A0';
-                                                jobAtEl.innerText=jobAtText;
+                                                // jobAtText = '\u00A0@\u00A0';
+                                                // jobAtEl.innerText=jobAtText;
                                                 jobTitleEl.innerText=jobTitle;
 
                                                 for(const el of linkEl){
