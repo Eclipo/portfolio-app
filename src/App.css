@@ -255,7 +255,7 @@
 
   h1{
     font-style: var(--font-sans) !important;
-    font-size: 7vh !important;
+    font-size: 6vh !important;
     font-weight: 1000 !important;
     text-transform: uppercase !important;
     text-align: center !important;
@@ -293,12 +293,11 @@
   }
 
   p{
-    font-style: var(--font-familly) !important;
-    font-weight: 650 !important;
+    font-style: var(--font-mono) !important;
+    font-weight: 600 !important;
     
-    font-size:2vh !important;
-
-    /* padding: 0.5rem; */
+    font-size:0.95rem !important;
+     /* padding: 0.5rem; */
     /* font-size:  medium !important; */
 
     /* text-align: center !important; */

@@ -45,7 +45,7 @@ class Experiences extends Component  {
                <div className="main-info">
              
 
-                    <h1>Major Experiences</h1>
+                    <h1 style={{color:"var(--primary-purple)"}}>Major Experiences</h1>
                     <PlayRefresh id='ExperienceAnimation' playBoolean={true}></PlayRefresh>
 
       
@@ -62,7 +62,7 @@ class Experiences extends Component  {
                           </div>
                         
                           <div className='col-8' >
-                            <p className='header3Tech text-align-left'>Scroll the major experiences down below to left and right if you have a smaller screen. Click on the chosen major experience to view its information.</p>
+                            <p className='header3Tech mx-auto text-align-left'>Click on the chosen major experience to view its information.<br></br>If you have a smaller screen then you can scroll to left and right. </p>
                           </div>
 
                           <div className='col' >
@@ -70,7 +70,7 @@ class Experiences extends Component  {
                           </div>
                         </div>
                     
-                      <table className="row overflow-auto d-block" id='expCategoryMenu'>
+                      <table className="overflow-auto d-block mx-auto justify-content-center w-75" id='expCategoryMenu'>
                      
                         <tr>
                         <td>
