@@ -11,7 +11,7 @@ const ResumeOverview = () => {
     <div id="resumeOverview" className="sectionAnimation">
     
       <div className="header-wraper" style={{ marginTop: "-1.5rem" }}>
-        <div className="main-info" style={{ marginTop: "1rem" }}>
+        <div className="main-info" style={{ marginTop: "2rem" }}>
           <h1 style={{ color: "var(--primary-red" }}>Resumé Overview</h1>
           <PlayRefresh id="ResumeAnimation" playBoolean={true}></PlayRefresh>
 
@@ -159,8 +159,7 @@ const ResumeOverview = () => {
                         </h3>
                         <h4 className="expHeader-reverseColor">Bad luck</h4>
                         <p className="expHeader-reverseColor mx-auto w-75" style={{textAlign:"left"}}>
-                            Nexer AB let me go after barely a month due to prior financial complications.
-                            They left me speechless and I returned back to base.
+                            Due to prior financial complications Nexer AB left me speechless and I returned back to base.
                         </p>
                       </td>
                     </div>
@@ -299,10 +298,7 @@ const ResumeOverview = () => {
                             The injust despair
                         </h4>
                         <p className="expHeader-reverseColor mx-auto w-75" style={{textAlign:"left"}}>
-                          Despite my greatest efforts and the lack of support from my previous leader 
-                          at KMD Sverige AB I was sent away for new adventures. After two years the company went bankrupt.
-                          Meanwhile I struggled to find a relevant job and finally I ended back at Teleperformance. 
-                          Hard work and loyalty done in the past can reward you in the future.
+                          I was sent away for new adventures despite my efforts.Long story short I was welcomed back at Teleperformance.
                         </p>
                       </td>
                     </div>

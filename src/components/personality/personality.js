@@ -22,7 +22,7 @@ class Personality extends Component  {
             <div  className="header-wraper " style={{marginTop:"-1.5rem",height:"120vh"}} >
             
                 <div className="main-info" style={{marginTop:"1rem"}}>
-                    <h1>Personality</h1>
+                    <h1 style={{color:"var(--primary-green)"}}>Personality</h1>
                     
 
                     
@@ -30,7 +30,7 @@ class Personality extends Component  {
                     
                     <PixelHead></PixelHead>
 
-                    <div style={{width:"100%"}}>
+                    <div className='flexCenter' style={{width:"90%"}}>
                  
 
 
