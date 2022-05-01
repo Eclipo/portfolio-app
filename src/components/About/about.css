@@ -109,3 +109,26 @@
     margin-top: 2rem;
     z-index: -2;
 }
+
+.flag-holder {
+  
+  width:2rem;
+  height:2rem;
+  /* margin:1.75rem; */
+  
+  /* padding:0.25rem; */
+  
+}
+
+.flagContainer{
+  
+  display: -webkit-inline-box;
+  /* justify-content: center; */
+  /* margin: auto; */
+  /* width:fit-content ; */
+  /* margin-right: 5.rem; */
+  margin-left: -4rem;
+  /* margin-top: 3.5rem; */
+}
+
+

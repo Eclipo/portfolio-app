@@ -1,7 +1,7 @@
 @media (min-width: 20rem) {
   .lightSaberTable{
-    transform: scale(0.7);
-    margin-top: 20rem;
+    transform: scale(1.05);
+    margin-top: 33rem;
   }
 
 }
@@ -9,22 +9,22 @@
 @media (min-width: 40rem) {
 
   .lightSaberTable{
-    transform: scale(0.85);
-    margin-top: 22rem;
+    transform: scale(1.15);
+    margin-top: 32.5rem;
   }
 }
 
 @media (min-width: 60rem) {
   .lightSaberTable{
-    transform: scale(0.90);
-    margin-top: 25rem;
+    transform: scale(1.2);
+    margin-top: 35rem;
   }
 }
 
 @media (min-width: 80rem) {
   .lightSaberTable{
-    transform: scale( 1.05);
-    margin-top: 30rem;
+    transform: scale( 1.3);
+    margin-top: 35rem;
   }
 }
 

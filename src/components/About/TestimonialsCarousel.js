@@ -6,7 +6,10 @@ import Anime, { anime } from 'react-anime';
 // AVATARS IMPORTS
 import stadshus from "./images/stadshuset.png";
 import cloud from "./images/miniCloud.png";
+import swedishFlag from "./images/Flag_of_Sweden.svg.png";
+import turkishFlag from "./images/Flag_of_Turkey.svg.png";
 
+import kurdishFlag from "./images/Flag_of_Kurdistan.svg.png";
 
 
 //Family
@@ -36,6 +39,39 @@ const TestimonialsCarousel = () => {
            </div> 
         </div>
       </>
+
+      <>
+        <div className="containerSlide container"  style={{background:"var(--primary-lightDarkGrey)",height:"26.5rem"}}>
+       
+        <Anime scale={[1,1.1]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}>
+            <div className="flagContainer">
+              <div className="col flag-holder" style={{paddingTop:'0.1rem'}} >
+                {/* <Anime scale={[0.75,0.8]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}> */}
+                  <img className="flag"  src={swedishFlag} alt="Swedish flag" />     
+                {/* </Anime> */}
+              </div>
+
+              <div className="col flag-holder">
+                {/* <Anime  scale={[0.75,0.8]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}> */}
+                  <img className="flag"  src={kurdishFlag} alt="Kurdish flag"/>     
+                {/* </Anime> */}
+              </div>
+
+              <div className="col flag-holder">
+                {/* <Anime  scale={[0.75,0.8]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}> */}
+                <img className="flag"  src={turkishFlag} alt="Turkish flag"/>     
+                {/* </Anime> */}
+              </div>
+            </div>
+            </Anime>
+   
+            <div style={{display:"block position-absolute",marginTop:"7rem"}}>
+            <h2>My origins</h2>
+            <p>I am born in Sweden with Kurdish origins from Turkey.</p>
+          </div>
+        </div>
+      </>
+
 
       <>
         <div className="containerSlide container"  style={{background:"var(--primary-darker-blue)"}}>
