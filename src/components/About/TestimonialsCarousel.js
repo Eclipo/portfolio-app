@@ -10,7 +10,7 @@ import swedishFlag from "./images/Flag_of_Sweden.svg.png";
 import turkishFlag from "./images/Flag_of_Turkey.svg.png";
 
 import kurdishFlag from "./images/Flag_of_Kurdistan.svg.png";
-
+import flags from "./images/flags.png";
 
 //Family
 import { Family } from "./Family/Family";
@@ -43,38 +43,28 @@ const TestimonialsCarousel = () => {
       <>
         <div className="containerSlide container"  style={{background:"var(--primary-lightDarkGrey)",height:"26.5rem"}}>
        
-        <Anime scale={[1,1.1]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}>
-            <div className="flagContainer">
-              <div className="col flag-holder" style={{paddingTop:'0.1rem'}} >
+        <Anime scale={[1.9,2]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}>
+            <div className="">
+              <div className="">
                 {/* <Anime scale={[0.75,0.8]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}> */}
-                  <img className="flag"  src={swedishFlag} alt="Swedish flag" />     
+                  <img className="flag"  src={flags} alt="Swedish, kurdish and turkish flag" />     
                 {/* </Anime> */}
               </div>
 
-              <div className="col flag-holder">
-                {/* <Anime  scale={[0.75,0.8]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}> */}
-                  <img className="flag"  src={kurdishFlag} alt="Kurdish flag"/>     
-                {/* </Anime> */}
-              </div>
-
-              <div className="col flag-holder">
-                {/* <Anime  scale={[0.75,0.8]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}> */}
-                <img className="flag"  src={turkishFlag} alt="Turkish flag"/>     
-                {/* </Anime> */}
-              </div>
+           
             </div>
             </Anime>
    
             <div style={{display:"block position-absolute",marginTop:"7rem"}}>
-            <h2>My origins</h2>
-            <p>I am born in Sweden with Kurdish origins from Turkey.</p>
+            <h2>Nationality <br></br>&<br></br> Origin</h2>
+            <p>I am born in Sweden and I have Kurdish origin from Turkey.</p>
           </div>
         </div>
       </>
 
 
       <>
-        <div className="containerSlide container"  style={{background:"var(--primary-darker-blue)"}}>
+        <div className="containerSlide container"  style={{background:"var(--primary-darker-blue)", height:"26.5rem"}}>
           <Anime scale={[1,1.05]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}>
             <img className="cityHall"  src={stadshus} alt="Stockholm Stadshus" style={{transform:"scale(1.5)", marginTop:"5rem"}}/>     
           </Anime>
@@ -88,19 +78,17 @@ const TestimonialsCarousel = () => {
     
     <>
 
-      <div className="containerSlide container basketContainer">
+      <div className="containerSlide container basketContainer" style={{background:"var(--primary-darker-blue)", height:"26.5rem"}} >
         
       <img  src={cloud} alt="moln" style={{transform:"scale(0.6)", marginLeft:"-10rem",marginTop:"-15rem",position:"absolute"}}/>     
 
-      
       <EdipBasket></EdipBasket>
       
-      <div style={{backgroundColor:"var(--primary-grey)",width:"100%",height:"9rem",marginTop:"13rem", position:"absolute",zIndex:"-1"}}>
-      </div>
-      <div style={{height:"1rem",position:"absolute",marginTop:"10rem"}}>
-            <h2>Basket</h2>
+      <div style={{backgroundColor:"var(--primary-grey)",width:"110%",height:"50%",marginTop:"-10rem"}}>
+            <h2 className="mt-5">Basket</h2>
             <p >One of my passions. I love the game</p>
           </div>  
+  
       </div>    
        
       </>

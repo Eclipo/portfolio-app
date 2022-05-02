@@ -126,8 +126,8 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1">2019-12 - Present</p>
-                        <p className="m-1">CGI Sverige AB</p>
+                        <p className="m-1 mx-auto">2019-12 - Present</p>
+                        <p className="m-1 mx-auto">CGI Sverige AB</p>
                       </td>
 
                       <td width="5%">
@@ -135,7 +135,7 @@ const ResumeOverview = () => {
                       </td>
 
                       <td width="25%">
-                        <p className="m-1">Developer consultant</p>
+                        <p className="m-1 mx-auto">Developer consultant</p>
                       </td>
 
                       <td width="5%">
@@ -168,8 +168,8 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1">2019-09 - 2019-09</p>
-                        <p className="m-1">Nexer AB</p>
+                        <p className="m-1 mx-auto">2019-09 - 2019-09</p>
+                        <p className="m-1 mx-auto">Nexer AB</p>
                       </td>
 
                       <td width="5%">
@@ -177,7 +177,7 @@ const ResumeOverview = () => {
                       </td>
 
                       <td width="25%">
-                        <p className="m-1">Developer consultant</p>
+                        <p className="m-1 mx-auto">Developer consultant</p>
                       </td>
 
                       <td width="5%">
@@ -194,8 +194,8 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1">2015-09 - 2019-08</p>
-                        <p className="m-1">CGI Sverige AB</p>
+                        <p className="m-1 mx-auto">2015-09 - 2019-08</p>
+                        <p className="m-1 mx-auto">CGI Sverige AB</p>
                       </td>
 
                       <td width="5%">
@@ -203,7 +203,7 @@ const ResumeOverview = () => {
                       </td>
 
                       <td width="25%">
-                        <p className="m-1">Business consultant</p>
+                        <p className="m-1 mx-auto">Business consultant</p>
                       </td>
 
                       <td width="5%">
@@ -229,7 +229,7 @@ const ResumeOverview = () => {
                           The lifechanging decision
                         </h4>
                         <p className="expHeader-reverseColor mx-auto w-75" style={{textAlign:"left"}}>
-                          A vow was made to never be unemployed again. For three years I studied 50% at Midsweden University while working 100% at CGI Sverige AB.
+                          I made a vow to never be unemployed again. <br></br>For three years I studied 50% at Midsweden University while working 100% at CGI Sverige AB.
                         </p>
                       </td>
                     </div>
@@ -238,8 +238,8 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1">2013-08 - 2015-01</p>
-                        <p className="m-1">Software Innovation AB</p>
+                        <p className="m-1 mx-auto">2013-08 - 2015-01</p>
+                        <p className="m-1 mx-auto">Software Innovation AB</p>
                       </td>
 
                       <td width="5%">
@@ -247,7 +247,7 @@ const ResumeOverview = () => {
                       </td>
 
                       <td width="25%">
-                        <p className="m-1">Sales assistant</p>
+                        <p className="m-1 mx-auto">Sales assistant</p>
                       </td>
 
                       <td width="5%">
@@ -263,8 +263,8 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1">2013-05 - 2013-08</p>
-                        <p className="m-1">Teleperformance Nordic AB</p>
+                        <p className="m-1 mx-auto">2013-05 - 2013-08</p>
+                        <p className="m-1 mx-auto">Teleperformance Nordic AB</p>
                       </td>
 
                       <td width="5%">
@@ -272,7 +272,7 @@ const ResumeOverview = () => {
                       </td>
 
                       <td width="25%">
-                        <p className="m-1">Customer service</p>
+                        <p className="m-1 mx-auto">Customer service</p>
                       </td>
 
                       <td width="5%">
@@ -298,7 +298,7 @@ const ResumeOverview = () => {
                             The injust despair
                         </h4>
                         <p className="expHeader-reverseColor mx-auto w-75" style={{textAlign:"left"}}>
-                          I was sent away for new adventures despite my efforts.Long story short I was welcomed back at Teleperformance.
+                          I was sent away for new adventures despite my efforts.<br></br>Long story short I was welcomed back at Teleperformance and for that I was and still very grateful.
                         </p>
                       </td>
                     </div>
@@ -309,8 +309,8 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1">2012-09 - 2013-02</p>
-                        <p className="m-1">KMD AB</p>
+                        <p className="m-1 mx-auto">2012-09 - 2013-02</p>
+                        <p className="m-1 mx-auto">KMD AB</p>
                       </td>
 
                       <td width="5%">
@@ -318,7 +318,7 @@ const ResumeOverview = () => {
                       </td>
 
                       <td width="25%">
-                        <p className="m-1">Tester</p>
+                        <p className="m-1 mx-auto">Tester</p>
                       </td>
 
                       <td width="5%">
@@ -352,8 +352,8 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1">2011-08 - 2011-09</p>
-                        <p className="m-1">Edip Sarac AB</p>
+                        <p className="m-1 mx-auto">2011-08 - 2011-09</p>
+                        <p className="m-1 mx-auto">Edip Sarac AB</p>
                       </td>
 
                       <td width="5%">
@@ -361,7 +361,7 @@ const ResumeOverview = () => {
                       </td>
 
                       <td width="25%">
-                        <p className="m-1">Solo trader</p>
+                        <p className="m-1 mx-auto">Solo trader</p>
                       </td>
 
                       <td width="5%">
@@ -379,8 +379,8 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1">2010-06 - 2010-08</p>
-                        <p className="m-1">TeliaSonera AB</p>
+                        <p className="m-1 mx-auto">2010-06 - 2010-08</p>
+                        <p className="m-1 mx-auto">TeliaSonera AB</p>
                       </td>
 
                       <td width="5%">
@@ -388,7 +388,7 @@ const ResumeOverview = () => {
                       </td>
 
                       <td width="25%">
-                        <p className="m-1">Customer service</p>
+                        <p className="m-1 mx-auto">Customer service</p>
                       </td>
 
                       <td width="5%">
@@ -404,8 +404,8 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1">2007-11 - 2009-04</p>
-                        <p className="m-1">Teleperformance Nordic AB</p>
+                        <p className="m-1 mx-auto">2007-11 - 2009-04</p>
+                        <p className="m-1 mx-auto">Teleperformance Nordic AB</p>
                       </td>
 
                       <td width="5%">
@@ -413,7 +413,7 @@ const ResumeOverview = () => {
                       </td>
 
                       <td width="25%">
-                        <p className="m-1">Customer service</p>
+                        <p className="m-1 mx-auto">Customer service</p>
                       </td>
 
                       <td width="5%">

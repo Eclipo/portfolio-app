@@ -6,7 +6,7 @@ export const KnucklesSvg = () => {
     return (
      
 <svg id="KnucklesSvgID"  width="260.53928mm"
-            height="226.23067mm" viewBox="0 0 1658 2862" transform="scale(0.45)" style={{ marginTop:"-15rem",}}
+            height="226.23067mm" viewBox="0 0 1658 2862"  
 >
   <defs id="defs896"/>
   <g id="testLines">

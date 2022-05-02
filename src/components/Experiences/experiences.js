@@ -48,7 +48,7 @@ class Experiences extends Component {
               playBoolean={true}
             ></PlayRefresh>
 
-            <div className="container" id="KnucklesContainerID">
+            <div  id="KnucklesContainerID">
               <KnucklesSvg></KnucklesSvg>
             </div>
 

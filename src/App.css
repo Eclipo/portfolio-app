@@ -90,7 +90,7 @@
 
 
     /*Scale flag */
-    --scaleFlagS:0.4;
+    --scaleFlagS:2.1;
     --scaleFlagM:0.75;
     --scaleFlagL:1;
 
@@ -127,13 +127,13 @@
     }
 
     .flag{
-      transform: scale(var(--scaleFlagS));
+      transform: scale(var(--scaleCarouselS));
     }
-
+/* 
     .flag-holder{
       margin-left:3rem;
       margin-right:3rem;
-    }
+    } */
 
   }
 
@@ -184,10 +184,10 @@
       transform: scale(var(--scaleFlagM));
     }
 
-    .flag-holder{
+    /* .flag-holder{
       margin-left:5rem;
       margin-right:5rem;
-    }
+    } */
    
 
   }
@@ -214,10 +214,10 @@
     transform: scale(var(--scaleFlagM));
   }
 
-  .flag-holder{
+  /* .flag-holder{
     margin-left:7.5rem;
     margin-right:7.5rem;
-  }
+  } */
   }
 
 
@@ -245,7 +245,7 @@
 /*    
      *{
       outline: 1px solid red;
-    }       */
+    }       
 
 
     /* Färgblindhet */
@@ -334,7 +334,7 @@
     font-style: var(--font-mono) !important;
     font-weight: 600 !important;
     
-    font-size:0.95rem !important;
+    font-size:0.8375rem !important;
      /* padding: 0.5rem; */
     /* font-size:  medium !important; */
 
@@ -356,10 +356,8 @@
     height: 1vh;
     margin-top: 0.5vh;
 
-    float: right !important;
-    margin-right: 3vw;
-
   }
+  
 
   
   #navbarTogglerID {

@@ -14,7 +14,7 @@ function App() {
   return (
     <>
   
-  
+    
     <Navbar></Navbar>
     <Intro></Intro>
     <QuickFacts></QuickFacts>

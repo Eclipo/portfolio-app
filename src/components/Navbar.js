@@ -11,8 +11,8 @@ export const Navbar = () => {
 
     return (
      
-        <nav id ="customNav" className="navbar d-flex float-right sticky-top navbar-collapse navbar-light ">
-      <div className="container-fluid m-0 p-0" style={{justifyContent:"right"}}>
+        <nav id ="customNav" className="navbar d-block sticky-top navbar-collapse navbar-light ">
+      <div className="container-fluid m-0 p-0" >
         
        
         <button id="navbarTogglerID" class="navbar-toggler" type="button" data-bs-toggle="collapse" 
