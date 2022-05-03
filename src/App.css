@@ -97,137 +97,31 @@
 
   }
 
-  @media (min-width: 20rem) {
-  
-
-
-    .sectionAnimation{
-       height:var(--sectionHeightS);
-    }
-
-   
-
-
-    #resumeOverview{
-      height:var(--resumeOverviewHeightXs);
-    }
-
-    .carousel-root{
-      transform:scale(var(--scaleCarouselS));
-    }
-
-    .flag{
-      transform: scale(var(--scaleCarouselS));
-    }
 /* 
-    .flag-holder{
-      margin-left:3rem;
-      margin-right:3rem;
-    } */
-
-  }
-
-  /* @media (min-width: 23rem) {
-  
-    .sectionAnimation{
-       height:var(--sectionHeightS);
-    }
-
+  @media (min-width: 20rem) {
 
     #resumeOverview{
-      height:var(--resumeOverviewHeightS);
+      height:145rem;    
     }
+  }
 
-    .carousel-root{
-      transform:scale(var(--scaleCarouselS));
+  @media (min-width:40rem){
+    #resumeOverview{
+      height:145rem;    
     }
+  }
 
+  @media (min-width:60rem){
+    #resumeOverview{
+      height:calc(100vh*4.75);    
+    }
+  }
+
+  @media (min-width:80rem){
+    #resumeOverview{
+      height:145rem;  
+    }
   } */
-
-  @media (min-width: 40rem) {
-
-    .sectionAnimation{
-      height:var(--sectionHeightS);
-    }
-
-    #introSectionID{
-      height:var(--introQuickAboutHeightM);
-    }
-
-  
-   #quickFacts{
-    height:var(--introQuickAboutHeightM);
-  }
-
-  #aboutMe{
-    height:var(--introQuickAboutHeightM);
-  }
-
-   #resumeOverview{
-    height:var(--resumeOverviewHeightM);
-  }
-    .carousel-root{
-      transform:scale(var(--scaleCarouselM));
-    }
-
-    .flag{
-      transform: scale(var(--scaleFlagM));
-    }
-
-    /* .flag-holder{
-      margin-left:5rem;
-      margin-right:5rem;
-    } */
-   
-
-  }
-
-   @media (min-width: 60rem) {
-    .sectionAnimation{
-      height:var(--sectionHeightM);
-   }
-   
-   /* #introSectionID{
-    height:var(--introHeightL);
-  } */
-
-   #resumeOverview{
-    height:var(--resumeOverviewHeightM);
-  }
-
-  .flag{
-    transform: scale(var(--scaleFlagL));
-  }
-
-  
-  .flag{
-    transform: scale(var(--scaleFlagM));
-  }
-
-  /* .flag-holder{
-    margin-left:7.5rem;
-    margin-right:7.5rem;
-  } */
-  }
-
-
-
-  @media (min-width: 80rem) {
-    .sectionAnimation{
-      height:var(--sectionHeightM);
-   }
-   
-  
-   .resumeOverview{
-    height:var(--resumeOverviewHeightM);
-  }
-
-  .carousel-root{
-    transform:scale(var(--scaleCarouselL));
-  }
-
-  }
-
 
 
 
@@ -258,6 +152,34 @@
     justify-content: center;
   }
   
+  .sectionAnimation{
+    max-height: 100%;
+    margin: auto;
+    padding-bottom: auto;
+    display: block;
+    flex-wrap: wrap;
+    
+    height: calc(
+      100vh*1.25
+    );
+  }
+
+  #resumeOverview{
+    height:167.5rem;
+  }
+
+
+  #skills{
+    height: 80rem;
+  }
+
+  #personality{
+    height:60rem;
+  }
+
+  
+
+ 
   
   
   /************************* NAVBAR *********************************/
@@ -322,9 +244,9 @@
 
   p{
     font-style: var(--font-mono) !important;
-    font-weight: 600 !important;
+    font-weight: 625 !important;
     
-    font-size:0.8375rem !important;
+    font-size:0.8375rem;
      /* padding: 0.5rem; */
     /* font-size:  medium !important; */
 
@@ -334,6 +256,12 @@
     word-spacing: normal;
     ;
   }
+
+  .skill{
+    font-size:0.7rem;
+    
+  }
+  
 
   
   /* ------------  Menu Links --------- */
@@ -447,6 +375,9 @@
   background-size:cover;
   background-position: center;
   background-color: var(--navy);
+  display: block;
+  
+  height: auto;
   }
 
   

@@ -19,7 +19,7 @@ class Personality extends Component  {
         return(
 
         <div id="personality" className="sectionAnimation">
-            <div  className="header-wraper " style={{marginTop:"-1.5rem",height:"120vh"}} >
+            <div  className="header-wraper ">
             
                 <div className="main-info" style={{marginTop:"1rem"}}>
                     <h1 style={{color:"var(--primary-green)"}}>Personality</h1>
@@ -30,11 +30,11 @@ class Personality extends Component  {
                     
                     <PixelHead></PixelHead>
 
-                    <div className='flexCenter w-75' style={{width:"90%"}}>
+                    <div className='flexCenter'>
                  
 
 
-                        <table className="personalityTable .table-striped  .table-responsive" id="personalityTableID" >
+                        <table className="personalityTable" id="personalityTableID" >
 
                             <tr className="personalityBaseRow">
                                 <td><p className="personalityBaseTraits" id="attributeID">Attributes</p></td>

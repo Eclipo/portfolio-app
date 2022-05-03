@@ -17,10 +17,12 @@
 }
   .personalityTable{
     position: relative;
-    /* width: max; */
-    margin:auto;    
+    width: 75vw;
+    margin:auto !;    
     border-spacing:0.5rem;
-    border-collapse: separate;
+    border-collapse: collapse;
+    
+    justify-content: space-between;
     opacity: 0; 
     
   }

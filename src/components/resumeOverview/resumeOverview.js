@@ -301,7 +301,7 @@ const ResumeOverview = () => {
                             The injust despair
                         </h4>
                         <p className="expHeader-reverseColor mx-auto w-75" style={{textAlign:"left"}}>
-                          I was sent away for new adventures despite my efforts.<br></br>Long story short I was welcomed back at Teleperformance and for that I was and still very grateful.
+                          I was sent away for new adventures despite my efforts.<br></br>Long story short I was welcomed back at Teleperformance and for that I am very grateful.
                         </p>
                       </td>
                     </div>

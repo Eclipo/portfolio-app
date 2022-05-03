@@ -1,124 +1,4 @@
-:root {
-    --size-skillDivisor: 1.5;
-}
 
-@media (min-width: 15rem) {
-    :root {
-        --size-skillDivisor: 6;
-    }
-  
-  
-}
-
-
-@media (min-width: 20rem) {
-    :root {
-        --size-skillDivisor: 5.5;
-    }
-
-    /* .skillCategory{
-      font-size: 0.95rem;
-    }
-
-    .skillPointGround{
-      font-size: 0.7rem;
-    } 
- */
-    
-     
-}
-
-
-
-@media (max-width: 25rem) {
-    :root {
-        --size-skillDivisor: 5;
-    }
-    .skill{
-      font-size: 0.6rem !important;
-    }
-}
-
-
-
-
-@media (min-width: 36rem) {
-:root {
-    --size-skillDivisor: 4.5;
-}
-
-}
-
-
-@media (min-width: 48rem) {
-:root {
-    --size-skillDivisor:4;
-}
-
-
-}
-
-
-@media (min-width: 62rem) { 
-:root {
-    --size-skillDivisor: 3.5;
-}
-
-/* .skillCategory{
-  font-size: 1.1rem;
-}
-
-.skillPointGround{
-  font-size: 0.95rem;
-}
-
-.skill{
-  font-size:0.85rem;
-} */
-
-
-
-}
-@media (min-width: 75rem) { 
-:root {
-    --size-skillDivisor: 3;
-}
-
-
-}
-
-
-@media (min-width: 80rem) { 
-    :root {
-        --size-skillDivisor:2.5;
-    }
-
-    /* .skillCategory{
-      font-size: 1.15rem;
-    }
-   
-    .skillPointGround{
-      font-size: 1.1rem;
-    }
-
-    .skill{
-      font-size:0.95rem;
-    } */
-    
-    
-
-}
-
-
-@media (min-width: 160rem) { 
-    :root {
-        --size-skillDivisor:2;
-    }
-   
-   
- 
-
-}
 
   /***************** SKILLS *********************/
 
@@ -173,7 +53,7 @@
 
 
   .skillCategory{
-    padding:5%;
+    padding:10%;
     margin:auto;
     width: fit-content !important;
 /*    
@@ -225,10 +105,8 @@
       position:relative;
       padding:0.3rem;
       margin:auto;
-      /* margin-bottom: 0.15rem; */
       margin-left:0.1rem;
       margin-right:0.1rem;
-      /*font-size: 1.9rem; */
       font-weight: 500;
       color:var(--primary-white);
     }
@@ -241,9 +119,7 @@
     padding-bottom: 5px;
     padding-left: 10px;
     background-color: #00bff3;
-    /* font-family: frankfurter-medium-plain; */
     color: #0072bc;
-    /* font-size: 18px; */
   }
 
 
@@ -255,9 +131,10 @@
     padding:0.3rem;
     opacity: 0;
     border-radius: 18px;
-   
-    /* width: 4rem; */
-    /* margin-left: 1vw; */
+
+  }
+
+  .skill p{
   }
 
   

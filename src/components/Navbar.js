@@ -11,7 +11,7 @@ export const Navbar = () => {
 
     return (
      
-        <nav id ="customNav" className="navbar d-block sticky-top navbar-collapse navbar-light ">
+        <nav id ="customNav" className="navbar d-block m-3 sticky-top navbar-collapse navbar-light ">
       <div className="container-fluid m-0 p-0" >
         
        

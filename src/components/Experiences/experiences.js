@@ -32,12 +32,12 @@ class Experiences extends Component {
   }
 
   arrowRight(event) {
-    alert("I'm just an arrow pointing to right. I'm not scrolling around.");
+    alert("I'm just an arrow pointing to the right. I'm not scrolling around.");
   }
 
   render() {
     return (
-      <div className="sectionAnimation" id="experiencesID">
+      <div className="sectionAnimation" id="experiencesID" >
         <div className="header-wraper mt-5">
           <div className="main-info">
             <h1 style={{ color: "var(--primary-purple)" }}>

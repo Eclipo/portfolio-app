@@ -22,8 +22,8 @@
 
   #KnucklesContainerID {
     display: flex; 
-    transform: scale(0.55);
-    margin-top: -30.25vh;
+    transform: scale(0.6);
+    margin-top: -12rem;
   }
 }
 
@@ -41,8 +41,8 @@
 
   #KnucklesContainerID {
     display: flex;
-    margin-top: -20vh;
-    transform: scale(0.6);
+    /* margin-top: -18rem;
+    transform: scale(0.5); */
   }
 
 }
@@ -73,6 +73,7 @@
   }
 }
 
+
 @media (min-width: 60rem) {
   .experienceContainer {
     width: 60vw;
@@ -95,8 +96,8 @@
 
   #KnucklesContainerID {
     display: flex;
-    margin-top: -55vh;
-    transform: scale(0.42);
+    margin-top: -15rem;
+    transform: scale(0.45);
 
   }
 
