@@ -30,7 +30,7 @@ class Personality extends Component  {
                     
                     <PixelHead></PixelHead>
 
-                    <div className='flexCenter' style={{width:"90%"}}>
+                    <div className='flexCenter w-75' style={{width:"90%"}}>
                  
 
 

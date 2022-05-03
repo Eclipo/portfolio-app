@@ -22,7 +22,7 @@
 
   #KnucklesContainerID {
     display: flex; 
-    transform: scale(0.60);
+    transform: scale(0.55);
     margin-top: -30.25vh;
   }
 }
@@ -41,8 +41,8 @@
 
   #KnucklesContainerID {
     display: flex;
-    margin-top: -47.5vh;
-    transform: scale(0.4);
+    margin-top: -20vh;
+    transform: scale(0.6);
   }
 
 }

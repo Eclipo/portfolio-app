@@ -38,12 +38,13 @@ class Experiences extends Component {
   render() {
     return (
       <div className="sectionAnimation" id="experiencesID">
-        <div className="header-wraper">
+        <div className="header-wraper mt-5">
           <div className="main-info">
             <h1 style={{ color: "var(--primary-purple)" }}>
               Major Experiences
             </h1>
             <PlayRefresh
+            className="mb-5"
               id="ExperienceAnimation"
               playBoolean={true}
             ></PlayRefresh>

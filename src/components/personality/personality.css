@@ -17,7 +17,7 @@
 }
   .personalityTable{
     position: relative;
-    width: 50%;
+    /* width: max; */
     margin:auto;    
     border-spacing:0.5rem;
     border-collapse: separate;
