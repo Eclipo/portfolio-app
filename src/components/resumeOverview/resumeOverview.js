@@ -15,7 +15,10 @@ const ResumeOverview = () => {
           <h1 style={{ color: "var(--primary-red" }}>Resumé Overview</h1>
           <PlayRefresh id="ResumeAnimation" playBoolean={true}></PlayRefresh>
 
+          <div className="d-flex justify-content-center mt-n5">
           <LightSaber></LightSaber>
+          </div>
+          
 
           <div style={{ width: "100%", marginTop: "-40rem !important" }}>
             <table

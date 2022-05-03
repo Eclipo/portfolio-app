@@ -39,13 +39,19 @@
     width: 20%;
   }
 
+  #KnucklesContainerID {
+    display: flex;
+    margin-top: -47.5vh;
+    transform: scale(0.4);
+  }
+
 }
 
 /* .techText ul li::before {
     left:5vw;
   } */
 
-@media (min-width: 48rem) {
+@media (min-width: 40rem) {
   .expTable {
     justify-content: center;
   }
@@ -62,8 +68,8 @@
 
   #KnucklesContainerID {
     display: flex;
-    margin-top: -42vh;
-    transform: scale(0.5);
+    margin-top: -30vh;
+    transform: scale(0.45);
   }
 }
 

@@ -7,8 +7,7 @@ export const EdipGuy = () => {
         <tr>
             <td>
                 <div className="wrapper" >
-                    <div className="border-circle" id="one"></div>
-                    <div className="border-circle" id="two"></div>
+                 
                     <div className="edipCircleBackground-circle">
                         <div className="body" id="bodyStart"></div>        
                     </div>

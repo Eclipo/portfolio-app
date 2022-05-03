@@ -48,7 +48,7 @@ class Experiences extends Component {
               playBoolean={true}
             ></PlayRefresh>
 
-            <div  id="KnucklesContainerID">
+            <div className="d-flex justify-content-center" id="KnucklesContainerID">
               <KnucklesSvg></KnucklesSvg>
             </div>
 

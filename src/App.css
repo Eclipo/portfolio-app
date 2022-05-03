@@ -56,7 +56,7 @@
     --fz-heading: 32px;
 
     /*Section sizes*/
-    --sectionHeightS: 190VH;
+    --sectionHeightS: 75rem;
     --sectionHeightM: 250VH;
     --sectionHeightL: 135VH;
 
@@ -71,9 +71,9 @@
   --quickFactsHeightM: 75VH;
 
     /*ResumeOverview sizes*/
-    --resumeOverviewHeightXs: 460VH;
-    --resumeOverviewHeightS: 440VH;
-    --resumeOverviewHeightM: 350VH;
+    --resumeOverviewHeightXs: 175rem;
+    --resumeOverviewHeightS: 175rem;
+    --resumeOverviewHeightM: 160rem;
     --resumeOverviewHeightL: 70VH;
 
 
@@ -105,17 +105,7 @@
        height:var(--sectionHeightS);
     }
 
-    #introSectionID{
-      height:var(--introQuickAboutHeightS);
-    }
-
-    #quickFacts{
-      height:var(--introQuickAboutHeightS);
-    }
-
-    #aboutMe{
-      height:var(--introQuickAboutHeightS);
-    }
+   
 
 
     #resumeOverview{
@@ -137,7 +127,7 @@
 
   }
 
-  @media (min-width: 23rem) {
+  /* @media (min-width: 23rem) {
   
     .sectionAnimation{
        height:var(--sectionHeightS);
@@ -152,7 +142,7 @@
       transform:scale(var(--scaleCarouselS));
     }
 
-  }
+  } */
 
   @media (min-width: 40rem) {
 

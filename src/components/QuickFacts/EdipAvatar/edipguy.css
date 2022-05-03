@@ -78,6 +78,7 @@
         -ms-mask-image: -webkit-radial-gradient(#BADA55, #BADA55);
         border: 1rem solid var(--primary-green);
         transform-origin: center;
+        z-index: -1;
     }
 
     .border-circle {
@@ -113,6 +114,7 @@
         -webkit-animation-fill-mode: forwards;
         -webkit-transform: scale(0) translateZ(0);
         transform: scale(0) translateZ(0);
+        z-index: 0
     }
 
     .head {
