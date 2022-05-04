@@ -1,6 +1,7 @@
 import {PlayAnimation} from "./PlayAnimation.js";
-
+import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation.js";
 setTimeout(function () {
+
 
   const quickFactsSection = document.querySelector("#quickFacts");
   const aboutMeSection = document.querySelector("#aboutMe");
@@ -9,9 +10,11 @@ setTimeout(function () {
   const resumeSection = document.querySelector("#resumeOverview");
   const experienceSection = document.querySelector("#experiencesID");
   const wrappers = document.querySelectorAll(".sectionAnimation");
+  const animationQuickFactAbout = new QuickAboutAnimation();
 
     
     const callback = (entries, observer) => {
+
         entries.forEach((entry) => {
         const currentIndex = Array.from(wrappers).indexOf(entry.target);
         console.log('!!!!!!!!!!!!!!!!! CURRENTINDEX !!!!!!! '+currentIndex);
@@ -19,15 +22,17 @@ setTimeout(function () {
         if (entry.isIntersecting) {
         switch(currentIndex) {
           
-          // Intro Section - Turn off  ...
+          // Intro Section - Turn ON QuickAboutAnimation  ...
           case 0:
-            console.log('INTRO SECTION');
+            console.log('INTRO SECTION - playQUICK');
+            // animationQuickFactAbout.playOrStop(true);
             break;
 
           // Quick Facts Section - Turn off Skills
           case 1:
             console.log('QUICK FACTS SECTION');
-            PlayAnimation('SkillAnimation',false);
+            // PlayAnimation('SkillAnimation',false);
+            animationQuickFactAbout.playOrStop(true);
 
             break;
 
@@ -37,10 +42,12 @@ setTimeout(function () {
                 PlayAnimation('PersonalityAnimation',false);
             break;
 
-          //Skills Section -  Turn OFF Resume
+          //Skills Section -  Turn OFF Resume, TURN OF About me
             case 3:
               console.log('SKILLS SECTION');
               PlayAnimation('ResumeAnimation',false);
+              PlayAnimation('QuickAboutAnimation',false);
+
 
 
             break;

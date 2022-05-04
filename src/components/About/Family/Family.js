@@ -62,7 +62,9 @@ export const Family = () => {
                 </div>
                 
                 <div className="head erika-head">
-                  <div className="hair-ball"></div>
+                  <div className="hair-ball">
+                    
+                  </div>
                   <div className="erika-hair"></div>
                     <div className="face erika-face">
 
@@ -104,30 +106,31 @@ export const Family = () => {
                   <div className="noah-body" ></div>
                 
                 </div>
-                
-                <div className="head noah-head">
-                  <div className="noah-hair"></div>
-                 
-                    <div className="face noah-face">
 
-                    <div className="nose noah-nose"></div>
-                    <div className="eye-shadow" id="left">
-                      <div className="eyebrow erika-brow"></div>
-                      <div className="eye noah-eye">
-                      <div className='laleh-kawai'></div>
-                      </div>
-                    </div>
-                    <div className="eye-shadow" id="right">
-                      <div className="eyebrow erika-brow"></div>
-                      <div className="eye noah-eye">
-                      <div className='laleh-kawai'></div>
-                      </div>
-                    </div>
-                    <div className="mouth noah-mouth"></div>
-                    <div className="shadow-wrapper">
-                    </div>
-                    <div className=".hair-sling-left"></div>
-                  </div>  
+                <div className="head noah-head">
+                <div className="noah-hair"></div>
+
+                <div className="face noah-face">
+
+<div className="nose noah-nose"></div>
+<div className="eye-shadow" id="left">
+  <div className="eyebrow erika-brow"></div>
+  <div className="eye noah-eye">
+  <div className='laleh-kawai'></div>
+  </div>
+</div>
+<div className="eye-shadow" id="right">
+  <div className="eyebrow erika-brow"></div>
+  <div className="eye noah-eye">
+  <div className='laleh-kawai'></div>
+  </div>
+</div>
+<div className="mouth noah-mouth"></div>
+<div className="shadow-wrapper">
+</div>
+<div className=".hair-sling-left"></div>
+</div>  
+                 
                 </div>
 
               </div>

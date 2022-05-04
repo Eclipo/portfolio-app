@@ -267,17 +267,16 @@
         width: 1.25rem;
         height: 2.8125rem;
         opacity: 1;
-        background: E7AB57;
         border-radius: 2.125rem;
         position: absolute;
         left: 50%;
         top: 5rem;
         margin-left: -0.625rem;
-        animation: shadow-anim 0.7s 3s 1 ease;
+        /* animation: shadow-anim 0.7s 3s 1 ease;
         animation-fill-mode: forwards;
         -webkit-animation: shadow-anim 0.7s 3s 1 ease;
-        -webkit-animation-fill-mode: forwards;
-        opacity: 0;
+        -webkit-animation-fill-mode: forwards; */
+        opacity: 1;
         z-index: 5;
     }
 
@@ -288,12 +287,12 @@
         border-radius: .75rem;
         position: absolute;
         top: 7.25rem;
-        animation: grow 0.7s 1.3s 1 ease;
+        /* animation: grow 0.7s 1.3s 1 ease;
         animation-fill-mode: forwards;
         -webkit-animation: grow 0.7s 1.3s 1 ease;
         -webkit-animation-fill-mode: forwards;
         -webkit-transform: scale(0);
-        transform: scale(0);
+        transform: scale(0); */
     }
 
     .mouth {
@@ -305,12 +304,12 @@
         top: 9.375rem;
         left: 50%;
         margin-left: -2.0625rem;
-        animation: grow 0.7s 2.6s 1 ease;
+        /* animation: grow 0.7s 2.6s 1 ease;
         animation-fill-mode: forwards;
         -webkit-animation: grow 0.7s 2.6s 1 ease;
         -webkit-animation-fill-mode: forwards;
-        -webkit-transform: scale(0);
-        transform: scale(0);
+        -webkit-transform: scale(0); */
+        /* transform: scale(0); */
     }
 
     
@@ -322,12 +321,12 @@
         background: rgba(149,36,0,0.1);
         position: absolute;
         top: 4.375rem;
-        animation: grow 0.7s 2s 1 ease;
+        /* animation: grow 0.7s 2s 1 ease;
         animation-fill-mode: forwards;
         -webkit-animation: grow 0.7s 2s 1 ease;
         -webkit-animation-fill-mode: forwards;
         -webkit-transform: scale(0);
-        transform: scale(0);
+        transform: scale(0); */
     }
 
 
@@ -349,12 +348,12 @@
         top: -2.1875rem;
         left: 50%;
         margin-left: -1.25rem;
-        opacity: 0;
-        -webkit-backface-visibility: hidden;
+        opacity: 1;
+        /* -webkit-backface-visibility: hidden; */
     }
 
 
-
+/* 
     .eye-shadow#left .eyebrow {
         animation: eyebrow-anim-left 0.7s 2.2s 1 ease;
         animation-fill-mode: forwards;
@@ -367,7 +366,7 @@
         animation-fill-mode: forwards;
         -webkit-animation: eyebrow-anim-right 0.7s 2.2s 1 ease, eyebrow-raise 2s 6.6s infinite alternate ease-in-out;
         -webkit-animation-fill-mode: forwards;
-    }
+    } */
 
     .eye {
         width: 1.25rem;
@@ -378,14 +377,14 @@
         top: -1.125rem;
         left: 50%;
         margin-left: -0.625rem;
-        animation: grow 0.7s 2.2s 1 ease, eye-blink 4s 4.4s infinite linear;
+        /* animation: grow 0.7s 2.2s 1 ease, eye-blink 4s 4.4s infinite linear;
         animation-fill-mode: forwards;
         -webkit-animation: grow 0.7s 2.2s 1 ease, eye-blink 4s 4.4s infinite linear;
         -webkit-animation-fill-mode: forwards;
         -webkit-transform: scale(0);
         transform: scale(0);
         -webkit-transform-origin: bottom;
-        transform-origin: bottom;
+        transform-origin: bottom; */
     }
 
     .shadow-wrapper {
@@ -405,15 +404,15 @@
         background: rgba(149,36,0,0.1);
         position: absolute;
         z-index: 4;
-        opacity: 0;
-        animation: shadow-anim 1s 2.8s 1 ease;
+        opacity: 1;
+        /* animation: shadow-anim 1s 2.8s 1 ease;
         animation-fill-mode: forwards;
         -webkit-animation: shadow-anim 1s 2.8s 1 ease;
-        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards; */
     }
 
 
-    .shirt-text {
+    /* .shirt-text {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         color: white;
@@ -426,7 +425,7 @@
         transform: translate(0rem,6.25rem);
         animation-fill-mode: forwards !important;
         -webkit-animation-fill-mode: forwards !important;
-    }
+    } */
 
 
 

@@ -46,9 +46,7 @@ const TestimonialsCarousel = () => {
         <Anime scale={[1.9,2]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}>
             <div className="">
               <div className="">
-                {/* <Anime scale={[0.75,0.8]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}> */}
                   <img className="flag"  src={flags} alt="Swedish, kurdish and turkish flag" />     
-                {/* </Anime> */}
               </div>
 
            
