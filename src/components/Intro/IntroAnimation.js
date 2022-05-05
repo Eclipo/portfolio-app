@@ -17,12 +17,14 @@ var logoAnimation = function() {
     return [l,0];
   }
 
+  
   var letters = anime({
     targets: '#lines path',
-    
+    // delay:500,
     strokeDashoffset: {
       value: setDashoffset,
-      duration: 2500,
+      
+      duration: 2750,
       easing: 'easeOutQuad',
     },
   });
@@ -33,7 +35,7 @@ var logoAnimation = function() {
     targets: '#dot-js',
     transform: ['translate(0 0)', 'translate(800 0)'],
     delay: letters.duration - 400,
-    duration: 2500,
+    duration: 2750,
     elasticity: 300,
     easing:'easeOutExpo',
     complete: function(){
@@ -83,7 +85,7 @@ var logoAnimation = function() {
     transform: function() {
       return ff ? ['rotate(360)', 'rotate(0)'] : ['rotate(360 240 64)', 'rotate(0 240 64)'];
     },
-    duration: 2500,
+    duration: 3500,
     delay: letters.duration - 780
   });
 
@@ -132,6 +134,12 @@ playOrStop(input){
 
   if(input === true){
     console.log('!!!!!! INTRO IS TURNING ON !!!!');
+    
+  anime({
+    targets:'.logo',
+    opacity:[0,1],
+    
+  });
    logoAnimation();
   }
 

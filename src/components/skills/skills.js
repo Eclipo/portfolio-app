@@ -159,6 +159,15 @@ class Skills extends Component {
 
                     </tbody>
                 </table>
+                <div className='card skill flexCenter w-75 p-1'>
+                    <p 
+                    style={{color:'var(--primary-white', textAlign:'left', fontSize:'0.8375rem', fontWeight:'625'}}>
+                    Since 2015 I began my journey in learning IT. From 2018 I worked professionaly as a full-stack developer.<br></br> 
+                    I have learnt different techstacks but not particularly great in any therefore I am more of a jack of all trades type of guy.  
+                    
+                </p>
+                </div>
+                
             </div>
             </div>
         </div>

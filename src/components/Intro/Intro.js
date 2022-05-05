@@ -89,9 +89,9 @@ class Intro extends Component {
 
           </div>
         </div>
-        <div className='container-fluid row playRefreshIntro'>
-        <PlayRefresh className="flexCenter" id='IntroAnimation' playBoolean={true}></PlayRefresh>
-
+        <div className='playRefreshIntro'>
+        <PlayRefresh  id='IntroAnimation' playBoolean={true}></PlayRefresh>
+        
         </div>
       </div>
     );

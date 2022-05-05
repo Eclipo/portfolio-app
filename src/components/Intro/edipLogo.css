@@ -130,9 +130,7 @@
 
 
 
-.logo {
-    opacity: 1;
-}
+
 
 body:not(.iOS) #lines * {
   mix-blend-mode: lighten;
@@ -319,7 +317,12 @@ svg path {
 
  .playRefreshIntro{
    display: inline-block;
-   margin-top:25rem;
+   margin: auto;
+   justify-content: center ;
+  top:23rem;
+  left:45vw;
+  
+   /* margin-top:40vh; */
 
    position:absolute;
   /* z-index: -1; */

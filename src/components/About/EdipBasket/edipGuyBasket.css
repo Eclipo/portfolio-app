@@ -4,7 +4,7 @@
 
   @media (min-width: 20rem) {
     :root {
-      --size-divisorBasket: 2.65 !important;
+      --size-divisorBasket: 2.75 !important;
     }
   }
 
@@ -46,9 +46,9 @@
     {
         transform:scale(calc(0.5 / var(--size-divisorBasket))) ;
         margin: auto;
-        top:-3rem;
+        top:-4rem;
         z-index: 1;
-        position: relative;
+        position: absolute;
     }
 
     .cheeringMonster{

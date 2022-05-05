@@ -105,7 +105,7 @@
 .basketContainer{
     background: var(--primary-blue);
     height: 25rem;
-    position: absolute;
+    /* position: absolute; */
     margin-top: 2rem;
     z-index: -2;
 }

@@ -70,13 +70,13 @@ const TestimonialsCarousel = () => {
     
     <>
 
-      <div className="containerSlide container basketContainer" style={{background:"var(--primary-darker-blue)", height:"26.5rem"}} >
+      <div className="containerSlide container basketContainer" style={{background:"var(--primary-darker-blue)", height:"26.5rem",position:'absolute'}} >
         
-      <img  src={cloud} alt="moln" style={{transform:"scale(0.6)", marginLeft:"-10rem",marginTop:"-15rem",position:"absolute"}}/>     
+      <img  src={cloud} alt="moln" style={{transform:"scale(0.25)",padding:'0', left:"0", top:'-5vh',position:"absolute"}}/>     
 
       <EdipBasket></EdipBasket>
       
-      <div style={{backgroundColor:"var(--primary-grey)",width:"110%",height:"50%",marginTop:"-10rem"}}>
+      <div style={{backgroundColor:"var(--primary-grey)",width:"110%",height:"55%",marginTop:"12rem"}}>
             <h2 className="mt-5">Basket</h2>
             <p >One of my passions. I love the game</p>
           </div>  
