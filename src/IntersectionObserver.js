@@ -1,6 +1,7 @@
 import {PlayAnimation} from "./PlayAnimation.js";
 import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation.js";
-setTimeout(function () {
+
+  setTimeout(function () {
 
 
   const quickFactsSection = document.querySelector("#quickFacts");
@@ -46,7 +47,7 @@ setTimeout(function () {
             case 3:
               console.log('SKILLS SECTION');
               PlayAnimation('ResumeAnimation',false);
-              PlayAnimation('QuickAboutAnimation',false);
+              animationQuickFactAbout.playOrStop(false);
 
 
 
