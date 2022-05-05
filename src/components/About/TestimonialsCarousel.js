@@ -43,17 +43,13 @@ const TestimonialsCarousel = () => {
       <>
         <div className="containerSlide container"  style={{background:"var(--primary-lightDarkGrey)",height:"26.5rem"}}>
        
-        <Anime scale={[1.9,2]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}>
-            <div className="">
-              <div className="">
+              <div className="mt-4">
                   <img className="flag"  src={flags} alt="Swedish, kurdish and turkish flag" />     
               </div>
 
            
-            </div>
-            </Anime>
    
-            <div style={{display:"block position-absolute",marginTop:"7rem"}}>
+            <div style={{display:"block position-absolute",marginTop:"3rem"}}>
             <h2>Nationality <br></br>&<br></br> Origin</h2>
             <p>I am born in Sweden and I have Kurdish origin from Turkey.</p>
           </div>
@@ -63,9 +59,7 @@ const TestimonialsCarousel = () => {
 
       <>
         <div className="containerSlide container"  style={{background:"var(--primary-darker-blue)", height:"26.5rem"}}>
-          <Anime scale={[1,1.05]} loop={true} direction={"alternate"} autoplay={"true"} easing={"easeOutBounce"} duration={"1250"}>
             <img className="cityHall"  src={stadshus} alt="Stockholm Stadshus" style={{transform:"scale(1.5)", marginTop:"5rem"}}/>     
-          </Anime>
 
           <div style={{marginTop:"3rem", marginBottom:"1.15rem", height:"10rem"}}>
             <h2>Stockholm</h2>

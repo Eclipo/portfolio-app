@@ -1,10 +1,12 @@
-import React from "react";
-import "./site.js";
+import React, { Component } from 'react';
+import "./IntroAnimation.js";
 import "./edipLogo.css";
 import "../../IntersectionObserver.js";
+import PlayRefresh from '../PlayRefresh/PlayRefresh.js';
 
-const Intro = () => {
-    return (
+class Intro extends Component {
+  render(){
+  return (
       <div id="introSectionID" className="sectionAnimation" >
         <div className="header-wraper" >
             
@@ -81,11 +83,18 @@ const Intro = () => {
                     <path id="fill-c" d="m23.034 42.228c-3.277-0.77845-7.7515-3.5408-10.248-6.3268-2.8847-3.2186-5.1057-8.783-5.1057-12.791 0-2.6465 1.2151-6.5945 2.8753-9.3422 3.9888-6.6016 10.768-10.216 18.49-9.8571 3.6746 0.1708 6.1905 0.94802 9.3034 2.874 2.3696 1.4661 3.3936 2.3902 3.6927 3.3324 0.23914 0.75346-3.3785 6.9998-4.3574 7.5237-0.81658 0.43702-1.1482 0.0099-2.8772-1.1827-3.3017-2.2775-7.5929-2.9227-10.934-1.2881-2.1029 1.0289-3.0873 1.9242-4.3222 3.9312-2.5896 4.2087-1.9488 9.0596 2.6688 12.47 1.3484 0.99595 2.0701 1.2694 4.8385 1.2694 2.7676 0 3.4655-0.36154 5.8938-1.6176 3.2557-1.684 3.5832-2.2489 4.3995-1.5384 0.87998 0.76598 3.929 6.1999 3.929 7.0022 0 0.3596-0.252 0.87892-0.56 1.1541-1.0903 0.97396-6.7011 3.7158-8.6231 4.2138-2.0809 0.53922-7.1172 0.63557-9.0628 0.17337z" fill="url(#radialGradient-5)"></path>
                   </g>
                 </g>
+                
             </svg>
+            
+
           </div>
         </div>
-      </div>
-    )
-  }
+        <div className='container-fluid row playRefreshIntro'>
+        <PlayRefresh className="flexCenter" id='IntroAnimation' playBoolean={true}></PlayRefresh>
 
+        </div>
+      </div>
+    );
+  }
+}
 export default Intro; 

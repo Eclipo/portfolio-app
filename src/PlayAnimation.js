@@ -1,3 +1,4 @@
+import { IntroAnimation } from "./components/Intro/IntroAnimation.js";
 import { PersonalityAnimation } from "../src/components/personality/personalityAnimation.js";
 import { SkillAnimation } from "../src/components/skills/SkillAnimation.js";
 import {ResumeAnimation} from "../src/components/resumeOverview/roAnimation.js";
@@ -68,12 +69,14 @@ console.log('END IS PLAYING');
 export function PlayAnimation(inputID, inputPlayBoolean){
   console.log('MAIN IS PLAYING');
 
+    const IntroAnime = new IntroAnimation();
     const SkillAnime = new SkillAnimation();
     const PersonalityAnime = new PersonalityAnimation();
     const ExperienceAnime = new ExperienceAnimation();
     const ResumeAnime = new ResumeAnimation();
     
     const objArray  = new Array;
+    objArray.push(IntroAnime);
     objArray.push(SkillAnime);
     objArray.push(PersonalityAnime);
     objArray.push(ExperienceAnime);
@@ -86,6 +89,12 @@ export function PlayAnimation(inputID, inputPlayBoolean){
   var currentObject = inputID.substring(inputID.indexOf("_") + 1);
   console.log('---- INPUTID:'+currentObject)
   var delayTime=0;
+
+  if(currentObject === 'IntroAnimation'){
+    delayTime = 4500;
+
+  }
+
   if(currentObject === 'PersonalityAnimation'){
     //13000  
     delayTime = 13000;
@@ -107,6 +116,7 @@ export function PlayAnimation(inputID, inputPlayBoolean){
     console.log('its on');
     console.log('---- element from array:'+element.constructor.prototype.constructor.name)
 
+    
 
     if(currentObject === element.constructor.prototype.constructor.name){
       console.log('---- ITS a match, INPUTID:'+currentObject+'---- element from array:'+element.constructor.prototype.constructor.name);
