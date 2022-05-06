@@ -46,7 +46,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
           //Skills Section -  Turn OFF Resume, TURN OF About me
             case 3:
               console.log('SKILLS SECTION');
-              PlayAnimation('ResumeAnimation',false);
+              // PlayAnimation('ResumeAnimation',false);
               animationQuickFactAbout.playOrStop(false);
 
 
@@ -56,7 +56,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
           //Personality Section -  Turn OFF Major Experiences
             case 4:
               console.log('PERSONALITY SECTION');
-              PlayAnimation('ExperienceAnimation',false);
+              // PlayAnimation('ExperienceAnimation',false);
 
               
             break;

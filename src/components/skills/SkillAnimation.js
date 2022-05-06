@@ -319,19 +319,20 @@ export class SkillAnimation{
 
         if(input === false){
           console.log('!!!!!! SKILS IS TURNING OFF!!!!');
-          
-              anime.remove(".skillContainer");
-              anime.remove(".skillTable");
-              anime.remove(".skillTable tbody thead tr td p div");
-              anime.remove(".skillCategory");
-              anime.remove(".skillPointGround");
-              anime.remove("#skillDividerTd");
-              anime.remove("#skillElemAndInter");
+          this.introSkillAnimation.pause();
+
+            //   anime.remove(".skillContainer");
+            //   anime.remove(".skillTable");
+            //   anime.remove(".skillTable tbody thead tr td p div");
+            //   anime.remove(".skillCategory");
+            //   anime.remove(".skillPointGround");
+            //   anime.remove("#skillDividerTd");
+            //   anime.remove("#skillElemAndInter");
               
-            anime({
-              targets:['.skillContainer','#skillDividerTd'],
-              opacity:0
-            })
+            // anime({
+            //   targets:['.skillContainer','#skillDividerTd'],
+            //   opacity:0
+            // })
         }
       }
 

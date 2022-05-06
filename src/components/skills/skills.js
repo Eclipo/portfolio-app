@@ -171,27 +171,57 @@ class Skills extends Component {
 
                     </tbody>
                 </table>
-                
-              
-                
             </div>
-            <div className='card mx-auto skill mt-1 p-3' style={{backgroundColor:'transparent'}}> 
-                    <p className='mx-auto' 
-                    style={{color:'var(--light-slate)', textAlign:'left', fontSize:'0.8375rem', fontWeight:'625'}}>
-                    My craftmanship as a software developer would perhaps be best described as a 'jack of all trades' or 'handyman'. 
-                    <br></br>
-                    I am not an expert in any particular field but I am certainly not a noob (novice) either. 
-                    <br></br>
-                    The section 'Major Experiences' goes further into what I have developed and accomplished. <br></br>
+
+            <div className='cardContainer skill' style={{backgroundColor:'transparent'}}> 
+                <p  className='mx-auto' 
+                    style={{color:'var(--light-slate)', 
+                    textAlign:'left', 
+                    fontSize:'0.8375rem', 
+                    fontWeight:'625'}}>
+                    Maybe I am "lagom"?<br></br> 
+                    That's Swedish for being an average Joe which is considered to be perfect.
+                </p> 
+
+                <p className='mx-auto' 
+                    style={{color:'var(--light-slate)', 
+                    textAlign:'left', 
+                    fontSize:'0.8375rem', 
+                    fontWeight:'625'}}>
+                    How do a "lagom" average Joe like me get by?
+                    Fortunately there is Stackoverflow! <br></br>
+                    A huge source of wisedom!
+                </p>
+
+                  
+                <p  className='mx-auto' 
+                    style={{color:'var(--light-slate)', 
+                    textAlign:'left', 
+                    fontSize:'0.8375rem', 
+                    fontWeight:'625'}}>
+                    Reinventing the wheel ain't my cup of tea.<br></br>
+                    I'm not doing it. No way. Nope. Ain't happening.<br></br>
+                    I'll just ctrl + c and ctrl + p through it all!     
                     </p>
-               
-                    </div>
+           
+                
+                <p  className='mx-auto' 
+                    style={{color:'var(--light-slate)', 
+                    textAlign:'left', 
+                    fontSize:'0.8375rem', 
+                    fontWeight:'625'}}>
+                    A "lagom" average Joe like me would never survive<br></br> 
+                    without my brilliant colleagues who comes to the rescue.<br></br><br></br>
+                    Hell! Sometimes they even do the job for me!<br></br>
+                    I think it is called pair-programming?
+                </p>
+                
             </div>
         </div>
-        
-    </div>
-        );
-    }
+    </div>        
+</div>
+);
+}
 }
 
 export default Skills;

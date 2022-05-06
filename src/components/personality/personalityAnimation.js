@@ -63,44 +63,44 @@ export class PersonalityAnimation{
             // anime.remove("#personalityTableID");
             // anime.remove("#personalityTableID td");
             // anime.remove(".personalityTraits");
-            // anime.remove(".personalityBaseTraits");
+            // // anime.remove(".personalityBaseTraits");
 
-            anime({
-                targets:'.personalityTraits',
-                opacity:[1,0],
-                easing:"easeOutElastic(1, .5)",
-                duration:50,
-                complete: function(){
-                    // var personalityTraits = document.querySelector(".personalityTraits");
-                    // personalityTraits.setAttribute("opacity",1);
+            // anime({
+            //     targets:'.personalityTraits',
+            //     opacity:[1,0],
+            //     easing:"easeOutElastic(1, .5)",
+            //     duration:50,
+            //     complete: function(){
+            //         // var personalityTraits = document.querySelector(".personalityTraits");
+            //         // personalityTraits.setAttribute("opacity",1);
     
-                    var personalityBaseTraits = document.querySelector(".personalityBaseTraits");
-                    personalityBaseTraits.setAttribute("opacity",0);
-                }
-            })
+            //         var personalityBaseTraits = document.querySelector(".personalityBaseTraits");
+            //         personalityBaseTraits.setAttribute("opacity",0);
+            //     }
+            // })
             
-            anime({
-                targets:"#personalityTableID",
-                opacity:0,
-                duration:50
-            })
+            // anime({
+            //     targets:"#personalityTableID",
+            //     opacity:0,
+            //     duration:50
+            // })
     
-            anime({     
-                targets:".greenSquareTable",
-                opacity:[0,1],
-                delay:500,            
-                duration:550,
-                easing:"linear"
-            })
+            // anime({     
+            //     targets:".greenSquareTable",
+            //     opacity:[0,1],
+            //     delay:500,            
+            //     duration:550,
+            //     easing:"linear"
+            // })
 
             //playPersonalityFunc(false) => Gör så att personlighetsanimeringarna ev startas om... 
             //får se och testa mer sen.
-            // this.playHonesty.pause();
-            // this.playShakingHonesty.pause();
-            // this.playTemper.pause();
-            // this.playFocus.pause();
-            // this.playCreativity.pause();
-            // this.playStructure.pause()
+            this.playHonesty.pause();
+            this.playShakingHonesty.pause();
+            this.playTemper.pause();
+            this.playFocus.pause();
+            this.playCreativity.pause();
+            this.playStructure.pause()
            
         
         }

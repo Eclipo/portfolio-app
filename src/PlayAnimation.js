@@ -121,18 +121,18 @@ export function PlayAnimation(inputID, inputPlayBoolean){
     if(currentObject === element.constructor.prototype.constructor.name){
       console.log('---- ITS a match, INPUTID:'+currentObject+'---- element from array:'+element.constructor.prototype.constructor.name);
       element.playOrStop(inputPlayBoolean);
-      if(inputPlayBoolean === false){
-        var refreshID = 'refresh_'+currentObject;
-        var btnRefrExp = document.getElementById(refreshID);
-        btnRefrExp.style.display='none';
-        btnRefrExp.style.pointerEvents='none';
-        var playID = 'play_'+currentObject;
-        var btnPlayExp = document.getElementById(playID);
-        btnPlayExp.style.pointerEvents='all';
-        btnPlayExp.style.display='block';
-        btnPlayExp.style.opacity=1;
-        delayTime=0;
-      }
+      // if(inputPlayBoolean === false){
+      //   var refreshID = 'refresh_'+currentObject;
+      //   var btnRefrExp = document.getElementById(refreshID);
+      //   btnRefrExp.style.display='none';
+      //   btnRefrExp.style.pointerEvents='none';
+      //   var playID = 'play_'+currentObject;
+      //   var btnPlayExp = document.getElementById(playID);
+      //   btnPlayExp.style.pointerEvents='all';
+      //   btnPlayExp.style.display='block';
+      //   btnPlayExp.style.opacity=1;
+      //   delayTime=0;
+      // }
     }
 
   });
