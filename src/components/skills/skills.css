@@ -193,3 +193,11 @@
     color: var(--primary-white) !important;
     /* width: 8rem; */
   }
+
+  ul.bullet {
+    list-style-type: circle;
+    color: var(--primary-white);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  

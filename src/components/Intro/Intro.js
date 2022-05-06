@@ -93,7 +93,12 @@ class Intro extends Component {
         <PlayRefresh  id='IntroAnimation' playBoolean={true}></PlayRefresh>
         
         </div>
+
+       
+        
       </div>
+
+
     );
   }
 }

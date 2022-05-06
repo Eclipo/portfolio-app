@@ -16,8 +16,14 @@ function App() {
   
     
     <Navbar></Navbar>
-    <Intro></Intro>
+    <section>
+      <Intro></Intro>
+    </section>
+    
+    <section>
     <QuickFacts></QuickFacts>
+    </section>
+    
     <Testimonials></Testimonials>
     <Skills></Skills>
     <Personality></Personality>

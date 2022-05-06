@@ -9,9 +9,9 @@ const ResumeOverview = () => {
   return (
     
     <div id="resumeOverview" className="sectionAnimation">
-    
-      <div className="header-wraper" style={{ marginTop: "-1.5rem" }}>
-        <div className="main-info" style={{ marginTop: "2rem" }}>
+    <div className='sectionLine' style={{backgroundColor:'var(--primary-red)'}}></div>
+      <div className="header-wraper">
+        <div className="main-info">
           <h1 style={{ color: "var(--primary-red" }}>Resumé Overview</h1>
           <PlayRefresh id="ResumeAnimation" playBoolean={true}></PlayRefresh>
 

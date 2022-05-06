@@ -16,10 +16,14 @@ class Skills extends Component {
     render() {
         return(
         <div id="skills" className="sectionAnimation">
+        <div className='sectionLine' style={{backgroundColor:'var(--primary-blue)'}}></div>
         <div  className="header-wraper">
             
             <div className="main-info">
                 <h1  style={{color:"var(--primary-blue"}}>Skills</h1>
+
+                
+                {/* </div> */}
                 <PlayRefresh id='SkillAnimation' playBoolean={true}></PlayRefresh>
 
                 <IntroSkill></IntroSkill>
@@ -149,8 +153,16 @@ class Skills extends Component {
 
                         <tr>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <p className="skill rolesTheme" id="skillElemAndInter">Solution <br></br>Architect</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill rolesTheme">Consultant</p></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                        </tr>
+
+                        <tr>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <p className="skill rolesTheme">Business<br></br>Consultant</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
@@ -159,16 +171,21 @@ class Skills extends Component {
 
                     </tbody>
                 </table>
-                <div className='card skill flexCenter w-75 p-1'>
-                    <p 
-                    style={{color:'var(--primary-white', textAlign:'left', fontSize:'0.8375rem', fontWeight:'625'}}>
-                    Since 2015 I began my journey in learning IT. From 2018 I worked professionaly as a full-stack developer.<br></br> 
-                    I have learnt different techstacks but not particularly great in any therefore I am more of a jack of all trades type of guy.  
-                    
-                </p>
-                </div>
+                
+              
                 
             </div>
+            <div className='card mx-auto skill mt-1 p-3' style={{backgroundColor:'transparent'}}> 
+                    <p className='mx-auto' 
+                    style={{color:'var(--light-slate)', textAlign:'left', fontSize:'0.8375rem', fontWeight:'625'}}>
+                    My craftmanship as a software developer would perhaps be best described as a 'jack of all trades' or 'handyman'. 
+                    <br></br>
+                    I am not an expert in any particular field but I am certainly not a noob (novice) either. 
+                    <br></br>
+                    The section 'Major Experiences' goes further into what I have developed and accomplished. <br></br>
+                    </p>
+               
+                    </div>
             </div>
         </div>
         

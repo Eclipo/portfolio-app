@@ -8,8 +8,9 @@ import "./quickfacts.css";
 const QuickFacts = () => {
     return (
         <div id="quickFacts" className="sectionAnimation">
+         <div className='sectionLine' style={{backgroundColor:'var(--primary-yellow)'}}></div> 
             <div className="container d-block">
-            <h1 className='flexCenter' style={{color:"var(--primary-green"}}>Quick facts!</h1>
+            <h1 className='flexCenter' style={{color:"var(--primary-yellow"}}>Quick facts!</h1>
 
                 <div className="flexCenter">
                     <Typed 
@@ -44,6 +45,7 @@ const QuickFacts = () => {
                 </div>
                     
             </div>
+       
         </div>
     )
 }

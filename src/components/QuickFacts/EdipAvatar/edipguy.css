@@ -44,7 +44,7 @@
         background: #95B3BF !important;
         background:transparent;
         position: relative;
-        border: 1rem solid var(--primary-green);
+        border: 1rem solid var(--primary-yellow);
         z-index: -1;
     }
 

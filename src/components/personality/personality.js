@@ -19,9 +19,10 @@ class Personality extends Component  {
         return(
 
         <div id="personality" className="sectionAnimation">
+        <div className='sectionLine' style={{backgroundColor:'var(--primary-green)'}}></div>
             <div  className="header-wraper ">
             
-                <div className="main-info" style={{marginTop:"1rem"}}>
+                <div className="main-info">
                     <h1 style={{color:"var(--primary-green)"}}>Personality</h1>
                     
 
