@@ -25,8 +25,6 @@ class Personality extends Component  {
                 <div className="main-info">
                     <h1 style={{color:"var(--primary-green)"}}>Personality</h1>
                     
-
-                    
                     <PlayRefresh id='PersonalityAnimation' playBoolean={true}></PlayRefresh>
                     
                     <PixelHead></PixelHead>

@@ -173,49 +173,29 @@ class Skills extends Component {
                 </table>
             </div>
 
-            <div className='cardContainer skill' style={{backgroundColor:'transparent'}}> 
-                <p  className='mx-auto' 
-                    style={{color:'var(--light-slate)', 
-                    textAlign:'left', 
-                    fontSize:'0.8375rem', 
-                    fontWeight:'625'}}>
-                    Maybe I am "lagom"?<br></br> 
-                    That's Swedish for being an average Joe which is considered to be perfect.
-                </p> 
+            <div className='container skill' style={{backgroundColor:'transparent'}}> 
+             
 
-                <p className='mx-auto' 
+                <p className='mx-auto p-3' 
                     style={{color:'var(--light-slate)', 
                     textAlign:'left', 
                     fontSize:'0.8375rem', 
                     fontWeight:'625'}}>
-                    How do a "lagom" average Joe like me get by?
-                    Fortunately there is Stackoverflow! <br></br>
-                    A huge source of wisedom!
-                </p>
-
-                  
-                <p  className='mx-auto' 
-                    style={{color:'var(--light-slate)', 
-                    textAlign:'left', 
-                    fontSize:'0.8375rem', 
-                    fontWeight:'625'}}>
-                    Reinventing the wheel ain't my cup of tea.<br></br>
-                    I'm not doing it. No way. Nope. Ain't happening.<br></br>
-                    I'll just ctrl + c and ctrl + p through it all!     
-                    </p>
-           
-                
-                <p  className='mx-auto' 
-                    style={{color:'var(--light-slate)', 
-                    textAlign:'left', 
-                    fontSize:'0.8375rem', 
-                    fontWeight:'625'}}>
-                    A "lagom" average Joe like me would never survive<br></br> 
-                    without my brilliant colleagues who comes to the rescue.<br></br><br></br>
-                    Hell! Sometimes they even do the job for me!<br></br>
-                    I think it is called pair-programming?
-                </p>
-                
+                    Early in my career I set out to be a niched consultant with focus on being 
+                    "jack of all trades" of an application used by the Swedish public sector.
+                    Eventually being a "handyman" can only get you to a certain skillevel.
+                    <br></br> 
+                    Therefore I decided to become "only" a .Net developer and hopefully I'll become a great one. 
+                    <br></br><br></br> 
+                    So how good am I today?<br></br>
+                    I have a good base in frontend and backend.
+                    If I am famillar with the code and application then I am somewhat self-going.
+                    However I will need some support from my senior colleagues of how I should 
+                    solve a complex problem or facing a new technical concept. 
+                    <br></br><br></br>
+                    Simply put I am an average Joe.<br></br>
+                    Or as we say in Swedish just "Lagom".
+                </p>  
             </div>
         </div>
     </div>        

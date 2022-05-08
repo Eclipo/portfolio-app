@@ -165,14 +165,15 @@
   }
 
   .sectionLine{
-    width: 100%;
+    width: 100% !important;
     height:0.25rem;
     margin-bottom: 1.5rem;
   }
 
 
   #resumeOverview{
-    height:167.5rem;
+    height:176rem;
+    
   }
 
 

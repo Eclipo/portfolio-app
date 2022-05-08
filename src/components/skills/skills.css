@@ -201,13 +201,3 @@
     font-weight: 500;
   }
   
-  .cardContainer{
-    display: block;
-    padding: 1rem;
-    /* width: 10rem; */
-    max-width: fit-content;
-    /* margin: auto; */
-    justify-content: center;    
-    margin: auto;
-
-  } 
