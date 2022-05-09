@@ -52,7 +52,7 @@ class Skills extends Component {
                         <tr>
                         <td> <h3 className="skillPointGround" id="Beginner" style={{marginBottom:'2%'}}>Noob</h3></td>
                         <td> <h3 className="skillPointGround" id="Elementary" style={{marginBottom:'2%'}}>Basic</h3></td>
-                        <td> <h3 className="skillPointGround" id="Intermediate" style={{marginBottom:'2%'}}>Solid</h3></td>
+                        <td> <h3 className="skillPointGround" id="Intermediate" style={{marginBottom:'2%'}}>Lagom</h3></td>
                         <td> <h3 className="skillPointGround" id="Advanced" style={{marginBottom:'2%'}}>Pro</h3></td>
                         <td> <h3 className="skillPointGround" id="Expert" style={{marginBottom:'2%'}}>Expert</h3></td>
                     
@@ -181,20 +181,23 @@ class Skills extends Component {
                     textAlign:'left', 
                     fontSize:'0.8375rem', 
                     fontWeight:'625'}}>
-                    Early in my career I set out to be a niched consultant with focus on being 
-                    "jack of all trades" of an application used by the Swedish public sector.
-                    Eventually being a "handyman" can only get you to a certain skillevel.
-                    <br></br> 
-                    Therefore I decided to become "only" a .Net developer and hopefully I'll become a great one. 
+                    I'm a "Lagom" average Joe developer and IT-consultant.
+                    Stackoverflow and youtubers from India often comes to the rescue!
+                    Of course my awesome colleagues who sometimes even write my code!
+                    I believe it is called pair-programming?
+                    
                     <br></br><br></br> 
-                    So how good am I today?<br></br>
-                    I have a good base in frontend and backend.
-                    If I am famillar with the code and application then I am somewhat self-going.
-                    However I will need some support from my senior colleagues of how I should 
-                    solve a complex problem or facing a new technical concept. 
+                
+                    Early in my IT-career I became a "jack of all trades" of a particular application 
+                    in terms of roles and development.With time I became "only" a .Net developer with an entirely different IT-system.
+                    <br></br><br></br> 
+
+                    So how good am I?<br></br>
+                    If I am famillar with the application and its code then I am somewhat self-going.
+                    However I will occassionally need the support from my senior colleagues of how I should 
+                    solve a rather complex problem or facing a new technical concept. 
                     <br></br><br></br>
-                    Simply put I am an average Joe.<br></br>
-                    Or as we say in Swedish just "Lagom".
+                    Simply put I am either just below or perfectly "Lagom" as we say in Swedish.
                 </p>  
             </div>
         </div>
