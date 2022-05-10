@@ -14,7 +14,58 @@ export class SkillAnimation{
        const moveLeft='-'+this.moveBetweenWidth.offsetWidth.toString()+'px';
        
        const moveRight=this.moveBetweenWidth.offsetWidth.toString()+'px';
-        this.introSkillAnimation = anime.timeline({
+        
+       this.duckMouthUppderAnim = anime.timeline({
+        loop:true,
+        autoplay:false,
+        direction:'alternate',
+        easing:'easeInOutQuad'
+      });
+
+      this.duckMouthUnderAnim = anime.timeline({
+        loop:true,
+        autoplay:false,
+        direction:'alternate',
+        easing:'easeInOutQuad'
+      });
+
+      this.duckEyeBrowAnim = anime.timeline({
+        loop:true,
+        autoplay:false,
+        direction:'alternate',
+        easing:'easeInOutQuad'
+      });
+
+      this.duckMouthUppderAnim.add({
+        targets:'.duckMouthUpper',
+        translateY:[0,'-0.25rem',0,'-0.25rem'],
+        rotate:[0,'10deg',0,'10deg'],
+        endDelay:500,
+        duration:500
+
+
+      })
+
+      this.duckMouthUnderAnim.add({
+        targets:'.duckMouthUnder',
+        translateY:[0,'0.25rem',0,'0.25rem'],
+        rotate:[0,'-10deg',0,'-10deg'],
+        endDelay:500,
+        duration:500
+       
+
+      })
+
+      this.duckEyeBrowAnim.add({
+        targets:'.duckEyebrow',
+        // rotate:['-5deg','5deg'],
+        translateY:[0,'-0.5rem','0.5rem'],
+        delay:500,
+        duration:500
+      });
+       
+       
+       this.introSkillAnimation = anime.timeline({
             loop:false, 
             autoplay:false,
             duration:250
@@ -24,6 +75,7 @@ export class SkillAnimation{
             
           });
     
+        
     
           this.introSkillAnimation.add({
             targets:".skillContainer, .skill",
@@ -315,6 +367,9 @@ export class SkillAnimation{
               opacity:0
             })
             this.introSkillAnimation.play();
+            this.duckEyeBrowAnim.play();
+            this.duckMouthUnderAnim.play();
+            this.duckMouthUppderAnim.play();
         }
 
         if(input === false){

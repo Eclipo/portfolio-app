@@ -1,0 +1,236 @@
+﻿    :root {
+        --size-edipDivisor: 1.5;
+    }
+
+
+    @media (min-width: 20rem) {
+        :root {
+            --size-edipDivisor: 4;
+        }
+
+    }
+    @media (min-width: 25rem) {
+        :root {
+            --size-edipDivisor: 3.75;
+        }
+    }
+
+    .aligner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    #duckID{
+        transform:scale(calc(2/ var( --size-edipDivisor))) ;
+        position: absolute;
+            margin-top: -5rem;
+
+    }
+
+    .wrapper {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    .edipCircleBackground-circle {
+        width: 26.25rem;
+        height: 26.25rem;
+        border-radius: 100%;
+        overflow: hidden;
+        background: #95B3BF !important;
+        background:transparent;
+        position: relative;
+        border: 1rem solid var(--primary-blue);
+        z-index: -1;
+    }
+
+    .border-circle {
+        width: 24.9375rem;
+        height: 24.9375rem;
+        border-radius: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -13.75rem;
+        margin-top: -13.75rem;
+        border: .625rem solid var(--primary-blue);
+
+    }
+
+    .duckHead{
+        width: 12.25rem;
+        height: 16.25rem;
+        border-radius: 3.125rem;
+        background: #eeebe6;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -13.125rem;
+        margin-left: -6.125rem;
+        z-index:3;
+      }
+
+      
+      .duckFace{
+        width: 9.25rem;
+        height: 12.5625rem;
+        border-radius: 3rem 3rem 0 0;
+        background: #eeebe6;
+        position: absolute;
+        top: 2.5rem;
+        left: 33%;
+        z-index:4;
+      }
+
+    .duckBody {
+        width: 67%;
+        font-family: 'Open Sans', sans-serif;
+        height: 37.5rem;
+        margin: 0 auto;
+        background: #eeebe6;
+        border-radius: 6.25rem;
+        position: relative;
+        left:6%;
+        top: 12.5rem;
+        margin-bottom: 5%;
+        z-index: 0
+    }
+
+    /* .duckMouth {
+        width: 4.125rem;
+        height: 2.0625rem;
+        border-radius: 0 0 2.0625rem 2.0625rem;
+        background: white;
+        position: absolute;
+        top: 9.375rem;
+        left: 50%;
+        margin-left: -2.0625rem;
+
+    } */
+
+    .duckEye{
+        width: 1.25rem;
+        height: 1.75rem;
+        border-radius: .625rem;
+        background: #453116;
+        position: absolute;
+        top: -1.125rem;
+        left: 50%;
+        margin-left: -0.625rem;
+      }
+
+    .duckEye-shadow {
+        width: 1.875rem;
+        height: .9375rem;
+        border-radius: 0 0 .9375rem .9375rem;
+        background: rgba(149,36,0,0.1);
+        position: absolute;
+        top: 4.375rem;
+
+    }
+
+
+
+    .duckEye-shadow#duckLeft {
+        left: 3rem;
+        z-index: 5;
+    }
+
+    .duckEye-shadow#duckRight {
+        right: 7.5rem;
+    }
+
+ 
+
+    .duckEyebrow {
+        width: 2.75rem;
+        height: 1rem;
+        background: #3f2a14;
+        position: absolute;
+        top: -2.25rem;
+        left: 50%;
+        margin-left: -1.25rem;
+        opacity: 1;
+        -webkit-backface-visibility: hidden;
+    }
+
+    .duckMouthUpper{
+        width: 9rem;
+        height: 2rem;
+        /* transform: rotate(5deg); */
+        border-radius: 0 2.0625rem 0  2.0625rem;
+
+        background: var(--primary-orange);
+        position: absolute;
+        top: 7rem;
+        right: 75%;
+        
+      }
+
+      .duckMouthUnder{
+        width: 9rem;
+        height: 2rem;
+        border-radius: 2.0625rem  0 2.0625rem  0;
+        /* transform: rotate(-5deg); */
+        background: var(--primary-orange);
+        position: absolute;
+        top: 9.25rem;
+        right: 75%;
+      }
+    
+    .shadow-wrapper {
+        width: 6.125rem;
+        height: 16.25rem;
+        position: absolute;
+        left: -0.5rem;
+        bottom: -5.25rem;
+        z-index: 4;
+        overflow: hidden;
+    }
+
+    .shadow {
+        width: 6.125rem;
+        height: 16.25rem;
+        border-radius: 3.125rem;
+        background: rgba(149,36,0,0.1);
+        position: absolute;
+        z-index: 4;
+        opacity: 1;
+
+    }
+
+    .triangle-light {
+        width: 25rem;
+        height: 37.5rem;
+        background: #FFFFFF;
+        opacity: 0.2;
+        position: absolute;
+        right: -65%;
+    }
+
+    .triangle-dark {
+        width: 25rem;
+        height: 37.5rem;
+        background: #000000;
+        opacity: 0.2;
+        position: absolute;
+        left: -60%;
+        top: 30%;
+
+        transform: translate(-12.5rem,0rem);
+    }
+
+    .shirt-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: white;
+        position: relative;
+        top: -25rem;
+        font-size: 3.125rem;
+        display: inline-block;
+
+    }

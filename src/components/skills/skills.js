@@ -5,7 +5,7 @@ import {IntroSkill } from "./introSkill/introSkill";
 import SkillDivider from './skillDivider/skillDivider';
 import "../../IntersectionObserver.js";
 import PlayRefresh from '../PlayRefresh/PlayRefresh.js';
-
+import {Duck} from './duck/duck.js';
 
 class Skills extends Component {
     frontEndTheme="frontEndTheme";
@@ -175,21 +175,24 @@ class Skills extends Component {
 
             <div className='container skill' style={{backgroundColor:'transparent'}}> 
              
+             <Duck></Duck>
 
                 <p className='mx-auto p-3' 
                     style={{color:'var(--light-slate)', 
                     textAlign:'left', 
                     fontSize:'0.8375rem', 
                     fontWeight:'625'}}>
-                    I'm a "Lagom" average Joe developer and IT-consultant.
-                    Stackoverflow and youtubers from India often comes to the rescue!
-                    Of course my awesome colleagues who sometimes even write my code!
-                    I believe it is called pair-programming?
-                    
+                    I'm a duck who is "Lagom". <br></br>
+                    I can't fly in front-end like a hummingbird. <br></br>
+                    I can't dash through the back-end like a dog doing agility.<br></br>
+                    I can't swim in the dephts of databases like a deep-sea-fish.<br></br> 
+                    I'm a duck who can fly, dash and swim but slower and less graceful.<br></br>
                     <br></br><br></br> 
                 
-                    Early in my IT-career I became a "jack of all trades" of a particular application 
-                    in terms of roles and development.With time I became "only" a .Net developer with an entirely different IT-system.
+                    Early in my IT-career I became a "jack of all trades, master of none" 
+                    regarding a particular application in terms of roles and development. 
+                    Evenetually I decided to become "only" a fullstack .Net developer 
+                    of an entirely different IT-system.
                     <br></br><br></br> 
 
                     So how good am I?<br></br>
@@ -197,7 +200,7 @@ class Skills extends Component {
                     However I will occassionally need the support from my senior colleagues of how I should 
                     solve a rather complex problem or facing a new technical concept. 
                     <br></br><br></br>
-                    Simply put I am either just below or perfectly "Lagom" as we say in Swedish.
+                    Simply put I am a duck who is either just below or perfectly "Lagom" as we say in Swedish.
                 </p>  
             </div>
         </div>

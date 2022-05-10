@@ -17,18 +17,28 @@ const QuickFacts = () => {
                         className="typed-text" 
                         strings={
                             [
-                            "C#",
-                            "SQL",
+                            "Erika, Noah and Laleh",
+                            "I often find myself saying:",
+                            "I don't know why it works.",
+                            "But I'm happy that it does!",
+                            "Nobody uses javascript. It's old tech",
+                            "var sucks...",
+                            "Typescript is better.", 
+                            "margin:auto !important",
+                            "style='just center it already!'",
+                            "Bootstrap is like fastfood.", 
+                            "It's addictive and not healthy.",
                             "Kurdish meatballs",
-                            "Javascript",
                             "Swedish meatballs",
-                            "ASP.NET",
-                            "HTML/CSS",
+                            "Was it left or right join?",
+                            "DROP TABLE!!!",
                             "Stockholm",
-                            "Super honesty...",
-                            "Powershell",
+                            "Super honesty!",
                             "Basket",
-                            "Erika, Noah and Laleh"
+                            "Coffee",
+                            "Sonic: Chemical Plant",
+                            "Super Mario: File select",
+                            "Zelda: Song of storms"
                             ]
                         }
                         fadeOut={20}
