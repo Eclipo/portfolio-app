@@ -38,8 +38,8 @@ export class SkillAnimation{
 
       this.duckMouthUppderAnim.add({
         targets:'.duckMouthUpper',
-        translateY:[0,'-0.25rem',0,'-0.25rem'],
-        rotate:[0,'10deg',0,'10deg'],
+        translateY:['-0.25rem',0,'-0.25rem',0],
+        rotate:['10deg',0,'10deg',0],
         endDelay:500,
         duration:500
 
@@ -48,8 +48,8 @@ export class SkillAnimation{
 
       this.duckMouthUnderAnim.add({
         targets:'.duckMouthUnder',
-        translateY:[0,'0.25rem',0,'0.25rem'],
-        rotate:[0,'-10deg',0,'-10deg'],
+        translateY:['0.25rem',0,'0.25rem',0],
+        rotate:['-10deg',0,'-10deg',0],
         endDelay:500,
         duration:500
        

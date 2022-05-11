@@ -175,21 +175,25 @@ class Skills extends Component {
 
             <div className='container skill' style={{backgroundColor:'transparent'}}> 
              
-             <Duck></Duck>
+             <div className='flexCenter mt-2'>
+                <Duck></Duck>
+             </div>
+             
 
-                <p className='mx-auto p-3' 
-                    style={{color:'var(--light-slate)', 
-                    textAlign:'left', 
-                    fontSize:'0.8375rem', 
-                    fontWeight:'625'}}>
-                    I'm a duck who is "Lagom". <br></br>
-                    I can't fly in front-end like a hummingbird. <br></br>
-                    I can't dash through the back-end like a dog doing agility.<br></br>
-                    I can't swim in the dephts of databases like a deep-sea-fish.<br></br> 
-                    I'm a duck who can fly, dash and swim but slower and less graceful.<br></br>
+            <div className='col col-md-6 mx-auto mb-5'>
+                <p className='duckText w-100 p-3'>
+                    I'm a duck. <br></br>
+                    I can't fly in the front-end like a hummingbird. <br></br>
+                    I can't dash in the back-end like a dog doing agility.<br></br>
+                    I can't swim in the databases like a deep-sea-fish.
+                    <br></br> <br></br>Quack! Quack!<br></br><br></br>
+                    I can flap my wings around in the front-end.<br></br> 
+                    I can waddle myself through the back-end. <br></br>
+                    I can paddle and even dive (for a short while!) in the databases.
+                    <br></br><br></br>  
+                    In other words I am a full-stack developer. 
                     <br></br><br></br> 
-                
-                    Early in my IT-career I became a "jack of all trades, master of none" 
+                    Early in my IT-career I became "jack of all trades, master of none"
                     regarding a particular application in terms of roles and development. 
                     Evenetually I decided to become "only" a fullstack .Net developer 
                     of an entirely different IT-system.
@@ -201,8 +205,9 @@ class Skills extends Component {
                     solve a rather complex problem or facing a new technical concept. 
                     <br></br><br></br>
                     Simply put I am a duck who is either just below or perfectly "Lagom" as we say in Swedish.
-                </p>  
-            </div>
+                </p>
+            </div>  
+        </div>
         </div>
     </div>        
 </div>

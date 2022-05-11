@@ -17,28 +17,22 @@ const QuickFacts = () => {
                         className="typed-text" 
                         strings={
                             [
-                            "Erika, Noah and Laleh",
-                            "I often find myself saying:",
-                            "I don't know why it works.",
-                            "But I'm happy that it does!",
-                            "Nobody uses javascript. It's old tech",
-                            "var sucks...",
-                            "Typescript is better.", 
-                            "margin:auto !important",
-                            "style='just center it already!'",
-                            "Bootstrap is like fastfood.", 
-                            "It's addictive and not healthy.",
-                            "Kurdish meatballs",
-                            "Swedish meatballs",
-                            "Was it left or right join?",
-                            "DROP TABLE!!!",
-                            "Stockholm",
-                            "Super honesty!",
-                            "Basket",
-                            "Coffee",
-                            "Sonic: Chemical Plant",
-                            "Super Mario: File select",
-                            "Zelda: Song of storms"
+                            "Quack quack!",
+                            "I'm a duck!",
+                            "I don't like Javascript.",
+                            "Particularly var.",
+                            "Typescript is better.",
+                            "I don't use Typescript.", 
+                            "Bootstrap is fastfood.", 
+                            "It's addictive",
+                            "and unhealthy.",
+                            "I use Bootstrap.",
+                            "Centering an element is",
+                            "exhausting.",
+                            "Are you writing",
+                            "self-explainatory code?",
+                            "What are you five?",
+                            "Just comment already..."
                             ]
                         }
                         fadeOut={20}

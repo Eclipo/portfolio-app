@@ -36,7 +36,7 @@
         position: relative;
     }
 
-    .edipCircleBackground-circle {
+    .duckEdipCircleBackground-circle {
         width: 26.25rem;
         height: 26.25rem;
         border-radius: 100%;
@@ -48,7 +48,7 @@
         z-index: -1;
     }
 
-    .border-circle {
+    /* .duckBorder-circle {
         width: 24.9375rem;
         height: 24.9375rem;
         border-radius: 100%;
@@ -59,7 +59,7 @@
         margin-top: -13.75rem;
         border: .625rem solid var(--primary-blue);
 
-    }
+    } */
 
     .duckHead{
         width: 12.25rem;

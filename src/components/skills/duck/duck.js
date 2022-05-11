@@ -9,7 +9,7 @@ export const Duck = () => {
             <td>
                 <div className="wrapper" >
                  
-                    <div className="edipCircleBackground-circle">
+                    <div className="duckEdipCircleBackground-circle">
                         <div className="duckBody" id="duckBodyStart"></div>        
                     </div>
             

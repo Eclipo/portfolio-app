@@ -2,6 +2,11 @@
 
   /***************** SKILLS *********************/
 
+  #skills{
+    height: calc(
+      50rem*2.2
+    );
+  }
 
 .skillContainer{
   margin-top: -35vh;
@@ -201,3 +206,12 @@
     font-weight: 500;
   }
   
+  .duckText{
+    margin:auto;
+    text-align: left;
+    font-size:'0.8375rem'; 
+    font-weight:'625';
+    color:var(--light-slate);
+    margin-top: 16rem;
+    
+  }

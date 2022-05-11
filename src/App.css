@@ -160,7 +160,7 @@
     flex-wrap: wrap;
     
     height: calc(
-      100vh*1.25
+      50rem*1.25
     );
   }
 
