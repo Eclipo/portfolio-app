@@ -464,8 +464,11 @@ ul {
 #KnucklesContainerID {
   /* margin-top: -10rem; */
   /* z-index: 1; */
-  height: fit-content;
+  height: min-content;
+  
   width: 100%;
+  margin: auto;
+  
   /* justify-self: center !important; */
   /* margin: auto !important; */
 

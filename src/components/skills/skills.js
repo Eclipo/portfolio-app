@@ -185,20 +185,15 @@ class Skills extends Component {
                     I'm a duck. <br></br>
                     I can't fly in the front-end like a hummingbird. <br></br>
                     I can't dash in the back-end like a dog doing agility.<br></br>
-                    I can't swim in the databases like a deep-sea-fish.
+                    I can't swim in the database like a deep-sea-fish.
                     <br></br> <br></br>Quack! Quack!<br></br><br></br>
                     I can flap my wings around in the front-end.<br></br> 
                     I can waddle myself through the back-end. <br></br>
-                    I can paddle and even dive (for a short while!) in the databases.
+                    I can paddle and even dive (for a short while!) in the database.
                     <br></br><br></br>  
                     In other words I am a full-stack developer. 
                     <br></br><br></br> 
-                    Early in my IT-career I became "jack of all trades, master of none"
-                    regarding a particular application in terms of roles and development. 
-                    Evenetually I decided to become "only" a fullstack .Net developer 
-                    of an entirely different IT-system.
-                    <br></br><br></br> 
-
+                
                     So how good am I?<br></br>
                     If I am famillar with the application and its code then I am somewhat self-going.
                     However I will occassionally need the support from my senior colleagues of how I should 

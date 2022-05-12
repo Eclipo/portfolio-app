@@ -6,13 +6,13 @@
     height: calc(
       50rem*2.2
     );
-  }
-
-.skillContainer{
-  margin-top: -35vh;
-  margin: auto;
-  opacity: 0;
-}
+  } 
+    .skillContainer{
+      margin-top: -35vh;
+      margin: auto;
+      opacity: 0;
+    }
+    
 
 .headerSkills{
   /* opacity: 1; */
@@ -58,9 +58,10 @@
 
 
   .skillCategory{
-    padding:10%;
+    padding:5%;
     margin:auto;
     width: fit-content !important;
+    font-size: 4vh !important;
 /*    
     font-weight: 700; */
     /* background-color:var(--primary-orange); */
@@ -90,7 +91,7 @@
   .skillPointGround{
     background-color:var(--green-tint);
     /* position:relative; */
-    padding:3% !important;
+    padding:4% !important;
     margin: 3% !important;
     /* margin-left: 0.5vh !important;
     margin-right: 0.5vh !important; */
@@ -99,6 +100,7 @@
     /* margin-bottom: 2%; */
     /* width: 100%; */
     /* font-weight: 500; */
+    font-size: 2.25vh !important;
     color:var(--primary-white);
     border-radius: 5px;
 
@@ -137,9 +139,6 @@
     opacity: 0;
     border-radius: 18px;
 
-  }
-
-  .skill p{
   }
 
   

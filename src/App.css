@@ -97,6 +97,29 @@
 
   }
 
+  @media (min-width: 20rem) {
+
+    #resumeOverview{
+      height:225rem;    
+    }
+  }
+
+  @media (min-width: 30rem) {
+
+    #resumeOverview{
+      height:200rem;    
+    }
+  }
+
+  @media (min-width: 40rem) {
+
+    #resumeOverview{
+      height:185rem;    
+    }
+  }
+
+  
+
 /* 
   @media (min-width: 20rem) {
 
@@ -171,12 +194,6 @@
   }
 
 
-  #resumeOverview{
-    height:176rem;
-    
-  }
-
-
   #skills{
     height: 80rem;
   }
@@ -226,7 +243,7 @@
     font-style: var(--font-sans) !important;
     font-weight: 800 !important;
     text-transform: uppercase !important;
-    font-size: 4.5vh !important;
+    font-size: 4vh !important;
 
     /* text-align: center !important;
     justify-self: center !important; */
@@ -237,7 +254,7 @@
     font-style: var(--font-sans) !important;
     font-weight: 750 !important;
   
-    font-size:2.75vh !important;
+    font-size:2.5vh !important;
     margin: auto !important;
     text-align: center !important;
     word-break: keep-all !important;

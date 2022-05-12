@@ -17,20 +17,14 @@ const QuickFacts = () => {
                         className="typed-text" 
                         strings={
                             [
-                            "Quack quack!",
-                            "I'm a duck!",
-                            "I don't like Javascript.",
-                            "Particularly var.",
-                            "Typescript is better.",
-                            "I don't use Typescript.", 
-                            "Bootstrap is fastfood.", 
-                            "It's addictive",
-                            "and unhealthy.",
+                            "Beautiful family",
+                            "Born in Sweden",
+                            "Kurdish origin from Turkey",
+                            "Fullstack in .Net", 
+                            "Bootstrap is like fastfood.", 
                             "I use Bootstrap.",
-                            "Centering an element is",
-                            "exhausting.",
-                            "Are you writing",
-                            "self-explainatory code?",
+                            "Typescript for the win!",
+                            "Selfexplainatory code?",
                             "What are you five?",
                             "Just comment already..."
                             ]
