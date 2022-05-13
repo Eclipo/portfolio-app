@@ -10,10 +10,17 @@ export class SkillAnimation{
         this.mokaBaseTableGrid = [5,10];
         this.dividerTable = [1,5];
         
-       this.moveBetweenWidth=document.getElementById('skillElemAndInter');
-       const moveLeft='-'+this.moveBetweenWidth.offsetWidth.toString()+'px';
+       this.moveBetweenWidth_Inter=document.getElementById('skillElemAndInter');
+       this.moveBetweenWidth_Noob=document.getElementById('skillElemAndNoob');
+       this.moveBetweenWidth_Noob_To_Inter=document.getElementById('skillNoobElemAndInter');
+
+       const moveLeftNoobinter = '-'+this.moveBetweenWidth_Noob_To_Inter.offsetWidth.toString()+'px';
+       const moveRightNoobinter=this.moveBetweenWidth_Noob_To_Inter.offsetWidth.toString()+'px';
+
+
+       const moveLeft='-'+this.moveBetweenWidth_Noob.offsetWidth.toString()+'px';
        
-       const moveRight=this.moveBetweenWidth.offsetWidth.toString()+'px';
+       const moveRight=this.moveBetweenWidth_Inter.offsetWidth.toString()+'px';
         
        this.duckMouthUppderAnim = anime.timeline({
         loop:true,
@@ -336,6 +343,28 @@ export class SkillAnimation{
                                               delay:anime.stagger(250),
                                               loop:true
                                             });
+
+                                            anime({
+                                              targets:'#skillElemAndNoob',
+                                              translateX:[0,moveLeft],
+                                              easing:'easeInOutQuad',
+                                              direction:'alternate',
+                                              delay:anime.stagger(250),
+                                              loop:true
+                                            });
+
+                                            anime({
+                                              targets:'#skillNoobElemAndInter',
+                                              translateX:[0,moveLeftNoobinter,0,moveRightNoobinter,0],
+                                              easing:'easeInOutQuad',
+                                              direction:'alternate',
+                                              duration:2500,
+                                              delay:anime.stagger(2000),
+                                              loop:true
+                                            });
+
+
+                                            
                                             }
                                           })
                                         }
@@ -373,7 +402,7 @@ export class SkillAnimation{
         }
 
         if(input === false){
-          console.log('!!!!!! SKILS IS TURNING OFF!!!!');
+          console.log('!!!!!! SKILLS IS TURNING OFF!!!!');
           this.introSkillAnimation.pause();
 
             //   anime.remove(".skillContainer");

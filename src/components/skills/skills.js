@@ -61,7 +61,7 @@ class Skills extends Component {
                     <tbody>
                         <tr>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill frontEndTheme">Angular</p></td>
+                            <td> <p className="skill frontEndTheme" id='skillElemAndNoob'>Angular</p></td>
                             <td> <p className="skillPointGround" style={{opacity:"0"}}></p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
@@ -69,14 +69,14 @@ class Skills extends Component {
 
                         <tr>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill frontEndTheme">ReactJS</p></td>
+                            <td> <p className="skill frontEndTheme" id="skillElemAndNoob">ReactJS</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>                       
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
                         <tr> 
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill frontEndTheme">Typescript</p></td>
+                            <td> <p className="skill frontEndTheme" id="skillElemAndNoob">Typescript</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
@@ -118,7 +118,7 @@ class Skills extends Component {
 
                         <tr>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill backEndTheme" id="skillElemAndInter">C#</p></td>
+                            <td> <p className="skill backEndTheme" id="skillNoobElemAndInter">C#</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
@@ -134,7 +134,7 @@ class Skills extends Component {
     
                         <tr>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill backEndTheme" >Powershell</p></td>
+                            <td> <p className="skill backEndTheme" id="skillElemAndNoob" >Powershell</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
@@ -145,7 +145,7 @@ class Skills extends Component {
 
                         <tr>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill rolesTheme" id="skillElemAndInter">Developer</p></td>
+                            <td> <p className="skill rolesTheme" id="skillNoobElemAndInter">Developer</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
