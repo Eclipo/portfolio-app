@@ -137,7 +137,7 @@
   padding: 1%;
   background-color: var(--dark-navy);
   position: relative;
-  margin-top: -35rem;
+  margin-top: -38rem;
   width: 90vw;
   display: none;
 }
@@ -462,17 +462,19 @@ ul {
 }
 
 #KnucklesContainerID {
-  /* margin-top: -10rem; */
+  /* margin-top: -2rem !important; */
   /* z-index: 1; */
-  height: min-content;
-  
+  /* height: min-content; */
+  display: inline-flex;
+
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   
   /* justify-self: center !important; */
   /* margin: auto !important; */
 
   opacity: 0;
+  z-index: -1;
 }
 
 #expCategoryMenu {

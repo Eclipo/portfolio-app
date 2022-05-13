@@ -1,8 +1,9 @@
 #KnucklesSvgID {
     width: 10rem;
     height: 10rem;
-    position: absolute;
-    margin:auto;  
+    /* position: absolute; */
+    display: inline-flex;
+    /* margin:auto;   */
   }
 
   
