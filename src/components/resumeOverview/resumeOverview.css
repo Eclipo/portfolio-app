@@ -8,9 +8,13 @@
   margin: auto;
 }
 
+#resumeContainerID{
+  display: none;
+  width: 100%;
+}
 .resumeTable{
     background:var(--primary-red);
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     border-spacing:0;
     opacity: 0;

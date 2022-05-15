@@ -61,6 +61,13 @@ export class ResumeAnimation{
 
             delay: anime.stagger(100,{grid:this.grid,from: "first"}),
             complete:function(){
+               
+                let elContainer = document.getElementById('resumeContainerID');
+                elContainer.style.display='block'; 
+
+                elContainer = document.getElementById('lightSaberTableID');
+                elContainer.style.display='none'; 
+       
                 anime({
                     targets:".resumeTable",
                     opacity:[0,1],
@@ -78,6 +85,9 @@ export class ResumeAnimation{
     playOrStop(input){
 
         if(input === true){
+            let elContainer = document.getElementById('lightSaberTableID');
+            elContainer.style.display='block'; 
+            
             anime({
                 targets:".resumeTable",
                 opacity:0,

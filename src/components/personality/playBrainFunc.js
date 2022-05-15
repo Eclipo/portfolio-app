@@ -69,6 +69,10 @@ export async function playBrainFunc(){
         opacity:[1,0],
 
         complete:function(){
+            let elContainer = document.getElementById('personalityContainerID');
+            elContainer.style.display='block';
+            elContainer = document.getElementById('greenSquareTableID');
+            elContainer.style.display='none';
            anime({
                targets: '.personalityTraits',
                opacity:0,

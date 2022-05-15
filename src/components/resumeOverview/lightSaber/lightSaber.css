@@ -1,14 +1,17 @@
 
+#lightSaberTable{
+  display: none;
+
+}
 
 .lightSaberTable{
-    position: absolute;
+    /* position: absolute; */
     border-collapse: collapse;
-    display: block;
     z-index: -1;
     margin: auto;
-    transform: scale(0.9);
-
     
+    margin-bottom: 1rem;
+    transform: scale(0.9);
 }
 
 .lightSaberTable td{

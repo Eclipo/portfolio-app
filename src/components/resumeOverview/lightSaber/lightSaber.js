@@ -4,7 +4,7 @@ import "../lightSaber/lightSaber.css";
 
 export const LightSaber = () => {
     return (
-        <table className="lightSaberTable">
+        <table className="lightSaberTable" id="lightSaberTableID">
                 
                 <tr>
                     <td className="emptyLightSaberSquare"></td>

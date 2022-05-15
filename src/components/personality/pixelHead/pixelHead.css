@@ -30,8 +30,9 @@
 
   .greenSquareTable{
     opacity: 1;
-    position: absolute;
+    margin-bottom: 1rem;
     border-collapse: separate;
+    
 
   }
 

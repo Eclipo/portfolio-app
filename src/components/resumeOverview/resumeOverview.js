@@ -10,17 +10,16 @@ const ResumeOverview = () => {
     
     <div id="resumeOverview" className="sectionAnimation">
     <div className='sectionLine' style={{backgroundColor:'var(--primary-red)'}}></div>
-      <div className="header-wraper">
-        <div className="main-info">
+      
           <h1 style={{ color: "var(--primary-red" }}>Resumé Overview</h1>
           <PlayRefresh id="ResumeAnimation" playBoolean={true}></PlayRefresh>
 
-          <div className="d-flex justify-content-center mt-n5">
+          <div className="flexCenter">
           <LightSaber></LightSaber>
           </div>
           
 
-          <div style={{ width: "100%", marginTop: "-40rem !important" }}>
+          <div id="resumeContainerID" style={{ width: "100%" }}>
             <table
               className="resumeTable .table-striped  .table-responsive"
               style={{ backgroundColor: "var(--navy)" }}
@@ -434,8 +433,7 @@ const ResumeOverview = () => {
             </table>
           </div>
         </div>
-      </div>
-    </div>
+
   );
 };
 

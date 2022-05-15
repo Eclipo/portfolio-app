@@ -10,7 +10,7 @@ export const IntroSkill = () => {
       <div className="mokaTableContainer">
 
       
-      <table classNamec="mokaTable" >
+      <table className="mokaTable" >
          
          <tr>
          <table className="mokaTopTable">

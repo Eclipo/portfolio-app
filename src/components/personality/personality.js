@@ -20,16 +20,14 @@ class Personality extends Component  {
 
         <div id="personality" className="sectionAnimation">
         <div className='sectionLine' style={{backgroundColor:'var(--primary-green)'}}></div>
-            <div  className="header-wraper ">
-            
-                <div className="main-info">
+
                     <h1 style={{color:"var(--primary-green)"}}>Personality</h1>
                     
                     <PlayRefresh id='PersonalityAnimation' playBoolean={true}></PlayRefresh>
-                    
-                    <PixelHead></PixelHead>
-
-                    <div className='flexCenter'>
+                    <div id="greenSquareTableID" className='flexCenter'>
+                        <PixelHead></PixelHead>
+                    </div>
+                    <div className='flexCenter' id="personalityContainerID">
                  
 
 
@@ -156,10 +154,6 @@ class Personality extends Component  {
                         
                     </div>
                 </div>
-            </div>
-        </div>
-
-
         )
     }
 }

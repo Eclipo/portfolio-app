@@ -54,7 +54,9 @@ export class PersonalityAnimation{
             anime.remove("#personalityTable td");
             anime.remove(".personalityTraits");
             anime.remove(".personalityBaseTraits");
-
+            let elContainer = document.getElementById('greenSquareTableID');
+            elContainer.style.display='';
+            elContainer.style.opacity=1;
             playBrainFunc();
             // this.playPersonality();
         }

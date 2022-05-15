@@ -16,19 +16,16 @@ function App() {
   
     
     <Navbar></Navbar>
-    <section>
       <Intro></Intro>
-    </section>
-    
-    <section>
+
     <QuickFacts></QuickFacts>
-    </section>
     
-    <Testimonials></Testimonials>
+    <Testimonials></Testimonials> 
     <Skills></Skills>
     <Personality></Personality>
     <ResumeOverview></ResumeOverview>
-    <Experiences></Experiences>
+    <Experiences></Experiences> 
+    {/* */}
 
     {/* <ResumeStory></ResumeStory> */}
       </>

@@ -6,25 +6,36 @@
   z-index: -100;
   opacity: 1;
   }
+
+  #greenSquareTableID{
+    opacity: 0;
+  }
   
+
 .headerPersonality{
  /* opacity: 1; */
   color:rgb(72, 255, 112) !important;
 }
-  
+
+#personalityContainerID{
+  display: none;
+}
 #personalityTableID{
   opacity: 0;
+  margin: auto;
+  /* margin-bottom: 1rem; */
+
 }
   .personalityTable{
     position: relative;
     width: 75vw;
-    margin:auto !;    
+    margin:auto !;
     border-spacing:0.5rem;
     border-collapse: collapse;
-    
+
     justify-content: space-between;
-    opacity: 0; 
-    
+    opacity: 0;
+
   }
 
   .personalityTable p{
@@ -33,14 +44,14 @@
     border-style: solid; */
     text-align: left;
     text-indent: auto;
-    
+
   }
 
   .columnHeaderTraits{
     width: 20%;
   }
-  
-  
+
+
   .personalityTraitsRow{
   background-color:var(--navy) !important;
   width: 100%;
@@ -57,7 +68,7 @@
 
   }
 
-  
+
   .personalityBaseTraits{
      position:relative;
      padding:0.3rem;
@@ -69,7 +80,7 @@
      font-size: 2.25vh !important;
      font-weight:700 !important;
      color:black;
-     opacity: 1; 
+     opacity: 1;
    }
 
    #attributeID{
@@ -91,7 +102,7 @@
    #attributeFourID{
     background-color: rgba(107, 255, 139, 0.85);
    }
-   
+
    #attributeFiveID{
     background-color: rgba(107, 255, 139, 0.90);
    }
@@ -103,7 +114,7 @@
    #attributeSevenID{
     background-color: rgba(107, 255, 139, 1.0);
    }
-   
+
 
   .personalityTraits{
    /* background-color: var(--primary-orange); */
@@ -117,7 +128,7 @@
     font-size: 2.25vh !important;
     font-weight:700 !important;
     color:rgb(83, 255, 120)  !important;
-    opacity: 1; 
+    opacity: 1;
 
 
   }
@@ -125,46 +136,45 @@
   .gradeSeven{
     background-color: rgba(107, 255, 139, 1.0);
     margin-right: 15%;
-    opacity: 0; 
+    opacity: 0;
 
   }
 
   .gradeSix{
     background-color: rgba(107, 255, 139, 0.95);
-    opacity: 0; 
+    opacity: 0;
 
   }
 
   .gradeFive{
     background-color: rgba(107, 255, 139, 0.90);
-    opacity: 0; 
+    opacity: 0;
 
   }
 
   .gradeFour{
     background-color: rgba(107, 255, 139, 0.85);
-    opacity: 0; 
+    opacity: 0;
 
   }
 
   .gradeThree{
     background-color: rgba(107, 255, 139, 0.80);
-    opacity: 0; 
+    opacity: 0;
 
   }
 
   .gradeTwo{
     background-color: rgba(107, 255, 139, 0.75);
-    opacity: 0; 
+    opacity: 0;
 
   }
 
-  
+
   .gradeOne{
     background-color: rgba(107, 255, 139, 0.70);
-    opacity: 0; 
+    opacity: 0;
 
   }
 
-  
-  
+

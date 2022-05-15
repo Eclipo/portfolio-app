@@ -17,19 +17,22 @@ class Skills extends Component {
         return(
         <div id="skills" className="sectionAnimation">
         <div className='sectionLine' style={{backgroundColor:'var(--primary-blue)'}}></div>
-        <div  className="header-wraper">
+        {/* <div  className="header-wraper">
             
-            <div className="main-info">
+            <div className="main-info"> */}
                 <h1  style={{color:"var(--primary-blue"}}>Skills</h1>
 
                 
                 {/* </div> */}
                 <PlayRefresh id='SkillAnimation' playBoolean={true}></PlayRefresh>
 
-                <IntroSkill></IntroSkill>
+                <div className='flexCenter'>
+                    <IntroSkill></IntroSkill>
+                </div>
+                
 
                 
-        <div className="skillContainer" style={{width:"100%", marginTop:"-15rem"}}>
+        <div className="skillContainer" id="skillContainerID" style={{width:"100%", marginTop:"-15rem"}}>
 
 
                     <table className="skillTable">
@@ -107,7 +110,7 @@ class Skills extends Component {
                         </tr>
 
                         <tr>
-                            <td> <div cclassName="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <p className="skill frontEndTheme" id="skillElemAndInter">AnimeJS</p></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
@@ -116,22 +119,8 @@ class Skills extends Component {
                    
                         <SkillDivider className="frontEndTheme"></SkillDivider>
 
-                        <tr>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill backEndTheme" id="skillNoobElemAndInter">C#</p></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                        </tr>
+              
 
-                        <tr>
-                            <td> <div cclassName="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill backEndTheme" id="skillElemAndInter">SQL</p></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                        </tr>
-    
                         <tr>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <p className="skill backEndTheme" id="skillElemAndNoob" >Powershell</p></td>
@@ -139,17 +128,27 @@ class Skills extends Component {
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
+
+                        <tr>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <p className="skill backEndTheme" id="skillElemAndInter">SQL</p></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                        </tr>
+
+                        <tr>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <p className="skill backEndTheme" id="skillNoobElemAndInter">C#</p></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}} ></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                        </tr>
+                   
                         
 
                         <SkillDivider className="backEndTheme"></SkillDivider>
 
-                        <tr>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <p className="skill rolesTheme" id="skillNoobElemAndInter">Developer</p></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
-                        </tr>
 
                         <tr>
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
@@ -167,29 +166,41 @@ class Skills extends Component {
                             <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
                         </tr>
 
+
+                        <tr>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <p className="skill rolesTheme" id="skillNoobElemAndInter">Developer</p></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                            <td> <div className="skillPointGround" style={{opacity:"0"}}></div></td>
+                        </tr>
                         <SkillDivider className="rolesTheme"></SkillDivider>
 
                     </tbody>
                 </table>
             </div>
 
-            <div className='container skill' style={{backgroundColor:'transparent'}}> 
+            <div className='skill container' id='duckContainerID'> 
              
-             <div className='flexCenter mt-2'>
+             <div className='row'>
+             <div className='flexCenter'>
+
+             
                 <Duck></Duck>
+                </div>
              </div>
              
 
-            <div className='col col-md-6 mx-auto mb-5'>
-                <p className='duckText w-100 p-3'>
+            <div className='row'>
+                <p className='duckText p-3'>
                     I'm a duck. <br></br>
                     I can't fly in the front-end like a hummingbird. <br></br>
                     I can't dash in the back-end like a dog doing agility.<br></br>
-                    I can't swim in the database like a deep-sea-fish.
-                    <br></br> <br></br>Quack! Quack!<br></br><br></br>
+                    I can't swim in the database like a fish.
+                    <br></br> <br></br>However...<br></br><br></br>
                     I can flap my wings around in the front-end.<br></br> 
                     I can waddle myself through the back-end. <br></br>
-                    I can paddle and even dive (for a short while!) in the database.
+                    I can even paddle in the database.
                     <br></br><br></br>  
                     In other words I am a full-stack developer. 
                     <br></br><br></br> 
@@ -199,12 +210,15 @@ class Skills extends Component {
                     However I will occassionally need the support from my senior colleagues of how I should 
                     solve a rather complex problem or facing a new technical concept. 
                     <br></br><br></br>
-                    Simply put I am a duck who is either just below or perfectly "Lagom" as we say in Swedish.
+                    But to be honest....<br></br> 
+                    I have absolutely no clue.<br></br>
+                    That's why the skills are all over the place.<br></br>
+                    I hope I am at least a good enough of a duck who is "Lagom" as we say in Swedish.
                 </p>
             </div>  
         </div>
-        </div>
-    </div>        
+        {/* </div>
+    </div>         */}
 </div>
 );
 }

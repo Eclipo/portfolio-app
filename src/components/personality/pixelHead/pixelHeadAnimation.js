@@ -1,6 +1,9 @@
 import anime from "animejs";
 
 export function pixelHeadAnimation () {
+    let elContainer = document.getElementById('greenSquareTableID');
+    elContainer.style.display='block';
+
     const playBrain = anime.timeline({
         loop:1,
         autoplay:false
@@ -9,7 +12,8 @@ export function pixelHeadAnimation () {
     opacity:0,
     easing:'linear',
     duration:50
-    }).add({
+    }).
+    add({
         targets:".greenSquare",
   
         backgroundColor:"rgb(240, 122, 185)",
@@ -50,6 +54,8 @@ export function pixelHeadAnimation () {
         opacity:[1,0],
 
         complete:function(){
+            let elContainer = document.getElementById('greenSquareTableID');
+            elContainer.style.display='none';
            anime({
                targets: '.personalityTraits',
                opacity:0,

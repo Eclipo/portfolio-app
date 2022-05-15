@@ -97,59 +97,12 @@
 
   }
 
-  @media (min-width: 20rem) {
-
-    #resumeOverview{
-      height:225rem;    
-    }
-  }
-
-  @media (min-width: 30rem) {
-
-    #resumeOverview{
-      height:200rem;    
-    }
-  }
-
-  @media (min-width: 40rem) {
-
-    #resumeOverview{
-      height:185rem;    
-    }
-  }
-
-  
-
-/* 
-  @media (min-width: 20rem) {
-
-    #resumeOverview{
-      height:145rem;    
-    }
-  }
-
-  @media (min-width:40rem){
-    #resumeOverview{
-      height:145rem;    
-    }
-  }
-
-  @media (min-width:60rem){
-    #resumeOverview{
-      height:calc(100vh*4.75);    
-    }
-  }
-
-  @media (min-width:80rem){
-    #resumeOverview{
-      height:145rem;  
-    }
-  } */
 
 
 
   /* CSS trick, markerar ut elementen  */
-/*    
+    
+  /*
      *{
       outline: 1px solid red;
     }       
@@ -168,7 +121,19 @@
     word-spacing:0.16em !important;
   }  */
   
-    /************************* MAIN CSS CLASSES *********************************/
+    
+  @media (min-width: 30rem) {
+
+    
+    .duckText{
+      width: 22.5rem !important;
+      
+    }
+  } 
+  
+  /************************* MAIN CSS CLASSES *********************************/
+
+
 
   .flexCenter{
     display: flex;
@@ -176,15 +141,22 @@
   }
   
   .sectionAnimation{
-    max-height: 100%;
+    /* max-height: 100%;  */
+    min-height: 100vh;
+    margin-bottom: 5rem !important;
     margin: auto;
     padding-bottom: auto;
     display: block;
     flex-wrap: wrap;
+ /* flex-direction: column; */
+    justify-content: center;
+        /*
+    align-items: center; */
+    text-align: center;
     
-    height: calc(
+    /* height: calc(
       50rem*1.25
-    );
+    ); */
   }
 
   .sectionLine{
@@ -194,18 +166,6 @@
   }
 
 
-  #skills{
-    height: 80rem;
-  }
-
-  #personality{
-    height:60rem;
-  }
-
-  
-
- 
-  
   
   /************************* NAVBAR *********************************/
 
@@ -234,6 +194,7 @@
     font-weight: 1000 !important;
     text-transform: uppercase !important;
     text-align: center !important;
+    margin-bottom: 1rem !important;
     
     
 
@@ -397,12 +358,12 @@
 
   .header-wraper {
   position:relative;
-  background-size:cover;
+  /* background-size:cover;
   background-position: center;
-  background-color: var(--navy);
-  display: block;
+  background-color: var(--navy); */
+  /* display: block; */
   
-  height: auto;
+  /* height: auto; */
   }
 
   
@@ -413,7 +374,6 @@
     top:0;
     left:0;
     right:0;
-    /* margin-top:4rem; */
     flex-direction: column;
     justify-content: center;
     align-items: center;

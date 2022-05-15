@@ -87,7 +87,14 @@ export class SkillAnimation{
           this.introSkillAnimation.add({
             targets:".skillContainer, .skill",
             opacity:0,
-            duration:10
+            duration:10,
+            complete:function(){
+              let elContainer = document.getElementById('skillContainerID');
+              elContainer.style.display='block';
+
+              elContainer = document.getElementById('duckContainerID');
+              elContainer.style.display='block';
+            }
           })
     
           this.introSkillAnimation.add({
@@ -355,11 +362,10 @@ export class SkillAnimation{
 
                                             anime({
                                               targets:'#skillNoobElemAndInter',
-                                              translateX:[0,moveLeftNoobinter,0,moveRightNoobinter,0],
+                                              translateX:[moveRightNoobinter,moveLeftNoobinter],
                                               easing:'easeInOutQuad',
                                               direction:'alternate',
-                                              duration:2500,
-                                              delay:anime.stagger(2000),
+                                              delay:anime.stagger(250),
                                               loop:true
                                             });
 

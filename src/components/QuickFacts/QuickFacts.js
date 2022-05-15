@@ -17,16 +17,9 @@ const QuickFacts = () => {
                         className="typed-text" 
                         strings={
                             [
-                            "Beautiful family",
-                            "Born in Sweden",
-                            "Kurdish origin from Turkey",
-                            "Fullstack in .Net", 
-                            "Bootstrap is like fastfood.", 
-                            "I use Bootstrap.",
-                            "Typescript for the win!",
-                            "Selfexplainatory code?",
-                            "What are you five?",
-                            "Just comment already..."
+                            "I have a beautiful family",
+                            "I'm born in Sweden with Kurdish origins from Turkey.",
+                            "I am a fullstack developer in .Net"
                             ]
                         }
                         fadeOut={20}
@@ -38,7 +31,7 @@ const QuickFacts = () => {
                     </Typed>
                 </div>
                     
-                <div className="flexCenter">
+                <div className="flexCenter h-25">
                     <EdipGuy></EdipGuy>
                 </div>
                     
