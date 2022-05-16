@@ -39,65 +39,14 @@
     --green-light-tint: rgba(100, 255, 219, 0.486);
     --pink: #f57dff;
     --blue: #57cbff;
-
-
     --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    
     --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    --fz-xxs: 12px;
-    --fz-xs: 13px;
-    --fz-sm: 14px;
-    --fz-md: 16px;
-    --fz-lg: 18px;
-    --fz-xl: 20px;
-    --fz-xxl: 22px;
-    --fz-heading: 32px;
-
-    /*Section sizes*/
-    --sectionHeightS: 75rem;
-    --sectionHeightM: 250VH;
-    --sectionHeightL: 135VH;
-
-
-   /* Intro sizes */
-    --introQuickAboutHeightS: 100VH;
-    --introQuickAboutHeightM: 105VH;
-    /* --introHeightL: 105VH; */
-    
-  /* Quick Facts sizes*/
-  --quickFactsHeightS: 100VH;
-  --quickFactsHeightM: 75VH;
-
-    /*ResumeOverview sizes*/
-    --resumeOverviewHeightXs: 175rem;
-    --resumeOverviewHeightS: 175rem;
-    --resumeOverviewHeightM: 160rem;
-    --resumeOverviewHeightL: 70VH;
-
-
-    /*Container Width */
-    --generalWidthXS:10VW;
-    --generalWidthS:10VW;
-    --generalWidthM:60VW;
-    --generalWidthL:10VW;
-
-    /*About me Carousel */
-    --scaleCarouselS:0.9;
-    --scaleCarouselM:0.8;
-    --scaleCarouselL:1;
-
-
-    /*Scale flag */
-    --scaleFlagS:2.1;
-    --scaleFlagM:0.75;
-    --scaleFlagL:1;
-
 
   }
 
 
+  /*************************CSS TOOLS *********************************/
 
 
   /* CSS trick, markerar ut elementen  */
@@ -127,36 +76,25 @@
     
     .duckText{
       width: 22.5rem !important;
-      
+    }
+
+    .techText{
+      width: 25rem !important;
+
     }
   } 
   
   /************************* MAIN CSS CLASSES *********************************/
 
-
-
-  .flexCenter{
-    display: flex;
-    justify-content: center;
-  }
-  
   .sectionAnimation{
-    /* max-height: 100%;  */
     min-height: 100vh;
     margin-bottom: 5rem !important;
     margin: auto;
     padding-bottom: auto;
     display: block;
     flex-wrap: wrap;
- /* flex-direction: column; */
     justify-content: center;
-        /*
-    align-items: center; */
     text-align: center;
-    
-    /* height: calc(
-      50rem*1.25
-    ); */
   }
 
   .sectionLine{
@@ -165,27 +103,78 @@
     margin-bottom: 1.5rem;
   }
 
-
+  .flexCenter{
+    display: flex;
+    justify-content: center;
+  }
   
-  /************************* NAVBAR *********************************/
 
-
-
+  .header-wraper {
+    position:relative;
+    }
+  
+    
+  
+    .main-info{
+      display:flex;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .playIcon{
+      width:5rem;
+      height: 5rem;
+      border-width: 0.5rem;
+      border-style: solid;
+      border-color: var(--light-slate);
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+  
+    .btnPlay{
+      width:4rem;
+      height:4rem;
+      background-color: transparent;
+      border-color:'var(--lightest-slate)' !important;
+      border-width: 0.25rem;
+      border-style: 'dashed' !important;
+      border-radius: 50%;
+      justify-content: start;
+      align-content: space-around;
+    }
+  
+  .iconPlay{
+    position: absolute;
+    margin: auto;
+    margin-top:-0.75rem;
+    margin-left: -0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    z-index: 100;
+  }
 
   .logo
   {
     height: 4rem;
-    /* margin-bottom: 0.05rem; */
     margin: auto !important;
     width:40rem !important;
-    /* transform: scale(1.1) !important; */
   }
+
+
+  /************************* HTML classes *********************************/
+
 
   body
   {
   font-family: 'Roboto', sans-serif;
   background-color: var(--navy) !important;
-
   }
 
   h1{
@@ -195,9 +184,6 @@
     text-transform: uppercase !important;
     text-align: center !important;
     margin-bottom: 1rem !important;
-    
-    
-
   }
 
   h2{
@@ -205,10 +191,6 @@
     font-weight: 800 !important;
     text-transform: uppercase !important;
     font-size: 4vh !important;
-
-    /* text-align: center !important;
-    justify-self: center !important; */
-
   }
 
   h3{
@@ -233,24 +215,20 @@
     font-weight: 625 !important;
     
     font-size:0.8375rem;
-     /* padding: 0.5rem; */
-    /* font-size:  medium !important; */
-
-    /* text-align: center !important; */
     vertical-align: middle !important;
     word-wrap: break-word;
     word-spacing: normal;
     ;
   }
 
+  /* font-size  paragraph for skill section */ 
   .skill{
     font-size:0.7rem;
     
   }
-  
 
   
-  /* ------------  Menu Links --------- */
+  /************************* NAVBAR *********************************/
 
   #customNav
   {
@@ -259,10 +237,7 @@
     width:12vh;
     height: 1vh;
     margin-top: 0.5vh;
-
   }
-  
-
   
   #navbarTogglerID {
     border-color: var(--slate);
@@ -274,29 +249,18 @@
   #navIconID{
   color:var(--primary-orange);
   width: 1rem;
- 
   }
-
-  /* #navbarTogglerID :hover{
-    border-color: var(--primary-greenBlue) ;
-  } */
-
-  
-
 
   nav
   {
     z-index:2;
     color:var(--primary-greenBlue);
     width: 25vw !important;
-    /* margin-right: 1vw !important; */
-    /* background-color: transparent; */
   }
 
   nav a.nav-link
   {
     font-size: 0.65rem;
-    /* margin-left: -2.75vw; */
     font-weight: bold;
     letter-spacing: normal;
     cursor: pointer;
@@ -307,7 +271,6 @@
   nav ul li
   {
     text-transform: uppercase;
-
   }
 
   .navbar-nav{
@@ -316,13 +279,11 @@
     border-color: var(--primary-orange);
     border-width: 0.1rem;
     border-style: dashed;
-
   }
+
   .navbar-nav > li > a
   {
-
     color:var(--primary-orange) !important;
-
   }
 
   .navbar-brand
@@ -330,15 +291,12 @@
     max-width:17.25rem;
     padding:0 i !important;
     height:6rem im !important;
-
   }
 
   .navbar-nav > li > a.active, .navbar-nav > li > a:hover
   {
     border-bottom: 0.1875rem solid var(--slate) !important;
     color:var(--lightest-slate) !important;
-
-
   }
 
   .navbar-nav > li > a:focus
@@ -346,203 +304,3 @@
     border-bottom: 0.1875rem solid #724e0c !important;
     color:var(--lightest-slate) !important;
   }
-
-  /** PARTICLES JS **/
-  .tsparticles-canvas-el
-  {
-    position:absolute;
-    height:10vh;
-    width:100vw;
-    z-index:1;
-  }
-
-  .header-wraper {
-  position:relative;
-  /* background-size:cover;
-  background-position: center;
-  background-color: var(--navy); */
-  /* display: block; */
-  
-  /* height: auto; */
-  }
-
-  
-
-  .main-info{
-    display:flex;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  /* .main-info {
-    color:var(--primary-orange);
-    font-weight: 800;
-    top:0;
-    left:0;
-    right:0;
-    font-style: var(--font-sans);
-  } */
-
-  /* .main-info h2{
-    color:var(--primary-green);
-    font-weight: 600;
-
-  } */
-
-
-  @media(max-width: 768px) {
-    /* .main-info h1 {
-      font-size:3rem !important;
-    } */
-    .typed-text {
-      font-size:2rem !important;
-    }
-
-    .navbar-brand{
-      width:7rem;
-    }
-  }
-
- 
-
-
-
-
-
-
-  .App {
-    text-align: center;
-  }
-
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-
-  .App-link {
-    color: #61dafb;
-  }
-
-
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  @media(max-width:768px){
-    .particles-canvas{
-      display:none;
-    }
-  }
-  /************************ TESTIMONIALS *********************************/
-  
-
-  /* .testimonials h1 {
-    color: var(--primary-orange);
-    font-weight: 800;
-    padding: 3rem 0;
-    text-transform: uppercase;
-    margin-bottom: -5rem;
-  } */
-
-  
-  .ml11 {
-    font-weight: 70;
-    font-size: 1rem;
-    opacity: 1;
-  }
-
-  .ml11 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    width: 60%;
-    padding-top: 0.1em;
-    padding-right: 0.05em;
-    padding-bottom: 0.15em;
-    opacity: 1;
-  }
-
-  .ml11 .line {
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 3px;
-    background-color: #fff;
-    transform-origin: 0 50%;
-  }
-
-  .ml11 .line1 {
-    top: 0;
-    left: 0;
-    height:1rem;
-  }
-
-  .letter {
-    height: 0.5rem;
-    margin:auto;
-    width:50rem;
-    font-family: "verdana";
-    color: lightgreen;
-    opacity: 0;
-  }
-
-  .playIcon{
-    width:5rem;
-    height: 5rem;
-    border-width: 0.5rem;
-    border-style: solid;
-    border-color: var(--light-slate);
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-
-  .btnPlay{
-    width:4rem;
-    height:4rem;
-    background-color: transparent;
-    border-color:'var(--lightest-slate)' !important;
-    border-width: 0.25rem;
-    border-style: 'dashed' !important;
-    border-radius: 50%;
-    justify-content: start;
-    align-content: space-around;
-  }
-
-.iconPlay{
-  position: absolute;
-  margin: auto;
-  margin-top:-0.75rem;
-  margin-left: -0.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: block;
-  z-index: 100;
-}

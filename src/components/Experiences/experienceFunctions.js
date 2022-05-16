@@ -104,8 +104,8 @@ export const animate = (inputID)=>{
                                                 period.innerText='2020-02 - Present';
                                                 system.innerText='Full-stack application';
 
-                                                descOneEl.innerText="Currently active within the fintech industry where I mainly operate as a front-end developer.";
-                                                descTwoEl.innerText = "I am heavily involved within Angular where I have implemented forms, guards and overall improvements in the userinterface's mobile responsiveness.In the future I will also work with back-end.";
+                                                descOneEl.innerText="Currently active within the fintech industry as a full-stack developer with focus on the front-end. We are building an awesome application.";
+                                                descTwoEl.innerText = "Major tech is Angular combined with Bootstrap.   I have implemented forms, guards and increased mobile responsiveness. I have also worked a little with C#.";
                                                 descThreeEl.innerText = '';
                                                 descFourEl.innerText = '';
                                                 liThree.style.display='none';

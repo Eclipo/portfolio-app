@@ -52,9 +52,9 @@
   } */
 
 @media (min-width: 40rem) {
-  .expTable {
+  /* .expTable {
     justify-content: center;
-  }
+  } */
   #stockholm_sql {
     width: 75%;
   }
@@ -283,10 +283,6 @@ font-size: 1.1rem; */
   height: min-content;
   width: fit-content;
   position: relative;
-  /* font-size: vh !important; */
-  /* font-family: var(--font-mono); 
-  font-weight: 600;
-  font-size: 0.95rem; */
   text-align: left;
   word-break: keep-all;
   border-width: 1rem;
@@ -296,23 +292,11 @@ font-size: 1.1rem; */
   color: var(--primary-light-green);
 }
 
-.header4Tech {
-  color: var(--primary-purple);
-
-  width: fit-content;
-  position: relative;
-  /* font-family: var(--font-mono); 
-  font-weight: 550;
-  font-size: 0.85rem; */
-  text-align: left;
-  word-break: keep-all;
-  border-width: 1rem;
-}
 
 .header3TechUnderLine {
   background-color: var(--primary-purple);
   height: 0.5rem;
-  width: 15rem;
+  /* width: 15rem; */
   border-color: black;
   border-width: 0.2vw;
   border-style: solid;
@@ -422,12 +406,18 @@ ul {
   display: none;
 }
 #fintech_angular {
-  width: 100%;
+  width: 75%;
+}
+
+#fintech_css{
+  max-width: 35%;
+  padding:0.25rem;
 }
 
 #fintech_csharp {
-  width: 0%;
-  display: none;
+  width: min-content;
+  padding: 0.25rem;
+  
 }
 
 #falu_sql {

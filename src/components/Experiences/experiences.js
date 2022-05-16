@@ -132,7 +132,7 @@ class Experiences extends Component {
             </div>
 
             <div className="container expTable expInfo mb-2" id="_container">
-              <div className="container expInfo" id="_periodSystem">
+              <div className="row expInfo" id="_periodSystem">
                 <div className="row">
                   <h4 className="header3Tech">Employer:</h4>
 
@@ -176,42 +176,15 @@ class Experiences extends Component {
                     style={{ color: "var(--primary-light-green)" }}
                   ></h4>
                 </span>
+                <div className="techUnderLine mt-2 mb-3"></div>
+
               </div>
 
-              <div className="techText">
-                <ul className="">
-                  <li className="row">
-                    <p className="li_icon">▹</p>
-                    <p className="col-md-auto" id="_descOne"></p>
-                  </li>
-                  <br></br>
+              <div className="row" id="_periodSystem">
+              <h2 className="headerTech justify-content-start">0%</h2>
+                <h2 className="headerTech mx-auto">Tech</h2>
+                <h2 className="headerTech justify-content-end">100%</h2>
 
-                  <li className="row">
-                    <p className="li_icon" id="_liTwo">
-                      ▹
-                    </p>
-                    <p className="col-md-auto" id="_descTwo"></p>
-                  </li>
-                  <br></br>
-
-                  <li className="row" id="_liThree">
-                    <p className="li_icon" id="_liThreeIcon">
-                      ▹
-                    </p>
-                    <p className="col-md-auto" id="_descThree"></p>
-                  </li>
-                  <br></br>
-
-                  <li className="row" id="_liFour">
-                    <p className="li_icon">▹</p>
-                    <p className="col" id="_descFour"></p>
-                  </li>
-                  <br></br>
-                </ul>
-              </div>
-              <div className="col">
-                <h2 className="row headerTech mx-auto">Techtime</h2>
-                <div className="techUnderLine"></div>
                 {/* <p className='techUnderLine'></p> */}
 
                 <div className="techSkillContainer" id="stockholm_tech">
@@ -227,12 +200,14 @@ class Experiences extends Component {
                 </div>
 
                 <div className="techSkillContainer" id="fintech_tech">
-                  <div className="techRow" id="fintech_sql">
-                    <h4 className="techSkill">MS SQL</h4>
-                  </div>
+            
                   <div className="techRow" id="fintech_csharp">
                     <h4 className="techSkill">C#</h4>
                   </div>
+                  <div className="techRow" id="fintech_css">
+                    <h4 className="techSkill">CSS</h4>
+                  </div>
+
                   <div className="techRow" id="fintech_angular">
                     <h4 className="techSkill">Angular</h4>
                   </div>
@@ -267,9 +242,43 @@ class Experiences extends Component {
                     <h4 className="techSkill">C#</h4>
                   </div>
                 </div>
+                <div className="techUnderLine mt-2 mb-3"></div>
+              </div>
+
+              <div className="techText">
+                <ul className="">
+                  <li className="row">
+                    <p className="li_icon">▹</p>
+                    <p className="col-md-auto" id="_descOne"></p>
+                  </li>
+                  <br></br>
+
+                  <li className="row">
+                    <p className="li_icon" id="_liTwo">
+                      ▹
+                    </p>
+                    <p className="col-md-auto" id="_descTwo"></p>
+                  </li>
+                  <br></br>
+
+                  <li className="row" id="_liThree">
+                    <p className="li_icon" id="_liThreeIcon">
+                      ▹
+                    </p>
+                    <p className="col-md-auto" id="_descThree"></p>
+                  </li>
+                  <br></br>
+
+                  <li className="row" id="_liFour">
+                    <p className="li_icon">▹</p>
+                    <p className="col" id="_descFour"></p>
+                  </li>
+                  <br></br>
+                </ul>
+              </div>
+             
               </div>
             </div>
-          </div>
     );
   }
 }
