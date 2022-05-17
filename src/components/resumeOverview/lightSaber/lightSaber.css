@@ -8,8 +8,8 @@
     /* position: absolute; */
     border-collapse: collapse;
     z-index: -1;
-    margin: auto;
-    
+    justify-content: space-between;
+    display: block;
     margin-bottom: 1rem;
     transform: scale(0.9);
 }

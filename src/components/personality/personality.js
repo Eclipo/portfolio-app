@@ -24,7 +24,7 @@ class Personality extends Component  {
                     <h1 style={{color:"var(--primary-green)"}}>Personality</h1>
                     
                     <PlayRefresh id='PersonalityAnimation' playBoolean={true}></PlayRefresh>
-                    <div id="greenSquareTableID" className='flexCenter'>
+                    <div id="greenSquareTableID" className="flexCenter">
                         <PixelHead></PixelHead>
                     </div>
                     <div className='flexCenter' id="personalityContainerID">

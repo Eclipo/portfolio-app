@@ -5,7 +5,6 @@ export class QuickAboutAnimation{
 
 
     constructor(){
-       
         this.edipAndFamillyAnimation = anime.timeline({
             loop:true, 
             autoplay:false,
@@ -81,7 +80,7 @@ export class QuickAboutAnimation{
 
           this.bounceFlag.add({
             targets:'.flag',
-            scale:[1.9,2]
+            scale:[1.4,1.5]
           });
 
           this.basketAnimation = anime.timeline({

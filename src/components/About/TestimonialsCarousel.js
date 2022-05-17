@@ -44,7 +44,7 @@ const TestimonialsCarousel = () => {
         <div className="containerSlide container"  style={{background:"var(--primary-lightDarkGrey)",height:"26.5rem"}}>
        
               <div className="mt-4">
-                  <img className="flag"  src={flags} alt="Swedish, kurdish and turkish flag" />     
+                  <img className="flag" src={flags}  alt="Swedish, kurdish and turkish flag" />     
               </div>
 
            

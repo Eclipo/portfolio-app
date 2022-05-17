@@ -18,7 +18,8 @@ const QuickFacts = () => {
                         strings={
                             [
                             "I have a beautiful family",
-                            "I'm born in Sweden with Kurdish origins from Turkey.",
+                            "I'm born in Sweden",
+                            "I with Kurdish origins from Turkey.",
                             "I am a fullstack developer in .Net"
                             ]
                         }
@@ -31,7 +32,7 @@ const QuickFacts = () => {
                     </Typed>
                 </div>
                     
-                <div className="flexCenter h-25">
+                <div className="flexCenter">
                     <EdipGuy></EdipGuy>
                 </div>
                     

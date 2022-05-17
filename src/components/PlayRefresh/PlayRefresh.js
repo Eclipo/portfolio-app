@@ -29,8 +29,8 @@ class  PlayRefresh extends Component {
     
     render(){
         return (
-            <div className='mx-auto'>
-            <div className='row'>
+            <div className='justify-content-center mt-2 mb-2'>
+            <div className='flexCenter d-block'>
             
                 <button 
                     id={this.refreshID}
@@ -47,7 +47,7 @@ class  PlayRefresh extends Component {
                 </button>
                 </div>
            
-                <div className='row'>
+                <div className='flexCenter d-block'>
 
                 <button 
                     id={this.playID} 

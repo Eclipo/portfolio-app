@@ -19,9 +19,9 @@ const ResumeOverview = () => {
           </div>
           
 
-          <div id="resumeContainerID" style={{ width: "100%" }}>
+          <div id="resumeContainerID" >
             <table
-              className="resumeTable .table-striped  .table-responsive"
+              className="resumeTable"
               style={{ backgroundColor: "var(--navy)" }}
             >
               <tr>
@@ -36,21 +36,21 @@ const ResumeOverview = () => {
                     <table className="experienceTable">
                       <tr>
                         <td>
-                          <div className="expOverviewPeriod expOverviewPeriod-dotted p-1">
+                          <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                             <h3>Swedish</h3>
                             <div className="header3UnderLine"></div>
                             <p className="m-auto p-1">Native</p>
                           </div>
                         </td>
                         <td>
-                          <div className="expOverviewPeriod expOverviewPeriod-dotted p-1">
+                          <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                             <h3>English</h3>
                             <div className="header3UnderLine"></div>
                             <p className="m-auto p-1">Good</p>
                           </div>
                         </td>
                         <td>
-                          <div className="expOverviewPeriod expOverviewPeriod-dotted p-1">
+                          <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                             <h3>Turkish</h3>
                             <div className="header3UnderLine"></div>
                             <p className="m-auto p-1">Basic</p>
@@ -125,10 +125,11 @@ const ResumeOverview = () => {
                 </div>
 
                 <table className="experienceTable">
+
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1 mx-auto">2019-12 - Present</p>
+                        <p className="m-1 mx-auto">Present<br></br>2019-12</p>
                         <p className="m-1 mx-auto">CGI Sverige AB</p>
                       </td>
 
@@ -170,7 +171,7 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1 mx-auto">2019-09 - 2019-09</p>
+                        <p className="m-1 mx-auto">2019-09<br></br>2019-09</p>
                         <p className="m-1 mx-auto">Nexer AB</p>
                       </td>
 
@@ -196,7 +197,7 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1 mx-auto">2015-09 - 2019-08</p>
+                        <p className="m-1 mx-auto">2019-08<br></br>2015-09</p>
                         <p className="m-1 mx-auto">CGI Sverige AB</p>
                       </td>
 
@@ -231,7 +232,7 @@ const ResumeOverview = () => {
                           The lifechanging decision
                         </h4>
                         <p className="expHeader-reverseColor mx-auto w-75" style={{textAlign:"left"}}>
-                          I made a vow to never be unemployed again. <br></br>For three years I studied 50% at Midsweden University while working 100% at CGI Sverige AB.
+                          I made a vow to never be unemployed again. For three years I studied 50% at Midsweden University while working 100% at CGI Sverige AB.
                         </p>
                       </td>
                     </div>
@@ -240,7 +241,7 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1 mx-auto">2013-08 - 2015-01</p>
+                        <p className="m-1 mx-auto">2015-01<br></br>2013-08</p>
                         <p className="m-1 mx-auto">Software Innovation AB</p>
                       </td>
 
@@ -265,7 +266,7 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1 mx-auto">2013-05 - 2013-08</p>
+                        <p className="m-1 mx-auto">2013-08<br></br>2013-05</p>
                         <p className="m-1 mx-auto">Teleperformance Nordic AB</p>
                       </td>
 
@@ -300,7 +301,7 @@ const ResumeOverview = () => {
                             The injust despair
                         </h4>
                         <p className="expHeader-reverseColor mx-auto w-75" style={{textAlign:"left"}}>
-                          I was sent away for new adventures despite my efforts.<br></br>Long story short I was welcomed back at Teleperformance and for that I am very grateful.
+                          I was sent away for new adventures despite my best efforts.Long story short I was welcomed back at Teleperformance and for that I am very grateful.
                         </p>
                       </td>
                     </div>
@@ -311,7 +312,7 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1 mx-auto">2012-09 - 2013-02</p>
+                        <p className="m-1 mx-auto">2013-02<br></br>2012-09</p>
                         <p className="m-1 mx-auto">KMD AB</p>
                       </td>
 
@@ -354,7 +355,7 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1 mx-auto">2011-08 - 2011-09</p>
+                        <p className="m-1 mx-auto">2011-09<br></br>2011-08</p>
                         <p className="m-1 mx-auto">Edip Sarac AB</p>
                       </td>
 
@@ -381,7 +382,7 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1 mx-auto">2010-06 - 2010-08</p>
+                        <p className="m-1 mx-auto">2010-08<br></br>2010-06</p>
                         <p className="m-1 mx-auto">TeliaSonera AB</p>
                       </td>
 
@@ -406,7 +407,7 @@ const ResumeOverview = () => {
                   <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
-                        <p className="m-1 mx-auto">2007-11 - 2009-04</p>
+                        <p className="m-1 mx-auto">2009-04<br></br>2007-11</p>
                         <p className="m-1 mx-auto">Teleperformance Nordic AB</p>
                       </td>
 
@@ -433,7 +434,6 @@ const ResumeOverview = () => {
             </table>
           </div>
         </div>
-
   );
 };
 

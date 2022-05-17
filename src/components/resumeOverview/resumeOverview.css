@@ -4,21 +4,24 @@
 }  
 
 #resumeOverview{
-  width: 95vw;
-  margin: auto;
+  display: block;
+  width: 100%;
+  justify-content: center;
 }
 
 #resumeContainerID{
   display: none;
-  width: 100%;
+  /* width: 95%; */
+  
 }
 .resumeTable{
     background:var(--primary-red);
     /* position: absolute; */
-    width: 100%;
+    width: 95%;
+    margin: auto;
     border-spacing:0;
     opacity: 0;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 
     
   }
@@ -42,9 +45,6 @@
 
   .resumeTable p {
   color: var(--primary-red);
-  /* font-size: 1.5vh !important; */
-
-  /* font-size: 2.75vh; */
 }
 
 
@@ -178,7 +178,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
       border-radius: 18px;
       padding:0.25rem;
       color: var(--primary-red);
-      width:95%;
+      min-width:95%;
       margin-bottom: 2vh !important;
       margin:auto;
     }

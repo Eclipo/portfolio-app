@@ -2,6 +2,12 @@
   --size-divisorBasket: 1.5;
 }
 
+@media (max-width: 20rem) {
+  :root {
+    --size-divisorBasket: 3.25 !important;
+  }
+}
+
   @media (min-width: 20rem) {
     :root {
       --size-divisorBasket: 2.75 !important;

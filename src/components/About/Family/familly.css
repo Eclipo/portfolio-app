@@ -5,6 +5,13 @@
 
 }
 
+@media (max-width: 19.9rem) {
+  :root {
+      --size-familyDivisor: 6;
+  }
+
+}
+
 @media (min-width: 20rem) {
   :root {
     --size-familyDivisor: 4;
