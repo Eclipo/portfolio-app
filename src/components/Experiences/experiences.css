@@ -1,14 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-/* .css-ptiqhd-MuiSvgIcon-root {
-  transform: scale(2);
-} */
-@media (min-width: 20rem) {
-  :root {
-  }
-  .experienceContainer {
-    width: 95vw;
-  }
 
+/************************* MEDIA QUERIES *********************************/
+
+@media (min-width: 20rem) {
   #stockholm_sql {
     width: 95%;
   }
@@ -21,7 +15,7 @@
   }
 
   #KnucklesContainerID {
-    display: flex; 
+    display: flex;
     transform: scale(0.6);
     margin-top: -12rem;
   }
@@ -41,20 +35,10 @@
 
   #KnucklesContainerID {
     display: flex;
-    /* margin-top: -18rem;
-    transform: scale(0.5); */
   }
-
 }
 
-/* .techText ul li::before {
-    left:5vw;
-  } */
-
 @media (min-width: 40rem) {
-  /* .expTable {
-    justify-content: center;
-  } */
   #stockholm_sql {
     width: 75%;
   }
@@ -73,16 +57,7 @@
   }
 }
 
-
 @media (min-width: 60rem) {
-  .experienceContainer {
-    width: 60vw;
-  }
-
-  .techText {
-    width: 50vw;
-  }
-
   #stockholm_sql {
     width: 75%;
   }
@@ -98,15 +73,10 @@
     display: flex;
     margin-top: -15rem;
     transform: scale(0.45);
-
   }
-
 }
 
 @media (min-width: 80rem) {
-  .experienceContainer {
-    width: 50vw;
-  }
   #stockholm_sql {
     width: 75%;
   }
@@ -122,11 +92,14 @@
     display: block;
     margin-top: -30vh;
     transform: scale(0.5);
-
   }
-  /* .techText ul li::before {
-    left:0.2vw;
-  } */
+}
+/************************* EXP Menu *********************************/
+#KnucklesContainerID {
+  display: inline-flex;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
 }
 
 #expMenu {
@@ -136,6 +109,7 @@
   border-style: solid;
   padding: 1%;
   background-color: var(--dark-navy);
+  border-radius: 18px;
   position: relative;
   margin-top: 15rem;
   width: 90vw;
@@ -147,43 +121,30 @@
   width: 90%;
   margin: auto;
   position: relative;
-  /* table-layout: fixed; */
-  /* border-radius: 18px; */
   border-color: var(---navy);
   border-width: 0 0 0.25rem;
   border-style: solid;
   border-collapse: separate;
+  border-radius: 0 0 18px 18px;
 }
 
-/* .expTable h4:first-of-type {
-  float: left !important;
+.scrollArrow {
+  vertical-align: middle !important;
 }
-
-.expTable h4:last-of-type {
-  float: right !important;
-} */
 
 .techCategory {
-  /* margin-left: 1rem !important;
-    margin-right: 1rem !important; */
   margin: auto;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
   width: fit-content;
   padding: 1rem;
-  /* height: 5rem; */
   color: var(--primary-purple);
   border-color: var(--primary-light-green);
   border-width: 0.1rem;
   border-style: solid; /* font-weight: 700; */
-
   opacity: 1;
-
   background-color: var(--navy);
   display: flex;
-  /* margin-left: 0.25rem;
-    margin-right: 0.25rem; */
-  /* */
 }
 
 .scrollLine {
@@ -201,33 +162,8 @@
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
 }
-.expSelect {
-  width: 15vw !important;
-  height: 0.5rem !important;
-  margin: auto !important;
-  border-radius: 10px !important;
-  opacity: 1;
-  background-color: var(--primary-light-green);
-  /* width: 4rem; */
-  /* margin-left: 1vw; */
-}
 
-/* 
-...........................................
-*/
-
-.experienceContainer {
-  margin: auto;
-  margin-top: -38rem;
-  opacity: 0;
-}
-/* 
-#experiencesID h1{
-  color:var(--primary-purple) !important;
-  position: relative;
-  }
-  */
-
+/************************* EXP Information *********************************/
 #_container {
   opacity: 0;
   background-color: var(--darkest-navy);
@@ -244,36 +180,19 @@
 
 .headerTech {
   color: var(--primary-purple) !important;
-  /* font-weight: 750;
-  font-size: 1.1rem; */
   position: relative;
   width: fit-content;
   text-align: left;
   word-break: normal;
   margin-bottom: 1rem;
-  /* font-family: var(--font-sans);  */
-}
-
-.techHeader {
-  color: var(--primary-light-green);
-  /* font-weight: 750;
-  font-size: 1.1rem; */
-  position: relative;
-  text-align: center;
-  margin: auto;
-  /* font-family: var(--font-sans);  */
 }
 
 .link {
   color: #64ffda;
-  /* font-weight: 750;
-font-size: 1.1rem; */
   position: relative;
   width: fit-content;
   text-align: left;
   word-break: normal;
-  /* font-family: var(--font-sans);  */
-
   opacity: 1;
 }
 
@@ -292,23 +211,6 @@ font-size: 1.1rem; */
   color: var(--primary-light-green);
 }
 
-
-.header3TechUnderLine {
-  background-color: var(--primary-purple);
-  height: 0.5rem;
-  /* width: 15rem; */
-  border-color: black;
-  border-width: 0.2vw;
-  border-style: solid;
-}
-
-.techTextExperience {
-  overflow: hidden;
-  display: inline-block;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  text-align: justify;
-}
 .techRow {
   border-radius: 18px;
   margin-top: 0.5rem;
@@ -320,12 +222,11 @@ font-size: 1.1rem; */
   height: fit-content;
   opacity: 0;
 }
+
 .techSkill {
   color: var(--primary-light-green);
   margin: auto;
   padding: 1%;
-  /* font-weight: 500;
-  font-size: 0.75rem; */
   height: fit-content;
 }
 
@@ -353,15 +254,10 @@ font-size: 1.1rem; */
 }
 
 .techText {
-  /* font-size: 0.9rem;
-  font-weight: 100; */
   color: var(--light-slate);
   text-align: left;
   white-space: normal !important;
-
   width: auto;
-  /* position: absolute; */
-  /* font: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif; */
 }
 
 .textText p span {
@@ -371,9 +267,11 @@ font-size: 1.1rem; */
 .textTextIcon {
   color: var(--primary-light-green);
 }
+
 ul {
   list-style: none;
 }
+
 .li_icon {
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -382,24 +280,13 @@ ul {
   color: var(--primary-light-green);
   position: relative;
   opacity: 0;
-  /* font: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif; */
 }
-
-/* .techText ul li::before {
-  content: "▹";
-  position:absolute;
-  color: var(--primary-light-green);
-  font: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-}
-*, ::before, ::after {
-  box-sizing: inherit;
-  list-style-type:  "▹";
-} */
 
 .techSkillContainer {
   display: none;
   opacity: 0;
 }
+/************************* Tech skills *********************************/
 
 #fintech_sql {
   width: 0%;
@@ -409,20 +296,20 @@ ul {
   width: 75%;
 }
 
-#fintech_css{
+#fintech_css {
   max-width: 35%;
-  padding:0.25rem;
+  padding: 0.25rem;
 }
 
 #fintech_csharp {
   width: min-content;
   padding: 0.25rem;
-  
 }
 
 #falu_sql {
   width: 50%;
 }
+
 #falu_javascript {
   width: 50%;
 }
@@ -430,126 +317,7 @@ ul {
 #falu_htmlcss {
   width: 50%;
 }
+
 #falu_csharp {
   width: 50%;
-}
-
-.expContainer {
-  background-color: var(--dark-navy);
-  border-color: var(--primary-purple);
-  border-width: 0.16rem;
-  border-style: solid;
-  border-radius: 18px;
-  color: var(--primary-purple);
-  width: 90%;
-  height: fit-content;
-  margin: auto;
-  margin-top: 15rem;
-  opacity: 0;
-  z-index: 0;
-  position: absolute;
-  padding: 1%;
-}
-
-#KnucklesContainerID {
-  /* margin-top: -2rem !important; */
-  /* z-index: 1; */
-  /* height: min-content; */
-  display: inline-flex;
-
-  width: 100%;
-  /* margin: auto; */
-  
-  /* justify-self: center !important; */
-  /* margin: auto !important; */
-
-  opacity: 0;
-  z-index: -1;
-}
-
-#expCategoryMenu {
-}
-
-.scrollArrow {
-  vertical-align: middle !important;
-}
-
-.expBtnCol {
-  width: 10vh;
-  height: auto;
-  justify-content: center;
-  justify-items: auto;
-}
-
-.expBtnOuter {
-  width: 5vh;
-  height: 5vh;
-  border-radius: 18px;
-  border-width: 0.5vh;
-  border-style: solid;
-  border-color: var(--primary-purple);
-  margin-top: 2vh;
-}
-
-.expBtnInner {
-  width: 2vh;
-  height: 2vh;
-  border-radius: 18px;
-
-  background-color: var(--primary-purple);
-  margin: auto;
-  margin-top: 1vh;
-}
-.expRadio {
-  border-color: var(--primary-purple);
-  border-width: 10%;
-  border-style: solid;
-  border-radius: 18px;
-  color: var(--primary-orange);
-  width: 5vh;
-  height: 5vh;
-  margin: 20%;
-  background-color: black;
-  /* justify-content: center;
-    align-items: center; */
-}
-
-.expInnerRadio {
-  background-color: var(--primary-purple);
-  border-color: var(--primary-purple);
-  margin: auto;
-  border-radius: 18px;
-  width: 3vh;
-  height: 3vh;
-  justify-self: center !important;
-  justify-content: flex-start;
-}
-
-.stagger-visualizer {
-  justify-content: center;
-  align-items: center;
-  width: 17rem;
-  height: 17rem;
-  margin-top: 1rem;
-}
-
-/* .stagger-visualizer div { */
-/*position: absolute;*/
-/* width: 1rem;
-    height: 1rem;
-    border: 1px solid #FFF;
-    background-color: #FFF;
-  } */
-
-.btnSquare {
-  width: 1rem;
-  height: 1rem;
-  /* transform: scale(0.1); */
-  border: 1px solid black;
-  background-color: black;
-  border-color: transparent;
-}
-
-#knucklesContainer {
-  opacity: 0;
 }
