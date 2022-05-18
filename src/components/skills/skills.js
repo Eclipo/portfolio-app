@@ -195,12 +195,12 @@ class Skills extends Component {
                 <p className='duckText p-3'>
                     I'm a duck. <br></br>
                     I can't fly in the front-end like a hummingbird. <br></br>
-                    I can't dash in the back-end like a dog doing agility.<br></br>
+                    I can't dash in the back-end like a greyhound.<br></br>
                     I can't swim in the database like a fish.
                     <br></br> <br></br>However...<br></br><br></br>
                     I can flap my wings around in the front-end.<br></br> 
                     I can waddle myself through the back-end. <br></br>
-                    I can even paddle in the database.
+                    I can paddle in the database.
                     <br></br><br></br>  
                     In other words I am a full-stack developer. 
                     <br></br><br></br> 
@@ -208,12 +208,12 @@ class Skills extends Component {
                     So how good am I?<br></br>
                     If I am famillar with the application and its code then I am somewhat self-going.
                     However I will occassionally need the support from my senior colleagues of how I should 
-                    solve a rather complex problem or facing a new technical concept. 
+                    solve a complex problem or facing a new technical concept. 
                     <br></br><br></br>
                     But to be honest....<br></br> 
-                    I have absolutely no clue.<br></br>
+                    It's quite difficult to know how good I actually am. <br></br>
                     That's why the skills are all over the place.<br></br>
-                    I hope I am at least a good enough of a duck who is "Lagom" as we say in Swedish.
+                    I hope I am at least good enough of being a duck who is "Lagom" as we say in Swedish.
                 </p>
             </div>  
         </div>

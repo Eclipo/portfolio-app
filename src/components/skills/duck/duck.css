@@ -1,17 +1,23 @@
 ﻿    :root {
-        --size-edipDivisor: 1.5;
+        --size-duckDivisor: 1.5;
     }
-
+    @media (max-width: 19.9rem) {
+        :root {
+            --size-duckDivisor: 6;
+        }
+      
+      }
+      
 
     @media (min-width: 20rem) {
         :root {
-            --size-edipDivisor: 4;
+            --size-duckDivisor: 4;
         }
 
     }
     @media (min-width: 25rem) {
         :root {
-            --size-edipDivisor: 3.75;
+            --size-duckDivisor: 3.75;
         }
     }
 
@@ -24,7 +30,7 @@
     }
 
     #duckID{
-        transform:scale(calc(2/ var( --size-edipDivisor))) ;
+        transform:scale(calc(2/ var( --size-duckDivisor))) ;
         position: absolute;
             margin-top: -5rem;
 
@@ -48,18 +54,6 @@
         z-index: -1;
     }
 
-    /* .duckBorder-circle {
-        width: 24.9375rem;
-        height: 24.9375rem;
-        border-radius: 100%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -13.75rem;
-        margin-top: -13.75rem;
-        border: .625rem solid var(--primary-blue);
-
-    } */
 
     .duckHead{
         width: 12.25rem;
@@ -100,17 +94,6 @@
         z-index: 0
     }
 
-    /* .duckMouth {
-        width: 4.125rem;
-        height: 2.0625rem;
-        border-radius: 0 0 2.0625rem 2.0625rem;
-        background: white;
-        position: absolute;
-        top: 9.375rem;
-        left: 50%;
-        margin-left: -2.0625rem;
-
-    } */
 
     .duckEye{
         width: 1.25rem;
@@ -203,34 +186,3 @@
 
     }
 
-    .triangle-light {
-        width: 25rem;
-        height: 37.5rem;
-        background: #FFFFFF;
-        opacity: 0.2;
-        position: absolute;
-        right: -65%;
-    }
-
-    .triangle-dark {
-        width: 25rem;
-        height: 37.5rem;
-        background: #000000;
-        opacity: 0.2;
-        position: absolute;
-        left: -60%;
-        top: 30%;
-
-        transform: translate(-12.5rem,0rem);
-    }
-
-    .shirt-text {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        color: white;
-        position: relative;
-        top: -25rem;
-        font-size: 3.125rem;
-        display: inline-block;
-
-    }

@@ -10,6 +10,8 @@ export const Duck = () => {
                 <div className="wrapper" >
                  
                     <div className="duckEdipCircleBackground-circle">
+     
+
                         <div className="duckBody" id="duckBodyStart"></div>        
                     </div>
             

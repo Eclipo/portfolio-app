@@ -26,14 +26,14 @@ const TestimonialsCarousel = () => {
       showThumbs={false}
       showStatus={false}
       autoPlay={true}
-      interval={5000}
+      interval={7500}
     >
 
       
       <>
         <div className="containerSlide pt-4" style={{background:"var(--primary-darker-green)",height:"26.5rem"}}>
           <Family></Family>
-           <div style={{display:"inline-block",marginTop:"15rem"}}>
+           <div style={{display:"inline-block",marginTop:"14rem"}}>
             <h2>Family</h2>
             <p>Me, Erika, our son Noah and baby girl Laleh.</p>
            </div> 
@@ -50,7 +50,7 @@ const TestimonialsCarousel = () => {
            
    
             <div style={{display:"block position-absolute",marginTop:"3rem"}}>
-            <h2>Nationality <br></br>&<br></br> Origin</h2>
+            <h2>Origin</h2>
             <p>I am born in Sweden and I have Kurdish origin from Turkey.</p>
           </div>
         </div>

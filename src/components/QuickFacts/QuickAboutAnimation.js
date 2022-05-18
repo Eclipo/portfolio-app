@@ -3,17 +3,24 @@ import { stagger } from "animejs";
 
 export class QuickAboutAnimation{
 
+  
 
     constructor(){
+      var windowHeight = window.outerHeight;
+      var windowWidht = window.outerWidth;
+      var windowArea = windowHeight * windowWidht;
+      var flagSize = windowArea * 0.000005;
+      var flagSizeIncrease = flagSize+0.3;
+      if(windowWidht>1200){
+        flagSize=1.9;
+        flagSizeIncrease=2;
+      }
+   
         this.edipAndFamillyAnimation = anime.timeline({
             loop:true, 
             autoplay:false,
             easing:'easeInOutQuad',
-
             direction:'alternate',
-            // duration:950
-            // delay:50,
-            // endDelay:10
           });
 
           
@@ -80,7 +87,7 @@ export class QuickAboutAnimation{
 
           this.bounceFlag.add({
             targets:'.flag',
-            scale:[1.4,1.5]
+            scale:[flagSize,flagSizeIncrease]
           });
 
           this.basketAnimation = anime.timeline({

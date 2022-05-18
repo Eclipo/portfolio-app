@@ -2,7 +2,6 @@
 
 :root {
   --size-familyDivisor: 1.5 ;
-
 }
 
 @media (max-width: 19.9rem) {
@@ -567,7 +566,7 @@
     opacity: 1;
   }
 
-  .triangle-light{
+  /* .triangle-light{
     width: 25rem;
     height: 37.5rem;
     background: #FFFFFF;
@@ -584,7 +583,7 @@
     position: absolute;
     left: -60%;
     top: 30%;
-  }
+  } */
 
   .music-note{
     position: absolute;

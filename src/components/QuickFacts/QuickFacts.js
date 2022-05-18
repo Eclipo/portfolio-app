@@ -19,7 +19,7 @@ const QuickFacts = () => {
                             [
                             "I have a beautiful family",
                             "I'm born in Sweden",
-                            "I with Kurdish origins from Turkey.",
+                            "I have Kurdish origins from Turkey.",
                             "I am a fullstack developer in .Net"
                             ]
                         }
