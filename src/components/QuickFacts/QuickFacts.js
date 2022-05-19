@@ -19,8 +19,8 @@ const QuickFacts = () => {
                             [
                             "I have a beautiful family",
                             "I'm born in Sweden",
-                            "I have Kurdish origins from Turkey.",
-                            "I am a fullstack developer in .Net"
+                            "I have Kurdish origin from Turkey.",
+                            "I am a fullstack developer combining Angular and .Net"
                             ]
                         }
                         fadeOut={20}

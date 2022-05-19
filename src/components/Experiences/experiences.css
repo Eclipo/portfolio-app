@@ -52,7 +52,7 @@
 
   #KnucklesContainerID {
     display: flex;
-    margin-top: -30vh;
+    margin-top: -13rem;
     transform: scale(0.45);
   }
 }
@@ -159,8 +159,8 @@
   width: 12rem;
   opacity: 0;
   margin: auto;
-  margin-top: 0.5vh;
-  margin-bottom: 0.5vh;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 /************************* EXP Information *********************************/

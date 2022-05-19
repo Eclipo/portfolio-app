@@ -39,21 +39,21 @@ const ResumeOverview = () => {
                           <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                             <h3>Swedish</h3>
                             <div className="header3UnderLine"></div>
-                            <p className="m-auto p-1">Native</p>
+                            <h4 className="m-auto p-1">Native</h4>
                           </div>
                         </td>
                         <td>
                           <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                             <h3>English</h3>
                             <div className="header3UnderLine"></div>
-                            <p className="m-auto p-1">Good</p>
+                            <h4 className="m-auto p-1">Good</h4>
                           </div>
                         </td>
                         <td>
                           <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                             <h3>Turkish</h3>
                             <div className="header3UnderLine"></div>
-                            <p className="m-auto p-1">Basic</p>
+                            <h4 className="m-auto p-1">Basic</h4>
                           </div>
                         </td>
                       </tr>
@@ -62,7 +62,7 @@ const ResumeOverview = () => {
                           <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                             <h3>Kurdish, French and Mandarin</h3>
                             <div className="header3UnderLine"></div>
-                            <p className="m-auto p-1">Almost nothing</p>
+                            <h4 className="m-auto p-1">Almost nothing</h4>
                           </div>
                         </td>
                       </tr>
@@ -94,7 +94,7 @@ const ResumeOverview = () => {
                               Higher education diploma
                             </h4>
                             <div className="header3UnderLine mt-1"></div>
-                            <p className="m-auto p-1"> Computer science</p>
+                            <h4 className="m-auto p-1"> Computer science</h4>
                           </div>
                         </td>
 
@@ -106,9 +106,9 @@ const ResumeOverview = () => {
                             <h4 className="m-auto p-1">Bachelor degree</h4>
                             <div className="header3UnderLine mt-1"></div>
 
-                            <p className="m-auto p-1">
+                            <h4 className="m-auto p-1">
                               Business administration
-                            </p>
+                            </h4>
                           </div>
                         </td>
                       </tr>
@@ -267,7 +267,7 @@ const ResumeOverview = () => {
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
                         <p className="m-1 mx-auto">2013-08<br></br>2013-05</p>
-                        <p className="m-1 mx-auto">Teleperformance Nordic AB</p>
+                        <p className="m-1 mx-auto">TP Sweden AB</p>
                       </td>
 
                       <td width="5%">
@@ -301,7 +301,7 @@ const ResumeOverview = () => {
                             The injust despair
                         </h4>
                         <p className="expHeader-reverseColor mx-auto w-75" style={{textAlign:"left"}}>
-                          I was sent away for new adventures despite my best efforts.Long story short I was welcomed back at Teleperformance and for that I am very grateful.
+                          I was sent away for new adventures despite my best efforts.Long story short I was welcomed back at TP Sweden (Teleperformance) and for that I am very grateful.
                         </p>
                       </td>
                     </div>
@@ -408,7 +408,7 @@ const ResumeOverview = () => {
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
                       <td width="30%">
                         <p className="m-1 mx-auto">2009-04<br></br>2007-11</p>
-                        <p className="m-1 mx-auto">Teleperformance Nordic AB</p>
+                        <p className="m-1 mx-auto">TP Sweden AB</p>
                       </td>
 
                       <td width="5%">
