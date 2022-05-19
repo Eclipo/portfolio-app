@@ -53,11 +53,11 @@ class Skills extends Component {
                      <table className="skillTable" >
                      <thead >
                         <tr>
-                        <td> <h3 className="skillPointGround" id="Beginner" style={{marginBottom:'2%'}}>Noob</h3></td>
-                        <td> <h3 className="skillPointGround" id="Elementary" style={{marginBottom:'2%'}}>Basic</h3></td>
-                        <td> <h3 className="skillPointGround" id="Intermediate" style={{marginBottom:'2%'}}>Lagom</h3></td>
-                        <td> <h3 className="skillPointGround" id="Advanced" style={{marginBottom:'2%'}}>Pro</h3></td>
-                        <td> <h3 className="skillPointGround" id="Expert" style={{marginBottom:'2%'}}>Expert</h3></td>
+                        <td> <h3 className="skillPointGround m-1 p-1" id="Beginner" style={{marginBottom:'2%'}}>Noob</h3></td>
+                        <td> <h3 className="skillPointGround m-1 p-1" id="Elementary" style={{marginBottom:'2%'}}>Basic</h3></td>
+                        <td> <h3 className="skillPointGround m-1 p-1" id="Intermediate" style={{marginBottom:'2%'}}>Lagom</h3></td>
+                        <td> <h3 className="skillPointGround m-1 p-1" id="Advanced" style={{marginBottom:'2%'}}>Pro</h3></td>
+                        <td> <h3 className="skillPointGround " id="Expert" style={{marginBottom:'2%'}}>Expert</h3></td>
                     
                         </tr>
                      </thead>

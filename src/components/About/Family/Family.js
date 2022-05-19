@@ -5,7 +5,7 @@ import './familly.css';
 export const Family = () => {
     return (
       
-          <table id="tableFamilyID" style={{marginTop:"-2rem",marginLeft:"0.10rem",marginRight:"0.10rem"}}>
+          <table id="tableFamilyID">
           <tr>
             <td >
              {/* Edip */}

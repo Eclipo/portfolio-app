@@ -31,9 +31,12 @@ const TestimonialsCarousel = () => {
 
       
       <>
-        <div className="containerSlide pt-4" style={{background:"var(--primary-darker-green)",height:"26.5rem"}}>
+        <div className="containerSlide PT-4" style={{background:"var(--primary-darker-green)",height:"26.5rem"}}>
+          <div className="d-block" style={{marginTop:'-11rem'}}>
           <Family></Family>
-           <div style={{display:"inline-block",marginTop:"14rem"}}>
+          </div>
+          
+           <div className="d-block " style={{marginTop:'-14rem'}}>
             <h2>Family</h2>
             <p>Me, Erika, our son Noah and baby girl Laleh.</p>
            </div> 
@@ -51,15 +54,15 @@ const TestimonialsCarousel = () => {
    
             <div style={{display:"block position-absolute",marginTop:"3rem"}}>
             <h2>Origin</h2>
-            <p>I am born in Sweden and I have Kurdish origin from Turkey.</p>
+            <p>I am born in Sweden with Kurdish origin from Turkey.</p>
           </div>
         </div>
       </>
 
 
       <>
-        <div className="containerSlide container"  style={{background:"var(--primary-darker-blue)", height:"26.5rem"}}>
-            <img className="cityHall"  src={stadshus} alt="Stockholm Stadshus" style={{transform:"scale(1.5)", marginTop:"5rem"}}/>     
+        <div className="containerSlide pt-4"  style={{background:"var(--primary-darker-blue)", height:"26.5rem"}}>
+            <img className="cityHall"  src={stadshus} alt="Stockholm Stadshus"/>     
 
           <div style={{marginTop:"3rem", marginBottom:"1.15rem", height:"10rem"}}>
             <h2>Stockholm</h2>
@@ -70,7 +73,7 @@ const TestimonialsCarousel = () => {
     
     <>
 
-      <div className="containerSlide container basketContainer" style={{background:"var(--primary-darker-blue)", height:"26.5rem",position:'absolute'}} >
+      <div className="containerSlide container basketContainer position-absolute" style={{background:"var(--primary-darker-blue)", height:"26.5rem"}} >
         
       <img  src={cloud} alt="moln" style={{transform:"scale(0.25)",padding:'0', left:"0", top:'-5vh',position:"absolute"}}/>     
 
