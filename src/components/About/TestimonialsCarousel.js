@@ -24,7 +24,7 @@ const TestimonialsCarousel = () => {
       showThumbs={false}
       showStatus={false}
       autoPlay={true}
-      interval={7500}
+      interval={17500}
     >
       <>
         <div

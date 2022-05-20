@@ -15,7 +15,6 @@ export const Family = () => {
             <div className="head" id="headOne">
               <div
                 className="hair-main"
-                style={{ background: "#3f2a14" }}
               ></div>
 
               <div className="face" id="faceID">
@@ -33,11 +32,6 @@ export const Family = () => {
                   <div className="eye" id="eye_two">
                     <div className="laleh-kawai"></div>
                   </div>
-                  <div
-                    className="sad-eye"
-                    id="sadeyeTwo"
-                    style={{ opacity: "0" }}
-                  ></div>
                 </div>
 
                 <div className="mouth"></div>
@@ -70,7 +64,7 @@ export const Family = () => {
                 <div className="nose erika-nose"></div>
                 <div className="eye-shadow" id="left">
                   <div className="eyebrow erika-brow"></div>
-                  <div className="eye erika-eye">
+                  <div className="eye erika-eye" id="erikaEyeLeftID">
                     <div className="laleh-kawai"></div>
                   </div>
                 </div>
@@ -105,13 +99,20 @@ export const Family = () => {
             </div>
 
             <div className="head noah-head">
-              <div className="noah-hair"></div>
+            
+            <div className="noah-hair-top">
+            
+            <div className="noah-hair-side-right"></div>
+            </div>
+            <div className="noah-hair-side-left"></div>
+            
+              
 
               <div className="face noah-face">
                 <div className="nose noah-nose"></div>
                 <div className="eye-shadow" id="left">
                   <div className="eyebrow erika-brow"></div>
-                  <div className="eye noah-eye">
+                  <div className="eye noah-eye" id="noahEyeLeftID"> 
                     <div className="laleh-kawai"></div>
                   </div>
                 </div>
@@ -141,7 +142,7 @@ export const Family = () => {
                 <div className="nose laleh-nose"></div>
                 <div className="eye-shadow" id="left">
                   <div className="eyebrow erika-brow"></div>
-                  <div className="eye noah-eye ">
+                  <div className="eye noah-eye" id="lalehEyeLeftID">
                     <div className="laleh-kawai"></div>
                   </div>
                 </div>
