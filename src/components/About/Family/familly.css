@@ -1,14 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 :root {
-  --size-familyDivisor: 1.5 ;
+  --size-familyDivisor: 1.5;
 }
 
 @media (max-width: 19.9rem) {
   :root {
-      --size-familyDivisor: 6;
+    --size-familyDivisor: 6;
   }
-
 }
 
 @media (min-width: 20rem) {
@@ -24,585 +23,442 @@
 }
 
 @media (min-width: 36rem) {
-:root {
-  --size-familyDivisor: 3.5;
-}
+  :root {
+    --size-familyDivisor: 3.5;
+  }
 }
 @media (min-width: 48rem) {
-:root {
-  --size-familyDivisor: 3;
-}
-}
-@media (min-width: 62rem) { 
-:root {
-  --size-familyDivisor: 2.75;
-}
-}
-@media (min-width: 75rem) { 
-:root {
-  --size-familyDivisor: 2.5;
-}
-}
-
-@media (min-width: 80rem) { 
   :root {
-    --size-familyDivisor:2.25;
+    --size-familyDivisor: 3;
   }
-
-
-
+}
+@media (min-width: 62rem) {
+  :root {
+    --size-familyDivisor: 2.75;
+  }
+}
+@media (min-width: 75rem) {
+  :root {
+    --size-familyDivisor: 2.5;
+  }
 }
 
-
-
-  #tableFamilyID
-  {
-      transform:scale(calc(1 / var(--size-familyDivisor))) ;
-      z-index:2;
-       border-spacing:5% 0%;
-       border-collapse: collapse;
-       /* margin-top: -2rem; */
-       /* margin: auto; */
-       /* position: absolute; */
-       /* margin-bottom: 1rem; */
+@media (min-width: 80rem) {
+  :root {
+    --size-familyDivisor: 2.25;
   }
-  
-  #tableFamilyID td{
-    border-spacing: 0;
-  }
-
-  
-  .wrapper{
-    display: grid !important;
-    vertical-align: middle;
-    position: relative;
-  }
-  .background-circle{
-    width: 25rem;
-    height: 25rem;
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    background: #95B3BF;
-    position: relative;
-  }
-  
-  .border-circle{
-    width: 24.9375rem;
-    height: 24.9375rem;
-    border-radius: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -13.75rem;
-    margin-top: -13.75rem;  
-    border: .625rem solid #FCB040;
-  }
-
-  .edip-body{
-    width: 17.8125rem;
-    font-family: 'Open Sans', sans-serif;
-    height: 37.5rem;
-    margin: 0 auto;
-    background: #222;
-    border-radius: 6.25rem;
-    position: relative;
-    top: 12.5rem;
-  }
-
-  .erika-body{
-    width: 17.8125rem;
-    font-family: 'Open Sans', sans-serif;
-    height: 37.5rem;
-    margin: 0 auto;
-    background: #6d40de;
-    border-radius: 6.25rem;
-    position: relative;
-    top: 12.5rem;
-  }
-
-
-  .laleh-body{
-    width:21rem;
-    font-family: 'Open Sans', sans-serif;
-    height: 15.5rem;
-    margin: 0 auto;
-    background: #FFE4BE;
-    border-radius: 6.25rem;
-    position: relative;
-    top: 7.5rem;
-  }
-
-  .laleh-diaper {
-    width: 21rem;
-    height: 7rem;
-    background: #FFFFFF;
-    top:8rem;
-    margin: auto;
-    border-radius: .3125rem 0rem 3.375rem 3.375rem;
-
-    
-    position: relative;
-    z-index: 2;
 }
 
-.laleh-foot-left{
+#tableFamilyID {
+  transform: scale(calc(1 / var(--size-familyDivisor)));
+  z-index: 2;
+  border-spacing: 5% 0%;
+  border-collapse: collapse;
+}
+
+#tableFamilyID td {
+  border-spacing: 0;
+}
+
+.wrapper {
+  display: grid !important;
+  vertical-align: middle;
+  position: relative;
+}
+.background-circle {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #95b3bf;
+  position: relative;
+}
+
+.edip-body {
+  width: 17.8125rem;
+  font-family: "Open Sans", sans-serif;
+  height: 37.5rem;
+  margin: 0 auto;
+  background: #222;
+  border-radius: 6.25rem;
+  position: relative;
+  top: 12.5rem;
+}
+
+.erika-body {
+  width: 17.8125rem;
+  font-family: "Open Sans", sans-serif;
+  height: 37.5rem;
+  margin: 0 auto;
+  background: #6d40de;
+  border-radius: 6.25rem;
+  position: relative;
+  top: 12.5rem;
+}
+
+.laleh-body {
+  width: 21rem;
+  font-family: "Open Sans", sans-serif;
+  height: 15.5rem;
+  margin: 0 auto;
+  background: #ffe4be;
+  border-radius: 6.25rem;
+  position: relative;
+  top: 7.5rem;
+}
+
+.laleh-diaper {
+  width: 21rem;
+  height: 7rem;
+  background: #ffffff;
+  top: 8rem;
+  margin: auto;
+  border-radius: 0.3125rem 0rem 3.375rem 3.375rem;
+
+  position: relative;
+  z-index: 2;
+}
+
+.laleh-foot-left {
   width: 2rem;
   height: 2rem;
   border-radius: 18px;
   margin: auto;
- 
+
   position: relative;
-  background-color: var(--primary-lightPink);  
+  background-color: var(--primary-lightPink);
 }
 
-  .laleh-np{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 18px;
-    margin: auto;
-   
-    position: relative;
-    background-color: #654921;  
+.laleh-np {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 18px;
+  margin: auto;
+
+  position: relative;
+  background-color: #654921;
 }
 
-.left-1{
+.left-1 {
   top: 5rem;
 
-  right:4rem;
+  right: 4rem;
 }
-.right-2{
+.right-2 {
   top: 4.5rem;
 
-  left:4rem;
+  left: 4rem;
 }
-  
-  .noah-body{
-    width: 12.8125rem;
-    font-family: 'Open Sans', sans-serif;
-    height: 8.5rem;
-    margin: 0 auto;
-    background: #ff6e4a;
-    border-radius: 6.25rem;
-    position: relative;
-    top: 10.5rem;
-  }
-  
-  .head{
-    width: 12.25rem;
-    height: 16.25rem;
-    border-radius: 3.125rem;
-    background: #FFE4BE;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -13.125rem;
-    margin-left: -6.125rem;
-  }
-  
-  .erika-head
-  {
-    border-radius: 6.25rem;
-    width: 11.875rem;
-    height: 13.75rem;
-  }  
 
-   
-  .noah-head
-  {
-    border-radius: 6.25rem;
-    width: 11.875rem;
-    height: 12rem;
-  } 
-  
-  .laleh-hair {
-    background-color: transparent;
-    position: absolute;
-    
-    left: 44%;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    border-left: 0.625rem solid #79412e;
-    border-bottom: 0.3125rem solid #79412e;
-    z-index: 200;
-  }
+.noah-body {
+  width: 12.8125rem;
+  font-family: "Open Sans", sans-serif;
+  height: 8.5rem;
+  margin: 0 auto;
+  background: #ff6e4a;
+  border-radius: 6.25rem;
+  position: relative;
+  top: 10.5rem;
+}
 
-  .laleh-head
-  {
-    border-radius: 6.25rem;
-    width: 15.875rem;
-    height: 15rem;
-    background-color:#FFE4BE;
-    margin-left:-7.5rem;  
-    border-color: #eeacff;
-    border-bottom-style: solid;
-    border-width: 0.25rem;  
-    z-index: 100;
+.head {
+  width: 12.25rem;
+  height: 16.25rem;
+  border-radius: 3.125rem;
+  background: #ffe4be;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13.125rem;
+  margin-left: -6.125rem;
+}
 
-  } 
+.erika-head {
+  border-radius: 6.25rem;
+  width: 11.875rem;
+  height: 13.75rem;
+}
 
-  .cheek {
-    background-color: #FFB7BF;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-  }
-  
-  .cheek-left {
-    left: 5%;
-  }
-  
-  .cheek-right {
-    right:5%;
-  }
-  .laleh-kawai{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    margin:auto;
-    margin-top: 0.15rem;
-    background-color: white;
+.noah-head {
+  border-radius: 6.25rem;
+  width: 11.875rem;
+  height: 12rem;
+}
 
-  }
+.laleh-hair {
+  background-color: transparent;
+  position: absolute;
 
-  .hair-main{
-    width:13.75rem;
-    height: 8.5625rem;
-    background: #3f2a14;
-    border-radius: 3.375rem 3.375rem 0rem 0rem;
-    margin-left: -0.75rem;
-    margin-top: -0.625rem;
-    position: relative;
-    z-index: 2;
-  }
+  left: 44%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border-left: 0.625rem solid #79412e;
+  border-bottom: 0.3125rem solid #79412e;
+  z-index: 200;
+}
 
-.hair-ball
-{
+.laleh-head {
+  border-radius: 6.25rem;
+  width: 15.875rem;
+  height: 15rem;
+  background-color: #ffe4be;
+  margin-left: -7.5rem;
+  border-color: #eeacff;
+  border-bottom-style: solid;
+  border-width: 0.25rem;
+  z-index: 100;
+}
+
+.cheek {
+  background-color: #ffb7bf;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.cheek-left {
+  left: 5%;
+}
+
+.cheek-right {
+  right: 5%;
+}
+.laleh-kawai {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 0.15rem;
+  background-color: white;
+}
+
+.hair-main {
+  width: 13.75rem;
+  height: 8.5625rem;
+  background: #3f2a14;
+  border-radius: 3.375rem 3.375rem 0rem 0rem;
+  margin-left: -0.75rem;
+  margin-top: -0.625rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hair-ball {
   height: 4.0625rem;
   width: 4.0625rem;
   background: #f7f383;
-  margin-left:35%;
-  margin-top: -5rem; 
-  top:50;
+  margin-left: 35%;
+  margin-top: -5rem;
+  top: 50;
 
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-
- 
-
-
 }
 
-.hair-band
-{
-    height: .625rem;
-    width: 1.875rem;
-    background: #000000;
-    margin-top:-26.25rem;
-  
-    display: inline-block;
-      position: relative;
+.erika-hair {
+  background: #f7f383;
 
-      
-}
-  .erika-hair
-  {
-    background: #f7f383;
-
-    width:15.625rem;
-    height: 8.5625rem;
-    border-radius: 4.0625rem 4.0625rem 3.75rem 3.75rem;
-    margin-left: -1.875rem;
-    margin-top: 0.5rem;
-    position: absolute;
-    z-index: 2;
-  }
-
-  .noah-hair
-  {
-    background: #edd88a;
-
-    width:15.625rem;
-    height: 11rem !important;
-    border-radius: 3.375rem 3.375rem 0rem 0rem;
-    margin-left: -1.875rem;
-    margin-top: -0.625rem;
-    position: relative;
-    z-index: 2;
-  }
-
-  
-
-
-
-
- .beard {
-        width: 13.75rem;
-        height: 8.5625rem;
-        background: #3f2a14;
-        border-radius: .3125rem 0rem 3.375rem 3.375rem;
-        margin-left: -6%;
-        margin-top: -0.125rem;
-        position: relative;
-        z-index: 2;
-    }
- 
-  
-  .hair-bottom{
-    width: 3.375rem;
-    height: 3.125rem;
-    opacity: 0;
-    border-bottom-left-radius: 1.5625rem;
-    background: #fcee8d;
-    position: relative;
-    top: -1.25rem;
-    left: 50%;
-    transform: translateX(-1.6875rem);
-  }
-
-  .aboutMeText
-{
-  font-family: 'Courier New', Courier, monospace
-}
-  .face{
-    width: 11.25rem;
-    height: 8.5625rem;
-    border-radius: 3rem 3rem 0 0;
-    background: #FFE4BE;
-    position: absolute;
-    top: 2.5rem;
-    left: .5rem;
-    z-index:3;
-  }
-
-  .erika-face
-  {
-    width: 11.25rem;
-    border-radius: 4rem 4rem 4rem 4rem;
-    left:.3125rem;
-    margin-left: 2%;
-  }
-
-  .noah-face
-  {
-    width: 11.25rem;
-    height:8rem;
-    border-radius: 4rem 4rem 4rem 4rem;
-    left:.3125rem;
-  }
-  .laleh-face
-  {
-    width: 11.25rem;
-    height:12rem;
-    border-radius: 4rem 4rem 4rem 4rem;
-    background-color: #FFE4BE;
-    left: 2rem;
-  }
-
-
-  .nose{
-    background: #E7AB57;
-    width: 1.25rem;
-    height: 2.8125rem;
-    border-radius: 2.125rem;
-    position: absolute;
-    left: 50%;
-    top: 5rem;
-    margin-left: -0.625rem;
- 
-    z-index: 4;
+  width: 15.625rem;
+  height: 8.5625rem;
+  border-radius: 4.0625rem 4.0625rem 3.75rem 3.75rem;
+  margin-left: -1.875rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  z-index: 2;
 }
 
-.erika-nose
-{
-    background: #ff8597 !important;;
-    height: .625rem !important;;
-    border-radius: 0rem 0rem 2.125rem 2.125rem !important;;
-    margin-top: 1.25rem !important;;
+.noah-hair {
+  background: #edd88a;
 
+  width: 15.625rem;
+  height: 11rem !important;
+  border-radius: 3.375rem 3.375rem 0rem 0rem;
+  margin-left: -1.875rem;
+  margin-top: -0.625rem;
+  position: relative;
+  z-index: 2;
 }
 
-.noah-nose
-{
-    background: #ff8597 !important;
-    height: .625rem !important;;
-    border-radius: 0rem 0rem 2.125rem 2.125rem !important;;
-    margin-top: 1.25rem !important;;
+.beard {
+  width: 13.75rem;
+  height: 8.5625rem;
+  background: #3f2a14;
+  border-radius: 0.3125rem 0rem 3.375rem 3.375rem;
+  margin-left: -6%;
+  margin-top: -0.125rem;
+  position: relative;
+  z-index: 2;
 }
 
-.laleh-nose
-{
-    background: #fc3956 !important;
-    height: .9rem !important;;
-    border-radius: 0rem 0rem 2.125rem 2.125rem !important;;
-    margin-top: 0.75rem !important;;
+.face {
+  width: 11.25rem;
+  height: 8.5625rem;
+  border-radius: 3rem 3rem 0 0;
+  background: #ffe4be;
+  position: absolute;
+  top: 2.5rem;
+  left: 0.5rem;
+  z-index: 3;
 }
 
+.erika-face {
+  width: 11.25rem;
+  border-radius: 4rem 4rem 4rem 4rem;
+  left: 0.3125rem;
+  margin-left: 2%;
+}
 
-  .ear{
-    width: 1.5rem;
-    height: 2.1875rem;
-    background: #FFE4BE;
-    border-radius: .75rem;
-    position: absolute;
-    top: 7.25rem;
-  }
+.noah-face {
+  width: 11.25rem;
+  height: 8rem;
+  border-radius: 4rem 4rem 4rem 4rem;
+  left: 0.3125rem;
+}
+.laleh-face {
+  width: 11.25rem;
+  height: 12rem;
+  border-radius: 4rem 4rem 4rem 4rem;
+  background-color: #ffe4be;
+  left: 2rem;
+}
 
-  .mouth{
-    width: 4.125rem;
-    height: 2.0625rem;
-    border-radius: 0 0 2.0625rem 2.0625rem;
-    background: white;
-    position: absolute;
-    top: 9.375rem;
-    left: 50%;
-    margin-left: -2.0625rem;
-  }
+.nose {
+  background: #e7ab57;
+  width: 1.25rem;
+  height: 2.8125rem;
+  border-radius: 2.125rem;
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  margin-left: -0.625rem;
 
-  .erika-mouth
-  {
-    top: 7.5rem !important;
-    margin-left:-1.5625rem !important;
-    width: 3.125rem !important;
-    height: 1.25rem !important;
-  }
+  z-index: 4;
+}
 
-  .noah-mouth{
-    top: 7.5rem !important;
-    margin-left:-1.0625rem !important;
-    width: 2.125rem !important;
-    height: 0.85rem !important;
-  }
+.erika-nose {
+  background: #ff8597 !important;
+  height: 0.625rem !important;
+  border-radius: 0rem 0rem 2.125rem 2.125rem !important;
+  margin-top: 1.25rem !important;
+}
 
-  .laleh-mouth{
-    top: 7.5rem !important;
-    left:5.75rem;
-    width: 4rem !important;
-    height: 2rem !important;
-  }
+.noah-nose {
+  background: #ff8597 !important;
+  height: 0.625rem !important;
+  border-radius: 0rem 0rem 2.125rem 2.125rem !important;
+  margin-top: 1.25rem !important;
+}
 
-  .ear#left{
-    left: -0.75rem;
-  }
-  .ear#right{
-    right: -0.75rem;
-  }
-  .eye-shadow{
-    width:1.875rem;
-    height: .9375rem;
-    border-radius: 0 0 .9375rem .9375rem;
-    background:rgba(149,36,0,0.1);
-    position: absolute;
-    top: 4.375rem;
-  }
+.laleh-nose {
+  background: #fc3956 !important;
+  height: 0.9rem !important;
+  border-radius: 0rem 0rem 2.125rem 2.125rem !important;
+  margin-top: 0.75rem !important;
+}
 
-  .eye-shadow#left{
-    left: 2.1875rem;
-    z-index: 5;
-  }
-  .eye-shadow#right{
-    right: 2.1875rem;
-  }
-  .eyebrow{
-    width: 2.5rem;
-    height: .625rem;
-    background: #3f2a14;
-    position: absolute;
-    top: -2.1875rem;
-    left: 50%;
-    margin-left: -1.25rem;
-    opacity: 1;
-    
-  }
+.mouth {
+  width: 4.125rem;
+  height: 2.0625rem;
+  border-radius: 0 0 2.0625rem 2.0625rem;
+  background: white;
+  position: absolute;
+  top: 9.375rem;
+  left: 50%;
+  margin-left: -2.0625rem;
+}
 
-  .erika-brow
-  {
-    background: #877a5c !important;
-    
-  }
+.erika-mouth {
+  top: 7.5rem !important;
+  margin-left: -1.5625rem !important;
+  width: 3.125rem !important;
+  height: 1.25rem !important;
+}
 
-  .eye{
-    width: 1.25rem;
-    height: 1.75rem;
-    border-radius: .625rem;
-    background: #453116;
-    position: absolute;
-    top: -1.125rem;
-    left: 50%;
-    margin-left: -0.625rem;
-  }
+.noah-mouth {
+  top: 7.5rem !important;
+  margin-left: -1.0625rem !important;
+  width: 2.125rem !important;
+  height: 0.85rem !important;
+}
 
-  .erika-eye
-  {
-      background: #3f9ba9 !important;
-  }
+.laleh-mouth {
+  top: 7.5rem !important;
+  left: 5.75rem;
+  width: 4rem !important;
+  height: 2rem !important;
+}
 
-  .noah-eye
-  {
-      background: #2071b2 !important;
-  }
+.eye-shadow {
+  width: 1.875rem;
+  height: 0.9375rem;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  background: rgba(149, 36, 0, 0.1);
+  position: absolute;
+  top: 4.375rem;
+}
 
+.eye-shadow#left {
+  left: 2.1875rem;
+  z-index: 5;
+}
+.eye-shadow#right {
+  right: 2.1875rem;
+}
+.eyebrow {
+  width: 2.5rem;
+  height: 0.625rem;
+  background: #3f2a14;
+  position: absolute;
+  top: -2.1875rem;
+  left: 50%;
+  margin-left: -1.25rem;
+  opacity: 1;
+}
 
-  .shadow-wrapper{
-    width: 6.125rem;
-    height: 16.25rem;
-    position: absolute;
-    left: -0.5rem;
-    bottom: -5.25rem;
-    z-index: 4;
-  }
+.erika-brow {
+  background: #877a5c !important;
+}
 
-  .shadow{
-    width: 6.125rem;
-    height: 16.25rem;
-    border-radius: 3.125rem;
-    background: rgba(149,36,0,0.1);
-    position: absolute;
-    z-index: 4;
-    opacity: 1;
-  }
+.eye {
+  width: 1.25rem;
+  height: 1.75rem;
+  border-radius: 0.625rem;
+  background: #453116;
+  position: absolute;
+  top: -1.125rem;
+  left: 50%;
+  margin-left: -0.625rem;
+}
 
-  /* .triangle-light{
-    width: 25rem;
-    height: 37.5rem;
-    background: #FFFFFF;
-    opacity: 0.2;
-    position: absolute;
-    right: -65%;
-  }
+.erika-eye {
+  background: #3f9ba9 !important;
+}
 
-  .triangle-dark{
-    width: 25rem;
-    height: 37.5rem;
-    background: #000000;
-    opacity: 0.2;
-    position: absolute;
-    left: -60%;
-    top: 30%;
-  } */
+.noah-eye {
+  background: #2071b2 !important;
+}
 
-  .music-note{
-    position: absolute;
-    font-size: 9.375rem;
-    color: #FCB040;
-    width: .0625rem;
-    left: 50%;
-    opacity: 0;
-  }
-  
-  .shirt-text{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: white;
-    position: relative;
-    top: -18.75rem;
-    font-size: 3.125rem;
-    display: inline-block;
-  }
+.shadow-wrapper {
+  width: 6.125rem;
+  height: 16.25rem;
+  position: absolute;
+  left: -0.5rem;
+  bottom: -5.25rem;
+  z-index: 4;
+}
 
- 
+.shadow {
+  width: 6.125rem;
+  height: 16.25rem;
+  border-radius: 3.125rem;
+  background: rgba(149, 36, 0, 0.1);
+  position: absolute;
+  z-index: 4;
+  opacity: 1;
+}

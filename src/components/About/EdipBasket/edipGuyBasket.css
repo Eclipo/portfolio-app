@@ -49,7 +49,6 @@
 
 /*************************Avatar *********************************/
 
-
 /* ******** HEAD  ******** */
 
 #tableStartBasketGuyID {
@@ -173,7 +172,6 @@
   margin-top: -0.1rem;
 }
 
-
 /* ******** UPPER BODY ******** */
 
 .bodyBasket {
@@ -187,7 +185,7 @@
 }
 
 .left-shoulder {
-  background: #FFE4BE;
+  background: #ffe4be;
   width: 5rem;
   height: 8rem;
   border-top-left-radius: 70%;
@@ -197,8 +195,8 @@
   float: left !important;
 }
 
-.left-arm{
-  background: #FFE4BE;
+.left-arm {
+  background: #ffe4be;
   width: 15rem;
   height: 4rem;
   margin-left: -13rem;
@@ -207,7 +205,7 @@
 }
 
 .right-shoulder {
-  background: #FFE4BE;
+  background: #ffe4be;
   width: 5rem;
   height: 8rem;
   margin-top: -8rem;
@@ -215,8 +213,8 @@
   border-bottom-left-radius: 65%;
   float: right;
 }
-.right-arm{
-  background: #FFE4BE;
+.right-arm {
+  background: #ffe4be;
   width: 15rem;
   height: 4rem;
   margin-left: 15rem;
@@ -243,7 +241,6 @@
   position: Absolute;
 }
 
-
 /* ******** LOWER BODY ******** */
 
 .lowerBody {
@@ -255,20 +252,17 @@
   border-bottom-left-radius: 25%;
   border-bottom-right-radius: 25%;
   z-index: -1;
-
 }
 
-.loweBodyLeft{
+.loweBodyLeft {
   margin-left: 1rem;
-  margin-top: 3rem; 
+  margin-top: 3rem;
 }
 
-#lowerBodyRight{
-  margin-left:9rem;
-  margin-top: -8rem; 
+#lowerBodyRight {
+  margin-left: 9rem;
+  margin-top: -8rem;
   z-index: -1;
-
-
 }
 .leftLegBasket {
   background: #ffe4be;
@@ -277,7 +271,7 @@
   position: absolute;
   margin-top: 8.5rem;
   margin-left: 1rem;
-  z-index: -1 ;
+  z-index: -1;
 }
 
 .rightLegBasket {
@@ -310,9 +304,7 @@
   margin-top: 8rem;
 }
 
-
-
-  /************************* Environment *********************************/
+/************************* Environment *********************************/
 
 .basketRim {
   transform: scale(calc(8 / var(--size-divisorBasket)));
@@ -326,11 +318,4 @@
   margin-left: -25rem;
   margin-top: -4rem;
   transform: scale(1.1);
-  
-
-
-  }
-
-
-
-
+}

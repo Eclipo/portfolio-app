@@ -11,10 +11,7 @@ export const EdipBasket = () => {
           <tr>
             <td>
               <div className="headBasket">
-                <div
-                  className="hairMainBasket"
-                  
-                ></div>
+                <div className="hairMainBasket"></div>
                 <div className="faceBasket">
                   <div className="nose" id="noseID"></div>
 
@@ -40,33 +37,17 @@ export const EdipBasket = () => {
           <tr>
             <td>
               <div className="bodyBasket">
-                <div
-                  className="left-shoulder"
-               
-                >
-                  <div
-                    className="left-arm"
-                  
-                  >
+                <div className="left-shoulder">
+                  <div className="left-arm">
                     <div className="leftHandBasket"></div>
                   </div>
                 </div>
                 <div className="basketBall">
-                  <img
-                    src={basketBall}
-                    className="basketBall"
-                  
-                  ></img>
+                  <img src={basketBall} className="basketBall"></img>
                 </div>
 
-                <div
-                  className="right-shoulder"
-                 
-                ></div>
-                <div
-                  className="right-arm"
-                 
-                >
+                <div className="right-shoulder"></div>
+                <div className="right-arm">
                   <div className="rightHandBasket"></div>
                 </div>
               </div>
@@ -89,7 +70,7 @@ export const EdipBasket = () => {
           </tr>
         </td>
         <td>
-          <div className="basketRim" style={{zIndex:'-1'}}>
+          <div className="basketRim" style={{ zIndex: "-1" }}>
             <img src={basketRim}></img>
           </div>
         </td>

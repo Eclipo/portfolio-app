@@ -1,111 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-.resumeHeaderOne{
-  color:var(--primary-red) !important;
-}  
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.resumeHeaderOne {
+  color: var(--primary-red) !important;
+}
 
-#resumeOverview{
+#resumeOverview {
   display: block;
   width: 100%;
   justify-content: center;
 }
 
-#resumeContainerID{
+#resumeContainerID {
   display: none;
   /* width: 95%; */
-  
 }
-.resumeTable{
-    background:var(--primary-red);
-    /* position: absolute; */
-    width: 95%;
-    margin: auto;
-    border-spacing:0;
-    opacity: 0;
-    /* margin-top: 5rem; */
-
-    
-  }
-
-  .resumeTable h2{
-    color:var(--primary-red);
-}
-  .resumeTable h3{
-    color:var(--primary-red);
-    margin: auto;
+.resumeTable {
+  background: var(--primary-red);
+  /* position: absolute; */
+  width: 95%;
+  margin: auto;
+  border-spacing: 0;
+  opacity: 0;
+  /* margin-top: 5rem; */
 }
 
-  .resumeTable p {
+.resumeTable h2 {
+  color: var(--primary-red);
+}
+.resumeTable h3 {
+  color: var(--primary-red);
+  margin: auto;
+}
+
+.resumeTable p {
   color: var(--primary-red);
 }
 
-
-
-
-.expOverviewPeriod{
+.expOverviewPeriod {
   background-color: var(--navy);
-  color:var(--primary-red);
+  color: var(--primary-red);
   border-color: var(--primary-red);
   border-width: 0.16rem;
   border-style: solid;
   border-radius: 18px;
   margin: 0.25rem;
-  }
-
-  .expOverviewPeriod td{
-    text-align: center;
-    vertical-align: middle !important ;
-  }
-  .expOverviewPeriod p{
-    width: 100%;
-  }
-  .expOverviewPeriod-dotted{
-    margin-bottom: 0.25rem;
-    margin-top: 0.25rem;
-    border-style: dashed ;
-  }
-
-  .expOverviewPeriod-reverseColor{
-    background-color: var(--primary-red);
-    color:var(--dark-navy) !important;
-  }
-
-  .expOverviewPeriod-reverseColor h3{
-    color:var(--dark-navy) !important;
-  }
-
-  .expOverviewPeriod-reverseColor h4{
-    color:var(--dark-navy) !important;
-
-  }
-
-  .expOverviewPeriod-reverseColor p{
-    color:var(--dark-navy) !important;
-  }
-
-
-  .resumeSection{
-      background-color: var(--dark-navy);
-      border-color: var(--primary-red);
-      border-width: 0.16rem;
-      border-style: solid;
-      border-radius: 18px;
-      padding:0.25rem;
-      color: var(--primary-red);
-      min-width:95%;
-      margin-bottom: 2vh !important;
-      margin:auto;
-    }
-
-    .resumeSection h3{
-      color: var(--primary-red);
-    }
-
-.expHeader-reverseColor{
-color: var(--navy);
 }
 
+.expOverviewPeriod td {
+  text-align: center;
+  vertical-align: middle !important ;
+}
+.expOverviewPeriod p {
+  width: 100%;
+}
+.expOverviewPeriod-dotted {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  border-style: dashed;
+}
 
-.header2UnderLine{
+.expOverviewPeriod-reverseColor {
+  background-color: var(--primary-red);
+  color: var(--dark-navy) !important;
+}
+
+.expOverviewPeriod-reverseColor h3 {
+  color: var(--dark-navy) !important;
+}
+
+.expOverviewPeriod-reverseColor h4 {
+  color: var(--dark-navy) !important;
+}
+
+.expOverviewPeriod-reverseColor p {
+  color: var(--dark-navy) !important;
+}
+
+.resumeSection {
+  background-color: var(--dark-navy);
+  border-color: var(--primary-red);
+  border-width: 0.16rem;
+  border-style: solid;
+  border-radius: 18px;
+  padding: 0.25rem;
+  color: var(--primary-red);
+  min-width: 95%;
+  margin-bottom: 2vh !important;
+  margin: auto;
+}
+
+.resumeSection h3 {
+  color: var(--primary-red);
+}
+
+.expHeader-reverseColor {
+  color: var(--navy);
+}
+
+.header2UnderLine {
   background-color: var(--navy);
   border-color: var(--primary-red);
   border-width: 0.1vw;
@@ -117,16 +108,16 @@ color: var(--navy);
   margin-bottom: 0.5vh;
 }
 
-.header2VerticalUnderLine{
+.header2VerticalUnderLine {
   background-color: var(--primary-red);
-  height:4.5rem;
+  height: 4.5rem;
   width: 0.2rem;
   margin: auto !important;
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
 }
 
-.header3UnderLine{
+.header3UnderLine {
   background-color: var(--primary-red);
   height: 0.2rem;
   border-color: var(--navy);
@@ -136,9 +127,7 @@ color: var(--navy);
   margin: auto;
 }
 
-
-
-.experienceTable{
+.experienceTable {
   margin: auto;
 }
 
@@ -148,9 +137,8 @@ color: var(--navy);
   display: inline-block;
   white-space: pre-wrap;
   word-wrap: break-word;
-
 }
 
-.experienceTable .with-ellipsis td {   
+.experienceTable .with-ellipsis td {
   text-overflow: ellipsis;
 }
