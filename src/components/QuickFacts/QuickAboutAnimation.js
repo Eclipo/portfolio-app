@@ -12,19 +12,19 @@ export class QuickAboutAnimation {
       flagSizeIncrease = 2;
     }
 
-    this.familyBlinkAnimation = anime.timeline({
-      loop: true,
-      autoplay: false,
-      easing: "easeInOutQuad",
-      direction: "alternate",
-    });
+    // this.familyBlinkAnimation = anime.timeline({
+    //   loop: true,
+    //   autoplay: false,
+    //   easing: "easeInOutQuad",
+    //   direction: "alternate",
+    // });
 
-    this.familyBlinkAnimation.add({
-      targets: ["#erikaEyeLeftID", "#noahEyeLeftID", "#lalehEyeLeftID"],
-      height: ["1.75rem", "0.5rem", "1.75rem"],
-      duration: 500,
-      delay: 750,
-    });
+    // this.familyBlinkAnimation.add({
+    //   targets: ["#erikaEyeLeftID", "#noahEyeLeftID", "#lalehEyeLeftID"],
+    //   height: ["1.75rem", "0.5rem", "1.75rem"],
+    //   duration: 500,
+    //   delay: 750,
+    // });
 
     this.edipAndFamillyAnimation = anime.timeline({
       loop: true,
@@ -239,7 +239,7 @@ export class QuickAboutAnimation {
     if (input === true) {
       console.log("NOW IT IS GOING TO PLAY!!!");
       this.edipAndFamillyAnimation.play();
-      this.familyBlinkAnimation.play();
+      // this.familyBlinkAnimation.play();
       this.quickCoffeeSteam.play();
       this.bounceCityHall.play();
       this.bounceFlag.play();
@@ -250,7 +250,7 @@ export class QuickAboutAnimation {
       console.log("!!!!!! QUICKABOUT IS TURNING OFF!!!!");
 
       this.edipAndFamillyAnimation.pause();
-      this.familyBlinkAnimation.pause();
+      // this.familyBlinkAnimation.pause();
       this.quickCoffeeSteam.pause();
       this.bounceCityHall.pause();
       this.bounceFlag.pause();

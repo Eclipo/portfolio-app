@@ -276,11 +276,11 @@
 .noah-hair-top {
   background: #edd88a;
 
-  width: 15rem;
-  height: 5rem !important;
-  border-radius: 3.375rem 3.375rem 3.375rem 1.375rem;
-  margin-left: -1.875rem;
-  margin-top: -0.625rem;
+  width: 11.5rem;
+  height: 8rem !important;
+  border-radius: 35%;
+  margin-left: -1.5rem;
+  margin-top: -1.5rem;
   position: relative;
   z-index: 2;
 }
@@ -289,10 +289,10 @@
   background: #edd88a;
 
   width: 4rem;
-  height: 11rem !important;
+  height: 13rem !important;
   border-radius: 0rem 1.375rem 2.375rem 0rem;
-  margin-left: -1.875rem;
-  margin-top: -0.625rem;
+  margin-left: -1.5rem;
+  margin-top: -6.25rem;
   position: relative;
   z-index: 2;
 }
@@ -300,13 +300,37 @@
 .noah-hair-side-right {
   background: #edd88a;
 
-  width: 4.25rem;
-  height: 15rem !important;
-  border-radius: 0rem 2.375rem 0rem 3.375rem;
-  margin-left: 11.25rem;
-  margin-top: -0.625rem;
+  width: 4rem;
+  height: 15.5rem !important;
+  border-radius: 0rem 5rem 0rem 5rem ;
+  margin-left: 10.25rem;
+  margin-top: -0.5rem !important;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
+}
+
+.curly-ball-right{
+  background: #edd88a;
+  margin-left: 0.25rem;
+  width: 5rem;
+  height: 2.5rem;
+  border-radius:0rem 2rem 0rem 2rem;
+  /* border-style: solid;
+  border-width: 0.1rem; */
+  /* border-color: #222; */
+}
+
+.curly-ball-left{
+  background: #edd88a;
+
+  width: 4.6rem;
+  height: 2.5rem;
+  border-radius:2rem 0rem 2rem 0rem;
+  margin-left: -1.25rem;
+  
+  /* border-style: solid;
+  border-width: 0.1rem; */
+  /* border-color: #222; */
 }
 .beard {
   width: 13.75rem;

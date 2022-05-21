@@ -13,9 +13,7 @@ export const Family = () => {
             </div>
 
             <div className="head" id="headOne">
-              <div
-                className="hair-main"
-              ></div>
+              <div className="hair-main"></div>
 
               <div className="face" id="faceID">
                 <div className="nose" id="noseID"></div>
@@ -99,20 +97,60 @@ export const Family = () => {
             </div>
 
             <div className="head noah-head">
-            
-            <div className="noah-hair-top">
-            
-            <div className="noah-hair-side-right"></div>
-            </div>
-            <div className="noah-hair-side-left"></div>
-            
-              
+              <div className="noah-hair-top">
+                <div className="noah-hair-side-right">
+                  <div
+                    className="curly-ball-right"
+                    style={{ width: "4rem", marginLeft: "-2rem" }}
+                  ></div>
+
+                  <div
+                    className="curly-ball-right"
+                    style={{ width: "4.8rem" }}
+                  ></div>
+                  <div className="curly-ball-right"></div>
+                  <div
+                    className="curly-ball-right"
+                    style={{ width: "5rem" }}
+                  ></div>
+                  <div
+                    className="curly-ball-right"
+                    style={{ width: "5rem" }}
+                  ></div>
+
+                  <div
+                    className="curly-ball-right"
+                    style={{
+                      width: "4.5rem",
+                      height: "2.5rem",
+                      marginLeft: "1rem",
+                    }}
+                  ></div>
+                </div>
+              </div>
+              <div className="noah-hair-side-left">
+                <div
+                  className="curly-ball-left"
+                  style={{ marginTop: ".75rem" }}
+                ></div>
+
+                <div className="curly-ball-left"></div>
+                <div className="curly-ball-left"></div>
+                <div
+                  className="curly-ball-left"
+                  style={{ width: "5rem" }}
+                ></div>
+                <div
+                  className="curly-ball-left"
+                  style={{ width: "5rem" }}
+                ></div>
+              </div>
 
               <div className="face noah-face">
                 <div className="nose noah-nose"></div>
                 <div className="eye-shadow" id="left">
                   <div className="eyebrow erika-brow"></div>
-                  <div className="eye noah-eye" id="noahEyeLeftID"> 
+                  <div className="eye noah-eye" id="noahEyeLeftID">
                     <div className="laleh-kawai"></div>
                   </div>
                 </div>
