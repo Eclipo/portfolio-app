@@ -1,24 +1,24 @@
-.btnRefresh{
-    background-color:'none';
-    border-color:'transparent';
-    border: none;
-    opacity: 0; 
-    pointer-events: none;
-    display: hidden; 
+.btnRefresh {
+  background-color: "none";
+  border-color: "transparent";
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+  display: hidden;
 }
 
-.btnPlay{
-    margin-bottom:0.5rem;
-    background-color:'transparent';
-    border-color:'transparent';
-    border: none;    
+.btnPlay {
+  margin-bottom: 0.5rem;
+  background-color: "transparent";
+  border-color: "transparent";
+  border: none;
 }
 
-.fntAwesome{
-    width: 2rem;
-    height: 2rem;
+.fntAwesome {
+  width: 2rem;
+  height: 2rem;
 }
 
-.row{
-    width: 100%;
+.row {
+  width: 100%;
 }

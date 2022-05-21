@@ -1,226 +1,124 @@
+/***************** SKILLS *********************/
 
+.skillContainer {
+  margin-top: -35vh;
+  margin: auto;
+  opacity: 0;
+}
 
-  /***************** SKILLS *********************/
-
-  /* #skills{
-    height: calc(
-      50rem*2.2
-    );
-  }  */
-    .skillContainer{
-      margin-top: -35vh;
-      margin: auto;
-      opacity: 0;
-      /* display: hidden; */
-    }
-    
-    #duckContainerID{
-      background: transparent;
-      display: none;
-    }
-
-.headerSkills{
-  /* opacity: 1; */
-   color:rgb(97, 151, 253) !important;
- }
-
-  .skillTable{
-    background:var(--navy)    ;
-    width: 100%;
-    table-layout: fixed;
-    border-radius: 18px;
-    transform: scale(0.95);
-    border-collapse: separate;
-    
-    /* border-width: 0.25rem;
-    border-color: var(--primary-blue);
-    border-style: solid; */
-  }
-
-  .skillTable tbody p{
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
-  }
-
-#skillDividerTd{
-    width:15vw !important;
-    height:0.5rem !important;
-    margin: auto !important;
-  
-    border-radius:10px !important;
-    opacity: 0;
-    /* width: 4rem; */
-    /* margin-left: 1vw; */
+#duckContainerID {
+  background: transparent;
+  display: none;
 }
 
 
-  .skillPoint{
-    height: 1rem;
-    /* background-color: var(--primary-orange); */
-    margin-left: -5rem;
-    
-  }
+.skillTable {
+  background: var(--navy);
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 18px;
+  transform: scale(0.95);
+  border-collapse: separate;
+}
+
+.skillTable tbody p {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+#skillDividerTd {
+  width: 15vw !important;
+  height: 0.5rem !important;
+  margin: auto !important;
+
+  border-radius: 10px !important;
+  opacity: 0;
+}
+
+.skillPoint {
+  height: 1rem;
+  margin-left: -5rem;
+}
+
+.skillCategory {
+  padding: 5%;
+  margin: auto;
+  width: fit-content !important;
+  font-size: 1.25rem !important;
+  opacity: 0;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  border-radius: 5px;
+}
+
+.skillPointPelar {
+  height: 3rem;
+  width: 1.75rem;
+  background-color: var(--primary-lightGrey);
+  position: relative;
+  margin: auto;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.skillPointGround {
+  background-color: var(--green-tint);
+  padding: 4% !important;
+  margin: 3% !important;
+  font-size: 0.85rem !important;
+  color: var(--primary-white);
+  border-radius: 5px;
+}
+
+.emptyPointGround {
+  background-color: var(--primary-lightDarkGrey);
+  position: relative;
+  padding: 0.3rem;
+  margin: auto;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  font-weight: 500;
+  color: var(--primary-white);
+}
 
 
-  .skillCategory{
-    padding:5%;
-    margin:auto;
-    width: fit-content !important;
-    font-size: 1.25rem !important;
-/*    
-    font-weight: 700; */
-    /* background-color:var(--primary-orange); */
-    /* position: absolute; */
-    opacity: 0;
-    margin-bottom: 0.25rem;
-    margin-top: 0.25rem;
-    border-radius: 5px;
-    
-    /* border-radius: 18px; */
-    
-
-  }
-
-
-
-  .skillPointPelar{
-    height: 3rem;
-    width: 1.75rem;
-    background-color: var(--primary-lightGrey);
-    position: relative;
-    margin: auto;
-    z-index: 2;
-    border-radius: 10px;
-  }
-
-  .skillPointGround{
-    background-color:var(--green-tint);
-    /* position:relative; */
-    padding:4% !important;
-    margin: 3% !important;
-    /* margin-left: 0.5vh !important;
-    margin-right: 0.5vh !important; */
-
-    
-    /* margin-bottom: 2%; */
-    /* width: 100%; */
-    /* font-weight: 500; */
-    font-size: 0.85rem !important;
-    color:var(--primary-white);
-    border-radius: 5px;
-
-  }
-  
-
-  .emptyPointGround{
-      background-color: var(--primary-lightDarkGrey);
-      position:relative;
-      padding:0.3rem;
-      margin:auto;
-      margin-left:0.1rem;
-      margin-right:0.1rem;
-      font-weight: 500;
-      color:var(--primary-white);
-    }
-
-  .skill-measurement-header {
-    position: absolute;
-    padding: 6px 10px 5px;
-    padding-top: 6px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    background-color: #00bff3;
-    color: #0072bc;
-  }
-
-
-  .skill{
-    background-color: var(--primary-blue);
-    width:100%;
-    margin: auto;
-    height:100%;
-    padding:0.3rem;
-    opacity: 0;
-    border-radius: 18px;
-
-  }
-
-  
-
-  #javascriptPoint #htmlPoint{
-    position: relative;
-    background-color: var(--primary-pink);
-    color: var(--primary-white);
-  }
-
- #javaID
-  {
-    margin-left:-2.7vw;
-   
-  }
-
-   #powershellID
-  {
-    margin-left:-2.7vw;
-
-  }
-
-  #threeJsID{
-    width: 92%;
-  }
+.skill {
+  background-color: var(--primary-blue);
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  padding: 0.3rem;
+  opacity: 0;
+  border-radius: 18px;
+}
 
 
 
-  .bottomSkill{
-   margin-left:1vw;
-    
-    width:82%;
-  }
+.frontEndTheme {
+  background-color: #273a5c;
+  color: var(--primary-white) !important;
+}
 
-  .frontEndTheme{
-    /* background-color: rgb(48, 79, 136)!important; */
-    background-color: #273a5c;
-    color: var(--primary-white) !important;
-  }
+.backEndTheme {
+  background-color: rgb(48, 79, 136) !important;
+  color: var(--primary-white) !important;
+}
 
+.applicationsTheme {
+  background-color: rgb(65, 107, 185) !important;
+  color: var(--primary-white) !important;
+}
 
-  .backEndTheme{
-    background-color: rgb(48, 79, 136)!important; 
-    /* background-color: rgb(43, 83, 158)!important; */
-    color: var(--primary-white) !important;
-  }
+.rolesTheme {
+  background-color: rgb(52, 101, 193) !important;
+  color: var(--primary-white) !important;
+}
 
-  .applicationsTheme{
-    /* background-color: rgb(60, 107, 194)!important; */
-    background-color: rgb(65, 107, 185)!important; 
-    color: var(--primary-white) !important;
-  }
-
-  .rolesTheme{
-    background-color: rgb(52, 101, 193)!important; 
-    color: var(--primary-white) !important;
-    /* width: 8rem; */
-  }
-
-  ul.bullet {
-    list-style-type: circle;
-    color: var(--primary-white);
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  
-  .duckText{
-    margin:auto;
-    text-align: left;
-    font-size:'0.8375rem'; 
-    font-weight:'625';
-    /* padding:0.75rem; */
-    /* margin-left: 25rem; */
-    /* width: 30vw; */
-    /* max-width: 100; */
-    color:var(--light-slate);
-    margin-top: 16rem;
-    
-    
-  }
+.duckText {
+  margin: auto;
+  text-align: left;
+  font-size: "0.8375rem";
+  font-weight: "625";
+  color: var(--light-slate);
+  margin-top: 16rem;
+}

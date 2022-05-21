@@ -32,7 +32,6 @@ const ResumeOverview = () => {
                   <h2>Languages</h2>
                 </div>
               </div>
-              {/* style={{width:"10vw",height:"  10vh"}} */}
               <div>
                 <table className="experienceTable">
                   <tr>
@@ -79,8 +78,6 @@ const ResumeOverview = () => {
                   <h2>Education</h2>
                 </div>
               </div>
-
-              {/* style={{width:"10vw",height:"  10vh"}} */}
               <div className="m-auto">
                 <table className="experienceTable">
                   <tr>

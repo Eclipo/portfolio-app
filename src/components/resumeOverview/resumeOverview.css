@@ -11,16 +11,13 @@
 
 #resumeContainerID {
   display: none;
-  /* width: 95%; */
 }
 .resumeTable {
   background: var(--primary-red);
-  /* position: absolute; */
   width: 95%;
   margin: auto;
   border-spacing: 0;
   opacity: 0;
-  /* margin-top: 5rem; */
 }
 
 .resumeTable h2 {

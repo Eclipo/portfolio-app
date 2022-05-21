@@ -302,35 +302,27 @@
 
   width: 4rem;
   height: 15.5rem !important;
-  border-radius: 0rem 5rem 0rem 5rem ;
+  border-radius: 0rem 5rem 0rem 5rem;
   margin-left: 10.25rem;
   margin-top: -0.5rem !important;
   position: relative;
-  /* z-index: 2; */
 }
 
-.curly-ball-right{
+.curly-ball-right {
   background: #edd88a;
   margin-left: 0.25rem;
   width: 5rem;
   height: 2.5rem;
-  border-radius:0rem 2rem 0rem 2rem;
-  /* border-style: solid;
-  border-width: 0.1rem; */
-  /* border-color: #222; */
+  border-radius: 0rem 2rem 0rem 2rem;
 }
 
-.curly-ball-left{
+.curly-ball-left {
   background: #edd88a;
 
   width: 4.6rem;
   height: 2.5rem;
-  border-radius:2rem 0rem 2rem 0rem;
+  border-radius: 2rem 0rem 2rem 0rem;
   margin-left: -1.25rem;
-  
-  /* border-style: solid;
-  border-width: 0.1rem; */
-  /* border-color: #222; */
 }
 .beard {
   width: 13.75rem;
@@ -498,14 +490,4 @@
   left: -0.5rem;
   bottom: -5.25rem;
   z-index: 4;
-}
-
-.shadow {
-  width: 6.125rem;
-  height: 16.25rem;
-  border-radius: 3.125rem;
-  background: rgba(149, 36, 0, 0.1);
-  position: absolute;
-  z-index: 4;
-  opacity: 1;
 }

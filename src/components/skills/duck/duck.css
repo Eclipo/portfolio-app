@@ -1,188 +1,152 @@
-﻿    :root {
-        --size-duckDivisor: 1.5;
-    }
-    @media (max-width: 19.9rem) {
-        :root {
-            --size-duckDivisor: 6;
-        }
-      
-      }
-      
+﻿:root {
+  --size-duckDivisor: 1.5;
+}
+@media (max-width: 19.9rem) {
+  :root {
+    --size-duckDivisor: 6;
+  }
+}
 
-    @media (min-width: 20rem) {
-        :root {
-            --size-duckDivisor: 4;
-        }
+@media (min-width: 20rem) {
+  :root {
+    --size-duckDivisor: 4;
+  }
+}
+@media (min-width: 25rem) {
+  :root {
+    --size-duckDivisor: 3.75;
+  }
+}
 
-    }
-    @media (min-width: 25rem) {
-        :root {
-            --size-duckDivisor: 3.75;
-        }
-    }
+#duckID {
+  transform: scale(calc(2 / var(--size-duckDivisor)));
+  position: absolute;
+  margin-top: -5rem;
+}
 
-    .aligner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-    }
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
 
-    #duckID{
-        transform:scale(calc(2/ var( --size-duckDivisor))) ;
-        position: absolute;
-            margin-top: -5rem;
+.duckEdipCircleBackground-circle {
+  width: 26.25rem;
+  height: 26.25rem;
+  border-radius: 100%;
+  overflow: hidden;
+  background: #95b3bf !important;
+  background: transparent;
+  position: relative;
+  border: 1rem solid var(--primary-blue);
+  z-index: -1;
+}
 
-    }
+.duckHead {
+  width: 12.25rem;
+  height: 16.25rem;
+  border-radius: 3.125rem;
+  background: #eeebe6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13.125rem;
+  margin-left: -6.125rem;
+  z-index: 3;
+}
 
-    .wrapper {
-        display: table-cell;
-        vertical-align: middle;
-        position: relative;
-    }
+.duckFace {
+  width: 9.25rem;
+  height: 12.5625rem;
+  border-radius: 3rem 3rem 0 0;
+  background: #eeebe6;
+  position: absolute;
+  top: 2.5rem;
+  left: 33%;
+  z-index: 4;
+}
 
-    .duckEdipCircleBackground-circle {
-        width: 26.25rem;
-        height: 26.25rem;
-        border-radius: 100%;
-        overflow: hidden;
-        background: #95B3BF !important;
-        background:transparent;
-        position: relative;
-        border: 1rem solid var(--primary-blue);
-        z-index: -1;
-    }
+.duckBody {
+  width: 72%;
+  font-family: "Open Sans", sans-serif;
+  height: 37.5rem;
+  margin: 0 auto;
+  background: #eeebe6;
+  border-radius: 6.25rem;
+  position: relative;
+  left: 6%;
+  top: 12.5rem;
+  margin-bottom: 5%;
+  z-index: 0;
+}
 
+.duckEye {
+  width: 1.25rem;
+  height: 1.75rem;
+  border-radius: 0.625rem;
+  background: #453116;
+  position: absolute;
+  top: -1.125rem;
+  left: 50%;
+  margin-left: -0.625rem;
+}
 
-    .duckHead{
-        width: 12.25rem;
-        height: 16.25rem;
-        border-radius: 3.125rem;
-        background: #eeebe6;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -13.125rem;
-        margin-left: -6.125rem;
-        z-index:3;
-      }
+.duckEye-shadow {
+  width: 1.875rem;
+  height: 0.9375rem;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  background: rgba(149, 36, 0, 0.1);
+  position: absolute;
+  top: 4.375rem;
+}
 
-      
-      .duckFace{
-        width: 9.25rem;
-        height: 12.5625rem;
-        border-radius: 3rem 3rem 0 0;
-        background: #eeebe6;
-        position: absolute;
-        top: 2.5rem;
-        left: 33%;
-        z-index:4;
-      }
+.duckEye-shadow#duckLeft {
+  left: 3rem;
+  z-index: 5;
+}
 
-    .duckBody {
-        width: 72%;
-        font-family: 'Open Sans', sans-serif;
-        height: 37.5rem;
-        margin: 0 auto;
-        background: #eeebe6;
-        border-radius: 6.25rem;
-        position: relative;
-        left:6%;
-        top: 12.5rem;
-        margin-bottom: 5%;
-        z-index: 0
-    }
+.duckEye-shadow#duckRight {
+  right: 7.5rem;
+}
 
+.duckEyebrow {
+  width: 2.75rem;
+  height: 1rem;
+  background: #3f2a14;
+  position: absolute;
+  top: -2.25rem;
+  left: 50%;
+  margin-left: -1.25rem;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+}
 
-    .duckEye{
-        width: 1.25rem;
-        height: 1.75rem;
-        border-radius: .625rem;
-        background: #453116;
-        position: absolute;
-        top: -1.125rem;
-        left: 50%;
-        margin-left: -0.625rem;
-      }
+.duckMouthUpper {
+  width: 9rem;
+  height: 2rem;
+  border-radius: 0 2.0625rem 0 2.0625rem;
+  background: var(--primary-orange);
+  position: absolute;
+  top: 7rem;
+  right: 75%;
+}
 
-    .duckEye-shadow {
-        width: 1.875rem;
-        height: .9375rem;
-        border-radius: 0 0 .9375rem .9375rem;
-        background: rgba(149,36,0,0.1);
-        position: absolute;
-        top: 4.375rem;
+.duckMouthUnder {
+  width: 9rem;
+  height: 2rem;
+  border-radius: 2.0625rem 0 2.0625rem 0;
+  background: var(--primary-orange);
+  position: absolute;
+  top: 9.25rem;
+  right: 75%;
+}
 
-    }
-
-
-
-    .duckEye-shadow#duckLeft {
-        left: 3rem;
-        z-index: 5;
-    }
-
-    .duckEye-shadow#duckRight {
-        right: 7.5rem;
-    }
-
- 
-
-    .duckEyebrow {
-        width: 2.75rem;
-        height: 1rem;
-        background: #3f2a14;
-        position: absolute;
-        top: -2.25rem;
-        left: 50%;
-        margin-left: -1.25rem;
-        opacity: 1;
-        -webkit-backface-visibility: hidden;
-    }
-
-    .duckMouthUpper{
-        width: 9rem;
-        height: 2rem;
-        /* transform: rotate(5deg); */
-        border-radius: 0 2.0625rem 0  2.0625rem;
-
-        background: var(--primary-orange);
-        position: absolute;
-        top: 7rem;
-        right: 75%;
-        
-      }
-
-      .duckMouthUnder{
-        width: 9rem;
-        height: 2rem;
-        border-radius: 2.0625rem  0 2.0625rem  0;
-        /* transform: rotate(-5deg); */
-        background: var(--primary-orange);
-        position: absolute;
-        top: 9.25rem;
-        right: 75%;
-      }
-    
-    .shadow-wrapper {
-        width: 6.125rem;
-        height: 16.25rem;
-        position: absolute;
-        left: -0.5rem;
-        bottom: -5.25rem;
-        z-index: 4;
-        overflow: hidden;
-    }
-
-    .shadow {
-        width: 6.125rem;
-        height: 16.25rem;
-        border-radius: 3.125rem;
-        background: rgba(149,36,0,0.1);
-        position: absolute;
-        z-index: 4;
-        opacity: 1;
-
-    }
-
+.shadow-wrapper {
+  width: 6.125rem;
+  height: 16.25rem;
+  position: absolute;
+  left: -0.5rem;
+  bottom: -5.25rem;
+  z-index: 4;
+  overflow: hidden;
+}
