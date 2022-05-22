@@ -4,6 +4,14 @@ import { SkillAnimation } from "../src/components/skills/SkillAnimation.js";
 import {ResumeAnimation} from "../src/components/resumeOverview/roAnimation.js";
 import {ExperienceAnimation} from "../src/components/Experiences/experienceAnimation.js";
 import anime from "animejs";
+
+
+const IntroAnime = new IntroAnimation();
+const SkillAnime = new SkillAnimation();
+const PersonalityAnime = new PersonalityAnimation();
+const ExperienceAnime = new ExperienceAnimation();
+const ResumeAnime = new ResumeAnimation();
+
 export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID){
 
   const btnExpPlay = document.getElementById(inputPlayID);
@@ -69,11 +77,6 @@ console.log('END IS PLAYING');
 export function PlayAnimation(inputID, inputPlayBoolean){
   console.log('MAIN IS PLAYING');
 
-    const IntroAnime = new IntroAnimation();
-    const SkillAnime = new SkillAnimation();
-    const PersonalityAnime = new PersonalityAnimation();
-    const ExperienceAnime = new ExperienceAnimation();
-    const ResumeAnime = new ResumeAnimation();
     
     const objArray  = new Array;
     objArray.push(IntroAnime);

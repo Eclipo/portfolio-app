@@ -32,7 +32,6 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
           // Quick Facts Section - Turn off Skills
           case 1:
             console.log('QUICK FACTS SECTION');
-            // PlayAnimation('SkillAnimation',false);
             animationQuickFactAbout.playOrStop(true);
 
             break;
@@ -40,7 +39,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
           //About me Section - Turn Off Personality
             case 2:
               console.log('ABOUT ME SECTION');
-                PlayAnimation('PersonalityAnimation',false);
+                PlayAnimation('PersonalityAnimation',1);
                 PlayAnimation('SkillAnimation',1);
 
             break;
@@ -50,7 +49,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
               console.log('SKILLS SECTION');
               // PlayAnimation('ResumeAnimation',false);
               animationQuickFactAbout.playOrStop(false);
-              // PlayAnimation('SkillAnimation',2);
+              PlayAnimation('SkillAnimation',2);
 
 
             break;
@@ -59,6 +58,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
             case 4:
               console.log('PERSONALITY SECTION');
               PlayAnimation('SkillAnimation',1);
+              PlayAnimation('PersonalityAnimation',2);
 
               // PlayAnimation('ExperienceAnimation',false);
 
@@ -72,7 +72,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
               //Major experiences - Turn OFF Personality
               case 6:
-                PlayAnimation('PersonalityAnimation',false);
+                PlayAnimation('PersonalityAnimation',1);
 
               break;
 

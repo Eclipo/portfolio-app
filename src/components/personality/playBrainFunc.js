@@ -100,7 +100,7 @@ export async function playBrainFunc() {
                           easing: "linear",
                           delay: anime.stagger(40),
                           complete: function () {
-                            playPersonalityFunc();
+                            playPersonalityFunc(true);
                           },
                         });
                       },

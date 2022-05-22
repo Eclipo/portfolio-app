@@ -1,6 +1,6 @@
 import anime from "animejs";
 
-export function playPersonalityFunc() {
+export async function playPersonalityFunc(inputBoolean) {
   const playHonesty = anime({
     targets: "#honestySevenID",
     loop: true,
@@ -171,10 +171,23 @@ export function playPersonalityFunc() {
       duration: 150,
     });
 
-  playShakingHonesty.restart();
-  playHonesty.restart();
-  playTemper.restart();
-  playFocus.restart();
-  playCreativity.restart();
-  playStructure.restart();
+    if(inputBoolean === true){ 
+      console.log('STARTA OM FÖR FAAAAN');
+    playShakingHonesty.play();
+    playHonesty.play();
+    playTemper.play();
+    playFocus.play();
+    playCreativity.play();
+    playStructure.play();
+  }
+
+  if(inputBoolean === false){
+    // anime.remove("#personalityTable td");
+    // anime.remove("#honestySevenID");
+    // anime.remove('#honestyID');
+    // anime.remove(".personalityBaseTraits");
+    anime.remove(".personalityTraits");
+    
+
+  }
 }

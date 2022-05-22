@@ -1,41 +1,21 @@
 import anime from "animejs";
 import { playBrainFunc } from "./playBrainFunc";
-
+import { playPersonalityFunc } from "./playPersonalityFunc";
 const ratio = 0.25 * window.innerWidth;
 export class PersonalityAnimation {
+
   constructor() {
+    var  playedPersonalityZero = false;
+
     this.grid = [13, 15];
   }
 
-  waitForPlayCharacteristics() {
-    return new Promise((resolve) => {
-      setTimeout(function () {
-        resolve();
-      }, 14000);
-    });
-  }
-
-  playCharecteristics() {
-    this.playShakingHonesty.restart();
-    this.playHonesty.restart();
-    this.playTemper.restart();
-    this.playFocus.restart();
-    this.playCreativity.restart();
-    this.playStructure.restart();
-  }
-
-  async playAfterBrain() {
-    await this.waitForPlayCharacteristics();
-    playBrainFunc();
-  }
-
-  playPersonality() {
-    playBrainFunc.play();
-  }
-
   async playOrStop(input) {
-    if (input === true) {
-      console.log('!!!!!!!!! PERSONALITY ANIMATION IS TURNING ON');
+    if (input === 0) {
+      console.log("!!!!!!!!! PERSONALITY ANIMATION IS TURNING ON");
+      this.playedPersonalityZero = true;
+
+      console.log("!!!!!! PLAYEDZERO ÄR !!!! : "+this.playedPersonalityZero);
 
       anime.remove("#personalityTable");
       anime.remove("#personalityTable td");
@@ -47,14 +27,19 @@ export class PersonalityAnimation {
       playBrainFunc();
     }
 
-    if (input === false) {
-      console.log('!!!!!!!!! PERSONALITY ANIMATION IS TURNING OFF');
-      this.playHonesty.pause();
-      this.playShakingHonesty.pause();
-      this.playTemper.pause();
-      this.playFocus.pause();
-      this.playCreativity.pause();
-      this.playStructure.pause();
+    if (input === 1) {
+      console.log("!!!!!!!!! PERSONALITY ANIMATION IS TURNING OFF");
+      playPersonalityFunc(false);
+    }
+
+    if (input === 2) {
+      console.log('STARTA OM FÖR FAN PERSONALITY!');
+      console.log("!!!!!! PLAYEDZERO ÄR !!!! : "+this.playedPersonalityZero);
+
+      if (this.playedPersonalityZero === true) {
+        console.log('STARTA OM FÖR FAN PERSONALITY! TRUUUUUUEEEEE');
+        playPersonalityFunc(true);
+      }
     }
   }
 }
