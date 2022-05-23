@@ -1,6 +1,48 @@
 import anime from "animejs";
 
+// changeBegin:function(){
+//   randomPatienceEl = randomPatience[Math.floor(Math.random() * randomPatience.length)];
+//   console.log('randomEl is...'+randomPatienceEl.toString());
+//  randomPatienceEl="'"+randomPatienceEl+"'";
+
+// },
+
+
+// var randomPatience_target = null;
+var randomPatience = ['#patienceOneID','#patienceTwoID','#patienceThreeID','#patienceFourID','#patienceFiveID'];
+var random_target = null;
+
+function getRandomTarget() {
+  return randomPatience[Math.floor(Math.random() * randomPatience.length)];
+}
+
+ function animatePatience(inputTarget){
+  anime({
+    targets:inputTarget,
+    opacity:[0,1,0],
+    easing: "easeInOutSine",
+    duration:750  
+  })
+}
+
 export async function playPersonalityFunc(inputBoolean) {
+random_target=getRandomTarget();
+console.log('START!!:'+random_target);
+
+const playPatience = anime({
+  loopBegin:function(){
+    animatePatience(getRandomTarget());
+  },
+  loopComplete: function() {
+    
+    setTimeout(animatePatience(getRandomTarget()),1000);
+  },
+  loop:true,
+  autoplay:false,
+  duration:500,
+
+});
+
   const playHonesty = anime({
     targets: "#honestySevenID",
     loop: true,
@@ -173,12 +215,13 @@ export async function playPersonalityFunc(inputBoolean) {
 
     if(inputBoolean === true){ 
       console.log('STARTA OM FÖR FAAAAN');
-    playShakingHonesty.play();
-    playHonesty.play();
-    playTemper.play();
-    playFocus.play();
-    playCreativity.play();
-    playStructure.play();
+    playShakingHonesty.restart();
+    playHonesty.restart();
+    playTemper.restart();
+    playFocus.restart();
+    playPatience.restart();
+    playCreativity.restart();
+    playStructure.restart();
   }
 
   if(inputBoolean === false){

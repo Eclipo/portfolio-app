@@ -10,8 +10,10 @@ import {
 class PlayRefresh extends Component {
   refreshID = "refresh_" + this.props.id;
   playID = "play_" + this.props.id;
+  textPlayID = "textPlay_"+this.props.id;
   playBoolean = this.props.playBoolean;
-
+  playText = this.props.playText;
+  textColor = this.props.textColor;
   constructor(props) {
     super(props);
     // This binding is necessary to make `this` work in the callback
@@ -19,8 +21,9 @@ class PlayRefresh extends Component {
   }
 
   handleClick(event) {
-    AnimationPlayRefreshBegin(this.playID, this.refreshID);
-
+    
+    AnimationPlayRefreshBegin(this.playID, this.refreshID,this.textPlayID);
+    
     var delayTime = 0;
     delayTime = PlayAnimation(event.currentTarget.id, this.playBoolean);
     console.log("the returned delayTime is...." + delayTime);
@@ -50,6 +53,8 @@ class PlayRefresh extends Component {
         </div>
 
         <div className="flexCenter d-block">
+        <h4 id={this.textPlayID} style={{color:this.textColor}} >{this.playText}</h4>
+
           <button
             id={this.playID}
             className="btnPlay mx-auto"

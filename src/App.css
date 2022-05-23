@@ -236,6 +236,11 @@
 
     .techText{
       width: 25rem !important;
+    }
+
+    .personalityTextContainer{
+      width:30rem !important;
+      margin-top: 10rem !important;
 
     }
   } 

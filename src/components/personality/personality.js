@@ -19,7 +19,10 @@ class Personality extends Component {
 
         <h1 style={{ color: "var(--primary-green)" }}>Personality</h1>
 
-        <PlayRefresh id="PersonalityAnimation" playBoolean={0}></PlayRefresh>
+        <PlayRefresh id="PersonalityAnimation" playBoolean={0} 
+          playText="WARNING! CLICKING ON THIS PLAYBUTTON RIGHT HERE BELOW WILL TRIGGER A HIGHLY DISTURBING ANIMATION WHICH CONTAINS FLASHING LIGHTS! MY PERSONALITY IS A MESS! YOU HAVE BEEN WARNED!" textColor="var(--primary-green)">
+          
+        </PlayRefresh>
         <div id="greenSquareTableID" className="flexCenter">
           <PixelHead></PixelHead>
         </div>
@@ -117,40 +120,6 @@ class Personality extends Component {
               </td>
             </tr>
 
-            <tr>
-              <td>
-                {" "}
-                <p className="personalityTraits">Creativity</p>
-              </td>
-              <td>
-                <div className="personalityTraits gradeOne"></div>
-              </td>
-              <td>
-                <div className="personalityTraits gradeTwo"></div>
-              </td>
-              <td>
-                <div
-                  className="personalityTraits gradeThree"
-                  id="creativityThreeID"
-                ></div>
-              </td>
-              <td>
-                <div
-                  className="personalityTraits gradeFour"
-                  id="creativityFourID"
-                ></div>
-              </td>
-              <td>
-                <div className="personalityTraits"></div>
-              </td>
-              <td>
-                <div className="personalityTraits"></div>
-              </td>
-              <td>
-                <div className="personalityTraits"></div>
-              </td>
-            </tr>
-
             <tr className="personalityTraitsRow">
               <td>
                 {" "}
@@ -200,6 +169,44 @@ class Personality extends Component {
               </td>
             </tr>
 
+            
+
+            <tr className="personalityTraitsRow">
+              <td>
+                {" "}
+                <p className="personalityTraits">Structure</p>
+              </td>
+              <td>
+                <div
+                  className="personalityTraits gradeOne"
+                  id="structureID"
+                ></div>
+              </td>
+              <td>
+                <div
+                  className="personalityTraits gradeTwo"
+                  id="structureTwoID"
+                ></div>
+              </td>
+              <td>
+                <div
+                  className="personalityTraits gradeThree"
+                  id="structureThreeID"
+                ></div>
+              </td>
+              <td>
+                <div className="personalityTraits"></div>
+              </td>
+              <td>
+                <div className="personalityTraits"></div>
+              </td>
+              <td>
+                <div className="personalityTraits"></div>
+              </td>
+              <td>
+                <div className="personalityTraits"></div>
+              </td>
+            </tr>
             <tr>
               <td>
                 {" "}
@@ -250,42 +257,42 @@ class Personality extends Component {
             </tr>
 
             <tr className="personalityTraitsRow">
-              <td>
+              <td className="columnHeaderTraits">
                 {" "}
-                <p className="personalityTraits">Structure</p>
+                <p className="personalityTraits">Patience</p>
               </td>
               <td>
                 <div
-                  className="personalityTraits gradeOne"
-                  id="structureID"
+                  className="personalityTraits gradeOne patience"
+                  id="patienceOneID"
                 ></div>
               </td>
               <td>
                 <div
                   className="personalityTraits gradeTwo"
-                  id="structureTwoID"
+                  id="patienceTwoID"
                 ></div>
               </td>
               <td>
                 <div
                   className="personalityTraits gradeThree"
-                  id="structureThreeID"
+                  id="patienceThreeID"
                 ></div>
               </td>
               <td>
-                <div className="personalityTraits"></div>
+                <div
+                  className="personalityTraits gradeFour"
+                  id="patienceFourID"
+                ></div>
               </td>
               <td>
-                <div className="personalityTraits"></div>
-              </td>
-              <td>
-                <div className="personalityTraits"></div>
-              </td>
-              <td>
-                <div className="personalityTraits"></div>
+                <div
+                  className="personalityTraits gradeFive"
+                  id="patienceFiveID"
+                ></div>
               </td>
             </tr>
-
+            
             <tr>
               <td>
                 {" "}
@@ -294,26 +301,20 @@ class Personality extends Component {
               <td>
                 <div
                   className="personalityTraits gradeOne"
-                  id="multitaskingID"
+                  id="structureTwoID"
                 ></div>
               </td>
               <td>
                 <div
                   className="personalityTraits gradeTwo"
-                  id="multitaskingTwoID"
+                  id="structureThreeID"
                 ></div>
               </td>
               <td>
-                <div
-                  className="personalityTraits gradeThree"
-                  id="multitaskingThreeID"
-                ></div>
+                <div className="personalityTraits"></div>
               </td>
               <td>
-                <div
-                  className="personalityTraits gradeFour"
-                  id="multitaskingFourID"
-                ></div>
+                <div className="personalityTraits"></div>
               </td>
               <td>
                 <div className="personalityTraits"></div>
@@ -350,10 +351,13 @@ class Personality extends Component {
                 ></div>
               </td>
               <td>
-                <div className="personalityTraits gradeFour"></div>
+                <div className="personalityTraits gradeFour"
+                  id="empathyFourID">
+                  </div>
               </td>
               <td>
-                <div className="personalityTraits"></div>
+                <div className="personalityTraits gradeFive"
+                 id="empathyFourID"></div>
               </td>
               <td>
                 <div className="personalityTraits"></div>
@@ -366,31 +370,31 @@ class Personality extends Component {
             <tr>
               <td>
                 {" "}
-                <p className="personalityTraits">Teamplayer</p>
+                <p className="personalityTraits">Stubborn</p>
               </td>
               <td>
                 <div
                   className="personalityTraits gradeOne"
-                  id="teamplayerID"
+                  id="honestySevenID"
                 ></div>
               </td>
               <td>
                 <div
                   className="personalityTraits gradeTwo"
-                  id="teamplayerTwoID"
+                  id="honestySevenID"
                 ></div>
               </td>
               <td>
                 <div
                   className="personalityTraits gradeThree"
-                  id="teamplayerThreeID"
+                  id="honestySevenID"
                 ></div>
               </td>
               <td>
-                <div className="personalityTraits gradeFour"></div>
+                <div className="personalityTraits gradeFour" id="honestySevenID"></div>
               </td>
               <td>
-                <div className="personalityTraits gradeFive"></div>
+                <div className="personalityTraits gradeFive" id="honestySevenID"></div>
               </td>
               <td>
                 <div className="personalityTraits"></div>
@@ -400,49 +404,23 @@ class Personality extends Component {
               </td>
             </tr>
 
-            <tr className="personalityTraitsRow">
-              <td className="columnHeaderTraits">
-                {" "}
-                <p className="personalityTraits">Details</p>
-              </td>
-              <td>
-                <div
-                  className="personalityTraits gradeOne"
-                  id="detailsID"
-                ></div>
-              </td>
-              <td>
-                <div
-                  className="personalityTraits gradeTwo"
-                  id="detailsTwoID"
-                ></div>
-              </td>
-              <td>
-                <div
-                  className="personalityTraits gradeThree"
-                  id="detailsThreeID"
-                ></div>
-              </td>
-              <td>
-                <div
-                  className="personalityTraits gradeFour"
-                  id="detailsFourID"
-                ></div>
-              </td>
-              <td>
-                <div
-                  className="personalityTraits gradeFive"
-                  id="detailsFiveID"
-                ></div>
-              </td>
-              <td>
-                <div className="personalityTraits "></div>
-              </td>
-              <td>
-                <div className="personalityTraits "></div>
-              </td>
-            </tr>
+           
           </table>
+          <div className="personalityTextContainer">
+            
+            <h4>Honesty</h4>
+            <p>
+              I have had hard time figuring out myself but I do know being honest is a distinct attribute I do have.
+              Being raised up in a Kurdish familly really teaches you how to give and take feedback...in raw format.<br></br><br></br>
+              A benefit from growing up with my familly is I absolutely have no problem recieving or giving feedback as long as it is of value.
+              But I have learned that it is more appreciated by others if my honest opinions is delivered in a more sophisticated manner.
+              I also continually encourage both friends and colleagues (my familly don't need to be encouraged...) to be honest with me because I see it as being nice.<br></br>
+              </p>
+              <p></p>
+              <p></p>
+              <p></p>
+              
+          </div>
         </div>
       </div>
     );

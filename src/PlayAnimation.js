@@ -12,10 +12,13 @@ const PersonalityAnime = new PersonalityAnimation();
 const ExperienceAnime = new ExperienceAnimation();
 const ResumeAnime = new ResumeAnimation();
 
-export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID){
-
+export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID,inputTextPlayID){
+  console.log('!!!!!!!!!!!!  '+inputTextPlayID);
+  const textPlay = document.getElementById(inputTextPlayID);
   const btnExpPlay = document.getElementById(inputPlayID);
   const btnRefreshExp = document.getElementById(inputRefreshID);
+
+  textPlay.style.display='none';
   btnExpPlay.style.display='none';
   btnExpPlay.style.pointerEvents='none';
   

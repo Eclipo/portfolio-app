@@ -139,3 +139,25 @@
   background-color: rgba(107, 255, 139, 0.7);
   opacity: 0;
 }
+
+.personalityTraits .gradeOne .patience{
+  opacity: 0;
+}
+
+.personalityTextContainer{
+  margin: auto;
+}
+
+.personalityTextContainer h4{
+  color:var(--primary-green);
+  text-align: left;
+  margin-left: -0.6rem;
+}
+.personalityTextContainer p{
+  color:var(--primary-green);
+  text-align: left;
+}
+
+/* #patienceOneID, #patienceTwoID, #patienceThreeID, #patienceFourID, #patienceFiveID{
+  opacity: 0;
+} */
