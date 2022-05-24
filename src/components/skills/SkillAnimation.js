@@ -23,6 +23,7 @@ export class SkillAnimation {
       anime.remove("#skillElemAndInter");
       anime.remove("#skillElemAndNoob");
       anime.remove("#skillNoobElemAndInter");
+      anime.remove("#duckContainerID");
       anime.remove(".duckMouthUpper");
       anime.remove(".duckMouthUnder");
       anime.remove(".duckEyebrow");

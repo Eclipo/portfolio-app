@@ -151,11 +151,14 @@
 .personalityTextContainer h4{
   color:var(--primary-green);
   text-align: left;
-  margin-left: -0.6rem;
+  padding: 0rem !important;
+  
+  /* margin-left: -0.6rem; */
 }
 .personalityTextContainer p{
   color:var(--primary-green);
   text-align: left;
+  display: inline-block;
 }
 
 /* #patienceOneID, #patienceTwoID, #patienceThreeID, #patienceFourID, #patienceFiveID{

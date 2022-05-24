@@ -52,7 +52,7 @@ class PlayRefresh extends Component {
           </button>
         </div>
 
-        <div className="flexCenter d-block">
+        <div className="flexCenter d-block mx-auto w-50">
         <h4 id={this.textPlayID} style={{color:this.textColor}} >{this.playText}</h4>
 
           <button

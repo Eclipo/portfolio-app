@@ -593,7 +593,7 @@ class Skills extends Component {
           </table>
         </div>
 
-        <div className="skill container" id="duckContainerID">
+        <div className="container" id="duckContainerID">          
           <div className="row">
             <div className="flexCenter">
               <Duck></Duck>
@@ -615,7 +615,7 @@ class Skills extends Component {
               Lagom is a Swedish word for not being too good or too bad.
             </p>
           </div>
-        </div>
+          </div>
       </div>
     );
   }

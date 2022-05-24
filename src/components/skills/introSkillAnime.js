@@ -8,7 +8,9 @@ export async function playIntroFunc() {
   const mokaBaseTableGrid = [5, 10];
   const dividerTable = [1, 5];
   const ratio = 0.25 * window.innerWidth;
-
+  const duckContainer = document.getElementById('duckContainerID');
+  duckContainer.style.opacity=0;
+  
 
     const introSkillAnimation = anime.timeline({
         loop: false,
@@ -259,7 +261,6 @@ export async function playIntroFunc() {
                     endDelay: 250,
        });
        introSkillAnimation.add({
-  
                         targets: "#skillDividerTd",
                         translateX: ["-30rem", 0],
                         opacity: [0, 1],
@@ -269,6 +270,12 @@ export async function playIntroFunc() {
                           from: "first",
                         }),
                         complete:function(){
+                          anime({
+                            targets:'#duckContainerID',
+                            opacity:[0,1],
+                            duration:750,
+                            easing: "easeInOutQuad"
+                          });
                           playPostFunc(true);
                         }
                       });

@@ -20,7 +20,7 @@ class Personality extends Component {
         <h1 style={{ color: "var(--primary-green)" }}>Personality</h1>
 
         <PlayRefresh id="PersonalityAnimation" playBoolean={0} 
-          playText="WARNING! CLICKING ON THIS PLAYBUTTON RIGHT HERE BELOW WILL TRIGGER A HIGHLY DISTURBING ANIMATION WHICH CONTAINS FLASHING LIGHTS! MY PERSONALITY IS A MESS! YOU HAVE BEEN WARNED!" textColor="var(--primary-green)">
+          playText="WARNING! CLICKING ON THIS PLAYBUTTON WILL TRIGGER A HIGHLY DISTURBING ANIMATION CONTAINING FLASHING LIGHTS! MY PERSONALITY IS A MESS! YOU HAVE BEEN WARNED!" textColor="var(--primary-green)">
           
         </PlayRefresh>
         <div id="greenSquareTableID" className="flexCenter">
@@ -410,11 +410,10 @@ class Personality extends Component {
             
             <h4>Honesty</h4>
             <p>
-              I have had hard time figuring out myself but I do know being honest is a distinct attribute I do have.
-              Being raised up in a Kurdish familly really teaches you how to give and take feedback...in raw format.<br></br><br></br>
-              A benefit from growing up with my familly is I absolutely have no problem recieving or giving feedback as long as it is of value.
-              But I have learned that it is more appreciated by others if my honest opinions is delivered in a more sophisticated manner.
-              I also continually encourage both friends and colleagues (my familly don't need to be encouraged...) to be honest with me because I see it as being nice.<br></br>
+              I have been raised up in a Kurdish familly and it has taught me how to give and take feedback in the rawest of formats.<br></br><br></br>
+              Being honest with good intention is an attribute I value very highly. <br></br>
+              However I have gotten a bit wiser and I have learned that honest opinions are best delivered in a more sophisticated and diplomatic manner.
+              <br></br><br></br>
               </p>
               <p></p>
               <p></p>
