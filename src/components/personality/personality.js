@@ -20,7 +20,12 @@ class Personality extends Component {
         <h1 style={{ color: "var(--primary-green)" }}>Personality</h1>
 
         <PlayRefresh id="PersonalityAnimation" playBoolean={0} 
-          playText="WARNING! CLICKING ON THIS PLAYBUTTON WILL TRIGGER A HIGHLY DISTURBING ANIMATION CONTAINING FLASHING LIGHTS! MY PERSONALITY IS A MESS! YOU HAVE BEEN WARNED!" textColor="var(--primary-green)">
+          playText={<p>
+            WARNING <br></br>
+            CLICKING ON THIS PLAYBUTTON <br></br>
+            WILL DISPLAY MY MESSY PERSONALITY WITH <br></br>
+            VERY DISTURBING AND FLASHING ANIMATIONS!
+          </p>} textColor="var(--primary-green)">
           
         </PlayRefresh>
         <div id="greenSquareTableID" className="flexCenter">
@@ -408,17 +413,30 @@ class Personality extends Component {
           </table>
           <div className="personalityTextContainer">
             
+            <h2>My personality</h2>
+            <p>
+              Hopefully you didn't stare too much on the attribute matrix. 
+              Unfortunately it is not entirely honest.Surprise. <br></br><br></br>
+              Wouldn't it be strange if a person's temper always was raging high? 
+              If one's patience was constant? Do we all view ourselves as empathic people through and through?
+              Who can really tell what you truly are?
+            </p>
+              
             <h4>Honesty</h4>
             <p>
-              I have been raised up in a Kurdish familly and it has taught me how to give and take feedback in the rawest of formats.<br></br><br></br>
-              Being honest with good intention is an attribute I value very highly. <br></br>
-              However I have gotten a bit wiser and I have learned that honest opinions are best delivered in a more sophisticated and diplomatic manner.
-              <br></br><br></br>
-              </p>
-              <p></p>
-              <p></p>
-              <p></p>
+              I have been raised up in a Kurdish familly and it taught me to give and take raw feedback.
+              As I got older I have fortunately learned to give and recieve feedback more elegantly.</p>
               
+              <p className="highlighted">Honesty is scarcity</p>
+              <p>
+              My personal experiences in life has taught me to be less honest. 
+              People do and tell whatever is necessary to protect themselves.
+              Telling a lie or a half-truth.
+              In contrast familly and very close friends can be truly honest out of empathy and love.
+              <br></br><br></br>
+              Honesty is an attribute I hold dearly but I've learned that it only can be given to people
+              who truly deserves it.
+            </p>
           </div>
         </div>
       </div>

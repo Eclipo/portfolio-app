@@ -148,17 +148,30 @@
   margin: auto;
 }
 
+.personalityTextContainer h2{
+  color:var(--primary-green);
+  margin-top: 15rem;
+  /* margin-left: -0.6rem; */
+}
 .personalityTextContainer h4{
   color:var(--primary-green);
   text-align: left;
-  padding: 0rem !important;
+  padding: 0.5rem;
   
   /* margin-left: -0.6rem; */
 }
 .personalityTextContainer p{
-  color:var(--primary-green);
+  color: var(--light-slate);
   text-align: left;
   display: inline-block;
+  padding: 0.5rem;
+}
+
+.personalityTextContainer .highlighted {
+  color: var(--primary-green);
+  font-weight: bold;
+  text-align: left;
+  float: left;
 }
 
 /* #patienceOneID, #patienceTwoID, #patienceThreeID, #patienceFourID, #patienceFiveID{
