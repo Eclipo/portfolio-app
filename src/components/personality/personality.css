@@ -169,9 +169,9 @@
 
 .personalityTextContainer .highlighted {
   color: var(--primary-green);
-  font-weight: bold;
+  /* font-weight: bold;
   text-align: left;
-  float: left;
+  float: left; */
 }
 
 /* #patienceOneID, #patienceTwoID, #patienceThreeID, #patienceFourID, #patienceFiveID{

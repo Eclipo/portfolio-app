@@ -19,15 +19,19 @@ class Personality extends Component {
 
         <h1 style={{ color: "var(--primary-green)" }}>Personality</h1>
 
-        <PlayRefresh id="PersonalityAnimation" playBoolean={0} 
-          playText={<p>
-            WARNING <br></br>
-            CLICKING ON THIS PLAYBUTTON <br></br>
-            WILL DISPLAY MY MESSY PERSONALITY WITH <br></br>
-            VERY DISTURBING AND FLASHING ANIMATIONS!
-          </p>} textColor="var(--primary-green)">
-          
-        </PlayRefresh>
+        <PlayRefresh
+          id="PersonalityAnimation"
+          playBoolean={0}
+          playText={
+            <p>
+              WARNING <br></br>
+              CLICKING ON THIS PLAYBUTTON <br></br>
+              WILL DISPLAY MY MESSY PERSONALITY WITH <br></br>
+              VERY DISTURBING AND FLASHING ANIMATIONS!
+            </p>
+          }
+          textColor="var(--primary-green)"
+        ></PlayRefresh>
         <div id="greenSquareTableID" className="flexCenter">
           <PixelHead></PixelHead>
         </div>
@@ -174,8 +178,6 @@ class Personality extends Component {
               </td>
             </tr>
 
-            
-
             <tr className="personalityTraitsRow">
               <td>
                 {" "}
@@ -297,7 +299,7 @@ class Personality extends Component {
                 ></div>
               </td>
             </tr>
-            
+
             <tr>
               <td>
                 {" "}
@@ -346,23 +348,26 @@ class Personality extends Component {
               <td>
                 <div
                   className="personalityTraits gradeTwo"
-                  id="empathyTwoID"
+                  id="empathyID"
                 ></div>
               </td>
               <td>
                 <div
                   className="personalityTraits gradeThree"
-                  id="empathyThreeID"
+                  id="empathyID"
                 ></div>
               </td>
               <td>
-                <div className="personalityTraits gradeFour"
-                  id="empathyFourID">
-                  </div>
+                <div
+                  className="personalityTraits gradeFour"
+                  id="empathyID"
+                ></div>
               </td>
               <td>
-                <div className="personalityTraits gradeFive"
-                 id="empathyFourID"></div>
+                <div
+                  className="personalityTraits gradeFive"
+                  id="empathyID"
+                ></div>
               </td>
               <td>
                 <div className="personalityTraits"></div>
@@ -396,10 +401,16 @@ class Personality extends Component {
                 ></div>
               </td>
               <td>
-                <div className="personalityTraits gradeFour" id="honestySevenID"></div>
+                <div
+                  className="personalityTraits gradeFour"
+                  id="honestySevenID"
+                ></div>
               </td>
               <td>
-                <div className="personalityTraits gradeFive" id="honestySevenID"></div>
+                <div
+                  className="personalityTraits gradeFive"
+                  id="honestySevenID"
+                ></div>
               </td>
               <td>
                 <div className="personalityTraits"></div>
@@ -408,34 +419,47 @@ class Personality extends Component {
                 <div className="personalityTraits"></div>
               </td>
             </tr>
-
-           
           </table>
           <div className="personalityTextContainer">
-            
             <h2>My personality</h2>
             <p>
-              Hopefully you didn't stare too much on the attribute matrix. 
-              Unfortunately it is not entirely honest.Surprise. <br></br><br></br>
-              Wouldn't it be strange if a person's temper always was raging high? 
-              If one's patience was constant? Do we all view ourselves as empathic people through and through?
-              Who can really tell what you truly are?
-            </p>
-              
-            <h4>Honesty</h4>
-            <p>
-              I have been raised up in a Kurdish familly and it taught me to give and take raw feedback.
-              As I got older I have fortunately learned to give and recieve feedback more elegantly.</p>
-              
-              <p className="highlighted">Honesty is scarcity</p>
-              <p>
-              My personal experiences in life has taught me to be less honest. 
-              People do and tell whatever is necessary to protect themselves.
-              Telling a lie or a half-truth.
-              In contrast familly and very close friends can be truly honest out of empathy and love.
+              Unfortunately the attributes matrix does not fully represent my
+              personality. I wanted to raise an awereness that a personality is
+              dynamic rather than constant.
+              <br></br>
+              <br></br>I grew up in a Kurdish familly and I learned to be a bit
+              too <span className="highlighted">honest</span> at times.
+              Fortunately I have gotten wiser and am more diplomatic regarding mine and
+              other's opinions.
+              <br></br>
+              <br></br>
+              In addition <span className="highlighted">stubbornness</span> is
+              also a familly attribute. My ancestors and familly have overcome
+              various obstacles throughout our history.
+              <br></br>
+              <br></br>
+              The need of <span className="highlighted">structure</span> is of
+              highest importance to me. But I am not structured which is why I
+              need a disciplined project leader who can help me out.
+              <br></br>
+              <br></br>
+              Furthermore I don't like to{" "}
+              <span className="highlighted">multitask</span>. It makes my head
+              split and I can't <span className="highlighted">focus</span>. In
+              order to utilize my focus besides a structured surrounding and no
+              multitasking, are enjoyable challenges.
+              <br></br>
+              <br></br>I have some problem with being{" "}
+              <span className="highlighted">patient</span>. Consequently I have
+              suffered from this and become a bit wiser. Nowdays I have figured to
+              take a step back and become more...<b>patiently</b>.<br></br>
+              <br></br>
+              Most often I am a very calm but when I suffer setbacks
+              I do display some <span className="highlighted">temper</span>.
               <br></br><br></br>
-              Honesty is an attribute I hold dearly but I've learned that it only can be given to people
-              who truly deserves it.
+              Last but not least <span className="highlighted">empathy</span>. 
+              I do care about people and sometimes a bit too much for my own good.
+              I have gained insights of only being empathic with those I trust and who also care for me.
             </p>
           </div>
         </div>

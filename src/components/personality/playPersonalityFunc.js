@@ -25,9 +25,26 @@ function getRandomTarget() {
   })
 }
 
+var randomEmpathy =['#ff0000','#e71bf2','#ffc0cb','#90ee90','#add8e6','#eb9e34','#345ceb','#f2eb1b','#fffafa'];
+var random_empathy = null;
+
+function getRandomEmpathy() {
+  return randomEmpathy[Math.floor(Math.random() * randomEmpathy.length)];
+}
+
+ function animateEmpathy(inputTarget){
+  anime({
+    targets:'#empathyID',
+    backgroundColor:inputTarget,
+    easing: "easeInOutSine",
+    duration:250
+  })
+}
+
+
+
+
 export async function playPersonalityFunc(inputBoolean) {
-random_target=getRandomTarget();
-console.log('START!!:'+random_target);
 
 const playPatience = anime({
   loopBegin:function(){
@@ -36,6 +53,20 @@ const playPatience = anime({
   loopComplete: function() {
     
     setTimeout(animatePatience(getRandomTarget()),1000);
+  },
+  loop:true,
+  autoplay:false,
+  duration:500,
+
+});
+
+const playEmpathy = anime({
+  loopBegin:function(){
+    animateEmpathy(getRandomEmpathy());
+  },
+  loopComplete: function() {
+    
+    setTimeout(animateEmpathy(getRandomEmpathy()),1000);
   },
   loop:true,
   autoplay:false,
@@ -222,6 +253,7 @@ const playPatience = anime({
     playPatience.restart();
     playCreativity.restart();
     playStructure.restart();
+    playEmpathy.restart();
   }
 
   if(inputBoolean === false){
