@@ -69,7 +69,7 @@ export const IntroSkill = () => {
           <div className="row">
             <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
             <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
-            <div className="col mokaMiddleLightestBrown" id="mokaBasePixelID"></div>
+            <div className="col mokaMiddleLightBrown" id="mokaBasePixelID"></div>
           </div>
 
           <div className="row">
