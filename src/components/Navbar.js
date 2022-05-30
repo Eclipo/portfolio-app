@@ -15,7 +15,7 @@ export const Navbar = () => {
       <div className="container-fluid m-0 p-0" >
         
        
-        <button id="navbarTogglerID" class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        <button id="navbarTogglerID" className="navbar-toggler" type="button" data-bs-toggle="collapse" 
         data-bs-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <FontAwesomeIcon icon={faBars} id ="navIconID"/>

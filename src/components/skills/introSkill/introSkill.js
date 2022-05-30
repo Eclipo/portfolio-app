@@ -3,664 +3,303 @@ import "../introSkill/introSkill.css";
 
 export const IntroSkill = () => {
   return (
-    <div className="mokaTableContainer">
-      <table className="mokaTable">
-        <tr>
-          <table className="mokaTopTable">
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaTop" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaTop" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaTopPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaTopPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaTopPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaTopPixelID"></div>
-              </td>
-            </tr>
-          </table>
-        </tr>
-
-        <tr>
-          <table className="mokaMainTable">
-            <tr>
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaHandle" id="mokaCenterPixelID"></div>
-              </td>
-              <td>
-                <div className="mokaHandle" id="mokaCenterPixelID"></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div className="espressoDrop" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-              <td>
-                <div className="mokaHandle" id="mokaCenterPixelID"></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-              <td>
-                <div className="mokaHandle" id="mokaCenterPixelID"></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-              <td>
-                <div className="mokaHandle" id="mokaCenterPixelID"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaHandle" id="mokaCenterPixelID"></div>
-              </td>
-              <td>
-                <div className="mokaHandle" id="mokaCenterPixelID"></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaCenterPixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaCenterPixelID"></div>
-              </td>
-            </tr>
-          </table>
-        </tr>
-
-        <tr>
-          <table className="mokaBaseTable">
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaMiddleWhite" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div
-                  className="mokaMiddleLightBrown"
-                  id="mokaBasePixelID"
-                ></div>
-              </td>
-
-              <td>
-                <div
-                  className="mokaMiddleLightBrown"
-                  id="mokaBasePixelID"
-                ></div>
-              </td>
-
-              <td>
-                <div
-                  className="mokaMiddleLightBrown"
-                  id="mokaBasePixelID"
-                ></div>
-              </td>
-
-              <td>
-                <div className="mokaMiddleDarkBrown" id="mokaBasePixelID"></div>
-              </td>
-              <td>
-                <div className="mokaMiddleDarkBrown" id="mokaBasePixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID">
-                  {" "}
-                </div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-              <td>
-                <div className="emptyMokaSquare" id="mokaBasePixelID"></div>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <div className="mokaBaseLeft" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseLeft" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseCenter" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-              <td>
-                <div className="mokaBaseRight" id="mokaBasePixelID"></div>
-              </td>
-            </tr>
-          </table>
-        </tr>
-      </table>
+    <div className="container mokaTableContainer">
+      <div className="row">
+        <div className="col" id="mokaColID">
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaTopPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="espressoDrop" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
+            <div className="col mokaMiddleLightestBrown" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+          <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseLeft" id="mokaBasePixelID"></div>
+          </div>
+        </div>
+
+        <div className="col"  id="mokaColID">
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col mokaTop" id="mokaTopPixelID"></div>
+            <div className="col mokaTop" id="mokaTopPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaTopPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaTopPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaTopPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaTopPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaTopPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaTopPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+          </div>
+
+          
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+          </div>
+          
+          <div className="row">
+            <div className="col mokaMiddleLightBrown" id="mokaCenterPixelID"></div>
+            <div className="col mokaMiddleLightBrown" id="mokaBasePixelID"></div>
+            <div className="col mokaMiddleLightBrown" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseCenter" id="mokaBasePixelID"></div>
+          </div>
+        </div>
+
+        <div className="col">
+          <div className="row">
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaTopPixelID"></div>
+            <div className="col mokaBaseRight" id="mokaTopPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaTopPixelID"></div>
+      
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaHandle" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaHandle" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaHandle" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>          
+            <div className="col mokaHandle" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaHandle" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+
+            <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaMiddleDarkBrown" id="mokaBasePixelID"></div>
+
+            <div className="col mokaMiddleDarkBrown" id="mokaBasePixelID"></div>
+
+
+            <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+
+            <div className="col emptyMokaSquare" id="mokaBasePixelID"></div>
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+          </div>
+
+          <div className="row">
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+
+
+            <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

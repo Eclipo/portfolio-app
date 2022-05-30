@@ -5,11 +5,11 @@ import basketRim from "./images/edipRim.png";
 
 export const EdipBasket = () => {
   return (
-    <table id="tableStartBasketGuyID">
-      <tr>
-        <td>
-          <tr>
-            <td>
+    <div id="tableStartBasketGuyID">
+      <div className="row">
+        <div className="col">
+          <div className="row">
+            <div className="col">
               <div className="headBasket">
                 <div className="hairMainBasket"></div>
                 <div className="faceBasket">
@@ -31,11 +31,11 @@ export const EdipBasket = () => {
 
                 <div className="beardBasket"></div>
               </div>
-            </td>
-          </tr>
+            </div>
+          </div>
 
-          <tr>
-            <td>
+          <div className="row">
+            <div className="col">
               <div className="bodyBasket">
                 <div className="left-shoulder">
                   <div className="left-arm">
@@ -51,11 +51,11 @@ export const EdipBasket = () => {
                   <div className="rightHandBasket"></div>
                 </div>
               </div>
-            </td>
-          </tr>
+            </div>
+          </div>
 
-          <tr>
-            <td>
+          <div className="row">
+            <div className="col">
               <div className="lowerBody" id="lowerBodyLeft">
                 <div className="leftLegBasket">
                   <div className="leftShoe"></div>
@@ -66,15 +66,15 @@ export const EdipBasket = () => {
                   <div className="rightShoe"></div>
                 </div>
               </div>
-            </td>
-          </tr>
-        </td>
-        <td>
+            </div>
+          </div>
+        </div>
+        <div className="col">
           <div className="basketRim" style={{ zIndex: "-1" }}>
             <img src={basketRim}></img>
           </div>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+    </div>
   );
 };

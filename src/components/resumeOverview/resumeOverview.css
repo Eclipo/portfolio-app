@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-.resumeHeaderOne {
-  color: var(--primary-red) !important;
-}
 
 #resumeOverview {
   display: block;
@@ -12,6 +9,7 @@
 #resumeContainerID {
   display: none;
 }
+
 .resumeTable {
   background: var(--primary-red);
   width: 95%;
@@ -128,7 +126,6 @@
   margin: auto;
 }
 
-/* What you need: */
 .experienceTable td {
   overflow: hidden;
   display: inline-block;

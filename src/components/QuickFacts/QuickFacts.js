@@ -23,7 +23,7 @@ const QuickFacts = () => {
                             "I am a fullstack developer"
                             ]
                         }
-                        fadeOut={20}
+                        fadeOut={true}
                         typeSpeed={20}
                     
                         loop

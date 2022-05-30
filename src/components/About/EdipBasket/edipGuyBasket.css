@@ -54,7 +54,7 @@
 #tableStartBasketGuyID {
   transform: scale(calc(0.5 / var(--size-divisorBasket)));
   margin: auto;
-  top: -4rem;
+  top: -3.5rem;
   z-index: 1;
   position: absolute;
 }
@@ -308,8 +308,9 @@
 
 .basketRim {
   transform: scale(calc(8 / var(--size-divisorBasket)));
-  margin-left: 20rem;
-  margin-bottom: 2rem;
+  margin-left: 40rem;
+  /* margin-bottom: -10rem; */
+  margin-top: -25rem;
   z-index: -2 !important;
   position: relative;
 }

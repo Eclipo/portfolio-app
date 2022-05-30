@@ -32,6 +32,7 @@ class Skills extends Component {
           style={{ width: "100%", marginTop: "-15rem" }}
         >
           <table className="skillTable">
+          <tbody>
             <tr>
               <td>
                 <h2 className="skillCategory frontEndTheme">
@@ -50,6 +51,7 @@ class Skills extends Component {
                 </h2>
               </td>
             </tr>
+            </tbody>
           </table>
 
           <table className="skillTable">

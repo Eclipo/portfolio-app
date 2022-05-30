@@ -4,6 +4,7 @@ import "./familly.css";
 export const Family = () => {
   return (
     <table id="tableFamilyID">
+    <tbody>
       <tr>
         <td>
           {/* Edip */}
@@ -206,6 +207,7 @@ export const Family = () => {
           </div>
         </td>
       </tr>
+      </tbody>
     </table>
   );
 };

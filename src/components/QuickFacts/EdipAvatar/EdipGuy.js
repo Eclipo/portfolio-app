@@ -3,10 +3,8 @@ import "./edipguy.css";
 import "../QuickAboutAnimation.js";
 export const EdipGuy = () => {
   return (
-    <table id="tableStartGuyID">
-      <tr>
-        <td>
-          <div className="wrapper">
+
+          <div className="wrapper" id="tableStartGuyID">
 
             <div className="edipCircleBackground-circle">
             <div className="triangle-light"></div>
@@ -46,12 +44,12 @@ export const EdipGuy = () => {
               <div className="beard"></div>
             </div>
 
-            <table className="position-absolute cupSteamContainerTable ">
+            <div className="position-absolute cupSteamContainerTable ">
               <div className="right-hand">
                 <div className="left-hand"></div>
               </div>
-              <td>
-                <tr>
+              <div className="col">
+                <div className="row">
                   <div className="steam-container mx-auto">
                     <div className="squiggle-container squiggle-container-1">
                       <div className="squiggle ">
@@ -98,8 +96,8 @@ export const EdipGuy = () => {
                       </div>
                     </div>
                   </div>
-                </tr>
-                <tr>
+                </div>
+                <div className="row">
                   <div className="coffee-cup-container">
                     <svg
                       className="coffee-cup"
@@ -119,12 +117,10 @@ export const EdipGuy = () => {
                       />
                     </svg>
                   </div>
-                </tr>
-              </td>
-            </table>
+                </div>
+              </div>
+            </div>
           </div>
-        </td>
-      </tr>
-    </table>
+     
   );
 };
