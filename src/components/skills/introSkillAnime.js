@@ -140,7 +140,7 @@ export async function playIntroFunc() {
   
       introSkillAnimation.add({
         targets: ".mokaHandle",
-        backgroundColor: ["rgb(70, 39, 22)", "rgb(80, 41, 16)"],
+        backgroundColor: ["rgb(70, 39, 22)", "rgb(53, 52, 52)"],
         easing: "linear",
         duration: 50,
       });

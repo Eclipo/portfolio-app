@@ -3,7 +3,7 @@ import "../introSkill/introSkill.css";
 
 export const IntroSkill = () => {
   return (
-    <div className="container mokaTableContainer">
+    <div className="mokaTableContainer">
       <div className="row">
         <div className="col" id="mokaColID">
           <div className="row">
@@ -232,13 +232,15 @@ export const IntroSkill = () => {
           <div className="row">
             <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
             <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>          
-            <div className="col mokaHandle" id="mokaCenterPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID"></div>
           </div>
 
           <div className="row">
             <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
             <div className="col mokaBaseRight" id="mokaCenterPixelID"></div>
-            <div className="col mokaHandle" id="mokaCenterPixelID"></div>
+            <div className="col emptyMokaSquare" id="mokaCenterPixelID">
+              
+            </div>
           </div>
 
           <div className="row">
@@ -299,6 +301,8 @@ export const IntroSkill = () => {
             <div className="col mokaBaseRight" id="mokaBasePixelID"></div>
           </div>
         </div>
+
+        
       </div>
     </div>
   );

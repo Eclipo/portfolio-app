@@ -29,7 +29,7 @@ class Skills extends Component {
         <div
           className="skillContainer"
           id="skillContainerID"
-          style={{ width: "100%", marginTop: "-15rem" }}
+          style={{ width: "100%"}}
         >
           <table className="skillTable">
           <tbody>
