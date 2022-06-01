@@ -12,7 +12,58 @@ const ResumeOverview = () => {
         className="sectionLine"
         style={{ backgroundColor: "var(--primary-red)" }}
       ></div>
+ <div className="experienceTable" style={{opacity:"1"}}>
+                  <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+                      {/* 30 %  */}
+                    <div className="col m-auto">
+                        <p className="m-1 mx-auto">
+                          Present<br></br>2019-12
+                        </p>
+                        <p className="m-1 mx-auto">
+                          CGI Sverige AB
+                        </p>
 
+                    </div>
+                      {/*5 %  */}
+                     <div className="width1 m-auto">
+                        <div className=" header2VerticalUnderLine"></div>
+                      </div>
+                      {/* 25 %  */}
+                      <span className="col m-auto">
+                        <p className="m-auto">Developer consultant</p>
+                      </span>
+                      {/* 5 %  */}
+                      <div className="width1 m-auto">
+                        <div className="header2VerticalUnderLine"></div>
+                      </div>
+                      {/* 30 %  */}
+                      <div className="col m-auto">
+                        <p className="m-auto">Full-stack .Net</p>
+                        <p className="m-auto">Angular</p>
+                      </div>
+                    </div>
+
+                    <div className="row expOverviewPeriod expOverviewPeriod-reverseColor">
+                      <div className="col m-auto">
+                        <h3 className=" expHeader-reverseColor">
+                          2019-10 - 2019-12
+                        </h3>
+                        <h3 className=" expHeader-reverseColor">
+                          Unemployment
+                        </h3>
+                        <h4 className="expHeader-reverseColor">Bad luck</h4>
+                        <p 
+                          className="expHeader-reverseColor mx-auto w-75"
+                          style={{ textAlign: "left" }}>
+                            Due to prior financial complications Nexer AB left me
+                            speechless and I returned back to base.
+                        </p>
+                      </div>
+                    </div>
+
+
+
+                </div>
       <h1 style={{ color: "var(--primary-red" }}>Resumé Overview</h1>
       <PlayRefresh id="ResumeAnimation" playBoolean={true}></PlayRefresh>
 
@@ -31,6 +82,8 @@ const ResumeOverview = () => {
                   <h2>Languages</h2>
                 </div>
               </div>
+               
+               
                 <div className="experienceTable">
                   <div className="row m-auto">
                     <div className="col mt-1">
@@ -119,36 +172,39 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              {/* <table className="experienceTable">
-                <tbody>
-                  <tr>
+              <div className="experienceTable" style={{opacity:"1"}}>
+                  <div className="row">
                     <div className="expOverviewPeriod expOverviewPeriod-dotted">
-                      <td width="30%">
+
+                  
+                      {/* 30 %  */}
+                    <div className="col">
                         <p className="m-1 mx-auto">
                           Present<br></br>2019-12
                         </p>
                         <p className="m-1 mx-auto">CGI Sverige AB</p>
-                      </td>
-
-                      <td width="5%">
+                    </div>
+                      {/*5 %  */}
+                      <div className="col">
                         <div className="header2VerticalUnderLine"></div>
-                      </td>
-
-                      <td width="25%">
+                      </div>
+                      {/* 25 %  */}
+                      <div className="col">
                         <p className="m-1 mx-auto">Developer consultant</p>
-                      </td>
-
-                      <td width="5%">
+                      </div>
+                      {/* 5 %  */}
+                      <div className="col">
                         <div className="header2VerticalUnderLine"></div>
-                      </td>
-
-                      <td width="30%">
+                      </div>
+                      {/* 30 %  */}
+                      <div className="col">
                         <p className="m-auto">Full-stack .Net</p>
                         <p className="m-auto">Angular</p>
-                      </td>
+                      </div>
                     </div>
-                  </tr>
-                  <tr>
+                    </div>
+                  </div>
+                  {/* <tr>
                     <div className="expOverviewPeriod expOverviewPeriod-reverseColor">
                       <td>
                         <h3 className=" expHeader-reverseColor">
@@ -452,9 +508,8 @@ const ResumeOverview = () => {
                         <p className="m-auto">Sales and support</p>
                       </td>
                     </div>
-                  </tr>
-                </tbody>
-              </table> */}
+                  </tr> */}
+              {/* </div>  */}
             </div>
         </div>
       </div>

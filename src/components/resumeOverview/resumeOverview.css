@@ -30,6 +30,27 @@
   color: var(--primary-red);
 }
 
+.expTableText{
+  margin:auto;
+}
+
+.row>*{
+  padding: 0;
+}
+
+.width1{
+  width: 1%;
+  margin: auto !important;
+}
+
+.width25{
+  width: 25%;
+}
+
+.width30{
+  width: 30%;
+}
+
 .expOverviewPeriod {
   background-color: var(--navy);
   color: var(--primary-red);
@@ -37,8 +58,11 @@
   border-width: 0.16rem;
   border-style: solid;
   border-radius: 18px;
-  margin: 0.25rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
+
 
 .expOverviewPeriod td {
   text-align: center;
@@ -105,9 +129,9 @@
 
 .header2VerticalUnderLine {
   background-color: var(--primary-red);
-  height: 4.5rem;
+  height: 5rem;
   width: 0.2rem;
-  margin: auto !important;
+  /* margin: auto !important; */
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
 }
@@ -123,7 +147,9 @@
 }
 
 .experienceTable {
-  margin: auto;
+  display: inline-block;
+  justify-content: center;
+  width: 95%;
 }
 
 .experienceTable td {
