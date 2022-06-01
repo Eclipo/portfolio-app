@@ -37,6 +37,7 @@ class Personality extends Component {
         </div>
         <div className="flexCenter" id="personalityContainerID">
           <table className="personalityTable" id="personalityTableID">
+          <tbody>
             <tr className="personalityBaseRow">
               <td>
                 <p className="personalityBaseTraits" id="attributeID">
@@ -419,6 +420,7 @@ class Personality extends Component {
                 <div className="personalityTraits"></div>
               </td>
             </tr>
+            </tbody>
           </table>
           <div className="personalityTextContainer">
             <h2>My personality</h2>

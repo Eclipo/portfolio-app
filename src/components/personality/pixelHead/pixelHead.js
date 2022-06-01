@@ -6,7 +6,7 @@ export const PixelHead = () => {
     return (
         <table className="greenSquareTable" >
                         
-                            
+             <tbody>               
         {/* first row  */}
         <tr>
                 <td>
@@ -955,11 +955,8 @@ export const PixelHead = () => {
                    <div className="emptySquare"></div>
                 </td>
             </tr>
-
-            
-
           
-          
+            </tbody>         
        </table>
     
     )

@@ -4,6 +4,7 @@ import "../lightSaber/lightSaber.css";
 export const LightSaber = () => {
   return (
     <table className="lightSaberTable" id="lightSaberTableID">
+    <tbody>
       <tr>
         <td className="emptyLightSaberSquare"></td>
         <td className="emptyLightSaberSquare"></td>
@@ -170,6 +171,7 @@ export const LightSaber = () => {
         <td className="emptyLightSaberSquare"></td>
         <td className="emptyLightSaberSquare"></td>
       </tr>
+      </tbody>
     </table>
   );
 };

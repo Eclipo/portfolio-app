@@ -3,9 +3,7 @@ import "./duck.css";
 import "../SkillAnimation.js";
 export const Duck = () => {
   return (
-    <table id="duckID">
-      <tr>
-        <td>
+    <div id="duckID">
           <div className="wrapper">
             <div className="duckEdipCircleBackground-circle">
               <div className="duckBody" id="duckBodyStart"></div>
@@ -30,8 +28,6 @@ export const Duck = () => {
               </div>
             </div>
           </div>
-        </td>
-      </tr>
-    </table>
+    </div>
   );
 };
