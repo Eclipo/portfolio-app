@@ -51,11 +51,6 @@
   width: 30%;
 }
 
-.eduCol{
-  /* height:17rem; */
-  width: 52%;
-}
-
 .expOverviewPeriod {
   background-color: var(--navy);
   color: var(--primary-red);
@@ -77,8 +72,8 @@
   width: 100%;
 }
 .expOverviewPeriod-dotted {
-  margin-bottom: 0.25rem;
-  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
   border-style: dashed;
 }
 
@@ -126,7 +121,7 @@
   border-width: 0.1vw;
   border-style: solid;
   height: 0.95vh;
-  width: 100%;
+  width: 75%;
   margin: auto;
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
@@ -147,8 +142,11 @@
   border-color: var(--navy);
   border-width: 0.1vw;
   border-style: solid;
-  width: 100%;
+  width: 50%;
   margin: auto;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+
 }
 
 .experienceTable {

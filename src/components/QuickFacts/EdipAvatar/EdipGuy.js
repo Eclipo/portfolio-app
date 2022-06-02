@@ -99,7 +99,8 @@ export const EdipGuy = () => {
                 </div>
                 <div className="row">
                   <div className="coffee-cup-container">
-                    <svg
+                  <div className="cupA">
+                  <svg
                       className="coffee-cup"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 42.2 31"
@@ -107,15 +108,18 @@ export const EdipGuy = () => {
                       <defs>
                         <style></style>
                       </defs>
-                      <path
+                      {/* <path
                         className="cupA"
                         d="M30.1 1.9V23.7c0 2.6-0.9 5.1-5.1 5.1H7.1A4.9 4.9 0 0 1 2 23.8V2 0H3 0. 0 6- 0. 0 6Z"
-                      />
+                      /> */}
+                    
                       <path
                         className="cupB"
                         d="M40.6 9.5a10.2 10.2 0 0 0-8.6-5V0.1H0V23.8a7 7 0 0 0 7.1 7.2H24.9c2.3 0 6.1-0.8 6.9-5.2a10.6 10.6 0 0 0 8.9-5.3A11.3 11.3 0 0 0 40.6 9.5ZM28 23.8c0 2.1-0.4 3.3-3.1 3.3H7.1A3 3 0 0 1 4 23.8V4.1H28V23.8Zm9.3-5.2A7.1 7.1 0 0 1 32 21.8V8.5a7 7 0 0 1 5.2 3.1A7.2 7.2 0 0 1 37.3 18.6Z"
                       />
                     </svg>
+                     </div>
+                   
                   </div>
                 </div>
               </div>

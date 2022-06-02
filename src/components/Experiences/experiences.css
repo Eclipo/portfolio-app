@@ -277,6 +277,7 @@ ul {
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 0.1rem; /* Also needed for space (tweak if needed) */
   margin-left: -1.7rem; /* Also needed for space (tweak if needed) */
+  margin-right: 1rem;
   color: var(--primary-light-green);
   position: relative;
   opacity: 0;

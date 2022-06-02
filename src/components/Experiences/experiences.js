@@ -87,6 +87,9 @@ class Experiences extends Component {
             className="overflow-auto d-block mx-auto justify-content-center"
             id="expCategoryMenu"
           >
+          <tbody>
+
+          
             <tr>
               <td>
                 <div
@@ -130,6 +133,7 @@ class Experiences extends Component {
                 <div className="scrollLine" id="motala_scrollLine"></div>
               </td>
             </tr>
+            </tbody>
           </table>
         </div>
 
@@ -252,9 +256,9 @@ class Experiences extends Component {
               <br></br>
 
               <li className="row">
-                <p className="li_icon" id="_liTwo">
+                <span className="li_icon" id="_liTwo">
                   ▹
-                </p>
+                </span>
                 <p className="col-md-auto" id="_descTwo"></p>
               </li>
               <br></br>

@@ -25,54 +25,41 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
           
           // Intro Section - Turn ON QuickAboutAnimation  ...
           case 0:
-            console.log('INTRO SECTION - playQUICK');
-            // animationQuickFactAbout.playOrStop(true);
             break;
 
           // Quick Facts Section - Turn off Skills
           case 1:
-            console.log('QUICK FACTS SECTION');
+            PlayAnimation('SkillAnimation',1);
             animationQuickFactAbout.playOrStop(true);
-
             break;
 
           //About me Section - Turn Off Personality
             case 2:
-              console.log('ABOUT ME SECTION');
                 PlayAnimation('PersonalityAnimation',1);
-                PlayAnimation('SkillAnimation',1);
-
+                animationQuickFactAbout.playOrStop(true);
             break;
 
-          //Skills Section -  Turn OFF Resume, TURN OF About me
+          //Skills Section -  Turn OFF QuickAbout
             case 3:
               console.log('SKILLS SECTION');
-              // PlayAnimation('ResumeAnimation',false);
               animationQuickFactAbout.playOrStop(false);
               PlayAnimation('SkillAnimation',2);
-
-
             break;
 
-          //Personality Section -  Turn OFF Major Experiences
+          //Personality Section -  Turn OFF Skills
             case 4:
               console.log('PERSONALITY SECTION');
               PlayAnimation('SkillAnimation',1);
-              PlayAnimation('PersonalityAnimation',2);
-
-              // PlayAnimation('ExperienceAnimation',false);
-
-              
+              PlayAnimation('PersonalityAnimation',2);              
             break;
 
-              //Resume Overview Section - Turn OFF Skills
+              //Resume Overview Section - Turn OFF Personality
               case 5:
-
+                PlayAnimation('PersonalityAnimation',1);
               break;
 
               //Major experiences - Turn OFF Personality
               case 6:
-                PlayAnimation('PersonalityAnimation',1);
 
               break;
 

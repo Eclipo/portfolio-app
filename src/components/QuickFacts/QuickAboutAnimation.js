@@ -236,7 +236,7 @@ export class QuickAboutAnimation {
   playOrStop(input) {
     console.log("!!!!!! QUICKABOUT IS TURNING ON!!!!");
 
-    if (input === true) {
+    if (input === true && this.edipAndFamillyAnimation.paused) {
       console.log("NOW IT IS GOING TO PLAY!!!");
       this.edipAndFamillyAnimation.play();
       // this.familyBlinkAnimation.play();

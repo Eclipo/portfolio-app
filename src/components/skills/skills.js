@@ -613,8 +613,8 @@ class Skills extends Component {
               the database.
               <br></br>
               <br></br>
-              In other words I am a full-stack developer who is lagom.
-              Lagom is a Swedish word for not being too good or too bad.
+              In other words I am a full-stack developer and hopefully I am lagom.
+              Lagom is a Swedish word for being in the middle which is considered good enough. Not too much or too little.
             </p>
           </div>
           </div>

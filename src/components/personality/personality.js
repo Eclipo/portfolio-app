@@ -425,43 +425,39 @@ class Personality extends Component {
           <div className="personalityTextContainer">
             <h2>My personality</h2>
             <p>
-              Unfortunately the attributes matrix does not fully represent my
-              personality. I wanted to raise an awereness that a personality is
+              The attributes matrix does not fully represent my
+              personality because I want to raise an awereness that a personality is
               dynamic rather than constant.
               <br></br>
-              <br></br>I grew up in a Kurdish familly and I learned to be a bit
+              <br></br>I grew up in a Kurdish familly and I became a bit
               too <span className="highlighted">honest</span> at times.
-              Fortunately I have gotten wiser and am more diplomatic regarding mine and
-              other's opinions.
+              Fortunately I have gotten wiser and I am more diplomatic.
               <br></br>
               <br></br>
-              In addition <span className="highlighted">stubbornness</span> is
-              also a familly attribute. My ancestors and familly have overcome
+              <span className="highlighted">Stubbornness</span> is an
+              another familly attribute. My ancestors and familly have overcome
               various obstacles throughout our history.
               <br></br>
               <br></br>
               The need of <span className="highlighted">structure</span> is of
-              highest importance to me. But I am not structured which is why I
-              need a disciplined project leader who can help me out.
+              great importance to me but I struggle with it.
               <br></br>
               <br></br>
-              Furthermore I don't like to{" "}
-              <span className="highlighted">multitask</span>. It makes my head
+              Furthermore I don't like <span className="highlighted">multitasking</span>. It makes my head
               split and I can't <span className="highlighted">focus</span>. In
               order to utilize my focus besides a structured surrounding and no
-              multitasking, are enjoyable challenges.
+              multitasking are enjoyable challenges.
               <br></br>
-              <br></br>I have some problem with being{" "}
+              <br></br>I have some problem with being
               <span className="highlighted">patient</span>. Consequently I have
-              suffered from this and become a bit wiser. Nowdays I have figured to
-              take a step back and become more...<b>patiently</b>.<br></br>
+              suffered from this. Nowdays I have figured to
+              take a step back and breath alot.<br></br>
               <br></br>
               Most often I am a very calm but when I suffer setbacks
               I do display some <span className="highlighted">temper</span>.
               <br></br><br></br>
               Last but not least <span className="highlighted">empathy</span>. 
-              I do care about people and sometimes a bit too much for my own good.
-              I have gained insights of only being empathic with those I trust and who also care for me.
+              I do care about people and its important to me that those who matters to me feel good.
             </p>
           </div>
         </div>
