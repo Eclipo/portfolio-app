@@ -51,6 +51,11 @@
   width: 30%;
 }
 
+.eduCol{
+  /* height:17rem; */
+  width: 52%;
+}
+
 .expOverviewPeriod {
   background-color: var(--navy);
   color: var(--primary-red);
