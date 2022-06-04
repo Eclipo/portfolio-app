@@ -1,15 +1,9 @@
 .marioContainer {
   opacity: 1;
-  /* margin-bottom: 10rem; */
-  margin-left: 1rem;
-
   /* position: absolute; */
-  /* display: inline-flex; */
+  margin-bottom: 5rem;
 }
 
-.marioHat, .marioFace, .marioBody{
-  /* overflow: hidden; */
-}
 .emptyMario{
   float: left;
   width: 2rem;
@@ -33,7 +27,7 @@
   border-color: black;
   border-width: 0.001rem;
   border-style: solid;
-  z-index: 2 !important;
+
 }
 
 .marioYellow{
@@ -77,14 +71,4 @@
   border-style: solid;
 }
 
-.marioArmLeftID{
-  float: left;
-  width: 2rem;
-  height: 2rem;
-  background-color: blue;
-  border-color: black;
-  border-width: 0.001rem;
-  border-style: solid;
-
-}
 
