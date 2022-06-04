@@ -9,6 +9,7 @@ import Skills from "./components/skills/skills";
 import Personality from "./components/personality/personality";
 import ResumeOverview from "./components/resumeOverview/resumeOverview";
 import Experiences from "./components/Experiences/experiences";
+import Portfolio from "./components/Portfolio/portfolio";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
       <Personality></Personality>
       <ResumeOverview></ResumeOverview>
       <Experiences></Experiences>
+      <Portfolio></Portfolio>
     </>
   );
 }

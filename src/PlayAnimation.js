@@ -3,6 +3,7 @@ import { PersonalityAnimation } from "../src/components/personality/personalityA
 import { SkillAnimation } from "../src/components/skills/SkillAnimation.js";
 import {ResumeAnimation} from "../src/components/resumeOverview/roAnimation.js";
 import {ExperienceAnimation} from "../src/components/Experiences/experienceAnimation.js";
+import { PortfolioAnimation } from "./components/Portfolio/PortfolioAnimation.js";
 import anime from "animejs";
 
 
@@ -11,6 +12,7 @@ const SkillAnime = new SkillAnimation();
 const PersonalityAnime = new PersonalityAnimation();
 const ExperienceAnime = new ExperienceAnimation();
 const ResumeAnime = new ResumeAnimation();
+const PortfolioAnime = new PortfolioAnimation();
 
 export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID,inputTextPlayID){
   console.log('!!!!!!!!!!!!  '+inputTextPlayID);
@@ -87,6 +89,7 @@ export function PlayAnimation(inputID, inputPlayBoolean){
     objArray.push(PersonalityAnime);
     objArray.push(ExperienceAnime);
     objArray.push(ResumeAnime);
+    objArray.push(PortfolioAnime);
 
 
   //refresh_PersonalityAnime

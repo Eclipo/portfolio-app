@@ -1,0 +1,125 @@
+/***************** SKILLS *********************/
+
+.skillContainer {
+  margin-top: -35vh;
+  margin: auto;
+  opacity: 0;
+}
+
+#duckContainerID {
+  background: transparent;
+  display: none;
+  opacity: 0;
+}
+
+
+.skillTable {
+  background: var(--navy);
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 18px;
+  transform: scale(0.95);
+  border-collapse: separate;
+}
+
+.skillTable tbody p {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+#skillDividerTd {
+  width: 15vw !important;
+  height: 0.5rem !important;
+  margin: auto !important;
+
+  border-radius: 10px !important;
+  opacity: 0;
+}
+
+.skillPoint {
+  height: 1rem;
+  margin-left: -5rem;
+}
+
+.skillCategory {
+  padding: 5%;
+  margin: auto;
+  width: fit-content !important;
+  font-size: 1.25rem !important;
+  opacity: 0;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  border-radius: 5px;
+}
+
+.skillPointPelar {
+  height: 3rem;
+  width: 1.75rem;
+  background-color: var(--primary-lightGrey);
+  position: relative;
+  margin: auto;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.skillPointGround {
+  background-color: var(--green-tint);
+  padding: 4% !important;
+  margin: 3% !important;
+  font-size: 0.85rem !important;
+  color: var(--primary-white);
+  border-radius: 5px;
+}
+
+.emptyPointGround {
+  background-color: var(--primary-lightDarkGrey);
+  position: relative;
+  padding: 0.3rem;
+  margin: auto;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  font-weight: 500;
+  color: var(--primary-white);
+}
+
+
+.skill {
+  background-color: var(--primary-blue);
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  padding: 0.3rem;
+  opacity: 0;
+  border-radius: 18px;
+}
+
+
+
+.frontEndTheme {
+  background-color: #273a5c;
+  color: var(--primary-white) !important;
+}
+
+.backEndTheme {
+  background-color: rgb(48, 79, 136) !important;
+  color: var(--primary-white) !important;
+}
+
+.applicationsTheme {
+  background-color: rgb(65, 107, 185) !important;
+  color: var(--primary-white) !important;
+}
+
+.rolesTheme {
+  background-color: rgb(52, 101, 193) !important;
+  color: var(--primary-white) !important;
+}
+
+.duckText {
+  margin: auto;
+  text-align: left;
+  font-size: "0.8375rem";
+  font-weight: "625";
+  color: var(--light-slate);
+  margin-top: 16rem;
+}
