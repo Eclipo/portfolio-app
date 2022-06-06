@@ -8,10 +8,11 @@
   /* z-index: 1; */
   position: absolute;
 }
-.marioHead, .marioFace{
+.marioHead, .marioFace, .marioBody{
   display: block;
 
 }
+
 
 .marioCap{
   /* overflow: hidden; */
@@ -25,16 +26,65 @@
 
 } */
 
-.marioLeftArm{
-  margin-top: 16rem;
-  left:9.25rem;
+.marioArmLeft{
+  margin-top: 13.318rem;
+  left:-.25rem;
+  z-index: 2;
+  position: absolute;
+
+}
+
+
+.marioArmRight{
+  margin-top: 13.39rem;
+  left:15rem;
+  z-index: 2;
+  position: absolute;
+}
+/* 
+.marioLegShoeLeft{
+  width: fit-content;
+  height: f;
+} */
+.marioLegLeft{
+  height: min-content;
+  top: 19.75rem;
+  left:2.8rem;
+  z-index: 2;
+  position: absolute;
+  width: fit-content;
+}
+
+.marioLegRight{
+  height: min-content;
+
+  top: 19.75rem;
+  left:10.45rem;
+  z-index: 2;
+  position: absolute;
+}
+
+.marioShoeLeft{
+  height: min-content;
+
+  top: 23rem;
+  left:-0.25rem;
+  z-index: 2;
+  position: absolute;
+}
+
+.marioShoeRight{
+  height: min-content;
+
+  top: 23rem;
+  left:12rem;
   z-index: 2;
   position: absolute;
 }
 
 .emptyMario{
   float: left;
- width: 1.5rem;
+  width: 1.5rem;
   height: 1.5rem;
 }
 .marioRed{
@@ -46,6 +96,7 @@
   border-width: 0.001rem;
   border-style: solid;
 }
+
 
 .marioBlue {
   float: left;
@@ -89,11 +140,52 @@
   border-style: solid;
 }
 
+.marioBrownNoFLoat{
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(100, 51, 1);
+  border-color: black;
+  border-width: 0.001rem;
+  border-style: solid;
+}
+
+.marioRedNoFLoat{
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  border-color: black;
+  border-width: 0.001rem;
+  border-style: solid;
+}
+
+.marioBlueNoFLoat{
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: blue;
+  border-color: black;
+  border-width: 0.001rem;
+  border-style: solid;
+}
+
+.marioSkinNoFLoat{
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(252, 195, 151);
+  border-color: black;
+  border-width: 0.001rem;
+  border-style: solid;
+}
+
+.emptyMarioNoFloat{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .marioEye{
   float: left;
  width: 1.5rem;
   height: 1.5rem;
-  background-color: black;
+  background-color: rgb(100, 51, 1);
   border-color: black;
   border-width: 0.001rem;
   border-style: solid;

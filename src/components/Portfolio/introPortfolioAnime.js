@@ -11,11 +11,38 @@ export async function playMarioFunc() {
       });
 
       marioArmHandLeftAnimation.add({
-          targets:'.marioLeftArm',
-          translateY:[0,'-5rem'],
-          translateX:[0,'5rem'],
-        rotate:[0,'-90deg'],
+        targets:'.marioLegLeft',
+        translateY:[0,'-1rem'],
+        translateX:[0,'-1rem'],
+      rotate:[0,'25deg'],
+    });
+      marioArmHandLeftAnimation.add({
+          targets:'.marioShoeLeft',
+          translateY:[0,'-1rem'],
+          translateX:[0,'-1rem'],
+        rotate:[0,'25deg'],
       });
+
+      marioArmHandLeftAnimation.add({
+        targets:'.marioShoeRight',
+        translateY:[0,'-1rem'],
+        translateX:[0,'-1rem'],
+      rotate:[0,'-25deg'],
+    });
+
+    marioArmHandLeftAnimation.add({
+      targets:'.marioArmRight',
+      translateY:[0,'-1rem'],
+      translateX:[0,'-1rem'],
+    rotate:[0,'-25deg'],
+  });
+
+  marioArmHandLeftAnimation.add({
+    targets:'.marioHandRight',
+    translateY:[0,'-1rem'],
+    translateX:[0,'-1rem'],
+  rotate:[0,'-25deg'],
+});
    
 
     const marioShoulderLeftAnimation = anime.timeline({
