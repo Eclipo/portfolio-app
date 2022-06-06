@@ -1,20 +1,41 @@
 import anime from "animejs";
 
 export async function playMarioFunc() {
-    const marioAnimation = anime.timeline({
+    const marioArmHandLeftAnimation = anime.timeline({
         loop: true,
         autoplay: false,
-        duration: 1250,
+        duration: 750,
+        easing:'linear',
+        endDelay:250,
+        direction:'alternate'
       });
 
-      marioAnimation.add({
-          targets:'#marioArmLeftID',
-          translateY:'-0.25rem',
-          direction:'alternate'
+      marioArmHandLeftAnimation.add({
+          targets:'.marioLeftArm',
+          translateY:[0,'-5rem'],
+          translateX:[0,'5rem'],
+        rotate:[0,'-90deg'],
+      });
+   
+
+    const marioShoulderLeftAnimation = anime.timeline({
+        loop: true,
+        autoplay: false,
+        duration: 750,
       });
 
-  marioAnimation.play();
+      marioShoulderLeftAnimation.add({
+        targets:'#marioShoulderLeftID',
+        translateY:'-0.25rem',
+        direction:'alternate'
+    });
 
+    marioArmHandLeftAnimation.play();
+
+    // marioShoulderLeftAnimation.play();
+
+
+    
 }
 // import { playPostFunc } from "./postPortfolioAnime";
 
