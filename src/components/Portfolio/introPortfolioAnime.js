@@ -6,7 +6,8 @@ export async function playMarioFunc() {
   const marioAnimation = anime.timeline({
     loop: false,
     autoplay: false,
-    duration: 300,
+    duration: 500,
+
     easing:'linear',
     endDelay:250,
     direction:'alternate'
@@ -15,7 +16,8 @@ export async function playMarioFunc() {
     const marioArmHandRightAnimation = anime.timeline({
         loop: false,
         autoplay: false,
-        duration: 300,
+        duration: 500,
+
         easing:'linear',
         endDelay:250,
         direction:'alternate'
@@ -24,7 +26,8 @@ export async function playMarioFunc() {
       const marioLegRightAnimation = anime.timeline({
         loop: false,
         autoplay: false,
-        duration: 300,
+        duration: 500,
+
         easing:'linear',
         endDelay:250,
         direction:'alternate'
@@ -32,7 +35,7 @@ export async function playMarioFunc() {
 
       marioAnimation.add({
         targets:'.marioContainer',
-        translateY:[0,'-5rem']      })
+        translateY:[0,'-3rem']      })
 
         marioAnimation.add({
             targets:[".marioRed",".marioBlue",".marioYellow",".marioBrown",".marioSkin", ".marioEye",'.emptyMario',
@@ -68,7 +71,8 @@ export async function playMarioFunc() {
   const marioLegLeftAnimation = anime.timeline({
     loop: false,
     autoplay: false,
-    duration: 300,
+    duration: 500,
+
     easing:'linear',
     endDelay:250,
     direction:'alternate'
@@ -86,7 +90,8 @@ export async function playMarioFunc() {
     const marioArmHandLeftAnimation = anime.timeline({
       loop: false,
       autoplay: false,
-      duration: 300,
+      duration: 500,
+
       easing:'linear',
       endDelay:250,
       direction:'alternate'
@@ -195,7 +200,8 @@ export async function playMarioFunc() {
 //         backgroundColor: ["rgb(70, 39, 22)", "rgba(255, 255, 255, 0)"],
 //         borderRadius: ["50%", "0%"],
 //         easing: "linear",
-//         duration: 300,
+//         duration: 500,
+
 //       });
   
 //       introSkillAnimation.add({
@@ -203,7 +209,8 @@ export async function playMarioFunc() {
 //         backgroundColor: ["rgb(70, 39, 22)", "rgb(53, 52, 52)"],
 //         borderRadius: ["50%", "0%"],
 //         easing: "linear",
-//         duration: 300,
+//         duration: 500,
+
 //       });
   
 //       introSkillAnimation.add({
@@ -265,7 +272,8 @@ export async function playMarioFunc() {
 //         translateY: [0, 50],
 //         borderRadius: "50%",
 //         easing: "linear",
-//         duration: 300,
+//         duration: 500,
+
 //       });
   
 //       introSkillAnimation.add({
@@ -297,7 +305,8 @@ export async function playMarioFunc() {
 //         translateY: [0, 50],
 //         borderRadius: "50%",
 //         easing: "linear",
-//         duration: 300,
+//         duration: 500,
+
 //       });
   
 //       introSkillAnimation.add({
@@ -360,7 +369,8 @@ export async function playMarioFunc() {
 //                   "#Beginner, #Elementary, #Intermediate, #Advanced, #Expert, .skillCategory",
 //                 translateX: ["-3rem", 0],
 //                 opacity: [0, 1],
-//                 duration: 300,
+//                 duration: 500,
+
 //                 easing: "easeInCirc",
 //                 delay: anime.stagger(125)
 //       });
