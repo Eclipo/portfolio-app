@@ -27,8 +27,8 @@
 } */
 
 .marioArmLeft{
-  margin-top: 13.318rem;
-  left:-.25rem;
+  margin-top: 8.85rem;
+  left:-.3rem;
   z-index: 2;
   position: absolute;
 
@@ -36,8 +36,8 @@
 
 
 .marioArmRight{
-  margin-top: 13.39rem;
-  left:15rem;
+  margin-top: 8.85rem;
+  left:10rem;
   z-index: 2;
   position: absolute;
 }
@@ -48,8 +48,8 @@
 } */
 .marioLegLeft{
   height: min-content;
-  top: 19.75rem;
-  left:2.8rem;
+  top: 13rem;
+  left:.9rem;
   z-index: 2;
   position: absolute;
   width: fit-content;
@@ -58,8 +58,8 @@
 .marioLegRight{
   height: min-content;
 
-  top: 19.75rem;
-  left:10.45rem;
+  top: 13rem;
+  left:7.9rem;
   z-index: 2;
   position: absolute;
 }
@@ -67,8 +67,8 @@
 .marioShoeLeft{
   height: min-content;
 
-  top: 23rem;
-  left:-0.25rem;
+  top: 15.25rem;
+  left:1.35rem;
   z-index: 2;
   position: absolute;
 }
@@ -76,21 +76,21 @@
 .marioShoeRight{
   height: min-content;
 
-  top: 23rem;
-  left:12rem;
+  top: 15.25rem;
+  left:9rem;
   z-index: 2;
   position: absolute;
 }
 
 .emptyMario{
   float: left;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
 }
 .marioRed{
   float: left;
- width: 1.5rem;
-  height: 1.5rem;
+ width: 1rem;
+  height: 1rem;
   background-color: red;
   border-color: black;
   border-width: 0.001rem;
@@ -100,8 +100,8 @@
 
 .marioBlue {
   float: left;
- width: 1.5rem;
-  height: 1.5rem;
+ width: 1rem;
+  height: 1rem;
   background-color: blue;
   border-color: black;
   border-width: 0.001rem;
@@ -111,8 +111,8 @@
 
 .marioYellow{
   float: left;
- width: 1.5rem;
-  height: 1.5rem;
+ width: 1rem;
+  height: 1rem;
   background-color: yellow;
   border-color: black;
   border-width: 0.001rem;
@@ -121,8 +121,8 @@
 
 .marioBrown{
   float: left;
- width: 1.5rem;
-  height: 1.5rem;
+ width: 1rem;
+  height: 1rem;
   background-color: rgb(100, 51, 1);
   border-color: black;
   border-width: 0.001rem;
@@ -132,8 +132,8 @@
 
 .marioSkin{
   float: left;
- width: 1.5rem;
-  height: 1.5rem;
+ width: 1rem;
+  height: 1rem;
   background-color: rgb(252, 195, 151);
   border-color: black;
   border-width: 0.001rem;
@@ -141,8 +141,8 @@
 }
 
 .marioBrownNoFLoat{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   background-color: rgb(100, 51, 1);
   border-color: black;
   border-width: 0.001rem;
@@ -150,8 +150,8 @@
 }
 
 .marioRedNoFLoat{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   background-color: red;
   border-color: black;
   border-width: 0.001rem;
@@ -159,8 +159,8 @@
 }
 
 .marioBlueNoFLoat{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   background-color: blue;
   border-color: black;
   border-width: 0.001rem;
@@ -168,8 +168,8 @@
 }
 
 .marioSkinNoFLoat{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   background-color: rgb(252, 195, 151);
   border-color: black;
   border-width: 0.001rem;
@@ -177,14 +177,14 @@
 }
 
 .emptyMarioNoFloat{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .marioEye{
   float: left;
- width: 1.5rem;
-  height: 1.5rem;
+ width: 1rem;
+  height: 1rem;
   background-color: rgb(100, 51, 1);
   border-color: black;
   border-width: 0.001rem;

@@ -144,7 +144,7 @@ export const Mario = () => {
           <tbody>
             <tr>
               <td>
-                <div className="emptyMarioNoFloat"></div>
+                <div className="marioBlueNoFLoat"></div>
                 <div className="marioBlueNoFLoat"></div>    
               </td>
               <td>
@@ -182,7 +182,7 @@ export const Mario = () => {
                 <div className="marioBlueNoFLoat"></div>    
               </td>
               <td>
-                <div className="emptyMarioNoFloat"></div>
+                <div className="marioBlueNoFLoat"></div>
                 <div className="marioBlueNoFLoat"></div>    
               </td>
             
@@ -312,22 +312,22 @@ export const Mario = () => {
           <tbody>
             <tr>
               <td>
+                <div className="marioBrownNoFLoat"></div>
+                <div className="marioBrownNoFLoat"></div>
+              </td>
+
+              <td>
+                <div className="marioBrownNoFLoat"></div>
+                <div className="marioBrownNoFLoat"></div>
+              </td>
+
+              <td>
+                <div className="marioBrownNoFLoat"></div>
+                <div className="marioBrownNoFLoat"></div>
+              </td>
+
+              <td>
                 <div className="emptyMarioNoFloat"></div>
-                <div className="marioBrownNoFLoat"></div>
-              </td>
-
-              <td>
-                <div className="marioBrownNoFLoat"></div>
-                <div className="marioBrownNoFLoat"></div>
-              </td>
-
-              <td>
-                <div className="marioBrownNoFLoat"></div>
-                <div className="marioBrownNoFLoat"></div>
-              </td>
-
-              <td>
-                <div className="marioBrownNoFLoat"></div>
                 <div className="marioBrownNoFLoat"></div>
               </td>
             </tr>
@@ -335,6 +335,7 @@ export const Mario = () => {
         </table>
       </div>
 </div>
+    <div className="marioLegShoeRight">
       <div className="marioLegRight">
         <table>
           <tbody>
@@ -356,6 +357,7 @@ export const Mario = () => {
           </tbody>
         </table>
       </div>
+  
 
       <div className="marioShoeRight">
         <table>
@@ -384,6 +386,7 @@ export const Mario = () => {
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
 
 

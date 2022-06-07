@@ -1,64 +1,99 @@
 import anime from "animejs";
 
 export async function playMarioFunc() {
-    const marioArmHandLeftAnimation = anime.timeline({
+
+  const marioJumpAnimation = anime.timeline({
+    loop: true,
+    autoplay: false,
+    duration: 500,
+    easing:'linear',
+    endDelay:250,
+    direction:'alternate'
+  });
+
+    const marioArmHandRightAnimation = anime.timeline({
         loop: true,
         autoplay: false,
-        duration: 750,
+        duration: 500,
         easing:'linear',
         endDelay:250,
         direction:'alternate'
       });
 
-      marioArmHandLeftAnimation.add({
-        targets:'.marioLegLeft',
-        translateY:[0,'-1rem'],
-        translateX:[0,'-1rem'],
-      rotate:[0,'25deg'],
-    });
-      marioArmHandLeftAnimation.add({
-          targets:'.marioShoeLeft',
-          translateY:[0,'-1rem'],
-          translateX:[0,'-1rem'],
-        rotate:[0,'25deg'],
-      });
-
-      marioArmHandLeftAnimation.add({
-        targets:'.marioShoeRight',
-        translateY:[0,'-1rem'],
-        translateX:[0,'-1rem'],
-      rotate:[0,'-25deg'],
-    });
-
-    marioArmHandLeftAnimation.add({
-      targets:'.marioArmRight',
-      translateY:[0,'-1rem'],
-      translateX:[0,'-1rem'],
-    rotate:[0,'-25deg'],
-  });
-
-  marioArmHandLeftAnimation.add({
-    targets:'.marioHandRight',
-    translateY:[0,'-1rem'],
-    translateX:[0,'-1rem'],
-  rotate:[0,'-25deg'],
-});
-   
-
-    const marioShoulderLeftAnimation = anime.timeline({
+      const marioLegRightAnimation = anime.timeline({
         loop: true,
         autoplay: false,
-        duration: 750,
+        duration: 500,
+        easing:'linear',
+        endDelay:250,
+        direction:'alternate'
       });
 
-      marioShoulderLeftAnimation.add({
-        targets:'#marioShoulderLeftID',
-        translateY:'-0.25rem',
-        direction:'alternate'
+      marioJumpAnimation.add({
+        targets:'.marioContainer',
+        translateY:[0,'-5rem']      })
+
+    marioLegRightAnimation.add({
+      targets:'.marioLegShoeRight',
+      translateY:[0,'6rem'],
+      translateX:[0,'-8rem'],
+    rotate:[0,'-45deg'],
+    // scale:0.8
+
+  });
+
+    marioArmHandRightAnimation.add({
+      targets:'.marioArmRight',
+      translateY:[0,'-3rem'],
+      translateX:[0,'1.5rem'],
+    rotate:[0,'-125deg'],
+    // scale:0.8
+
+  });
+
+  
+  const marioLegLeftAnimation = anime.timeline({
+    loop: true,
+    autoplay: false,
+    duration: 500,
+    easing:'linear',
+    endDelay:250,
+    direction:'alternate'
     });
 
-    marioArmHandLeftAnimation.play();
+    marioLegLeftAnimation.add({
+      targets:'.marioLegShoeLeft',
+      translateY:[0,'3rem'],
+      translateX:[0,'4.5rem'],
+    rotate:[0,'25deg'],
+    // scale:0.8
 
+  });
+
+    const marioArmHandLeftAnimation = anime.timeline({
+      loop: true,
+      autoplay: false,
+      duration: 500,
+      easing:'linear',
+      endDelay:250,
+      direction:'alternate'
+      });
+
+      marioArmHandLeftAnimation.add({
+        targets:'.marioArmLeft',
+        translateY:[0,'-1rem'],
+        translateX:[0,'-1.25rem'],
+      rotate:[0,'45deg'],
+      // scale:0.8
+
+    });
+
+
+    marioArmHandRightAnimation.play();
+    marioLegRightAnimation.play();
+    marioArmHandLeftAnimation.play();
+    marioLegLeftAnimation.play();
+    marioJumpAnimation.play();
     // marioShoulderLeftAnimation.play();
 
 
@@ -338,7 +373,7 @@ export async function playMarioFunc() {
 //                           anime({
 //                             targets:'#duckContainerID',
 //                             opacity:[0,1],
-//                             duration:750,
+//                             duration:500,
 //                             easing: "easeInOutQuad"
 //                           });
 //                           playPostFunc(true);
