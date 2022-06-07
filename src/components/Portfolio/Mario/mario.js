@@ -4,7 +4,9 @@ import "../Mario/mario.css";
 export const Mario = () => {
   return (
     <div className="marioContainer">
-    
+      <div className="mario">
+
+      
       <div className="marioHead">
         <div className="marioCap">
           <div className="emptyMario"></div>    
@@ -263,22 +265,8 @@ export const Mario = () => {
           <div className="emptyMario"></div>
           <div className="emptyMario"></div>
         </div>
-        {/* <div className="marioBodyRow">
-          <div className="emptyMario"></div>    
-          <div className="emptyMario"></div>
       
-        <div className="marioRed"></div>        
-          <div className="marioRed"></div>    
-          <div className="marioRed"></div>    
-          <div className="emptyMario"></div>
-          <div className="emptyMario"></div>
-          <div className="marioRed"></div>    
-          <div className="marioRed"></div>    
-          <div className="marioRed"></div>    
-          <div className="emptyMario"></div>
-          <div className="emptyMario"></div>
-        </div> */}
-      
+      </div>
       </div>
 
     <div className="marioLegShoeLeft">

@@ -1,37 +1,50 @@
 import anime from "animejs";
 
 export async function playMarioFunc() {
+  const ratio = 0.25 * window.innerWidth;
 
-  const marioJumpAnimation = anime.timeline({
-    loop: true,
+  const marioAnimation = anime.timeline({
+    loop: false,
     autoplay: false,
-    duration: 500,
+    duration: 300,
     easing:'linear',
     endDelay:250,
     direction:'alternate'
   });
 
     const marioArmHandRightAnimation = anime.timeline({
-        loop: true,
+        loop: false,
         autoplay: false,
-        duration: 500,
+        duration: 300,
         easing:'linear',
         endDelay:250,
         direction:'alternate'
       });
 
       const marioLegRightAnimation = anime.timeline({
-        loop: true,
+        loop: false,
         autoplay: false,
-        duration: 500,
+        duration: 300,
         easing:'linear',
         endDelay:250,
         direction:'alternate'
       });
 
-      marioJumpAnimation.add({
+      marioAnimation.add({
         targets:'.marioContainer',
         translateY:[0,'-5rem']      })
+
+        marioAnimation.add({
+            targets:[".marioRed",".marioBlue",".marioYellow",".marioBrown",".marioSkin", ".marioEye",'.emptyMario',
+            '.emptyMarioNoFloat','.marioRedNoFLoat', '.marioBlueNoFLoat','.marioBrownNoFLoat','.marioSkinNoFLoat'],
+            delay: anime.stagger(24,{grid:[45,45],from: "last"}),
+            // scale:[1,0.5],
+            translateY: ()=>  anime.random(-ratio,ratio),
+            opacity:[1,0]
+            ,complete:function(){
+             
+            }
+        })
 
     marioLegRightAnimation.add({
       targets:'.marioLegShoeRight',
@@ -44,18 +57,18 @@ export async function playMarioFunc() {
 
     marioArmHandRightAnimation.add({
       targets:'.marioArmRight',
-      translateY:[0,'-3rem'],
-      translateX:[0,'1.5rem'],
-    rotate:[0,'-125deg'],
+      translateY:[0,'-6rem'],
+      translateX:[0,'0.25rem'],
+    rotate:[0,'-180deg'],
     // scale:0.8
 
   });
 
   
   const marioLegLeftAnimation = anime.timeline({
-    loop: true,
+    loop: false,
     autoplay: false,
-    duration: 500,
+    duration: 300,
     easing:'linear',
     endDelay:250,
     direction:'alternate'
@@ -71,9 +84,9 @@ export async function playMarioFunc() {
   });
 
     const marioArmHandLeftAnimation = anime.timeline({
-      loop: true,
+      loop: false,
       autoplay: false,
-      duration: 500,
+      duration: 300,
       easing:'linear',
       endDelay:250,
       direction:'alternate'
@@ -81,9 +94,9 @@ export async function playMarioFunc() {
 
       marioArmHandLeftAnimation.add({
         targets:'.marioArmLeft',
-        translateY:[0,'-1rem'],
+        translateY:[0,'-2rem'],
         translateX:[0,'-1.25rem'],
-      rotate:[0,'45deg'],
+      rotate:[0,'90deg'],
       // scale:0.8
 
     });
@@ -93,7 +106,7 @@ export async function playMarioFunc() {
     marioLegRightAnimation.play();
     marioArmHandLeftAnimation.play();
     marioLegLeftAnimation.play();
-    marioJumpAnimation.play();
+    marioAnimation.play();
     // marioShoulderLeftAnimation.play();
 
 
@@ -182,7 +195,7 @@ export async function playMarioFunc() {
 //         backgroundColor: ["rgb(70, 39, 22)", "rgba(255, 255, 255, 0)"],
 //         borderRadius: ["50%", "0%"],
 //         easing: "linear",
-//         duration: 500,
+//         duration: 300,
 //       });
   
 //       introSkillAnimation.add({
@@ -190,7 +203,7 @@ export async function playMarioFunc() {
 //         backgroundColor: ["rgb(70, 39, 22)", "rgb(53, 52, 52)"],
 //         borderRadius: ["50%", "0%"],
 //         easing: "linear",
-//         duration: 500,
+//         duration: 300,
 //       });
   
 //       introSkillAnimation.add({
@@ -252,7 +265,7 @@ export async function playMarioFunc() {
 //         translateY: [0, 50],
 //         borderRadius: "50%",
 //         easing: "linear",
-//         duration: 500,
+//         duration: 300,
 //       });
   
 //       introSkillAnimation.add({
@@ -347,7 +360,7 @@ export async function playMarioFunc() {
 //                   "#Beginner, #Elementary, #Intermediate, #Advanced, #Expert, .skillCategory",
 //                 translateX: ["-3rem", 0],
 //                 opacity: [0, 1],
-//                 duration: 500,
+//                 duration: 300,
 //                 easing: "easeInCirc",
 //                 delay: anime.stagger(125)
 //       });
