@@ -109,17 +109,23 @@ export function PlayAnimation(inputID, inputPlayBoolean){
     delayTime = 13000;
   }
     
+  if(currentObject === 'SkillAnimation'){
+    delayTime = 13500;
+  } 
+
+  if(currentObject === 'ResumeAnimation'){
+    delayTime = 7000;
+  } 
+
   if(currentObject === 'ExperienceAnimation'){
     delayTime = 6000;
   } 
   
-  if(currentObject === 'ResumeAnimation'){
-    delayTime = 7000;
+  if(currentObject === 'PortfolioAnimation'){
+    delayTime = 4000;
   } 
-    
-  if(currentObject === 'SkillAnimation'){
-    delayTime = 13500;
-  } 
+  
+ 
 
   objArray.forEach(element => {
     console.log('its on');

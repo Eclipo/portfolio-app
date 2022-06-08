@@ -2,7 +2,10 @@ import anime from "animejs";
 
 export async function playMarioFunc() {
   const ratio = 0.25 * window.innerWidth;
-
+  const marioContainer = document.getElementById('marioContainer');
+  const portfolioContainer = document.getElementById('portfolioContainerID');
+  portfolioContainer.style.display='none';
+  marioContainer.style.display='';
   const marioAnimation = anime.timeline({
     loop: false,
     autoplay: false,
@@ -19,6 +22,7 @@ export async function playMarioFunc() {
         duration: 500,
 
         easing:'linear',
+        delay:1500,
         endDelay:250,
         direction:'alternate'
       });
@@ -29,12 +33,43 @@ export async function playMarioFunc() {
         duration: 500,
 
         easing:'linear',
+        delay:1500,
         endDelay:250,
         direction:'alternate'
       });
 
+      const marioLegLeftAnimation = anime.timeline({
+        loop: false,
+        autoplay: false,
+        duration: 500,
+    
+        easing:'linear',
+        delay:1500,
+        endDelay:250,
+        direction:'alternate'
+        });
+    
+        
+        const marioArmHandLeftAnimation = anime.timeline({
+          loop: false,
+          autoplay: false,
+          duration: 500,
+          delay:1500,
+          easing:'linear',
+          endDelay:250,
+          direction:'alternate'
+          });
+
       marioAnimation.add({
-        targets:'.marioContainer',
+        targets:[".marioRed",".marioBlue",".marioYellow",".marioBrown",".marioSkin", ".marioEye",'.emptyMario',
+        '.emptyMarioNoFloat','.marioRedNoFLoat', '.marioBlueNoFLoat','.marioBrownNoFLoat','.marioSkinNoFLoat'],
+        translateY:0,
+        delay: anime.stagger(24,{grid:[45,45],from: "first"})
+      })
+
+
+      marioAnimation.add({
+        targets:'#marioContainer',
         translateY:[0,'-3rem']      })
 
         marioAnimation.add({
@@ -43,11 +78,24 @@ export async function playMarioFunc() {
             delay: anime.stagger(24,{grid:[45,45],from: "last"}),
             // scale:[1,0.5],
             translateY: ()=>  anime.random(-ratio,ratio),
-            opacity:[1,0]
-            ,complete:function(){
-             
+            opacity:[1,0],
+            endDelay:150,
+            loopComplete:function(){
+              if(marioContainer.style.display===''){
+              marioContainer.style.display="none";
+              portfolioContainer.style.display='block';
+              }
             }
+        });
+
+        marioAnimation.add({
+          targets:'#portfolioContainerID',
+          opacity:[0,1]      
         })
+
+
+
+      
 
     marioLegRightAnimation.add({
       targets:'.marioLegShoeRight',
@@ -68,15 +116,7 @@ export async function playMarioFunc() {
   });
 
   
-  const marioLegLeftAnimation = anime.timeline({
-    loop: false,
-    autoplay: false,
-    duration: 500,
-
-    easing:'linear',
-    endDelay:250,
-    direction:'alternate'
-    });
+ 
 
     marioLegLeftAnimation.add({
       targets:'.marioLegShoeLeft',
@@ -87,15 +127,6 @@ export async function playMarioFunc() {
 
   });
 
-    const marioArmHandLeftAnimation = anime.timeline({
-      loop: false,
-      autoplay: false,
-      duration: 500,
-
-      easing:'linear',
-      endDelay:250,
-      direction:'alternate'
-      });
 
       marioArmHandLeftAnimation.add({
         targets:'.marioArmLeft',

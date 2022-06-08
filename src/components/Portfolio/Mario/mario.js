@@ -3,7 +3,7 @@ import "../Mario/mario.css";
 
 export const Mario = () => {
   return (
-    <div className="marioContainer">
+    <div id="marioContainer">
       <div className="mario">
 
       

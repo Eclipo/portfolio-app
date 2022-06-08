@@ -29,10 +29,10 @@ export class PortfolioAnimation {
       // anime.remove(".duckMouthUnder");
       // anime.remove(".duckEyebrow");
 
-      // anime({
-      //   targets: [".skillContainer", "#skillDividerTd"],
-      //   opacity: 0,
-      // });
+      anime({
+        targets: "#portfolioContainer",
+        opacity: 0,
+      });
       playMarioFunc();
     }
 

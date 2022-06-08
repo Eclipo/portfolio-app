@@ -1,4 +1,4 @@
-.marioContainer {
+#marioContainer {
   opacity: 1;
   /* position: absolute; */
   margin-bottom: 5rem;
@@ -7,10 +7,10 @@
   /* top: -3.5rem; */
   /* z-index: 1; */
   position: absolute;
+
 }
 .marioHead, .marioFace, .marioBody{
   display: block;
-
 }
 
 
