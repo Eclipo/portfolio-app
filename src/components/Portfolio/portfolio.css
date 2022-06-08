@@ -3,7 +3,21 @@
   opacity: 0;
 }
 
+.portfolioTextContainer{
+  margin: auto;
+}
 
+.portfolioExp{
+  margin: auto;
+}
+.coronaHero{
+  margin: auto;
+    
+  display: block;
+  /* position:absolute; */
+  /* margin-top: -6rem; */
+  transform: scale(0.25);
+}
 .portfolioTextContainer h2{
   color:var(--primary-pink);
   /* margin-top: 15rem; */

@@ -3,6 +3,7 @@ import "../Portfolio/portfolio.css";
 import { Mario } from "./Mario/mario.js";
 import "../../IntersectionObserver.js";
 import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
+import coronaHero from "./images/coronahjalte.PNG";
 
 
 class Portfolio extends Component {
@@ -33,12 +34,23 @@ class Portfolio extends Component {
                 I decided to do something against Covid-19 and I guess also pre-occupy myself a bit from the familly trauma. 
               </p>
             
+            <div className="portfolioExp">
             <h4>Coronahjälte</h4>
+
+            <img
+            className="coronaHero"
+            src={coronaHero}
+            alt="Cornahero"
+            
+          />
+
+           
               <p>
                 Action was taken and the website Coronahjälte was made where the visitor could give my avatar various symptoms 
                 which then would trigger various animations. Finally the visitor would recieve some useful links about Covid-19.
                 It was my first website and fundamental flaws were made.
               </p>
+              </div>
 
             <h4>Copy & Paste</h4>
               <p>
