@@ -99,7 +99,7 @@ export const animate = (inputID) => {
                         descOneEl.innerText =
                           "Currently active within the fintech industry as a full-stack developer with focus on the front-end. We are building an awesome application.";
                         descTwoEl.innerText =
-                          "Major tech is Angular combined with Bootstrap.   I have implemented forms, guards and increased mobile responsiveness. I have also worked a little with C#.";
+                          "Major tech is Angular with Bootstrap coupled with .Net. I have implemented forms, guards, increased mobile responsiveness and occassionaly I code in C#.";
                         descThreeEl.innerText = "";
                         descFourEl.innerText = "";
                         liThree.style.display = "none";

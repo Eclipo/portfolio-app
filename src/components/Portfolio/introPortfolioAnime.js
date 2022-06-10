@@ -1,4 +1,5 @@
 import anime from "animejs";
+import { playPostFunc } from "./postPortfolioAnime";
 
 export async function playMarioFunc() {
   const ratio = 0.25 * window.innerWidth;
@@ -90,7 +91,7 @@ export async function playMarioFunc() {
 
         marioAnimation.add({
           targets:'#portfolioContainerID',
-          opacity:[0,1]      
+          opacity:[0,1]
         })
 
 
@@ -143,6 +144,7 @@ export async function playMarioFunc() {
     marioArmHandLeftAnimation.play();
     marioLegLeftAnimation.play();
     marioAnimation.play();
+    playPostFunc(true);
     // marioShoulderLeftAnimation.play();
 
 

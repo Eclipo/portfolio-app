@@ -1,6 +1,6 @@
 #portfolioContainerID {
   display: none;
-  opacity: 0;
+  opacity: 1;
 }
 
 .portfolioTextContainer{
@@ -43,4 +43,39 @@
   text-align: left;
   display: inline-block;
   padding: 0.5rem;
+}
+
+.talkBubble{
+  width:10rem;
+  height: 3rem;
+  border-radius: 18px;
+  background-color: var(--primary-lightGrey);
+  margin: 1rem;
+  margin-top: -1rem;
+  margin-left: -1rem;
+
+}
+
+.avatarCircle{
+  width:3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--primary-light-green);
+  margin: 1rem;
+}
+.avatarDad{
+  width:2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+  margin: 1rem;
+  
+}
+
+.avatarMom{
+  width:2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--primary-pink);
+  margin: 1rem;
 }

@@ -26,16 +26,43 @@ class Portfolio extends Component {
         <div className="flexCenter" id="portfolioContainerID">
           <div className="portfolioTextContainer">
             <h2>This is it</h2>
-              <p>This website is the only thing I can share with you.</p>
+              <p>This website is what I feel comfortable in sharing</p>
 
             <h3>The story</h3>
+            <h4>The fight against Covid-19</h4>
+
               <p>
               When Covid-19 arrived and almost threaten the lives of my parents 
                 I decided to do something against Covid-19 and I guess also pre-occupy myself a bit from the familly trauma. 
               </p>
+
+              <div className="d-flex">
+              
+                  <div className="avatarCircle"><p style={{color:'red'}}>Edip</p>
+
+                  </div>
+                  <div className="talkBubble" id="talkCovidID">
+                    <p id="talkCovidParagraphID">Let's go</p>
+                  </div>
+
+
+                 
+                  <div className="avatarDad">
+                    <p style={{color:'red'}}>Dad</p>
+                  </div>
+                  
+
+                  <div className="avatarMom">
+                  <p style={{color:'white', marginLeft:'-0.25rem'}}>Mom</p>
+                </div>
+           
+
+
+              </div>
+               
             
             <div className="portfolioExp">
-            <h4>Coronahjälte</h4>
+            <h4>Coronahero</h4>
 
             <img
             className="coronaHero"
