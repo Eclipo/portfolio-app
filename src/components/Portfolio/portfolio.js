@@ -26,21 +26,32 @@ class Portfolio extends Component {
         <div className="flexCenter" id="portfolioContainerID">
           <div className="portfolioTextContainer">
             <h2>This is it</h2>
-              <p>This website is what I feel comfortable in sharing</p>
+              <p>This website is what I feel comfortable sharing with and it's my best shot. 
+              Down below you can read the story of this website and I hope you enjoy it.</p>
 
             <h3>The story</h3>
             <h4>The fight against Covid-19</h4>
 
-              <p>
-              When Covid-19 arrived and almost threaten the lives of my parents 
-                I decided to do something against Covid-19 and I guess also pre-occupy myself a bit from the familly trauma. 
-              </p>
 
-              <div className="d-flex">
+              <div className="d-flex mt-5 mb-5">
               
-                  <div className="avatarCircle"><p style={{color:'red'}}>Edip</p>
+                  <div className="avatarCircle">
+                    <div className="eyesContainer">
+                      <div className="eyeAvatar" id='edipEyesID'>
+                        <div className="eyePupil"></div>
+                      </div>
+                      <div className="eyeAvatar" id='edipEyesID'>
+                        <div className="eyePupil"></div>
+                      </div>
+                    </div>
+
+                    <div className="avatarNose"></div>
+                    <div className="avatarMouth" id="avatarEdipMouthID"></div>
+
 
                   </div>
+                  <p className="avatarEdipParagraph">Edip</p>
+
                   <div className="talkBubble" id="talkCovidID">
                     <p id="talkCovidParagraphID">Let's go</p>
                   </div>
@@ -48,18 +59,36 @@ class Portfolio extends Component {
 
                  
                   <div className="avatarDad">
-                    <p style={{color:'red'}}>Dad</p>
+                    <div className="eyesContainer">
+                        <div className="avatarDadEyeAvtar">
+                          <div className="eyePupil"></div>
+                        </div>
+                        <div className="avatarDadEyeAvtar">
+                          <div className="eyePupil"></div>
+                        </div>
+                      </div>
+
+                    <div className="avatarNose"></div>
+                    <div className="avatarMouth" id="avatarDadMouthID"></div>
                   </div>
                   
+                  <p className="avatarDadParagraph">Dad</p>
+
 
                   <div className="avatarMom">
-                  <p style={{color:'white', marginLeft:'-0.25rem'}}>Mom</p>
+                  <p>Mom</p>
                 </div>
            
 
 
               </div>
-               
+            
+            
+              <p className="mt-3">
+                When Covid-19 arrived and threaten the lives of my parents 
+                I tried to increase the odds for my mom who just got infected by buying her a pulse oximeter (easier said than done!).
+                It would at least give us some heads up.
+              </p>
             
             <div className="portfolioExp">
             <h4>Coronahero</h4>

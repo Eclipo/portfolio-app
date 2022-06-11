@@ -4,75 +4,81 @@ import anime from "animejs";
 
 export async function playPostFunc(inputBoolean) {
 
-  async function setText(input){
+  
+  async function setText(input,inputMouth,inputEyes,inputEyeHeight){
+    anime({
+      targets:inputMouth,
+      height:['.5rem',0,'.5rem',0,'.5rem'],
+      duration:250
+    });
+
+    
     paragraphCovid.innerText=input;
+
   }
 
   const paragraphCovid = document.getElementById('talkCovidParagraphID');
 
-
-    // const moveBetweenWidth_Inter = document.getElementById("skillElemAndInter");
-    // const moveBetweenWidth_Noob = document.getElementById("skillElemAndNoob");
-    // const moveBetweenWidth_Noob_To_Inter = document.getElementById(
-    //   "skillNoobElemAndInter"
-    // );
-    
-    // const moveLeftNoobinter =
-    //   "-" + moveBetweenWidth_Noob_To_Inter.offsetWidth.toString() + "px";
-    // const moveRightNoobinter =
-    //   moveBetweenWidth_Noob_To_Inter.offsetWidth.toString() + "px";
-    
-    // const moveLeft =
-    //   "-" + moveBetweenWidth_Noob.offsetWidth.toString() + "px";
-    
-    // const moveRight = moveBetweenWidth_Inter.offsetWidth.toString() + "px";
     
     const talkBubbleCovid = anime.timeline({
         loop: true,
         autoplay: false,
       });
+
+      const blinkEyeEdip = anime.timeline({
+        loop: true,
+        autoplay: false,
+        duration:1750,
+        delay:1000      
+      });
+
+      blinkEyeEdip.add({
+        targets:'#edipEyesID',
+        opacity:[1,0,1,0,1]
+      });
+      
       
       talkBubbleCovid.add({
         targets:'#talkCovidID',
         change:function(){
-          setText('You hang in there!');
+          setText('You hang in there!','#avatarEdipMouthID');
         }
       });
       
  
       talkBubbleCovid.add({
         targets:'#talkCovidID',
-        translateX:'2.75rem',
-        endDelay:250,
+        translateX:'2.65rem',
+        delay:500,
         change:function(){
-          setText('Thanks son');
+          setText('Thanks son','#avatarDadMouthID');
         }
       });
 
       talkBubbleCovid.add({
         targets:'#talkCovidID',
         translateX:0,
-        endDelay:250,
+        delay:500,
         change:function(){
-          setText('I meant mom...');
+          setText('I meant mom...','#avatarEdipMouthID');
         }
       });
 
       talkBubbleCovid.add({
         targets:'#talkCovidID',
-        translateX:'2.75rem',
-        endDelay:250,
+        translateX:'2.65rem',
+        delay:500,
         change:function(){
-          setText('...Im at the hospital...');
+          setText('Im at the hospital!','#avatarDadMouthID');
         }
       });
 
       talkBubbleCovid.add({
         targets:'#talkCovidID',
-        translateX:'10.25rem',
-        endDelay:250,
+        translateX:'9.25rem',
+        delay:500,
         change:function(){
-          setText('We love you honeybear!');
+          setText('Love you honeybear!');
         }
       });
 
@@ -80,7 +86,7 @@ export async function playPostFunc(inputBoolean) {
         targets:'#talkCovidID',
         translateX:0,
         change:function(){
-          setText('You hang in there!');
+          setText('You hang in there!','#avatarEdipMouthID');
         }
       });
 
@@ -170,6 +176,7 @@ export async function playPostFunc(inputBoolean) {
     
   if(inputBoolean === true){
     talkBubbleCovid.play();
+    blinkEyeEdip.play();
     console.log('...play...already bubble');
       // postAnimationElemAndInter.play();
       // postAnimationElemAndNoob.play();
