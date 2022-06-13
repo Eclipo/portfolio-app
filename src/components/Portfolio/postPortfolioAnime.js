@@ -9,7 +9,8 @@ export async function playPostFunc(inputBoolean) {
     anime({
       targets:inputMouth,
       height:['.5rem',0,'.5rem',0,'.5rem'],
-      duration:750
+      duration:750,
+      
     });
 
     
@@ -50,21 +51,39 @@ export async function playPostFunc(inputBoolean) {
         targets:'#bawoEyesID',
         opacity:[1,0,1]
       });
+
+      blinkEyeBawo.add({
+        targets:'#momEyesID',
+        opacity:[1,0,1]
+      });
       
+      const eyeBrowAnim = anime.timeline({
+        loop: true,
+        autoplay: false,
+        direction: "alternate",
+        easing: "easeInOutQuad",
+      });
+
+      eyeBrowAnim.add({
+        targets: ".eyeBrows",
+        translateY: [0, "-0.25rem", "0.25rem"],
+        delay: 750,
+        duration: 500,
+      });
       
       
       talkBubbleCovid.add({
         targets:'#talkCovidID',
         change:function(){
-          setText('You hang in there! I will help you!','#avatarEdipMouthID');
+          setText('I will help you!','#avatarEdipMouthID');
         }
       });
       
  
       talkBubbleCovid.add({
         targets:'#talkCovidID',
-        translateX:'2.65rem',
-        delay:500,
+        translateX:'2.5rem',
+        delay:750,
         change:function(){
           setText('Thanks son','#avatarDadMouthID');
         }
@@ -81,16 +100,16 @@ export async function playPostFunc(inputBoolean) {
 
       talkBubbleCovid.add({
         targets:'#talkCovidID',
-        translateX:'2.65rem',
+        translateX:'2.5rem',
         delay:500,
         change:function(){
-          setText('Im at the hospital!','#avatarDadMouthID');
+          setText('Im dying over here!!!','#avatarDadMouthID');
         }
       });
 
       talkBubbleCovid.add({
         targets:'#talkCovidID',
-        translateX:'9.25rem',
+        translateX:'7.25rem',
         delay:500,
         change:function(){
           setText('Love you honeybear!','#avatarMomMouthID');
@@ -102,106 +121,45 @@ export async function playPostFunc(inputBoolean) {
         translateX:0,
         delay:500,
         change:function(){
-          setText('You hang in there! I will help you!','#avatarEdipMouthID');
+          setText("HEEELP!!!",'#avatarEdipMouthID');
         }
       });
 
 
-
-
-
-      // const postAnimationElemAndNoob = anime.timeline({
-      //   loop: true,
-      //   autoplay: false,
-      //   direction:'alternate'
-      // });
       
-      // const postAnimationNoobElemAndInter = anime.timeline({
-      //   loop: true,
-      //   autoplay: false,
-      //   direction:'alternate'
-      // });
-      
-      // postAnimationElemAndInter.add({
-      //   targets: "#skillElemAndInter",
-      //   translateX: [0, moveRight],
-      //   easing: "easeInOutQuad",
-      //   direction: "alternate",
-      //   delay: anime.stagger(250)
-      // });
-    
-      // postAnimationElemAndNoob.add({
-      //   targets: "#skillElemAndNoob",
-      //   translateX: [0, moveLeft],
-      //   easing: "easeInOutQuad",
-      //   direction: "alternate",
-      //   delay: anime.stagger(250)
-      // });
-    
-      // postAnimationNoobElemAndInter.add({
-      //   targets: "#skillNoobElemAndInter",
-      //   translateX: [moveRightNoobinter, moveLeftNoobinter],
-      //   easing: "easeInOutQuad",
-      //   direction: "alternate",
-      //   delay: anime.stagger(250)
-      // });
+      const lightYearAnim = anime.timeline({
+        loop: true,
+        autoplay: false,
+        endDelay:500,
+      });
 
-      // const duckMouthUppderAnim = anime.timeline({
-      //   loop: true,
-      //   autoplay: false,
-      //   direction: "alternate",
-      //   easing: "easeInOutQuad",
-      // });
-  
-      // const duckMouthUnderAnim = anime.timeline({
-      //   loop: true,
-      //   autoplay: false,
-      //   direction: "alternate",
-      //   easing: "easeInOutQuad",
-      // });
-  
-      // const duckEyeBrowAnim = anime.timeline({
-      //   loop: true,
-      //   autoplay: false,
-      //   direction: "alternate",
-      //   easing: "easeInOutQuad",
-      // });
-  
-      // duckMouthUppderAnim.add({
-      //   targets: ".duckMouthUpper",
-      //   translateY: ["-0.25rem", 0, "-0.25rem", 0],
-      //   rotate: ["10deg", 0, "10deg", 0],
-      //   endDelay: 500,
-      //   duration: 500,
-      // });
-  
-      // duckMouthUnderAnim.add({
-      //   targets: ".duckMouthUnder",
-      //   translateY: ["0.25rem", 0, "0.25rem", 0],
-      //   rotate: ["-10deg", 0, "-10deg", 0],
-      //   endDelay: 500,
-      //   duration: 500,
-      // });
-  
-      // duckEyeBrowAnim.add({
-      //   targets: ".duckEyebrow",
-      //   translateY: [0, "-0.5rem", "0.5rem"],
-      //   delay: 500,
-      //   duration: 500,
-      // });
+      lightYearAnim.add({
+        targets:'.lightYear',
+        delay:anime.stagger(75, {from: 'center'}),
+        translateX:['7rem','-10rem'],
+        translateY:['-7rem','10rem'],
+
+        opacity:[1,0],
+        rotate:['45deg','45deg'],
+        complete:function(){
+          anime({
+            targets:'.lightYear',
+            opacity:0
+          })
+        }
+      })
+
+
+
     
   if(inputBoolean === true){
     talkBubbleCovid.play();
     blinkEyeEdip.play();
     blinkEyeBawo.play();
+    eyeBrowAnim.play();
+    lightYearAnim.play();
     console.log('...play...already bubble');
-      // postAnimationElemAndInter.play();
-      // postAnimationElemAndNoob.play();
-      // postAnimationNoobElemAndInter.play();
 
-      // duckEyeBrowAnim.play();
-      // duckMouthUnderAnim.play();
-      // duckMouthUppderAnim.play();
   }
 
   if(inputBoolean === false){

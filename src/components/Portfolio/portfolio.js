@@ -30,17 +30,15 @@ class Portfolio extends Component {
               Down below you can read the story of this website and I hope you enjoy it.</p>
 
             <h3>The story</h3>
-            <h4>The fight against Covid-19</h4>
+            <h4>Covid-19</h4>
 
 
               <div className="d-flex mt-5 mb-5">
               
                   <div className="avatarCircle">
-                
-
                     <div className="eyesContainer">
-                    <div className="eyeBrows"></div>
-                  <div className="eyeBrows" id="eyebrowRightID"></div>
+                      <div className="eyeBrows"></div>
+                      <div className="eyeBrows" id="eyebrowRightID"></div>
                       <div className="eyeAvatar" id='edipEyesID'>
                         <div className="eyePupil"></div>
                       </div>
@@ -48,12 +46,10 @@ class Portfolio extends Component {
                       <div className="eyeAvatar" id='edipEyesID'>
                         <div className="eyePupil"></div>
                       </div>
-                    </div>
+                   </div>
 
                     <div className="avatarNose" id="avatarEdipID"></div>
                     <div className="avatarMouth" id="avatarEdipMouthID"></div>
-
-
                   </div>
                   <p className="avatarEdipParagraph">Edip</p>
 
@@ -78,7 +74,7 @@ class Portfolio extends Component {
                     </div>
 
                     <div className="avatarNose"></div>
-                    <div className="avatarMouth" id="avatarEdipMouthID"></div>
+                    <div className="avatarMouth" id="avatarDadMouthID"></div>
                   </div>
                   
                   <p className="avatarDadParagraph">Dad</p>
@@ -89,11 +85,11 @@ class Portfolio extends Component {
                       <div className="eyeBrows"></div>
                       <div className="eyeBrows" id="eyebrowRightID"></div>
                       
-                      <div className="eyeAvatar" id='bawoEyesID'>
+                      <div className="eyeAvatar" id='momEyesID'>
                         <div className="eyePupil"></div>
                       </div>
 
-                      <div className="eyeAvatar" id='bawoEyesID'>
+                      <div className="eyeAvatar" id='momEyesID'>
                         <div className="eyePupil"></div>
                       </div>
                     </div>
@@ -101,9 +97,7 @@ class Portfolio extends Component {
                     <div className="avatarNose"></div>
                     <div className="avatarMouth" id="avatarMomMouthID"></div>
                   </div>
-                  <div className="avatarMomParagraph">
-                  <p>Mom</p>
-                </div>
+                  <p className="avatarMomParagraph">Mom</p>
            
 
 
@@ -111,38 +105,79 @@ class Portfolio extends Component {
             
             
               <p className="mt-3">
-                When Covid-19 arrived and threaten the lives of my parents 
-                I tried to increase the odds for my mom who just got infected by buying her a pulse oximeter 
-                (easier said than done during a pandemic!).
-                It would at least give us some heads up.
+                Covid-19 arrived and in one hit it threaten the lives of my parents. 
+                My dad was at the hopstial and my mother just got infected. 
               </p>
             
             <div className="portfolioExp">
             <h4>Coronahero</h4>
 
-            <img
-            className="coronaHero"
-            src={coronaHero}
-            alt="Cornahero"
-            
-          />
+            <div className="d-flex mt-5 mb-5">
+            <div className="d-inline-flex mx-auto">
+            <div className="lightYear"></div>
 
-           
-              <p>
-                Action was taken and the website Coronahjälte was made where the visitor could give my avatar various symptoms 
-                which then would trigger various animations. Finally the visitor would recieve some useful links about Covid-19.
-                It was my first website and fundamental flaws were made.
-              </p>
+              <div className="avatarCircle" id="heroEdipID">
+              
+                <div className="eyesContainer">
+                  <div className="eyeBrows"></div>
+                  <div className="eyeBrows" id="eyebrowRightID"></div>
+                  <div className="eyeAvatar" id='heroEdipEyesID'>
+                    <div className="eyePupil"></div>
+                  </div>
+
+                  <div className="eyeAvatar" id='heroEdipEyesID'>
+                    <div className="eyePupil"></div>
+                  </div>
+                </div>
+
+                <div className="avatarNose" id="avatarEdipID"></div>
+                <div className="avatarHeroMouth" id="heroEdipID"></div>
+
+                <div className="rightArmAvatar"></div>
+
+                <div className="leftArmAvatar"></div>
+
+                <div className="rightLegAvatar"></div>
+
+                <div className="leftLegAvatar"></div>
+                <div className="lightYear" style={{marginTop:'-3.5rem',marginLeft:'-3rem', zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" style={{marginTop:'-3.5rem',marginLeft:'-2rem',marginRight:'2rem', zIndex:'-2', position:'absolute'}}></div>
+
+                <div className="lightYear" style={{marginTop:'-3.75rem',zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" style={{marginTop:'-3.75rem',marginLeft:'1rem', zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" style={{marginTop:'-4rem',marginLeft:'2rem', zIndex:'-2', position:'absolute'}}></div>
+
+                <div className="lightYear" style={{marginTop:'-4rem',marginLeft:'3rem', zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" style={{marginTop:'-3.5rem',marginLeft:'4rem', zIndex:'-2', position:'absolute'}}></div>
+
+
               </div>
+              <div className="lightYear"></div>
+         
+            </div>
 
-            <h4>Copy & Paste</h4>
+            </div>
               <p>
-                From the hard gained experiences I had with Coronahjälte I realised I was far from being 'Lagom'.
-                But I had a dream about making a portfolio website that could be 'Lagom'.
-                So I took a step back and did what I know best.<br></br>
-                <b>Copy & Paste</b><br></br>
+                I couldn't do anything for my dad besides praying. 
+                For my mother on the other hand I could at least buy her a pulse oximeter 
+                in order to see her saturation levels. It was extremely difficult to find one.
+
+                Both of my parents survived Covid-19 and I felt the urge to do something. 
+                So I built my very first website called Coronahero which would help the users to recognize 
+                some of the symptoms and read into some useful links about the virus. 
+              </p>
+            </div>
+
+            <h4>The mistakes</h4>
+              <p>
+                I did many many mistakes with my coronahero-website. 
+                It looked horrible, wasn't mobile responsive and I was crazy enough to compose my own background music...Jissess...
+                From the hard gained experiences I had with Coronahero I realised I had alot to learn.
+                Despite my failure I still had the dream about making a portfolio website.
+                A website that would be beautiful and most importanetly mobile responsive.<br></br>
+                {/* <b>Copy & Paste</b><br></br>
                 I bought a course from Udemy which combined React and Bootstrap. 
-                This gave me a clear structure while gaining the basics.
+                This gave me a clear structure while gaining the basics. */}
               </p>
               
             <h4>The painstaking journey of becoming 'Lagom'</h4>
