@@ -91,7 +91,7 @@
 .avatarMomParagraph{
   margin-top: 4.25rem;
   margin-left: 15.5rem;
-  color: white ;
+  color: white;
   font-weight: bolder !important;
   position: absolute;
 }
@@ -190,18 +190,23 @@
   margin-right: 0.2rem;
   
 }
+
+#avatarDad .eyeBrows{
+  margin-left: 0.025rem;
+}
 #avatarDad .eyesContainer{
-  margin-left: 0.76rem;
+  margin-left: 0.75rem;
+  margin-right: 0.5rem;
   margin-top: 0.6rem;
 }
 
 #avatarDad .avatarNose{
   background-color:rgb(0, 254, 72);
-  margin-left: 1.3rem;
+  margin-left: 1.2rem;
 }
 
 #avatarDad .avatarMouth{
-  margin-left: 1.2rem;
+  margin-left: 1.1rem;
 }
 
 
@@ -216,9 +221,43 @@
 
 #avatarMom{
  
-  background-color: var(--primary-pink);
+  background-color: var(--primary-lightPink);
   margin: 1rem;
   margin-left: 15rem;
   position: absolute;
+}
 
+#avatarMom .eyeBrows{
+  margin-left: 0.025rem;
+}
+
+#avatarMom .eyesContainer{
+  margin-left: 0.75rem;
+  margin-right: 0.5rem;
+  margin-top: 0.6rem;
+}
+#avatarMom .eyeAvatar{
+  float: left;
+  width:0.6rem;
+  height:0.6rem;
+  border-radius: 50%;
+}
+
+#avatarMom .eyePupil{
+  background-color:black;
+  height: 0.4rem;
+  width: 0.4rem;
+  margin: auto;
+  margin-top: 0.14rem;
+  margin-left: 0.05rem;
+}
+
+#avatarMom .avatarNose{
+  margin-left: 1.2rem;
+}
+#avatarMom .avatarMouth{
+  border-radius: 0 0 2.0625rem 2.0625rem;
+  background: white;
+  margin-left: 1.15rem;
+  margin-top: 2.5rem;
 }

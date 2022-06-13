@@ -5,7 +5,7 @@ import anime from "animejs";
 export async function playPostFunc(inputBoolean) {
 
   
-  async function setText(input,inputMouth,inputEyes,inputEyeHeight){
+  async function setText(input,inputMouth){
     anime({
       targets:inputMouth,
       height:['.5rem',0,'.5rem',0,'.5rem'],
@@ -23,6 +23,8 @@ export async function playPostFunc(inputBoolean) {
     const talkBubbleCovid = anime.timeline({
         loop: true,
         autoplay: false,
+        duration:1250,
+        endDelay:750
       });
 
       const blinkEyeEdip = anime.timeline({
@@ -48,6 +50,7 @@ export async function playPostFunc(inputBoolean) {
         targets:'#bawoEyesID',
         opacity:[1,0,1]
       });
+      
       
       
       talkBubbleCovid.add({
@@ -90,15 +93,16 @@ export async function playPostFunc(inputBoolean) {
         translateX:'9.25rem',
         delay:500,
         change:function(){
-          setText('Love you honeybear!');
+          setText('Love you honeybear!','#avatarMomMouthID');
         }
       });
 
       talkBubbleCovid.add({
         targets:'#talkCovidID',
         translateX:0,
+        delay:500,
         change:function(){
-          setText('You hang in there!','#avatarEdipMouthID');
+          setText('You hang in there! I will help you!','#avatarEdipMouthID');
         }
       });
 

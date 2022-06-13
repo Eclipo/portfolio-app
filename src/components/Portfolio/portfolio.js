@@ -99,7 +99,7 @@ class Portfolio extends Component {
                     </div>
 
                     <div className="avatarNose"></div>
-                    <div className="avatarMouth" id="avatarEdipMouthID"></div>
+                    <div className="avatarMouth" id="avatarMomMouthID"></div>
                   </div>
                   <div className="avatarMomParagraph">
                   <p>Mom</p>
