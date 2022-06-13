@@ -47,13 +47,14 @@
 }
 
 .talkBubble{
-  width:7rem;
+  width:10rem;
   height: 3.25rem;
   border-radius: 18px;
-  background-color: var(--primary-white);
+  background-color: var(--white);
   margin: 1rem;
   margin-top: -2.5rem;
   margin-left: 3rem;
+  display: flex;
 }
 
 .talkBubble p{
@@ -70,8 +71,9 @@
 
 
 
+
 .avatarEdipParagraph{
-  margin-top: 3.75rem;
+  margin-top: 4.25rem;
   margin-left: 1.25rem;
   color: white !important;
   font-weight: bolder !important;
@@ -79,16 +81,24 @@
 }
 
 .avatarDadParagraph{
-  margin-top: 3.75rem;
-  margin-left: 10rem;
+  margin-top: 4.25rem;
+  margin-left: 10.5rem;
   color: white !important;
   font-weight: bolder !important;
   position: absolute;
 }
 
+.avatarMomParagraph{
+  margin-top: 4.25rem;
+  margin-left: 15.5rem;
+  color: white ;
+  font-weight: bolder !important;
+  position: absolute;
+}
+
 .avatarCircle{
-  width:3rem;
-  height: 3rem;
+  width:3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   background-color: var(--primary-light-green);
   margin: 1rem;
@@ -98,6 +108,20 @@
 .avatarCircle .eyesContainer{
   margin-left: 1rem;
   margin-top: 0.5rem;
+}
+
+.eyeBrows{
+  float: left;
+
+  width:0.75rem;
+  height: 0.35rem;
+  background-color: var(--primary-brown);
+  margin: 0.1rem;
+  /* margin-left: -0.25rem; */
+}
+
+.eyebrowRightID{
+  margin-left: .5rem ;
 }
 .eyeAvatar{
   float: left;
@@ -116,19 +140,25 @@
 }
 
 .avatarNose{
-  width:0.4rem;
-  height: 0.4rem;
+  width:0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   margin-left:1.72rem;
-  margin-top: 1.25rem;
+  margin-top: 1.15rem;
+  z-index: 2;
+  background-color: var(--primary-purple);
+
+  position: absolute;
 }
+
+
 
 .avatarMouth{
   width:0.75rem;
   height: 0.5rem;
   border-radius: 50%;
   margin-left:1.5rem;
-  margin-top: .25rem;
+  margin-top: 2.5rem;
   background-color: black;
 }
 
@@ -136,50 +166,47 @@
   background-color:black;
 }
 
-.avatarDad .eyePupil{
+
+#avatarDad .eyePupil{
   background-color:black;
-  height: 0.25rem;
-  width: 0.25rem;
+  height: 0.4rem;
+  width: 0.4rem;
   margin: auto;
-  margin-top: 0.1rem;
+  margin-top: 0.14rem;
   margin-left: 0.05rem;
 }
 
 .avatarDadEyeAvtar{
-  float: left;
-  width:0.5rem;
-  height:0.5rem;
-  border-radius: 50%;
-  margin-right: 0.25rem;
+
   background-color: var(--primary-white);
 
 }
 
-
-.avatarDad .eyesContainer{
-  margin-left: 0.35rem;
-  margin-top: 0.5rem;
-}
-
-.avatarCircle .avatarNose{
-  background-color:pink;
-}
-
-
-.avatarDad .avatarNose{
-  background-color:rgb(0, 254, 72);
-  margin-left: 0.5rem;
-}
-
-.avatarDad .avatarMouth{
-  margin-left: 0.75rem;
-}
-
-
-.avatarDad{
-  width:2.75rem;
-  height: 2.75rem;
+#avatarDad .eyeAvatar{
+  float: left;
+  width:0.6rem;
+  height:0.6rem;
   border-radius: 50%;
+  margin-right: 0.2rem;
+  
+}
+#avatarDad .eyesContainer{
+  margin-left: 0.76rem;
+  margin-top: 0.6rem;
+}
+
+#avatarDad .avatarNose{
+  background-color:rgb(0, 254, 72);
+  margin-left: 1.3rem;
+}
+
+#avatarDad .avatarMouth{
+  margin-left: 1.2rem;
+}
+
+
+#avatarDad{
+
   background-color: var(--primary-blue);
   
   margin: 1rem;
@@ -187,10 +214,8 @@
   position: absolute;
 }
 
-.avatarMom{
-  width:2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
+#avatarMom{
+ 
   background-color: var(--primary-pink);
   margin: 1rem;
   margin-left: 15rem;

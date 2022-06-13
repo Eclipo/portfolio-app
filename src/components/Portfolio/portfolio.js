@@ -36,16 +36,21 @@ class Portfolio extends Component {
               <div className="d-flex mt-5 mb-5">
               
                   <div className="avatarCircle">
+                
+
                     <div className="eyesContainer">
+                    <div className="eyeBrows"></div>
+                  <div className="eyeBrows" id="eyebrowRightID"></div>
                       <div className="eyeAvatar" id='edipEyesID'>
                         <div className="eyePupil"></div>
                       </div>
+
                       <div className="eyeAvatar" id='edipEyesID'>
                         <div className="eyePupil"></div>
                       </div>
                     </div>
 
-                    <div className="avatarNose"></div>
+                    <div className="avatarNose" id="avatarEdipID"></div>
                     <div className="avatarMouth" id="avatarEdipMouthID"></div>
 
 
@@ -58,24 +63,45 @@ class Portfolio extends Component {
 
 
                  
-                  <div className="avatarDad">
+                  <div className="avatarCircle" id="avatarDad">
                     <div className="eyesContainer">
-                        <div className="avatarDadEyeAvtar">
-                          <div className="eyePupil"></div>
-                        </div>
-                        <div className="avatarDadEyeAvtar">
-                          <div className="eyePupil"></div>
-                        </div>
+                      <div className="eyeBrows"></div>
+                      <div className="eyeBrows" id="eyebrowRightID"></div>
+                      
+                      <div className="eyeAvatar" id='bawoEyesID'>
+                        <div className="eyePupil"></div>
                       </div>
 
+                      <div className="eyeAvatar" id='bawoEyesID'>
+                        <div className="eyePupil"></div>
+                      </div>
+                    </div>
+
                     <div className="avatarNose"></div>
-                    <div className="avatarMouth" id="avatarDadMouthID"></div>
+                    <div className="avatarMouth" id="avatarEdipMouthID"></div>
                   </div>
                   
                   <p className="avatarDadParagraph">Dad</p>
 
+ 
+                  <div className="avatarCircle" id="avatarMom">
+                    <div className="eyesContainer">
+                      <div className="eyeBrows"></div>
+                      <div className="eyeBrows" id="eyebrowRightID"></div>
+                      
+                      <div className="eyeAvatar" id='bawoEyesID'>
+                        <div className="eyePupil"></div>
+                      </div>
 
-                  <div className="avatarMom">
+                      <div className="eyeAvatar" id='bawoEyesID'>
+                        <div className="eyePupil"></div>
+                      </div>
+                    </div>
+
+                    <div className="avatarNose"></div>
+                    <div className="avatarMouth" id="avatarEdipMouthID"></div>
+                  </div>
+                  <div className="avatarMomParagraph">
                   <p>Mom</p>
                 </div>
            
@@ -86,7 +112,8 @@ class Portfolio extends Component {
             
               <p className="mt-3">
                 When Covid-19 arrived and threaten the lives of my parents 
-                I tried to increase the odds for my mom who just got infected by buying her a pulse oximeter (easier said than done!).
+                I tried to increase the odds for my mom who just got infected by buying her a pulse oximeter 
+                (easier said than done during a pandemic!).
                 It would at least give us some heads up.
               </p>
             

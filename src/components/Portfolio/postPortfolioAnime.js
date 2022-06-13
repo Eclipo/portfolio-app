@@ -9,7 +9,7 @@ export async function playPostFunc(inputBoolean) {
     anime({
       targets:inputMouth,
       height:['.5rem',0,'.5rem',0,'.5rem'],
-      duration:250
+      duration:750
     });
 
     
@@ -28,20 +28,32 @@ export async function playPostFunc(inputBoolean) {
       const blinkEyeEdip = anime.timeline({
         loop: true,
         autoplay: false,
-        duration:1750,
-        delay:1000      
+        duration:750,
+        delay:500      
       });
 
       blinkEyeEdip.add({
         targets:'#edipEyesID',
-        opacity:[1,0,1,0,1]
+        opacity:[1,0,1]
+      });
+
+      const blinkEyeBawo = anime.timeline({
+        loop: true,
+        autoplay: false,
+        duration:1000,
+        delay:750      
+      });
+
+      blinkEyeBawo.add({
+        targets:'#bawoEyesID',
+        opacity:[1,0,1]
       });
       
       
       talkBubbleCovid.add({
         targets:'#talkCovidID',
         change:function(){
-          setText('You hang in there!','#avatarEdipMouthID');
+          setText('You hang in there! I will help you!','#avatarEdipMouthID');
         }
       });
       
@@ -177,6 +189,7 @@ export async function playPostFunc(inputBoolean) {
   if(inputBoolean === true){
     talkBubbleCovid.play();
     blinkEyeEdip.play();
+    blinkEyeBawo.play();
     console.log('...play...already bubble');
       // postAnimationElemAndInter.play();
       // postAnimationElemAndNoob.play();
