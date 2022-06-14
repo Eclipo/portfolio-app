@@ -161,12 +161,11 @@ class Portfolio extends Component {
 
             </div>
               <p>
-                While I couldn't help my father I could still give my mother some better odds  
-                by buying her a pulse oximeter (easier said than done!). 
-                My parents survived Covid-19 and I wanted to pre-occupy myself.
-                Sp I built my very first website called Coronahero where the users could
-                give my avatar various symptoms and read some useful information. 
-            </p>
+                I couldn't do anything for my dad but I could still give my mom some better odds 
+                before it was too late. Therefore I bought her a pulse oximeter. 
+                My parents survived Covid-19 and I decided to build my very first website
+                namely Coronahero where the users could give my avatar various symptoms and read more about Covid-19. 
+              </p>
             </div>
 
             <h4>The mistakes</h4>
@@ -174,9 +173,6 @@ class Portfolio extends Component {
                 I did many many mistakes with my coronahero-website. 
                 It looked horrible, wasn't mobile responsive and I was crazy enough to compose my own background music...Jissess...
                 From the hard gained experiences I had with Coronahero I realised I had alot to learn.
-                {/* <b>Copy & Paste</b><br></br>
-                I bought a course from Udemy which combined React and Bootstrap. 
-                This gave me a clear structure while gaining the basics. */}
               </p>
               
             <h4>A new journey begins</h4>
