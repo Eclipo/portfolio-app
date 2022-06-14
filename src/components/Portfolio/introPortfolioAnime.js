@@ -91,7 +91,10 @@ export async function playMarioFunc() {
 
         marioAnimation.add({
           targets:'#portfolioContainerID',
-          opacity:[0,1]
+          opacity:[0,1],
+          loopComplete:function(){
+            playPostFunc(true);
+          }
         })
 
 
@@ -144,7 +147,7 @@ export async function playMarioFunc() {
     marioArmHandLeftAnimation.play();
     marioLegLeftAnimation.play();
     marioAnimation.play();
-    playPostFunc(true);
+    // playPostFunc(true);
     // marioShoulderLeftAnimation.play();
 
 

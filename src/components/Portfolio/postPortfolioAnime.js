@@ -119,7 +119,6 @@ export async function playPostFunc(inputBoolean) {
       talkBubbleCovid.add({
         targets:'#talkCovidID',
         translateX:0,
-        delay:500,
         change:function(){
           setText("HEEELP!!!",'#avatarEdipMouthID');
         }
@@ -127,15 +126,36 @@ export async function playPostFunc(inputBoolean) {
 
 
       
-      const lightYearAnim = anime.timeline({
+      const firstLightYearAnim = anime.timeline({
         loop: true,
         autoplay: false,
-        endDelay:500,
       });
 
-      lightYearAnim.add({
-        targets:'.lightYear',
+      firstLightYearAnim.add({
+        targets:'#firstLight',
         delay:anime.stagger(75, {from: 'center'}),
+        translateX:['7rem','-10rem'],
+        translateY:['-7rem','10rem'],
+
+        opacity:[1,0],
+        rotate:['45deg','45deg'],
+        complete:function(){
+          anime({
+            targets:'.lightYear',
+            opacity:0
+          })
+        }
+      })
+
+      const secondLightYearAnim = anime.timeline({
+        loop: true,
+        autoplay: false,
+        endDelay:350,
+      });
+
+      secondLightYearAnim.add({
+        targets:'#secondLight',
+        delay:anime.stagger(100, {from: 'center'}),
         translateX:['7rem','-10rem'],
         translateY:['-7rem','10rem'],
 
@@ -151,13 +171,15 @@ export async function playPostFunc(inputBoolean) {
 
 
 
+
     
   if(inputBoolean === true){
     talkBubbleCovid.play();
     blinkEyeEdip.play();
     blinkEyeBawo.play();
     eyeBrowAnim.play();
-    lightYearAnim.play();
+    firstLightYearAnim.play();
+    secondLightYearAnim.play();
     console.log('...play...already bubble');
 
   }

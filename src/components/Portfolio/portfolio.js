@@ -114,7 +114,8 @@ class Portfolio extends Component {
 
             <div className="d-flex mt-5 mb-5">
             <div className="d-inline-flex mx-auto">
-            <div className="lightYear"></div>
+            <div className="lightYear" id="firstLight"></div>
+            <div className="lightYear" id="firstLight"></div>
 
               <div className="avatarCircle" id="heroEdipID">
               
@@ -140,32 +141,32 @@ class Portfolio extends Component {
                 <div className="rightLegAvatar"></div>
 
                 <div className="leftLegAvatar"></div>
-                <div className="lightYear" style={{marginTop:'-3.5rem',marginLeft:'-3rem', zIndex:'-2', position:'absolute'}}></div>
-                <div className="lightYear" style={{marginTop:'-3.5rem',marginLeft:'-2rem',marginRight:'2rem', zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" id="secondLight" style={{marginTop:'-3.5rem',marginLeft:'-3rem', zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" id="firstLight" style={{marginTop:'-3.5rem',marginLeft:'-2rem',marginRight:'2rem', zIndex:'-2', position:'absolute'}}></div>
 
-                <div className="lightYear" style={{marginTop:'-3.75rem',zIndex:'-2', position:'absolute'}}></div>
-                <div className="lightYear" style={{marginTop:'-3.75rem',marginLeft:'1rem', zIndex:'-2', position:'absolute'}}></div>
-                <div className="lightYear" style={{marginTop:'-4rem',marginLeft:'2rem', zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" id="secondLight" style={{marginTop:'-3.75rem',zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" id="firstLight" style={{marginTop:'-3.75rem',marginLeft:'1rem', zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" id="secondLight" style={{marginTop:'-4rem',marginLeft:'2rem', zIndex:'-2', position:'absolute'}}></div>
 
-                <div className="lightYear" style={{marginTop:'-4rem',marginLeft:'3rem', zIndex:'-2', position:'absolute'}}></div>
-                <div className="lightYear" style={{marginTop:'-3.5rem',marginLeft:'4rem', zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" id="firstLight" style={{marginTop:'-4rem',marginLeft:'3rem', zIndex:'-2', position:'absolute'}}></div>
+                <div className="lightYear" id="secondLight" style={{marginTop:'-3.5rem',marginLeft:'4rem', zIndex:'-2', position:'absolute'}}></div>
 
 
               </div>
-              <div className="lightYear"></div>
+              <div className="lightYear"  id="secondLight"></div>
+              <div className="lightYear" id="firstLight"></div>
+
          
             </div>
 
             </div>
               <p>
-                I couldn't do anything for my dad besides praying. 
-                For my mother on the other hand I could at least buy her a pulse oximeter 
-                in order to see her saturation levels. It was extremely difficult to find one.
-
-                Both of my parents survived Covid-19 and I felt the urge to do something. 
-                So I built my very first website called Coronahero which would help the users to recognize 
-                some of the symptoms and read into some useful links about the virus. 
-              </p>
+                While I couldn't help my father I could still give my mother some better odds  
+                by buying her a pulse oximeter (easier said than done!). 
+                My parents survived Covid-19 and I wanted to pre-occupy myself.
+                Sp I built my very first website called Coronahero where the users could
+                give my avatar various symptoms and read some useful information. 
+            </p>
             </div>
 
             <h4>The mistakes</h4>
@@ -173,31 +174,39 @@ class Portfolio extends Component {
                 I did many many mistakes with my coronahero-website. 
                 It looked horrible, wasn't mobile responsive and I was crazy enough to compose my own background music...Jissess...
                 From the hard gained experiences I had with Coronahero I realised I had alot to learn.
-                Despite my failure I still had the dream about making a portfolio website.
-                A website that would be beautiful and most importanetly mobile responsive.<br></br>
                 {/* <b>Copy & Paste</b><br></br>
                 I bought a course from Udemy which combined React and Bootstrap. 
                 This gave me a clear structure while gaining the basics. */}
               </p>
               
-            <h4>The painstaking journey of becoming 'Lagom'</h4>
+            <h4>A new journey begins</h4>
               <p>
-                In the process of making this website I was struggling between my grand visions and the acquired skillevel I had at the time.
-                Gradually I realised I'll settle with 'Lagom' meaning good enough. Then bits and pieces started to slowly fall in place.
-                With time (almost a year later) I re-wrote the code that I had been given from the course and I finally have found my way of being 'Lagom'.
+                Despite my previous failures I still had the dream of making a portfolio website.
+                A website that at least wasn't ugly and most importanetly mobile responsive.
+                Therefore I bought an Udemy course specifically for making a portfolio website focusing on React and Bootstrap.
               </p>
              
+             <p>
+              In the process of making this website I struggled between my grand visions 
+              and the acquired skillevel I had at the time. 
+              I had no patience and consequently I wasted alot of time and effort doing the wrong things.
+             </p>
+
+              {/* Zen-mode */}
+             <p>
+              Gradually as I got more skillful and wiser I decided to settle with 'Lagom'.  
+              Then bits and pieces started to slowly fall into place and 
+              almost a year later I re-wrote the code that I had been given from the course. 
+              I finally have found my way of being 'Lagom'.   
+             </p>
+
               <h4>Lessons learned</h4>
                 <p>
-                My biggest experiences from this project is patience and balance. 
-                I rushed into various technical challenges and paid for it in full. 
-                However if I wasn't "crazy" enough to try achive 
-                some of the grand visions I had I probably wouldn't improved my skills to the level it is today.
-                
-
+                  My biggest experiences from this project is patience and balance. 
+                  I rushed into various technical challenges and paid for it in full. 
+                  However since I was "crazy" enough in trying to achive 
+                  some of the grand visions I had made me in the end a more skillful and wiser developer.
                 </p>
-            
-
           </div>
         </div>
       </div>
