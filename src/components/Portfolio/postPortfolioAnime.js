@@ -169,8 +169,44 @@ export async function playPostFunc(inputBoolean) {
         }
       })
 
+      const hitHeadWall = anime.timeline({
+        loop: true,
+        autoplay: false,
+        direction:'alternate',
+        easing: 'easeInCubic'
+      });
 
+      hitHeadWall.add({
+        loopBegin:function(){
+          anime({
+            targets:'#headHitWallLeft',
+            rotate:0
+          });
+          anime({
+            targets:'#headHitWallRight',
+            rotate:0
+          });
+        },
+        targets: '#headHitWall',
+        scaleX: {
+          value: 1.05,
+          duration: 150,
+          delay: 268
+        },
+        translateX: '27vw',
+        changeComplete:function(){
+          anime({
+            targets:'#headHitWallLeft',
+            rotate:[0,'15deg']
+          });
+          anime({
+            targets:'#headHitWallRight',
+            rotate:[0,'-15deg']
+          });
+        }
+      });
 
+  
 
     
   if(inputBoolean === true){
@@ -180,6 +216,7 @@ export async function playPostFunc(inputBoolean) {
     eyeBrowAnim.play();
     firstLightYearAnim.play();
     secondLightYearAnim.play();
+    hitHeadWall.play();
     console.log('...play...already bubble');
 
   }

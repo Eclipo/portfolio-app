@@ -1,5 +1,5 @@
 #portfolioContainerID {
-  display: none;
+  /* display: none; */
   opacity: 1;
 }
 
@@ -284,10 +284,10 @@
 
 #avatarMom .eyePupil{
   background-color:black;
-  height: 0.4rem;
-  width: 0.4rem;
+  height: 0.3rem;
+  width: 0.3rem;
   margin: auto;
-  margin-top: 0.14rem;
+  margin-top: 0.2rem;
   margin-left: 0.05rem;
 }
 
@@ -332,3 +332,14 @@
   /* position: absolute; */
 }
 
+
+#headHitWall{
+  margin: auto;
+}
+.wall{
+  width: 4rem;
+  height: 10rem;
+  background-color: var(--dark-slate);
+  margin: 1rem;
+  z-index: 1;
+}

@@ -27,7 +27,7 @@ class Portfolio extends Component {
           <div className="portfolioTextContainer">
             <h2>This is it</h2>
               <p>This website is what I feel comfortable sharing with and it's my best shot. 
-              Down below you can read the story of this website and I hope you enjoy it.</p>
+              Down below you can read the story that resulted into this website and I hope you enjoy it.</p>
 
             <h3>The story</h3>
             <h4>Covid-19</h4>
@@ -161,18 +161,39 @@ class Portfolio extends Component {
 
             </div>
               <p>
-                I couldn't do anything for my dad but I could still give my mom some better odds 
-                before it was too late. Therefore I bought her a pulse oximeter. 
-                My parents survived Covid-19 and I decided to build my very first website
-                namely Coronahero where the users could give my avatar various symptoms and read more about Covid-19. 
+                My dad was at the hopsital but I still had time to help my mom before it was too late. 
+                I bought her a pulse oximeter but it was difficult to find one. 
+                My parents survived Covid-19 and I decided to build my very first website,Coronahero, 
+                where the users could give my avatar various symptoms and read more about Covid-19. 
               </p>
             </div>
 
             <h4>The mistakes</h4>
+
+            <div className="d-flex mt-5 mb-5">
+              <div className="avatarCircle mx-auto" id="headHitWall">
+                <div className="eyesContainer">
+                  <div className="eyeBrows" id="headHitWallLeft"></div>
+                  <div className="eyeBrows" id="headHitWallRight"></div>
+                  <div className="eyeAvatar" id='edipEyesID'>
+                    <div className="eyePupil"></div>
+                  </div>
+
+                  <div className="eyeAvatar" id='edipEyesID'>
+                    <div className="eyePupil"></div>
+                  </div>
+                </div>
+
+                <div className="avatarNose" id="avatarEdipID"></div>
+                <div className="avatarMouth" id="avatarEdipMouthID"></div>
+              </div>
+
+              <div className="wall"></div>
+            </div>
               <p>
-                I did many many mistakes with my coronahero-website. 
-                It looked horrible, wasn't mobile responsive and I was crazy enough to compose my own background music...Jissess...
-                From the hard gained experiences I had with Coronahero I realised I had alot to learn.
+                I did many many mistakes with the coronahero-website. 
+                It looked horrible, wasn't mobile responsive and I was crazy enough to compose my own background music ...Jissess...
+                From the hard gained experiences I realised I had alot to learn.
               </p>
               
             <h4>A new journey begins</h4>
