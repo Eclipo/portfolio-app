@@ -208,6 +208,27 @@ export async function playPostFunc(inputBoolean) {
         }
       });
 
+      const rainAnim = anime.timeline({
+        loop: true,
+        autoplay: false,
+        easing:'linear'
+      });
+
+      rainAnim.add({
+        targets:'.rainDrop',
+        delay:anime.stagger(250),
+        translateY:[0,'5rem','4.5rem'],
+
+        opacity:[0,1,0],
+        // update:function(){
+        //   anime({
+        //     targets:'.rainDrop',
+        //     opacity:0
+        //   });
+        // }
+        
+      
+      })
   
 
     
@@ -219,6 +240,7 @@ export async function playPostFunc(inputBoolean) {
     firstLightYearAnim.play();
     secondLightYearAnim.play();
     hitHeadWall.play();
+    rainAnim.play();
     console.log('...play...already bubble');
 
   }

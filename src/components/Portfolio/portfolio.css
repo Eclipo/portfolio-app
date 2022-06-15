@@ -52,7 +52,7 @@
   border-radius: 18px;
   background-color: var(--white);
   margin: 1rem;
-  margin-top: -2.5rem;
+  margin-top: -3rem;
   margin-left: -4rem;
   display: flex;
 }
@@ -338,8 +338,71 @@
 }
 .wall{
   width: 4rem;
-  height: 10rem;
+  /* padding: 0.25rem; */
+  height: fit-content;
   background-color: var(--dark-slate);
   margin: 1rem;
   z-index: 1;
+}
+
+.rainDropTable table tbody{
+  border-collapse: collapse;
+}
+.rainDrop {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0 50% 50% 50%;
+  border: 3px solid var(--primary-darker-blue);
+  background-color: var(--primary-blue);
+  transform: rotate(45deg);
+  margin-top: 0.5rem;
+  opacity: 0;
+}
+
+.noDrop{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0 50% 50% 50%;
+  border: 3px solid var(--primary-darker-blue);
+  background-color: var(--primary-blue);
+  transform: rotate(45deg);
+  margin-top: 0.5rem;
+  opacity: 0;
+}
+
+#talkBubbleRegretID{
+  margin-left: 10rem;
+  margin-bottom: -5rem;
+  /* z-index: 1; */
+}
+
+#avatarRegretID .eyePupil{
+  margin-top: -0.1rem;
+}
+
+#regretEyeBrowLeftID{
+  float: left;
+
+  width:0.75rem;
+  height: 0.35rem;
+  background-color: var(--primary-brown);
+  margin: 0.1rem;
+  transform: rotate(-45deg);
+  margin-left:-0.25rem
+}
+#regretEyeBrowRightID{
+float: left;
+width:0.75rem;
+height: 0.35rem;
+background-color: var(--primary-brown);
+margin: 0.1rem;
+transform: rotate(-45deg);
+margin-left:0.75rem;
+  transform: rotate(45deg);
+  /* margin-left:0.75rem; */
+}
+
+#talkChallengeID{
+  margin-left: 10rem;
+  margin-bottom: -3rem;
 }
