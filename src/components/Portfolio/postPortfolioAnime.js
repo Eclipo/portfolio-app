@@ -4,7 +4,9 @@ import anime from "animejs";
 
 export async function playPostFunc(inputBoolean) {
 
-  
+  const wall = document.getElementById("avatarWall");
+  const moveRight = (wall.offsetWidth+100).toString() + "px";
+
   async function setText(input,inputMouth){
     anime({
       targets:inputMouth,
@@ -193,7 +195,7 @@ export async function playPostFunc(inputBoolean) {
           duration: 150,
           delay: 268
         },
-        translateX: '27vw',
+        translateX: [0,moveRight],
         changeComplete:function(){
           anime({
             targets:'#headHitWallLeft',

@@ -27,7 +27,7 @@ class Portfolio extends Component {
           <div className="portfolioTextContainer">
             <h2>This is it</h2>
               <p>This website is what I feel comfortable sharing with and it's my best shot. 
-              Down below you can read the story that resulted into this website and I hope you enjoy it.</p>
+              Down below you can read the story that resulted into this website.</p>
 
             <h3>The story</h3>
             <h4>Covid-19</h4>
@@ -161,8 +161,8 @@ class Portfolio extends Component {
 
             </div>
               <p>
-                My dad was at the hopsital but I still had time to help my mom before it was too late. 
-                I bought her a pulse oximeter but it was difficult to find one. 
+                However there was still time for me to help my mom. 
+                I managed to get her a pulse oximeter eventhough it was almost sold out. 
                 My parents survived Covid-19 and I decided to build my very first website,Coronahero, 
                 where the users could give my avatar various symptoms and read more about Covid-19. 
               </p>
@@ -188,21 +188,26 @@ class Portfolio extends Component {
                 <div className="avatarMouth" id="avatarEdipMouthID"></div>
               </div>
 
-              <div className="wall"></div>
+              <div className="wall" id="avatarWall"></div>
             </div>
               <p>
-                I did many many mistakes with the coronahero-website. 
-                It looked horrible, wasn't mobile responsive and I was crazy enough to compose my own background music ...Jissess...
-                From the hard gained experiences I realised I had alot to learn.
+                I made many mistakes with my first website. 
+                For starters it looked horrible and wasn't not mobile responsive at all. 
+                I realised I had alot to learn.
               </p>
               
             <h4>A new journey begins</h4>
+              {/* A sunrising and avatar looks to the horizon wiht a talkbubble */}
+
               <p>
-                Despite my previous failures I still had the dream of making a portfolio website.
-                A website that at least wasn't ugly and most importanetly mobile responsive.
-                Therefore I bought an Udemy course specifically for making a portfolio website focusing on React and Bootstrap.
+                Despite my failures I still wanted accomplish a long-lasted dream. 
+                Making a portfolio website.A website that would be entertaining and more mobile responsive.                
+                However I was still a noob and I was left with no choice... I bought an Udemy course 
+                specifically focusing on building a portfolio website combining React and Bootstrap.
               </p>
              
+              {/* Avatar tries to jump to the grand vision but falls down....*/}
+
              <p>
               In the process of making this website I struggled between my grand visions 
               and the acquired skillevel I had at the time. 
@@ -217,6 +222,7 @@ class Portfolio extends Component {
               I finally have found my way of being 'Lagom'.   
              </p>
 
+              {/* Avatar boxes very hard into a wall screaming "PATIENCE" "PATIENCE" "PATIENCE"  */}
               <h4>Lessons learned</h4>
                 <p>
                   My biggest experiences from this project is patience and balance. 
