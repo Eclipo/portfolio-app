@@ -170,7 +170,111 @@ class Portfolio extends Component {
 
             <h4>The mistakes</h4>
 
-            <div className="d-flex mt-5 mb-5">
+      
+
+            <div className="container">
+            <div className="row">
+            <table className="rainDropTable">
+              <tbody className="rainDropTable">
+                <tr>
+                  <td>
+                    <div className="noDrop"></div>
+                  </td>
+                  <td>
+                    <div className="noDrop"></div>
+                  </td>
+                  <td>
+                    <div className="noDrop"></div>
+                  </td>
+                  <td>
+                    <div className="noDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="noDrop"></div>
+                  </td>
+                  <td>
+                    <div className="noDrop"></div>
+                  </td>
+                  <td>
+                    <div className="noDrop"></div>
+                  </td>
+                  <td>
+                    <div className="noDrop"></div>
+                  </td>
+                </tr>
+          
+
+              </tbody>
+
+            </table>
+         </div>
+         <div className="row flexCenter">
+         <div className="talkBubble" id="talkBubbleRegretID">
+              <p id="talkRegretsID">No no no</p>
+            </div>
+          </div>
+          <div className="row flexCenter">
+              <div className="avatarCircle" id="avatarRegretID">
+                <div className="eyesContainer">
+                  <div id="regretEyeBrowLeftID"></div>
+                  <div id="regretEyeBrowRightID"></div>
+                  <div className="eyeAvatar" id='edipEyesID'>
+                    <div className="eyePupil"></div>
+                  </div>
+
+                  <div className="eyeAvatar" id='edipEyesID'>
+                    <div className="eyePupil"></div>
+                  </div>
+                </div>
+
+                <div className="avatarNose" id="avatarEdipID"></div>
+                <div className="avatarMouth" id="avatarEdipMouthID"></div>
+              </div>
+            </div>
+          
+
+              <div className="row">
+                <p>
+                  I made many mistakes with my first website. 
+                  For starters it looked horrible and wasn't not mobile responsive at all. 
+                  I realised I had alot to learn.
+                </p>
+              </div>
+
+            {/* Avatar looks down into his website and asks himself...
+            'What have I done... What was I thinking ... This isn't what I wanted..." 
+            */}
+
+          
+          </div>
+            <h4>A new journey begins</h4>
+              {/* A sunrising and avatar looks to the horizon wiht a talkbubble */}
+
+              <p>
+                Despite my failures I still wanted accomplish a long-lasted dream. 
+                Making a portfolio website.A website that would be entertaining and more mobile responsive.                
+                However I was still a noob and I was left with no choice... I bought an Udemy course 
+                specifically focusing on building a portfolio website combining React and Bootstrap.
+              </p>
+             
+              {/* Avatar tries to jump to the grand vision but falls down....*/}
+
+            <h4>The challenges</h4>
+
+            <div className="container">
+              <div className="row">
               <div className="avatarCircle mx-auto" id="headHitWall">
                 <div className="eyesContainer">
                   <div className="eyeBrows" id="headHitWallLeft"></div>
@@ -188,25 +292,22 @@ class Portfolio extends Component {
                 <div className="avatarMouth" id="avatarEdipMouthID"></div>
               </div>
 
-              <div className="wall" id="avatarWall"></div>
-            </div>
-              <p>
-                I made many mistakes with my first website. 
-                For starters it looked horrible and wasn't not mobile responsive at all. 
-                I realised I had alot to learn.
-              </p>
-              
-            <h4>A new journey begins</h4>
-              {/* A sunrising and avatar looks to the horizon wiht a talkbubble */}
 
-              <p>
-                Despite my failures I still wanted accomplish a long-lasted dream. 
-                Making a portfolio website.A website that would be entertaining and more mobile responsive.                
-                However I was still a noob and I was left with no choice... I bought an Udemy course 
-                specifically focusing on building a portfolio website combining React and Bootstrap.
-              </p>
-             
-              {/* Avatar tries to jump to the grand vision but falls down....*/}
+              <div className="wall" id="avatarWall">
+                <p style={{textAlign:'center'}}>
+                N<br></br>
+                O<br></br>
+                O<br></br>
+                B<br></br><br></br>
+                W<br></br>
+                A<br></br>
+                L<br></br>
+                L<br></br>
+
+                </p>
+              </div>
+              </div>
+            </div>
 
              <p>
               In the process of making this website I struggled between my grand visions 
