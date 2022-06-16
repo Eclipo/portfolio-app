@@ -240,7 +240,7 @@
 }
 
 #avatarDad .avatarNose{
-  background-color:var(--primary-yellow);
+  background-color:var(--primary-purple);
   margin-left: 1.2rem;
 }
 
@@ -251,7 +251,7 @@
 
 #avatarDad{
 
-  background-color: var(--primary-red);
+  background-color: #64e0ff;
   
   margin: 1rem;
   margin-left: 10rem;
@@ -260,7 +260,7 @@
 
 #avatarMom{
  
-  background-color: var(--primary-lightPink);
+  background-color: #fcbfdf;
   margin: 1rem;
   margin-left: 15rem;
   position: absolute;
@@ -343,6 +343,11 @@
   background-color: var(--dark-slate);
   margin: 1rem;
   z-index: 1;
+}
+
+
+#avatarWall h4{
+  text-shadow: 0.15em 0.15rem 0.5rem var(--light-slate);
 }
 
 .rainDropTable table tbody{

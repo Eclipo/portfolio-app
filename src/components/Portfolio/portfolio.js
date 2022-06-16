@@ -190,7 +190,10 @@ class Portfolio extends Component {
                     <div className="noDrop"></div>
                   </td>
                   <td>
-                    <div className="rainDrop"></div>
+                    <div className="noDrop"></div>
+                  </td>
+                  <td>
+                    <div className="noDrop"></div>
                   </td>
                   <td>
                     <div className="rainDrop"></div>
@@ -200,6 +203,15 @@ class Portfolio extends Component {
                   </td>
                   <td>
                     <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="noDrop"></div>
                   </td>
                   <td>
                     <div className="noDrop"></div>
@@ -248,8 +260,8 @@ class Portfolio extends Component {
               <div className="row">
                 <p>
                   I made many mistakes with my first website. 
-                  For starters it looked horrible and wasn't not mobile responsive at all. 
-                  I realised I had alot to learn.
+                  For starters it looked horrible and wasn't mobile responsive. 
+                  I still had alot to learn.
                 </p>
               </div>
 
@@ -271,7 +283,7 @@ class Portfolio extends Component {
              
               {/* Avatar tries to jump to the grand vision but falls down....*/}
 
-            <h4>The challenges</h4>
+            <h4>The struggle</h4>
 
             <div className="container">
               <div className="row">
@@ -294,7 +306,7 @@ class Portfolio extends Component {
 
 
               <div className="wall" id="avatarWall">
-                <p style={{textAlign:'center'}}>
+                <h4 style={{textAlign:'center', color:'var(--primary-white)'}}>
                 N<br></br>
                 O<br></br>
                 O<br></br>
@@ -304,7 +316,7 @@ class Portfolio extends Component {
                 L<br></br>
                 L<br></br>
 
-                </p>
+                </h4>
               </div>
               </div>
             </div>
