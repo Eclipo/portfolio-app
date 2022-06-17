@@ -411,3 +411,95 @@ margin-left:0.75rem;
   margin-left: 10rem;
   margin-bottom: -3rem;
 }
+
+.journeyScene{
+  width:95%;
+  height: 15rem;
+  margin: auto;
+  background-color: var(--primary-blue);
+  z-index: -3;
+}
+.sunRise{
+
+  width: 5rem;
+  height: 5rem;
+  transform: scale(0.7);
+  margin: auto;
+ 
+  display: block;
+  border-radius: 50%;  /* float: left; */
+  background-color: #dbd659e6;
+  box-shadow: 0rem -1rem 7rem 3.25rem #ffa3059d;
+  opacity: 0;
+  z-index: -1;
+
+}
+
+.journeyScene .ground{
+  display: flex;
+  /* position: absolute; */
+  width: 100%;
+  margin: auto;
+  height: 3.8rem;
+  margin-top: -1rem;
+  /* margin-top: -5rem; */
+  background-color: rgb(121, 100, 62);
+  
+}
+
+.mountainScene{
+  display: inline-flex;
+  /* position: absolute; */
+  margin: auto;
+  
+  /* margin-top: 20%; */
+  
+}
+
+.mountain{
+  display: inline-block;
+  float: left;
+  /* margin-left: -10%; */
+  margin-top: 15%;
+  width: 0; 
+  height: 0; 
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+  border-bottom: 5rem solid rgb(152, 61, 34);
+  z-index: 4;
+  /* background-color: var(--primary-brown); */
+}
+
+.smallMountain{
+  display: inline-block;
+
+  float: left;
+  margin-left: -5%;
+  margin-top: -0.5rem;
+  /* margin-top: -20%; */
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-left: 2.75rem solid transparent;
+  border-right: 2.75rem solid transparent;
+  border-bottom: 5.5rem solid rgb(152, 61, 34);
+}
+
+#mountainOneID{
+  border-bottom: 5rem solid rgb(121, 51, 30);
+}
+
+#mountainTwoID{
+  border-bottom: 5rem solid rgb(143, 57, 31);
+}
+
+#mountainThreeID{
+  border-bottom: 5rem solid rgb(112, 50, 31);
+  margin-left: -1.25rem;
+  z-index: -1;
+}
+
+#mountainFourID{
+  border-bottom: 5rem solid rgb(132, 55, 31);
+  z-index: 1;
+}

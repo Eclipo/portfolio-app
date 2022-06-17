@@ -229,6 +229,44 @@ export async function playPostFunc(inputBoolean) {
         
       
       })
+
+      const sunRiseAnim = anime.timeline({
+        loop: true,
+        autoplay: false,
+        easing:'linear'
+      });
+
+      
+      const changeJourneyScene = anime.timeline({
+        loop: true,
+        autoplay: false,
+        easing:'linear'
+      });
+
+
+      changeJourneyScene.add({
+        targets:'.journeyScene',
+        backgroundColor:['#0a192f','#3F7FBF'],
+        duration:5000,
+        endDelay:3500
+      });
+
+      sunRiseAnim.add({
+        targets:'.sunRise',
+        
+        translateY:['7rem','5rem'],
+        duration:5000,
+        endDelay:3500,
+        opacity:[0,1],
+        // update:function(){
+        //   anime({
+        //     targets:'.rainDrop',
+        //     opacity:0
+        //   });
+        // }
+        
+      
+      })
   
 
     
@@ -241,6 +279,8 @@ export async function playPostFunc(inputBoolean) {
     secondLightYearAnim.play();
     hitHeadWall.play();
     rainAnim.play();
+    changeJourneyScene.play();
+    sunRiseAnim.play();
     console.log('...play...already bubble');
 
   }

@@ -14,7 +14,7 @@ class Portfolio extends Component {
       <div id="portfolio" className="sectionAnimation">
         <div
           className="sectionLine"
-          style={{ backgroundColor: "var(--primary-pink)" }}
+          style={{backgroundColor:"var(--primary-pink)" }}
         ></div>
         <h1 style={{ color: "var(--primary-pink" }}>Portfolio</h1>
         <PlayRefresh id="PortfolioAnimation" playBoolean={0}></PlayRefresh>
@@ -26,8 +26,8 @@ class Portfolio extends Component {
         <div className="flexCenter" id="portfolioContainerID">
           <div className="portfolioTextContainer">
             <h2>This is it</h2>
-              <p>This website is what I feel comfortable sharing with and it's my best shot. 
-              Down below you can read the story that resulted into this website.</p>
+              <p>This website is what I feel comfortable sharing with and it's my best shot.
+              There is no github.Down below you can read the story that resulted into this website.</p>
 
             <h3>The story</h3>
             <h4>Covid-19</h4>
@@ -274,6 +274,27 @@ class Portfolio extends Component {
             <h4>A new journey begins</h4>
               {/* A sunrising and avatar looks to the horizon wiht a talkbubble */}
 
+              <div className="journeyScene">
+              <div className="sunRise"></div>
+
+              <div className="mountainScene">
+              
+                <div className="mountain" id="mountainOneID">
+                  <div className="mountain" id="mountainFourID">
+                    <div className="smallMountain" id="mountainThreeID"></div>
+                  </div>
+                </div>
+                <div className="mountain" id="mountainTwoID">
+                  
+                </div>
+
+                </div>
+                <div className="ground"></div>
+
+
+
+              </div>
+              
               <p>
                 Despite my failures I still wanted accomplish a long-lasted dream. 
                 Making a portfolio website.A website that would be entertaining and more mobile responsive.                
