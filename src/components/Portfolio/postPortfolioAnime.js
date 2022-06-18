@@ -5,7 +5,7 @@ import anime from "animejs";
 export async function playPostFunc(inputBoolean) {
 
   const wall = document.getElementById("avatarWall");
-  const moveRight = (wall.offsetWidth+100).toString() + "px";
+  const moveRight = (wall.offsetWidth+50).toString() + "px";
 
   async function setText(input,inputMouth){
     anime({
@@ -130,15 +130,14 @@ export async function playPostFunc(inputBoolean) {
       
       const firstLightYearAnim = anime.timeline({
         loop: true,
-        autoplay: false,
+        autoplay: false
       });
 
       firstLightYearAnim.add({
         targets:'#firstLight',
-        delay:anime.stagger(75, {from: 'center'}),
-        translateX:['7rem','-10rem'],
-        translateY:['-7rem','10rem'],
-
+        delay:anime.stagger(125, {from: 'center'}),
+        translateX:['3rem',0],
+        translateY:['-3rem','1rem'],
         opacity:[1,0],
         rotate:['45deg','45deg'],
         complete:function(){
@@ -151,15 +150,14 @@ export async function playPostFunc(inputBoolean) {
 
       const secondLightYearAnim = anime.timeline({
         loop: true,
-        autoplay: false,
-        endDelay:350,
+        autoplay: false      
       });
 
       secondLightYearAnim.add({
         targets:'#secondLight',
-        delay:anime.stagger(100, {from: 'center'}),
-        translateX:['7rem','-10rem'],
-        translateY:['-7rem','10rem'],
+        delay:anime.stagger(75, {from: 'center'}),
+        translateX:['3rem',0],
+        translateY:['-3rem','1rem'],
 
         opacity:[1,0],
         rotate:['45deg','45deg'],
@@ -192,7 +190,7 @@ export async function playPostFunc(inputBoolean) {
         targets: '#headHitWall',
         scaleX: {
           value: 1.05,
-          duration: 150,
+          duration: 75,
           delay: 268
         },
         translateX: [0,moveRight],
@@ -264,10 +262,34 @@ export async function playPostFunc(inputBoolean) {
         //     opacity:0
         //   });
         // }
+      });
+
         
-      
+      const zenBigAnim = anime.timeline({
+        loop: true,
+        autoplay: false,
+        direction:'alternate',
+        easing: "easeInOutQuad"      
+      });
+
+      zenBigAnim.add({
+        targets:'.zenBigCircle', 
+        scale:[1,0.9,1.2],
+        duration:2500
       })
   
+      const zenSmallAnim = anime.timeline({
+        loop: true,
+        autoplay: false,
+        direction:'alternate',
+        easing: "easeInOutQuad"      
+      });
+
+      zenSmallAnim.add({
+        targets:'.zenBigCircle', 
+        scale:[1,0.9,1.25],
+        duration:2500
+      })
 
     
   if(inputBoolean === true){
@@ -281,6 +303,8 @@ export async function playPostFunc(inputBoolean) {
     rainAnim.play();
     changeJourneyScene.play();
     sunRiseAnim.play();
+    zenBigAnim.play();
+    zenSmallAnim.play();    
     console.log('...play...already bubble');
 
   }

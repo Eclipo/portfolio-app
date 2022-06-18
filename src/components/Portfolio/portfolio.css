@@ -376,11 +376,14 @@
 }
 
 #talkBubbleRegretID{
-  margin-left: 10rem;
+  margin-left: 8rem;
+  margin-top: -0.5rem;
   margin-bottom: -5rem;
   /* z-index: 1; */
 }
-
+#avatarRegretID{
+  margin-right: 5rem;
+}
 #avatarRegretID .eyePupil{
   margin-top: -0.1rem;
 }
@@ -412,10 +415,22 @@ margin-left:0.75rem;
   margin-bottom: -3rem;
 }
 
+.animContainer{
+  margin: auto ;
+  width: 95%;
+  height: 90%;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: var(--primary-pink);
+  display: block;
+  margin-top: 1rem;
+}
+
 .journeyScene{
-  width:95%;
+  width:90%;
   height: 15rem;
   margin: auto;
+  display: block;
   background-color: var(--primary-blue);
   z-index: -3;
 }
@@ -433,6 +448,111 @@ margin-left:0.75rem;
   opacity: 0;
   z-index: -1;
 
+}
+
+.zenBigCircle{
+  width: 10rem;
+  height: 10rem;
+  /* transform: scale(0.7); */
+  margin: auto;
+ 
+
+  border-radius: 50%;  /* float: left; */
+  background-color: #dbd659e6;
+  box-shadow: 0rem -1rem 10rem 2rem #ffa3059d;
+  opacity: 1;
+  position: absolute;
+  left: 43%;
+  /* z-index: -1; */
+}
+.zenSmallCircle{
+  width: 8rem;
+  height: 8rem;
+  /* transform: scale(0.7); */
+  justify-content: center;
+ 
+
+  border-radius: 50%;  /* float: left; */
+  background-color: #fdfcd7e6;
+  box-shadow: 0rem -1rem 10rem 2rem #fffbf59d;
+  opacity: 1
+}
+.zenAvatarCircle{
+  position: absolute;
+  display: inline-flex;
+  width:3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background-color: var(--primary-light-green);
+  margin: 1rem;
+  margin: auto;
+  margin-left: 12.75rem;
+  margin-top: 3rem;
+}
+
+.zenParagraph{
+  margin-top: 12.5rem;
+  margin-left: 0.05rem;
+}
+
+.zenHand{
+  width:.75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background-color: var(--primary-light-green);
+  display: inline-block;
+  margin-left: 1.75rem;
+  margin-bottom: -1rem;
+  margin-bottom: -10rem;
+  /* transform: rotate(-45deg); */
+}
+.emptyHandSpace{
+  width:.5rem;
+  height: .5rem;
+  border-radius: 50%;
+  margin: auto;
+  /* margin-top: 0.1rem; */
+  display: flex;
+  margin-left: 0.12rem;
+  margin-top: 0.15rem;
+  background-color: #fdfcd7e6;
+}
+
+.zenFinger{
+  width:1.25rem;
+  height: .25rem;
+  background-color: var(--primary-light-green);
+  display: inline-flex;
+  margin-top: -0.15rem;
+}
+
+.zenEyes{
+  width: 0.75rem;
+  height: 0.05rem;
+  background-color: black;
+  margin:auto;
+}
+
+#zenEyeLeftID{
+  margin-left: 1rem;
+}
+
+#zenNoseID{
+  margin-top: 2.2rem;
+  margin-left: 1.7rem;
+}
+
+#zenEyeRightID{
+  margin-left: -0.5rem;
+}
+
+.zenMouth{
+  width: 0.75rem;
+  height: 0.05rem;
+  background-color: black;
+  margin:auto;
+  margin-top: 1rem;
+  margin-left: -0.15rem;
 }
 
 .journeyScene .ground{
