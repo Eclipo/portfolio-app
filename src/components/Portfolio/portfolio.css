@@ -352,6 +352,7 @@
 
 .rainDropTable table tbody{
   border-collapse: collapse;
+  margin: auto;
 }
 .rainDrop {
   width: 0.5rem;
@@ -455,22 +456,23 @@ margin-left:0.75rem;
   height: 10rem;
   /* transform: scale(0.7); */
   margin: auto;
- 
+  display: flex;
+  margin-top: 1.5rem;
+ /* justify-content: center; */
 
   border-radius: 50%;  /* float: left; */
   background-color: #dbd659e6;
   box-shadow: 0rem -1rem 10rem 2rem #ffa3059d;
   opacity: 1;
-  position: absolute;
-  left: 43%;
+  /* position: absolute; */
+  /* left:45vw; */
   /* z-index: -1; */
 }
 .zenSmallCircle{
   width: 8rem;
   height: 8rem;
   /* transform: scale(0.7); */
-  justify-content: center;
- 
+
 
   border-radius: 50%;  /* float: left; */
   background-color: #fdfcd7e6;
@@ -486,12 +488,12 @@ margin-left:0.75rem;
   background-color: var(--primary-light-green);
   margin: 1rem;
   margin: auto;
-  margin-left: 12.75rem;
-  margin-top: 3rem;
+  margin-left: 0.1rem;
+  margin-top: 4.5rem;
 }
 
 .zenParagraph{
-  margin-top: 12.5rem;
+  margin-top: 2.5rem;
   margin-left: 0.05rem;
 }
 

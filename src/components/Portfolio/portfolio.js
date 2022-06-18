@@ -184,28 +184,28 @@ class Portfolio extends Component {
                     <div className="noDrop"></div>
                   </td>
                   <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
+                    <div className="rainDrop"></div>
+                  </td>
+                  <td>
                     <div className="noDrop"></div>
-                  </td>
-                  <td>
-                    <div className="noDrop"></div>
-                  </td>
-                  <td>
-                    <div className="noDrop"></div>
-                  </td>
-                  <td>
-                    <div className="rainDrop"></div>
-                  </td>
-                  <td>
-                    <div className="rainDrop"></div>
-                  </td>
-                  <td>
-                    <div className="rainDrop"></div>
-                  </td>
-                  <td>
-                    <div className="rainDrop"></div>
-                  </td>
-                  <td>
-                    <div className="rainDrop"></div>
                   </td>
                   <td>
                     <div className="noDrop"></div>
@@ -298,6 +298,7 @@ class Portfolio extends Component {
                 Making a portfolio website.A website that would be entertaining and more mobile responsive.                
                 However I was still a noob and I was left with no choice... I bought an Udemy course 
                 specifically focusing on building a portfolio website combining React and Bootstrap.
+                On top of that I would use AnimeJS for the animations.
               </p>
             </div>
              
@@ -353,7 +354,7 @@ class Portfolio extends Component {
             <div className="container animContainer">
             <h4>Becomming Lagom</h4>
               {/* Zen-mode */}
-              <div className="row">
+              <div className="row flexCenter">
                 <div className="zenBigCircle" id="helveteCIRCLE">
                   <div className="zenSmallCircle m-auto mt-3"></div>
                 </div>
