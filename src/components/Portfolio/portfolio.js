@@ -26,13 +26,17 @@ class Portfolio extends Component {
         <div className="flexCenter" id="portfolioContainerID">
           <div className="portfolioTextContainer">
             <h2>This is it</h2>
-              <p>This website is what I feel comfortable sharing with and it's my best shot.
-              There is no github.Down below you can read the story that resulted into this website.</p>
+              <p>This website is what I feel comfortable in sharing with you and it's my best shot.
+              No github but there is always F12.  
+              <br></br><br></br>
+              The tech I used for this website are React, Bootstrap, AnimeJS, alot of CSS and Javascript. 
+              <br></br><br></br>
+              Down below you can read the story about this website.</p>
 
             <h3>The story</h3>
 
 
-            <div className="container animContainer mb-3" >
+            <div className="container animContainer" >
               <h4 className="mb-5">Covid-19</h4>
 
               <div className="row">
@@ -99,7 +103,7 @@ class Portfolio extends Component {
             
               <p className="row mt-3">
                 Covid-19 arrived and in one hit it threaten the lives of my parents. 
-                My dad was at the hopstial and my mother just got infected. 
+                My dad was at the hospital and my mother just got infected. 
               </p>
             </div>
             
@@ -153,10 +157,10 @@ class Portfolio extends Component {
 
               <div className="d-inline-flex">
                 <p>
-                  However there was still time for me to help my mom. 
-                  I managed to get her a pulse oximeter eventhough it was almost sold out. 
-                  My parents survived Covid-19 and I decided to build my very first website,Coronahero, 
-                  where the users could give my avatar various symptoms and read more about Covid-19. 
+                  There was still time for me to help my mom. 
+                  I managed to get her a pulse oximeter even though it was almost sold out. 
+                  My parents survived Covid-19 and I decided to build my very first website Coronahero. 
+                  The users could give my avatar various symptoms and read more about Covid-19. 
                 </p>
               </div>
             </div>
@@ -256,9 +260,9 @@ class Portfolio extends Component {
 
               <div className="row">
                 <p>
-                  I made many mistakes with my first website. 
-                  For starters it looked horrible and wasn't mobile responsive. 
-                  I still had alot to learn.
+                  I made many mistakes with my first website Coronahero. 
+                  It looked horrible and wasn't mobile responsive at all. 
+                  I realised I had alot to learn.
                 </p>
               </div>
 
@@ -294,11 +298,11 @@ class Portfolio extends Component {
             </div>
               
               <p>
-                Despite my failures I still wanted accomplish a long-lasted dream. 
-                Making a portfolio website.A website that would be entertaining and more mobile responsive.                
-                However I was still a noob and I was left with no choice... I bought an Udemy course 
-                specifically focusing on building a portfolio website combining React and Bootstrap.
-                On top of that I would use AnimeJS for the animations.
+                Despite my failures I still wanted to achieve one of my dreams. 
+                Making a portfolio website that would be entertaining and mobile responsive.                
+                However I was still a novice and I was left with no choice... but to buy an Udemy course 
+                about building a portfolio website combining React and Bootstrap.
+                On top of that I would also use AnimeJS for the animations.
               </p>
             </div>
              
@@ -328,6 +332,8 @@ class Portfolio extends Component {
 
 
               <div className="wall" id="avatarWall">
+              <div className="forceWall"></div>
+
                 <h4 style={{textAlign:'center', color:'var(--primary-white)'}}>
                 N<br></br>
                 O<br></br>
@@ -370,22 +376,18 @@ class Portfolio extends Component {
 
              <div className="row zenParagraph">
               <p>
-                Gradually as I got more skillful and wiser I decided to settle with 'Lagom'.  
-                Then bits and pieces started to slowly fall into place and 
-                almost a year later I re-wrote the code that I had been given from the course. 
-                I finally have found my way of being 'Lagom'.   
+                After several setbacks I decided to settle with 'Lagom'.  
+                Then bits and pieces started to slowly fall into place 
+                where I didn't have too high expectations on myself.
+                <br></br><br></br>
+
+                With time I became better and in the end I have re-wrote 
+                the whole code I had been given from the Udemy course.
+                <br></br><br></br>
+                Finally I have found my way of being 'Lagom'.   
               </p>
              </div>
             </div>
-
-              {/* Avatar boxes very hard into a wall screaming "PATIENCE" "PATIENCE" "PATIENCE"  */}
-              <h4>Lessons learned</h4>
-                <p>
-                  My biggest experiences from this project is patience and balance. 
-                  I rushed into various technical challenges and paid for it in full. 
-                  However since I was "crazy" enough in trying to achive 
-                  some of the grand visions I had made me in the end a more skillful and wiser developer.
-                </p>
           </div>
         </div>
       </div>
