@@ -17,10 +17,11 @@ export async function playPostFunc(inputBoolean) {
 
     
     paragraphCovid.innerText=input;
-
   }
 
   const paragraphCovid = document.getElementById('talkCovidParagraphID');
+
+  const paragraphRegret = document.getElementById('talkRegretsID');
 
     
     const talkBubbleCovid = anime.timeline({
@@ -30,11 +31,44 @@ export async function playPostFunc(inputBoolean) {
         endDelay:750
       });
 
+      const talkBubbleRegret = anime.timeline({
+        loop:true,
+        autoplay:false,
+        easing:'easeInCubic',
+        duration:3000      
+      });
+
+      talkBubbleRegret.add({
+        targets:'#avatarRegretID',
+        translateY:[0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0],
+        change:function(){
+          paragraphRegret.innerText='What have I done!'
+        }
+      })
+    
+
+      talkBubbleRegret.add({
+        targets:'#avatarRegretID',
+        translateY:[0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0],
+        change:function(){
+          paragraphRegret.innerText='What was I thinking!'
+        }
+      })
+
+      talkBubbleRegret.add({
+        targets:'#avatarRegretID',
+        translateY:[0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0],
+        change:function(){
+          paragraphRegret.innerText="This isn't what I wanted..."
+        }
+      });
+      
+
       const blinkEyeEdip = anime.timeline({
         loop: true,
         autoplay: false,
         duration:750,
-        delay:500      
+        delay:500,      
       });
 
       blinkEyeEdip.add({
@@ -63,7 +97,7 @@ export async function playPostFunc(inputBoolean) {
         loop: true,
         autoplay: false,
         direction: "alternate",
-        easing: "easeInOutQuad",
+        easing: "linear",
       });
 
       eyeBrowAnim.add({
@@ -169,6 +203,16 @@ export async function playPostFunc(inputBoolean) {
         }
       })
 
+      const forceWallAnim = anime.timeline({
+        loop:false,
+        autoplay:false,
+        easing:'easeInCubic'
+      })
+      forceWallAnim.add({
+        targets:'.forceWall',
+        opacity:[1,0],
+        duration:1000
+      })
       const hitHeadWall = anime.timeline({
         loop: true,
         autoplay: false,
@@ -195,6 +239,8 @@ export async function playPostFunc(inputBoolean) {
         },
         translateX: [0,moveRight],
         changeComplete:function(){
+          forceWallAnim.play();
+
           anime({
             targets:'#headHitWallLeft',
             rotate:[0,'15deg']
@@ -246,15 +292,83 @@ export async function playPostFunc(inputBoolean) {
         targets:'.journeyScene',
         backgroundColor:['#0a192f','#3F7FBF'],
         duration:5000,
-        endDelay:3500
+        endDelay:2500
       });
+
+      const groundAnim = anime.timeline({
+        loop:true,
+        autoplay:false,
+        easing:'linear'
+      });
+
+      groundAnim.add({
+          targets:'.ground',
+          backgroundColor:['rgb(54, 46, 29)','rgb(121, 100, 62)'],
+          duration:5000,
+          endDelay:2500
+      });
+
+
+      
+      const mountainOne = anime.timeline({
+        loop:true,
+        autoplay:false,
+        easing:'linear'
+      });
+
+      mountainOne.add({
+          targets:'#mountainOneID',
+          borderBottom:['5rem solid rgb(63, 26, 15)','5rem solid rgb(121, 51, 30)'],
+          duration:5000,
+          endDelay:2500
+      });
+
+      const mountainTwp = anime.timeline({
+        loop:true,
+        autoplay:false,
+        easing:'linear'
+      });
+
+      mountainTwp.add({
+          targets:'#mountainTwoID',
+          borderBottom:['5rem solid rgb(63, 26, 15)','5rem solid rgb(143, 57, 31)'],
+          duration:5000,
+          endDelay:2500
+      });
+
+      const mountainThree = anime.timeline({
+        loop:true,
+        autoplay:false,
+        easing:'linear'
+      });
+
+      mountainThree.add({
+          targets:'#mountainThreeID',
+          borderBottom:['5rem solid rgb(63, 26, 15))','5rem solid rgb(112, 50, 31)'],
+          duration:5000,
+          endDelay:2500
+      });
+
+
+      const mountainFour = anime.timeline({
+        loop:true,
+        autoplay:false,
+        easing:'linear'
+      });
+
+      mountainFour.add({
+          targets:'#mountainFourID',
+          borderBottom:['5rem solid rgb(63, 26, 15)','5rem solid rgb(132, 55, 31)'],
+          duration:5000,
+          endDelay:2500
+      });
+
 
       sunRiseAnim.add({
         targets:'.sunRise',
-        
         translateY:['7rem','5rem'],
         duration:5000,
-        endDelay:3500,
+        endDelay:2500,
         opacity:[0,1],
         // update:function(){
         //   anime({
@@ -300,9 +414,15 @@ export async function playPostFunc(inputBoolean) {
     firstLightYearAnim.play();
     secondLightYearAnim.play();
     hitHeadWall.play();
+    talkBubbleRegret.play();
     rainAnim.play();
     changeJourneyScene.play();
+    groundAnim.play();
     sunRiseAnim.play();
+    mountainOne.play();
+    mountainTwp.play();
+    mountainThree.play();
+    mountainFour.play();
     zenBigAnim.play();
     zenSmallAnim.play();    
     console.log('...play...already bubble');

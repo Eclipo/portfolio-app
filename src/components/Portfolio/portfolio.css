@@ -1,10 +1,11 @@
 #portfolioContainerID {
-  /* display: none; */
-  opacity: 1;
+  display: none;
+  opacity: 0;
 }
 
 .portfolioTextContainer{
   margin: auto;
+  display: inline-block;
   
 }
 
@@ -77,6 +78,8 @@
 .avatarEdipParagraph{
   margin-top: 4.25rem;
   margin-left: 1.25rem;
+  width: 5rem;
+
   color: white !important;
   font-weight: bolder !important;
   position: absolute;
@@ -85,6 +88,8 @@
 .avatarDadParagraph{
   margin-top: 4.25rem;
   margin-left: 10.5rem;
+  width: 5rem;
+
   color: white !important;
   font-weight: bolder !important;
   position: absolute;
@@ -93,6 +98,7 @@
 .avatarMomParagraph{
   margin-top: 4.25rem;
   margin-left: 15.5rem;
+  width: 5rem;
   color: white !important;
   font-weight: bolder !important;
   position: absolute;
@@ -337,12 +343,33 @@
   margin: auto;
 }
 .wall{
-  width: 4rem;
+  width: 3em;
   /* padding: 0.25rem; */
   height: fit-content;
   background-color: var(--dark-slate);
-  margin: 1rem;
+  display: block;
+  /* margin: auto; */
+  /* margin: 1rem; */
+  /* padding: 0.5rem; */
   z-index: 1;
+  position: inherit
+}
+
+.forceWall{
+  
+  box-shadow: 0rem 5rem 10rem 6.25rem #048ced9d;
+
+  width: 3rem;
+  height: fit-content;
+  /* padding: 0.25rem; */
+  justify-content: center;
+  align-items: center;
+  display: block;
+  /* padding: 0.25rem; */
+
+  background-color: var(--dark-slate);
+  opacity: 0;
+
 }
 
 
@@ -363,6 +390,7 @@
   transform: rotate(45deg);
   margin-top: 0.5rem;
   opacity: 0;
+  z-index: 1;
 }
 
 .noDrop{
@@ -377,13 +405,16 @@
 }
 
 #talkBubbleRegretID{
-  margin-left: 8rem;
+  margin-left: 9rem;
   margin-top: -0.5rem;
   margin-bottom: -5rem;
+  height: 4rem;
+  width: 8rem;
   /* z-index: 1; */
 }
 #avatarRegretID{
   margin-right: 5rem;
+  z-index: -1;
 }
 #avatarRegretID .eyePupil{
   margin-top: -0.1rem;
@@ -425,6 +456,7 @@ margin-left:0.75rem;
   border-color: var(--primary-pink);
   display: block;
   margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 
 .journeyScene{
@@ -462,7 +494,7 @@ margin-left:0.75rem;
 
   border-radius: 50%;  /* float: left; */
   background-color: #dbd659e6;
-  box-shadow: 0rem -1rem 10rem 2rem #ffa3059d;
+  box-shadow: 0rem -1rem 7rem 2rem #ffa3059d;
   opacity: 1;
   /* position: absolute; */
   /* left:45vw; */
@@ -588,6 +620,8 @@ margin-left:0.75rem;
   border-left: 3rem solid transparent;
   border-right: 3rem solid transparent;
   border-bottom: 5rem solid rgb(152, 61, 34);
+  box-decoration-break: clone;
+
   z-index: 4;
   /* background-color: var(--primary-brown); */
 }
