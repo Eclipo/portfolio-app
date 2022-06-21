@@ -26,7 +26,7 @@ class Portfolio extends Component {
         <div className="flexCenter" id="portfolioContainerID">
           <div className="portfolioTextContainer">
             <h2>This is it</h2>
-              <p>This website is what I feel comfortable in sharing with you and it's my best shot.
+              <p>My portfolio is this very website and it's what I am comfortable to share with you.
               No github but there is always F12.  
               <br></br><br></br>
               The tech I used for this website are React, Bootstrap, AnimeJS, alot of CSS and Javascript. 
@@ -59,7 +59,7 @@ class Portfolio extends Component {
                   <p className="avatarEdipParagraph">Edip</p>
 
                   <div className="talkBubble" id="talkCovidID">
-                    <p id="talkCovidParagraphID">Let's go</p>
+                    <p id="talkCovidParagraphID">...</p>
                   </div>
                  
                 <div className="avatarCircle" id="avatarDad">
@@ -159,8 +159,8 @@ class Portfolio extends Component {
                 <p>
                   There was still time for me to help my mom. 
                   I managed to get her a pulse oximeter even though it was almost sold out. 
-                  My parents survived Covid-19 and I decided to build my very first website Coronahero. 
-                  The users could give my avatar various symptoms and read more about Covid-19. 
+                  My parents survived Covid-19 and I decided to build my very first website namely Coronahero. 
+                  The users could give my avatar various symptoms and learn more about Covid-19. 
                 </p>
               </div>
             </div>
@@ -260,17 +260,12 @@ class Portfolio extends Component {
 
               <div className="row">
                 <p>
-                  I made many mistakes with my first website Coronahero. 
+                  The website Coronahero was a disaster. 
                   It looked horrible and wasn't mobile responsive at all. 
-                  I realised I had alot to learn.
+                  I made many mistakes and I realised I had a long way to go.
                 </p>
               </div>
-
-            {/* Avatar looks down into his website and asks himself...
-            'What have I done... What was I thinking ... This isn't what I wanted..." 
-            */}
-
-          
+ 
           </div>
           <div className="container animContainer">
             <h4>A new journey begins</h4>

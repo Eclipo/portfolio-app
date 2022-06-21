@@ -5,15 +5,21 @@ import anime from "animejs";
 export async function playPostFunc(inputBoolean) {
 
   const wall = document.getElementById("avatarWall");
-  const moveRight = (wall.offsetWidth+75).toString() + "px";
+  const moveRight = (wall.offsetWidth+68).toString() + "px";
 
-  async function setText(input,inputMouth){
+  async function setText(input,inputMouth, inputBackGroundColor){
     anime({
       targets:inputMouth,
       height:['.5rem',0,'.5rem',0,'.5rem'],
       duration:750,
-      
     });
+
+    anime({
+      targets:'#talkCovidID',
+      backgroundColor:inputBackGroundColor,
+      duration:250,
+      easing:'linear'
+    })
 
     
     paragraphCovid.innerText=input;
@@ -111,7 +117,7 @@ export async function playPostFunc(inputBoolean) {
       talkBubbleCovid.add({
         targets:'#talkCovidID',
         change:function(){
-          setText('I will help you!','#avatarEdipMouthID');
+          setText('I will help you!','#avatarEdipMouthID','#64ffda');
         }
       });
       
@@ -121,7 +127,7 @@ export async function playPostFunc(inputBoolean) {
         translateX:'2.5rem',
         delay:750,
         change:function(){
-          setText('Thanks son','#avatarDadMouthID');
+          setText('Thanks son','#avatarDadMouthID','#ffe864');
         }
       });
 
@@ -130,7 +136,7 @@ export async function playPostFunc(inputBoolean) {
         translateX:0,
         delay:500,
         change:function(){
-          setText('I meant mom...','#avatarEdipMouthID');
+          setText('I meant mom...','#avatarEdipMouthID','#64ffda');
         }
       });
 
@@ -139,7 +145,7 @@ export async function playPostFunc(inputBoolean) {
         translateX:'2.5rem',
         delay:500,
         change:function(){
-          setText('Im dying over here!!!','#avatarDadMouthID');
+          setText('Im dying over here!!!','#avatarDadMouthID','#ffe864');
         }
       });
 
@@ -148,7 +154,7 @@ export async function playPostFunc(inputBoolean) {
         translateX:'7.25rem',
         delay:500,
         change:function(){
-          setText('Love you honeybear!','#avatarMomMouthID');
+          setText('Love you honeybear!','#avatarMomMouthID','#fcbfdf');
         }
       });
 
@@ -156,7 +162,7 @@ export async function playPostFunc(inputBoolean) {
         targets:'#talkCovidID',
         translateX:0,
         change:function(){
-          setText("HEEELP!!!",'#avatarEdipMouthID');
+          setText("HEEELP!!!",'#avatarEdipMouthID','#64ffda');
         }
       });
 
@@ -164,12 +170,12 @@ export async function playPostFunc(inputBoolean) {
       
       const firstLightYearAnim = anime.timeline({
         loop: true,
-        autoplay: false
+        autoplay: false,
       });
 
       firstLightYearAnim.add({
         targets:'#firstLight',
-        delay:anime.stagger(125, {from: 'center'}),
+        delay:anime.stagger(75, {from: 'last'}),
         translateX:['3rem',0],
         translateY:['-3rem','1rem'],
         opacity:[1,0],
@@ -184,12 +190,13 @@ export async function playPostFunc(inputBoolean) {
 
       const secondLightYearAnim = anime.timeline({
         loop: true,
-        autoplay: false      
+        autoplay: false,
+        // delay:500      
       });
 
       secondLightYearAnim.add({
         targets:'#secondLight',
-        delay:anime.stagger(75, {from: 'center'}),
+        delay:anime.stagger(75, {from:'first'}),
         translateX:['3rem',0],
         translateY:['-3rem','1rem'],
 
@@ -388,8 +395,8 @@ export async function playPostFunc(inputBoolean) {
 
       zenBigAnim.add({
         targets:'.zenBigCircle', 
-        scale:[1,0.9,1.2],
-        duration:2500
+        scale:[1,0.9,1.15],
+        duration:3000
       })
   
       const zenSmallAnim = anime.timeline({
@@ -401,8 +408,8 @@ export async function playPostFunc(inputBoolean) {
 
       zenSmallAnim.add({
         targets:'.zenBigCircle', 
-        scale:[1,0.9,1.25],
-        duration:2500
+        scale:[1,0.9,1.1],
+        duration:3000
       })
 
     

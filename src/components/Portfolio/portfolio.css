@@ -154,7 +154,7 @@
   margin-left:1.9rem;
   margin-top: 1.3rem;
   z-index: 2;
-  background-color: var(--primary-purple);
+  background-color: var(--primary-pink);
 
   position: absolute;
 }
@@ -257,7 +257,7 @@
 
 #avatarDad{
 
-  background-color: #64e0ff;
+  background-color: #ffe864;
   
   margin: 1rem;
   margin-left: 10rem;
@@ -343,7 +343,7 @@
   margin: auto;
 }
 .wall{
-  width: 3em;
+  width: 3.5em;
   /* padding: 0.25rem; */
   height: fit-content;
   background-color: var(--dark-slate);
@@ -352,14 +352,15 @@
   /* margin: 1rem; */
   /* padding: 0.5rem; */
   z-index: 1;
-  position: inherit
+  position: inherit;
+  margin-left:1rem;
 }
 
 .forceWall{
   
-  box-shadow: 0rem 5rem 10rem 6.25rem #048ced9d;
+  box-shadow: 0rem 5rem 10rem 4.25rem #048ced9d;
 
-  width: 3rem;
+  width: 3.75rem;
   height: fit-content;
   /* padding: 0.25rem; */
   justify-content: center;
@@ -477,15 +478,15 @@ margin-left:0.75rem;
   display: block;
   border-radius: 50%;  /* float: left; */
   background-color: #dbd659e6;
-  box-shadow: 0rem -1rem 7rem 3.25rem #ffa3059d;
+  box-shadow: 0rem -1rem 5rem 3rem #ffa3059d;
   opacity: 0;
   z-index: -1;
 
 }
 
 .zenBigCircle{
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   /* transform: scale(0.7); */
   margin: auto;
   display: flex;
@@ -494,21 +495,21 @@ margin-left:0.75rem;
 
   border-radius: 50%;  /* float: left; */
   background-color: #dbd659e6;
-  box-shadow: 0rem -1rem 7rem 2rem #ffa3059d;
+  box-shadow: 0rem -1rem 3rem 1.25rem #ffa3059d;
   opacity: 1;
   /* position: absolute; */
   /* left:45vw; */
   /* z-index: -1; */
 }
 .zenSmallCircle{
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   /* transform: scale(0.7); */
 
 
   border-radius: 50%;  /* float: left; */
   background-color: #fdfcd7e6;
-  box-shadow: 0rem -1rem 10rem 2rem #fffbf59d;
+  box-shadow: 0rem -1rem 3rem 1rem #fffbf59d;
   opacity: 1
 }
 .zenAvatarCircle{
@@ -521,7 +522,7 @@ margin-left:0.75rem;
   margin: 1rem;
   margin: auto;
   margin-left: 0.1rem;
-  margin-top: 4.5rem;
+  margin-top: 3.5rem;
 }
 
 .zenParagraph{

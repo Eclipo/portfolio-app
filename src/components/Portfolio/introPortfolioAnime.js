@@ -11,7 +11,7 @@ export async function playMarioFunc() {
   const marioAnimation = anime.timeline({
     loop: false,
     autoplay: false,
-    duration: 500,
+    duration: 350,
 
     easing:'linear',
     endDelay:250,
@@ -21,7 +21,7 @@ export async function playMarioFunc() {
     const marioArmHandRightAnimation = anime.timeline({
         loop: false,
         autoplay: false,
-        duration: 500,
+        duration: 350,
 
         easing:'linear',
         delay:1500,
@@ -32,7 +32,7 @@ export async function playMarioFunc() {
       const marioLegRightAnimation = anime.timeline({
         loop: false,
         autoplay: false,
-        duration: 500,
+        duration: 350,
 
         easing:'linear',
         delay:1500,
@@ -43,7 +43,7 @@ export async function playMarioFunc() {
       const marioLegLeftAnimation = anime.timeline({
         loop: false,
         autoplay: false,
-        duration: 500,
+        duration: 350,
     
         easing:'linear',
         delay:1500,
@@ -55,7 +55,7 @@ export async function playMarioFunc() {
         const marioArmHandLeftAnimation = anime.timeline({
           loop: false,
           autoplay: false,
-          duration: 500,
+          duration: 350,
           delay:1500,
           easing:'linear',
           endDelay:250,

@@ -429,9 +429,9 @@ class Personality extends Component {
               personality because I want to raise an awereness that a personality is
               dynamic rather than constant.
               <br></br>
-              <br></br>I grew up in a Kurdish familly and I became a bit
-              too <span className="highlighted">honest</span> at times.
-              Fortunately I have gotten wiser and I am more diplomatic.
+              <br></br>Growing up in a Kurdish familly teaches you how to be
+              too <span className="highlighted">honest</span> for your own good.
+              Late in life I have learned to be more diplomatic and restrictive regarding my opinions.
               <br></br>
               <br></br>
               <span className="highlighted">Stubbornness</span> is an
@@ -448,16 +448,15 @@ class Personality extends Component {
               order to utilize my focus besides a structured surrounding and no
               multitasking are enjoyable challenges.
               <br></br>
-              <br></br>I have some problem with being
-              <span className="highlighted">patient</span>. Consequently I have
-              suffered from this. Nowdays I have figured to
-              take a step back and breath alot.<br></br>
+              <br></br>I have some problem with being <span className="highlighted">patient</span>. 
+              Consequently I have suffered when I have been impatient at times. 
+              Nowdays I try to take a step back and breath alot when my patience is running out.<br></br>
               <br></br>
-              Most often I am a very calm but when I suffer setbacks
+              Most often I am very calm but when I suffer some setbacks
               I do display some <span className="highlighted">temper</span>.
               <br></br><br></br>
               Last but not least <span className="highlighted">empathy</span>. 
-              I do care about people and its important to me that those who matters to me feel good.
+              I do care about people and its important to me that those who matters to me are okay.
             </p>
           </div>
         </div>
