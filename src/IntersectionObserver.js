@@ -10,6 +10,8 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   const personalitySection = document.querySelector("#personality");
   const resumeSection = document.querySelector("#resumeOverview");
   const experienceSection = document.querySelector("#experiencesID");
+  const portfolioSection = document.querySelector("#portfolioID");
+
   const wrappers = document.querySelectorAll(".sectionAnimation");
   const animationQuickFactAbout = new QuickAboutAnimation();
 
@@ -56,11 +58,22 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
               //Resume Overview Section - Turn OFF Personality
               case 5:
                 PlayAnimation('PersonalityAnimation',1);
+                PlayAnimation('PortfolioAnimation',1);
+
+                
               break;
 
-              //Major experiences - Turn OFF Personality
+              //Major experiences - Turn OFF Portfolio
               case 6:
+                console.log('MAJOR EXPERIENCES SECTION');
 
+                
+              break;
+
+               //Portfolio - 
+               case 7:
+                console.log('PORTFOLIO SECTION');
+                PlayAnimation('PortfolioAnimation',2);
               break;
 
             default:
@@ -82,6 +95,7 @@ myObserver.observe(skillsSection);
 myObserver.observe(personalitySection);
 myObserver.observe(resumeSection);
 myObserver.observe(experienceSection);
+myObserver.observe(portfolioSection);
 
 },100);
 

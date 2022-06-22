@@ -1,5 +1,6 @@
 import anime from "animejs";
 import { playMarioFunc } from "./introPortfolioAnime";
+import { playPostFunc } from "./postPortfolioAnime";
 // import { playIntroFunc } from "./introSkillAnime";
 // import { playPostFunc } from "./postPortfolioAnime";
 // const ratio = 0.25 * window.innerWidth;
@@ -15,39 +16,55 @@ export class PortfolioAnimation {
       this.playedZero = true;
       console.log("!!!!!! playedZero ÄR !!!! : "+this.playedZero);
 
-      // anime.remove(".skillContainer");
-      // anime.remove(".skillTable");
-      // anime.remove(".skillTable tbody thead tr td p div");
-      // anime.remove(".skillCategory");
-      // anime.remove(".skillPointGround");
-      // anime.remove("#skillDividerTd");
-      // anime.remove("#skillElemAndInter");
-      // anime.remove("#skillElemAndNoob");
-      // anime.remove("#skillNoobElemAndInter");
-      // anime.remove("#duckContainerID");
-      // anime.remove(".duckMouthUpper");
-      // anime.remove(".duckMouthUnder");
-      // anime.remove(".duckEyebrow");
+      anime.remove(".portfolioTextContainer");
+      anime.remove(".animContainer");
+      anime.remove(".avatarCircle");
+      anime.remove(".eyesContainer");
+      anime.remove(".eyeBrows");
+      anime.remove(".eyeAvatar");
+      anime.remove(".eyePupil");
+      anime.remove(".avatarMouth");
+      anime.remove(".talkBubble");
+      anime.remove(".lightYear");
+      anime.remove(".rainDropTable");
+      anime.remove(".rainDropTable tbody");
+      // anime.remove(".noDrop");
+
+      anime.remove(".rainDrop");
+      anime.remove(".journeyScene");
+      anime.remove(".sunRise");
+      anime.remove(".mountain");
+      anime.remove(".smallMountain");
+      anime.remove(".ground");
+      anime.remove("#headHitWall");
+      anime.remove(".wall");
+      anime.remove(".forceWall");
+      anime.remove(".zenBigCircle");
+      anime.remove(".zenSmallCircle");
+      anime.remove(".zenAvatarCircle");
 
       anime({
         targets: "#portfolioContainer",
         opacity: 0,
       });
-      playMarioFunc();
+      playMarioFunc().then(playPostFunc(true));
     }
 
-    // if (input === 1) {
-    //   console.log("!!!!!! SKILLS IS TURNING OFF 1 !!!!");
-    //   playPostFunc(false);       
-    // }
+    if (input === 1) {
+      console.log("!!!!!! PORTFOLIO IS TURNING OFF 1 !!!!");
+      
+      // anime.remove(".portfolioTextContainer");
+     playPostFunc(false);
+    }
 
-    // if (input === 2) {
-    //   console.log("!!!!!! SKILLS IS RESUMING 2!!!!");
-    //   console.log("!!!!!! playedZero ÄR !!!! : "+this.playedZero);
-    //   if(this.playedZero === true){  
-    //     playPostFunc(true);
+    if (input === 2) {
+      console.log("!!!!!! PORTFOLIO IS RESUMING 2!!!!");
+      console.log("!!!!!! playedZero ÄR !!!! : "+this.playedZero);
+      if(this.playedZero === true){  
+        console.log("!!!!!! STARTA playPostFunc!!!! : "+this.playedZero);
+        playPostFunc(true);
 
-    //   }
-    // }
+      }
+    }
   }
 }

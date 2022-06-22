@@ -11,7 +11,7 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <div id="portfolio" className="sectionAnimation">
+      <div id="portfolioID" className="sectionAnimation">
         <div
           className="sectionLine"
           style={{backgroundColor:"var(--primary-pink)" }}

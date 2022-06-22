@@ -262,15 +262,16 @@ export async function playPostFunc(inputBoolean) {
       const rainAnim = anime.timeline({
         loop: true,
         autoplay: false,
-        easing:'linear'
+        easing:'linear',
+        endDelay:250
       });
 
       rainAnim.add({
         targets:'.rainDrop',
         delay:anime.stagger(250),
-        translateY:[0,'5rem','4.5rem'],
+        translateY:[0,'5rem'],
 
-        opacity:[0,1,0],
+        opacity:[1,0],
         // update:function(){
         //   anime({
         //     targets:'.rainDrop',
@@ -422,7 +423,7 @@ export async function playPostFunc(inputBoolean) {
     secondLightYearAnim.play();
     hitHeadWall.play();
     talkBubbleRegret.play();
-    rainAnim.play();
+    rainAnim.restart();
     changeJourneyScene.play();
     groundAnim.play();
     sunRiseAnim.play();
@@ -432,25 +433,37 @@ export async function playPostFunc(inputBoolean) {
     mountainFour.play();
     zenBigAnim.play();
     zenSmallAnim.play();    
-    console.log('...play...already bubble');
+    console.log('...playPost PLAY');
 
   }
 
   if(inputBoolean === false){
-    
-    // anime.remove("#skillElemAndInter");
-    // anime.remove("#skillElemAndNoob");
-    // anime.remove("#skillNoobElemAndInter");
-
-    // anime.remove(".duckMouthUpper");
-    // anime.remove(".duckMouthUnder");
-    // anime.remove(".duckEyebrow");
+    anime.remove(".animContainer");
+    anime.remove(".avatarCircle");
+    anime.remove(".eyesContainer");
+    anime.remove(".eyeBrows");
+    anime.remove(".eyeAvatar");
+    anime.remove(".eyePupil");
+    anime.remove(".avatarMouth");
+    anime.remove(".talkBubble");
+    anime.remove(".lightYear");
+    anime.remove(".rainDropTable");
+    anime.remove(".rainDropTable table tbody");
+    // anime.remove(".noDrop");
+    anime.remove(".rainDrop");
+    anime.remove(".journeyScene");
+    anime.remove(".sunRise");
+    anime.remove(".mountain");
+    anime.remove(".smallMountain");
+    anime.remove(".ground");
+    anime.remove("#headHitWall");
+    anime.remove(".wall");
+    anime.remove(".forceWall");
+    anime.remove(".zenBigCircle");
+    anime.remove(".zenSmallCircle");
+    anime.remove(".zenAvatarCircle");
+    console.log('...playPost REMOVE');
   }
-  //   duckEyeBrowAnim.pause();
-  //   duckMouthUnderAnim.pause();
-  //   duckMouthUppderAnim.pause();
-  // }
-
   
 }
 

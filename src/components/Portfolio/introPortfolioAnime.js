@@ -94,7 +94,8 @@ export async function playMarioFunc() {
           targets:'#portfolioContainerID',
           opacity:[0,1],
           loopComplete:function(){
-            playPostFunc(true);
+            // playPostFunc(true);
+            return;
           }
         })
 
