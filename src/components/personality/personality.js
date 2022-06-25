@@ -1,13 +1,33 @@
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 
 import "../personality/personality.css";
 import "../../IntersectionObserver.js";
 import { PixelHead } from "./pixelHead/pixelHead";
 import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
+import {startAttributeAnimation, resetAttributeAnimation,closeDialogue} from "./personalityFunctions.js";
 class Personality extends Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.closeWindow = this.closeWindow.bind(this);
+    this.state = {
+      id: '',
+    };
   }
+
+
+  handleClick(event) {
+    startAttributeAnimation(event.currentTarget.id);
+  }
+
+  handleLeave(event) {
+    resetAttributeAnimation(event.currentTarget.id);
+  }
+
+  closeWindow(event){
+    closeDialogue(event.currentTarget.id);
+  }
+
 
   render() {
     return (
@@ -423,41 +443,187 @@ class Personality extends Component {
             </tbody>
           </table>
           <div className="personalityTextContainer">
-            <h2>My personality</h2>
+            <h2 className="mb-5">My personality</h2>
+            
             <p>
               The attributes matrix does not fully represent my
               personality because I want to raise an awereness that a personality is
-              dynamic rather than constant.
-              <br></br>
-              <br></br>Growing up in a Kurdish familly teaches you how to be
-              too <span className="highlighted">honest</span> for your own good.
-              Late in life I have learned to be more diplomatic and restrictive regarding my opinions.
-              <br></br>
-              <br></br>
-              <span className="highlighted">Stubbornness</span> is an
-              another familly attribute. My ancestors and familly have overcome
-              various obstacles throughout our history.
-              <br></br>
-              <br></br>
-              The need of <span className="highlighted">structure</span> is of
-              great importance to me but I struggle with it.
-              <br></br>
-              <br></br>
-              Furthermore I don't like <span className="highlighted">multitasking</span>. It makes my head
-              split and I can't <span className="highlighted">focus</span>. In
-              order to utilize my focus besides a structured surrounding and no
-              multitasking are enjoyable challenges.
-              <br></br>
-              <br></br>I have some problem with being <span className="highlighted">patient</span>. 
-              Consequently I have suffered when I have been impatient at times. 
-              Nowdays I try to take a step back and breath alot when my patience is running out.<br></br>
-              <br></br>
-              Most often I am very calm but when I suffer some setbacks
-              I do display some <span className="highlighted">temper</span>.
-              <br></br><br></br>
-              Last but not least <span className="highlighted">empathy</span>. 
-              I do care about people and its important to me that those who matters to me are okay.
+              dynamic rather than constant. Downbelow you can click on my personality traits where I explain more in detail. 
             </p>
+           
+           <div className="container">
+            <div className="row">
+              <div className="col">
+                <div 
+                  className="card personalityCard" 
+                  id="honestyCard" 
+                  onClick={this.handleClick}
+                  onMouseEnter={this.handleClick}
+                  onMouseLeave={this.handleLeave}
+                >
+                  <div>
+                    <button id='honestyCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
+                  </div>
+                  
+                  <div className="card-body">
+                    <h3 className="card-title" id="honestyCard_h3">Honesty</h3>
+                    <p className="card-text" id="honestyCard_p">
+                      Growing up in a Kurdish familly teaches you how to be
+                      too <span className="highlighted">honest</span> for your own good.
+                      Later in life I have learned to be more diplomatic and restrictive regarding my opinions.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="col">
+                <div className="card personalityCard" 
+                id="stubbornCard" 
+                onClick={this.handleClick}
+                onMouseEnter={this.handleClick}
+                onMouseLeave={this.handleLeave}
+                >
+                  <div>
+                    <button id='stubbornCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
+                  </div>
+                  
+                  <div className="card-body">
+                    <h3 className="card-title" id="stubbornCard_h3">Stubbornness</h3>
+                    <p className="card-text" id="stubbornCard_p">
+                      <span className="highlighted">Stubbornness</span> is an
+                      another familly attribute. My ancestors and familly have overcome
+                      various obstacles throughout our history.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card personalityCard" 
+                  id="structureCard" 
+                  onClick={this.handleClick}
+                  onMouseEnter={this.handleClick}
+                  onMouseLeave={this.handleLeave}
+                  >
+                    <div>
+                      <button id='structureCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
+                    </div>
+                    
+                    <div className="card-body">
+                      <h3 className="card-title" id="structureCard_h3">Structure</h3>
+                      <p className="card-text" id="structureCard_p">
+                        The need of <span className="highlighted">structure</span> is of
+                        great importance to me but I struggle with it.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+
+              <div className="col">
+                <div className="card personalityCard" 
+                    id="multiTaskCard" 
+                    onClick={this.handleClick}
+                    onMouseEnter={this.handleClick}
+                    onMouseLeave={this.handleLeave}
+                    >
+                      <div>
+                        <button id='multiTaskCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
+                      </div>
+                      
+                      <div className="card-body">
+                        <h3 className="card-title" id="multiTaskCard_h3">Multitasking</h3>
+                        <p className="card-text" id="multiTaskCard_p">
+                        I don't like <span className="highlighted">multitasking</span>. It makes my head
+                        split.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="col">
+                <div className="card personalityCard" 
+                    id="focusCard" 
+                    onClick={this.handleClick}
+                    onMouseEnter={this.handleClick}
+                    onMouseLeave={this.handleLeave}
+                    >
+                      <div>
+                        <button id='focusCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
+                      </div>
+                      
+                      <div className="card-body">
+                        <h3 className="card-title" id="focusCard_h3">Focus</h3>
+                        <p className="card-text" id="focusCard_p">
+                          In order to utilize my <span className="highlighted">focus</span> besides a structured surrounding and no
+                          multitasking are enjoyable challenges.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="col">
+                <div className="card personalityCard" 
+                    id="patienceCard" 
+                    onClick={this.handleClick}
+                    onMouseEnter={this.handleClick}
+                    onMouseLeave={this.handleLeave}
+                    >
+                      <div>
+                        <button id='patienceCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
+                      </div>
+                      
+                      <div className="card-body">
+                        <h3 className="card-title" id="patienceCard_h3">Patience</h3>
+                        <p className="card-text" id="patienceCard_p">
+                          I have some problem with being <span className="highlighted">patient</span>. 
+                          Consequently I have suffered when I have been impatient at times. 
+                          Nowdays I try to take a step back and breath alot when my patience is running out
+                        </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="col">
+                <div className="card personalityCard" 
+                    id="temperCard" 
+                    onClick={this.handleClick}
+                    onMouseEnter={this.handleClick}
+                    onMouseLeave={this.handleLeave}
+                    >
+                      <div>
+                        <button id='temperCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
+                      </div>
+                      
+                      <div className="card-body">
+                        <h3 className="card-title" id="temperCard_h3">Temper</h3>
+                        <p className="card-text" id="temperCard_p">
+                         Most often I am very calm but when I suffer some setbacks 
+                         I do display some <span className="highlighted">temper</span>.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="col">
+                <div className="card personalityCard" 
+                    id="empathyCard" 
+                    onClick={this.handleClick}
+                    onMouseEnter={this.handleClick}
+                    onMouseLeave={this.handleLeave}
+                    >
+                      <div>
+                        <button id='empathyCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
+                      </div>
+                      
+                      <div className="card-body">
+                        <h3 className="card-title" id="empathyCard_h3">Empathy</h3>
+                        <p className="card-text" id="empathyCard_p">
+                          I am <span className="highlighted">empathic </span>
+                           to those I care about and its important to me that they  are okay.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+           </div>
           </div>
         </div>
       </div>

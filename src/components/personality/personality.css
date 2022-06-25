@@ -3,7 +3,7 @@
 }
 
 #personalityContainerID {
-  display: none;
+  display: block;
 }
 
 #personalityTableID {
@@ -165,6 +165,42 @@
   text-align: left;
   display: inline-block;
   padding: 0.5rem;
+}
+
+.personalityCard{
+background-color: var(--primary-green);
+border-width: 0.25rem;
+border-style: solid;
+border-color: var(--primary-green);
+width: 15rem;
+/* min-height: 10rem; */
+margin: 2.5rem;
+
+
+
+
+}
+
+.personalityCloseBtn{
+  float: right;
+  margin: 0.5rem;
+  border-color:var(--primary-green) !important;
+  border-radius: 50%;
+  background-color: var(--light-navy);
+  font-weight: 800;
+
+  color: var(--primary-pink);
+  display: none;
+}
+
+.personalityCard h3{
+  color: var(--light-navy);
+}
+
+.personalityCard p{
+  color: var(--primary-green);
+  display: none;
+
 }
 
 .personalityTextContainer .highlighted {

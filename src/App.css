@@ -240,8 +240,8 @@
     }
 
     .personalityTextContainer{
-      width:30rem !important;
-      margin-top: 10rem !important;
+      width:75% !important;
+      /* margin-top: 10rem !important; */
     }
 
     .portfolioTextContainer{
