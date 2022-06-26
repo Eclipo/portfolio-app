@@ -3,9 +3,9 @@ import anime from "animejs";
 var closeWindow = false;
 
 export const startAttributeAnimation = (inputID) => {
-
     if(closeWindow === false){        
         let card='#'+inputID;
+        anime.remove(card);
 
         anime({
             targets:card,
@@ -48,6 +48,14 @@ export const resetAttributeAnimation = (inputID) => {
         duration:750,
         complete:function(){
             closeWindow = false;
+            anime({
+                targets:card,
+                scale:[1,1.1],
+                rotate:['2deg','-2deg'],
+                direction:'alternate',
+                duration:750,
+                loop:true
+            })
         }
 
     });

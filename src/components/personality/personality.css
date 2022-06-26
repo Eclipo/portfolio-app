@@ -167,13 +167,31 @@
   padding: 0.5rem;
 }
 
+.brokenBanner{
+  color: var(--navy);
+  -webkit-text-stroke:  1px var(--primary-green); 
+  background-color: var(--navy) !important;
+}
+
+.brokenArrow{
+  color: var(--primary-green);
+  -webkit-text-stroke: 1px var(--primary-green);
+  box-shadow: 0rem -1rem 5.25rem 0.5rem var(--primary-green);
+  background-color: transparent;
+
+  transform: scale(2.5);
+  margin-top: 1rem;
+
+
+}
+
 .personalityCard{
 background-color: var(--primary-green);
 border-width: 0.25rem;
 border-style: solid;
 border-color: var(--primary-green);
 width: 15rem;
-/* min-height: 10rem; */
+height:fit-content;
 margin: 2.5rem;
 
 

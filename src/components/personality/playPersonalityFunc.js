@@ -1,5 +1,5 @@
 import anime from "animejs";
-
+import { wiggle } from "./personalityFunctions";
 // changeBegin:function(){
 //   randomPatienceEl = randomPatience[Math.floor(Math.random() * randomPatience.length)];
 //   console.log('randomEl is...'+randomPatienceEl.toString());
@@ -244,6 +244,22 @@ const playEmpathy = anime({
       duration: 150,
     });
 
+    const wiggleCard = anime.timeline({
+      direction:'alternate',
+      duration:750,
+      loop:true,
+      autoplay:false
+    });
+  
+    wiggleCard.add({
+      targets:['#honestyCard','#stubbornCard','#structureCard',
+      '#multiTaskCard','#focusCard','#patienceCard','#temperCard',
+      '#empathyCard'],
+      scale:[1,1.1],
+      delay:anime.stagger(50),
+      rotate:['2deg','-2deg']
+    });
+    
     if(inputBoolean === true){ 
       console.log('STARTA OM FÖR FAAAAN');
     playShakingHonesty.restart();
@@ -254,6 +270,9 @@ const playEmpathy = anime({
     playCreativity.restart();
     playStructure.restart();
     playEmpathy.restart();
+    wiggleCard.restart();
+    
+   
   }
 
   if(inputBoolean === false){

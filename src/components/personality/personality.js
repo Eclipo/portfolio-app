@@ -1,4 +1,6 @@
 import React, { Component,useState } from "react";
+import {faArrowDown} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import "../personality/personality.css";
 import "../../IntersectionObserver.js";
@@ -10,9 +12,6 @@ class Personality extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.closeWindow = this.closeWindow.bind(this);
-    this.state = {
-      id: '',
-    };
   }
 
 
@@ -444,16 +443,22 @@ class Personality extends Component {
           </table>
           <div className="personalityTextContainer">
             <h2 className="mb-5">My personality</h2>
-            
-            <p>
-              The attributes matrix does not fully represent my
-              personality because I want to raise an awereness that a personality is
-              dynamic rather than constant. Downbelow you can click on my personality traits where I explain more in detail. 
-            </p>
-           
-           <div className="container">
-            <div className="row">
-              <div className="col">
+   
+           <h3 className="brokenBanner">
+            <span className="brokenLetter">C</span>
+            <span className="brokenLetter">L</span>
+            <span className="brokenLetter">I</span>
+            <span className="brokenLetter">C</span>
+            <span className="brokenLetter">K</span>
+       
+
+
+          </h3>
+
+
+           <div className="container flexCenter">
+            <div className="row flexCenter">
+              <div className="col flexCenter">
                 <div 
                   className="card personalityCard" 
                   id="honestyCard" 
@@ -475,7 +480,7 @@ class Personality extends Component {
                 </div>
               </div>
               
-              <div className="col">
+              <div className="col flexCenter">
                 <div className="card personalityCard" 
                 id="stubbornCard" 
                 onClick={this.handleClick}
@@ -496,7 +501,7 @@ class Personality extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col flexCenter">
                 <div className="card personalityCard" 
                   id="structureCard" 
                   onClick={this.handleClick}
@@ -517,7 +522,7 @@ class Personality extends Component {
                   </div>
               </div>
 
-              <div className="col">
+              <div className="col flexCenter">
                 <div className="card personalityCard" 
                     id="multiTaskCard" 
                     onClick={this.handleClick}
@@ -538,7 +543,7 @@ class Personality extends Component {
                   </div>
               </div>
 
-              <div className="col">
+              <div className="col flexCenter">
                 <div className="card personalityCard" 
                     id="focusCard" 
                     onClick={this.handleClick}
@@ -559,7 +564,7 @@ class Personality extends Component {
                   </div>
               </div>
 
-              <div className="col">
+              <div className="col flexCenter">
                 <div className="card personalityCard" 
                     id="patienceCard" 
                     onClick={this.handleClick}
@@ -581,7 +586,7 @@ class Personality extends Component {
                   </div>
               </div>
 
-              <div className="col">
+              <div className="col flexCenter">
                 <div className="card personalityCard" 
                     id="temperCard" 
                     onClick={this.handleClick}
@@ -602,7 +607,7 @@ class Personality extends Component {
                   </div>
               </div>
 
-              <div className="col">
+              <div className="col flexCenter">
                 <div className="card personalityCard" 
                     id="empathyCard" 
                     onClick={this.handleClick}
