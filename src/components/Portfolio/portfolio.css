@@ -3,6 +3,24 @@
   opacity: 0;
 }
 
+.btnContainer{
+  background-color: transparent;
+  border-color: transparent;
+}
+.leftBtn{
+transform: rotate(180deg);
+width: 2rem;
+height: 2rem;
+color: var(--primary-white);
+opacity: 0.5;
+}
+
+.rightBtn{
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-white);
+  }
+
 .portfolioTextContainer{
   margin: auto;
   display: inline-block;
@@ -458,6 +476,14 @@ margin-left:0.75rem;
   display: block;
   margin-top: 1rem;
   margin-bottom: 5rem;
+  opacity: 0;
+  display: none;
+}
+
+#story_0{
+  opacity: 1;
+  display: block;
+
 }
 
 .journeyScene{

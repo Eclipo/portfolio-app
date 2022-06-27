@@ -442,17 +442,14 @@ class Personality extends Component {
             </tbody>
           </table>
           <div className="personalityTextContainer">
-            <h2 className="mb-5">My personality</h2>
+            <h2 className="mb-5">About <br></br>My personality</h2>
    
            <h3 className="brokenBanner">
-            <span className="brokenLetterC">C</span>
+            <div className="d-inline-block brokenLetterC">C</div>
             <span >L</span>
             <span >I</span>
             <span>C</span>
-            <span className="brokenLetterK">K</span>
-       
-
-
+            <span className="d-inline-block brokenLetterK">K</span>
           </h3>
 
 
@@ -463,8 +460,6 @@ class Personality extends Component {
                   className="card personalityCard" 
                   id="honestyCard" 
                   onClick={this.handleClick}
-                  onMouseEnter={this.handleClick}
-                  onMouseLeave={this.handleLeave}
                 >
                   <div>
                     <button id='honestyCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
@@ -484,8 +479,6 @@ class Personality extends Component {
                 <div className="card personalityCard" 
                 id="stubbornCard" 
                 onClick={this.handleClick}
-                onMouseEnter={this.handleClick}
-                onMouseLeave={this.handleLeave}
                 >
                   <div>
                     <button id='stubbornCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
@@ -505,8 +498,6 @@ class Personality extends Component {
                 <div className="card personalityCard" 
                   id="structureCard" 
                   onClick={this.handleClick}
-                  onMouseEnter={this.handleClick}
-                  onMouseLeave={this.handleLeave}
                   >
                     <div>
                       <button id='structureCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
@@ -526,8 +517,6 @@ class Personality extends Component {
                 <div className="card personalityCard" 
                     id="multiTaskCard" 
                     onClick={this.handleClick}
-                    onMouseEnter={this.handleClick}
-                    onMouseLeave={this.handleLeave}
                     >
                       <div>
                         <button id='multiTaskCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
@@ -547,8 +536,6 @@ class Personality extends Component {
                 <div className="card personalityCard" 
                     id="focusCard" 
                     onClick={this.handleClick}
-                    onMouseEnter={this.handleClick}
-                    onMouseLeave={this.handleLeave}
                     >
                       <div>
                         <button id='focusCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
@@ -568,8 +555,6 @@ class Personality extends Component {
                 <div className="card personalityCard" 
                     id="patienceCard" 
                     onClick={this.handleClick}
-                    onMouseEnter={this.handleClick}
-                    onMouseLeave={this.handleLeave}
                     >
                       <div>
                         <button id='patienceCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
@@ -590,8 +575,6 @@ class Personality extends Component {
                 <div className="card personalityCard" 
                     id="temperCard" 
                     onClick={this.handleClick}
-                    onMouseEnter={this.handleClick}
-                    onMouseLeave={this.handleLeave}
                     >
                       <div>
                         <button id='temperCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>
@@ -611,8 +594,6 @@ class Personality extends Component {
                 <div className="card personalityCard" 
                     id="empathyCard" 
                     onClick={this.handleClick}
-                    onMouseEnter={this.handleClick}
-                    onMouseLeave={this.handleLeave}
                     >
                       <div>
                         <button id='empathyCard_closeBtn' className="personalityCloseBtn" onClick={this.closeWindow}>X</button>

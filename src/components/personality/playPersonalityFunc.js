@@ -259,6 +259,30 @@ const playEmpathy = anime({
       delay:anime.stagger(75),
       rotate:['-2deg','3deg']
     });
+
+    const brokenBannerAnim = anime.timeline({
+      loop:true,
+      autoplay:false,
+      direction:'alternate'
+  });
+  
+  brokenBannerAnim.add({
+      targets:['.brokenLetterC','.brokenLetterK'],
+      opacity:[0,1,0,0,1],
+      delay:anime.stagger(500),
+      duration:1050,
+      endDelay:500
+  })
+  
+  brokenBannerAnim.add({
+      targets:'.brokenLetterC',
+      rotate:[0,'-190deg','-150deg'],
+      translateY:[0,'-1.5rem','-1.4rem'],
+      translateX:[0,'-1rem','-0.8rem'],
+      duration:1250,
+      endDelay:500,
+      easing:'easeInOutQuad'
+  });
     
     if(inputBoolean === true){ 
       console.log('STARTA OM FÖR FAAAAN');
@@ -271,6 +295,7 @@ const playEmpathy = anime({
     playStructure.restart();
     playEmpathy.restart();
     wiggleCard.restart();
+    brokenBannerAnim.restart();
     
    
   }

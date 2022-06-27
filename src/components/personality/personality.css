@@ -146,6 +146,9 @@
 
 .personalityTextContainer{
   margin: auto;
+  opacity: 0;
+
+
 }
 
 .personalityTextContainer h2{

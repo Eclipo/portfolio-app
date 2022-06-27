@@ -2,18 +2,11 @@ import anime from "animejs";
 
 var closeWindow = false;
 
+
 export const startAttributeAnimation = (inputID) => {
 
-    anime({
-        targets:['.brokenLetterC','.brokenLetterK'],
-        opacity:[0,1,0,0,1],
-        direction:'alternate',
-        delay:anime.stagger(500),
-        duration:1050,
-        endDelay:500,
-        loop:true
-    });
-
+               
+         
     if(closeWindow === false){        
         let card='#'+inputID;
         anime.remove(card);

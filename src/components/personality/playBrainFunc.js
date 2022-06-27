@@ -81,7 +81,7 @@ export async function playBrainFunc() {
 
               complete: function () {
                 anime({
-                  targets: "#personalityTableID",
+                  targets: ["#personalityTableID",".personalityTextContainer"],
                   opacity: [0, 1],
                   duration: 50,
                   easing: "linear",

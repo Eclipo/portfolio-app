@@ -4,11 +4,25 @@ import { Mario } from "./Mario/mario.js";
 import "../../IntersectionObserver.js";
 import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
 import coronaHero from "./images/coronahjalte.PNG";
-
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {leftNavigate,rightNavigate} from "./portfolioFunctions.js";
 
 class Portfolio extends Component {
+  constructor(props) {
+    super(props);
+    // This binding is necessary to make `this` work in the callback
+    this.leftNav = this.leftNav.bind(this);
+    this.rightNav = this.rightNav.bind(this);
+  }
 
+  leftNav(event){
+    leftNavigate();
+  }
 
+  rightNav(event){
+    rightNavigate();
+  }
   render() {
     return (
       <div id="portfolioID" className="sectionAnimation">
@@ -27,7 +41,6 @@ class Portfolio extends Component {
           <div className="portfolioTextContainer">
             <h2>This is it</h2>
               <p>My portfolio is this very website and it's what I am comfortable to share with you.
-              No github but there is always F12.  
               <br></br><br></br>
               The tech I used for this website are React, Bootstrap, AnimeJS, alot of CSS and Javascript. 
               <br></br><br></br>
@@ -35,8 +48,40 @@ class Portfolio extends Component {
 
             <h3>The story</h3>
 
-
-            <div className="container animContainer" >
+            <div className="container flexCenter">
+              <div className="row">
+                <div className="col">
+                <button 
+                  className="btnContainer" 
+                  id="leftBtnID"
+                  onClick={this.leftNav}
+                  >
+                <FontAwesomeIcon
+                    icon={faPlay}
+                    color="var(--primary-light-green)"
+                    className="leftBtn"
+                  >
+                  </FontAwesomeIcon>
+                </button>
+                  
+                </div>
+                <div className="col">
+                  <button 
+                    className="btnContainer" 
+                    id="rightBtnID"
+                    onClick={this.rightNav}
+                    >
+                  <FontAwesomeIcon
+                      icon={faPlay}
+                      color="var(--primary-light-green)"
+                      className="rightBtn"
+                    >
+                    </FontAwesomeIcon>
+                  </button>
+                  </div>  
+              </div>
+            </div>
+            <div className="container animContainer" id="story_0">
               <h4 className="mb-5">Covid-19</h4>
 
               <div className="row">
@@ -108,7 +153,7 @@ class Portfolio extends Component {
             </div>
             
 
-            <div className="container animContainer" >
+            <div className="container animContainer" id="story_1">
             <h4>Coronahero</h4>
 
             
@@ -171,7 +216,7 @@ class Portfolio extends Component {
 
       
 
-            <div className="container animContainer">
+            <div className="container animContainer" id="story_2">
             <h4>The mistakes</h4>
 
             <div className="row">
@@ -267,7 +312,7 @@ class Portfolio extends Component {
               </div>
  
           </div>
-          <div className="container animContainer">
+          <div className="container animContainer" id="story_3">
             <h4>A new journey begins</h4>
               {/* A sunrising and avatar looks to the horizon wiht a talkbubble */}
 
@@ -303,7 +348,7 @@ class Portfolio extends Component {
              
               {/* Avatar tries to jump to the grand vision but falls down....*/}
 
-            <div className="container animContainer">
+            <div className="container animContainer" id="story_4">
             <h4>The struggle</h4>
 
             <div className="container">
@@ -352,7 +397,7 @@ class Portfolio extends Component {
             </div>
 
               
-            <div className="container animContainer">
+            <div className="container animContainer" id="story_5">
             <h4>Becomming Lagom</h4>
               {/* Zen-mode */}
               <div className="row flexCenter">
