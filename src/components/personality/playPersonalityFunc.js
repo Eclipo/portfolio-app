@@ -255,9 +255,9 @@ const playEmpathy = anime({
       targets:['#honestyCard','#stubbornCard','#structureCard',
       '#multiTaskCard','#focusCard','#patienceCard','#temperCard',
       '#empathyCard'],
-      scale:[1,1.1],
-      delay:anime.stagger(50),
-      rotate:['2deg','-2deg']
+      // scale:[1,1.2,1.1],
+      delay:anime.stagger(75),
+      rotate:['-2deg','3deg']
     });
     
     if(inputBoolean === true){ 

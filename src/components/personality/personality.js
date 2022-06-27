@@ -445,11 +445,11 @@ class Personality extends Component {
             <h2 className="mb-5">My personality</h2>
    
            <h3 className="brokenBanner">
-            <span className="brokenLetter">C</span>
-            <span className="brokenLetter">L</span>
-            <span className="brokenLetter">I</span>
-            <span className="brokenLetter">C</span>
-            <span className="brokenLetter">K</span>
+            <span className="brokenLetterC">C</span>
+            <span >L</span>
+            <span >I</span>
+            <span>C</span>
+            <span className="brokenLetterK">K</span>
        
 
 
