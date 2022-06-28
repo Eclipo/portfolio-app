@@ -128,6 +128,7 @@ opacity: 0.5;
   border-radius: 50%;
   background-color: var(--primary-light-green);
   margin: 1rem;
+  z-index: 3;
   /* position: absolute; */
 }
 
@@ -327,6 +328,9 @@ opacity: 0.5;
   margin-top: 2.5rem;
 }
 
+#heroEdipID{
+  z-index: 3 !important;
+}
 #heroEdipEyesID .eyePupil{
   margin-top: 0.05rem;
   margin-left: 0.3rem;
@@ -351,9 +355,8 @@ opacity: 0.5;
   margin-right: -0.25rem;
   margin-top: 3rem;
   /* position: absolute; */
-  z-index: -2;
   /* opacity: 0; */
-  /* position: absolute; */
+ 
 }
 
 
@@ -397,8 +400,9 @@ opacity: 0.5;
 }
 
 .rainDropTable table tbody{
-  border-collapse: collapse;
+  border-collapse: separate;
   margin: auto;
+  
 }
 .rainDrop {
   width: 0.5rem;
@@ -408,8 +412,13 @@ opacity: 0.5;
   background-color: var(--primary-blue);
   transform: rotate(45deg);
   margin-top: 0.5rem;
+  margin-bottom: 5rem;
+
   opacity: 0;
-  z-index: 1;
+  z-index: 3 !important;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  position: absolute;
 }
 
 .noDrop{
@@ -421,6 +430,11 @@ opacity: 0.5;
   transform: rotate(45deg);
   margin-top: 0.5rem;
   opacity: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+  position: absolute;
+
 }
 
 #talkBubbleRegretID{
@@ -433,7 +447,7 @@ opacity: 0.5;
 }
 #avatarRegretID{
   margin-right: 5rem;
-  z-index: -1;
+  z-index: 1;
 }
 #avatarRegretID .eyePupil{
   margin-top: -0.1rem;
@@ -473,6 +487,7 @@ margin-left:0.75rem;
   border-width: 0.1rem;
   border-style: solid;
   border-color: var(--primary-pink);
+  background-color: var(--light-navy);
   display: block;
   margin-top: 1rem;
   margin-bottom: 5rem;
@@ -492,7 +507,7 @@ margin-left:0.75rem;
   margin: auto;
   display: block;
   background-color: var(--primary-blue);
-  z-index: -3;
+  z-index: 1;
 }
 .sunRise{
 
@@ -621,7 +636,7 @@ margin-left:0.75rem;
   /* position: absolute; */
   width: 100%;
   margin: auto;
-  height: 3.8rem;
+  height: 3.9rem;
   margin-top: -1rem;
   /* margin-top: -5rem; */
   background-color: rgb(121, 100, 62);

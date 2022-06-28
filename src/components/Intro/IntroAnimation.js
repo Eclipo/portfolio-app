@@ -11,6 +11,8 @@ if (iOS) document.body.classList.add('iOS');
 
 var logoAnimation = function() {
 
+  
+
   var setDashoffset = function(el) {
     var l = el.getTotalLength();
     el.setAttribute('stroke-dasharray', l);
@@ -112,7 +114,15 @@ var logoAnimation = function() {
       return (letterI.duration - 1300) + (delay * 30);
     },
     duration: 500,
-    easing: 'linear'
+    easing: 'linear',
+    complete:function(){
+      anime({
+        targets:'#introTextID',
+        opacity:[0,1],
+        easing:'linear',
+        duration:1250
+      });
+    }
     
   });
 
@@ -138,8 +148,18 @@ playOrStop(input){
   anime({
     targets:'.logo',
     opacity:[0,1],
-    
+    begin:function(){
+      anime({
+        targets:'#introTextID',
+        opacity:[1,0],
+        easing:'linear',
+        duration:500
+      });
+    }
   });
+
+
+
    logoAnimation();
   }
 

@@ -44,9 +44,8 @@ class Personality extends Component {
           playText={
             <p>
               WARNING <br></br>
-              CLICKING ON THIS PLAYBUTTON <br></br>
-              WILL DISPLAY MY MESSY PERSONALITY WITH <br></br>
-              VERY DISTURBING AND FLASHING ANIMATIONS!
+              CLICKING THIS PLAYBUTTON <br></br>
+              WILL DISPLAY VERY DISTURBING AND FLASHING ANIMATIONS!
             </p>
           }
           textColor="var(--primary-green)"

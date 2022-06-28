@@ -597,24 +597,34 @@ class Skills extends Component {
 
         <div className="container" id="duckContainerID">          
           <div className="row">
+          <h2 style={{ color: "var(--primary-blue"}}>I am a duck</h2>
+
             <div className="flexCenter">
+            
               <Duck></Duck>
             </div>
           </div>
 
           <div className="row">
             <p className="duckText p-3">
-              I am a duck.<br></br>I can't fly in the front-end
+              I can't fly in the front-end
               like an eagle. <br></br>I can't dash in the back-end like a
               greyhound.<br></br>I can't swim in the database like a fish.
-              <br></br> <br></br>However...<br></br>
+              <br></br> <br></br>
+              <span className="skillHighLighted">However...</span>
+              <br></br>
               <br></br>I can flap my wings around in the front-end.<br></br>I
               can waddle myself through the back-end. <br></br>I can paddle in
               the database.
               <br></br>
               <br></br>
-              In other words I am a full-stack developer and hopefully I am lagom.
-              Lagom is a Swedish word for being in the middle which is considered good enough. Not too much or too little.
+              In other words 
+              <span className="skillHighLighted"> I am a full-stack developer </span>
+              and hopefully I am lagom.
+              
+              <span className="skillHighLighted"><br></br><br></br>Lagom </span>
+              is a Swedish word for being in the middle which is considered good enough. 
+              Not too much or too little.
             </p>
           </div>
           </div>

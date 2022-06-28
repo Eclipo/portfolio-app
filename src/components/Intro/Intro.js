@@ -89,10 +89,18 @@ class Intro extends Component {
 
           </div>
         </div>
-        <div className='playRefreshIntro'>
-        <PlayRefresh  id='IntroAnimation' playBoolean={true}></PlayRefresh>
         
+        <div className='flexCexnter header-wraper'>
+          <div className='playRefreshIntro'>
+            <PlayRefresh  id='IntroAnimation' playBoolean={true}></PlayRefresh>
+            <div id="introTextID" className='d-block m-auto'>
+              <h3 style={{color:'var(--primary-green)'}}>Click & Scroll</h3>
+            </div>
+          </div>
         </div>
+        
+       
+        
 
        
         

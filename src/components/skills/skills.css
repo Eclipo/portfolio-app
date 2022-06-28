@@ -1,5 +1,9 @@
 /***************** SKILLS *********************/
 
+.skillHighLighted{
+  color: var(--primary-blue);
+}
+
 .skillContainer {
   margin-top: -35vh;
   margin: auto;
@@ -7,8 +11,13 @@
 }
 
 #duckContainerID {
-  background: transparent;
-  display: none;
+  background: var(--light-navy);
+  border-color: var(--primary-blue);
+  border-width: 0.25rem;
+  padding:1.5rem;
+  margin-top: 2rem;
+  border-style: solid;
+  display: 'none';
   opacity: 0;
 }
 

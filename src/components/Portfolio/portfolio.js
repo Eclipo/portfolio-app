@@ -40,10 +40,8 @@ class Portfolio extends Component {
         <div className="flexCenter" id="portfolioContainerID">
           <div className="portfolioTextContainer">
             <h2>This is it</h2>
-              <p>My portfolio is this very website and it's what I am comfortable to share with you.
-              <br></br><br></br>
-              The tech I used for this website are React, Bootstrap, AnimeJS, alot of CSS and Javascript. 
-              <br></br><br></br>
+              <p>This website is my portfolio and consists of 
+              React, Bootstrap, AnimeJS,CSS and Javascript. 
               Down below you can read the story about this website.</p>
 
             <h3>The story</h3>
@@ -185,15 +183,15 @@ class Portfolio extends Component {
                   <div className="rightLegAvatar"></div>
 
                   <div className="leftLegAvatar"></div>
-                  <div className="lightYear" id="secondLight" style={{marginTop:'-3.5rem',marginLeft:'-3rem', zIndex:'-2', position:'absolute'}}></div>
-                  <div className="lightYear" id="firstLight" style={{marginTop:'-3.5rem',marginLeft:'-2rem',marginRight:'2rem', zIndex:'-2', position:'absolute'}}></div>
+                  <div className="lightYear" id="secondLight" style={{marginTop:'-3.5rem',marginLeft:'-3rem', zIndex:'2', position:'absolute'}}></div>
+                  <div className="lightYear" id="firstLight" style={{marginTop:'-3.5rem',marginLeft:'-2rem',marginRight:'2rem', zIndex:'2', position:'absolute'}}></div>
 
-                  <div className="lightYear" id="secondLight" style={{marginTop:'-3.75rem',zIndex:'-2', position:'absolute'}}></div>
-                  <div className="lightYear" id="firstLight" style={{marginTop:'-3.75rem',marginLeft:'1rem', zIndex:'-2', position:'absolute'}}></div>
-                  <div className="lightYear" id="secondLight" style={{marginTop:'-4rem',marginLeft:'2rem', zIndex:'-2', position:'absolute'}}></div>
+                  <div className="lightYear" id="secondLight" style={{marginTop:'-3.75rem',zIndex:'2', position:'absolute'}}></div>
+                  <div className="lightYear" id="firstLight" style={{marginTop:'-3.75rem',marginLeft:'1rem', zIndex:'2', position:'absolute'}}></div>
+                  <div className="lightYear" id="secondLight" style={{marginTop:'-4rem',marginLeft:'2rem', zIndex:'2', position:'absolute'}}></div>
 
-                  <div className="lightYear" id="firstLight" style={{marginTop:'-4rem',marginLeft:'3rem', zIndex:'-2', position:'absolute'}}></div>
-                  <div className="lightYear" id="secondLight" style={{marginTop:'-3.5rem',marginLeft:'4rem', zIndex:'-2', position:'absolute'}}></div>
+                  <div className="lightYear" id="firstLight" style={{marginTop:'-4rem',marginLeft:'3rem', zIndex:'2', position:'absolute'}}></div>
+                  <div className="lightYear" id="secondLight" style={{marginTop:'-3.5rem',marginLeft:'4rem', zIndex:'2', position:'absolute'}}></div>
 
 
                 </div>
@@ -219,7 +217,7 @@ class Portfolio extends Component {
             <div className="container animContainer" id="story_2">
             <h4>The mistakes</h4>
 
-            <div className="row">
+            <div className="row mb-4">
             <table className="rainDropTable">
               <tbody className="rainDropTable">
                 <tr>
@@ -342,7 +340,7 @@ class Portfolio extends Component {
                 Making a portfolio website that would be entertaining and mobile responsive.                
                 However I was still a novice and I was left with no choice... but to buy an Udemy course 
                 about building a portfolio website combining React and Bootstrap.
-                On top of that I would also use AnimeJS for the animations.
+                On top of that I would use AnimeJS for the animations.
               </p>
             </div>
              
@@ -421,7 +419,7 @@ class Portfolio extends Component {
                 where I didn't have too high expectations on myself.
                 <br></br><br></br>
 
-                With time I became better and in the end I have re-wrote 
+                With time I became better and in the end I re-wrote 
                 the whole code I had been given from the Udemy course.
                 <br></br><br></br>
                 Finally I have found my way of being 'Lagom'.   
