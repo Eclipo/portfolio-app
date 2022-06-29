@@ -113,24 +113,24 @@ export const animate = (inputID) => {
                         }
                       }
 
-                      if (inputID === "stockholm") {
+                      if (inputID === "municipality_3") {
                         jobTitle = "Developer Consultant";
 
-                        linkCustomerTitle = "City of Stockholm";
-                        linkToCustomer = "https://international.stockholm.se/";
+                        linkCustomerTitle = "#3 MUNICIPALITY";
+                        linkToCustomer = "";
                         period.innerText = "2020-08 - 2022-02";
                         system.innerText = "Platina";
                         liTwo.style.display = "flex";
                         liThree.style.display = "flex";
                         liFour.style.display = "flex";
                         descOneEl.innerText =
-                          "I wrote several semi-automatic tests consisted of SQL and Excel which confirmed the deployed configurations in the system were properly set.";
+                          "Deployed configurations into production.";
                         descTwoEl.innerText =
-                          "In a critical project I developed comprehensive customization on several stored procedures and necessary work-arounds due to the existing architecture.";
+                          "Wrote semi-automatic tests in SQL ensuring the configurations were properly set.";
                         descThreeEl.textContent =
-                          "Corrected a large set of files and database entries. PowerShell and SQL were used.";
+                          "Updated a large set of files and database entries with PowerShell and SQL.";
                         descFourEl.textContent =
-                          "Developed a bookmarkscanner application in C# which scanned through several Microsoft Word templates and categorized the bookmarks to be standard or customized.";
+                          "Developed a bookmarkscanner application in C# which scanned through several Microsoft Word templates and categorized if the bookmarks either are standard or customized.";
                         chosenTechSkillContainer.style.display = "block";
                         chosenTechSkillContainer.style.opacity = "1";
 
@@ -142,11 +142,11 @@ export const animate = (inputID) => {
                         }
                       }
 
-                      if (inputID === "falu") {
+                      if (inputID === "municipality_2") {
                         jobTitle = "Developer Consultant";
 
-                        linkCustomerTitle = "Falu Municipality";
-                        linkToCustomer = "https://www.falun.se/";
+                        linkCustomerTitle = "#2 Municipality";
+                        linkToCustomer = "";
                         period.innerText = "2020-05 - 2020-10";
                         system.innerText = "Platina (.Net)";
 
@@ -157,7 +157,7 @@ export const animate = (inputID) => {
                         descThreeEl.innerText =
                           "During the project I worked throughout the whole stack consisting of MS SQL, Javascript, HTML/CSS and C#.";
                         descFourEl.innerText =
-                          "Some of the major customizations were a simplified admin menu in Platina and for the Webdiary module I implemented Falu's design patterns.";
+                          "Some of the major customizations were a simplified admin menu in Platina and for the Webdiary module I implemented customer's design patterns.";
                         liTwo.style.display = "flex";
                         liThree.style.display = "flex";
                         liFour.style.display = "flex";
@@ -172,11 +172,11 @@ export const animate = (inputID) => {
                         }
                       }
 
-                      if (inputID === "motala") {
+                      if (inputID === "municipality_1") {
                         jobTitle = "Developer Consultant";
 
-                        linkCustomerTitle = "Motala Municipality";
-                        linkToCustomer = "https://www.motala.se/";
+                        linkCustomerTitle = "#1 Municipality";
+                        linkToCustomer = "";
                         period.innerText = "2020-02 - 2020-06";
                         system.innerText = "Platina (.Net)";
 
@@ -185,7 +185,7 @@ export const animate = (inputID) => {
                         descTwoEl.innerText =
                           "Together with a senior developer/deployer and a projectleader we upgraded Platina from version 7.2 to 10.3";
                         descThreeEl.innerText =
-                          "Among many things we did in this project were improvements in Motala's customized approvement process and UI of the meeting-module.";
+                          "Among many things we did in this project were improvements  of a customized approvement process and the UI of Platina's meeting-module.";
                         descFourEl.innerText = "";
                         liTwo.style.display = "flex";
                         liThree.style.display = "flex";

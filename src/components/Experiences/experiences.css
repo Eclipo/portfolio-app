@@ -3,14 +3,14 @@
 /************************* MEDIA QUERIES *********************************/
 
 @media (min-width: 20rem) {
-  #stockholm_sql {
+  #municipality_3_sql {
     width: 95%;
   }
-  #stockholm_ps1 {
+  #municipality_3_ps1 {
     width: 45%;
   }
 
-  #stockholm_csharp {
+  #municipality_3_csharp {
     width: 20%;
   }
 
@@ -22,14 +22,14 @@
 }
 
 @media (min-width: 25rem) {
-  #stockholm_sql {
+  #municipality_3_sql {
     width: 85%;
   }
-  #stockholm_ps1 {
+  #municipality_3_ps1 {
     width: 35%;
   }
 
-  #stockholm_csharp {
+  #municipality_3_csharp {
     width: 20%;
   }
 
@@ -39,14 +39,14 @@
 }
 
 @media (min-width: 40rem) {
-  #stockholm_sql {
+  #municipality_3_sql {
     width: 75%;
   }
-  #stockholm_ps1 {
+  #municipality_3_ps1 {
     width: 25%;
   }
 
-  #stockholm_csharp {
+  #municipality_3_csharp {
     width: 15%;
   }
 
@@ -58,14 +58,14 @@
 }
 
 @media (min-width: 60rem) {
-  #stockholm_sql {
+  #municipality_3_sql {
     width: 75%;
   }
-  #stockholm_ps1 {
+  #municipality_3_ps1 {
     width: 25%;
   }
 
-  #stockholm_csharp {
+  #municipality_3_csharp {
     width: 15%;
   }
 
@@ -77,14 +77,14 @@
 }
 
 @media (min-width: 80rem) {
-  #stockholm_sql {
+  #municipality_3_sql {
     width: 75%;
   }
-  #stockholm_ps1 {
+  #municipality_3_ps1 {
     width: 25%;
   }
 
-  #stockholm_csharp {
+  #municipality_3_csharp {
     width: 15%;
   }
 
@@ -307,18 +307,18 @@ ul {
   padding: 0.25rem;
 }
 
-#falu_sql {
+#municipality_2_sql {
   width: 50%;
 }
 
-#falu_javascript {
+#municipality_2_javascript {
   width: 50%;
 }
 
-#falu_htmlcss {
+#municipality_2_htmlcss {
   width: 50%;
 }
 
-#falu_csharp {
+#municipality_2_csharp {
   width: 50%;
 }

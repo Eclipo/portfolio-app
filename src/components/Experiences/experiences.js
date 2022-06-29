@@ -105,32 +105,32 @@ class Experiences extends Component {
               <td>
                 <div
                   className="col techCategory"
-                  id="stockholm"
+                  id="municipality_3"
                   onClick={this.handleClick}
                 >
-                  <h2>City of Stockholm</h2>
+                  <h2>#3 Municipality</h2>
                 </div>
-                <div className="scrollLine" id="stockholm_scrollLine"></div>
+                <div className="scrollLine" id="municipality_3_scrollLine"></div>
               </td>
               <td>
                 <div
                   className="col techCategory"
-                  id="falu"
+                  id="municipality_2"
                   onClick={this.handleClick}
                 >
-                  <h2>Falu Municipality</h2>
+                  <h2>#2 Municipality</h2>
                 </div>
-                <div className="scrollLine" id="falu_scrollLine"></div>
+                <div className="scrollLine" id="municipality_2_scrollLine"></div>
               </td>
               <td>
                 <div
                   className="col techCategory"
-                  id="motala"
+                  id="municipality_1"
                   onClick={this.handleClick}
                 >
-                  <h2>Motala Municipality</h2>
+                  <h2>#1 Municipality</h2>
                 </div>
-                <div className="scrollLine" id="motala_scrollLine"></div>
+                <div className="scrollLine" id="municipality_1_scrollLine"></div>
               </td>
             </tr>
             </tbody>
@@ -152,13 +152,11 @@ class Experiences extends Component {
 
             <div className="row">
               <h4 className="header3Tech">Customer:</h4>
-              <h4 className="header3Tech">
-                <a className="link" href="" target="_blank" id="linkID"></a>
-              </h4>
+              <h4 className="header3Tech" id="linkID" style={{ color: "var(--primary-light-green)" }}></h4>
             </div>
 
             <div className="row">
-              <h4 className="header3Tech">Role:</h4>
+              <h4 className="header3Tech" >Role:</h4>
               <h4
                 className="header3Tech"
                 id="jobTitleID"
@@ -190,14 +188,14 @@ class Experiences extends Component {
             <h2 className="headerTech mx-auto">Tech</h2>
             <h2 className="headerTech justify-content-end">100%</h2>
 
-            <div className="techSkillContainer" id="stockholm_tech">
-              <div className="techRow" id="stockholm_sql">
+            <div className="techSkillContainer" id="municipality_3_tech">
+              <div className="techRow" id="municipality_3_sql">
                 <h4 className="techSkill">MS SQL</h4>
               </div>
-              <div className="techRow" id="stockholm_ps1">
+              <div className="techRow" id="municipality_3_ps1">
                 <h4 className="techSkill">Powershell</h4>
               </div>
-              <div className="techRow" id="stockholm_csharp">
+              <div className="techRow" id="municipality_3_csharp">
                 <h4 className="techSkill">C#</h4>
               </div>
             </div>
@@ -215,32 +213,32 @@ class Experiences extends Component {
               </div>
             </div>
 
-            <div className="techSkillContainer" id="falu_tech">
-              <div className="techRow" id="falu_sql">
+            <div className="techSkillContainer" id="municipality_2_tech">
+              <div className="techRow" id="municipality_2_sql">
                 <h4 className="techSkill">MS SQL</h4>
               </div>
-              <div className="techRow" id="falu_javascript">
+              <div className="techRow" id="municipality_2_javascript">
                 <h4 className="techSkill">Javascript</h4>
               </div>
-              <div className="techRow" id="falu_htmlcss">
+              <div className="techRow" id="municipality_2_htmlcss">
                 <h4 className="techSkill">HTML/CSS</h4>
               </div>
-              <div className="techRow" id="falu_csharp">
+              <div className="techRow" id="municipality_2_csharp">
                 <h4 className="techSkill">C#</h4>
               </div>
             </div>
 
-            <div className="techSkillContainer" id="motala_tech">
-              <div className="techRow" id="falu_sql">
+            <div className="techSkillContainer" id="municipality_1_tech">
+              <div className="techRow" id="municipality_2_sql">
                 <h4 className="techSkill">MS SQL</h4>
               </div>
-              <div className="techRow" id="falu_javascript">
+              <div className="techRow" id="municipality_2_javascript">
                 <h4 className="techSkill">Javascript</h4>
               </div>
-              <div className="techRow" id="falu_htmlcss">
+              <div className="techRow" id="municipality_2_htmlcss">
                 <h4 className="techSkill">HTML/CSS</h4>
               </div>
-              <div className="techRow" id="falu_csharp">
+              <div className="techRow" id="municipality_2_csharp">
                 <h4 className="techSkill">C#</h4>
               </div>
             </div>
