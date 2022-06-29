@@ -3,9 +3,11 @@
   /* margin-bottom: 10rem; */
   margin-left: 1rem;
   width: 18rem;
-  
+  margin-top: -2rem;
   z-index: 1;
   position: absolute;
+  transform: scale(0.75) !important;
+
   /* display: inline-flex; */
 }
 

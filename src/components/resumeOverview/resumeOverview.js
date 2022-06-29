@@ -135,8 +135,8 @@ const ResumeOverview = () => {
                   <h3 className=" expHeader-reverseColor">Unemployment</h3>
                   <h4 className="expHeader-reverseColor">Bad luck</h4>
                   <p
-                    className="expHeader-reverseColor mx-auto w-75"
-                    style={{ textAlign: "left" }}
+                    className="expHeader-reverseColor m-auto w-75 mb-2"
+                    
                   >
                     Due to prior financial complications Nexer AB left me
                     speechless and I returned back to base.
@@ -203,7 +203,6 @@ const ResumeOverview = () => {
                   </h4>
                   <p
                     className="expHeader-reverseColor mx-auto w-75"
-                    style={{ textAlign: "left" }}
                   >
                     I made a vow to never be unemployed again. For three years I
                     studied 50% at Midsweden University while working 100% at
@@ -271,7 +270,6 @@ const ResumeOverview = () => {
                   </h4>
                   <p
                     className="expHeader-reverseColor mx-auto w-75"
-                    style={{ textAlign: "left" }}
                   >
                     I was sent away for new adventures despite my best
                     efforts.Long story short I was welcomed back at TP Sweden
@@ -311,7 +309,6 @@ const ResumeOverview = () => {
                   <h3 className=" expHeader-reverseColor">Full-time studies</h3>
                   <p
                     className="expHeader-reverseColor mx-auto w-75"
-                    style={{ textAlign: "left" }}
                   >
                     I studied and traveled around in Asia during my studies at
                     Jönköping International Business School. Good times.

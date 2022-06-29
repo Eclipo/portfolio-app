@@ -18,13 +18,12 @@ const QuickFacts = () => {
                         strings={
                             [
                             "I have a beautiful family",
-                            "I'm born in Sweden",
-                            "I have Kurdish origin from Turkey",
-                            "I am a fullstack developer"
+                            "I am a fullstack developer in .Net",
+                            "Currently working with frontend in Angular"
                             ]
                         }
                         fadeOut={true}
-                        typeSpeed={20}
+                        typeSpeed={25}
                     
                         loop
                 

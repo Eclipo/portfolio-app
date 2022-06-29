@@ -104,24 +104,25 @@
 
 #expMenu {
   opacity: 0;
-  border-color: var(--dark-navy);
+  border-color: var(--light-navy);
   border-width: 0.1rem;
   border-style: solid;
   padding: 1%;
-  background-color: var(--dark-navy);
-  border-radius: 18px;
+  background-color: var(--light-navy);
+  border-radius: 18px 18px 0 0 ;
   position: relative;
   margin-top: 15rem;
-  width: 90vw;
+  width: 90%;
   display: none;
 }
 
 .expTable {
-  background: var(--dark-navy);
+  background: var(--light-navy);
   width: 90%;
+  display: inline-block;
   margin: auto;
   position: relative;
-  border-color: var(---navy);
+  border-color: var(--light-navy);
   border-width: 0 0 0.25rem;
   border-style: solid;
   border-collapse: separate;
@@ -166,7 +167,7 @@
 /************************* EXP Information *********************************/
 #_container {
   opacity: 0;
-  background-color: var(--darkest-navy);
+  background-color: var(--light-navy);
   border-bottom-color: var(--darkest-navy);
 }
 
@@ -176,6 +177,7 @@
 
 #_periodSystem {
   opacity: 0;
+  margin:auto;
 }
 
 .headerTech {
@@ -198,13 +200,16 @@
 
 .header3Tech {
   color: var(--primary-purple);
-  display: inline-block !important;
-  height: min-content;
-  width: fit-content;
+  display: inline-block;
+  height: fit-content;
+  min-width: 10rem ;
+  margin: auto;
+  align-content: center;
   position: relative;
   text-align: left;
   word-break: keep-all;
   border-width: 1rem;
+  margin: 0.5rem;
 }
 
 .infoTech {
@@ -258,6 +263,8 @@
   text-align: left;
   white-space: normal !important;
   width: auto;
+  margin-left: 0.5rem;
+  margin: auto;
 }
 
 .textText p span {

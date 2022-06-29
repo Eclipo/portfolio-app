@@ -89,12 +89,12 @@ export const animate = (inputID) => {
                     easing: "easeInOutQuad",
                     complete: function () {
                       if (inputID === "fintech") {
-                        jobTitle = "Developer Consultant";
+                        jobTitle = "Developer";
 
                         linkCustomerTitle = "fintech industry";
                         linkToCustomer = "";
                         period.innerText = "2020-02 - Present";
-                        system.innerText = "Full-stack application";
+                        system.innerText = "Fintech application";
 
                         descOneEl.innerText =
                           "Currently active within the fintech industry as a full-stack developer with focus on the front-end. We are building an awesome application.";
@@ -114,7 +114,7 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_3") {
-                        jobTitle = "Developer Consultant";
+                        jobTitle = "Developer";
 
                         linkCustomerTitle = "#3 MUNICIPALITY";
                         linkToCustomer = "";
@@ -143,7 +143,7 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_2") {
-                        jobTitle = "Developer Consultant";
+                        jobTitle = "Developer";
 
                         linkCustomerTitle = "#2 Municipality";
                         linkToCustomer = "";
@@ -173,7 +173,7 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_1") {
-                        jobTitle = "Developer Consultant";
+                        jobTitle = "Developer";
 
                         linkCustomerTitle = "#1 Municipality";
                         linkToCustomer = "";

@@ -52,7 +52,7 @@
 
   /* CSS trick, markerar ut elementen  */
     
-  
+  /*
      *{
       outline: 1px solid red;
     }       
@@ -208,22 +208,14 @@
     font-size:0.6rem;
   }
 
-/* @media (max-width: 19.9rem){
-  .typed-text{
-    height: 20rem;
-  }
-}
-
-@media (min-width: 20rem){
-  .typed-text{
-    height: 10rem;
-  }
-} */
-
 @media (max-width: 25rem){
   .expOverviewPeriod p{
     font-size: 0.75rem;
     font-weight: 740;
+  }
+
+  .mokaTableContainer{
+    transform: scale(0.65) !important;
   }
 }
   @media (min-width: 30rem) {
@@ -246,8 +238,31 @@
 
     .portfolioTextContainer{
       width:30rem !important;
+      /* transform: scale(1.5);
+      margin-top: 12rem !important; */
     }
   } 
+
+  @media (min-width: 120rem) {
+    .portfolioTextContainer{
+      width:30rem !important;
+      transform: scale(1.5);
+      margin-top: 12rem !important;
+    }
+
+    p{
+      font-size:1.5rem !important;
+    }
+
+
+    h3{
+      font-size: 2.25rem !important;
+    }
+
+    h4{
+      font-size:1.75rem !important;
+    }
+  }
   
   
   /************************* NAVBAR *********************************/

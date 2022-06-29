@@ -51,21 +51,19 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
           //Personality Section -  Turn OFF Skills
             case 4:
               console.log('PERSONALITY SECTION');
-              PlayAnimation('SkillAnimation',1);
               PlayAnimation('PersonalityAnimation',2);              
             break;
 
-              //Resume Overview Section - Turn OFF Personality
+              //Resume Overview Section - Turn OFF Skills & Portfolio
               case 5:
-                PlayAnimation('PersonalityAnimation',1);
+                PlayAnimation('SkillAnimation',1);
                 PlayAnimation('PortfolioAnimation',1);
-
-                
               break;
 
-              //Major experiences - Turn OFF Portfolio
+              //Major experiences - Turn OFF Personality
               case 6:
                 console.log('MAJOR EXPERIENCES SECTION');
+                PlayAnimation('PersonalityAnimation',1);
 
                 
               break;

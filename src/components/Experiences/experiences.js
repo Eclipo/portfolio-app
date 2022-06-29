@@ -66,10 +66,10 @@ class Experiences extends Component {
             </div>
 
             <div className="col-8">
-              <p className="header3Tech infoTech mx-auto">
+              <p className="header3Tech infoTech mb-3">
                 Click on one of the major experience to see its content.
                 <br></br>If you have a smaller screen then you can scroll to
-                left and right on the major experiences.{" "}
+                left and right on the major experiences.
               </p>
             </div>
 
@@ -139,47 +139,77 @@ class Experiences extends Component {
 
         <div className="container expTable expInfo mb-2" id="_container">
           <div className="row expInfo" id="_periodSystem">
-            <div className="row">
-              <h4 className="header3Tech">Employer:</h4>
+            <div className="col">
+              <div className="row">
+                <h4 className="header3Tech pb-0 mb-0">Employer:</h4>
+              </div>
 
+              <div className="row">
               <h4
-                className="header3Tech"
+                className="header3Tech pt-0 mt-0"
                 style={{ color: "var(--primary-light-green)" }}
               >
                 CGI Sverige AB
               </h4>
+              </div>
             </div>
 
-            <div className="row">
-              <h4 className="header3Tech">Customer:</h4>
-              <h4 className="header3Tech" id="linkID" style={{ color: "var(--primary-light-green)" }}></h4>
+            <div className="col">
+              <div className="row">
+                <h4 className="header3Tech pb-0 mb-0">Customer:</h4>
+              </div>
+              
+              <div className="row">
+                <h4 
+                  className="header3Tech pt-0 mt-0" 
+                  id="linkID" 
+                  style={{ color: "var(--primary-light-green)" }}>
+                </h4>
+              </div>
             </div>
 
-            <div className="row">
-              <h4 className="header3Tech" >Role:</h4>
-              <h4
-                className="header3Tech"
-                id="jobTitleID"
-                style={{ color: "var(--primary-light-green)" }}
-              ></h4>
+            <div className="col">
+              <div className="row">
+                <h4 className="header3Tech pb-0 mb-0" >Role:</h4>
+              </div>
+
+              <div className="row">
+                <h4
+                  className="header3Tech pt-0 mt-0"
+                  id="jobTitleID"
+                  style={{ color: "var(--primary-light-green)" }}
+                ></h4>
+              </div>
             </div>
 
-            <span className="row">
-              <h4 className="header3Tech">Period:</h4>
-              <h4
-                className="header3Tech"
-                id="period"
-                style={{ color: "var(--primary-light-green)" }}
-              ></h4>
-            </span>
-            <span className="row">
-              <h4 className="header3Tech">System:</h4>
-              <h4
-                className="header3Tech"
-                id="system"
-                style={{ color: "var(--primary-light-green)" }}
-              ></h4>
-            </span>
+            <div className="col">
+              <div className="row">
+                <h4 className="header3Tech pb-0 mb-0">Period:</h4>
+              </div>
+
+              <div className="row">
+                <h4
+                  className="header3Tech pt-0 mt-0"
+                  id="period"
+                  style={{ color: "var(--primary-light-green)" }}
+                ></h4>
+              </div>
+
+            </div>
+            <div className="col">
+              <div className="row">
+                <h4 className="header3Tech pb-0 mb-0">System:</h4>
+              </div>
+              <div className="row">
+                <h4
+                  className="header3Tech pt-0 mt-0"
+                  id="system"
+                  style={{ color: "var(--primary-light-green)" }}
+                ></h4>
+              </div>
+              
+             
+            </div>
             <div className="techUnderLine mt-2 mb-3"></div>
           </div>
 
