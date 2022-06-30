@@ -244,6 +244,19 @@
   } 
 
   @media (min-width: 120rem) {
+
+    .carousel-root{
+      max-width: 50vw !important;
+
+    }
+    .testimonials-content{
+      margin: auto !important;
+      display: inline-flex;
+      transform: scale(1.5) !important;
+      margin-top: 5rem !important;
+      justify-content: center;
+    }
+    
     .portfolioTextContainer{
       width:30rem !important;
       transform: scale(1.5);
@@ -251,7 +264,7 @@
     }
 
     p{
-      font-size:1.5rem !important;
+      font-size:1.75rem !important;
     }
 
 

@@ -19,6 +19,17 @@
   }
 }
 
+@media (min-width: 120rem) {
+  :root {
+    --size-edipGuyDivisor: 2;
+  }
+
+  
+  #tableStartGuyID{
+    margin-top: 5rem;
+  }
+}
+
 #tableStartGuyID {
   transform: scale(calc(2 / var(--size-edipGuyDivisor)));
 }

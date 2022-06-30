@@ -17,15 +17,14 @@ const QuickFacts = () => {
                         className="typed-text" 
                         strings={
                             [
-                            "I have a beautiful family",
-                            "I am a fullstack developer in .Net",
-                            "Currently working with frontend in Angular"
+                            'Love my family',
+                            'Fullstack .Net',
+                            'Frontend Angular'
                             ]
                         }
                         fadeOut={true}
-                        typeSpeed={25}
-                    
-                        loop
+                        typeSpeed={10}
+                        loop={true}
                 
                     >
                     </Typed>

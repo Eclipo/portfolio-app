@@ -19,11 +19,12 @@
 
 .testimonials-content {
   text-align: center;
-  width: 90vw;
+  width: 80vw;
   height: max-content;
   margin: auto;
-  margin-top: -2rem;
+  margin-top: -6rem;
   background: none;
+  transform: scale(0.7);
 }
 
 .myCarousel {
