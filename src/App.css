@@ -51,8 +51,8 @@
 
 
   /* CSS trick, markerar ut elementen  */
-    /*
-  
+    
+  /*
      *{
       outline: 1px solid red;
     }       
@@ -161,7 +161,7 @@
 
   h1{
     font-style: var(--font-sans) !important;
-    font-size: 2.75rem !important;
+    font-size: 3rem !important;
     font-weight: 1000 !important;
     text-transform: uppercase !important;
     text-align: center !important;
@@ -172,14 +172,14 @@
     font-style: var(--font-sans) !important;
     font-weight: 800 !important;
     text-transform: uppercase !important;
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   h3{
     font-style: var(--font-sans) !important;
     font-weight: 750 !important;
   
-    font-size:1.75rem !important;
+    font-size:1.75rem;
     margin: auto !important;
     text-align: center !important;
     word-break: keep-all !important;
@@ -209,6 +209,11 @@
   }
 
 @media (max-width: 25rem){
+  
+  .skillPointGround{
+    font-size: 0.85rem !important ;
+  }
+
   .expOverviewPeriod p{
     font-size: 0.75rem;
     font-weight: 740;
@@ -225,6 +230,10 @@
   
     .duckText{
       width: 22.5rem !important;
+    }
+
+    .seiouslyText{
+      width: 30rem !important;
     }
 
     .techText{
@@ -246,16 +255,23 @@
   @media (min-width: 120rem) {
 
     .carousel-root{
-      max-width: 50vw !important;
+      max-width: 50vw;
 
     }
     .testimonials-content{
-      margin: auto !important;
-      display: inline-flex;
+      margin: auto !;
+      display: inline-block;
       transform: scale(1.5) !important;
-      margin-top: 5rem !important;
+      width: 35vw;
+      margin-top: 5rem !important ;
       justify-content: center;
     }
+    
+    .mokaTableContainer{
+      transform: scale(1.5) !important;
+      margin-top: 9rem !important ;
+    }
+
     
     .portfolioTextContainer{
       width:30rem !important;
@@ -270,10 +286,28 @@
     }
 
     p{
-      font-size:1.05rem !important;
+      font-size:1.25rem !important;
     }
 
+    .duckText{
+      font-size:1.25rem !important;
+    }
 
+    .seiouslyText{
+      font-size:1.25rem !important;
+    }
+
+    .skillCategory{
+      font-size: 3rem !important;
+    }
+
+    h1{
+      font-size: 5rem !important;
+    }
+    
+    h2{
+      font-size: 4rem;
+    }
     h3{
       font-size: 2.25rem !important;
     }
@@ -281,6 +315,8 @@
     h4{
       font-size:1.75rem !important;
     }
+
+    
   }
   
   

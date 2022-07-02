@@ -254,7 +254,7 @@ export async function playIntroFunc() {
       introSkillAnimation.add({
   
                     targets: ".skill",
-                    translateX: ["-60rem", 0],
+                    translateX: ["-120vw", 0],
                     opacity: [0, 1],
                     duration: 1500,
                     delay: anime.stagger(125),

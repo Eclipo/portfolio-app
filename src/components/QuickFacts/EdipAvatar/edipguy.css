@@ -21,12 +21,12 @@
 
 @media (min-width: 120rem) {
   :root {
-    --size-edipGuyDivisor: 2;
+    --size-edipGuyDivisor: 1.9;
   }
 
   
   #tableStartGuyID{
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 }
 

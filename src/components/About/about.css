@@ -1,11 +1,11 @@
-@media (min-width: 80rem) {
+@media (min-width: 60rem) {
   :root {
     --size-familyDivisor: 2.75;
   }
-
+ 
   .testimonials-content {
-    width: 50vw !important;
-  }
+     max-width: 75vw !important; 
+  } 
 }
 
 .testimonials {
@@ -19,12 +19,12 @@
 
 .testimonials-content {
   text-align: center;
-  width: 80vw;
+  max-width: 90vw;
   height: max-content;
   margin: auto;
-  margin-top: -6rem;
+  margin-top: -2rem;
   background: none;
-  transform: scale(0.7);
+  transform:  (0.95);
 }
 
 .myCarousel {
@@ -79,6 +79,11 @@
 
 .carousel .control-next.control-arrow:before {
   border-left: 0.75rem solid var(--primary-white) !important;
+}
+
+.carousel .control-dots .dot{
+  opacity: 0.6;
+  margin-top: 0.75rem;
 }
 
 .containerSlide {

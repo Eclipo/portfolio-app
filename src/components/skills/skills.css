@@ -1,5 +1,13 @@
 /***************** SKILLS *********************/
 
+@media (min-width: 20rem){
+ 
+}
+
+@media (min-width: 120rem) {
+ 
+}
+
 .skillHighLighted{
   color: var(--primary-blue);
 }
@@ -54,7 +62,7 @@
   padding: 5%;
   margin: auto;
   width: fit-content !important;
-  font-size: 1.25rem !important;
+  /* font-size: 1.25rem !important; */
   opacity: 0;
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
@@ -75,7 +83,7 @@
   background-color: var(--green-tint);
   padding: 4% !important;
   margin: 3% !important;
-  font-size: 0.85rem !important;
+  font-size: 0.85rem ;
   color: var(--primary-white);
   border-radius: 5px;
 }
@@ -131,4 +139,17 @@
   font-weight: "625";
   color: var(--light-slate);
   margin-top: 16rem;
+  display: block;
+  width: fit-content;
 }
+
+.seiouslyText {
+  margin: auto;
+  text-align: left;
+  font-size: "0.8375rem";
+  font-weight: "625";
+  color: var(--light-slate);
+  display: inline-block;
+  /* margin-top: 16rem; */
+}
+

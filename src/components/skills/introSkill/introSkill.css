@@ -6,7 +6,7 @@
   margin-top: -2rem;
   z-index: 1;
   position: absolute;
-  transform: scale(0.75) !important;
+  transform: scale(0.7);
 
   /* display: inline-flex; */
 }
