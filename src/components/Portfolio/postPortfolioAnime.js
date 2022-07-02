@@ -48,7 +48,7 @@ export async function playPostFunc(inputBoolean) {
         targets:'#avatarRegretID',
         translateY:[0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0],
         change:function(){
-          paragraphRegret.innerText='What have I done!'
+          paragraphRegret.innerText='What have I done!?'
         }
       })
     
@@ -57,7 +57,7 @@ export async function playPostFunc(inputBoolean) {
         targets:'#avatarRegretID',
         translateY:[0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0],
         change:function(){
-          paragraphRegret.innerText='What was I thinking!'
+          paragraphRegret.innerText='What was I thinking!?'
         }
       })
 
@@ -65,7 +65,7 @@ export async function playPostFunc(inputBoolean) {
         targets:'#avatarRegretID',
         translateY:[0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0,'-0.1rem',0],
         change:function(){
-          paragraphRegret.innerText="This isn't what I wanted..."
+          paragraphRegret.innerText="WHY!!??"
         }
       });
       

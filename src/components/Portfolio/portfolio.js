@@ -37,8 +37,8 @@ class Portfolio extends Component {
           <Mario></Mario>
         </div>
 
-        <div className="flexCenter" id="portfolioContainerID">
-          <div className="portfolioTextContainer">
+        <div className="flexCenter mb-5" id="portfolioContainerID">
+          <div className="flexCenter portfolioTextContainer">
             <h2>This is it</h2>
               <p>This website is my portfolio and consists of 
               React, Bootstrap, AnimeJS,CSS and Javascript. 

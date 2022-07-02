@@ -51,8 +51,8 @@
 
 
   /* CSS trick, markerar ut elementen  */
-    
-  /*
+    /*
+  
      *{
       outline: 1px solid red;
     }       
@@ -263,8 +263,14 @@
       margin-top: 12rem !important;
     }
 
+    #KnucklesContainerID {
+      display: block;
+      margin-top: 12.5vh !important;
+      transform: scale(1) !important;;
+    }
+
     p{
-      font-size:1.75rem !important;
+      font-size:1.05rem !important;
     }
 
 
