@@ -181,7 +181,7 @@
 }
 
 .headerTech {
-  color: var(--primary-purple) !important;
+  color: var(--primary-light-green) !important;
   position: relative;
   width: fit-content;
   text-align: left;
@@ -236,7 +236,7 @@
 }
 
 .techUnderLine {
-  background-color: var(--primary-light-green);
+  background-color: var(--primary-purple);
   margin-bottom: 1rem;
   margin: auto;
   width: 100%;

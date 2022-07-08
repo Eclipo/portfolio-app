@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import "./IntroAnimation.js";
 import "./edipLogo.css";
 import "../../IntersectionObserver.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faClock, faBookOpen} from '@fortawesome/free-solid-svg-icons'
+import {Link} from 'react-scroll';
+
 import PlayRefresh from '../PlayRefresh/PlayRefresh.js';
 
 class Intro extends Component {
@@ -95,7 +99,48 @@ class Intro extends Component {
             <PlayRefresh  id='IntroAnimation' playBoolean={true}></PlayRefresh>
             <div id="introTextID" className='d-block m-auto'>
               <h3 style={{color:'var(--primary-green)'}}>Click & Scroll</h3>
+     
             </div>
+          </div>
+        </div>
+
+        <div className='row navSubMenu'>
+        <p className='navP'>
+          You can either click to view <br></br>
+          the detailed or the overview version about me. <br></br>
+          Both are two different user experiences.</p>
+          <div className='col w-25'>
+            <button
+              className="bg-transparent navSubIcon"
+            >
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                color="var(--primary-orange)"
+                className="fntAwesome navSubIcon"
+              >
+              </FontAwesomeIcon>
+              <p className="navP text-center">Full <br></br>version</p>
+
+            </button>
+          </div>          
+          <div className='col w-25'>
+          <Link smooth={true} to={"personality"} className="nav-link" href="#">
+
+          
+
+            <button
+              className="bg-transparent navSubIcon"
+            >
+              <FontAwesomeIcon
+                icon={faClock}
+                color="var(--slate)"
+                className="fntAwesome navSubIcon "
+              >
+              </FontAwesomeIcon>
+              <p className="navP text-center" >Overview<br></br>version</p>
+
+            </button>
+            </Link>
           </div>
         </div>
         

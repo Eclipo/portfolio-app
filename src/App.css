@@ -161,7 +161,7 @@
 
   h1{
     font-style: var(--font-sans) !important;
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     font-weight: 1000 !important;
     text-transform: uppercase !important;
     text-align: center !important;
@@ -339,6 +339,8 @@
     background-color: transparent;
   }
 
+ 
+
 
   
 
@@ -354,14 +356,14 @@
   nav
   {
     z-index:2;
-    width: 25vw !important;
+    width: fit-content !important;
   }
 
   nav a.nav-link
   {
-    font-size: 0.65rem;
-    font-weight: bold;
-    letter-spacing: normal;
+    /* font-size: 0.65rem; */
+    font-weight: bolder !important;
+    /* letter-spacing: normal; */
     cursor: pointer;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -375,9 +377,9 @@
   .navbar-nav{
     background-color:rgba(2, 12, 27, 0.829);
     border-radius: 18px;
-    border-color: var(--primary-orange);
-    border-width: 0.1rem;
-    border-style: dashed;
+    border-color: var(--slate);
+    border-width: 0.3rem;
+    border-style: solid;
   }
 
   .navbar-nav > li > a
@@ -400,6 +402,7 @@
 
   .navbar-nav > li > a:focus
   {
-    border-bottom: 0.1875rem solid #724e0c !important;
+    border-bottom: 0.1875rem solid var(--slate) !important;
     color:var(--lightest-slate) !important;
   }
+

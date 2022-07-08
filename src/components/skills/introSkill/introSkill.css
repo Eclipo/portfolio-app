@@ -41,9 +41,10 @@ width:0.75rem;
 }
 
 .espressoDrop {
-width:0.75rem;
+width:1.75rem;
   height: 1.75rem;
   background-color: rgb(75, 50, 36);
+  border-radius: 50%;
 }
 
 .mokaMiddleDarkBrown {

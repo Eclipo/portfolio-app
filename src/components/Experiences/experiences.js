@@ -68,8 +68,9 @@ class Experiences extends Component {
             <div className="col-8">
               <p className="header3Tech infoTech mb-3">
                 Click on one of the major experience to see its content.
-                <br></br>If you have a smaller screen then you can scroll to
-                left and right on the major experiences.
+                <br></br>
+                Due to my contract with my employer CGI 
+                I am not allowed to share the names of the customers.
               </p>
             </div>
 
@@ -139,7 +140,7 @@ class Experiences extends Component {
 
         <div className="container expTable expInfo mb-2" id="_container">
           <div className="row expInfo" id="_periodSystem">
-            <div className="col">
+            <div className="col m-1">
               <div className="row">
                 <h4 className="header3Tech pb-0 mb-0">Employer:</h4>
               </div>
@@ -154,7 +155,7 @@ class Experiences extends Component {
               </div>
             </div>
 
-            <div className="col">
+            <div className="col m-1">
               <div className="row">
                 <h4 className="header3Tech pb-0 mb-0">Customer:</h4>
               </div>
@@ -168,7 +169,7 @@ class Experiences extends Component {
               </div>
             </div>
 
-            <div className="col">
+            <div className="col m-1">
               <div className="row">
                 <h4 className="header3Tech pb-0 mb-0" >Role:</h4>
               </div>
@@ -182,9 +183,9 @@ class Experiences extends Component {
               </div>
             </div>
 
-            <div className="col">
+            <div className="col m-1">
               <div className="row">
-                <h4 className="header3Tech pb-0 mb-0">Period:</h4>
+                <h4 className="header3Tech pb-0 mb-0">Period (YY/MM):</h4>
               </div>
 
               <div className="row">
@@ -196,7 +197,7 @@ class Experiences extends Component {
               </div>
 
             </div>
-            <div className="col">
+            <div className="col m-1">
               <div className="row">
                 <h4 className="header3Tech pb-0 mb-0">System:</h4>
               </div>

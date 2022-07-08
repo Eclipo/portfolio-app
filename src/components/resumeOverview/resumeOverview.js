@@ -13,7 +13,7 @@ const ResumeOverview = () => {
         style={{ backgroundColor: "var(--primary-red)" }}
       ></div>
 
-      <h1 style={{ color: "var(--primary-red" }}>Resumé Overview</h1>
+      <h1 style={{ color: "var(--primary-red" }}>Resumé <br></br>Overview</h1>
       <PlayRefresh id="ResumeAnimation" playBoolean={true}></PlayRefresh>
 
       <div className="flexCenter">
@@ -31,14 +31,14 @@ const ResumeOverview = () => {
 
             <div className="experienceTable">
               <div className="row m-auto">
-                <div className="col m-1">
+                <div className="col m-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                     <h3>Swedish</h3>
                     <div className="header3UnderLine"></div>
                     <h4 className="m-auto p-1">Native</h4>
                   </div>
                 </div>
-                <div className="col m-1">
+                <div className="col m-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                     <h3>English</h3>
                     <div className="header3UnderLine"></div>
@@ -46,7 +46,7 @@ const ResumeOverview = () => {
                   </div>
                 </div>
 
-                <div className="col m-1">
+                <div className="col m-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                     <h3>Turkish</h3>
                     <div className="header3UnderLine"></div>
@@ -55,7 +55,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
               <div className="row m-auto">
-                <div className="col mt-1">
+                <div className="col m-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                     <h3>Kurdish, French and Mandarin</h3>
                     <div className="header3UnderLine"></div>
@@ -72,9 +72,9 @@ const ResumeOverview = () => {
                 <h2>Education</h2>
               </div>
             </div>
-            <div className="m-auto">
+            <div className="container">
               <div className="experienceTable">
-                <div className="row m-auto">
+                <div className="row m-auto mb-4">
                     <div className="expOverviewPeriod expOverviewPeriod-dotted p-2 m-1">
                       <h3 className="m-auto p-1">2015 - 2018</h3>
                       <h3 className="m-auto p-1">Mid Sweden <br></br> Unviersity</h3>
@@ -85,7 +85,7 @@ const ResumeOverview = () => {
                     </div>
                 </div>
 
-                <div className="row m-auto">
+                <div className="row m-auto mb-4">
                     <div className="expOverviewPeriod expOverviewPeriod-dotted p-2 m-1">
                       <h3 className="m-auto p-1">2009 - 2012</h3>
                       <h3 className="m-auto p-1">Jönköping International <br></br> Business School</h3>
@@ -102,12 +102,12 @@ const ResumeOverview = () => {
 
           <div className="resumeSection">
           <div className="row m-auto">
-              <div className="col mt-1">
+              <div className="col mt-1 mb-1">
                 <h2>Experiences</h2>
               </div>
             </div>
             <div className="experienceTable">
-              <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+              <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
                     Present<br></br>2019-12
@@ -129,7 +129,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-reverseColor">
+              <div className="row expOverviewPeriod expOverviewPeriod-reverseColor mb-4">
                 <div className="col m-auto">
                   <h3 className=" expHeader-reverseColor">2019-10 - 2019-12</h3>
                   <h3 className=" expHeader-reverseColor">Unemployment</h3>
@@ -144,7 +144,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+              <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
                     2019-09<br></br>2019-09
@@ -169,7 +169,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+              <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
                     2019-08<br></br>2015-09
@@ -194,7 +194,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-reverseColor">
+              <div className="row expOverviewPeriod expOverviewPeriod-reverseColor mb-4">
                 <div className="col m-auto">
                   <h3 className=" expHeader-reverseColor">2015-02 - 2015-08</h3>
                   <h3 className=" expHeader-reverseColor">Unemployment</h3>
@@ -204,14 +204,14 @@ const ResumeOverview = () => {
                   <p
                     className="expHeader-reverseColor mx-auto w-75"
                   >
-                    I made a vow to never be unemployed again. For three years I
-                    studied 50% at Midsweden University while working 100% at
+                    I made a vow to never be unemployed again. <br></br>
+                    For three years I studied 50% at Midsweden University while working 100% at
                     CGI Sverige AB.
                   </p>
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+              <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
                     2015-01<br></br>2013-08
@@ -236,7 +236,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+              <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
                     2013-08<br></br>2013-05
@@ -261,7 +261,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-reverseColor">
+              <div className="row expOverviewPeriod expOverviewPeriod-reverseColor mb-4">
                 <div className="col m-auto">
                   <h3 className=" expHeader-reverseColor">2013-02 - 2013-04</h3>
                   <h3 className=" expHeader-reverseColor">Unemployment</h3>
@@ -272,13 +272,13 @@ const ResumeOverview = () => {
                     className="expHeader-reverseColor mx-auto w-75"
                   >
                     I was sent away for new adventures despite my best
-                    efforts.Long story short I was welcomed back at TP Sweden
+                    efforts.<br></br>Long story short I was welcomed back at TP Sweden
                     (Teleperformance) and for that I am very grateful.
                   </p>
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+              <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
                     2013-01<br></br>2012-09
@@ -303,7 +303,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-reverseColor">
+              <div className="row expOverviewPeriod expOverviewPeriod-reverseColor mb-4">
                 <div className="col m-auto">
                   <h3 className=" expHeader-reverseColor">2009 - 2012</h3>
                   <h3 className=" expHeader-reverseColor">Full-time studies</h3>
@@ -316,7 +316,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+              <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
                     2011-09<br></br>2011-08
@@ -341,7 +341,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+              <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
                     2010-08<br></br>2010-06
@@ -366,7 +366,7 @@ const ResumeOverview = () => {
                 </div>
               </div>
 
-              <div className="row expOverviewPeriod expOverviewPeriod-dotted">
+              <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
                     2009-04<br></br>2007-11

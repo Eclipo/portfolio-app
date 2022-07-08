@@ -93,7 +93,7 @@ export const animate = (inputID) => {
 
                         linkCustomerTitle = "fintech industry";
                         linkToCustomer = "";
-                        period.innerText = "2020-02 - Present";
+                        period.innerText = "20-02 - Present";
                         system.innerText = "Fintech application";
 
                         descOneEl.innerText =
@@ -118,7 +118,7 @@ export const animate = (inputID) => {
 
                         linkCustomerTitle = "#3 MUNICIPALITY";
                         linkToCustomer = "";
-                        period.innerText = "2020-08 - 2022-02";
+                        period.innerText = "20-08 - 22-02";
                         system.innerText = "Platina";
                         liTwo.style.display = "flex";
                         liThree.style.display = "flex";
@@ -130,7 +130,7 @@ export const animate = (inputID) => {
                         descThreeEl.textContent =
                           "Updated a large set of files and database entries with PowerShell and SQL.";
                         descFourEl.textContent =
-                          "Developed a bookmarkscanner application in C# which scanned through several Microsoft Word templates and categorized if the bookmarks either are standard or customized.";
+                          "Developed a bookmarkscanner application in C# which scanned through several Microsoft Word templates and categorized if the bookmarks either were standard or customized.";
                         chosenTechSkillContainer.style.display = "block";
                         chosenTechSkillContainer.style.opacity = "1";
 
@@ -147,7 +147,7 @@ export const animate = (inputID) => {
 
                         linkCustomerTitle = "#2 Municipality";
                         linkToCustomer = "";
-                        period.innerText = "2020-05 - 2020-10";
+                        period.innerText = "20-05 - 20-10";
                         system.innerText = "Platina (.Net)";
 
                         descOneEl.innerText =
@@ -177,7 +177,7 @@ export const animate = (inputID) => {
 
                         linkCustomerTitle = "#1 Municipality";
                         linkToCustomer = "";
-                        period.innerText = "2020-02 - 2020-06";
+                        period.innerText = "20-02 - 20-06";
                         system.innerText = "Platina (.Net)";
 
                         descOneEl.innerText =
