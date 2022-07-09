@@ -64,7 +64,7 @@
   }
 
   .navSubMenu{
-    margin-top: -20rem !important;
+    margin-top: -25rem !important;
   }
 
   
@@ -77,24 +77,27 @@
 
 .navP{
   color:var(--slate);
-  
+  text-align: left;
+  display: inline-flex;
+  margin: auto;
+  justify-content: center; 
+  font-size: 1.75rem !important;
   /* font-size: large;
   padding: 0;
   margin: auto;
   text-align: left;
   wor
   justify-content: center; */
-
 }
 
-.navSubMenu{
+
+
+.nabSub{
   /* border-bottom: 0.25rem var(--slate) solid; */
   /* display: flex; */
   /* background-color: red; */
-  margin-top: -30rem;
   margin-left: 0.1%;
-justify-content: space-between;
-
+justify-content: center;
 }
 
 .navSubIcon{

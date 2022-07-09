@@ -52,7 +52,7 @@
 
   /* CSS trick, markerar ut elementen  */
     
-  /*
+  
      *{
       outline: 1px solid red;
     }       
@@ -156,7 +156,7 @@
   body
   {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--navy) !important;
+  background-color: var(--navy);
   }
 
   h1{
@@ -322,6 +322,25 @@
   
   /************************* NAVBAR *********************************/
 
+  .navSubMenu{
+    /* border-bottom: 0.25rem var(--slate) solid; */
+    /* display: flex; */
+    /* background-color: red; */
+    /* margin-top: -32rem; */
+    margin-left: 0.1%;
+  justify-content: space-between;
+  }
+  
+  .navSubIcon{
+    color: var(--slate);
+    border: none;
+    background-color: transparent;
+  }
+  .navSubIcon:hover{
+    color: var(--primary-green);
+  }
+
+  
   #customNav
   {
     z-index:1000;
@@ -338,11 +357,6 @@
     position: relative;
     background-color: transparent;
   }
-
- 
-
-
-  
 
   #navIconID{
   color:var(--primary-orange);
@@ -361,9 +375,10 @@
 
   nav a.nav-link
   {
-    /* font-size: 0.65rem; */
+    /* font-size: 0.65rem !important; */
     font-weight: bolder !important;
-    /* letter-spacing: normal; */
+    /* letter-spacing: normal !important; */
+    padding: 0;
     cursor: pointer;
     margin-left: 1rem;
     margin-right: 1rem;

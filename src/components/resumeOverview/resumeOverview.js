@@ -16,12 +16,12 @@ const ResumeOverview = () => {
       <h1 style={{ color: "var(--primary-red" }}>Resumé <br></br>Overview</h1>
       <PlayRefresh id="ResumeAnimation" playBoolean={true}></PlayRefresh>
 
-      <div className="flexCenter">
+      <div className="flexCenter" >
         <LightSaber></LightSaber>
       </div>
 
       <div id="resumeContainerID">
-        <div className="resumeTable" style={{ backgroundColor: "var(--navy)" }}>
+        <div className="resumeTable">
           <div className="resumeSection">
             <div className="row m-auto">
               <div className="col mt-1">

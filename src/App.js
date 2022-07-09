@@ -10,11 +10,14 @@ import Personality from "./components/personality/personality";
 import ResumeOverview from "./components/resumeOverview/resumeOverview";
 import Experiences from "./components/Experiences/experiences";
 import Portfolio from "./components/Portfolio/portfolio";
+import FastOverview from "./components/FastOverview/fastOverview";
 function App() {
+  
   return (
     <>
       <Navbar></Navbar>
       <Intro></Intro>
+      <FastOverview></FastOverview> 
       <QuickFacts></QuickFacts>
       <Testimonials></Testimonials>
       <Skills></Skills>
