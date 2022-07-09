@@ -158,17 +158,13 @@ class Intro extends Component {
           </div>
         </div>
 
-        <div className='row navSubMenu'>
+        <div className='row navSubMenu' id='choiceID'>
         <h4 className='navP'>
         You have two choices.
         </h4>
         <p className='navP text-center'>
-         The first choice <br></br>
-          is to keep scrolling down <br></br> 
-          to see the indepth version about me.<br></br><br></br>
-        The second choice <br></br>
-          click on the fastforward-icon <br></br> 
-          and you will see an overview of me.<br></br><br></br>
+        Scroll down to see the indepth version.<br></br>
+        Or click on the fastforward-icon for an overview.<br></br>
         
         The choices are two different user experiences.</p>
           <div className='col w-25'>

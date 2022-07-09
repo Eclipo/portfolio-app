@@ -20,6 +20,10 @@
     --size-logoDivisor: 4;
   }
 
+  .navSubMenu{
+    margin-top: -30rem !important;
+  }
+
 }
 
 
@@ -69,7 +73,11 @@
 
   
 }
-  
+  #choiceID{
+    opacity: 0;
+    margin: auto;
+/* display: none; */
+  }
 .introText{
   opacity: 1;
   color: #38ff22;
@@ -81,7 +89,6 @@
   display: inline-flex;
   margin: auto;
   justify-content: center; 
-  font-size: 1.75rem !important;
   /* font-size: large;
   padding: 0;
   margin: auto;
@@ -92,12 +99,13 @@
 
 
 
-.nabSub{
+.navSub{
   /* border-bottom: 0.25rem var(--slate) solid; */
   /* display: flex; */
   /* background-color: red; */
   margin-left: 0.1%;
 justify-content: center;
+
 }
 
 .navSubIcon{

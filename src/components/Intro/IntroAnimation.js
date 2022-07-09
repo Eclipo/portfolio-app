@@ -117,7 +117,7 @@ var logoAnimation = function() {
     easing: 'linear',
     complete:function(){
       anime({
-        targets:'#introTextID',
+        targets:['#introTextID','#choiceID'],
         opacity:[0,1],
         easing:'linear',
         duration:1250
