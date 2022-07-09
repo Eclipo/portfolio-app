@@ -3,12 +3,66 @@ import "./IntroAnimation.js";
 import "./edipLogo.css";
 import "../../IntersectionObserver.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faClock, faBookOpen} from '@fortawesome/free-solid-svg-icons'
+import {faFastForward, faArrowDown} from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-scroll';
 
 import PlayRefresh from '../PlayRefresh/PlayRefresh.js';
+import anime from 'animejs';
 
 class Intro extends Component {
+
+  constructor(props) {
+    super(props);
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+    document.body.style.backgroundColor = 'var(--navy)';
+  }
+
+  handleClick(event) {
+    // animate(event.currentTarget.id);
+    document.body.style.backgroundColor = 'var(--primary-white)';
+    
+    document.getElementById('customNav').style.display='none';
+    document.getElementById('customNav').style.opacity='0';
+
+    // document.getElementById('introSectionID').style.display='none';
+
+    // document.getElementById('quickFacts').style.display='none';
+    // document.getElementById('aboutMe').style.display='none';
+    // document.getElementById('skills').style.display='none';
+    // document.getElementById('personality').style.display='none';
+    const wrappers = document.querySelectorAll(".sectionAnimation");
+    wrappers.forEach((entry) => {
+    entry.setAttribute('style','display:none');
+    });
+
+    document.getElementById('navHomeID').style.display='none';
+    document.getElementById('navQuickFactsID').style.display='none';
+    document.getElementById('navTestimonialsID').style.display='none';
+    document.getElementById('navSkillsID').style.display='none';
+    document.getElementById('navPersonalityID').style.display='none';
+
+    // document.getElementById('').style.display='none';
+    // document.getElementById('').style.display='none';
+    // anime({
+    //   targets:'.sectionAnimation',
+    //   opacity:[1,0],
+    //   duration:500,
+    //   complete:function(){
+    //     wrappers.forEach((entry) => {
+    //       entry.setAttribute('style','display:none');
+    //     });
+    //   }
+    // });
+
+    let resumeOverview = document.getElementById('#resumeOverview').style;
+    resumeOverview.setAttribute('style','display:block');
+
+    
+
+  }
+
+
   render(){
   return (
       <div id="introSectionID" className="sectionAnimation" >
@@ -105,26 +159,37 @@ class Intro extends Component {
         </div>
 
         <div className='row navSubMenu'>
-        <p className='navP'>
-          You can either click to view <br></br>
-          the detailed or the overview version about me. <br></br>
-          Both are two different user experiences.</p>
+        <h4 className='navP'>
+        You have two choices.
+        </h4>
+        <p className='navP text-center'>
+         The first choice <br></br>
+          is to keep scrolling down <br></br> 
+          to see the indepth version about me.<br></br><br></br>
+        The second choice <br></br>
+          click on the fastforward-icon <br></br> 
+          and you will see an overview of me.<br></br><br></br>
+        
+        The choices are two different user experiences.</p>
           <div className='col w-25'>
+          <Link  to={"quickFacts"} className="nav-link" href="#">
+
             <button
               className="bg-transparent navSubIcon"
             >
               <FontAwesomeIcon
-                icon={faBookOpen}
+                icon={faArrowDown}
                 color="var(--primary-orange)"
                 className="fntAwesome navSubIcon"
               >
               </FontAwesomeIcon>
-              <p className="navP text-center">Full <br></br>version</p>
+              <p className="row navP text-center">Full <br></br>version</p>
 
             </button>
+            </Link>
           </div>          
           <div className='col w-25'>
-          <Link smooth={true} to={"personality"} className="nav-link" href="#">
+          <Link  to={"fastForwardID"} className="nav-link" href="#">
 
           
 
@@ -132,12 +197,13 @@ class Intro extends Component {
               className="bg-transparent navSubIcon"
             >
               <FontAwesomeIcon
-                icon={faClock}
+                icon={faFastForward}
                 color="var(--slate)"
                 className="fntAwesome navSubIcon "
+                onClick={this.handleClick}
               >
               </FontAwesomeIcon>
-              <p className="navP text-center" >Overview<br></br>version</p>
+              <p className="row navP text-center" >Overview<br></br>version</p>
 
             </button>
             </Link>
