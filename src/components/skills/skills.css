@@ -80,7 +80,7 @@
 }
 
 .skillPointGround {
-  background-color: var(--green-tint);
+  background-color: var(--primary-blue);
   padding: 4% !important;
   margin: 3% !important;
   font-size: 0.85rem ;

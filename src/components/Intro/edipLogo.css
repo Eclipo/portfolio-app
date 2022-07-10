@@ -84,7 +84,7 @@
 }
 
 .navP{
-  color:var(--slate);
+  color:var(--lightest-slate);
   text-align: left;
   display: inline-flex;
   margin: auto;

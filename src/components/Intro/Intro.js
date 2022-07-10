@@ -23,7 +23,9 @@ class Intro extends Component {
     document.body.style.backgroundColor = 'var(--primary-white)';
     
     document.getElementById('customNav').style.display='none';
-    document.getElementById('customNav').style.opacity='0';
+    document.getElementById('fullNavbarID').style.display='none';
+
+    // document.getElementById('customNav').style.opacity='0';
 
     // document.getElementById('introSectionID').style.display='none';
 
@@ -36,11 +38,6 @@ class Intro extends Component {
     entry.setAttribute('style','display:none');
     });
 
-    document.getElementById('navHomeID').style.display='none';
-    document.getElementById('navQuickFactsID').style.display='none';
-    document.getElementById('navTestimonialsID').style.display='none';
-    document.getElementById('navSkillsID').style.display='none';
-    document.getElementById('navPersonalityID').style.display='none';
 
     // document.getElementById('').style.display='none';
     // document.getElementById('').style.display='none';

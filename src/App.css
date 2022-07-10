@@ -229,7 +229,8 @@
     }
   
     .duckText{
-      width: 22.5rem !important;
+      max-width: 25rem !important;
+      /* max-width: 22.5rem !important; */
     }
 
     .seiouslyText{

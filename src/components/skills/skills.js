@@ -607,45 +607,24 @@ class Skills extends Component {
 
             <div className="row">
               <p className="duckText">
-                I can't fly in the front-end
-                like an eagle. <br></br>I can't dash in the back-end like a
-                greyhound.<br></br>I can't swim in the database like a fish.
-                <br></br> <br></br>
-                <span className="skillHighLighted">However...</span>
-                <br></br>
-                <br></br>
-                I can flap my wings around in the front-end.
-                <br></br>
-                I can waddle myself through the back-end. 
-                <br></br>
-                I can paddle in the database.
-              
-              </p>
-            </div>
-
-            <div className="row mt-3">
-          <h2 style={{ color: "var(--primary-blue"}}>Seriously now</h2>
-
-              <p className="seiouslyText">
-                I am currently a full-stack developer                 
-                <span className="skillHighLighted"> .Net and Angular</span>.
- 
-                I consider myself to have an solid base to rely on when it comes to the whole stack.
-                <br></br><br></br>
+                I am an intermediate fullstack developer and more which is why 
+                I choose a duck as to symbolize being a "jack of all trades but masters of none".
+                I can do front-end, back-end and business consulting.<br></br><br></br>
                 Skillwise I am definietly more                 
                 <span className="skillHighLighted"> "Lagom" </span>(intermediate in Swedish) 
-                when it comes to    <span className="skillHighLighted"> HTML, CSS, Javascript and SQL.</span>
-                <br></br><br></br>
-                I have programmed in various back-end languages during the last 7 years 
-                such as C++ and Java from my studies where I later switched to C# when I started to develop professionally.
-                Therefore I feel confident regarding programming since I have learned different languages throughout the years.  
+                when it comes to    <span className="skillHighLighted"> HTML, CSS, Javascript and SQL. </span>
+                I wished I could be just as confident with C# (pendling from noob to 'but really depends on how I feel. 
+                I have developed in various languages during the last 7 years 
+                such as C++ and Java from my studies. Later on I switched to C# when I began to develop professionally.
                 <br></br><br></br>
                 Since I'm not a senior developer (yet) I occasionally need support from senior developers
                 who can guide and exchange ideas in order for me to be productive and efficient.
+                <br></br>
+                Finally I suffer from the Sisyphus curse which the skill matrix above is displaying. <br></br>
+                The better I get the more I realise how much I still need to learn.<br></br>
+                e
               </p>
-
-          </div>
-
+            </div>
           </div>
       </div>
     );

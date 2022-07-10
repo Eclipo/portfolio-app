@@ -22,7 +22,9 @@ export const Navbar = () => {
     
     document.getElementById('customNav').style.display='none';
     document.getElementById('customNav').style.opacity='0';
+    document.getElementById('fullNavbarID').style.display='none';
 
+    
     // document.getElementById('introSectionID').style.display='none';
 
     // document.getElementById('quickFacts').style.display='none';
@@ -60,7 +62,7 @@ export const Navbar = () => {
       </nav>
 
         <nav id ="customNav" className="navbar d-block m-3 sticky-top navbar-collapse navbar-light ">
-      <div className="container-fluid m-0 p-0" >
+      <div className="container-fluid m-0 p-0" id ="fullNavbarID">
         
        
         <button id="navbarTogglerID" className="navbar-toggler" type="button" 

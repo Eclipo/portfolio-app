@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import "./fastOverview.css";
+import "./overview.css";
 import "../../IntersectionObserver.js";
 // import { ExperienceAnimation } from "./experienceAnimation.js";
 // import { animate } from "./experienceFunctions.js";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-class FastOverview extends Component {
+class Overview extends Component {
  
   render() {
     return (
-      <div id="fastForwardID">
+      <div id="overviewID">
 
       
       <h1 style={{color:'red'}}>FastOverview</h1>
@@ -19,4 +19,4 @@ class FastOverview extends Component {
   }
 }
 
-export default FastOverview;
+export default Overview;
