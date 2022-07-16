@@ -30,6 +30,8 @@
     --light-navy: #112240;
     --lightest-navy: #233554;
     --navy-shadow: rgba(2, 12, 27, 0.7);
+    --darkest-slate: #1d232f;
+
     --dark-slate: #495670;
     --slate: #8892b0;
     --light-slate: #a8b2d1;
@@ -84,6 +86,43 @@
     justify-content: center;
     text-align: center;
   }
+
+  /* #introSectionID{
+    overflow: hidden;
+    z-index: -1000 !important;
+  }
+
+  #introSectionID:after,
+  #introSectionID:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  min-height:90vh;
+  width: 100% ;
+  transform-origin: right top;
+}
+#introSectionID:before {
+  top: 18rem;
+  min-height:90vh;
+  width: 100%;
+  background: var(--darkest-navy);
+  left: 0%;
+  transform: skewY(-28deg);
+  z-index: -1;
+  opacity: 0.8;
+
+
+}
+#introSectionID:after {
+  top:-90%;
+  background: var(--dark-navy);
+
+  transform: skewY(-15deg);
+  opacity: 0.4;
+  z-index: -1;
+  opacity: 0.4;
+} */
+
 
   .sectionLine{
     width: 100% !important;
@@ -157,6 +196,7 @@
   {
   font-family: 'Roboto', sans-serif;
   background-color: var(--navy);
+  /* background: linear-gradient(to right, var(--navy), var(--lightest-navy)); */
   }
 
   h1{
@@ -323,13 +363,23 @@
   
   /************************* NAVBAR *********************************/
 
+  .navbar-light .navbar-toggler{
+    border-color: none !important;
+    border: none !important;
+  }
+  
+  .navbar-toggler:focus{
+    box-shadow: none !important;
+
+  }
+
   .navSubMenu{
     /* border-bottom: 0.25rem var(--slate) solid; */
     /* display: flex; */
     /* background-color: red; */
     /* margin-top: -32rem; */
     margin-left: 0.1%;
-  justify-content: space-between;
+     /* justify-content: space-between; */
   }
   
   .navSubIcon{
@@ -338,51 +388,74 @@
     background-color: transparent;
   }
   .navSubIcon:hover{
-    color: var(--primary-green);
+    color: var(--primary-white);
   }
 
   
   #customNav
   {
     z-index:1000;
-    background-color: transparent;
+    background-color: none;
     width:12vh;
     height: 1vh;
-    margin-top: 0.5vh;
   }
   
   #navbarTogglerID {
-    border-color: var(--slate);
+    /* border-color: var(--slate);
     border-width:0.2rem;
-    border-style:solid;
+    border-style:solid; */
     position: relative;
-    background-color: transparent;
+    background-color: none;
+    position: fixed;
+    /* top:0.75rem; */
+    /* top: 0rem; */
   }
 
+  #navbarSupportedContent{
+    position: fixed;
+    top:-0.5rem;
+    /* left:0.1rem; */
+    /* width: 100vw; */
+    /* height: 150vh !important; */
+    z-index: -2;
+
+  }
   #navIconID{
   color:var(--primary-orange);
   width: 1rem;
   }
-
+/* 
   #navIconID:hover{
     color:var(--slate);
-  }
+  } */
 
   nav
   {
     z-index:2;
     width: fit-content !important;
+   
   }
 
   nav a.nav-link
   {
     /* font-size: 0.65rem !important; */
-    font-weight: bolder !important;
     /* letter-spacing: normal !important; */
     padding: 0;
     cursor: pointer;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    /* margin-left: 1rem; */
+    
+    display: block;
+    
+    width: 80%;
+    margin-left: 2rem;
+    margin-bottom: 0.25rem;
+
+  }
+
+  a.nav-link h3{
+    /* font-weight: bolder !important; */
+    text-align: left !important;
+
   }
 
   nav ul li
@@ -391,16 +464,19 @@
   }
 
   .navbar-nav{
-    background-color:rgba(2, 12, 27, 0.829);
+    background-color:var(--darkest-slate);
     border-radius: 18px;
-    border-color: var(--slate);
+    height:100vh;
+    width: 100vw;
+    /* border-color: var(--slate);
     border-width: 0.3rem;
-    border-style: solid;
+    border-style: solid; */
   }
 
   .navbar-nav > li > a
   {
-    color:var(--primary-orange) !important;
+    color:var(--primary-white) !important;
+    padding:0.5rem !important;
   }
 
   .navbar-brand
@@ -412,13 +488,14 @@
 
   .navbar-nav > li > a.active, .navbar-nav > li > a:hover
   {
-    border-bottom: 0.1875rem solid var(--slate) !important;
-    color:var(--lightest-slate) !important;
+    border-bottom: 0.1875rem solid var(--dark-slate) !important;
+    color:var(--slate) !important;
   }
 
   .navbar-nav > li > a:focus
   {
-    border-bottom: 0.1875rem solid var(--slate) !important;
-    color:var(--lightest-slate) !important;
+    border-bottom: 0.1875rem solid var(--dark-slate) !important;
+    color:var(--dark-slate) !important;
+    background: var(--primary-white);
   }
 

@@ -1,8 +1,10 @@
 
 import {React,useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars,faFastForward,faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import {faBars, faClose, faFastForward,faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-scroll';
+import anime from 'animejs';
+import disableScroll from 'disable-scroll';
 // import '../components/navColorListener.js';
 
 
@@ -43,56 +45,80 @@ export const Navbar = () => {
     document.getElementById('navPersonalityID').style.display='none';
   };
 
+  const animeToggle = anime.timeline({
+    targets:'#navIconID',
+    autoplay:false,
+    loop:false
+  });
+
+  animeToggle.add({
+    duration:2500,
+    rotate:'2turn'
+  });
+  
+
+  
   const handleClick = () => {
     //  toggle
     setIsActive(current => !current);
 
+    animeToggle.restart();    
+    
+    // if(isActive){
+    //   disableScroll.on();
+    // }
+
+    // else{
+    //   disableScroll.of();
+    // }
     // or set to true
     // setIsActive(true);
   };
 
     return (
-     <div style={{marginTop:'-3rem'}}>
+     <div >
 
      
-      <nav id ="overviewNav" className="navbar d-block m-3 sticky-top navbar-collapse navbar-light ">
+      <nav id ="overviewNav" className="navbar d-block sticky-top navbar-collapse">
         <div className="container-fluid m-0 p-0" >
       
         </div>
       </nav>
 
-        <nav id ="customNav" className="navbar d-block m-3 sticky-top navbar-collapse navbar-light ">
+        <nav id ="customNav" className="navbar d-block sticky-top navbar-collapse">
       <div className="container-fluid m-0 p-0" id ="fullNavbarID">
         
        
-        <button id="navbarTogglerID" className="navbar-toggler" type="button" 
-         style={{
-          borderColor: isActive ? 'var(--primary-orange)' : 'var(--slate)'
-        }}
+        <button id="navbarTogglerID" className="navbar-toggler bg-transparent" type="button" 
+       
         onClick={handleClick}
+        
         data-bs-toggle="collapse" 
         data-bs-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <FontAwesomeIcon icon={faBars} id ="navIconID" style={{
-          color: isActive ? 'var(--slate)' : 'var(--primary-orange)' 
+        <FontAwesomeIcon icon={ isActive ? faClose : faBars } id ="navIconID" style={{
+          color: isActive ? 'var(--slate)' : 'var(--primary-blue)' 
         }}/>
         </button>
       
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
   
         
-          <ul className="navbar-nav pb-3 pt-3 mt-2" >
-          <div className='m-auto'>
-          <Link  to={"fastForwardID"} className="nav-link" href="#">
+          <ul className="navbar-nav p-1 mt-2" >
+          <div className='mx-auto d-flex'>
+          <Link  to={"fastForwardID"} className="" href="#">
 
           
 
             <button
-              className="bg-transparent navSubIcon"
+              className="navSubIcon p-1 mb-4"
+              style={{
+                borderRadius:'18px',
+              borderColor:'var(--primary-orange)'}}
             >
               <FontAwesomeIcon
                 icon={faFastForward}
-                color="var(--slate)"
+                color="var(--primary-orange)"
                 className="fntAwesome navSubIcon "
                 onClick={handleMode}
               >
@@ -104,44 +130,44 @@ export const Navbar = () => {
           
         </div>
             <li className="nav-item active">
-              <Link smooth={true} to={"introSectionID"} className="nav-link" href="#"><p>HOME</p><span className="sr-only">(current)</span></Link>
+              <Link smooth={true} to={"introSectionID"} className="nav-link" href="#" tabIndex={0}><h3>HOME</h3><span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
-              <Link  smooth={true} to={"quickFacts"} className="nav-link" href="#"><p>Quick Facts</p></Link>
-            </li>
-
-            <li className="nav-item">
-              <Link  smooth={true} to={"testimonials"} className="nav-link" href="#"><p>About</p></Link>
+              <Link  smooth={true} to={"quickFacts"} className="nav-link" href="#" tabIndex={1}><h3>Quick Facts</h3></Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth={true} to={"skills"} className="nav-link" href="#"><p>Skills</p></Link>
+              <Link  smooth={true} to={"testimonials"} className="nav-link" href="#" tabIndex={2}><h3>About</h3></Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth={true} to={"personality"} className="nav-link" href="#"><p>Personality</p></Link>
+              <Link smooth={true} to={"skills"} className="nav-link" href="#" tabIndex={3}><h3>Skills</h3></Link>
+            </li>
+
+            <li className="nav-item">
+              <Link smooth={true} to={"personality"} className="nav-link" href="#" tabIndex={4}><h3>Personality</h3></Link>
             </li>
             
 
             <li className="nav-item">
-              <Link smooth={true} to={"resumeOverview"} className="nav-link" href="#"><p>Resumé Overview</p></Link>
+              <Link smooth={true} to={"resumeOverview"} className="nav-link" href="#" tabIndex={5}><h3>Resumé Overview</h3></Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth={true} to={"experiencesID"} className="nav-link" href="#"><p>Major experiences</p></Link>
+              <Link smooth={true} to={"experiencesID"} className="nav-link" href="#" tabIndex={6}><h3>Major experiences</h3></Link>
             </li>
 
             <li className="nav-item">
-            <Link smooth={true} to={"portfolioID"} className="nav-link" href="#"><p>Portfolio</p></Link>
+            <Link smooth={true} to={"portfolioID"} className="nav-link" href="#" tabIndex={7}><h3>Portfolio</h3></Link>
             </li>
       
             <li className="nav-item">
-              <a className="nav-link" href="#">Reviews</a>
+              <a className="nav-link" href="#" tabIndex={8}><h3>Reviews</h3></a>
             </li>
 
            
-            <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+            <li className="nav-item mb-5">
+              <a className="nav-link" href="#" tabIndex={9}><h3>Contact</h3></a>
             </li>
            
             
