@@ -138,7 +138,7 @@ class Experiences extends Component {
           </table>
         </div>
 
-        <div className="container expTable expInfo mb-2" id="_container">
+        <div className="d-block container expTable expInfo mb-2" id="_container">
           <div className="row expInfo" id="_periodSystem">
             <div className="col m-1">
               <div className="row">
