@@ -69,11 +69,7 @@
     width: 15%;
   }
 
-  #KnucklesContainerID {
-    display: flex;
-    margin-top: -15rem;
-    transform: scale(0.45);
-  }
+  
 }
 
 @media (min-width: 80rem) {

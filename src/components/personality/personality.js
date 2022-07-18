@@ -58,9 +58,9 @@ class Personality extends Component {
           <tbody>
             <tr className="personalityBaseRow">
               <td>
-                <p className="personalityBaseTraits" id="attributeID">
+                <h4 className="personalityBaseTraits" id="attributeID">
                   Attributes
-                </p>
+                </h4>
               </td>
               <td>
                 <div className="personalityBaseTraits" id="attributeOneID">
@@ -102,7 +102,7 @@ class Personality extends Component {
             <tr className="personalityTraitsRow">
               <td>
                 {" "}
-                <p className="personalityTraits">Honesty</p>
+                <h4 className="personalityTraits">Honesty</h4>
               </td>
               <td>
                 <div
@@ -151,7 +151,7 @@ class Personality extends Component {
             <tr className="personalityTraitsRow">
               <td>
                 {" "}
-                <p className="personalityTraits">Focus</p>
+                <h4 className="personalityTraits">Focus</h4>
               </td>
               <td>
                 <div
@@ -200,7 +200,7 @@ class Personality extends Component {
             <tr className="personalityTraitsRow">
               <td>
                 {" "}
-                <p className="personalityTraits">Structure</p>
+                <h4 className="personalityTraits">Structure</h4>
               </td>
               <td>
                 <div
@@ -236,7 +236,7 @@ class Personality extends Component {
             <tr>
               <td>
                 {" "}
-                <p className="personalityTraits">Temper</p>
+                <h4 className="personalityTraits">Temper</h4>
               </td>
               <td>
                 <div
@@ -285,7 +285,7 @@ class Personality extends Component {
             <tr className="personalityTraitsRow">
               <td className="columnHeaderTraits">
                 {" "}
-                <p className="personalityTraits">Patience</p>
+                <h4 className="personalityTraits">Patience</h4>
               </td>
               <td>
                 <div
@@ -322,7 +322,7 @@ class Personality extends Component {
             <tr>
               <td>
                 {" "}
-                <p className="personalityTraits">Multitasking</p>
+                <h4 className="personalityTraits">Multitasking</h4>
               </td>
               <td>
                 <div
@@ -356,7 +356,7 @@ class Personality extends Component {
             <tr className="personalityTraitsRow">
               <td>
                 {" "}
-                <p className="personalityTraits">Empathy</p>
+                <h4 className="personalityTraits">Empathy</h4>
               </td>
               <td>
                 <div
@@ -399,7 +399,7 @@ class Personality extends Component {
             <tr>
               <td>
                 {" "}
-                <p className="personalityTraits">Stubborn</p>
+                <h4 className="personalityTraits">Stubborn</h4>
               </td>
               <td>
                 <div

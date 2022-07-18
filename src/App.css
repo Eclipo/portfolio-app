@@ -29,6 +29,7 @@
     --navy: #0a192f;
     --light-navy: #112240;
     --lightest-navy: #233554;
+    --tint-navy:#7cacfd;
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --darkest-slate: #1d232f;
 
@@ -54,10 +55,10 @@
 
   /* CSS trick, markerar ut elementen  */
     
-  /*
-     *{
+  
+     /* *{
       outline: 1px solid red;
-    }       
+    }        */
 
 
     /* Färgblindhet */
@@ -262,8 +263,22 @@
   .mokaTableContainer{
     transform: scale(0.65) !important;
   }
+
+  #KnucklesContainerID {
+    display: flex;
+    margin-top: -15rem;
+    transform: scale(0.45);
+  }
+
 }
   @media (min-width: 30rem) {
+
+    #KnucklesContainerID {
+      display: flex;
+      margin-top: -15rem;
+      transform: scale(0.45);
+    }
+
     .typed-text{
       height: 5rem;
     }
@@ -293,6 +308,16 @@
     }
   } 
 
+  @media (min-width: 60rem) {
+    #KnucklesContainerID {
+      display: block;
+      margin-top: -12rem !important;
+      transform: scale(0.6) !important;
+      z-index: -2 !important;
+    }
+  }
+
+
   @media (min-width: 120rem) {
 
     .carousel-root{
@@ -313,17 +338,16 @@
       margin-top: 9rem !important ;
     }
 
-    
+/*    
     .portfolioTextContainer{
       width:30rem !important;
       transform: scale(1.5);
       margin-top: 12rem !important;
-    }
+    } */
 
     #KnucklesContainerID {
-      display: block;
-      margin-top: 12.5vh !important;
-      transform: scale(1) !important;;
+      margin-top: -9rem !important;
+      transform: scale(0.68) !important;
     }
 
     p{
@@ -373,6 +397,11 @@
 
   }
 
+  .navBtnMenu{
+    display:block;
+    margin-top: 4rem;
+    }
+
   .navSubMenu{
     /* border-bottom: 0.25rem var(--slate) solid; */
     /* display: flex; */
@@ -421,8 +450,7 @@
 
   }
   #navIconID{
-  color:var(--primary-orange);
-  width: 1rem;
+  color:var(--tint-navy);
   }
 /* 
   #navIconID:hover{

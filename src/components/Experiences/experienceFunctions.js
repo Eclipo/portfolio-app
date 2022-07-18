@@ -93,7 +93,7 @@ export const animate = (inputID) => {
 
                         linkCustomerTitle = "fintech industry";
                         linkToCustomer = "";
-                        period.innerText = "20-02 - Present";
+                        period.innerText = "22-02 - Present";
                         system.innerText = "Fintech application";
 
                         descOneEl.innerText =

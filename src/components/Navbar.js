@@ -1,7 +1,7 @@
 
-import {React,useState} from 'react';
+import {React,useRef,useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars, faClose, faFastForward,faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import {faBars, faClose, faFastForward,faArrowDown, faTableCells } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-scroll';
 import anime from 'animejs';
 import disableScroll from 'disable-scroll';
@@ -12,7 +12,32 @@ export const Navbar = () => {
 
   const [isActive, setIsActive] = useState(false);
 
+  const [isRed, setRedOutline] = useState(false);
+
+  const redToggle = useRef();
+  redToggle.current = isRed;
+
   // const [change, changeMode] = useState(false);
+
+  const outlineMode = () => {
+    setRedOutline(current => !current);
+
+    let doc = document.querySelectorAll('*');
+    if(redToggle.current === false){
+      doc.forEach(el => {
+        el.style.outline='1px solid red';
+      }); 
+    }
+
+    else{
+      doc.forEach(el => {
+        el.style.outline='';
+      }); 
+    }
+  
+    
+  }
+ 
 
   const handleMode = () => {
     //  toggle
@@ -97,7 +122,7 @@ export const Navbar = () => {
         data-bs-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <FontAwesomeIcon icon={ isActive ? faClose : faBars } id ="navIconID" style={{
-          color: isActive ? 'var(--slate)' : 'var(--primary-blue)' 
+          color: isActive ? 'var(--slate)' : 'var(--tint-navy)' 
         }}/>
         </button>
       
@@ -105,11 +130,8 @@ export const Navbar = () => {
   
         
           <ul className="navbar-nav p-1 mt-2" >
-          <div className='mx-auto d-flex'>
-          <Link  to={"fastForwardID"} className="" href="#">
-
-          
-
+          <div className='navBtnMenu'>
+          <Link  to={"fastForwardID"} className="col" href="#">
             <button
               className="navSubIcon p-1 mb-4"
               style={{
@@ -127,6 +149,25 @@ export const Navbar = () => {
 
             </button>
             </Link>
+
+            <button
+              className="navSubIcon p-1 mb-4"
+              style={{
+                borderRadius:'18px',
+              borderColor:'var(--primary-orange)'}}
+            >
+              <FontAwesomeIcon
+                icon={faTableCells}
+                style={{
+                  color : isRed ? 'red' : 'var(--slate)' 
+                }}
+                className="fntAwesome navSubIcon "
+                onClick={outlineMode}
+              >
+              </FontAwesomeIcon>
+              <p className="row navP text-center" >Red outline<br></br>tool</p>
+
+            </button>
           
         </div>
             <li className="nav-item active">
