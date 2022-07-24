@@ -40,9 +40,21 @@ class Portfolio extends Component {
         <div className="flexCenter mb-5" id="portfolioContainerID">
           <div className="flexCenter portfolioTextContainer">
             <h2>This is it</h2>
-              <p>This website is my portfolio and consists of 
-              React, Bootstrap, AnimeJS,CSS and Javascript. 
-              Down below you can read the story about this website.</p>
+              <p>TIll today I have unfortunately no other projects that 
+                I am comfortable in sharing with you. 
+                Work related stuff is a big no no.<br></br><br></br>
+                However I will surely make a project which combines 
+                Angular, C# and SQL. <br></br>
+                
+                Till then you can read about the story of my first project 
+                in my portfolio which is this very website. It consists of 
+              React,Bootstrap,AnimeJS,CSS and Javascript.
+
+              <br></br><br></br>
+              The main reason of this website is to let friends, 
+              colleagues and others to know more about me.
+              This website actually helped me to land my job within the fintech group at CGI.
+              </p>
 
             <h3>The story</h3>
 
@@ -337,7 +349,7 @@ class Portfolio extends Component {
               
               <p>
                 Despite my failures I still wanted to achieve one of my dreams. 
-                Making a portfolio website that would be entertaining and mobile responsive.                
+                Making a personel website that would be entertaining and mobile responsive.                
                 However I was still a novice and I was left with no choice... but to buy an Udemy course 
                 about building a portfolio website combining React and Bootstrap.
                 On top of that I would use AnimeJS for the animations.

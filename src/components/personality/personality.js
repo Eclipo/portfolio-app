@@ -236,7 +236,7 @@ class Personality extends Component {
             <tr>
               <td>
                 {" "}
-                <h4 className="personalityTraits">Temper</h4>
+                <h4 className="personalityTraits">Emotional</h4>
               </td>
               <td>
                 <div
@@ -466,10 +466,16 @@ class Personality extends Component {
                   
                   <div className="card-body">
                     <h3 className="card-title" id="honestyCard_h3">Honesty</h3>
+                    <h4 id="honestyCard_h4">I'm just telling the truth</h4>
                     <p className="card-text" id="honestyCard_p">
-                      Growing up in a Kurdish familly teaches you how to be
-                      too <span className="highlighted">honest</span> for your own good.
-                      Later in life I have learned to be more diplomatic and restrictive regarding my opinions.</p>
+                      I grew up in a Kurdish familly where the phrase "I'm just telling the truth"
+                      became a mantra and we sure did get into conflicts with each other because of too much 
+                      <span className="highlighted"> honesty</span>.
+
+                      <br></br><br></br>
+                      Later in life (30+ years) I finally understood I have another take on honesty compared to most native swedes.
+                      Nowdays I try to be more diplomatic while I encourage others to be more honest with me.
+                    </p> 
                   </div>
                 </div>
               </div>
@@ -484,11 +490,13 @@ class Personality extends Component {
                   </div>
                   
                   <div className="card-body">
-                    <h3 className="card-title" id="stubbornCard_h3">Stubbornness</h3>
+                    <h3 className="card-title" id="stubbornCard_h3">Stubborn</h3>
+                    <h4  id="stubbornCard_h4">Never give up</h4>
                     <p className="card-text" id="stubbornCard_p">
-                      <span className="highlighted">Stubbornness</span> is an
-                      another familly attribute. My ancestors and familly have overcome
-                      various obstacles throughout our history.
+                      Being<span className="highlighted"> stubborn </span>is an
+                      another familly attribute and it is both a curse and a blessing.<br></br><br></br>
+                      Throughout life I have faced various obstacles such awhether it is at work or in private then I will try very hard to solve it.
+                      Though as I have grown wiser with the years I try not simply brute-forcing is not an efficient method.
                     </p>
                   </div>
                 </div>
@@ -580,7 +588,7 @@ class Personality extends Component {
                       </div>
                       
                       <div className="card-body">
-                        <h3 className="card-title" id="temperCard_h3">Temper</h3>
+                        <h3 className="card-title" id="temperCard_h3">Emotional</h3>
                         <p className="card-text" id="temperCard_p">
                          Most often I am very calm but when I suffer some setbacks 
                          I do display some <span className="highlighted">temper</span>.

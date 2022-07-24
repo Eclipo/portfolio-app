@@ -116,6 +116,7 @@ export async function playPostFunc(inputBoolean) {
       
       talkBubbleCovid.add({
         targets:'#talkCovidID',
+        translateX:0,
         change:function(){
           setText('I will help you!','#avatarEdipMouthID','#64ffda');
         }

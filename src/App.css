@@ -284,7 +284,7 @@
     }
   
     .duckText{
-      max-width: 25rem !important;
+      max-width: 30rem !important;
       /* max-width: 22.5rem !important; */
     }
 
@@ -426,17 +426,19 @@
     z-index:1000;
     background-color: none;
     width:12vh;
-    height: 1vh;
+    /* height: 5rem; */
+    top:0.5rem !important;
+    /* top:0.75rem !important; */
   }
-  
+
   #navbarTogglerID {
     /* border-color: var(--slate);
     border-width:0.2rem;
     border-style:solid; */
     position: relative;
     background-color: none;
-    position: fixed;
-    /* top:0.75rem; */
+    position: sticky !important;
+    /* margin-top:-0.75rem !important; */
     /* top: 0rem; */
   }
 

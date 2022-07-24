@@ -194,13 +194,14 @@ background-color: var(--primary-green);
 border-width: 0.25rem;
 border-style: solid;
 border-color: var(--primary-green);
-width: 15rem;
+width: 25rem;
 height:fit-content;
 margin: 2.5rem;
+}
 
-
-
-
+.personalityCard h4{
+  margin:auto;
+  text-align: center;
 }
 
 .personalityCloseBtn{
@@ -215,7 +216,7 @@ margin: 2.5rem;
   display: none;
 }
 
-.personalityCard h3{
+.personalityCard h3, .personalityCard h4{
   color: var(--light-navy);
 }
 

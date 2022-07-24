@@ -110,7 +110,7 @@ export const Navbar = () => {
         </div>
       </nav>
 
-        <nav id ="customNav" className="navbar d-block sticky-top navbar-collapse">
+        <nav id ="customNav" className="navbar fixed-top navbar-nav-scroll navbar-collapse bg-transparent">
       <div className="container-fluid m-0 p-0" id ="fullNavbarID">
         
        

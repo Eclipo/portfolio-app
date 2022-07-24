@@ -5,14 +5,14 @@ export async function playPostFunc(inputBoolean) {
 
     const moveBetweenWidth_Inter = document.getElementById("skillElemAndInter");
     const moveBetweenWidth_Noob = document.getElementById("skillElemAndNoob");
-    const moveBetweenWidth_Noob_To_Inter = document.getElementById(
-      "skillNoobElemAndInter"
-    );
+    // const moveBetweenWidth_Noob_To_Inter = document.getElementById(
+    //   "skillNoobElemAndInter"
+    // );
     
-    const moveLeftNoobinter =
-      "-" + moveBetweenWidth_Noob_To_Inter.offsetWidth.toString() + "px";
-    const moveRightNoobinter =
-      moveBetweenWidth_Noob_To_Inter.offsetWidth.toString() + "px";
+    // const moveLeftNoobinter =
+    //   "-" + moveBetweenWidth_Noob_To_Inter.offsetWidth.toString() + "px";
+    // const moveRightNoobinter =
+    //   moveBetweenWidth_Noob_To_Inter.offsetWidth.toString() + "px";
     
     const moveLeft =
       "-" + moveBetweenWidth_Noob.offsetWidth.toString() + "px";
@@ -31,11 +31,11 @@ export async function playPostFunc(inputBoolean) {
         direction:'alternate'
       });
       
-      const postAnimationNoobElemAndInter = anime.timeline({
-        loop: true,
-        autoplay: false,
-        direction:'alternate'
-      });
+      // const postAnimationNoobElemAndInter = anime.timeline({
+      //   loop: true,
+      //   autoplay: false,
+      //   direction:'alternate'
+      // });
       
       postAnimationElemAndInter.add({
         targets: "#skillElemAndInter",
@@ -53,13 +53,13 @@ export async function playPostFunc(inputBoolean) {
         delay: anime.stagger(250)
       });
     
-      postAnimationNoobElemAndInter.add({
-        targets: "#skillNoobElemAndInter",
-        translateX: [moveRightNoobinter, moveLeftNoobinter],
-        easing: "easeInOutQuad",
-        direction: "alternate",
-        delay: anime.stagger(250)
-      });
+      // postAnimationNoobElemAndInter.add({
+      //   targets: "#skillNoobElemAndInter",
+      //   translateX: [moveRightNoobinter, moveLeftNoobinter],
+      //   easing: "easeInOutQuad",
+      //   direction: "alternate",
+      //   delay: anime.stagger(250)
+      // });
 
       const duckMouthUppderAnim = anime.timeline({
         loop: true,
@@ -108,7 +108,7 @@ export async function playPostFunc(inputBoolean) {
   if(inputBoolean === true){
       postAnimationElemAndInter.play();
       postAnimationElemAndNoob.play();
-      postAnimationNoobElemAndInter.play();
+      // postAnimationNoobElemAndInter.play();
 
       duckEyeBrowAnim.play();
       duckMouthUnderAnim.play();

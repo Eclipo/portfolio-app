@@ -20,7 +20,7 @@ export const startAttributeAnimation = (inputID) => {
         });
 
         anime({
-            targets:card+'_h3',
+            targets:[card+'_h3',card+'_h4'],
             color:'#33d684'
         });
         
@@ -65,7 +65,7 @@ export const resetAttributeAnimation = (inputID) => {
     });
 
     anime({
-        targets:card+'_h3',
+        targets:[card+'_h3',card+'_h4'],
         color:'#233554'    
     });
 

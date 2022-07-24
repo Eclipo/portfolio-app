@@ -451,7 +451,7 @@ class Skills extends Component {
                 </td>
                 <td>
                   {" "}
-                  <p className="skill backEndTheme" id="skillNoobElemAndInter">
+                  <p className="skill backEndTheme" id="skillElemAndInter">
                     C#
                   </p>
                 </td>
@@ -490,8 +490,8 @@ class Skills extends Component {
                 </td>
                 <td>
                   {" "}
-                  <p className="skill rolesTheme" id="skillElemAndInter">
-                    Solution <br></br>Architect
+                  <p className="skill rolesTheme">
+                    Tester
                   </p>
                 </td>
                 <td>
@@ -564,7 +564,7 @@ class Skills extends Component {
                 </td>
                 <td>
                   {" "}
-                  <p className="skill rolesTheme" id="skillNoobElemAndInter">
+                  <p className="skill rolesTheme" id="skillElemAndInter">
                     Developer
                   </p>
                 </td>
@@ -607,22 +607,22 @@ class Skills extends Component {
 
             <div className="row">
               <p className="duckText">
-                I am an intermediate fullstack developer and more which is why 
-                I choose a duck as to symbolize being a "jack of all trades but masters of none".
-                I can do front-end, back-end and business consulting.<br></br><br></br>
-                Skillwise I am definietly more                 
-                <span className="skillHighLighted"> "Lagom" </span>(intermediate in Swedish) 
-                when it comes to    <span className="skillHighLighted"> HTML, CSS, Javascript and SQL. </span>
-                I wished I could be just as confident with C# (pendling from noob to 'but really depends on how I feel. 
-                I have developed in various languages during the last 7 years 
-                such as C++ and Java from my studies. Later on I switched to C# when I began to develop professionally.
+                I am an intermediate fullstack developer who 
+                has previous experience in testing and business consulting.<br></br>
+                My duck avatar means I am "jack of all trades but masters of none" 
+                (a duck can fly,walk and swim...slowly though).
                 <br></br><br></br>
-                Since I'm not a senior developer (yet) I occasionally need support from senior developers
-                who can guide and exchange ideas in order for me to be productive and efficient.
+                Regarding coding I am more                  
+                <span className="skillHighLighted"> "Lagom" </span>(intermediate in Swedish) 
+                when it comes to <span className="skillHighLighted"> HTML, CSS and  Javascript. </span>
+                While <span className="skillHighLighted">C# and SQL</span> is not far behind.
+                <br></br><br></br>
+
+                In order for me to be an efficient developer I need to get familliar 
+                with the codebase and <span className="skillHighLighted"> occasionally </span> 
+                I need support from senior developers
+                who can guide and exchange ideas with me.
                 <br></br>
-                Finally I suffer from the Sisyphus curse which the skill matrix above is displaying. <br></br>
-                The better I get the more I realise how much I still need to learn.<br></br>
-                e
               </p>
             </div>
           </div>
