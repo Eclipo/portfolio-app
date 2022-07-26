@@ -97,3 +97,27 @@ myObserver.observe(portfolioSection);
 
 },100);
 
+
+// var navbar = document.querySelector(".containerNavbar");
+
+// Setup isScrolling variable
+var isScrolling;
+
+// Listen for scroll events
+window.addEventListener('scroll', function ( event ) {
+  var navbar = document.querySelector(".containerNavbar");
+
+	// Clear our timeout throughout the scroll
+	window.clearTimeout( isScrolling );
+  // navbar.classList.remove("fixed-top");
+	// Set a timeout to run after scrolling ends
+	isScrolling = setTimeout(function() {
+   
+    // navbar.classList.add("fixed-top");
+    navbar.setAttribute("top",(window.screenY+12).toString());
+		// Run the callback
+		console.log( 'Scrolling has stopped.' );
+
+	}, 66);
+
+}, false);

@@ -25,6 +25,7 @@ function App() {
       <ResumeOverview></ResumeOverview>
       <Experiences></Experiences>
       <Portfolio></Portfolio>
+
     </>
   );
 }

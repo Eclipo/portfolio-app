@@ -442,7 +442,8 @@ class Personality extends Component {
           </table>
           <div className="personalityTextContainer">
             <h2 className="mb-5">About <br></br>My personality</h2>
-   
+            <p>The personality matrix above should not be taken too seriously. I had great fun doing the animations for them. 
+              On the other hand I do want to be a bit more personal with who I am.</p>
            <h3 className="brokenBanner">
             <div className="d-inline-block brokenLetterC">C</div>
             <span >L</span>

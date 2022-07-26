@@ -419,7 +419,31 @@
   .navSubIcon:hover{
     color: var(--primary-white);
   }
+/* default state */
+.containerNavbar {
+  position: relative;
+  background-color: none;
+  width:100vw;
+  /* default colors + transition */
+  /* background-color: white; */
+  /* color: black; */
+  /* transition: all 0.3s ease-out; */
+}
+/* scrolling state */
+.containerNavbar.fixed-top {
 
+  position:fixed;
+  /* top: 0; */
+  left:0;
+  right:0;
+  /* height:5rem; */
+  /* width: 100%; */
+  background-color: none;
+  /* transition: all 1s ease-out; */
+  /* scrolling colors */
+  /* background-color: black;
+  color: white; */
+}
   
   #customNav
   {
@@ -428,6 +452,8 @@
     width:12vh;
     /* height: 5rem; */
     top:0.5rem !important;
+    position:sticky;
+    position:-webkit-sticky;
     /* top:0.75rem !important; */
   }
 
@@ -437,7 +463,9 @@
     border-style:solid; */
     position: relative;
     background-color: none;
-    position: sticky !important;
+    position: sticky;
+    position:-webkit-sticky;
+
     /* margin-top:-0.75rem !important; */
     /* top: 0rem; */
   }

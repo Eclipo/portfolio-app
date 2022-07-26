@@ -5,6 +5,8 @@ import {faBars, faClose, faFastForward,faArrowDown, faTableCells } from '@fortaw
 import {Link} from 'react-scroll';
 import anime from 'animejs';
 import disableScroll from 'disable-scroll';
+import "../IntersectionObserver.js";
+
 // import '../components/navColorListener.js';
 
 
@@ -101,16 +103,16 @@ export const Navbar = () => {
   };
 
     return (
-     <div >
+     <div className="containerNavbar fixed-top">
 
      
-      <nav id ="overviewNav" className="navbar d-block sticky-top navbar-collapse">
+      <nav id ="overviewNav" className="navbar">
         <div className="container-fluid m-0 p-0" >
       
         </div>
       </nav>
 
-        <nav id ="customNav" className="navbar fixed-top navbar-nav-scroll navbar-collapse bg-transparent">
+        <nav id ="customNav" className="navbar bg-transparent">
       <div className="container-fluid m-0 p-0" id ="fullNavbarID">
         
        
