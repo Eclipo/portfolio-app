@@ -8,10 +8,9 @@
 }
 
 .btnPlay {
-  margin-bottom: 0.5rem;
   background-color: "transparent";
-  border-color: "transparent";
-  border: none;
+  border-color: var(--primary-light-green);
+  /* border: none; */
 }
 
 .fntAwesome {

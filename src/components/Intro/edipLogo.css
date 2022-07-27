@@ -382,6 +382,9 @@ svg path {
    position:absolute;
   z-index: -1;
   */
+  z-index: 1001;
+  margin-top:1rem;
+
  } 
 
  

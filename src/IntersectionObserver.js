@@ -12,34 +12,21 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   const experienceSection = document.querySelector("#experiencesID");
   const portfolioSection = document.querySelector("#portfolioID");
 
-//   //Navbar
-//   const navbar = document.querySelector(".containerNavbar");
+  const navLinkHome = document.getElementById("navLinkHomeID");
+  const navLinkHomeH3 = document.getElementById("navLinkHomeH3ID");
 
-//   // Navbar- handler
-// const handleScroll = (entries) => {
-//   const spotIsVisible = entries[0].isIntersecting;
-//   if (!spotIsVisible){
-//     setTimeout(function() {
-   
-//       // navbar.classList.add("fixed-top");
-//       navbar.setAttribute("top",(window.screenY+12).toString());
-//       // Run the callback
-//       console.log( 'Scrolling has stopped.' );
-  
-//     }, 66);
-//   } 
-// };
+  const navLinkPersonality = document.getElementById("navLinkPersonalityID");
+  const navLinkPersonalityH3 = document.getElementById("navLinkPersonalityH3ID");
 
-// const optionsNav = {
-//   root: null, 
-//   rootMargin: "0px", 
-//   threshhold: 0, 
-// };
-// // initialize and start the observer.
-// const observer = new IntersectionObserver(handleScroll, optionsNav);
-// observer.observe(navbar);
+
+  const colorDarkestNavy = "var(--darkest-navy)"; 
 
   const wrappers = document.querySelectorAll(".sectionAnimation");
+
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  const navLinksH3 = document.querySelectorAll(".navLinkH3");
+
   const animationQuickFactAbout = new QuickAboutAnimation();
 
     
@@ -58,18 +45,42 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
           // Quick Facts Section - Turn off Skills
           case 1:
+            navLinks.forEach((el) => {
+              el.style.background = "transparent";
+            });
+
+            navLinksH3.forEach((el) => {
+              el.style.color = "var(--primary-white)";
+            });
+
+            navLinkHome.style.background = "linear-gradient(to right, var(--primary-white), var(--darkest-navy))";
+            navLinkHomeH3.style.color =colorDarkestNavy;
             PlayAnimation('SkillAnimation',1);
             animationQuickFactAbout.playOrStop(true);
             break;
 
           //About me Section - Turn Off Personality
             case 2:
+              navLinks.forEach((el) => {
+                el.style.background = "transparent";
+              });
+  
+              navLinksH3.forEach((el) => {
+                el.style.color = "var(--primary-white)";
+              });
                 PlayAnimation('PersonalityAnimation',1);
                 animationQuickFactAbout.playOrStop(true);
             break;
 
           //Skills Section -  Turn OFF QuickAbout
             case 3:
+              navLinks.forEach((el) => {
+                el.style.background = "transparent";
+              });
+  
+              navLinksH3.forEach((el) => {
+                el.style.color = "var(--primary-white)";
+              });
               console.log('SKILLS SECTION');
               animationQuickFactAbout.playOrStop(false);
               PlayAnimation('SkillAnimation',2);
@@ -77,18 +88,43 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
           //Personality Section -  Turn OFF Skills
             case 4:
+              navLinks.forEach((el) => {
+                el.style.background = "transparent";
+              });
+  
+              navLinksH3.forEach((el) => {
+                el.style.color = "var(--primary-white)";
+              });
+              
+              navLinkPersonality.style.background = "linear-gradient(to right, var(--primary-green), var(--darkest-navy))";
+              navLinkPersonalityH3.style.color =colorDarkestNavy;
               console.log('PERSONALITY SECTION');
               PlayAnimation('PersonalityAnimation',2);              
             break;
 
               //Resume Overview Section - Turn OFF Skills & Portfolio
               case 5:
+                navLinks.forEach((el) => {
+                  el.style.background = "transparent";
+                });
+    
+                navLinksH3.forEach((el) => {
+                  el.style.color = "var(--primary-white)";
+                });
                 PlayAnimation('SkillAnimation',1);
                 PlayAnimation('PortfolioAnimation',1);
               break;
 
               //Major experiences - Turn OFF Personality
               case 6:
+                navLinks.forEach((el) => {
+                  el.style.background = "none";
+                });
+    
+    
+                navLinksH3.forEach((el) => {
+                  el.style.color = "var(--primary-white)";
+                });
                 console.log('MAJOR EXPERIENCES SECTION');
                 PlayAnimation('PersonalityAnimation',1);
 
@@ -97,6 +133,13 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
                //Portfolio - 
                case 7:
+                navLinks.forEach((el) => {
+                  el.style.backgroundColor = "none";
+                });
+    
+                navLinksH3.forEach((el) => {
+                  el.style.color = "var(--primary-white)";
+                });
                 console.log('PORTFOLIO SECTION');
                 PlayAnimation('PortfolioAnimation',2);
               break;

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faClose, faFastForward,faArrowDown, faTableCells } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-scroll';
 import anime from 'animejs';
-import disableScroll from 'disable-scroll';
 import "../IntersectionObserver.js";
 
 // import '../components/navColorListener.js';
@@ -173,44 +172,44 @@ export const Navbar = () => {
           
         </div>
             <li className="nav-item active">
-              <Link smooth={true} to={"introSectionID"} className="nav-link" href="#" tabIndex={0}><h3>HOME</h3><span className="sr-only">(current)</span></Link>
+              <Link smooth={true} to={"introSectionID"} id="navLinkHomeID" className="nav-link" href="#" tabIndex={0}><h3 id="navLinkHomeH3ID" className='navLinkH3'>HOME</h3><span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
-              <Link  smooth={true} to={"quickFacts"} className="nav-link" href="#" tabIndex={1}><h3>Quick Facts</h3></Link>
-            </li>
-
-            <li className="nav-item">
-              <Link  smooth={true} to={"testimonials"} className="nav-link" href="#" tabIndex={2}><h3>About</h3></Link>
+              <Link  smooth={true} to={"quickFacts"} className="nav-link" href="#" tabIndex={1}><h3 className='navLinkH3'>Quick Facts</h3></Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth={true} to={"skills"} className="nav-link" href="#" tabIndex={3}><h3>Skills</h3></Link>
+              <Link  smooth={true} to={"testimonials"} className="nav-link" href="#" tabIndex={2}><h3 className='navLinkH3'>About</h3></Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth={true} to={"personality"} className="nav-link" href="#" tabIndex={4}><h3>Personality</h3></Link>
+              <Link smooth={true} to={"skills"} className="nav-link" href="#" tabIndex={3}><h3 className='navLinkH3'>Skills</h3></Link>
+            </li>
+
+            <li className="nav-item" >
+              <Link smooth={true} to={"personality"} id="navLinkPersonalityID" className="nav-link" href="#" tabIndex={4}><h3 id="navLinkPersonalityH3ID" className='navLinkH3'>Personality</h3></Link>
             </li>
             
 
             <li className="nav-item">
-              <Link smooth={true} to={"resumeOverview"} className="nav-link" href="#" tabIndex={5}><h3>Resumé Overview</h3></Link>
+              <Link smooth={true} to={"resumeOverview"} className="nav-link" href="#" tabIndex={5}><h3 className='navLinkH3'>Resumé Overview</h3></Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth={true} to={"experiencesID"} className="nav-link" href="#" tabIndex={6}><h3>Major experiences</h3></Link>
+              <Link smooth={true} to={"experiencesID"} className="nav-link" href="#" tabIndex={6}><h3 className='navLinkH3'>Major experiences</h3></Link>
             </li>
 
             <li className="nav-item">
-            <Link smooth={true} to={"portfolioID"} className="nav-link" href="#" tabIndex={7}><h3>Portfolio</h3></Link>
+            <Link smooth={true} to={"portfolioID"} className="nav-link" href="#" tabIndex={7}><h3 className='navLinkH3'>Portfolio</h3></Link>
             </li>
       
             <li className="nav-item">
-              <a className="nav-link" href="#" tabIndex={8}><h3>Reviews</h3></a>
+              <a className="nav-link" href="#" tabIndex={8}><h3 className='navLinkH3'>Reviews</h3></a>
             </li>
 
            
             <li className="nav-item mb-5">
-              <a className="nav-link" href="#" tabIndex={9}><h3>Contact</h3></a>
+              <a className="nav-link" href="#" tabIndex={9}><h3 className='navLinkH3'>Contact</h3></a>
             </li>
            
             

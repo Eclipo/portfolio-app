@@ -64,6 +64,7 @@ class PlayRefresh extends Component {
               className="fntAwesome"
               icon={faPlay}
               color="var(--primary-light-green)"
+              style={{marginTop:'0.25rem',marginLeft:'0.25rem'}}
             ></FontAwesomeIcon>
           </button>
         </div>

@@ -421,6 +421,7 @@
   }
 /* default state */
 .containerNavbar {
+  z-index:1000;
   position: fixed;
   left:0;
   right:0;
@@ -433,7 +434,6 @@
 }
 /* scrolling state */
 .containerNavbar.fixed-top {
-
   position:fixed;
   /* top: 0; */
   left:0;
@@ -449,7 +449,7 @@
   
   #customNav
   {
-    z-index:1000;
+   
     background-color: none;
     width:12vh;
     /* height: 5rem; */
@@ -506,8 +506,8 @@
     
     display: block;
     
-    width: 80%;
-    margin-left: 2rem;
+    width: 98%;
+    margin-left: 2%;
     margin-bottom: 0.25rem;
 
   }
@@ -554,8 +554,17 @@
 
   .navbar-nav > li > a:focus
   {
-    border-bottom: 0.1875rem solid var(--dark-slate) !important;
-    color:var(--dark-slate) !important;
-    background: var(--primary-white);
+    /* border-bottom: 0.1875rem solid var(--dark-slate) !important; */
+    /* color:var(--dark-slate) !important; */
+    /* background: var(--primary-white); */
+    color:var(--dark-navy) !important;
   }
 
+  #navLinkHomeID:focus{
+    background: linear-gradient(to right, var(--primary-white), var(--darkest-navy));  
+  }
+
+
+  #navLinkPersonalityID:focus{
+    background: var(--primary-green);
+  }
