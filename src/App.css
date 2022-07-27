@@ -421,7 +421,9 @@
   }
 /* default state */
 .containerNavbar {
-  position: relative;
+  position: fixed;
+  left:0;
+  right:0;
   background-color: none;
   width:100vw;
   /* default colors + transition */

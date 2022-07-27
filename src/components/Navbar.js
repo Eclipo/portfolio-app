@@ -103,7 +103,7 @@ export const Navbar = () => {
   };
 
     return (
-     <div className="containerNavbar fixed-top">
+     <div className="containerNavbar">
 
      
       <nav id ="overviewNav" className="navbar">

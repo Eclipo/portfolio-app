@@ -3,7 +3,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
   setTimeout(function () {
 
-
+  //Sections
   const quickFactsSection = document.querySelector("#quickFacts");
   const aboutMeSection = document.querySelector("#aboutMe");
   const skillsSection = document.querySelector("#skills");
@@ -11,6 +11,33 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   const resumeSection = document.querySelector("#resumeOverview");
   const experienceSection = document.querySelector("#experiencesID");
   const portfolioSection = document.querySelector("#portfolioID");
+
+//   //Navbar
+//   const navbar = document.querySelector(".containerNavbar");
+
+//   // Navbar- handler
+// const handleScroll = (entries) => {
+//   const spotIsVisible = entries[0].isIntersecting;
+//   if (!spotIsVisible){
+//     setTimeout(function() {
+   
+//       // navbar.classList.add("fixed-top");
+//       navbar.setAttribute("top",(window.screenY+12).toString());
+//       // Run the callback
+//       console.log( 'Scrolling has stopped.' );
+  
+//     }, 66);
+//   } 
+// };
+
+// const optionsNav = {
+//   root: null, 
+//   rootMargin: "0px", 
+//   threshhold: 0, 
+// };
+// // initialize and start the observer.
+// const observer = new IntersectionObserver(handleScroll, optionsNav);
+// observer.observe(navbar);
 
   const wrappers = document.querySelectorAll(".sectionAnimation");
   const animationQuickFactAbout = new QuickAboutAnimation();
@@ -101,23 +128,23 @@ myObserver.observe(portfolioSection);
 // var navbar = document.querySelector(".containerNavbar");
 
 // Setup isScrolling variable
-var isScrolling;
+// var isScrolling;
 
-// Listen for scroll events
-window.addEventListener('scroll', function ( event ) {
-  var navbar = document.querySelector(".containerNavbar");
+// // Listen for scroll events
+// window.addEventListener('scroll', function ( event ) {
+//   var navbar = document.querySelector(".containerNavbar");
 
-	// Clear our timeout throughout the scroll
-	window.clearTimeout( isScrolling );
-  // navbar.classList.remove("fixed-top");
-	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function() {
+// 	// Clear our timeout throughout the scroll
+// 	window.clearTimeout( isScrolling );
+//   // navbar.classList.remove("fixed-top");
+// 	// Set a timeout to run after scrolling ends
+// 	isScrolling = setTimeout(function() {
    
-    // navbar.classList.add("fixed-top");
-    navbar.setAttribute("top",(window.screenY+12).toString());
-		// Run the callback
-		console.log( 'Scrolling has stopped.' );
+//     // navbar.classList.add("fixed-top");
+//     navbar.setAttribute("top",(window.screenY+12).toString());
+// 		// Run the callback
+// 		console.log( 'Scrolling has stopped.' );
 
-	}, 66);
+// 	}, 66);
 
-}, false);
+// }, false);
