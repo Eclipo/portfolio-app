@@ -3,9 +3,11 @@
   {
     /* Colors */
     --primary-white:rgba(249, 247, 247, 0.969);
+    --primary-lighter-blue: #51a0ee;
     --primary-blue: #4485c6;
     --primary-darker-blue: #2d6296;
 
+    
     --primary-red: #fa4545;
     --primary-yellow: #fffc66;
     --primary-orange: #f39e00;
@@ -426,7 +428,7 @@
   left:0;
   right:0;
   background-color: none;
-  width:100vw;
+  width:min-content;
   /* default colors + transition */
   /* background-color: white; */
   /* color: black; */
@@ -537,6 +539,7 @@
   {
     color:var(--primary-white) !important;
     padding:0.5rem !important;
+    background-position: right bottom;
   }
 
   .navbar-brand
@@ -546,25 +549,126 @@
     height:6rem im !important;
   }
 
-  .navbar-nav > li > a.active, .navbar-nav > li > a:hover
+.navbar-nav > li > a:hover
   {
-    border-bottom: 0.1875rem solid var(--dark-slate) !important;
+    border-bottom: 0.1875rem solid var(--dark-slate);
     color:var(--slate) !important;
   }
 
-  .navbar-nav > li > a:focus
-  {
-    /* border-bottom: 0.1875rem solid var(--dark-slate) !important; */
-    /* color:var(--dark-slate) !important; */
-    /* background: var(--primary-white); */
-    color:var(--dark-navy) !important;
-  }
 
   #navLinkHomeID:focus{
-    background: linear-gradient(to right, var(--primary-white), var(--darkest-navy));  
+    background: linear-gradient(to right, var(--primary-white), var(--dark-navy)); 
+    color:var(--dark-navy) !important; 
+
+    background-size: 200% 100%; 
+    background-position: left bottom;
+    transition: all 0.5s ease-out;
+  }
+
+  #navLinkHomeID.navFocus {
+    background: var(--primary-white) !important; 
+    color:var(--dark-navy) !important;  
+  }
+
+  #navLinkQuickFactsID:focus{
+    background: linear-gradient(to right, var(--primary-yellow), var(--dark-navy)); 
+    color:var(--dark-navy) !important;  
+
+    background-size: 200% 100%; 
+    background-position: left bottom;
+    transition: all 0.5s ease-out;
+  }
+
+  #navLinkQuickFactsID.navFocus{
+    background:var(--primary-yellow)!important; 
+    color:var(--dark-navy) !important;  
+  }
+
+  #navLinkAboutID:focus{
+    background: linear-gradient(to right, var(--primary-orange), var(--dark-navy)); 
+    color:var(--dark-navy) !important;  
+
+    background-size: 200% 100%; 
+    background-position: left bottom;
+    transition: all 0.5s ease-out;
+  }
+
+  #navLinkAboutID.navFocus{
+    background: var(--primary-orange) !important; 
+    color:var(--dark-navy) !important;  
   }
 
 
+  #navLinkSkillsID:focus{
+    background: linear-gradient(to right, var(--primary-lighter-blue) 10%, var(--dark-navy) 90%); 
+    color:var(--dark-navy) !important;
+
+    background-size: 200% 100%; 
+    background-position: left bottom;
+    transition: all 0.5s ease-out;
+  }
+
+  #navLinkSkillsID.navFocus{
+    background: linear-gradient(to right, var(--dark-navy) 50% ,var(--primary-lighter-blue) 50%); 
+    color:var(--dark-navy) !important; 
+
+    background-size: 200%; 
+    transition: all 0.5s ease-in;
+  }
+
   #navLinkPersonalityID:focus{
-    background: var(--primary-green);
+    background: linear-gradient(to right, var(--primary-green), var(--dark-navy)); 
+    color:var(--dark-navy) !important;  
+
+    background-size: 200% 100%; 
+    background-position: left bottom;
+    transition: all 0.5s ease-out;
+  }
+
+  #navLinkPersonalityID.navFocus{
+    background: var(--primary-green) !important; 
+    color:var(--dark-navy) !important;  
+  }
+
+  #navLinkResumeOverviewID:focus{
+    background: linear-gradient(to right, var(--primary-red), var(--dark-navy)); 
+    color:var(--dark-navy) !important;  
+
+    background-size: 200% 100%; 
+    background-position: left bottom;
+    transition: all 0.5s ease-out;
+  }
+
+  #navLinkResumeOverviewID.navFocus{
+    /* background: linear-gradient(to right, var(--primary-red), var(--dark-navy)) !important;  */
+    background:var(--primary-red) !important; 
+    color:var(--dark-navy) !important;  
+  }
+
+  #navLinkExperiencesID:focus{
+    background: linear-gradient(to right, var(--primary-purple), var(--dark-navy)); 
+    color:var(--dark-navy) !important;  
+
+    background-size: 200% 100%; 
+    background-position: left bottom;
+    transition: all 0.5s ease-out;
+  }
+
+  #navLinkExperiencesID.navFocus{
+    background: var(--primary-purple) !important; 
+    color:var(--dark-navy) !important;  
+  }
+
+    #navLinkPortfolioID:focus{
+    background: linear-gradient(to right, var(--primary-pink), var(--dark-navy)); 
+    color:var(--dark-navy) !important;  
+
+    background-size: 200% 100%; 
+    background-position: left bottom;
+    transition: all 0.5s ease-out;
+  }
+
+  #navLinkPortfolioID.navFocus{
+    background:var(--primary-pink) !important; 
+    color:var(--dark-navy) !important;  
   }

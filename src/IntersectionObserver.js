@@ -4,6 +4,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   setTimeout(function () {
 
   //Sections
+  const introSection = document.querySelector("#introSectionID");
   const quickFactsSection = document.querySelector("#quickFacts");
   const aboutMeSection = document.querySelector("#aboutMe");
   const skillsSection = document.querySelector("#skills");
@@ -29,58 +30,55 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
   const animationQuickFactAbout = new QuickAboutAnimation();
 
+  function currentNavLink(inputIndex){
+    navLinks.forEach((el) => {
+      el.classList.remove("navFocus");
+    });
+  
+    navLinks[inputIndex].classList.add("navFocus");
+  };
     
-    const callback = (entries, observer) => {
+    const handleScrollPosY = (entries, observer) => {
 
         entries.forEach((entry) => {
         const currentIndex = Array.from(wrappers).indexOf(entry.target);
         console.log('!!!!!!!!!!!!!!!!! CURRENTINDEX !!!!!!! '+currentIndex);
-
+        
         if (entry.isIntersecting) {
         switch(currentIndex) {
           
           // Intro Section - Turn ON QuickAboutAnimation  ...
           case 0:
+            console.log(entry);
+            currentNavLink(0);
+            // navLinksH3.forEach((el) => {
+            //   el.style.color = "var(--primary-white)";
+            // });
+
+            // navLinkHome.style.background = "linear-gradient(to right, var(--primary-white), var(--darkest-navy))";
+            // navLinkHomeH3.style.color =colorDarkestNavy;
+            // console.log('!!! WTF IT IS ZER00000000000000000000000!!!!!!!!!');
             break;
 
           // Quick Facts Section - Turn off Skills
           case 1:
-            navLinks.forEach((el) => {
-              el.style.background = "transparent";
-            });
+            currentNavLink(currentIndex);
 
-            navLinksH3.forEach((el) => {
-              el.style.color = "var(--primary-white)";
-            });
 
-            navLinkHome.style.background = "linear-gradient(to right, var(--primary-white), var(--darkest-navy))";
-            navLinkHomeH3.style.color =colorDarkestNavy;
             PlayAnimation('SkillAnimation',1);
             animationQuickFactAbout.playOrStop(true);
             break;
 
           //About me Section - Turn Off Personality
             case 2:
-              navLinks.forEach((el) => {
-                el.style.background = "transparent";
-              });
-  
-              navLinksH3.forEach((el) => {
-                el.style.color = "var(--primary-white)";
-              });
+              currentNavLink(currentIndex);
                 PlayAnimation('PersonalityAnimation',1);
                 animationQuickFactAbout.playOrStop(true);
             break;
 
           //Skills Section -  Turn OFF QuickAbout
             case 3:
-              navLinks.forEach((el) => {
-                el.style.background = "transparent";
-              });
-  
-              navLinksH3.forEach((el) => {
-                el.style.color = "var(--primary-white)";
-              });
+              currentNavLink(currentIndex);
               console.log('SKILLS SECTION');
               animationQuickFactAbout.playOrStop(false);
               PlayAnimation('SkillAnimation',2);
@@ -88,43 +86,23 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
           //Personality Section -  Turn OFF Skills
             case 4:
-              navLinks.forEach((el) => {
-                el.style.background = "transparent";
-              });
-  
-              navLinksH3.forEach((el) => {
-                el.style.color = "var(--primary-white)";
-              });
-              
-              navLinkPersonality.style.background = "linear-gradient(to right, var(--primary-green), var(--darkest-navy))";
-              navLinkPersonalityH3.style.color =colorDarkestNavy;
+              currentNavLink(currentIndex);
               console.log('PERSONALITY SECTION');
               PlayAnimation('PersonalityAnimation',2);              
             break;
 
               //Resume Overview Section - Turn OFF Skills & Portfolio
               case 5:
-                navLinks.forEach((el) => {
-                  el.style.background = "transparent";
-                });
-    
-                navLinksH3.forEach((el) => {
-                  el.style.color = "var(--primary-white)";
-                });
+                currentNavLink(currentIndex);
+
                 PlayAnimation('SkillAnimation',1);
                 PlayAnimation('PortfolioAnimation',1);
               break;
 
               //Major experiences - Turn OFF Personality
               case 6:
-                navLinks.forEach((el) => {
-                  el.style.background = "none";
-                });
-    
-    
-                navLinksH3.forEach((el) => {
-                  el.style.color = "var(--primary-white)";
-                });
+                currentNavLink(currentIndex);
+
                 console.log('MAJOR EXPERIENCES SECTION');
                 PlayAnimation('PersonalityAnimation',1);
 
@@ -133,13 +111,8 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
                //Portfolio - 
                case 7:
-                navLinks.forEach((el) => {
-                  el.style.backgroundColor = "none";
-                });
-    
-                navLinksH3.forEach((el) => {
-                  el.style.color = "var(--primary-white)";
-                });
+                currentNavLink(currentIndex);
+
                 console.log('PORTFOLIO SECTION');
                 PlayAnimation('PortfolioAnimation',2);
               break;
@@ -153,10 +126,11 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0
+    threshold: 0.2
   }
 
-const myObserver = new IntersectionObserver(callback, options);
+const myObserver = new IntersectionObserver(handleScrollPosY, options);
+myObserver.observe(introSection);
 myObserver.observe(quickFactsSection);
 myObserver.observe(aboutMeSection);
 myObserver.observe(skillsSection);
