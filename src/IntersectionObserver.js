@@ -126,7 +126,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.2
+    threshold: 0.385
   }
 
 const myObserver = new IntersectionObserver(handleScrollPosY, options);
