@@ -1,7 +1,10 @@
 .btnRefresh {
   background-color: "none";
-  border-color: "transparent";
-  border: none;
+  border: 0.25rem var(--primary-light-green) solid;
+  border-radius:50%;
+  width:5rem;
+  height:5rem;
+  /* border: none; */
   opacity: 0;
   pointer-events: none;
   display: hidden;
@@ -9,13 +12,16 @@
 
 .btnPlay {
   background-color: "transparent";
-  border-color: var(--primary-light-green);
+  border: 0.25rem var(--primary-light-green) solid;
+  border-radius:50%;
+  width:5rem;
+  height:5rem;
   /* border: none; */
 }
 
 .fntAwesome {
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .row {
