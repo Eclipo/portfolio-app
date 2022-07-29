@@ -600,20 +600,20 @@
 
 
   #navLinkSkillsID:focus{
-    background: linear-gradient(to right, var(--primary-lighter-blue) 10%, var(--dark-navy) 90%); 
+    background: linear-gradient(to right, var(--primary-lighter-blue) 50%, var(--dark-navy)50%); 
     color:var(--dark-navy) !important;
 
     background-size: 200% 100%; 
     background-position: left bottom;
-    transition: all 0.5s ease-out;
+    transition: all 2s ease-out;
   }
 
   #navLinkSkillsID.navFocus{
-    background: linear-gradient(to right, var(--dark-navy) 50% ,var(--primary-lighter-blue) 50%); 
+    background: linear-gradient(to left, var(--dark-navy) 50% ,var(--primary-lighter-blue) 50%); 
     color:var(--dark-navy) !important; 
 
     background-size: 200%; 
-    transition: all 0.5s ease-in;
+    /* transition: all 0.25s ease-in; */
   }
 
   #navLinkPersonalityID:focus{
