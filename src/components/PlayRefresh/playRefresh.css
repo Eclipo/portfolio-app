@@ -1,6 +1,6 @@
 .btnRefresh {
   background-color: "none";
-  border: 0.25rem var(--primary-light-green) solid;
+  border: 0.25rem var(--light-slate) solid;
   border-radius:50%;
   width:5rem;
   height:5rem;
@@ -12,7 +12,7 @@
 
 .btnPlay {
   background-color: "transparent";
-  border: 0.25rem var(--primary-light-green) solid;
+  border: 0.3rem var(--light-slate) solid;
   border-radius:50%;
   width:5rem;
   height:5rem;
@@ -22,6 +22,10 @@
 .fntAwesome {
   width: 1rem;
   height: 1rem;
+}
+
+.fntAwesome:hover{
+  color:var(--primary-white) !important;
 }
 
 .row {

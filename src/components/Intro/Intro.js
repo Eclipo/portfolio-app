@@ -62,10 +62,9 @@ class Intro extends Component {
 
   render(){
   return (
-      <div id="introSectionID" className="sectionAnimation" >
-        <div className="header-wraper" >
+      <div id="introSectionID" className="sectionAnimation container" >
+        <div className="row mb-5" >
             
-            <div className="main-info">
             
               <svg className="logo" viewBox="0 0 1000 384">
         
@@ -142,10 +141,9 @@ class Intro extends Component {
             </svg>
             
 
-          </div>
         </div>
         
-        <div className='flexCenter header-wraper'>
+        <div className='row main-info'>
           <div className='playRefreshIntro'>
             <PlayRefresh  id='IntroAnimation' playBoolean={true}></PlayRefresh>
             {/* <div id="introTextID" className='d-block m-auto'>
@@ -155,44 +153,51 @@ class Intro extends Component {
           </div>
         </div>
 
-        <div className='row navSubMenu' id='choiceID'>
-        <h4 className='navP'>
+        <div className='row' id='choiceID'>
+        <h4 className='row navP'>
         You have two choices.
         </h4>
-        <p className='navP text-center'>
-        Scroll down to see the indepth version.<br></br>
-        Or click on the fastforward-icon for an overview.<br></br>
+        <p className='row navP text-center'>
+        Scroll down for a more <br></br> 
+        personal experience.</p>
+        <h4 className='row navP text-center'>OR</h4>
+        <p className='row navP text-center'> 
+        Click on the Overview-version<br></br> which is less personal.
+        </p>
+        <p className='row navP mt-2 text-center'>
+        The choices are two different <br></br>user experiences.
+
+        </p>
+        <div className="row">
+
         
-        The choices are two different user experiences.</p>
-          <div className='col w-25'>
+          <div className='col'>
           <Link  to={"quickFacts"} className="nav-link" href="#">
 
             <button
-              className="bg-transparent navSubIcon"
+              className="navSubIcon"
             >
               <FontAwesomeIcon
                 icon={faArrowDown}
-                color="var(--primary-orange)"
-                className="fntAwesome navSubIcon"
+                color="var(--tint-navy)"
+                className="fntAwesome"
               >
               </FontAwesomeIcon>
-              <p className="row navP text-center">Full <br></br>version</p>
+              <p className="row navP text-center">Personal <br></br>version</p>
 
             </button>
             </Link>
           </div>          
-          <div className='col w-25'>
+          <div className='col'>
           <Link  to={"fastForwardID"} className="nav-link" href="#">
 
-          
-
             <button
-              className="bg-transparent navSubIcon"
+              className="navSubIcon"
             >
               <FontAwesomeIcon
                 icon={faFastForward}
-                color="var(--slate)"
-                className="fntAwesome navSubIcon "
+                color="var(--tint-navy)"
+                className="fntAwesome"
                 onClick={this.handleClick}
               >
               </FontAwesomeIcon>
@@ -200,6 +205,7 @@ class Intro extends Component {
 
             </button>
             </Link>
+          </div>
           </div>
         </div>
         

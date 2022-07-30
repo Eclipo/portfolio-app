@@ -607,13 +607,12 @@ class Skills extends Component {
 
             <div className="row">
               <p className="duckText">
-                I consider myself to be a duck who is mostly <span className="skillHighLighted"> "Lagom" </span> (just the right amount in Swedish).
-                To be more precise I have a good base in the front-end and in the back-end.<br></br>
-                I rather be humble than exaggerating regarding the level of my skills. Maybe I am more than "Lagom" or maybe not. 
-                Furthermore I have worked as tester and business consultant within the IT-sector.
-             
+                A duck can swim, go on land and fly but not being best in any of those skills. 
+                In my case being a "duck" as a fullstack developer 
+                being  <span className="skillHighLighted"> "Lagom" </span> (just the right amount in Swedish) 
+                I am comfortable in flying thorugh <span className="skillHighLighted">HTML, CSS and Javascript </span>, 
+                paddle among <span className="skillHighLighted"> MS SQL databases </span> and finally I can waddle up some <span className="skillHighLighted"> C# </span> code.   
                 <br></br><br></br>
-
                 In order for me to be an efficient developer I need to get familliar 
                 with the codebase and <span className="skillHighLighted"> occasionally </span> 
                 I need support from senior developers

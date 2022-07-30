@@ -137,12 +137,12 @@ export const Navbar = () => {
               className="navSubIcon p-1 mb-4"
               style={{
                 borderRadius:'18px',
-              borderColor:'var(--primary-orange)'}}
+              borderColor:'var(--slate)'}}
             >
               <FontAwesomeIcon
                 icon={faFastForward}
-                color="var(--primary-orange)"
-                className="fntAwesome navSubIcon "
+                color="var(--tint-navy)"
+                className="fntAwesome "
                 onClick={handleMode}
               >
               </FontAwesomeIcon>
@@ -155,14 +155,14 @@ export const Navbar = () => {
               className="navSubIcon p-1 mb-4"
               style={{
                 borderRadius:'18px',
-              borderColor:'var(--primary-orange)'}}
+              borderColor:'var(--slate)'}}
             >
               <FontAwesomeIcon
                 icon={faTableCells}
                 style={{
-                  color : isRed ? 'red' : 'var(--slate)' 
+                  color : isRed ? 'red' : 'var(--tint-navy)' 
                 }}
-                className="fntAwesome navSubIcon "
+                className="fntAwesome "
                 onClick={outlineMode}
               >
               </FontAwesomeIcon>

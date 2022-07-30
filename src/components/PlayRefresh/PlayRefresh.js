@@ -47,7 +47,7 @@ class PlayRefresh extends Component {
             <FontAwesomeIcon
               className="fntAwesome"
               icon={faSyncAlt}
-              color="var(--primary-light-green)"
+              color="var(--tint-navy)"
               style={{margin:'auto'}}
 
             ></FontAwesomeIcon>
@@ -59,13 +59,13 @@ class PlayRefresh extends Component {
 
           <button
             id={this.playID}
-            className="btnPlay mx-auto"
+            className="btnPlay"
             onClick={this.handleClick}
           >
             <FontAwesomeIcon
               className="fntAwesome"
               icon={faPlay}
-              color="var(--primary-light-green)"
+              color="var(--tint-navy)"
               style={{margin:'auto'}}
             ></FontAwesomeIcon>
           </button>

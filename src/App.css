@@ -188,12 +188,6 @@
     z-index: 100;
   }
 
-  .logo
-  {
-    height: 4rem;
-    margin: auto !important;
-    width:40rem !important;
-  }
   /************************* HTML classes *********************************/
   body
   {
@@ -414,7 +408,7 @@
   }
   
   .navSubIcon{
-    color: var(--slate);
+    color: var(--tint-navy);
     border: none;
     background-color: transparent;
   }
@@ -486,10 +480,10 @@
   #navIconID{
   color:var(--tint-navy);
   }
-/* 
+
   #navIconID:hover{
-    color:var(--slate);
-  } */
+    color:var(--primary-white) !important;
+  }
 
   nav
   {
