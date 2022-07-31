@@ -11,3 +11,32 @@
       #quickFacts{
         min-height:110vh;
       }
+
+      .quickCard{
+        /* border:0.25rem var(--primary-pink) solid; */
+        background-color: var(--primary-yellow);
+        border-width: 0.25rem;
+        border-style: solid;
+        border-color: var(--primary-yellow);
+        border-radius: 50%;
+        width: 8rem;
+        height:8rem;
+
+        margin:auto;
+      }
+
+
+      .quickH4{
+        /* text-align: left;
+        width:50%; */
+        /* width: 5rem; */
+        /* height:5rem; */
+        margin-top:1.5rem;
+
+        display: inline-block;
+        text-align: center;
+        color:var(--navy);
+        padding:0.5rem;
+        
+
+      }
