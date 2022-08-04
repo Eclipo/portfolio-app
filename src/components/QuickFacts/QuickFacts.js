@@ -20,15 +20,16 @@ const QuickFacts = () => {
                     <div className='row m-auto m-1'>
                     <div className='col m-1'>
                             <div className='quickCard'>
-                                
-                                    <h4 className="quickH4">I have a <br></br>beautiful familly</h4>
-                                
+                                <span className='circ'></span>                               
+                                <h4 className=" quickH4" style={{marginTop:"-5.25rem"}}>FAMILLY</h4>
                             </div>
+
                         </div>
                             <div className='col m-1'>
                             <div className='quickCard'>
-                                
-                                    <h4 className="quickH4">7 years experience <br></br>in IT</h4>
+                            <span className='circ'></span>                               
+
+                                    <h4 className="quickH4" style={{marginTop:"-5.25rem"}}>SWEDEN</h4>
                                 
                             </div>
                             </div>
@@ -37,8 +38,9 @@ const QuickFacts = () => {
                     <div className='row m-auto m-1'>
                         <div className='col m-1'>
                             <div className='quickCard'>
-                                
-                                    <h4 className="quickH4">.Net & Angular <br></br>developer</h4>
+                            <span className='circ'></span>                               
+
+                                    <h4 className="quickH4" style={{marginTop:"-6rem"}}>FULLSTACK <br></br>DEVELOPER</h4>
                                 
                             </div>
                             

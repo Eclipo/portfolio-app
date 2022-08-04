@@ -14,8 +14,9 @@
 
       .quickCard{
         /* border:0.25rem var(--primary-pink) solid; */
-        background-color: var(--primary-yellow);
-        border-width: 0.25rem;
+        /* background-color: var(--primary-yellow); */
+        background:#95b3bf;
+        border-width: 0.5rem;
         border-style: solid;
         border-color: var(--primary-yellow);
         border-radius: 50%;
@@ -23,7 +24,44 @@
         height:8rem;
 
         margin:auto;
+        z-index: -1;
+
       }
+
+      .circOne{
+        background: #000000;
+        opacity: 0.2;
+        width: 8rem;
+        height:8rem;
+        display: inline-block;
+        border-radius: 50%;
+        z-index: 0;
+      }
+
+      .circ{
+        background: #232222;
+        opacity: 0.05;
+        width:7.75rem;
+        height:7.75rem;
+        margin:auto;
+        display: block;
+        border-radius: 50%;
+        z-index: 0 ;
+
+      }
+
+      .circThree{
+        background: linear-gradient(to right, #000000 30%, #FFFF );
+        opacity: 0.2;
+        width:7.75rem;
+        height:7.75rem;
+        margin:auto;
+        display: block;
+        border-radius: 50%;
+        z-index: 0;
+      }
+
+
 
 
       .quickH4{
@@ -31,12 +69,16 @@
         width:50%; */
         /* width: 5rem; */
         /* height:5rem; */
-        margin-top:1.5rem;
-
-        display: inline-block;
+        
+        /* margin-top:-7rem ; */
+        margin:auto;
+        display: block;
         text-align: center;
-        color:var(--navy);
+        color:var(--primary-dark-yellow);
         padding:0.5rem;
+        z-index: 1 !important;
+        /* font-size: 1rem !important; */
+        font-weight: 750 !important;
         
 
       }
