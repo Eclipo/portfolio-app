@@ -300,10 +300,6 @@ ul {
   width: 75%;
 }
 
-#fintech_css {
-  max-width: 35%;
-  padding: 0.25rem;
-}
 
 #fintech_csharp {
   width: min-content;

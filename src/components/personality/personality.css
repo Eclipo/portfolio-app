@@ -4,7 +4,7 @@
 
 #personalityContainerID {
   display: inline-block;
-  width:100vw;
+  max-width:100vw;
   
 }
 

@@ -9,8 +9,22 @@ import { wiggle } from "./personalityFunctions";
 
 
 // var randomPatience_target = null;
-var randomPatience = ['#patienceOneID','#patienceTwoID','#patienceThreeID','#patienceFourID','#patienceFiveID'];
-var random_target = null;
+const randomPatience = ['#patienceOneID','#patienceTwoID','#patienceThreeID','#patienceFourID','#patienceFiveID'];
+
+const randomCards = ['#honestyCard','#stubbornCard','#structureCard','#multiTaskCard','#focusCard','#patienceCard','#temperCard','#empathyCard'];
+
+function getRandomCard() {
+  return randomCards[Math.floor(Math.random() * randomCards.length)];
+}
+
+ function animateCard(inputTarget){
+  anime({
+    targets:inputTarget,
+    rotate:['-3deg','3deg',0],
+    easing: "easeInOutQuad",
+    duration:1250  
+  })
+}
 
 function getRandomTarget() {
   return randomPatience[Math.floor(Math.random() * randomPatience.length)];
@@ -24,6 +38,7 @@ function getRandomTarget() {
     duration:750  
   })
 }
+
 
 var randomEmpathy =['#ff0000','#e71bf2','#ffc0cb','#90ee90','#add8e6','#eb9e34','#345ceb','#f2eb1b','#fffafa'];
 var random_empathy = null;
@@ -244,20 +259,17 @@ const playEmpathy = anime({
       duration: 150,
     });
 
-    const wiggleCard = anime.timeline({
-      direction:'alternate',
-      duration:750,
+    const wiggleCard = anime({
+      loopBegin:function(){
+        animateCard(getRandomCard());
+      },
+      loopComplete: function() {
+        
+        setTimeout(animateCard(getRandomTarget()),1000);
+      },
       loop:true,
-      autoplay:false
-    });
-  
-    wiggleCard.add({
-      targets:['#honestyCard','#stubbornCard','#structureCard',
-      '#multiTaskCard','#focusCard','#patienceCard','#temperCard',
-      '#empathyCard'],
-      // scale:[1,1.2,1.1],
-      delay:anime.stagger(75),
-      rotate:['-2deg','3deg']
+      autoplay:false,
+      duration:1250,
     });
 
     const brokenBannerAnim = anime.timeline({
@@ -306,6 +318,9 @@ const playEmpathy = anime({
     // anime.remove('#honestyID');
     // anime.remove(".personalityBaseTraits");
     anime.remove(".personalityTraits");
+    anime.remove(".brokenLetterC");
+    anime.remove(".brokenLetterK");
+    anime.remove(".personalityCard");
     
 
   }

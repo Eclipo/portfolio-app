@@ -349,7 +349,7 @@ class Portfolio extends Component {
               
               <p>
                 Despite my failures I still wanted to achieve one of my dreams. 
-                Making a personel website that would be entertaining and mobile responsive.                
+                Making a personal website that would be different (read unique) and mobile responsive.                
                 However I was still a novice and I was left with no choice... but to buy an Udemy course 
                 about building a portfolio website combining React and Bootstrap.
                 On top of that I would use AnimeJS for the animations.

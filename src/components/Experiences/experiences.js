@@ -235,10 +235,7 @@ class Experiences extends Component {
               <div className="techRow" id="fintech_csharp">
                 <h4 className="techSkill">C#</h4>
               </div>
-              <div className="techRow" id="fintech_css">
-                <h4 className="techSkill">CSS</h4>
-              </div>
-
+             
               <div className="techRow" id="fintech_angular">
                 <h4 className="techSkill">Angular</h4>
               </div>

@@ -130,27 +130,8 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
   
         
-          <ul className="navbar-nav p-1 mt-2" >
+          <ul className="navbar-nav p-1 mt-2" style={{marginLeft:'1rem'}} >
           <div className='navBtnMenu'>
-          <Link  to={"fastForwardID"} className="col" href="#">
-            <button
-              className="navSubIcon p-1 mb-4"
-              style={{
-                borderRadius:'18px',
-              borderColor:'var(--slate)'}}
-            >
-              <FontAwesomeIcon
-                icon={faFastForward}
-                color="var(--tint-navy)"
-                className="fntAwesome "
-                onClick={handleMode}
-              >
-              </FontAwesomeIcon>
-              <p className="row navP text-center" >Overview<br></br>version</p>
-
-            </button>
-            </Link>
-
             <button
               className="navSubIcon p-1 mb-4"
               style={{

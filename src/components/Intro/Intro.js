@@ -3,7 +3,7 @@ import "./IntroAnimation.js";
 import "./edipLogo.css";
 import "../../IntersectionObserver.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFastForward, faArrowDown} from '@fortawesome/free-solid-svg-icons'
+import {faArrowDown} from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-scroll';
 
 import PlayRefresh from '../PlayRefresh/PlayRefresh.js';
@@ -155,24 +155,26 @@ class Intro extends Component {
 
         <div className='row' id='choiceID'>
         <h4 className='row navP' style={{color:'var(--tint-navy)'}}>
-        You have two choices.
+        Welcome
         </h4>
         <p className='row navP text-center'>
-        Scroll down for a more <br></br> 
-        personal experience.</p>
-        <h4 className='row navP text-center'  style={{color:'var(--tint-navy)'}} >OR</h4>
+          I made this personal website for<br></br> people to know me a bit better.
+        </p>
+        <h4 className='row navP text-center'  style={{color:'var(--tint-navy)'}} >SCROLL DOWN</h4>
         <p className='row navP text-center'> 
-        Click on the Overview-version<br></br> which is less personal.
+          to see the various sections.
         </p>
-        <p className='row navP mt-2 text-center'  style={{color:'var(--tint-navy)'}}>
-        The choices are two different <br></br>user experiences.
+        <h4 className='row navP text-center'  style={{color:'var(--tint-navy)'}} >OR</h4>
 
+        <p className='row navP mt-2 text-center'>
+            you can use the navigationmenu.
         </p>
+
         <div className="row">
 
         
           <div className='col'>
-          <Link  to={"quickFacts"} className="nav-link" href="#">
+          <Link  to={"quickFacts"} className="nav-link" href="#" style={{marginLeft:'1.5rem'}}>
 
             <button
               className="navSubIcon"
@@ -181,31 +183,15 @@ class Intro extends Component {
                 icon={faArrowDown}
                 color="var(--tint-navy)"
                 className="fntAwesome"
+                style={{transform:'scale(2)'}}
               >
               </FontAwesomeIcon>
-              <p className="row navP text-center">Personal <br></br>version</p>
 
             </button>
+
             </Link>
           </div>          
-          <div className='col'>
-          <Link  to={"fastForwardID"} className="nav-link" href="#">
-
-            <button
-              className="navSubIcon"
-            >
-              <FontAwesomeIcon
-                icon={faFastForward}
-                color="var(--tint-navy)"
-                className="fntAwesome"
-                onClick={this.handleClick}
-              >
-              </FontAwesomeIcon>
-              <p className="row navP text-center" >Overview<br></br>version</p>
-
-            </button>
-            </Link>
-          </div>
+          
           </div>
         </div>
         

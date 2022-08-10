@@ -451,7 +451,7 @@ class Skills extends Component {
                 </td>
                 <td>
                   {" "}
-                  <p className="skill backEndTheme" id="skillElemAndInter">
+                  <p className="skill backEndTheme">
                     C#
                   </p>
                 </td>
@@ -535,7 +535,7 @@ class Skills extends Component {
                 <td>
                   {" "}
                   <p className="skill rolesTheme">
-                    Business<br></br>Consultant
+                    Consultant
                   </p>
                 </td>
                 <td>
@@ -607,17 +607,27 @@ class Skills extends Component {
 
             <div className="row">
               <p className="duckText">
-                A duck can swim, go on land and fly but not being best in any of those skills. 
-                In my case being a "duck" as a fullstack developer 
-                being  <span className="skillHighLighted"> "Lagom" </span> (just the right amount in Swedish) 
-                I am comfortable in flying thorugh <span className="skillHighLighted">HTML, CSS and Javascript </span>, 
-                paddle among <span className="skillHighLighted"> MS SQL databases </span> and finally I can waddle up some <span className="skillHighLighted"> C# </span> code.   
-                <br></br><br></br>
-                In order for me to be an efficient developer I need to get familliar 
-                with the codebase and <span className="skillHighLighted"> occasionally </span> 
-                I need support from senior developers
-                who can guide and exchange ideas with me.
+                I have worked professionally with IT in various roles for seven years.  
+                In my initial start as a professional software developer I had to learn a broad set of skills in order to be 
+                <span className="skillHighLighted"> "Lagom" </span> (just the right amount in Swedish).<br></br><br></br> 
+                Simply put as a software developer I became duck.
+                <br></br><br></br> 
+                <ul className="skillBullet">
+                  <li>I can fly through <span className="skillHighLighted"> HTML, CSS and Javascript</span>.</li><br></br>
+                  <li>I can waddle in the dale of <span className="skillHighLighted"> .Net </span>and <br></br>
+                      pull off some <span className="skillHighLighted"> C#</span>.</li><br></br>
+                  <li>I can even paddle among <span className="skillHighLighted">MSSQL databases</span> without drowning.</li>
+                </ul>
+                Being a duck has it drawbacks...<br></br>
+                I am not great in any of the skills I possess... 
                 <br></br>
+                It sucks...
+                <br></br><br></br>
+                In order for me to do accomplish any work at work I seek wisdom among more experienced colleagues and 
+                at the sacred temple for software developers namely <span className="skillHighLighted">StackOverflow</span>.
+                <br></br><br></br>
+                To read more about what I have accomplished related to software development you can check out the Major Experiences section.
+               
               </p>
             </div>
           </div>
