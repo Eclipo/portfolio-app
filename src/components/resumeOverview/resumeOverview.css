@@ -107,7 +107,75 @@
   min-width: 95%;
   margin-bottom: 2vh !important;
   margin: auto;
+  opacity: 0;
+  display: none;
 }
+
+.resumeNavMenu{
+  background-color: var(--dark-navy);
+  border-color: var(--primary-red);
+  border-width: 0.16rem;
+  border-style: solid;
+  border-radius: 18px;
+  padding: 0.25rem;
+  color: var(--primary-red);
+  margin-bottom: 2vh !important;
+  margin: auto;
+  margin-top: 2rem;
+  /* z-index: -100 !important; */
+  justify-content: center;
+}
+
+.resumeNavRow{
+  justify-content: center;
+  margin-top: 1rem;
+
+}
+.resumeNav{
+  background-color: var(--light-navy);
+  border-color: var(--primary-red);
+  border-width: 0.25rem;
+  border-style: solid;
+  border-radius: 18px;
+  padding: 1rem;
+  color: var(--primary-red);
+  /* min-width: 95%; */
+  /* max-width: min-content; */
+  /* width: 15rem; */
+  margin-bottom: 2vh !important;
+  margin: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.resumeNav h2{
+  margin: auto;
+  color:var(--primary-red);
+}
+
+.resumeNav:hover h2{
+
+  color:var(--dark-navy);
+}
+
+.resumeNav:hover{
+  background-color: var(--primary-red);
+  border-color: var(--navy);
+  border-style: double;
+  border-width: 0.4rem;
+  outline: var(--primary-red) outset 0.25rem;
+}
+
+.activeNav{
+  background-color: var(--primary-red);
+  border-color: var(--navy);
+  border-style: double;
+  border-width: 0.4rem;
+  outline: var(--primary-red) outset 0.25rem;
+}
+
+
+
 
 .resumeSection h3 {
   color: var(--primary-red);

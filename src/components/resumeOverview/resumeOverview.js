@@ -1,11 +1,25 @@
-import React from "react";
+import React, {Component} from "react";
 
 import "../resumeOverview/resumeOverview.css";
 import { LightSaber } from "./lightSaber/lightSaber";
 import "../../IntersectionObserver.js";
 import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
+import { animateResume } from "./resumeOverviewFunctions";
 
-const ResumeOverview = () => {
+class ResumeOverview extends Component  {
+  constructor(props) {
+    super(props);
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  
+  }
+
+  handleClick(event) {
+    animateResume(event.currentTarget.id);
+  }
+
+  render(){
+
   return (
     <div id="resumeOverview" className="sectionAnimation">
       <div
@@ -22,14 +36,35 @@ const ResumeOverview = () => {
 
       <div id="resumeContainerID">
         <div className="resumeTable">
-          <div className="resumeSection">
-            <div className="row m-auto">
-              <div className="col mt-1">
-                <h2>Languages</h2>
+          <div className="resumeNavMenu mt-5">
+            <div className="resumeNavRow">
+                <button 
+                  id="resumeLangID"
+                  className="resumeNav col"                   
+                  onClick={this.handleClick}
+                  >
+                  <h2 id='langH2'>Languages</h2>
+                </button>
+                <button 
+                  className="resumeNav col"
+                  id="resumeExpID"
+                  onClick={this.handleClick}
+                  >
+                  <h2  id='expH2' >Experiences</h2>
+                </button>
+                <button 
+                  className="resumeNav col"
+                  id="resumeEduID"
+                  onClick={this.handleClick}
+
+                  >
+                  <h2  id='eduH2' >Education</h2>
+                </button>
+
               </div>
             </div>
-
-            <div className="experienceTable">
+          <div className="resumeSection" id="resumeLangSectionID">
+            <div className="experienceTable mt-2">
               <div className="row m-auto">
                 <div className="col m-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
@@ -66,13 +101,9 @@ const ResumeOverview = () => {
             </div>
           </div>
 
-          <div className="resumeSection">
-            <div className="row m-auto">
-              <div className="col mt-1">
-                <h2>Education</h2>
-              </div>
-            </div>
-            <div className="container">
+          <div className="resumeSection" id="resumeEduSectionID">
+        
+            <div className="container mt-2">
               <div className="experienceTable">
                 <div className="row m-auto mb-4">
                     <div className="expOverviewPeriod expOverviewPeriod-dotted p-2 m-1">
@@ -100,13 +131,8 @@ const ResumeOverview = () => {
             </div>
           </div>
 
-          <div className="resumeSection">
-          <div className="row m-auto">
-              <div className="col mt-1 mb-1">
-                <h2>Experiences</h2>
-              </div>
-            </div>
-            <div className="experienceTable">
+          <div className="resumeSection" id="resumeExpSectionID">
+            <div className="experienceTable mt-2">
               <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
@@ -396,6 +422,7 @@ const ResumeOverview = () => {
       </div>
     </div>
   );
-};
+  }
+}
 
 export default ResumeOverview;

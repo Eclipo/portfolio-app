@@ -267,8 +267,26 @@
     margin-top: -15rem;
     transform: scale(0.45);
   }
+  
+  /* .resumeNavRow{
+    display: inline-block;
+  } */
+
+  .resumeNavMenu{
+    width: 8rem;
+    display: flex;
+
+  }
 
 }
+
+@media (min-width: 26rem) {
+  .resumeNavMenu{
+    width: 8rem;
+    display: flex;
+  }
+}
+
   @media (min-width: 30rem) {
 
     #KnucklesContainerID {
@@ -305,6 +323,19 @@
       margin-top: 12rem !important; */
     }
   } 
+
+  @media (min-width: 45rem) {
+    .resumeNavMenu{
+      width: 35rem;
+      display: inline-flex;
+    }
+
+    .resumeNavRow{
+      display: inline-flex;
+      width: min-content;
+    }
+
+  }
 
   @media (min-width: 60rem) {
     #KnucklesContainerID {
