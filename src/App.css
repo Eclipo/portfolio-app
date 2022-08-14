@@ -8,7 +8,7 @@
     --primary-darker-blue: #2d6296;
 
     
-    --primary-red: #fa4545;
+    --primary-red: #d42d2d;
     --primary-yellow: #fffc66;
     --primary-dark-yellow: #fced20;
 
@@ -456,7 +456,7 @@
     background-color: transparent;
   }
   .navSubIcon:hover{
-    color: var(--primary-white);
+    color: var(--slate);
   }
 /* default state */
 .containerNavbar {
@@ -530,7 +530,7 @@
   }
 
   #navIconID:hover{
-    color:var(--primary-white) !important;
+    color:var(--light-slate) !important;
   }
 
   nav

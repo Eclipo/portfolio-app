@@ -6,17 +6,31 @@ export const animateResume = (inputID) => {
     const langSection = document.getElementById('resumeLangSectionID');
     const expSection = document.getElementById('resumeExpSectionID');
     const eduSection = document.getElementById('resumeEduSectionID');    
+    const resumeNavs = document.querySelectorAll(".resumeNav");
+
+    const resumeNavH2 = document.querySelectorAll(".resumeNavH2");
+    // // console.log(inputID);
+    resumeNavs.forEach((el) => {
+          el.classList.remove("resumeNavFocus");
+        });
+      
+        
+    //     // document.getElementById('resumeLangID').classList.remove("resumeNavFocus");
+    //     // document.getElementById('langH2').classList.remove("resumeNavFocus");
+
+    // // document.getElementById(inputID).classList.add("resumeNavFocus");
+
     
-    console.log(inputID);
-  
     let section ='#'+inputID.slice(0,-2)+'SectionID';
-    console.log(section);
-    console.log(section.slice(1));
+    // console.log(section);
+    // console.log(section.slice(1));
 
     let animate = anime.timeline({});
     
     switch (inputID) {
         case 'resumeLangID':
+            document.getElementById(inputID).classList.add("resumeNavFocus");
+
             animate.add({
                 begin(){
                     resetSections();
@@ -24,20 +38,28 @@ export const animateResume = (inputID) => {
                 endDelay:100
             })
 
-            animate.add({
-                targets:'#'+inputID,
-                background:'#fa4545',
-                color:'#041122',
-                borderColor: '#0a192f',
-                borderStyle: 'double',
-                borderWidth: '0.4rem',
-                outline: '#fa4545 outset 0.25rem'
-            })
+            //KOlla på NAV, göra likadant som du gjorde med Nav-sectior med animeringarna... 
+            // Du måste ha en tredje färgsättning, kanske gradient...
 
-            animate.add({
-                targets:'#langH2',
-                color:'#041122'
-            })
+            //  .navFocus !!!!!!!!!!!!!
+
+
+
+
+            // animate.add({
+            //     targets:'#'+inputID,
+            //     background:'#fa4545',
+            //     color:'#041122',
+            //     borderColor: '#0a192f',
+            //     borderStyle: 'double',
+            //     borderWidth: '0.4rem',
+            //     outline: '#fa4545 outset 0.25rem'
+            // })
+
+            // animate.add({
+            //     targets:'#langH2',
+            //     color:'#041122'
+            // })
 
             animate.add({
                 targets:section,
@@ -61,20 +83,20 @@ export const animateResume = (inputID) => {
             })
 
 
-            animate.add({
-                targets:'#'+inputID,
-                background:'#fa4545',
-                color:'#041122',
-                borderColor: '#0a192f',
-                borderStyle: 'double',
-                borderWidth: '0.4rem',
-                outline: '#fa4545 outset 0.25rem'
-            })
+            // animate.add({
+            //     targets:'#'+inputID,
+            //     background:'#fa4545',
+            //     color:'#041122',
+            //     borderColor: '#0a192f',
+            //     borderStyle: 'double',
+            //     borderWidth: '0.4rem',
+            //     outline: '#fa4545 outset 0.25rem'
+            // })
 
-            animate.add({
-                targets:'#expH2',
-                color:'#041122'
-            })
+            // animate.add({
+            //     targets:'#expH2',
+            //     color:'#041122'
+            // })
 
             animate.add({
                 targets:section,
@@ -97,20 +119,20 @@ export const animateResume = (inputID) => {
             })
 
 
-            animate.add({
-                targets:'#'+inputID,
-                background:'#fa4545',
-                color:'#041122',
-                borderColor: '#0a192f',
-                borderStyle: 'double',
-                borderWidth: '0.4rem',
-                outline: '#fa4545 outset 0.25rem'
-            })
+            // animate.add({
+            //     targets:'#'+inputID,
+            //     background:'#fa4545',
+            //     color:'#041122',
+            //     borderColor: '#0a192f',
+            //     borderStyle: 'double',
+            //     borderWidth: '0.4rem',
+            //     outline: '#fa4545 outset 0.25rem'
+            // })
 
-            animate.add({
-                targets:'#eduH2',
-                color:'#041122'
-            })
+            // animate.add({
+            //     targets:'#eduH2',
+            //     color:'#041122'
+            // })
 
             animate.add({
                 targets:section,

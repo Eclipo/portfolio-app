@@ -43,14 +43,14 @@ class ResumeOverview extends Component  {
                   className="resumeNav col"                   
                   onClick={this.handleClick}
                   >
-                  <h2 id='langH2'>Languages</h2>
+                  <h2 className="resumeNavH2" id='langH2'>Languages</h2>
                 </button>
                 <button 
                   className="resumeNav col"
                   id="resumeExpID"
                   onClick={this.handleClick}
                   >
-                  <h2  id='expH2' >Experiences</h2>
+                  <h2 className="resumeNavH2"  id='expH2' >Experiences</h2>
                 </button>
                 <button 
                   className="resumeNav col"
@@ -58,7 +58,7 @@ class ResumeOverview extends Component  {
                   onClick={this.handleClick}
 
                   >
-                  <h2  id='eduH2' >Education</h2>
+                  <h2 className="resumeNavH2"  id='eduH2' >Education</h2>
                 </button>
 
               </div>

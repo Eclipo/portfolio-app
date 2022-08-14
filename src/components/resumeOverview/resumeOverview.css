@@ -126,6 +126,7 @@
   justify-content: center;
 }
 
+
 .resumeNavRow{
   justify-content: center;
   margin-top: 1rem;
@@ -155,16 +156,74 @@
 
 .resumeNav:hover h2{
 
+  color:var(--light-slate);
+}
+
+ #resumeLangID.resumeNavFocus{
+
+  background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
+  color:var(--dark-navy) !important;
+
+  background-size: 200%; 
+    background-position: right bottom;
+    border: none !important;
+ }
+
+ #resumeExpID.resumeNavFocus{
+
+  background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
+  color:var(--dark-navy) !important;
+
+  background-size: 200%; 
+    background-position: right bottom;
+    border: none !important;
+ }
+
+ #resumeEduID.resumeNavFocus{
+
+  background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
+  color:var(--dark-navy) !important;
+
+  background-size: 200%; 
+    background-position: right bottom;
+    border: none !important;
+ }
+
+.resumeNav:focus{
+  background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
+  color:var(--dark-navy) !important;
+
+  background-size: 200%; 
+    background-position: right bottom;
+    transition: all 2s ease-out;
+    border: none !important;
+}
+
+
+.resumeNav:focus h2{
+
   color:var(--dark-navy);
 }
 
-.resumeNav:hover{
+
+#resumeLangID.resumeNavFocus h2{
+  color:var(--dark-navy);
+}
+
+#resumeExpID.resumeNavFocus h2{
+  color:var(--dark-navy);
+}
+
+#resumeEduID.resumeNavFocus h2{
+  color:var(--dark-navy);
+}
+/* .resumeNav:hover{
   background-color: var(--primary-red);
   border-color: var(--navy);
   border-style: double;
   border-width: 0.4rem;
   outline: var(--primary-red) outset 0.25rem;
-}
+} */
 
 .activeNav{
   background-color: var(--primary-red);

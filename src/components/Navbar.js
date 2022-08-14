@@ -123,7 +123,7 @@ export const Navbar = () => {
         data-bs-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <FontAwesomeIcon icon={ isActive ? faClose : faBars } id ="navIconID" style={{
-          color: isActive ? 'var(--slate)' : 'var(--tint-navy)' 
+          color: isActive ? 'var(--tint-navy)' : 'var(--tint-navy)' 
         }}/>
         </button>
       
