@@ -96,6 +96,9 @@
   color: var(--dark-navy) !important;
 }
 
+#resumeExpSectionID{
+  max-width: 10rem !important;
+}
 .resumeSection {
   background-color: var(--light-navy);
   border-color: var(--primary-red);

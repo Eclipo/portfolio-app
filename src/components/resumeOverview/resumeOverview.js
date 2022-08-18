@@ -144,7 +144,7 @@ class ResumeOverview extends Component  {
                   <div className=" header2VerticalUnderLine"></div>
                 </div>
                 <span className="col m-auto">
-                  <p className="m-auto">Developer consultant</p>
+                  <p className="m-auto">Developer <br></br>Consultant</p>
                 </span>
                 <div className="width1 m-auto">
                   <div className="header2VerticalUnderLine"></div>
@@ -183,7 +183,7 @@ class ResumeOverview extends Component  {
                 </div>
 
                 <span className="col m-auto">
-                  <p className="m-auto">Developer consultant</p>
+                <p className="m-auto">Developer <br></br>Consultant</p>
                 </span>
 
                 <div className="width1 m-auto">
@@ -208,7 +208,8 @@ class ResumeOverview extends Component  {
                 </div>
 
                 <span className="col m-auto">
-                  <p className="m-auto">Business consultant</p>
+                  <p className="m-auto">Business <br></br>Consultant</p>
+
                 </span>
 
                 <div className="width1 m-auto">
@@ -216,7 +217,7 @@ class ResumeOverview extends Component  {
                 </div>
 
                 <div className="col m-auto">
-                  <p className="m-auto">Consulting and testing</p>
+                  <p className="m-auto">Consulting <br></br>&<br></br>Testing</p>
                 </div>
               </div>
 
@@ -250,7 +251,7 @@ class ResumeOverview extends Component  {
                 </div>
 
                 <span className="col m-auto">
-                  <p className="m-auto">Sales assistant</p>
+                  <p className="m-auto">Sales<br></br>Assistant</p>
                 </span>
 
                 <div className="width1 m-auto">
@@ -275,7 +276,7 @@ class ResumeOverview extends Component  {
                 </div>
 
                 <span className="col m-auto">
-                  <p className="m-auto">Customer service</p>
+                  <p className="m-auto">Customer<br></br>Service</p>
                 </span>
 
                 <div className="width1 m-auto">
@@ -363,7 +364,7 @@ class ResumeOverview extends Component  {
                 </div>
 
                 <div className="col m-auto">
-                  <p className="m-auto">Marketing analysis</p>
+                  <p className="m-auto">Marketing <br></br>Analysis</p>
                 </div>
               </div>
 
@@ -380,7 +381,7 @@ class ResumeOverview extends Component  {
                 </div>
 
                 <span className="col m-auto">
-                  <p className="m-auto">Customer service</p>
+                <p className="m-auto">Customer<br></br>Service</p>
                 </span>
 
                 <div className="width1 m-auto">
@@ -405,7 +406,7 @@ class ResumeOverview extends Component  {
                 </div>
 
                 <span className="col m-auto">
-                  <p className="m-auto">Customer service</p>
+                <p className="m-auto">Customer<br></br>Service</p>
                 </span>
 
                 <div className="width1 m-auto">
@@ -413,7 +414,7 @@ class ResumeOverview extends Component  {
                 </div>
 
                 <div className="col m-auto">
-                  <p className="m-auto">Sales and support</p>
+                  <p className="m-auto">Sales &<br></br>Support</p>
                 </div>
               </div>
             </div>
