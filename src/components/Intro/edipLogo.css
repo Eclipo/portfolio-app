@@ -29,6 +29,15 @@
 }
 
 
+.welcomeText
+{
+  margin: auto !important;
+  text-align: center;
+  color:var(--lightest-slate);
+  display: inline-block;
+  width: max-content;
+}
+
 
  
 

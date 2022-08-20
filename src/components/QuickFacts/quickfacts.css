@@ -16,12 +16,12 @@
         /* border:0.25rem var(--primary-pink) solid; */
         /* background-color: var(--primary-yellow); */
         background:#829ea9;
-        border-width: 0.5rem;
+        border-width: 0.4rem;
         border-style: solid;
         border-color: var(--primary-yellow);
         border-radius: 50%;
-        width: 8rem;
-        height:8rem;
+        width: 8.5rem;
+        height:8.5rem;
 
         margin:auto;
         z-index: -1;

@@ -299,7 +299,7 @@
       height: 5rem;
     }
   
-    .duckText{
+    .duckText, .welcomeText{
       max-width: 30rem !important;
       /* max-width: 22.5rem !important; */
     }
@@ -390,7 +390,7 @@
       font-size:0.8rem !important;
     }
 
-    .duckText{
+    .duckText, .welcomeText{
       font-size:1.25rem !important;
     }
 
