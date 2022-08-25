@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./experiences.css";
 import "../../IntersectionObserver.js";
 import { ExperienceAnimation } from "./experienceAnimation.js";
 import { animate } from "./experienceFunctions.js";
 import { KnucklesSvg } from "./KnucklesSvg/KnucklesSvg.js";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight,faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
 
@@ -15,8 +15,6 @@ class Experiences extends Component {
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
     this.playAnimation = this.playAnimation.bind(this);
-    this.arrowLeft = this.arrowLeft.bind(this);
-    this.arrowRight = this.arrowRight.bind(this);
   }
 
   handleClick(event) {
@@ -27,15 +25,8 @@ class Experiences extends Component {
     this.expAnime.playOrStop(true);
   }
 
-  arrowLeft(event) {
-    alert("No scrolling here. I'm just an arrow after all.");
-  }
-
-  arrowRight(event) {
-    alert("I'm just an arrow pointing to the right. I'm not scrolling around.");
-  }
-
   render() {
+
     return (
       <div className="sectionAnimation" id="experiencesID">
         <div
@@ -57,12 +48,14 @@ class Experiences extends Component {
         <div className="container row" id="expMenu">
           <div className="row mx-auto ">
             <div className="col">
+            <button 
+                type="button" className="mt-2 btn bg-transparent" data-bs-toggle="modal" data-bs-target="#modal">
               <FontAwesomeIcon
                 className="scrollArrow"
-                onClick={this.arrowLeft}
                 icon={faArrowLeft}
                 color="var(--primary-purple)"
               ></FontAwesomeIcon>
+              </button>
             </div>
 
             <div className="col-8">
@@ -75,12 +68,17 @@ class Experiences extends Component {
             </div>
 
             <div className="col">
-              <FontAwesomeIcon
-                className="scrollArrow"
-                onClick={this.arrowRight}
-                icon={faArrowRight}
-                color="var(--primary-purple)"
-              ></FontAwesomeIcon>
+              <button 
+                type="button" className="mt-2 btn bg-transparent" data-bs-toggle="modal" data-bs-target="#modal"
+ >
+                <FontAwesomeIcon
+                  className="scrollArrow"
+                  icon={faArrowRight}
+                  color="var(--primary-purple)"
+                  >
+                </FontAwesomeIcon>              
+              </button>
+              
             </div>
           </div>
 
@@ -93,44 +91,44 @@ class Experiences extends Component {
           
             <tr>
               <td>
-                <div
+                <button
                   className="col techCategory"
                   id="fintech"
                   onClick={this.handleClick}
                 >
                   <h2>Fintech Industry</h2>
-                </div>
+                </button>
                 <div className="scrollLine" id="fintech_scrollLine"></div>
               </td>
 
               <td>
-                <div
+                <button
                   className="col techCategory"
                   id="municipality_3"
                   onClick={this.handleClick}
                 >
                   <h2>#3 Municipality</h2>
-                </div>
+                </button>
                 <div className="scrollLine" id="municipality_3_scrollLine"></div>
               </td>
               <td>
-                <div
+                <button
                   className="col techCategory"
                   id="municipality_2"
                   onClick={this.handleClick}
                 >
                   <h2>#2 Municipality</h2>
-                </div>
+                </button>
                 <div className="scrollLine" id="municipality_2_scrollLine"></div>
               </td>
               <td>
-                <div
+                <button
                   className="col techCategory"
                   id="municipality_1"
                   onClick={this.handleClick}
                 >
                   <h2>#1 Municipality</h2>
-                </div>
+                </button>
                 <div className="scrollLine" id="municipality_1_scrollLine"></div>
               </td>
             </tr>
@@ -305,7 +303,27 @@ class Experiences extends Component {
             </ul>
           </div>
         </div>
+
+<div className="modal fade" id="modal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content techCategory">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">I'm an arrow...?</h5>
       </div>
+      <div className="modal-body">
+       <p>I'm not scrolling around.</p>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn" style={{backgroundColor:'var(--primary-light-green)'}} data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+
+      
     );
   }
 }

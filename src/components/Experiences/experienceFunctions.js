@@ -97,12 +97,12 @@ export const animate = (inputID) => {
                         system.innerText = "Fintech application";
 
                         descOneEl.innerText =
-                          "Currently active within the fintech industry as a full-stack developer with focus on the front-end. We are building an awesome application.";
+                          "Currently active within the fintech industry as a front-end developer with focus on Angular. We are building an awesome application.";
                         descTwoEl.innerText =
-                          "Major tech is Angular with Bootstrap coupled with .Net. I have implemented forms, guards, increased mobile responsiveness and occassionaly I code in C#.";
-                        descThreeEl.innerText = "";
+                          "Major tech is Angular with Bootstrap coupled with .Net.";
+                        descThreeEl.innerText = " I have improved UX, implemented forms, guards, increased responsiveness and occassionaly I code in C#.";
                         descFourEl.innerText = "";
-                        liThree.style.display = "none";
+                        liThree.style.display = "";
                         liFour.style.display = "none";
                         chosenTechSkillContainer.style.display = "block";
                         chosenTechSkillContainer.style.opacity = "1";
