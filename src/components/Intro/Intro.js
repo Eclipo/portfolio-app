@@ -157,19 +157,12 @@ class Intro extends Component {
         <h4 className='row navP' style={{color:'var(--tint-navy)'}}>
         Welcome
         </h4>
-        <p className='row navP text-center'>
-          I made this personal website for<br></br> people to know me a bit better.
-        </p>
-        <h4 className='row navP text-center'  style={{color:'var(--tint-navy)'}} >SCROLL DOWN</h4>
-        <p className='row navP text-center'> 
-          to see the various sections.
-        </p>
-        <h4 className='row navP text-center'  style={{color:'var(--tint-navy)'}} >OR</h4>
 
-        <p className='row navP mt-2 text-center'>
-            you can use the navigationmenu.
+        <p className='welcomeText mx-auto'>
+          This is my personal website.<br></br>
+          <span style={{color:'var(--tint-navy)'}}>Scroll down </span> or use the <span style={{color:'var(--tint-navy)'}}> navigationmenu </span>(upper right corner).
         </p>
-
+      
         <div className="row">
 
         

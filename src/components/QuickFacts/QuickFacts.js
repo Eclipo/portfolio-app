@@ -21,7 +21,7 @@ const QuickFacts = () => {
                     <div className='col m-1'>
                             <div className='quickCard'>
                                 <span className='circ'></span>                               
-                                <h4 className=" quickH4" style={{marginTop:"-5.25rem"}}>FAMILLY</h4>
+                                <h4 className=" quickH4" style={{marginTop:"-5rem"}}>FAMILLY</h4>
                             </div>
 
                         </div>
@@ -29,7 +29,7 @@ const QuickFacts = () => {
                             <div className='quickCard'>
                             <span className='circ'></span>                               
 
-                                    <h4 className="quickH4" style={{marginTop:"-5.25rem"}}>SWEDEN</h4>
+                                    <h4 className="quickH4" style={{marginTop:"-5rem"}}>SWEDEN</h4>
                                 
                             </div>
                             </div>
@@ -40,7 +40,7 @@ const QuickFacts = () => {
                             <div className='quickCard'>
                             <span className='circ'></span>                               
 
-                                    <h4 className="quickH4" style={{marginTop:"-6rem"}}>FULLSTACK <br></br>DEVELOPER</h4>
+                                    <h4 className="quickH4" style={{marginTop:"-5.5rem"}}>FULLSTACK <br></br>DEVELOPER</h4>
                                 
                             </div>
                             

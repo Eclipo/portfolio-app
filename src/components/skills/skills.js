@@ -607,10 +607,10 @@ class Skills extends Component {
 
             <div className="row">
               <p className="duckText">
-                I have worked professionally with IT in various roles for seven years.  
+                I have worked seven years within the IT-sector and through various roles.  
                 In my initial start as a professional software developer I had to learn a broad set of skills in order to be 
                 <span className="skillHighLighted"> "Lagom" </span> (just the right amount in Swedish).<br></br><br></br> 
-                Simply put as a software developer I became duck.
+                As a developer I slowly transformed into being a duck.
                 <br></br><br></br> 
                 <ul className="skillBullet">
                   <li>I can fly through <span className="skillHighLighted"> HTML, CSS and Javascript</span>.</li><br></br>
@@ -618,16 +618,9 @@ class Skills extends Component {
                       pull off some <span className="skillHighLighted"> C#</span>.</li><br></br>
                   <li>I can even paddle among <span className="skillHighLighted">MSSQL databases</span> without drowning.</li>
                 </ul>
-                Being a duck has it drawbacks...<br></br>
-                I am not great in any of the skills I possess... 
-                <br></br>
-                It sucks...
-                <br></br><br></br>
-                In order for me to do accomplish any work at work I seek wisdom among more experienced colleagues and 
-                at the sacred temple for software developers namely <span className="skillHighLighted">StackOverflow</span>.
-                <br></br><br></br>
-                To read more about what I have accomplished related to software development you can check out the Major Experiences section.
-               
+                <span className="skillHighLighted">So how good of a duck am I?</span><br></br>
+                Hopefully 'Lagom'! With some guidance from senior developers 
+                combined with my regular visits to <span className="skillHighLighted"> StackOverflow </span> I can be quite efficient.
               </p>
             </div>
           </div>
