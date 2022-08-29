@@ -181,13 +181,13 @@ export const Family = () => {
                 <div className="nose laleh-nose"></div>
                 <div className="eye-shadow" id="left">
                   <div className="eyebrow erika-brow"></div>
-                  <div className="eye noah-eye" id="lalehEyeLeftID">
+                  <div className="eye laleh-eye" id="lalehEyeLeftID">
                     <div className="laleh-kawai"></div>
                   </div>
                 </div>
                 <div className="eye-shadow" id="right">
                   <div className="eyebrow erika-brow"></div>
-                  <div className="eye noah-eye">
+                  <div className="eye laleh-eye">
                     <div className="laleh-kawai"></div>
                   </div>
                 </div>
