@@ -13,6 +13,19 @@ const randomPatience = ['#patienceOneID','#patienceTwoID','#patienceThreeID','#p
 
 const randomCards = ['#honestyCard','#stubbornCard','#structureCard','#multiTaskCard','#focusCard','#patienceCard','#temperCard','#empathyCard'];
 
+export const wiggleCard = anime({
+  loopBegin:function(){
+    animateCard(getRandomCard());
+  },
+  loopComplete: function() {
+    
+    setTimeout(animateCard(getRandomTarget()),1000);
+  },
+  loop:true,
+  autoplay:false,
+  duration:1250,
+});
+
 function getRandomCard() {
   return randomCards[Math.floor(Math.random() * randomCards.length)];
 }
@@ -259,18 +272,7 @@ const playEmpathy = anime({
       duration: 150,
     });
 
-    const wiggleCard = anime({
-      loopBegin:function(){
-        animateCard(getRandomCard());
-      },
-      loopComplete: function() {
-        
-        setTimeout(animateCard(getRandomTarget()),1000);
-      },
-      loop:true,
-      autoplay:false,
-      duration:1250,
-    });
+   
 
     const brokenBannerAnim = anime.timeline({
       loop:true,

@@ -1,5 +1,5 @@
 import anime from "animejs";
-
+import { wiggleCard } from "./playPersonalityFunc";
 var closeWindow = false;
 
 
@@ -52,14 +52,15 @@ export const resetAttributeAnimation = (inputID) => {
         duration:750,
         complete:function(){
             closeWindow = false;
-            anime({
-                targets:card,
-                scale:[1,1.1],
-                rotate:['2deg','-2deg'],
-                direction:'alternate',
-                duration:750,
-                loop:true
-            })
+            // anime({
+            //     targets:card,
+            //     scale:[1,1.1],
+            //     rotate:['2deg','-2deg'],
+            //     direction:'alternate',
+            //     duration:750,
+            //     loop:true
+            // })
+
         }
 
     });
@@ -75,7 +76,7 @@ export const resetAttributeAnimation = (inputID) => {
         begin:function(){
             document.getElementById(inputID+'_p').style.display='none';
             document.getElementById(inputID+'_closeBtn').style.display='none';
-
+            wiggleCard.restart();
         }
     });
 }

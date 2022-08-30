@@ -492,12 +492,14 @@ class Personality extends Component {
                   
                   <div className="card-body">
                     <h3 className="card-title" id="stubbornCard_h3">Stubborn</h3>
-                    <h4  id="stubbornCard_h4">Never give up</h4>
+                    <h4  id="stubbornCard_h4">When is enough enough?</h4>
                     <p className="card-text" id="stubbornCard_p">
-                      Being<span className="highlighted"> stubborn </span>is an
-                      another familly attribute and it is both a curse and a blessing.<br></br><br></br>
-                      Throughout life I have faced various obstacles such awhether it is at work or in private then I will try very hard to solve it.
-                      Though as I have grown wiser with the years I try not simply brute-forcing is not an efficient method.
+                      Being stubborn is an
+                      another familly attribute and it is both a curse and a blessing.<span className="highlighted"> When is enough enough? </span><br></br>
+                      Previously I had really hard time to accept failures because I took it too personally. 
+                      As time went on I have grown wiser with the years and 
+                      nowdays I try to avoid brute-forcing myself through the problems I face.
+                      Usually it is better to take a step back and walk away in ordeer to find another way.  
                     </p>
                   </div>
                 </div>
@@ -513,8 +515,10 @@ class Personality extends Component {
                     
                     <div className="card-body">
                       <h3 className="card-title" id="structureCard_h3">Structure</h3>
+                      <h4  id="tructureCard_h4">The struggle</h4>
+
                       <p className="card-text" id="structureCard_p">
-                        The need of <span className="highlighted">structure</span> is of
+                        Task lists. Labeled The strI am not a strucutured person and it is not fun. I The need of <span className="highlighted">structure</span> is of
                         great importance to me but I struggle with it.
                       </p>
                     </div>

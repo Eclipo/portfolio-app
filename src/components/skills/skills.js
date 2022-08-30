@@ -607,7 +607,7 @@ class Skills extends Component {
 
             <div className="row">
               <p className="duckText">
-                I have worked seven years within the IT-sector and through various roles.  
+                I have worked in various roles for seven years within the IT-sector.  
                 In my initial start as a professional software developer I had to learn a broad set of skills in order to be 
                 <span className="skillHighLighted"> "Lagom" </span> (just the right amount in Swedish).<br></br><br></br> 
                 As a developer I slowly transformed into being a duck.
@@ -619,8 +619,9 @@ class Skills extends Component {
                   <li>I can even paddle among <span className="skillHighLighted">MSSQL databases</span> without drowning.</li>
                 </ul>
                 <span className="skillHighLighted">So how good of a duck am I?</span><br></br>
-                Hopefully 'Lagom'! With some guidance from senior developers 
-                combined with my regular visits to <span className="skillHighLighted"> StackOverflow </span> I can be quite efficient.
+                With some guidance from senior developers 
+                combined with my regular visits to <span className="skillHighLighted"> StackOverflow </span> I can be quite efficient and occassionally even Lagom!<br></br>
+                At the moment I am more tilted towards front-end than back-end however I do like both.
               </p>
             </div>
           </div>
