@@ -40,7 +40,7 @@ const QuickFacts = () => {
                             <div className='quickCard'>
                             <span className='circ'></span>                               
 
-                                    <h4 className="quickH4" style={{marginTop:"-5.5rem"}}>FULLSTACK <br></br>DEVELOPER</h4>
+                                    <h4 className="quickH4" style={{marginTop:"-5.5rem"}}>WEB<br></br>DEVELOPER</h4>
                                 
                             </div>
                             

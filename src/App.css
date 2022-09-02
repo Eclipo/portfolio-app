@@ -526,11 +526,12 @@
 
   }
   #navIconID{
-  color:var(--tint-navy);
+  color:var(--light-slate) !important;
+
   }
 
   #navIconID:hover{
-    color:var(--light-slate) !important;
+    color:var(--tint-navy) !important;
   }
 
   nav

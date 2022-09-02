@@ -208,8 +208,8 @@ margin: 2.5rem;
 .personalityCloseBtn{
   float: right;
   margin: 0.5rem;
-  border-color:var(--primary-green) !important;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border: none;
   background-color: var(--light-navy);
   font-weight: 800;
 

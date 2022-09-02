@@ -176,7 +176,7 @@
 
 .bodyBasket {
   width: 18rem;
-  height: 17rem;
+  height: 16rem;
   background: var(--primary-orange);
   border-radius: 6.25rem;
   position: absolute;
@@ -251,18 +251,20 @@
   height: 8rem;
   border-bottom-left-radius: 25%;
   border-bottom-right-radius: 25%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .loweBodyLeft {
   margin-left: 1rem;
   margin-top: 3rem;
+  z-index: -2;
+
 }
 
 #lowerBodyRight {
   margin-left: 9rem;
   margin-top: -8rem;
-  z-index: -1;
+  z-index: -2;
 }
 .leftLegBasket {
   background: #ffe4be;
