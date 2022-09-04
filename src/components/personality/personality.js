@@ -238,7 +238,7 @@ class Personality extends Component {
               <tr>
                 <td>
                   {" "}
-                  <h4 className="personalityTraits">Emotional</h4>
+                  <h4 className="personalityTraits">Temper</h4>
                 </td>
                 <td>
                   <div
@@ -443,10 +443,10 @@ class Personality extends Component {
             </tbody>
           </table>
           <div className="personalityTextContainer">
-            <h2 className="mb-5">
+            <h2 className="mb-1">
               About <br></br>My personality
             </h2>
-            <p>
+            <p className="duckText mt-0">
               The personality matrix above should not be taken too seriously. I
               had great fun doing the animations for them. On the other hand I
               do want to be a bit more personal with who I am.
@@ -478,21 +478,21 @@ class Personality extends Component {
                     </div>
 
                     <div className="card-body">
+                    <button className="btnPersonalityCard">
+
                       <h3 className="card-title" id="honestyCard_h3">
                         Honesty
                       </h3>
                       <h4 id="honestyCard_h4">I'm just telling the truth</h4>
                       <p className="card-text" id="honestyCard_p">
-                        I grew up in a Kurdish familly where the phrase "I'm
-                        just telling the truth" became a mantra and we sure did
-                        get into conflicts with each other because of too much
-                        <span className="highlighted"> honesty</span>.<br></br>
-                        <br></br>
-                        Later in life (30+ years) I finally understood I have
+                        In my familly the phrase 
+                        <span className="highlighted"> "I'm just telling the truth" </span> 
+                        was abusively applied. Later in life (30+ years) I finally understood I have
                         another take on honesty compared to most native swedes.
                         Nowdays I try to be more diplomatic while I encourage
                         others to be more honest with me.
                       </p>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -514,6 +514,8 @@ class Personality extends Component {
                     </div>
 
                     <div className="card-body">
+                    <button className="btnPersonalityCard">
+
                       <h3 className="card-title" id="stubbornCard_h3">
                         Stubborn
                       </h3>
@@ -522,18 +524,12 @@ class Personality extends Component {
                         Being stubborn is an another{" "}
                         <span className="highlighted"> familly attribute </span>{" "}
                         and it is both a curse and a blessing.
-                        <span className="highlighted">
-                          {" "}
-                          When is enough enough?{" "}
-                        </span>
-                        <br></br>
                         Previously I had really hard time to accept failures
-                        because I took it too personally. As time went on I have
-                        grown wiser with the years and nowdays I avoid
-                        brute-forcing myself through any challenge I face.
-                        Usually it is better to take a step back and walk away
-                        in ordeer to find another way.
+                        but I have grown wiser and nowdays I avoid
+                        brute-forcing myself through the obstacles I face.
                       </p>
+                      </button>
+
                     </div>
                   </div>
                 </div>
@@ -555,17 +551,22 @@ class Personality extends Component {
                     </div>
 
                     <div className="card-body">
+                    <button className="btnPersonalityCard">
+
                       <h3 className="card-title" id="structureCard_h3">
                         Structure
                       </h3>
-                      <h4 id="tructureCard_h4">The struggle</h4>
+                      <h4 id="structureCard_h4">panicked fish on land</h4>
 
                       <p className="card-text" id="structureCard_p">
-                        Task lists. Labeled The strI am not a strucutured person
-                        and it is not fun. I The need of{" "}
-                        <span className="highlighted">structure</span> is of
-                        great importance to me but I struggle with it.
+                        Task lists, reminders, labeled boxes but in the end I still end up in a mess.
+                        When I try hard to be structured I feel like a <span className="highlighted"> panicked fish holding its breath </span> 
+                        whereas others can breath freely.<br></br><br></br>
+                        Despite my flaw I truly need a structural environment.
+                        It calms my mind and I can channel my focus on more pressing matters like coding and drinking coffee. 
+
                       </p>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -588,14 +589,19 @@ class Personality extends Component {
                     </div>
 
                     <div className="card-body">
+                    <button className="btnPersonalityCard">
+
                       <h3 className="card-title" id="multiTaskCard_h3">
                         Multitasking
                       </h3>
+                      <h4 id="multiTaskCard_h4">NO!</h4>
+
                       <p className="card-text" id="multiTaskCard_p">
-                        I don't like{" "}
-                        <span className="highlighted">multitasking</span>. It
-                        makes my head split.
+                      <span className="highlighted">NO!</span> I have tried it it's horrible.<br></br><br></br> 
+                        It makes my head split and I need to reset my focus for every task I have at hand.<br></br>
+                        I rather spend my time doing one thing and doing it as best I can then I go on to the next task. 
                       </p>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -618,15 +624,23 @@ class Personality extends Component {
                     </div>
 
                     <div className="card-body">
+                    <button className="btnPersonalityCard">
+
                       <h3 className="card-title" id="focusCard_h3">
                         Focus
                       </h3>
+                      <h4 id="focusCard_h4">Double-edged sword</h4>
+
                       <p className="card-text" id="focusCard_p">
-                        In order to utilize my{" "}
-                        <span className="highlighted">focus</span> besides a
+                        In order to utilize my focus besides a
                         structured surrounding and no multitasking are enjoyable
-                        challenges.
+                        challenges where I will be completely devoured by my focus. 
+                        The opposite would be chaos and boring tasks which immediately crashes my focus into a blue screen of death.
+                        It has taken my some time to figure out how my focus works and it is a 
+                        <span className="highlighted"> double-edged sword</span>.<br></br><br></br>
+                        Too much fun and I will have trouble doing anything else whereas too much of boredom will take me into a dark path of pain and suffering.
                       </p>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -649,9 +663,13 @@ class Personality extends Component {
                     </div>
 
                     <div className="card-body">
+                    <button className="btnPersonalityCard">
+
                       <h3 className="card-title" id="patienceCard_h3">
                         Patience
                       </h3>
+                      <h4 id="patienceCard_h4">Breath in and breath out</h4>
+
                       <p className="card-text" id="patienceCard_p">
                         I have some problem with being{" "}
                         <span className="highlighted">patient</span>.
@@ -659,6 +677,7 @@ class Personality extends Component {
                         at times. Nowdays I try to take a step back and breath
                         alot when my patience is running out
                       </p>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -681,14 +700,17 @@ class Personality extends Component {
                     </div>
 
                     <div className="card-body">
+                    <button className="btnPersonalityCard">
+
                       <h3 className="card-title" id="temperCard_h3">
-                        Emotional
+                        Temper
                       </h3>
                       <p className="card-text" id="temperCard_p">
                         Most often I am very calm but when I suffer some
                         setbacks I do display some{" "}
                         <span className="highlighted">temper</span>.
                       </p>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -711,6 +733,8 @@ class Personality extends Component {
                     </div>
 
                     <div className="card-body">
+                    <button className="btnPersonalityCard">
+
                       <h3 className="card-title" id="empathyCard_h3">
                         Empathy
                       </h3>
@@ -719,6 +743,7 @@ class Personality extends Component {
                         to those I care about and its important to me that they
                         are okay.
                       </p>
+                      </button>
                     </div>
                   </div>
                 </div>

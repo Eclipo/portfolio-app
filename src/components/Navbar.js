@@ -141,7 +141,7 @@ export const Navbar = () => {
               <FontAwesomeIcon
                 icon={faTableCells}
                 style={{
-                  color : isRed ? 'red' : 'var(--tint-navy)' 
+                  color : isRed ? 'red' : 'var(--light-slate)' 
                 }}
                 className="fntAwesome "
                 onClick={outlineMode}

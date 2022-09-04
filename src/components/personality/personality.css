@@ -199,7 +199,10 @@ width: 25rem;
 height:fit-content;
 margin: 2.5rem;
 }
-
+.btnPersonalityCard{
+border: none;
+background-color: transparent;
+}
 .personalityCard h4{
   margin:auto;
   text-align: center;
