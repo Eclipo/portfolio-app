@@ -43,15 +43,14 @@ class Portfolio extends Component {
               <p>TIll today I have unfortunately no other projects that 
                 I am comfortable in sharing with you. 
                 Work related stuff is a big no no.<br></br><br></br>
-                However I will surely make a project which combines 
-                Angular, C# and SQL. <br></br>
+                However I MIGHT do another project in the future. <br></br>
                 
                 Till then you can read about the story of my first project 
                 in my portfolio which is this very website. It consists of 
               React,Bootstrap,AnimeJS,CSS and Javascript.
 
               <br></br><br></br>
-              The main reason of this website is to let friends, 
+              The main reason of why I did this website is to let friends, 
               colleagues and others to know more about me.
               This website actually helped me to land my job within the fintech group at CGI.
               </p>
