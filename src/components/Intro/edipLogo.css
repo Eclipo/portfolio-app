@@ -32,7 +32,7 @@
 .welcomeText
 {
   margin: auto !important;
-  text-align: center;
+  text-align: left;
   color:var(--lightest-slate);
   display: inline-block;
   width: max-content;
