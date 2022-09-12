@@ -45,12 +45,12 @@ export const EdipGuy = () => {
             </div>
 
             <div className="position-absolute cupSteamContainerTable ">
-              <div className="right-hand">
-                <div className="left-hand"></div>
-              </div>
+              <div className="right-hand" id='rightAnim'></div>
+              <div className="left-hand"></div>
+
               <div className="col">
                 <div className="row">
-                  <div className="steam-container mx-auto">
+                  <div className="steam-container mx-auto" id="steamContainerId">
                     <div className="squiggle-container squiggle-container-1">
                       <div className="squiggle ">
                         <svg

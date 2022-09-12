@@ -25,6 +25,33 @@ export class QuickAboutAnimation {
     //   duration: 500,
     //   delay: 750,
     // });
+    this.rightHand = anime.timeline({
+      loop: true,
+      autoplay: false,
+      easing: "easeInOutQuad",
+      direction: "alternate"
+
+    });
+
+    this.rightHand.add({
+      targets:['.right-hand','#steamContainerId','.coffee-cup-container',],
+      translateY: [0, "-0.15rem", "0.15rem"],
+      duration: 1750
+    })
+
+    this.leftHand = anime.timeline({
+      loop: true,
+      autoplay: false,
+      easing: "easeInOutQuad",
+      direction: "alternate"
+    });
+
+    this.leftHand.add({
+      targets:'.left-hand',
+      translateY: [0, "-0.15rem", "0.15rem"],
+      duration: 1750
+
+    })
 
     this.edipAndFamillyAnimation = anime.timeline({
       loop: true,
@@ -44,8 +71,11 @@ export class QuickAboutAnimation {
     this.edipAndFamillyAnimation.add({
       targets: ".eyebrow",
       translateY: [0, "-0.5rem", "0.5rem"],
-      duration: 500,
+      duration: 500      
+    
     });
+
+    
 
     this.quickCoffeeSteam = anime.timeline({
       loop: true,
@@ -239,6 +269,8 @@ export class QuickAboutAnimation {
     if (input === true && this.edipAndFamillyAnimation.paused) {
       console.log("NOW IT IS GOING TO PLAY!!!");
       this.edipAndFamillyAnimation.play();
+      this.rightHand.play();
+      this.leftHand.play();
       // this.familyBlinkAnimation.play();
       this.quickCoffeeSteam.play();
       this.bounceCityHall.play();

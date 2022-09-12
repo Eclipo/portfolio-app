@@ -67,8 +67,8 @@
 }
 
 .cupSteamContainerTable {
-  margin-left: 13.5rem;
-  margin-top: 17rem;
+  margin-left: 12.5rem;
+  margin-top: 17.25rem;
 }
 
 .steam-container {
@@ -140,8 +140,8 @@
   background-color: #ffe4be;
   height: 3.125rem;
   width: 3.125rem;
-  margin-top: 3.5rem;
-  margin-left: 60%;
+  margin-top: 3.6rem;
+  margin-left: 50%;
   border-radius: 50%;
   position: absolute;
   z-index: -1;
@@ -152,8 +152,10 @@
   background-color: #ffe4be;
   height: 3.125rem;
   width: 3.125rem;
-  margin-left: -7rem;
+  margin-left: -3.5rem;
+  margin-top: 4rem;
   position: absolute;
+  z-index: 1;
 }
 
 .mouth {
