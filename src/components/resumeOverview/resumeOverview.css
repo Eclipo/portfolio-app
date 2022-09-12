@@ -154,12 +154,13 @@
 
 .resumeNav h2{
   margin: auto;
-  color:var(--primary-red);
+  color:var(--light-slate);
+
 }
 
 .resumeNav:hover h2{
+  color:var(--primary-red);
 
-  color:var(--light-slate);
 }
 
  #resumeLangID.resumeNavFocus{

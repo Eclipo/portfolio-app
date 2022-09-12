@@ -447,10 +447,11 @@ class Personality extends Component {
               About <br></br>My personality
             </h2>
             <p className="duckText mt-0">
-              The personality matrix above should not be taken too seriously and hopefully you didn't stare too much! Though I did have great fun doing the animations :-)<br></br><br></br>
+              The personality matrix above should not be taken too seriously and hopefully you didn't stare at it too much! 
+              Please note that I did have great fun doing the animations :-)<br></br><br></br>
               My wish is to raise awereness of how one's personality is quite dynamic rather than static. 
-              My personality depends on various conditions where I can either be more or less of a specific trait. I guess it's not unique among other humans.<br></br><br></br>
-              Either way! Down below I explain in more detail regarding some of my major attributes in which I hope you can understand me a bit better.
+              Depending on various conditions I can either be more or less of a specific trait. I guess it's not unique among humans.<br></br><br></br>
+              Down below I explain in more detail regarding some of my major attributes in which I hope you can understand me a bit better.
             </p>
             <h3 className="brokenBanner">
               <div className="d-inline-block brokenLetterC">C</div>
@@ -491,7 +492,7 @@ class Personality extends Component {
                         was and is still today abusively applied. Later in life (30+ years) I finally understood I have
                         another take on honesty compared to most native swedes.
                         Nowdays I try to be more diplomatic while I encourage
-                        others to be more honest with me.
+                        others to be more honest with me. Honesty is truly a trait I value highly.
                       </p>
                       </button>
                     </div>
@@ -524,10 +525,10 @@ class Personality extends Component {
                       <p className="card-text" id="stubbornCard_p">
                         Being stubborn is an another familly attribute
                         and it is both <span className="highlighted"> a curse and a blessing </span>.
-                        On one hand my stubborness has taken me where I am today.
-                        On the other hand going the hard road ahead does require some sacrifice and sometimes the price is a bit too high and maybe even unnecessary.<br></br><br></br>
-                        However with time I have grown wiser and instead of brute-forcing myself through the obstacles I try to take a step back, 
-                        breath alot and try to figure out how I will solve it more efficiently.
+                        Thanks to my stubborness it has taken me where I am today.
+                        On the other hand I might have overdone it at times.<br></br><br></br>
+                        However with time I have grown wiser and instead of brute-forcing myself through the obstacles I stumble upon these days I try to take a step back, 
+                        breath alot and try to find a more elegant solution to the problem.
                       </p>
                       </button>
 
@@ -561,7 +562,7 @@ class Personality extends Component {
 
                       <p className="card-text" id="structureCard_p">
                         Task lists, reminders, labeled boxes but I still end up in a mess.
-                        Despite my flaw I still need a structural environment. I need the<span className="highlighted"> feng shui</span> since 
+                        Despite my flaw I still need <span className="highlighted"> feng shui</span> since 
                         it calms my mind and I can channel my focus on more pressing matters such as coding and drinking coffee.
                       </p>
                       </button>
@@ -595,7 +596,7 @@ class Personality extends Component {
                       <h4 id="multiTaskCard_h4">NO!</h4>
 
                       <p className="card-text" id="multiTaskCard_p">
-                      <span className="highlighted">NO!</span> <br></br><br></br> 
+                      <span className="highlighted">No no no!</span> <br></br><br></br> 
                         "Multitasking" (read too much tasks) makes my head split and I need to reset my focus.<br></br>
                         I rather spend my time doing one thing at a time to the best of my ability.
                       </p>
@@ -630,15 +631,10 @@ class Personality extends Component {
                       <h4 id="focusCard_h4">Double-edged sword</h4>
 
                       <p className="card-text" id="focusCard_p">
-                        In order to utilize my focus I need feng shui around me, 
-                        no multitasking and enjoyable
-                        challenges. A little side-note though I will be completely devoured by my focus.<br></br><br></br> 
-                        Reaching the realm of my unfocus demands a chaotic environment and boring tasks which will sooner or later crash me into a blue screen of death 
+                        To reach the very heights of my hyperfocus I need feng shui and enjoyable tasks. The problem though I will be completely devoured by my focus.<br></br><br></br> 
+                        In contrast a chaotic environment and boredome which will sooner or later crash me into a blue screen of death 
                         (the error page in Windows when the computer doesn't work properly).<br></br><br></br>
-                        It has taken my some time to figure out how my focus works and it is a 
-                        <span className="highlighted"> double-edged sword</span>.<br></br><br></br>
-                        Too much fun and I will have trouble doing anything else whereas too much of boredom will take me into a dark path of pain and suffering.
-                      </p>
+                        My focus is truly a <span className="highlighted"> double-edged sword</span>.</p>
                       </button>
                     </div>
                   </div>
@@ -708,8 +704,6 @@ class Personality extends Component {
                         Most often I am very calm but naturally I do display some stronger emotions at times. 
                         Tapping into those more fierce feelings such as anger, sadness, panic or anxiety does me make more capable of taking <span className="highlighted"> necessary actions </span>
                         to handle difficult situations.
-                        My temper and its whole spectrum of emotions helps me taking better decisions in life rather than me just listening franatically to logic and reason. <br></br><br></br>
-                        Truth to be told you simply need both logic and emotions to handle whatever life throws at you.
                       </p>
                       </button>
                     </div>

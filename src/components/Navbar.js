@@ -181,7 +181,7 @@ export const Navbar = () => {
             </li>
 
             <li className="nav-item">
-            <Link smooth={true} to={"portfolioID"} id="navLinkPortfolioID" className="nav-link" href="#" tabIndex={7}><h3 className='navLinkH3'>Portfolio</h3></Link>
+            <Link smooth={true} to={"portfolioID"} id="navLinkPortfolioID" className="nav-link" href="#" tabIndex={7}><h3 className='navLinkH3'>The story</h3></Link>
             </li>
       
             <li className="nav-item">

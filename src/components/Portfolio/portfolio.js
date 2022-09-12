@@ -30,7 +30,7 @@ class Portfolio extends Component {
           className="sectionLine"
           style={{backgroundColor:"var(--primary-pink)" }}
         ></div>
-        <h1 style={{ color: "var(--primary-pink" }}>Portfolio</h1>
+        <h1 style={{ color: "var(--primary-pink" }}>The story</h1>
         <PlayRefresh id="PortfolioAnimation" playBoolean={0}></PlayRefresh>
 
         <div className="flexCenter">
@@ -39,23 +39,16 @@ class Portfolio extends Component {
 
         <div className="flexCenter mb-5" id="portfolioContainerID">
           <div className="flexCenter portfolioTextContainer">
-            <h2>This is it</h2>
-              <p>TIll today I have unfortunately no other projects that 
-                I am comfortable in sharing with you. 
-                Work related stuff is a big no no.<br></br><br></br>
-                However I MIGHT do another project in the future. <br></br>
-                
-                Till then you can read about the story of my first project 
-                in my portfolio which is this very website. It consists of 
-              React,Bootstrap,AnimeJS,CSS and Javascript.
-
-              <br></br><br></br>
-              The main reason of why I did this website is to let friends, 
+            {/* <h2>This is it</h2> */}
+              <p> The main reason I did this website is to let friends, 
               colleagues and others to know more about me.
               This website actually helped me to land my job within the fintech group at CGI.
+              The applied tech are React,Bootstrap,AnimeJS,CSS and Javascript.
+              <br></br><br></br>
+              Downbelow you can click on the arrows to read more into the story of this website.
               </p>
 
-            <h3>The story</h3>
+            {/* <h3>The story</h3> */}
 
             <div className="container flexCenter">
               <div className="row">

@@ -27,9 +27,9 @@ class Skills extends Component {
         </div>
 
         <div
-          className="skillContainer"
+          className="container-sm skillContainer"
           id="skillContainerID"
-          style={{ width: "100%"}}
+          
         >
           <table className="skillTable">
           <tbody>
@@ -595,7 +595,7 @@ class Skills extends Component {
           </table>
         </div>
 
-        <div className="container" id="duckContainerID">          
+        <div className="container-sm" id="duckContainerID">          
           <div className="row">
           <h2 style={{ color: "var(--primary-blue"}}>I am a duck</h2>
 
