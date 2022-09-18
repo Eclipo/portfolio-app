@@ -40,10 +40,10 @@ class Portfolio extends Component {
         <div className="flexCenter mb-5" id="portfolioContainerID">
           <div className="flexCenter portfolioTextContainer">
             {/* <h2>This is it</h2> */}
-              <p> The main reason I did this website is to let friends, 
-              colleagues and others to know more about me.
+              <p> This website is to let my friends, 
+              colleagues and others alike to know more about me.
               This website actually helped me to land my job within the fintech group at CGI.
-              The applied tech are React,Bootstrap,AnimeJS,CSS and Javascript.
+              The applied tech on this site are React,Bootstrap,AnimeJS,CSS and Javascript.
               <br></br><br></br>
               Downbelow you can click on the arrows to read more into the story of this website.
               </p>

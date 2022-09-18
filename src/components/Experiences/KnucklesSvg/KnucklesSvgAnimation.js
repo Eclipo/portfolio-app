@@ -36,9 +36,9 @@ export function KnucklesSvgAnimation () {
                 complete:function(){
                   anime({
                   targets: '#testLines path',
-                  strokeDashoffset: [anime.setDashoffset, 0],
-                  easing: 'easeInElastic(1, .1)',
-                  duration: 1250,
+                  strokeDashoffset: [anime.setDashoffset,0],
+                  easing: 'linear',
+                  duration: 1500,
                   delay: function(el, i) { return i * 150 },
                   complete:function(){
                     //Face

@@ -287,16 +287,6 @@ const playEmpathy = anime({
       duration:1050,
       endDelay:500
   })
-  
-  brokenBannerAnim.add({
-      targets:'.brokenLetterC',
-      rotate:[0,'-190deg','-150deg'],
-      translateY:[0,'-1.5rem','-1.4rem'],
-      translateX:[0,'-1rem','-0.8rem'],
-      duration:1250,
-      endDelay:500,
-      easing:'easeInOutQuad'
-  });
     
     if(inputBoolean === true){ 
       console.log('STARTA OM FÖR FAAAAN');
@@ -322,6 +312,8 @@ const playEmpathy = anime({
     anime.remove(".personalityTraits");
     anime.remove(".brokenLetterC");
     anime.remove(".brokenLetterK");
+    anime.remove(".brokenBanner");
+
     anime.remove(".personalityCard");
     
 

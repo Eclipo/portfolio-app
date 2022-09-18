@@ -447,10 +447,10 @@ class Personality extends Component {
               About <br></br>My personality
             </h2>
             <p className="duckText mt-0">
-              The personality matrix above should not be taken too seriously and hopefully you didn't stare at it too much! 
-              Please note that I did have great fun doing the animations :-)<br></br><br></br>
-              My wish is to raise awereness of how one's personality is quite dynamic rather than static. 
-              Depending on various conditions I can either be more or less of a specific trait. I guess it's not unique among humans.<br></br><br></br>
+              A person's first impression sets the expectations. Having a nice suit, a great smile, a firm handshake, being polite, etc.
+              It is really easy to label a person straight away but we all should try to avoid doing that.<br></br><br></br>
+              With the personality matrix I want to raise awereness of how one's personality is quite dynamic rather than static. 
+              My particular personality depends on a variety of conditions where I can be either more or less of a specific trait. I guess it's not unique among other humans.<br></br><br></br>
               Down below I explain in more detail regarding some of my major attributes in which I hope you can understand me a bit better.
             </p>
             <h3 className="brokenBanner">
@@ -490,9 +490,9 @@ class Personality extends Component {
                         In my familly the phrase 
                         <span className="highlighted"> "I'm just telling the truth" </span> 
                         was and is still today abusively applied. Later in life (30+ years) I finally understood I have
-                        another take on honesty compared to most native swedes.
+                        another take on honesty compared to most people.
                         Nowdays I try to be more diplomatic while I encourage
-                        others to be more honest with me. Honesty is truly a trait I value highly.
+                        others to be more honest with me. Honesty is a trait I value very highly.
                       </p>
                       </button>
                     </div>
@@ -526,9 +526,9 @@ class Personality extends Component {
                         Being stubborn is an another familly attribute
                         and it is both <span className="highlighted"> a curse and a blessing </span>.
                         Thanks to my stubborness it has taken me where I am today.
-                        On the other hand I might have overdone it at times.<br></br><br></br>
-                        However with time I have grown wiser and instead of brute-forcing myself through the obstacles I stumble upon these days I try to take a step back, 
-                        breath alot and try to find a more elegant solution to the problem.
+                        On the other hand I might have overdone it at times and thank goodness I have grown wiser. 
+                        Rather than brute-forcing myself through a problem I instead try to take a step back, 
+                        breath alot and find a more elegant solution to the problem.
                       </p>
                       </button>
 
@@ -564,6 +564,7 @@ class Personality extends Component {
                         Task lists, reminders, labeled boxes but I still end up in a mess.
                         Despite my flaw I still need <span className="highlighted"> feng shui</span> since 
                         it calms my mind and I can channel my focus on more pressing matters such as coding and drinking coffee.
+                        That's why it is important for me team up with someone who is more structured.
                       </p>
                       </button>
                     </div>
@@ -596,7 +597,7 @@ class Personality extends Component {
                       <h4 id="multiTaskCard_h4">NO!</h4>
 
                       <p className="card-text" id="multiTaskCard_p">
-                      <span className="highlighted">No no no!</span> <br></br><br></br> 
+                      <span className="highlighted">No!</span> <br></br><br></br> 
                         "Multitasking" (read too much tasks) makes my head split and I need to reset my focus.<br></br>
                         I rather spend my time doing one thing at a time to the best of my ability.
                       </p>
@@ -631,9 +632,9 @@ class Personality extends Component {
                       <h4 id="focusCard_h4">Double-edged sword</h4>
 
                       <p className="card-text" id="focusCard_p">
-                        To reach the very heights of my hyperfocus I need feng shui and enjoyable tasks. The problem though I will be completely devoured by my focus.<br></br><br></br> 
-                        In contrast a chaotic environment and boredome which will sooner or later crash me into a blue screen of death 
-                        (the error page in Windows when the computer doesn't work properly).<br></br><br></br>
+                        To reach the very heights of my hyperfocus I need feng shui and enjoyable tasks. The problem though I will be completely devoured by my hyperfocus.<br></br><br></br> 
+                        In contrast a chaotic environment and boredome will eventually crash me into a blue screen of death 
+                        (the error page in a Microsoft computer when it doesn't work properly).<br></br><br></br>
                         My focus is truly a <span className="highlighted"> double-edged sword</span>.</p>
                       </button>
                     </div>
@@ -666,9 +667,9 @@ class Personality extends Component {
                       <h4 id="patienceCard_h4">Breath alot</h4>
 
                       <p className="card-text" id="patienceCard_p">
-                        I have some problem with being patient. I want to see result right here and right now.
-                        Consequently I have suffered being impatient at times. It is a never ending progress to change one's self but I do try in taking a step back and 
-                        <span className="highlighted"> breath alot </span>when my patience is about to meet it's end.
+                        I want to see result right here and right now.
+                        Consequently I have suffered being impatient at times and that is when I take a step back and 
+                        <span className="highlighted"> breath alot </span> in order to regain more patience.
                       </p>
                       </button>
                     </div>
@@ -685,10 +686,8 @@ class Personality extends Component {
                       <button
                         id="temperCard_closeBtn"
                         className="personalityCloseBtn"
-                        onClick={this.closeWindow}
-                      >
-                        {" "}
-                        <FontAwesomeIcon icon={faClose} id="navIconID" />
+                        onClick={this.closeWindow}>
+                          <FontAwesomeIcon icon={faClose} id="navIconID" />
                       </button>
                     </div>
 
@@ -698,12 +697,14 @@ class Personality extends Component {
                       <h3 className="card-title" id="temperCard_h3">
                         Temper
                       </h3>
-                      <h4 id="temperCard_h4">Necessary actions</h4>
+                      <h4 id="temperCard_h4">Compass</h4>
 
                       <p className="card-text" id="temperCard_p">
-                        Most often I am very calm but naturally I do display some stronger emotions at times. 
-                        Tapping into those more fierce feelings such as anger, sadness, panic or anxiety does me make more capable of taking <span className="highlighted"> necessary actions </span>
-                        to handle difficult situations.
+                        Most often I am calm but naturally I do display some stronger emotions particularly when I have a setback.
+                        <br></br><br></br>
+                        When I am in a complicated situation and need to make a difficult choice my immediate response is not being cold and rational.
+                        In contrast I experience anger,sadness,panic or even anxiety. When I have calmed down a bit my emotions will become the very <span className="highlighted"> compass </span> 
+                        for my more rational being who then can sort out the situation.
                       </p>
                       </button>
                     </div>
@@ -732,9 +733,8 @@ class Personality extends Component {
                         Empathy
                       </h3>
                       <p className="card-text" id="empathyCard_p">
-                        People (familly and friends) of whom I trust are those I particularly care about.<br></br> 
-                        During the last years I have unfortunately learnt not everyone deserve my empathy where it should be treated as a<span className="highlighted"> scarcity </span>.<br></br><br></br>
-                        Thus my empathy is only given to those who are honest and actually does give a damn about me. 
+                        People (familly and friends) of whom I trust and are honest with me are those I particularly care about.<br></br> 
+                        During my lifetime I have unfortunately learnt that true empathy towards others should treated as a scarcity.<br></br><br></br> 
                       </p>
                       </button>
                     </div>

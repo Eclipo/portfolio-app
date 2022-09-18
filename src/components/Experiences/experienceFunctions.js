@@ -91,7 +91,7 @@ export const animate = (inputID) => {
                       if (inputID === "fintech") {
                         jobTitle = "Developer";
 
-                        linkCustomerTitle = "fintech industry";
+                        linkCustomerTitle = "Fintech industry";
                         linkToCustomer = "";
                         period.innerText = "22-02 - Present";
                         system.innerText = "Fintech application";
@@ -115,8 +115,7 @@ export const animate = (inputID) => {
 
                       if (inputID === "municipality_3") {
                         jobTitle = "Developer";
-
-                        linkCustomerTitle = "#3 MUNICIPALITY";
+                        linkCustomerTitle = "#3 Municipality";
                         linkToCustomer = "";
                         period.innerText = "20-08 - 22-02";
                         system.innerText = "Platina";
