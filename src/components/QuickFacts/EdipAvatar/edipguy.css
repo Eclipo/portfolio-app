@@ -21,7 +21,7 @@
 
 @media (min-width: 120rem) {
   :root {
-    --size-edipGuyDivisor: 1.9;
+    --size-edipGuyDivisor: 3;
   }
 
   
@@ -61,7 +61,7 @@
   background:#423c0a!important;
   border-radius: 6.25rem;
   position: relative;
-  top: 12.5rem;
+  top: 13.5rem;
   margin-top: 10%;
   z-index: 1;
 }
