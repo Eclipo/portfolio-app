@@ -52,7 +52,7 @@
 }
 
 .expOverviewPeriod {
-  background-color: var(--navy);
+  background-color: var(--dark-navy);
   color: var(--primary-red);
   border-color: var(--primary-red);
   border-width: 0.16rem;
@@ -96,18 +96,19 @@
   color: var(--dark-navy) !important;
 }
 
-#resumeExpSectionID{
+/* #resumeExpSectionID{
   max-width: 10rem !important;
-}
+} */
 .resumeSection {
-  background-color: var(--light-navy);
+  /* background-color: var(--dark-navy);
   border-color: var(--primary-red);
   border-width: 0.16rem;
   border-style: solid;
   border-radius: 18px;
-  padding: 0.25rem;
+  padding: 1.25rem; */
   color: var(--primary-red);
-  min-width: 95%;
+  /* min-width: 95%; */
+  width: fit-content;
   margin-bottom: 2vh !important;
   margin: auto;
   opacity: 0;
@@ -136,7 +137,7 @@
 
 }
 .resumeNav{
-  background-color: var(--light-navy);
+  background-color: var(--navy);
   border-color: var(--primary-red);
   border-width: 0.25rem;
   border-style: solid;
@@ -249,7 +250,7 @@
 }
 
 .header2UnderLine {
-  background-color: var(--navy);
+  /* background-color: var(--light-navy); */
   border-color: var(--primary-red);
   border-width: 0.1vw;
   border-style: solid;
@@ -285,7 +286,7 @@
 .experienceTable {
   display: inline-block;
   justify-content: center;
-  width: 95%;
+  /* width: 95%; */
 }
 
 .experienceTable td {

@@ -60,10 +60,7 @@ class Experiences extends Component {
 
             <div className="col-8">
               <p className="header3Tech infoTech mb-3">
-                Click on one of the major experience to see its content.
-                <br></br>
-                Due to my contract with my employer CGI 
-                I am not allowed to share the names of the customers.
+                Click on the major experience to see its content.
               </p>
             </div>
 

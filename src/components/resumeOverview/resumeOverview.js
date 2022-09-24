@@ -63,8 +63,8 @@ class ResumeOverview extends Component  {
 
               </div>
             </div>
-          <div className="resumeSection" id="resumeLangSectionID">
-            <div className="experienceTable mt-2">
+          <div className="resumeSection container-md" id="resumeLangSectionID">
+            <div className="experienceTable">
               <div className="row m-auto">
                 <div className="col m-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
@@ -101,9 +101,8 @@ class ResumeOverview extends Component  {
             </div>
           </div>
 
-          <div className="resumeSection" id="resumeEduSectionID">
+          <div className="resumeSection container-md" id="resumeEduSectionID">
         
-            <div className="container mt-2">
               <div className="experienceTable">
                 <div className="row m-auto mb-4">
                     <div className="expOverviewPeriod expOverviewPeriod-dotted p-2 m-1">
@@ -128,11 +127,10 @@ class ResumeOverview extends Component  {
                     </div>
                   </div>
               </div>
-            </div>
           </div>
 
-          <div className="resumeSection" id="resumeExpSectionID">
-            <div className="experienceTable mt-2">
+          <div className="resumeSection container-md" id="resumeExpSectionID">
+            <div className="experienceTable  mt-2">
               <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                 <div className="col m-auto">
                   <p className="m-1 mx-auto">
@@ -293,7 +291,7 @@ class ResumeOverview extends Component  {
                   <h3 className=" expHeader-reverseColor">2013-02 - 2013-04</h3>
                   <h3 className=" expHeader-reverseColor">Unemployment</h3>
                   <h4 className="expHeader-reverseColor">
-                    Two steps forwards<br></br>One step backward
+                    Two steps forward<br></br>Two steps back
                   </h4>
                   <p
                     className="expHeader-reverseColor mx-auto w-75"

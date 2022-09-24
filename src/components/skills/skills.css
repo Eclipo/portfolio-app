@@ -19,12 +19,12 @@
 }
 
 #duckContainerID {
-  background: var(--light-navy);
+  /* background: var(--light-navy);
   border-color: var(--primary-blue);
   border-width: 0.25rem;
-  padding:1.5rem;
-  margin-top: 2rem;
   border-style: solid;
+  padding:1.5rem; */
+  margin-top: 2rem;
   display: 'none';
   opacity: 0;
 }
@@ -140,12 +140,12 @@
 .duckText {
   margin: auto;
   text-align: left;
-  font-size: "0.8375rem";
-  font-weight: "625";
+  /* font-weight: "625"; */
   color: var(--light-slate);
   margin-top: 16rem;
   display: block;
-  width: fit-content;
+  width: 75%;
+  padding: 2.25rem;
 }
 
 .seiouslyText {

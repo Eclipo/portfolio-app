@@ -350,6 +350,10 @@
       /* height:2rem !important; */
     }
 
+    p{
+      font-size: 0.95rem;
+    }
+
     
   }
 
@@ -374,29 +378,20 @@
       margin-top: 9rem !important ;
     }
 
-/*    
-    .portfolioTextContainer{
-      width:30rem !important;
-      transform: scale(1.5);
-      margin-top: 12rem !important;
-    } */
 
     #KnucklesContainerID {
       margin-top: -9rem !important;
       transform: scale(0.68) !important;
     }
 
-    p{
-      font-size:0.8rem !important;
-    }
 
-    .duckText, .welcomeText{
+    /* .duckText, .welcomeText{
       font-size:1.25rem !important;
     }
 
     .seiouslyText{
       font-size:1.25rem !important;
-    }
+    } */
 
     .skillCategory{
       font-size: 3rem !important;
@@ -417,8 +412,13 @@
       font-size:1.75rem !important;
     }
 
+    
+    p{
+      font-size:1.15rem !important;
+    }
+
     .quickH4{
-      font-size:1.05rem !important;
+      font-size:1.15rem !important;
     }
 
   }

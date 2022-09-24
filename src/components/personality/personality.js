@@ -447,11 +447,10 @@ class Personality extends Component {
               About <br></br>My personality
             </h2>
             <p className="duckText mt-0">
-              A person's first impression sets the expectations. Having a nice suit, a great smile, a firm handshake, being polite, etc.
-              It is really easy to label a person straight away but we all should try to avoid doing that.<br></br><br></br>
-              With the personality matrix I want to raise awereness of how one's personality is quite dynamic rather than static. 
-              My particular personality depends on a variety of conditions where I can be either more or less of a specific trait. I guess it's not unique among other humans.<br></br><br></br>
-              Down below I explain in more detail regarding some of my major attributes in which I hope you can understand me a bit better.
+              I want to raise awereness of how one's personality is quite dynamic rather than static and also it is really easy to label a person based on the very first impressions.<br></br><br></br>
+              My particular personality depends on a variety of conditions where I can be either more or less of a specific trait. <br></br>
+              I guess it's not unique among other humans.<br></br><br></br>
+              Down below I explain in more detail regarding some of my major attributes in which I hope you can understand me a bit better rather than going with your first impressions.
             </p>
             <h3 className="brokenBanner">
               <div className="d-inline-block brokenLetterC">C</div>
@@ -700,11 +699,11 @@ class Personality extends Component {
                       <h4 id="temperCard_h4">Compass</h4>
 
                       <p className="card-text" id="temperCard_p">
-                        Most often I am calm but naturally I do display some stronger emotions particularly when I have a setback.
+                        Most often I am very calm but naturally I do display some stronger emotions particularly when I have a setback.
                         <br></br><br></br>
                         When I am in a complicated situation and need to make a difficult choice my immediate response is not being cold and rational.
-                        In contrast I experience anger,sadness,panic or even anxiety. When I have calmed down a bit my emotions will become the very <span className="highlighted"> compass </span> 
-                        for my more rational being who then can sort out the situation.
+                         <span className="highlighted"> compass </span> 
+                  
                       </p>
                       </button>
                     </div>
