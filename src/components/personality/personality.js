@@ -50,7 +50,7 @@ class Personality extends Component {
               WILL DISPLAY VERY DISTURBING AND FLASHING ANIMATIONS!
             </p>
           }
-          textColor="var(--primary-green)"
+          textColor="var(--primary-red)"
         ></PlayRefresh>
         <div id="greenSquareTableID" className="flexCenter">
           <PixelHead></PixelHead>
@@ -358,7 +358,7 @@ class Personality extends Component {
               <tr className="personalityTraitsRow">
                 <td>
                   {" "}
-                  <h4 className="personalityTraits">Empathy</h4>
+                  <h4 className="personalityTraits">Leadership</h4>
                 </td>
                 <td>
                   <div
@@ -380,14 +380,12 @@ class Personality extends Component {
                 </td>
                 <td>
                   <div
-                    className="personalityTraits gradeFour"
-                    id="empathyID"
+                    className="personalityTraits"
                   ></div>
                 </td>
                 <td>
                   <div
-                    className="personalityTraits gradeFive"
-                    id="empathyID"
+                    className="personalityTraits"
                   ></div>
                 </td>
                 <td>
@@ -447,10 +445,13 @@ class Personality extends Component {
               About <br></br>My personality
             </h2>
             <p className="duckText mt-0">
-              I want to raise awereness of how one's personality is quite dynamic rather than static and also it is really easy to label a person based on the very first impressions.<br></br><br></br>
-              My particular personality depends on a variety of conditions where I can be either more or less of a specific trait. <br></br>
-              I guess it's not unique among other humans.<br></br><br></br>
-              Down below I explain in more detail regarding some of my major attributes in which I hope you can understand me a bit better rather than going with your first impressions.
+              The personality matrix above aims to display two facts:
+              <ul className="skillBullet">
+                <li>It is easy to label a person based on the first impressions.</li>
+                <li>A personality is rather dynamic than static.</li>
+              </ul>
+              My particular personality depends on a variety of conditions where I can be either more or less of a specific trait.<br></br><br></br>
+              Down below I explain (very subjectively) in more detail regarding some of my major attributes in which I hope you can understand me a bit better.
             </p>
             <h3 className="brokenBanner">
               <div className="d-inline-block brokenLetterC">C</div>
@@ -490,8 +491,8 @@ class Personality extends Component {
                         <span className="highlighted"> "I'm just telling the truth" </span> 
                         was and is still today abusively applied. Later in life (30+ years) I finally understood I have
                         another take on honesty compared to most people.
-                        Nowdays I try to be more diplomatic while I encourage
-                        others to be more honest with me. Honesty is a trait I value very highly.
+                        Nowdays I try to be more diplomatic while expressing my opinion while I encourage
+                        others to be more honest with me.Honesty is a trait I value very highly.
                       </p>
                       </button>
                     </div>
@@ -525,8 +526,8 @@ class Personality extends Component {
                         Being stubborn is an another familly attribute
                         and it is both <span className="highlighted"> a curse and a blessing </span>.
                         Thanks to my stubborness it has taken me where I am today.
-                        On the other hand I might have overdone it at times and thank goodness I have grown wiser. 
-                        Rather than brute-forcing myself through a problem I instead try to take a step back, 
+                        On the other hand I might have overdone it at times and thankfully I have grown wiser. 
+                        Rather than brute-forcing myself through the obstacles I face nowdays I try to take a step back, 
                         breath alot and find a more elegant solution to the problem.
                       </p>
                       </button>
@@ -560,10 +561,10 @@ class Personality extends Component {
                       <h4 id="structureCard_h4">Feng shui</h4>
 
                       <p className="card-text" id="structureCard_p">
-                        Task lists, reminders, labeled boxes but I still end up in a mess.
-                        Despite my flaw I still need <span className="highlighted"> feng shui</span> since 
+                        Task lists, reminders, labeled boxes but I still FEEL like I end up in a mess.
+                        Despite my ability to end up in an unstructured manner I still need <span className="highlighted"> feng shui </span>since 
                         it calms my mind and I can channel my focus on more pressing matters such as coding and drinking coffee.
-                        That's why it is important for me team up with someone who is more structured.
+                        That's why it is important for me team up with someone who is naturally structured.
                       </p>
                       </button>
                     </div>
@@ -596,8 +597,8 @@ class Personality extends Component {
                       <h4 id="multiTaskCard_h4">NO!</h4>
 
                       <p className="card-text" id="multiTaskCard_p">
-                      <span className="highlighted">No!</span> <br></br><br></br> 
-                        "Multitasking" (read too much tasks) makes my head split and I need to reset my focus.<br></br>
+                      <span className="highlighted">No!</span> 
+                        "Multitasking" (read too much tasks) makes my head split and I continually need to reset my focus.<br></br>
                         I rather spend my time doing one thing at a time to the best of my ability.
                       </p>
                       </button>
@@ -631,10 +632,10 @@ class Personality extends Component {
                       <h4 id="focusCard_h4">Double-edged sword</h4>
 
                       <p className="card-text" id="focusCard_p">
-                        To reach the very heights of my hyperfocus I need feng shui and enjoyable tasks. The problem though I will be completely devoured by my hyperfocus.<br></br><br></br> 
-                        In contrast a chaotic environment and boredome will eventually crash me into a blue screen of death 
-                        (the error page in a Microsoft computer when it doesn't work properly).<br></br><br></br>
-                        My focus is truly a <span className="highlighted"> double-edged sword</span>.</p>
+                        To reach the very heights of my hyperfocus I need feng shui and enjoyable tasks. 
+                        The consequence of having too much fun will result into me being completely devoured by my hyperfocus.
+                        In contrast a chaotic environment and boredome will eventually crash me into a blue screen of death.
+                        My focus is a <span className="highlighted"> double-edged sword</span>.</p>
                       </button>
                     </div>
                   </div>
@@ -667,7 +668,7 @@ class Personality extends Component {
 
                       <p className="card-text" id="patienceCard_p">
                         I want to see result right here and right now.
-                        Consequently I have suffered being impatient at times and that is when I take a step back and 
+                        Consequently I have suffered being impatient at times and that is when I need to take a step back and 
                         <span className="highlighted"> breath alot </span> in order to regain more patience.
                       </p>
                       </button>
@@ -696,14 +697,15 @@ class Personality extends Component {
                       <h3 className="card-title" id="temperCard_h3">
                         Temper
                       </h3>
-                      <h4 id="temperCard_h4">Compass</h4>
+                      <h4 id="temperCard_h4">Compass & Engine</h4>
 
                       <p className="card-text" id="temperCard_p">
-                        Most often I am very calm but naturally I do display some stronger emotions particularly when I have a setback.
+                        Often I am very calm but when encountering a setback I do experience a range of fierce emotions.<br></br> 
+                        Thank goodness I do calm down again quite quickly where my emotions will act as the<span className="highlighted"> compass </span> 
+                        for my rational being who focus on solving the situation.  
                         <br></br><br></br>
-                        When I am in a complicated situation and need to make a difficult choice my immediate response is not being cold and rational.
-                         <span className="highlighted"> compass </span> 
-                  
+                        Furthermore my emotions are also my very<span className="highlighted"> engine </span>where they give me 
+                        the necessary energy and focus in order to sustain and deal with various difficult situations.
                       </p>
                       </button>
                     </div>
@@ -729,11 +731,14 @@ class Personality extends Component {
                     <button className="btnPersonalityCard">
 
                       <h3 className="card-title" id="empathyCard_h3">
-                        Empathy
+                        Leadership
                       </h3>
+                      <h4 id="empathyCard_h4">Coordinator</h4>
+
                       <p className="card-text" id="empathyCard_p">
-                        People (familly and friends) of whom I trust and are honest with me are those I particularly care about.<br></br> 
-                        During my lifetime I have unfortunately learnt that true empathy towards others should treated as a scarcity.<br></br><br></br> 
+                        Honestly I don't particular fancy leading others. It is time consuming and discussing salaries are subjects I really don't enjoy.<br></br>
+                        However if the leader at hand continually makes the wrong decisions then,only then, I rather be in charge and take full responsibility. 
+                        I guess I would do fine as a<span className="highlighted"> coordinator </span> since I am very pragmatic, result-oriented and very keen to hear others opinions. 
                       </p>
                       </button>
                     </div>

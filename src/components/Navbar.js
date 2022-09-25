@@ -167,18 +167,19 @@ export const Navbar = () => {
               <Link smooth={true} to={"skills"} id="navLinkSkillsID" className="nav-link" href="#" tabIndex={3}><h3 className='navLinkH3'>Skills</h3></Link>
             </li>
 
-            <li className="nav-item" >
-              <Link smooth={true} to={"personality"} id="navLinkPersonalityID" className="nav-link" href="#" tabIndex={4}><h3 id="navLinkPersonalityH3ID" className='navLinkH3'>Personality</h3></Link>
+            <li className="nav-item">
+              <Link smooth={true} to={"experiencesID"} id="navLinkExperiencesID" className="nav-link" href="#" tabIndex={6}><h3 className='navLinkH3'>Major experiences</h3></Link>
             </li>
-            
+
 
             <li className="nav-item">
               <Link smooth={true} to={"resumeOverview"} id="navLinkResumeOverviewID" className="nav-link" href="#" tabIndex={5}><h3 className='navLinkH3'>Resumé Overview</h3></Link>
             </li>
 
-            <li className="nav-item">
-              <Link smooth={true} to={"experiencesID"} id="navLinkExperiencesID" className="nav-link" href="#" tabIndex={6}><h3 className='navLinkH3'>Major experiences</h3></Link>
+            <li className="nav-item" >
+              <Link smooth={true} to={"personality"} id="navLinkPersonalityID" className="nav-link" href="#" tabIndex={4}><h3 id="navLinkPersonalityH3ID" className='navLinkH3'>Personality</h3></Link>
             </li>
+            
 
             <li className="nav-item">
             <Link smooth={true} to={"portfolioID"} id="navLinkPortfolioID" className="nav-link" href="#" tabIndex={7}><h3 className='navLinkH3'>The story</h3></Link>

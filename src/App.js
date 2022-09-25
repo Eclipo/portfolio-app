@@ -19,9 +19,9 @@ function App() {
       <QuickFacts></QuickFacts>
       <Testimonials></Testimonials>
       <Skills></Skills>
-      <Personality></Personality>
-      <ResumeOverview></ResumeOverview>
       <Experiences></Experiences>
+      <ResumeOverview></ResumeOverview>
+      <Personality></Personality>
       <Portfolio></Portfolio>
 
     </>

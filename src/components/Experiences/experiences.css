@@ -100,15 +100,15 @@
 
 #expMenu {
   opacity: 0;
-  border-color: var(--primary-purple);
+  /* border-color: var(--primary-purple);
   border-bottom: transparent !important;
-  border-top: 0.3rem solid var(--primary-purple) !important;
+  border-top: 0.3rem solid var(--primary-purple) !important; */
 
-  border-width: 0.1rem;
-  border-style: solid;
+  /* border-width: 0.1rem;
+  border-style: solid; */
   padding: 1%;
-  background-color: var(--light-navy);
-  border-radius: 18px 18px 0 0 ;
+  /* background-color: var(--light-navy); */
+  /* border-radius: 18px 18px 0 0 ; */
   position: relative;
   margin-top: 15rem;
   width: 90%;
@@ -116,19 +116,19 @@
 }
 
 .expTable {
-  background: var(--light-navy);
+  /* background: var(--light-navy); */
   width: 90%;
   display: inline-block;
   margin: auto;
   position: relative;
-  border-color: var(--primary-purple);
-  border-width: 0.1rem;
+  /* border-color: var(--primary-purple); */
+  /* border-width: 0.1rem;
   border-style: solid;
   border-top: transparent !important;
-  border-bottom: 0.3rem solid var(--primary-purple) !important;
+  border-bottom: 0.3rem solid var(--primary-purple) !important; */
 
   /* border-collapse: separate; */
-  border-radius: 0 0 18px 18px;
+  /* border-radius: 0 0 18px 18px; */
 }
 
 .scrollArrow {
@@ -169,8 +169,8 @@
 /************************* EXP Information *********************************/
 #_container {
   opacity: 0;
-  background-color: var(--light-navy);
-  border-bottom-color: var(--darkest-navy);
+  /* background-color: var(--light-navy);
+  border-bottom-color: var(--darkest-navy); */
 }
 
 #_header {

@@ -159,8 +159,8 @@ class Intro extends Component {
         </h4>
 
         <p className='welcomeText mx-auto'>
-          This is my personal website to let colleagues and friends alike to know more about me.<br></br><br></br>
-          <span style={{color:'var(--tint-navy)'}}>Scroll down </span> or you can use the <span style={{color:'var(--tint-navy)'}}> navigationmenu </span> in the upper right corner to view more.
+          This is my resumé website to let colleagues and friends alike to know more about me.<br></br><br></br>
+          <span style={{color:'var(--tint-navy)'}}>Scroll down </span> or you can use the <span style={{color:'var(--tint-navy)'}}> navbar </span> in the upper right corner to view more.
         </p>
       
         <div className="row">

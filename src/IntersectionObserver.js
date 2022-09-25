@@ -22,7 +22,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
   const colorDarkestNavy = "var(--darkest-navy)"; 
 
-  const secondWrapper = [skillsSection,personalitySection,resumeSection,experienceSection,portfolioSection];
+  const secondWrapper = [skillsSection,experienceSection, resumeSection,personalitySection,portfolioSection];
   const firstWrapper = [introSection,quickFactsSection,aboutMeSection]  //ocument.querySelectorAll(".sectionAnimation");
 
   const navLinks = document.querySelectorAll(".nav-link");
@@ -73,7 +73,6 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
       //About me Section - Turn Off Personality
         case 2:
           currentNavLink(currentIndex);
-            PlayAnimation('PersonalityAnimation',1);
             animationQuickFactAbout.playOrStop(true);
         break;
 
@@ -104,37 +103,40 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
               PlayAnimation('SkillAnimation',2);
             break;
 
-          //Personality Section -  Turn OFF Skills
+            //Major experiences - Turn OFF Skills
             case 1:
               currentNavLink(4);
-              console.log('PERSONALITY SECTION');
-              PlayAnimation('PersonalityAnimation',2);              
+              console.log('Major experiences SECTION');
+              PlayAnimation('PersonalityAnimation',1);
+
+           
             break;
 
-              //Resume Overview Section - Turn OFF Skills & Portfolio
+              //Resume Overview Section - Turn OFF Personality
               case 2:
                 currentNavLink(5);
-
                 PlayAnimation('SkillAnimation',1);
-                PlayAnimation('PortfolioAnimation',1);
+                PlayAnimation('PortfolioAnimation',1);                
+
+                // PlayAnimation('PortfolioAnimation',1);
               break;
 
-              //Major experiences - Turn OFF Personality
+              //PersonalityAnimation - Turn OFF Portfolio
               case 3:
                 currentNavLink(6);
 
                 console.log('MAJOR EXPERIENCES SECTION');
-                PlayAnimation('PersonalityAnimation',1);
-
-                
+                PlayAnimation('PersonalityAnimation',2);
               break;
 
-               //Portfolio - 
+               //Portfolio - Turn Off Personality 
                case 4:
                 currentNavLink(7);
 
                 console.log('PORTFOLIO SECTION');
                 PlayAnimation('PortfolioAnimation',2);
+                // PlayAnimation('PersonalityAnimation',1);
+
               break;
 
             default:

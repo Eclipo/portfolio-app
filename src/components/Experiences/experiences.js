@@ -274,7 +274,6 @@ class Experiences extends Component {
                 <p className="li_icon">▹</p>
                 <p className="col-md-auto" id="_descOne"></p>
               </li>
-              <br></br>
 
               <li className="row">
                 <span className="li_icon" id="_liTwo">
@@ -282,7 +281,6 @@ class Experiences extends Component {
                 </span>
                 <p className="col-md-auto" id="_descTwo"></p>
               </li>
-              <br></br>
 
               <li className="row" id="_liThree">
                 <p className="li_icon" id="_liThreeIcon">
@@ -290,13 +288,11 @@ class Experiences extends Component {
                 </p>
                 <p className="col-md-auto" id="_descThree"></p>
               </li>
-              <br></br>
 
               <li className="row" id="_liFour">
                 <p className="li_icon">▹</p>
                 <p className="col" id="_descFour"></p>
               </li>
-              <br></br>
             </ul>
           </div>
         </div>
