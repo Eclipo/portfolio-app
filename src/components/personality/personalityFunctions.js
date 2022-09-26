@@ -13,7 +13,7 @@ export const startAttributeAnimation = (inputID) => {
 
         anime({
             targets:card,
-            backgroundColor:'#112240',
+            backgroundColor:'#041122',
             // easing:'linear',
             scale:[1,1.15],
             duration:750,

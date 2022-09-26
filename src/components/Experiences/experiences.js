@@ -45,7 +45,9 @@ class Experiences extends Component {
           <KnucklesSvg></KnucklesSvg>
         </div>
 
-        <div className="container row" id="expMenu">
+        <div className="backgroundMajorExp">
+
+        <div className="container-md row" id="expMenu">
           <div className="row mx-auto ">
             <div className="col">
             <button 
@@ -133,7 +135,7 @@ class Experiences extends Component {
           </table>
         </div>
 
-        <div className="d-block container expTable expInfo mb-2" id="_container">
+        <div className="d-block container-md expTable expInfo mb-2" id="_container">
           <div className="row expInfo" id="_periodSystem">
             <div className="col m-1">
               <div className="row">
@@ -296,6 +298,8 @@ class Experiences extends Component {
             </ul>
           </div>
         </div>
+      </div>
+
 
 <div className="modal fade" id="modal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div className="modal-dialog">

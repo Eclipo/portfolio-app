@@ -40,7 +40,8 @@ class Portfolio extends Component {
         <div className="flexCenter mb-5" id="portfolioContainerID">
           <div className="flexCenter portfolioTextContainer">
             {/* <h2>This is it</h2> */}
-              <p> This website is to let my friends, 
+              <p className="ml-2"> 
+              This website is to let my friends, 
               colleagues and others alike to know more about me.
               This website actually helped me to land my job within the fintech group at CGI.
               The applied tech on this site are React,Bootstrap,AnimeJS,CSS and Javascript.
@@ -148,7 +149,7 @@ class Portfolio extends Component {
               </div>
             
             
-              <p className="row mt-3">
+              <p className="portfolioParagraph">                
                 Covid-19 arrived and in one hit it threaten the lives of my parents. 
                 My dad was at the hospital and my mother just got infected. 
               </p>
@@ -203,7 +204,7 @@ class Portfolio extends Component {
                 <div className="lightYear" id="firstLight"></div>
 
               <div className="d-inline-flex">
-                <p>
+              <p className="portfolioParagraph">                  
                   There was still time for me to help my mom. 
                   I managed to get her a pulse oximeter even though it was almost sold out. 
                   My parents survived Covid-19 and I decided to build my very first website namely Coronahero. 
@@ -306,7 +307,7 @@ class Portfolio extends Component {
           
 
               <div className="row">
-                <p>
+              <p className="portfolioParagraph">
                   The website Coronahero was a disaster. 
                   It looked horrible and wasn't mobile responsive at all. 
                   I made many mistakes and I realised I had a long way to go.
@@ -339,7 +340,7 @@ class Portfolio extends Component {
             
             </div>
               
-              <p>
+            <p className="portfolioParagraph">                
                 Despite my failures I still wanted to achieve one of my dreams. 
                 Making a personal website that would be different (read unique) and mobile responsive.                
                 However I was still a novice and I was left with no choice... but to buy an Udemy course 
@@ -391,10 +392,10 @@ class Portfolio extends Component {
               </div>
             </div>
 
-             <p>
-              In the process of making this website I struggled between my grand visions 
-              and the acquired skillevel I had at the time. 
-              I had no patience and consequently I wasted alot of time and effort doing the wrong things.
+            <p className="portfolioParagraph">                
+                In the process of making this website I struggled between my grand visions 
+                and the acquired skillevel I had at the time. 
+                I had no patience and consequently I wasted alot of time and effort doing the wrong things.
              </p>
             </div>
 
@@ -417,7 +418,7 @@ class Portfolio extends Component {
              </div>
 
              <div className="row zenParagraph">
-              <p>
+              <p className="portfolioParagraph">
                 After several setbacks I decided to settle with 'Lagom'.  
                 Then bits and pieces started to slowly fall into place 
                 where I didn't have too high expectations on myself.

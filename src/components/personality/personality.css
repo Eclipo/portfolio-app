@@ -33,14 +33,14 @@
 }
 
 .personalityTraitsRow {
-  background-color: var(--navy) !important;
+  /* background-color: var(--navy) !important; */
   width: 100%;
 }
 
 .personalityBaseRow {
   background-color: transparent !important;
   padding-top: 1.25rem !important;
-  border-color: var(--navy) !important;
+  border-color: var(--dark-navy) !important;
   border-width: 0.1rem;
   border-style: solid;
   color: black !important;
@@ -173,9 +173,10 @@
 }
 
 .brokenBanner{
-  color: var(--navy);
+  margin-top: 1rem !important;
+  color: var(--dark-navy);
   -webkit-text-stroke:  1px var(--primary-green); 
-  background-color: var(--navy) !important;
+  background-color: var(--dark-navy) !important;
 }
 
 .brokenArrow{
@@ -213,7 +214,7 @@ background-color: transparent;
   margin: 0.5rem;
   /* border-radius: 50%; */
   border: none;
-  background-color: var(--light-navy);
+  background-color: var(--navy);
   font-weight: 800;
 
   color: var(--primary-pink);

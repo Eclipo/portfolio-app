@@ -194,7 +194,7 @@
   body
   {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--navy);
+  background-color: var(--dark-navy) !important;
   /* background: linear-gradient(to right, var(--navy), var(--lightest-navy)); */
   }
 
