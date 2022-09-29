@@ -41,12 +41,13 @@ class Portfolio extends Component {
           <div className="flexCenter portfolioTextContainer">
             {/* <h2>This is it</h2> */}
               <p className="ml-2"> 
-              This website is to let my friends, 
-              colleagues and others alike to know more about me.
-              This website actually helped me to land my job within the fintech group at CGI.
-              The applied tech on this site are React,Bootstrap,AnimeJS,CSS and Javascript.
-              <br></br><br></br>
-              Downbelow you can click on the arrows to read more into the story of this website.
+                This my resumé website to let friends, 
+                colleagues and others alike to know more about me.
+                The applied tech on this site are React,Bootstrap,AnimeJS,CSS and Javascript.
+                <br></br><br></br>
+                Downbelow you can click on the arrows to read the story of my journey regarding this website.
+                <br></br><br></br>
+                How it all started, once upon a time.
               </p>
 
             {/* <h3>The story</h3> */}
@@ -342,7 +343,7 @@ class Portfolio extends Component {
               
             <p className="portfolioParagraph">                
                 Despite my failures I still wanted to achieve one of my dreams. 
-                Making a personal website that would be different (read unique) and mobile responsive.                
+                Making a personal website that would be fun to experience and most importantly mobile responsive.                
                 However I was still a novice and I was left with no choice... but to buy an Udemy course 
                 about building a portfolio website combining React and Bootstrap.
                 On top of that I would use AnimeJS for the animations.

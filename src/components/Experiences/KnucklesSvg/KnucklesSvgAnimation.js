@@ -26,7 +26,7 @@ export function KnucklesSvgAnimation () {
           anime({
             targets:['#darkRedHeadID','#darkRedSkinID','#redSkinID','#testLines path',
             '#faceID','#shoeOrangeID','#greenShoeID','#noseAndShoeGreyID','#eyesGlovesWhiteID',],
-            fill:'#0a192f',
+            fill:'#031127',
             duration:50,
             complete:function(){
               anime({
@@ -37,8 +37,8 @@ export function KnucklesSvgAnimation () {
                   anime({
                   targets: '#testLines path',
                   strokeDashoffset: [anime.setDashoffset,0],
-                  easing: 'linear',
-                  duration: 1500,
+                  easing: 'easeInElastic(1, 0.2)',                  
+                  duration: 750,
                   delay: function(el, i) { return i * 150 },
                   complete:function(){
                     //Face
@@ -112,7 +112,7 @@ export function KnucklesSvgAnimation () {
                       opacity:[1,0],
                       easing: 'linear',
                       duration:750,
-                      delay:2000,
+                      delay:2500,
                       complete:function(){
                         knucklesSVG.style.display='none';
 

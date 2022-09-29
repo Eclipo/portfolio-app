@@ -445,13 +445,13 @@ class Personality extends Component {
               About <br></br>My personality
             </h2>
             <p className="duckText mt-0">
-              The personality matrix above aims to display two facts:
+              The purpose of the personality is to display two facts:
               <ul className="skillBullet">
-                <li>It is easy to label a person based on the first impressions.</li>
-                <li>A personality is rather dynamic than static.</li>
+                <li>It is <span className="skillHighLighted"> easy to label </span>a person based on the first impressions.</li>
+                <li>A personality is rather <span className="skillHighLighted"> dynamic </span> than static.</li>
               </ul>
               My particular personality depends on a variety of conditions where I can be either more or less of a specific trait.<br></br><br></br>
-              Down below I explain (very subjectively) in more detail regarding some of my major attributes in which I hope you can understand me a bit better.
+              Down below I will go through some of my personal attributes in more detail.
             </p>
             <h3 className="brokenBanner">
               <div className="d-inline-block brokenLetterC">C</div>
@@ -561,10 +561,11 @@ class Personality extends Component {
                       <h4 id="structureCard_h4">Feng shui</h4>
 
                       <p className="card-text" id="structureCard_p">
-                        Task lists, reminders, labeled boxes but I still FEEL like I end up in a mess.
-                        Despite my ability to end up in an unstructured manner I still need <span className="highlighted"> feng shui </span>since 
+                        Even though I write task lists and setting reminders I still don't feel great at being structured. 
+
+                        Despite this I still need <span className="highlighted"> feng shui </span>since 
                         it calms my mind and I can channel my focus on more pressing matters such as coding and drinking coffee.
-                        That's why it is important for me team up with someone who is naturally structured.
+                        That's why it is important for me to be in a structured environment and team up with someone who is great at project management.
                       </p>
                       </button>
                     </div>
@@ -668,8 +669,8 @@ class Personality extends Component {
 
                       <p className="card-text" id="patienceCard_p">
                         I want to see result right here and right now.
-                        Consequently I have suffered being impatient at times and that is when I need to take a step back and 
-                        <span className="highlighted"> breath alot </span> in order to regain more patience.
+                        Consequently I have suffered being impatient at times. But I have learned to take a step back and 
+                        <span className="highlighted"> breath alot </span>in order to regain more patience.
                       </p>
                       </button>
                     </div>
@@ -702,7 +703,7 @@ class Personality extends Component {
                       <p className="card-text" id="temperCard_p">
                         Often I am very calm but when encountering a setback I do experience a range of fierce emotions.<br></br> 
                         Thank goodness I do calm down again quite quickly where my emotions will act as the<span className="highlighted"> compass </span> 
-                        for my rational being who focus on solving the situation.  
+                        for my more rational being who then can focus on the solution.  
                         <br></br><br></br>
                         Furthermore my emotions are also my very<span className="highlighted"> engine </span>where they give me 
                         the necessary energy and focus in order to sustain and deal with various difficult situations.
@@ -729,18 +730,17 @@ class Personality extends Component {
 
                     <div className="card-body">
                     <button className="btnPersonalityCard">
-
                       <h3 className="card-title" id="empathyCard_h3">
                         Leadership
                       </h3>
                       <h4 id="empathyCard_h4">Coordinator</h4>
 
                       <p className="card-text" id="empathyCard_p">
-                        Honestly I don't particular fancy leading others. It is time consuming and discussing salaries are subjects I really don't enjoy.<br></br>
-                        However if the leader at hand continually makes the wrong decisions then,only then, I rather be in charge and take full responsibility. 
-                        I guess I would do fine as a<span className="highlighted"> coordinator </span> since I am very pragmatic, result-oriented and very keen to hear others opinions. 
+                        I don't particular fancy leading others.It is time consuming and discussing salaries is a subject I really don't enjoy.<br></br>
+                        However if there would be a situation where the leader in a group continually takes the wrong decisions then and only then would I rather see myself as the teamleader and take full responsibility. 
+                        I guess I would do fine as a<span className="highlighted"> coordinator </span>since I am very pragmatic, result-oriented and very keen to hear others opinions.<br></br><br></br>
                       </p>
-                      </button>
+                    </button>
                     </div>
                   </div>
                 </div>
