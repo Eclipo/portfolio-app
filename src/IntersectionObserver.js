@@ -13,34 +13,66 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   const experienceSection = document.querySelector("#experiencesID");
   const portfolioSection = document.querySelector("#portfolioID");
 
-  const navLinkHome = document.getElementById("navLinkHomeID");
-  const navLinkHomeH3 = document.getElementById("navLinkHomeH3ID");
+  const firstWrapper = [
+    introSection,
+    quickFactsSection,
+    aboutMeSection
+  ];
 
-  const navLinkPersonality = document.getElementById("navLinkPersonalityID");
-  const navLinkPersonalityH3 = document.getElementById("navLinkPersonalityH3ID");
-
-
-  const colorDarkestNavy = "var(--darkest-navy)"; 
-
-  const secondWrapper = [skillsSection,experienceSection, resumeSection,personalitySection,portfolioSection];
-  const firstWrapper = [introSection,quickFactsSection,aboutMeSection]  //ocument.querySelectorAll(".sectionAnimation");
+  const secondWrapper = [
+    skillsSection,
+    experienceSection,
+    resumeSection,
+    personalitySection,
+    portfolioSection
+  ];
+  
+  //Nav-link
+  const navLinkHomeID = document.getElementById("navLinkHomeID");
+  const navLinkQuickID = document.getElementById("navLinkQuickFactsID");
+  const navLinkAboutID = document.getElementById("navLinkAboutID");
+  const navLinkSkillsID = document.getElementById("navLinkSkillsID");
+  const navLinkExperienceID = document.getElementById("navLinkExperiencesID");
+  const navLinkResumeID = document.getElementById("navLinkResumeOverviewID");
+  const navLinkPersonalityID = document.getElementById("navLinkPersonalityID");
+  const navLinkPortfolioID = document.getElementById("navLinkPortfolioID");
+  
+  const navLinksID = [
+    navLinkHomeID,
+    navLinkQuickID,
+    navLinkAboutID,
+    navLinkSkillsID,
+    navLinkExperienceID,
+    navLinkResumeID,
+    navLinkPersonalityID,
+    navLinkPortfolioID
+  ];
 
   const navLinks = document.querySelectorAll(".nav-link");
 
-  const navLinksH3 = document.querySelectorAll(".navLinkH3");
-
   const animationQuickFactAbout = new QuickAboutAnimation();
-
+  
+  let oldIndex = -1;
   function currentNavLink(inputIndex){
+    if(inputIndex !== oldIndex){
+      if(oldIndex === -1){
+      oldIndex=inputIndex;
+      }
+
+      else{
+        navLinksID[oldIndex].blur();
+        oldIndex=inputIndex;
+      }
+    }
+
     navLinks.forEach((el) => {
-      el.classList.remove("navFocus");
+        el.classList.remove("navFocus");      
     });
   
     navLinks[inputIndex].classList.add("navFocus");
   };
     
   const firstHandleScrollPosY = (entries, observer) => {
-
     entries.forEach((entry) => {
     const currentIndex = Array.from(firstWrapper).indexOf(entry.target);
     console.log('!!!!!!!!!!!!!!!!! CURRENTINDEX !!!!!!! '+currentIndex);
@@ -50,55 +82,38 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
       
       // Intro Section - Turn ON QuickAboutAnimation  ...
       case 0:
-        console.log(entry);
         currentNavLink(0);
-        // navLinksH3.forEach((el) => {
-        //   el.style.color = "var(--primary-white)";
-        // });
-
-        // navLinkHome.style.background = "linear-gradient(to right, var(--primary-white), var(--darkest-navy))";
-        // navLinkHomeH3.style.color =colorDarkestNavy;
-        // console.log('!!! WTF IT IS ZER00000000000000000000000!!!!!!!!!');
-        break;
+      break;
 
       // Quick Facts Section - Turn off Skills
       case 1:
         currentNavLink(1);
-
-
         PlayAnimation('SkillAnimation',1);
         animationQuickFactAbout.playOrStop(true);
-        break;
+      break;
 
       //About me Section - Turn Off Personality
-        case 2:
-          currentNavLink(currentIndex);
-            animationQuickFactAbout.playOrStop(true);
-        break;
+      case 2:
+        currentNavLink(2);
+        animationQuickFactAbout.playOrStop(true);
+      break;
 
-      
-
-        default:
-        // code block
+      default:
+      // code block
+        }
       }
-}
-})
-}
+    })
+  }
 
-    const secondHandleScrollPosY = (entries, observer) => {
-
-        entries.forEach((entry) => {
-        const currentIndex = Array.from(secondWrapper).indexOf(entry.target);
-        console.log('!!!!!!!!!!!!!!!!! CURRENTINDEX !!!!!!! '+currentIndex);
-        
+  const secondHandleScrollPosY = (entries, observer) => {
+    entries.forEach((entry) => {
+      const currentIndex = Array.from(secondWrapper).indexOf(entry.target);
         if (entry.isIntersecting) {
-        switch(currentIndex) {
-          
-          
+          switch(currentIndex) {
+
           //Skills Section -  Turn OFF QuickAbout
             case 0:
               currentNavLink(3);
-              console.log('SKILLS SECTION');
               animationQuickFactAbout.playOrStop(false);
               PlayAnimation('SkillAnimation',2);
             break;
@@ -106,46 +121,32 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
             //Major experiences - Turn OFF Skills
             case 1:
               currentNavLink(4);
-              console.log('Major experiences SECTION');
               PlayAnimation('PersonalityAnimation',1);
-
-           
             break;
 
-              //Resume Overview Section - Turn OFF Personality
-              case 2:
-                currentNavLink(5);
-                PlayAnimation('SkillAnimation',1);
-                PlayAnimation('PortfolioAnimation',1);                
+            //Resume Overview Section - Turn OFF Personality
+            case 2:
+              currentNavLink(5);
+              PlayAnimation('SkillAnimation',1);
+              PlayAnimation('PortfolioAnimation',1);                
+            break;
 
-                // PlayAnimation('PortfolioAnimation',1);
-              break;
+            case 3:
+              currentNavLink(6);
+              PlayAnimation('PersonalityAnimation',2);
+            break;
 
-              //PersonalityAnimation - Turn OFF Portfolio
-              case 3:
-                currentNavLink(6);
-
-                console.log('MAJOR EXPERIENCES SECTION');
-                PlayAnimation('PersonalityAnimation',2);
-              break;
-
-               //Portfolio - Turn Off Personality 
-               case 4:
-                currentNavLink(7);
-
-                console.log('PORTFOLIO SECTION');
-                PlayAnimation('PortfolioAnimation',2);
-                // PlayAnimation('PersonalityAnimation',1);
-
-              break;
+            //Portfolio - Turn Off Personality 
+            case 4:
+              currentNavLink(7);
+              PlayAnimation('PortfolioAnimation',2);
+            break;
 
             default:
-            // code block
           }
+        }
+      })
     }
-  })
-}
-
 
   const firstOptions = {
     root: null,
@@ -159,46 +160,15 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
     threshold: 0.2
   }
 
-const firstObserver = new IntersectionObserver(firstHandleScrollPosY, firstOptions);
-firstObserver.observe(introSection);
-firstObserver.observe(quickFactsSection);
-firstObserver.observe(aboutMeSection);
+  const firstObserver = new IntersectionObserver(firstHandleScrollPosY, firstOptions);
+  firstObserver.observe(introSection);
+  firstObserver.observe(quickFactsSection);
+  firstObserver.observe(aboutMeSection);
 
-const myObserver = new IntersectionObserver(secondHandleScrollPosY, secondOptions);
-// myObserver.observe(introSection);
-// myObserver.observe(quickFactsSection);
-// myObserver.observe(aboutMeSection);
-myObserver.observe(skillsSection);
-myObserver.observe(personalitySection);
-myObserver.observe(resumeSection);
-myObserver.observe(experienceSection);
-myObserver.observe(portfolioSection);
-
-
-
+  const myObserver = new IntersectionObserver(secondHandleScrollPosY, secondOptions);
+  myObserver.observe(skillsSection);
+  myObserver.observe(personalitySection);
+  myObserver.observe(resumeSection);
+  myObserver.observe(experienceSection);
+  myObserver.observe(portfolioSection);
 },100);
-
-
-// var navbar = document.querySelector(".containerNavbar");
-
-// Setup isScrolling variable
-// var isScrolling;
-
-// // Listen for scroll events
-// window.addEventListener('scroll', function ( event ) {
-//   var navbar = document.querySelector(".containerNavbar");
-
-// 	// Clear our timeout throughout the scroll
-// 	window.clearTimeout( isScrolling );
-//   // navbar.classList.remove("fixed-top");
-// 	// Set a timeout to run after scrolling ends
-// 	isScrolling = setTimeout(function() {
-   
-//     // navbar.classList.add("fixed-top");
-//     navbar.setAttribute("top",(window.screenY+12).toString());
-// 		// Run the callback
-// 		console.log( 'Scrolling has stopped.' );
-
-// 	}, 66);
-
-// }, false);

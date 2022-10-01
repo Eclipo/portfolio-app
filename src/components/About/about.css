@@ -47,6 +47,9 @@
 .testimonials p {
   color: var(--primary-white);
   font-size: large !important;
+  margin: auto !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .carousel .slide img {

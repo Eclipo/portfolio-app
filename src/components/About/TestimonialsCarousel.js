@@ -37,9 +37,9 @@ const TestimonialsCarousel = () => {
             <Family></Family>
           </div>
 
-          <div className="d-block " style={{ marginTop: "-14rem" }}>
+          <div className="d-block " style={{ marginTop: "-14.75rem" }}>
             <h2>Family</h2>
-            <p>Me, Erika, our son Noah and baby girl Laleh.</p>
+            <p style={{marginTop:"-2rem !important;"}}>Me, Erika, our son Noah and baby girl Laleh.</p>
           </div>
         </div>
       </>
@@ -123,7 +123,7 @@ const TestimonialsCarousel = () => {
             }}
           >
             <h2 className="mt-5">Basket</h2>
-            <p>One of my passions. I love the game</p>
+            <p>One of my passions. <br></br>I love the game</p>
           </div>
         </div>
       </>

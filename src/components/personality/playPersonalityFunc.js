@@ -33,7 +33,7 @@ function getRandomCard() {
  function animateCard(inputTarget){
   anime({
     targets:inputTarget,
-    rotate:['-3deg','3deg',0],
+    rotate:['-1deg','1deg',0],
     easing: "easeInOutQuad",
     duration:1250  
   })
@@ -78,13 +78,10 @@ const playPatience = anime({
   loopBegin:function(){
     animatePatience(getRandomTarget());
   },
-  loopComplete: function() {
-    
-    setTimeout(animatePatience(getRandomTarget()),1000);
-  },
   loop:true,
   autoplay:false,
   duration:500,
+  delay:500
 
 });
 
