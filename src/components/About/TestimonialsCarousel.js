@@ -39,7 +39,7 @@ const TestimonialsCarousel = () => {
 
           <div className="d-block " style={{ marginTop: "-14.75rem" }}>
             <h2>Family</h2>
-            <p style={{marginTop:"-2rem !important;"}}>Me, Erika, our son Noah and baby girl Laleh.</p>
+            <p>Me, Erika, our son Noah and baby girl Laleh.</p>
           </div>
         </div>
       </>
@@ -119,7 +119,7 @@ const TestimonialsCarousel = () => {
               backgroundColor: "var(--primary-grey)",
               width: "110%",
               height: "55%",
-              marginTop: "12rem",
+              marginTop: "12.5rem",
             }}
           >
             <h2 className="mt-5">Basket</h2>

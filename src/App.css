@@ -250,7 +250,12 @@
 @media (max-width: 25rem){
   
   .skillPointGround{
-    font-size: 0.85rem !important ;
+    font-size: 0.95rem;
+    padding: 10rem !important;
+  }
+
+  .skillTable tbody p{
+    font-size: 0.475rem;
   }
 
   .expOverviewPeriod p{
@@ -285,6 +290,10 @@
     width: 8rem;
     display: flex;
   }
+  .skillTable tbody p{
+    font-size:0.6rem;
+  }
+  
 }
 
   @media (min-width: 30rem) {
@@ -299,6 +308,9 @@
       height: 5rem;
     }
   
+    .skillTable tbody p{
+      font-size:0.8375rem;
+    }
     .duckText, .welcomeText{
       max-width: 30rem !important;
       /* max-width: 22.5rem !important; */
