@@ -19,11 +19,11 @@ const TestimonialsCarousel = () => {
     <Carousel
       showArrows={true}
       swipeable={true}
-      infiniteLoop={true}
       showThumbs={false}
       showStatus={false}
-      autoPlay={true}
-      interval={17500}
+      // infiniteLoop={true}
+      // autoPlay={true}
+      // interval={17500}
     >
       <>
         <div

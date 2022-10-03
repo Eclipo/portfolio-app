@@ -151,7 +151,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   const firstOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.6
+    threshold: 0.5
   }
 
   const secondOptions = {

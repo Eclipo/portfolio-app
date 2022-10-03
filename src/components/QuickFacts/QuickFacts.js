@@ -12,11 +12,11 @@ const QuickFacts = () => {
             <div className="container d-block">
             <h1 className='flexCenter' style={{color:"var(--primary-yellow"}}>Quick facts!</h1>
                     
-                <div className="flexCenter">
+                <div className="flexCenter" style={{marginTop:'-7.5rem'}}>
                     <EdipGuy></EdipGuy>
                 </div>
 
-                <div className='container'>
+                <div className='container-sm' style={{marginTop:'-7.5rem'}}>
                     <div className='row m-auto m-1'>
                     <div className='col m-1'>
                             <div className='quickCard'>
