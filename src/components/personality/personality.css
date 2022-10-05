@@ -190,7 +190,9 @@
 
 
 }
-
+.personalityTextContainer .col{
+  margin: auto;
+}
 .personalityCard{
 background-color: var(--primary-green);
 border-width: 0.25rem;
@@ -198,7 +200,7 @@ border-style: solid;
 border-color: var(--primary-green);
 width: 25rem;
 height:fit-content;
-margin: 2.5rem;
+margin: 3rem;
 }
 .btnPersonalityCard{
 border: none;

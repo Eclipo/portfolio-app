@@ -573,42 +573,7 @@ class Personality extends Component {
                 </div>
 
                 <div className="col flexCenter">
-                  <div
-                    className="card personalityCard"
-                    id="multiTaskCard"
-                    onClick={this.handleClick}
-                  >
-                    <div>
-                      <button
-                        id="multiTaskCard_closeBtn"
-                        className="personalityCloseBtn"
-                        onClick={this.closeWindow}
-                      >
-                        {" "}
-                        <FontAwesomeIcon icon={faClose} id="navIconID" />
-                      </button>
-                    </div>
-
-                    <div className="card-body">
-                    <button className="btnPersonalityCard">
-
-                      <h3 className="card-title" id="multiTaskCard_h3">
-                        Multitasking
-                      </h3>
-                      <h4 id="multiTaskCard_h4">NO!</h4>
-
-                      <p className="card-text" id="multiTaskCard_p">
-                      <span className="highlighted">No!</span> 
-                        "Multitasking" (read too much tasks) makes my head split and I continually need to reset my focus.<br></br>
-                        I rather spend my time doing one thing at a time to the best of my ability.
-                      </p>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col flexCenter">
-                  <div
+                <div
                     className="card personalityCard"
                     id="focusCard"
                     onClick={this.handleClick}
@@ -637,6 +602,42 @@ class Personality extends Component {
                         The consequence of having too much fun will result into me being completely devoured by my hyperfocus.
                         In contrast a chaotic environment and boredome will eventually crash me into a blue screen of death.
                         My focus is a <span className="highlighted"> double-edged sword</span>.</p>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div className="col flexCenter">
+                <div
+                    className="card personalityCard"
+                    id="multiTaskCard"
+                    onClick={this.handleClick}
+                  >
+                    <div>
+                      <button
+                        id="multiTaskCard_closeBtn"
+                        className="personalityCloseBtn"
+                        onClick={this.closeWindow}
+                      >
+                        {" "}
+                        <FontAwesomeIcon icon={faClose} id="navIconID" />
+                      </button>
+                    </div>
+
+                    <div className="card-body">
+                    <button className="btnPersonalityCard">
+
+                      <h3 className="card-title" id="multiTaskCard_h3">
+                        Multitasking
+                      </h3>
+                      <h4 id="multiTaskCard_h4">NO!</h4>
+
+                      <p className="card-text" id="multiTaskCard_p">
+                      <span className="highlighted">No!</span> 
+                        "Multitasking" (read too much tasks) makes my head split and I continually need to reset my focus.<br></br>
+                        I rather spend my time doing one thing at a time to the best of my ability.
+                      </p>
                       </button>
                     </div>
                   </div>
