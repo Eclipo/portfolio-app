@@ -34,7 +34,7 @@ class Experiences extends Component {
           style={{ backgroundColor: "var(--primary-purple)" }}
         ></div>
 
-        <h1 style={{ color: "var(--primary-purple)" }}>Major Experiences</h1>
+        <h1 style={{ color: "var(--primary-purple)" }}>Major<br></br>Experiences</h1>
         <PlayRefresh
           className="mb-5"
           id="ExperienceAnimation"
@@ -47,7 +47,7 @@ class Experiences extends Component {
 
         <div className="backgroundMajorExp">
 
-        <div className="container-md row" id="expMenu">
+        <div className="container-sm row" id="expMenu">
           <div className="row mx-auto ">
             <div className="col">
             <button 

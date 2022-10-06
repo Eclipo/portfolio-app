@@ -16,19 +16,26 @@ const QuickFacts = () => {
                     <EdipGuy></EdipGuy>
                 </div>
 
-                <div className='container-sm' style={{marginTop:'-7.5rem'}}>
+                <div className='container-sm' style={{marginTop:'-6.25rem'}}>
                     <div className='row m-auto m-1'>
-                    <div className='col m-1'>
+                        <div className='col'>
+                            <div className='quickCard'>
+                                <span className='circ'></span>                               
+                                    <h4 className="quickH4" style={{marginTop:"-6rem"}}>WEB<br></br>DEVELOPER</h4>
+                            </div>
+                        </div>
+
+                        <div className='col m-1'>
                             <div className='quickCard'>
                                 <span className='circ'></span>                               
                                 <h4 className=" quickH4" style={{marginTop:"-5rem"}}>FAMILLY</h4>
                             </div>
 
                         </div>
-                            <div className='col m-1'>
+                        
+                        <div className='col m-1'>
                             <div className='quickCard'>
-                            <span className='circ'></span>                               
-
+                                <span className='circ'></span>                               
                                     <h4 className="quickH4" style={{marginTop:"-5rem"}}>SWEDEN</h4>
                                 
                             </div>
@@ -36,15 +43,7 @@ const QuickFacts = () => {
                     </div>
                    
                     <div className='row m-auto m-1'>
-                        <div className='col m-1'>
-                            <div className='quickCard'>
-                            <span className='circ'></span>                               
-
-                                    <h4 className="quickH4" style={{marginTop:"-6rem"}}>WEB<br></br>DEVELOPER</h4>
-                                
-                            </div>
-                            
-                        </div>
+                       
                     </div>
                 </div>
                

@@ -4,7 +4,7 @@
   margin-left: 1rem;
   width: 18rem;
   margin-top: -2rem;
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   transform: scale(0.7);
 
@@ -14,6 +14,7 @@
 #mokaColID{
   margin-right: -1rem;
 }
+
 .mokaBaseLeft {
   background-color: rgb(226, 226, 226);
 width:0.75rem;

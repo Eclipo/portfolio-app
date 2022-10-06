@@ -2,7 +2,7 @@
 
 /************************* MEDIA QUERIES *********************************/
 
-@media (min-width: 20rem) {
+@media (min-width: 15rem) {
   #municipality_3_sql {
     width: 95%;
   }
@@ -16,9 +16,13 @@
 
   #KnucklesContainerID {
     display: flex;
-    transform: scale(0.6);
-    margin-top: -12rem;
+    transform: scale(0.5);
+    margin-top: -16rem;
   }
+
+  .backgroundMajorExp{
+    margin-top: 2rem;
+  } 
 }
 
 @media (min-width: 25rem) {
@@ -36,6 +40,9 @@
   #KnucklesContainerID {
     display: flex;
   }
+  .backgroundMajorExp{
+    margin-top: 1rem;
+  } 
 }
 
 @media (min-width: 40rem) {
@@ -53,8 +60,11 @@
   #KnucklesContainerID {
     display: flex;
     margin-top: -13rem;
-    transform: scale(0.45);
+    transform: scale(0.35);
   }
+  .backgroundMajorExp{
+    margin-top: -2rem;
+  } 
 }
 
 @media (min-width: 60rem) {
@@ -68,8 +78,14 @@
   #municipality_3_csharp {
     width: 15%;
   }
-
-  
+  #KnucklesContainerID {
+    display: flex;
+    margin-top: -19rem;
+    transform: scale(0.4);
+  }
+  .backgroundMajorExp{
+    margin-top: 3rem;
+  } 
 }
 
 @media (min-width: 80rem) {
@@ -89,16 +105,23 @@
     margin-top: -30vh;
     transform: scale(0.5);
   }
+ 
+}
+
+@media (min-width: 120rem) {
+  .backgroundMajorExp{
+    margin-top: -5rem;
+  } 
 }
 /************************* EXP Menu *********************************/
-/* .backgroundMajorExp{
-  background-color: var(--dark-navy);
-} */
+
+
 #KnucklesContainerID {
   display: inline-flex;
   width: 100%;
   opacity: 0;
-  z-index: -1;
+  z-index: -1 !important;
+  /* margin-top: -18rem !important; */
 }
 
 #expMenu {
