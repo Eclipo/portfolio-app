@@ -191,7 +191,7 @@ class Skills extends Component {
                 <td>
                   {" "}
                   <p className="skill frontEndTheme" id="skillElemAndNoob">
-                    Typescript
+                    Redux
                   </p>
                 </td>
                 <td>
@@ -228,7 +228,7 @@ class Skills extends Component {
                 <td>
                   {" "}
                   <p className="skill frontEndTheme" id="skillElemAndInter">
-                    Javascript
+                    Typescript
                   </p>
                 </td>
                 <td>
@@ -365,7 +365,7 @@ class Skills extends Component {
                 </td>
               </tr>
 
-              <SkillDivider className="frontEndTheme"></SkillDivider>
+              {/* <SkillDivider className="frontEndTheme"></SkillDivider> */}
 
               <tr>
                 <td>
@@ -478,7 +478,7 @@ class Skills extends Component {
                 </td>
               </tr>
 
-              <SkillDivider className="backEndTheme"></SkillDivider>
+              {/* <SkillDivider className="backEndTheme"></SkillDivider> */}
 
               <tr>
                 <td>
@@ -590,11 +590,11 @@ class Skills extends Component {
                   ></div>
                 </td>
               </tr>
-              <SkillDivider className="rolesTheme"></SkillDivider>
+              {/* <SkillDivider className="rolesTheme"></SkillDivider> */}
             </tbody>
           </table>
         </div>
-
+      
         <div className="container-sm" id="duckContainerID">          
           <div className="row">
           <h2 style={{ color: "var(--primary-blue"}}>I am a duck</h2>
@@ -607,10 +607,7 @@ class Skills extends Component {
 
             <div className="row">
               <p className="duckText">
-                I have worked in various roles for 10 years within the IT-sector.  
-                In my initial start as a professional software developer I had to learn a broad set of skills in order to be 
-                <span className="skillHighLighted"> "Lagom" </span> (just the right amount in Swedish).<br></br><br></br> 
-                As a developer I slowly became multidisciplinary just like a duck:
+                As a developer I slowly became <span className="skillHighLighted"> multidisciplinary </span> just like a <span className="skillHighLighted"> duck</span>:
                 <br></br><br></br> 
                 <ul className="skillBullet">
                   <li>I can fly through <span className="skillHighLighted"> HTML, CSS and Javascript</span>.</li><br></br>
@@ -619,9 +616,12 @@ class Skills extends Component {
                   <li>I can even paddle among <span className="skillHighLighted">MSSQL databases</span>.</li>
                 </ul>
                 <span className="skillHighLighted">So how good of a duck am I?</span><br></br>
-                With some guidance from senior developers 
-                combined with my regular visits to <span className="skillHighLighted"> StackOverflow </span> I can be quite efficient and occassionally even Lagom!<br></br>
-                At the moment I am more tilted towards front-end however I do like back-end as well.
+                I have worked in various roles for<span className="skillHighLighted"> 10 years </span>within the <span className="skillHighLighted"> IT-sector </span>and I started to code since <span className="skillHighLighted"> 2015</span>.
+                My career as a professional software developer began <span className="skillHighLighted"> 2019</span> where I learned a broad set of skills in order to be 
+                <span className="skillHighLighted"> Lagom </span> (just the right amount in Swedish).     
+                <br></br><br></br> 
+                I can generally get by in the whole stack as a developer and be somewhat self-going with some assistance from senior developers.
+                So far things have turned out really well for me.
               </p>
             </div>
           </div>

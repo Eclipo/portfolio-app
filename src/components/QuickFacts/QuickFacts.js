@@ -16,9 +16,9 @@ const QuickFacts = () => {
                     <EdipGuy></EdipGuy>
                 </div>
 
-                <div className='container-sm' style={{marginTop:'-6.25rem'}}>
+                <div className='container-sm' style={{maxWidth:'45rem',marginTop:'-3rem'}}>
                     <div className='row m-auto m-1'>
-                        <div className='col'>
+                        <div className='col m-1'>
                             <div className='quickCard'>
                                 <span className='circ'></span>                               
                                     <h4 className="quickH4" style={{marginTop:"-6rem"}}>WEB<br></br>DEVELOPER</h4>
