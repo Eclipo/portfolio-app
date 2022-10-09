@@ -60,7 +60,7 @@ class Skills extends Component {
                 <td>
                   {" "}
                   <h3
-                    className="skillPointGround m-1 p-1"
+                    className="skillPointGround"
                     id="Beginner"
                     style={{ marginBottom: "2%" }}
                   >
@@ -70,7 +70,7 @@ class Skills extends Component {
                 <td>
                   {" "}
                   <h3
-                    className="skillPointGround m-1 p-1"
+                    className="skillPointGround"
                     id="Elementary"
                     style={{ marginBottom: "2%" }}
                   >
@@ -80,7 +80,7 @@ class Skills extends Component {
                 <td>
                   {" "}
                   <h3
-                    className="skillPointGround m-1 p-1"
+                    className="skillPointGround"
                     id="Intermediate"
                     style={{ marginBottom: "2%" }}
                   >
@@ -90,7 +90,7 @@ class Skills extends Component {
                 <td>
                   {" "}
                   <h3
-                    className="skillPointGround m-1 p-1"
+                    className="skillPointGround"
                     id="Advanced"
                     style={{ marginBottom: "2%" }}
                   >
@@ -120,7 +120,7 @@ class Skills extends Component {
                 </td>
                 <td>
                   {" "}
-                  <p className="skill frontEndTheme" id="skillElemAndNoob">
+                  <p className="skill frontEndTheme">
                     Angular
                   </p>
                 </td>
@@ -147,17 +147,19 @@ class Skills extends Component {
               <tr>
                 <td>
                   {" "}
+                  <p className="skill frontEndTheme">
+                    ReactJS
+                  </p>
+                </td>
+
+                <td>
+                  {" "}
                   <div
                     className="skillPointGround"
                     style={{ opacity: "0" }}
                   ></div>
                 </td>
-                <td>
-                  {" "}
-                  <p className="skill frontEndTheme" id="skillElemAndNoob">
-                    ReactJS
-                  </p>
-                </td>
+              
                 <td>
                   {" "}
                   <div
@@ -190,7 +192,7 @@ class Skills extends Component {
                 </td>
                 <td>
                   {" "}
-                  <p className="skill frontEndTheme" id="skillElemAndNoob">
+                  <p className="skill frontEndTheme">
                     Redux
                   </p>
                 </td>
@@ -377,7 +379,7 @@ class Skills extends Component {
                 </td>
                 <td>
                   {" "}
-                  <p className="skill backEndTheme" id="skillElemAndNoob">
+                  <p className="skill backEndTheme">
                     Powershell
                   </p>
                 </td>
@@ -616,12 +618,8 @@ class Skills extends Component {
                   <li>I can even paddle among <span className="skillHighLighted">MSSQL databases</span>.</li>
                 </ul>
                 <span className="skillHighLighted">So how good of a duck am I?</span><br></br>
-                I have worked in various roles for<span className="skillHighLighted"> 10 years </span>within the <span className="skillHighLighted"> IT-sector </span>and I started to code since <span className="skillHighLighted"> 2015</span>.
-                My career as a professional software developer began <span className="skillHighLighted"> 2019</span> where I learned a broad set of skills in order to be 
-                <span className="skillHighLighted"> Lagom </span> (just the right amount in Swedish).     
-                <br></br><br></br> 
-                I can generally get by in the whole stack as a developer and be somewhat self-going with some assistance from senior developers.
-                So far things have turned out really well for me.
+                Code-wise I can get by in the whole stack.But if senior developers provides me with good support then I can be quite efficient.
+                I am good enough or as we say in Swedish<span className="skillHighLighted"> Lagom</span>. 
               </p>
             </div>
           </div>

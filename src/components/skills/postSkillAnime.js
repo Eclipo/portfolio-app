@@ -4,7 +4,7 @@ import anime from "animejs";
 export async function playPostFunc(inputBoolean) {
 
     const moveBetweenWidth_Inter = document.getElementById("skillElemAndInter");
-    const moveBetweenWidth_Noob = document.getElementById("skillElemAndNoob");
+    // const moveBetweenWidth_Noob = document.getElementById("skillElemAndNoob");
     // const moveBetweenWidth_Noob_To_Inter = document.getElementById(
     //   "skillNoobElemAndInter"
     // );
@@ -14,8 +14,8 @@ export async function playPostFunc(inputBoolean) {
     // const moveRightNoobinter =
     //   moveBetweenWidth_Noob_To_Inter.offsetWidth.toString() + "px";
     
-    const moveLeft =
-      "-" + moveBetweenWidth_Noob.offsetWidth.toString() + "px";
+    // const moveLeft =
+    //   "-" + moveBetweenWidth_Noob.offsetWidth.toString() + "px";
     
     const moveRight = moveBetweenWidth_Inter.offsetWidth.toString() + "px";
     
@@ -25,11 +25,11 @@ export async function playPostFunc(inputBoolean) {
         direction:'alternate'
       });
       
-      const postAnimationElemAndNoob = anime.timeline({
-        loop: true,
-        autoplay: false,
-        direction:'alternate'
-      });
+      // const postAnimationElemAndNoob = anime.timeline({
+      //   loop: true,
+      //   autoplay: false,
+      //   direction:'alternate'
+      // });
       
       // const postAnimationNoobElemAndInter = anime.timeline({
       //   loop: true,
@@ -45,13 +45,13 @@ export async function playPostFunc(inputBoolean) {
         delay: anime.stagger(250)
       });
     
-      postAnimationElemAndNoob.add({
-        targets: "#skillElemAndNoob",
-        translateX: [0, moveLeft],
-        easing: "easeInOutQuad",
-        direction: "alternate",
-        delay: anime.stagger(250)
-      });
+      // postAnimationElemAndNoob.add({
+      //   targets: "#skillElemAndNoob",
+      //   translateX: [0, moveLeft],
+      //   easing: "easeInOutQuad",
+      //   direction: "alternate",
+      //   delay: anime.stagger(250)
+      // });
     
       // postAnimationNoobElemAndInter.add({
       //   targets: "#skillNoobElemAndInter",
@@ -107,7 +107,7 @@ export async function playPostFunc(inputBoolean) {
     
   if(inputBoolean === true){
       postAnimationElemAndInter.play();
-      postAnimationElemAndNoob.play();
+      // postAnimationElemAndNoob.play();
       // postAnimationNoobElemAndInter.play();
 
       duckEyeBrowAnim.play();

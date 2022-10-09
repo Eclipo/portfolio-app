@@ -251,12 +251,13 @@
   
   .skillPointGround{
     font-size: 0.95rem;
-    padding: 10rem !important;
   }
+
 
   .skillTable tbody p{
     font-size: 0.475rem;
   }
+
 
   .expOverviewPeriod p{
     font-size: 0.75rem;
@@ -285,7 +286,7 @@
 
 }
 
-@media (min-width: 26rem) {
+@media (min-width: 25.1rem) {
   .resumeNavMenu{
     width: 8rem;
     display: flex;
@@ -294,6 +295,11 @@
     font-size:0.6rem;
   }
   
+  .skillPointGround{
+    font-size: 1.15rem;
+  }
+
+ 
 }
 
   @media (min-width: 30rem) {
