@@ -491,7 +491,7 @@ class Personality extends Component {
                         <span className="highlighted"> "I'm just telling the truth" </span> 
                         was and is still today abusively applied. Later in life (30+ years) I finally understood I have
                         another take on honesty compared to most people.
-                        Nowdays I try to be more diplomatic while expressing my opinion while I encourage
+                        Nowdays I try to be more diplomatic while expressing my opinion. Often I encourage
                         others to be more honest with me.Honesty is a trait I value very highly.
                       </p>
                       </button>
