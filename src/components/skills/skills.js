@@ -618,8 +618,8 @@ class Skills extends Component {
                   <li>I can even paddle among <span className="skillHighLighted">MSSQL databases</span>.</li>
                 </ul>
                 <span className="skillHighLighted">So how good of a duck am I?</span><br></br>
-                Code-wise I can get by in the whole stack.But if senior developers provides me with good support then I can be quite efficient.
-                I am good enough or as we say in Swedish<span className="skillHighLighted"> Lagom</span>. 
+                Code-wise I can get by in the whole stack where I am more tilted towards front-end.Occasionally I do need support from senior developers.<br></br><br></br>
+                The bottomline is I am not great but hopefully good enough or as we say in Swedish<span className="skillHighLighted"> Lagom</span>. 
               </p>
             </div>
           </div>

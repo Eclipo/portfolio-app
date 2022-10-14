@@ -20,9 +20,6 @@
     margin-top: -16rem;
   }
 
-  .backgroundMajorExp{
-    margin-top: 2rem;
-  } 
 }
 
 @media (min-width: 25rem) {
@@ -39,10 +36,10 @@
 
   #KnucklesContainerID {
     display: flex;
+    transform: scale(0.35);
+
   }
-  .backgroundMajorExp{
-    margin-top: 1rem;
-  } 
+
 }
 
 @media (min-width: 40rem) {
@@ -59,12 +56,10 @@
 
   #KnucklesContainerID {
     display: flex;
-    margin-top: -13rem;
+    margin-top: -17rem;
     transform: scale(0.35);
   }
-  .backgroundMajorExp{
-    margin-top: -2rem;
-  } 
+
 }
 
 @media (min-width: 60rem) {
@@ -80,12 +75,8 @@
   }
   #KnucklesContainerID {
     display: flex;
-    margin-top: -19rem;
-    transform: scale(0.4);
+    margin-top: -17rem;
   }
-  .backgroundMajorExp{
-    margin-top: 3rem;
-  } 
 }
 
 @media (min-width: 80rem) {
@@ -102,22 +93,24 @@
 
   #KnucklesContainerID {
     display: block;
-    margin-top: -30vh;
+    margin-top: -13rem;
     transform: scale(0.5);
   }
  
 }
 
-@media (min-width: 120rem) {
-  .backgroundMajorExp{
-    margin-top: -5rem;
-  } 
-}
 /************************* EXP Menu *********************************/
+#ExperienceAnimation{
+  z-index: 1;
+}
 
+#displayKnucklesID{
+  display: none;
+  z-index: -1 !important;
+}
 
 #KnucklesContainerID {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   opacity: 0;
   z-index: -1 !important;
@@ -126,19 +119,11 @@
 
 #expMenu {
   opacity: 0;
-  /* border-color: var(--primary-purple);
-  border-bottom: transparent !important;
-  border-top: 0.3rem solid var(--primary-purple) !important; */
-
-  /* border-width: 0.1rem;
-  border-style: solid; */
   padding: 1%;
-  /* background-color: var(--light-navy); */
-  /* border-radius: 18px 18px 0 0 ; */
   position: relative;
-  margin-top: 15rem;
   width: 90%;
   display: none;
+  margin: auto;
 }
 
 .expTable {
@@ -291,8 +276,7 @@
   text-align: left;
   white-space: normal !important;
   width: auto;
-  margin-left: 0.5rem;
-  margin: auto;
+
 }
 
 .textText p span {
@@ -329,12 +313,15 @@ ul {
   display: none;
 }
 #fintech_angular {
-  width: 75%;
+  width: 90%;
 }
 
+#fintech_css {
+  width: 40%;
+}
 
 #fintech_csharp {
-  width: min-content;
+  width: 20%;
   padding: 0.25rem;
 }
 

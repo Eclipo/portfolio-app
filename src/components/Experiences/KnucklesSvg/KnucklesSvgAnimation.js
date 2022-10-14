@@ -3,6 +3,8 @@ import anime from "animejs";
 export function KnucklesSvgAnimation () {
 
   const expMenu = document.getElementById('expMenu');
+  const displayKnuckles = document.getElementById('displayKnucklesID');
+
   const knuckles = document.getElementById('KnucklesContainerID');
   const knucklesSVG = document.getElementById('KnucklesSvgID');
   expMenu.style.display='inline-flex';
@@ -14,7 +16,8 @@ export function KnucklesSvgAnimation () {
         opacity:0,
         duration:50,
         complete:function(){
-         
+          displayKnuckles.style.display='flex';
+
 
           anime({
             targets:'#KnucklesContainerID',
@@ -115,6 +118,7 @@ export function KnucklesSvgAnimation () {
                       delay:2500,
                       complete:function(){
                         knucklesSVG.style.display='none';
+                        displayKnuckles.style.display='none';
 
                           anime({
                             targets:['#expMenu', '#_container'],
