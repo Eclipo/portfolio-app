@@ -193,6 +193,11 @@
   margin:auto;
 }
 
+.expInfoFirstRow{
+  width: 90%;
+  margin: auto !important;
+}
+
 .headerTech {
   color: var(--primary-light-green) !important;
   position: relative;

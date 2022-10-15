@@ -516,7 +516,7 @@ margin-left:0.75rem;
   height: 15rem;
   margin: auto;
   display: block;
-  background-color: var(--primary-blue);
+  /* background-color: var(--primary-blue); */
   z-index: 1;
 }
 .sunRise{

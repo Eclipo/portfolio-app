@@ -90,11 +90,10 @@ export const animate = (inputID) => {
                     complete: function () {
                       if (inputID === "fintech") {
                         jobTitle = "Developer";
-
-                        linkCustomerTitle = "Fintech industry";
+                        linkCustomerTitle = "Fintech company";
                         linkToCustomer = "";
                         period.innerText = "22-02 - Present";
-                        system.innerText = "Fintech application";
+                        system.innerText = "Custom";
 
                         descOneEl.innerText =
                           "Currently active within the fintech industry as a front-end developer. We are building an awesome application.";
@@ -118,7 +117,7 @@ export const animate = (inputID) => {
                         linkCustomerTitle = "#3 Municipality";
                         linkToCustomer = "";
                         period.innerText = "20-08 - 22-02";
-                        system.innerText = "Platina";
+                        system.innerText = "Platina (.Net)";
                         liTwo.style.display = "flex";
                         liThree.style.display = "flex";
                         liFour.style.display = "flex";

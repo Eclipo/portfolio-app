@@ -70,8 +70,8 @@ export async function playIntroFunc() {
 
       changeJourneyScene.add({
         targets:'.journeyScene',
-        backgroundColor:['#0a192f','#3F7FBF'],
-        duration:2500,
+        backgroundColor:['#031127','#3F7FBF'],
+        duration:5500,
         endDelay:1500
       });
 

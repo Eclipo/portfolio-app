@@ -140,7 +140,7 @@ class Experiences extends Component {
 
           <div className="d-block container-md expTable expInfo mb-2" id="_container">
             <div className="row expInfo" id="_periodSystem">
-              <div className="col m-1">
+              <div className="col">
                 <div className="row">
                   <h4 className="header3Tech pb-0 mb-0">Employer:</h4>
                 </div>
@@ -155,7 +155,7 @@ class Experiences extends Component {
                 </div>
               </div>
 
-              <div className="col m-1">
+              <div className="col">
                 <div className="row">
                   <h4 className="header3Tech pb-0 mb-0">Customer:</h4>
                 </div>
@@ -169,7 +169,7 @@ class Experiences extends Component {
                 </div>
               </div>
 
-              <div className="col m-1">
+              <div className="col">
                 <div className="row">
                   <h4 className="header3Tech pb-0 mb-0" >Role:</h4>
                 </div>
@@ -183,7 +183,7 @@ class Experiences extends Component {
                 </div>
               </div>
 
-              <div className="col m-1">
+              <div className="col">
                 <div className="row">
                   <h4 className="header3Tech pb-0 mb-0">Period (YY/MM):</h4>
                 </div>
@@ -197,7 +197,7 @@ class Experiences extends Component {
                 </div>
 
               </div>
-              <div className="col m-1">
+              <div className="col">
                 <div className="row">
                   <h4 className="header3Tech pb-0 mb-0">System:</h4>
                 </div>
