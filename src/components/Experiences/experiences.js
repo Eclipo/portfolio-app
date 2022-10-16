@@ -65,7 +65,8 @@ class Experiences extends Component {
 
               <div className="col-8">
                 <p className="header3Tech infoTech mb-3">
-                  Click on a major experience to see its content.
+                  Click on a major experience to see its content 
+                  and for smaller screens you can see more by scrolling to the right.  
                 </p>
               </div>
 
@@ -98,7 +99,7 @@ class Experiences extends Component {
                     id="fintech"
                     onClick={this.handleClick}
                   >
-                    <h2>Fintech Industry</h2>
+                    <h2>Fintech Company</h2>
                   </button>
                   <div className="scrollLine" id="fintech_scrollLine"></div>
                 </td>
@@ -140,6 +141,7 @@ class Experiences extends Component {
 
           <div className="d-block container-md expTable expInfo mb-2" id="_container">
             <div className="row expInfo" id="_periodSystem">
+
               <div className="col">
                 <div className="row">
                   <h4 className="header3Tech pb-0 mb-0">Employer:</h4>
@@ -169,6 +171,35 @@ class Experiences extends Component {
                 </div>
               </div>
 
+              <div className="col m-0 p-0">
+                <div className="row">
+                  <h4 className="header3Tech pb-0 mb-0">Period (YY/MM):</h4>
+                </div>
+
+                <div className="row">
+                  <h4
+                    className="header3Tech pt-0 mt-0"
+                    id="period"
+                    style={{ color: "var(--primary-light-green)" }}
+                  ></h4>
+                </div>
+              </div>
+
+              
+              
+              <div className="col">
+                <div className="row">
+                  <h4 className="header3Tech pb-0 mb-0">System:</h4>
+                </div>
+                <div className="row">
+                  <h4
+                    className="header3Tech pt-0 mt-0"
+                    id="system"
+                    style={{ color: "var(--primary-light-green)" }}
+                  ></h4>
+                </div>
+              </div>
+
               <div className="col">
                 <div className="row">
                   <h4 className="header3Tech pb-0 mb-0" >Role:</h4>
@@ -183,34 +214,6 @@ class Experiences extends Component {
                 </div>
               </div>
 
-              <div className="col">
-                <div className="row">
-                  <h4 className="header3Tech pb-0 mb-0">Period (YY/MM):</h4>
-                </div>
-
-                <div className="row">
-                  <h4
-                    className="header3Tech pt-0 mt-0"
-                    id="period"
-                    style={{ color: "var(--primary-light-green)" }}
-                  ></h4>
-                </div>
-
-              </div>
-              <div className="col">
-                <div className="row">
-                  <h4 className="header3Tech pb-0 mb-0">System:</h4>
-                </div>
-                <div className="row">
-                  <h4
-                    className="header3Tech pt-0 mt-0"
-                    id="system"
-                    style={{ color: "var(--primary-light-green)" }}
-                  ></h4>
-                </div>
-                
-              
-              </div>
               <div className="techUnderLine mt-2 mb-3"></div>
             </div>
 

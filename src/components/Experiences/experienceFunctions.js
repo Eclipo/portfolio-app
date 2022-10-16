@@ -89,11 +89,11 @@ export const animate = (inputID) => {
                     easing: "easeInOutQuad",
                     complete: function () {
                       if (inputID === "fintech") {
-                        jobTitle = "Developer";
+                        jobTitle = "Webdeveloper";
                         linkCustomerTitle = "Fintech company";
                         linkToCustomer = "";
                         period.innerText = "22-02 - Present";
-                        system.innerText = "Custom";
+                        system.innerText = "Custom SPA";
 
                         descOneEl.innerText =
                           "Currently active within the fintech industry as a front-end developer. We are building an awesome application.";
@@ -113,7 +113,7 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_3") {
-                        jobTitle = "Developer";
+                        jobTitle = "Handyman";
                         linkCustomerTitle = "#3 Municipality";
                         linkToCustomer = "";
                         period.innerText = "20-08 - 22-02";
@@ -122,9 +122,9 @@ export const animate = (inputID) => {
                         liThree.style.display = "flex";
                         liFour.style.display = "flex";
                         descOneEl.innerText =
-                          "Deployed configurations into production.";
+                          "Due to my broad set of skills and experience regarding the system Platina and the Swedish public sector I had many different roles: Developer,deployer,business consultant,application specialist,tester and occassionally the project leader's side-kick.To put it simply I was a handyman.";
                         descTwoEl.innerText =
-                          "Wrote semi-automatic tests in SQL ensuring the configurations were properly set.";
+                          "Deployed configurations into production.Wrote semi-automatic tests in SQL ensuring the configurations were properly set.";
                         descThreeEl.textContent =
                           "Updated a large set of files and database entries with PowerShell and SQL.";
                         descFourEl.textContent =
@@ -141,7 +141,7 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_2") {
-                        jobTitle = "Developer";
+                        jobTitle = "Handyman"
 
                         linkCustomerTitle = "#2 Municipality";
                         linkToCustomer = "";
@@ -171,7 +171,7 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_1") {
-                        jobTitle = "Developer";
+                        jobTitle = "Handyman";
 
                         linkCustomerTitle = "#1 Municipality";
                         linkToCustomer = "";

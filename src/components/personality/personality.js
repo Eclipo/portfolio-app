@@ -46,7 +46,7 @@ class Personality extends Component {
           playText={
             <p>
               WARNING <br></br>
-              CLICKING THIS PLAYBUTTON <br></br>
+              CLICKING ON THIS PLAYBUTTON <br></br>
               WILL DISPLAY VERY DISTURBING AND FLASHING ANIMATIONS!
             </p>
           }
@@ -445,9 +445,9 @@ class Personality extends Component {
               About <br></br>My personality
             </h2>
             <p className="duckText mt-0">
-              The purpose of the personality is to display two facts:
+              The purpose of the personality matrix above is to display two facts:
               <ul className="skillBullet">
-                <li>It is <span className="skillHighLighted"> easy to label </span>a person based on the first impressions.</li>
+                <li>It is quite <span className="skillHighLighted"> easy to label </span>a person based on the first impression.</li>
                 <li>A personality is rather <span className="skillHighLighted"> dynamic </span> than static.</li>
               </ul>
               My particular personality depends on a variety of conditions where I can be either more or less of a specific trait.<br></br><br></br>
@@ -599,7 +599,7 @@ class Personality extends Component {
 
                       <p className="card-text" id="focusCard_p">
                         To reach the very heights of my hyperfocus I need feng shui and enjoyable tasks. 
-                        The consequence of having too much fun will result into me being completely devoured by my hyperfocus.
+                        The consequence of having too much fun will have me completely devoured by my hyperfocus.
                         In contrast a chaotic environment and boredome will eventually crash me into a blue screen of death.
                         My focus is a <span className="highlighted"> double-edged sword</span>.</p>
                       </button>
@@ -634,7 +634,7 @@ class Personality extends Component {
                       <h4 id="multiTaskCard_h4">NO!</h4>
 
                       <p className="card-text" id="multiTaskCard_p">
-                      <span className="highlighted">No!</span> 
+                      <span className="highlighted">No! </span> 
                         "Multitasking" (read too much tasks) makes my head split and I continually need to reset my focus.<br></br>
                         I rather spend my time doing one thing at a time to the best of my ability.
                       </p>
@@ -737,9 +737,8 @@ class Personality extends Component {
                       <h4 id="empathyCard_h4">Coordinator</h4>
 
                       <p className="card-text" id="empathyCard_p">
-                        I don't particular fancy leading others.It is time consuming and discussing salaries is a subject I really don't enjoy.<br></br>
-                        However if there would be a situation where the leader in a group continually takes the wrong decisions then and only then would I rather see myself as the teamleader and take full responsibility. 
-                        I guess I would do fine as a<span className="highlighted"> coordinator </span>since I am very pragmatic, result-oriented and very keen to hear others opinions.<br></br><br></br>
+                        I don't particular fancy leading others. 
+                        I guess I would do fine as a<span className="highlighted"> coordinator </span>since I am very pragmatic, result-oriented and very keen to hear others opinions.
                       </p>
                     </button>
                     </div>

@@ -193,11 +193,6 @@
   margin:auto;
 }
 
-.expInfoFirstRow{
-  width: 90%;
-  margin: auto !important;
-}
-
 .headerTech {
   color: var(--primary-light-green) !important;
   position: relative;
@@ -215,6 +210,7 @@
   word-break: normal;
   opacity: 1;
 }
+
 
 .header3Tech {
   color: var(--primary-purple);

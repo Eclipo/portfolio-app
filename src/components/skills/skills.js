@@ -92,8 +92,7 @@ class Skills extends Component {
                   <h3
                     className="skillPointGround"
                     id="Advanced"
-                    style={{ marginBottom: "2%" }}
-                  >
+                    style={{ marginBottom: "2%" }}>
                     Pro
                   </h3>
                 </td>
@@ -102,9 +101,8 @@ class Skills extends Component {
                   <h3
                     className="skillPointGround "
                     id="Expert"
-                    style={{ marginBottom: "2%" }}
-                  >
-                    Expert
+                    style={{ marginBottom: "2%" }}>
+                    Legend
                   </h3>
                 </td>
               </tr>
@@ -613,13 +611,12 @@ class Skills extends Component {
                 <br></br><br></br> 
                 <ul className="skillBullet">
                   <li>I can fly through <span className="skillHighLighted"> HTML, CSS and Javascript</span>.</li><br></br>
-                  <li>I can waddle in the dale of <span className="skillHighLighted"> .Net </span>and <br></br>
-                      pull off some <span className="skillHighLighted"> C#</span>.</li><br></br>
-                  <li>I can even paddle among <span className="skillHighLighted">MSSQL databases</span>.</li>
+                  <li>I can waddle in the dale of<span className="skillHighLighted"> .Net </span>and pull off some<span className="skillHighLighted"> C#</span>.</li><br></br>
+                  <li>I can even paddle among<span className="skillHighLighted"> MSSQL databases</span>.</li>
                 </ul>
                 <span className="skillHighLighted">So how good of a duck am I?</span><br></br>
                 Code-wise I can get by in the whole stack where I am more tilted towards front-end.Occasionally I do need support from senior developers.<br></br><br></br>
-                The bottomline is I am not great but hopefully good enough or as we say in Swedish<span className="skillHighLighted"> Lagom</span>. 
+                The bottomline is I am not a senior (pro) or Bill Gates (legend) but hopefully I am good enough or as we say in Swedish<span className="skillHighLighted"> Lagom</span>. 
               </p>
             </div>
           </div>
