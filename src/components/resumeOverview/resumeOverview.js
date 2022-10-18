@@ -93,7 +93,7 @@ class ResumeOverview extends Component  {
                 <div className="col m-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                     <h3>Kurdish, French and Mandarin</h3>
-                    <div className="header3UnderLine"></div>
+                    <div className="header3UnderLine w-100"></div>
                     <h4 className="m-auto p-1">Almost nothing</h4>
                   </div>
                 </div>

@@ -94,6 +94,10 @@
 
 .expOverviewPeriod-reverseColor p {
   color: var(--dark-navy) !important;
+  text-align: left;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 1rem;
 }
 
 /* #resumeExpSectionID{
@@ -116,7 +120,7 @@
 }
 
 .resumeNavMenu{
-  background-color: var(--dark-navy);
+  background-color: black;
   border-color: var(--primary-red);
   border-width: 0.16rem;
   border-style: solid;
@@ -168,40 +172,40 @@
 
   background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
   color:var(--dark-navy) !important;
-
+  height: 85%;
   background-size: 200%; 
-    background-position: right bottom;
-    border: none !important;
+  background-position: right bottom;
+  border: none !important;
  }
 
  #resumeExpID.resumeNavFocus{
 
   background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
   color:var(--dark-navy) !important;
-
+  height: 85%;
   background-size: 200%; 
-    background-position: right bottom;
-    border: none !important;
+  background-position: right bottom;
+  border: none !important;
  }
 
  #resumeEduID.resumeNavFocus{
 
   background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
   color:var(--dark-navy) !important;
-
-  background-size: 200%; 
-    background-position: right bottom;
-    border: none !important;
+  height: 85%;
+  background-size: 200%;
+  background-position: right bottom;
+  border: none !important;
  }
 
 .resumeNav:focus{
   background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
   color:var(--dark-navy) !important;
-
+  height: 85%;
   background-size: 200%; 
-    background-position: right bottom;
-    transition: all 2s ease-out;
-    border: none !important;
+  background-position: right bottom;
+  transition: all 2s ease-out;
+  border: none !important;
 }
 
 

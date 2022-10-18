@@ -47,7 +47,7 @@ class Skills extends Component {
 
               <td>
                 <h2 className="skillCategory rolesTheme d-inline-flex justify-content-center">
-                  Work <br></br> roles
+                  JOB<br></br> roles
                 </h2>
               </td>
             </tr>
@@ -607,16 +607,16 @@ class Skills extends Component {
 
             <div className="row">
               <p className="duckText">
-                As a developer I slowly became <span className="skillHighLighted"> multidisciplinary </span> just like a <span className="skillHighLighted"> duck</span>:
+                As a developer I slowly became <span className="highLight"> multidisciplinary </span> just like a <span className="highLight"> duck</span>:
                 <br></br><br></br> 
                 <ul className="skillBullet">
-                  <li>I can fly through <span className="skillHighLighted"> HTML, CSS and Javascript</span>.</li><br></br>
-                  <li>I can waddle in the dale of<span className="skillHighLighted"> .Net </span>and pull off some<span className="skillHighLighted"> C#</span>.</li><br></br>
-                  <li>I can even paddle among<span className="skillHighLighted"> MSSQL databases</span>.</li>
+                  <li>I can fly through <span className="highLight"> HTML, CSS and Javascript</span>.</li><br></br>
+                  <li>I can waddle in the dale of<span className="highLight"> .Net </span>and pull off some<span className="highLight"> C#</span>.</li><br></br>
+                  <li>I can even paddle among<span className="highLight"> MSSQL databases</span>.</li>
                 </ul>
-                <span className="skillHighLighted">So how good of a duck am I?</span><br></br>
+                <span className="highLight">So how good of a duck am I?</span><br></br>
                 Code-wise I can get by in the whole stack where I am more tilted towards front-end.Occasionally I do need support from senior developers.<br></br><br></br>
-                The bottomline is I am not a senior (pro) or Bill Gates (legend) but hopefully I am good enough or as we say in Swedish<span className="skillHighLighted"> Lagom</span>. 
+                The bottomline is I am not a senior (pro) or Bill Gates (legend) but hopefully I am good enough or as we say in Swedish<span className="highLight"> Lagom</span>. 
               </p>
             </div>
           </div>

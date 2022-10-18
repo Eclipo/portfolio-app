@@ -161,7 +161,7 @@ class Intro extends Component {
         <p className='welcomeText mx-auto'>
           This is my handmade<span style={{color:'var(--tint-navy)'}}> resumé website </span> to let colleagues and friends alike to know more about me.
           <br></br><br></br>
-          Being a <span style={{color:'var(--tint-navy)'}}> web developer </span> I want to offer a more creative and personal alternative to explore my experiences and personality as an alternative to the traditional cover letter and LinkedIn.
+          Being a <span style={{color:'var(--tint-navy)'}}> web developer </span> I want to offer a more creative and personal alternative in contrast to the traditional cover letter and LinkedIn.
           <br></br><br></br>
           To view more of this website you can either<span style={{color:'var(--tint-navy)'}}> scroll down </span>or you can use the<span style={{color:'var(--tint-navy)'}}> navbar </span>in the upper right corner.
         </p>

@@ -227,7 +227,7 @@
 }
 
 .infoTech {
-  color: var(--primary-light-green);
+  color: var(--light-slate);
 }
 
 .techRow {
@@ -276,9 +276,15 @@
   color: var(--light-slate);
   text-align: left;
   white-space: normal !important;
-  width: auto;
+  width: 60%;
 
 }
+
+
+.majorExphighLight {
+  color: var(--primary-light-green) !important;
+}
+
 
 .textText p span {
   word-break: keep-all;
