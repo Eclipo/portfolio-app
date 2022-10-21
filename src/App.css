@@ -431,6 +431,14 @@
   
   
   /************************* NAVBAR *********************************/
+.accordion{
+  width: 90%;
+}
+
+.accordion-button{
+  background-color: var(--lightest-navy) !important;
+  color: white !important;
+}
   .navLinkH3{
     font-size: 1.05rem;
   }
@@ -610,9 +618,6 @@
     color:var(--slate) !important;
   }
 
-  .navP{
-    pointer-events: none !important;
-  }
 
   #navLinkHomeID:focus{
     background: linear-gradient(to right, var(--primary-white) 50%, var(--dark-navy)50%); 

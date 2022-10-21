@@ -1,7 +1,7 @@
 
 import {React,useRef,useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars, faClose, faTableCells,faPalette } from '@fortawesome/free-solid-svg-icons'
+import {faBars, faClose, faTableCells,faThin, faRegular,faTabletButton, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-scroll';
 import anime from 'animejs';
 import "../IntersectionObserver.js";
@@ -180,13 +180,29 @@ export const Navbar = () => {
         </button>
       
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-  
+      
         
           <ul className="navbar-nav p-1" id="ulNavID" style={{marginLeft:'1rem'}} >
-          <div className='navBtnMenu'>
-          <h3 className='m-1 p-1 text-left' style={{color:'var(--light-slate)' }}>
-            Designer tools
-          </h3>
+         
+          <div class="accordion mx-auto mt-5 mb-3" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header navLinkH3" id="headingOne">
+      <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Designer tools
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" 
+      aria-labelledby="headingOne" 
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <div className='navBtnMenu'>
+          
+          
+          <p className='m-1 p-1' style={{color:'var(--light-slate)', minWidth:'75%' }}>
+            Below are some useful tools I have used to build my website which you also can use. <br></br><br></br>
+            The tool red outlier shows the borders of each HTML-element. Try it out and you might see more than what meets the eye.<br></br><br></br>
+            The colorblindnes-modes displays if the colors contrast well to each other also it can perhaps if you some insight of how people with varying degree of colorblindness sees the world.
+          </p>
             <button
               className="navSubIcon mx-auto"
               style={{borderRadius:'18px',borderColor:'var(--slate)'}}>
@@ -204,11 +220,11 @@ export const Navbar = () => {
               style={{borderRadius:'18px',borderColor:'var(--slate)'}}>
               <FontAwesomeIcon
                 className="fntAwesome"
-                icon={faPalette}
+                icon={isCbRedGreen ? faEye : faEyeSlash }
                 style={{color : isCbRedGreen ? 'red' : 'var(--light-slate)' }}
                 onClick={cbRedGreenMode}>
               </FontAwesomeIcon>
-              <p className="row navP text-center" >Color blindness <br></br>Red & Green</p>
+              <p className="row navP text-center">Red & Green</p>
             </button>
 
             <button
@@ -216,13 +232,16 @@ export const Navbar = () => {
               style={{borderRadius:'18px',borderColor:'var(--slate)'}}>
               <FontAwesomeIcon
                 className="fntAwesome"
-                icon={faPalette}
+                icon={isCbYellowBlue ? faEye : faEyeSlash}
                 style={{color : isCbYellowBlue ? 'red' : 'var(--light-slate)' }}
                 onClick={cbYellowBlueMode}>
               </FontAwesomeIcon>
-              <p className="row navP text-center" >Color blindness <br></br>Yellow & Blue</p>
+              <p className="row navP text-center">Yellow & Blue</p>
             </button>
-          </div>
+          </div>      </div>
+    </div>
+  </div>
+  </div>
             <li className="nav-item active" style={{marginTop:'-0.25rem'}}>
               <Link smooth={true} to={"introSectionID"} id="navLinkHomeID" className="nav-link" href="#" tabIndex={0}><h3 id="navLinkHomeH3ID" className='navLinkH3'>HOME</h3><span className="sr-only">(current)</span></Link>
             </li>
