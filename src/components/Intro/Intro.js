@@ -61,7 +61,7 @@ class Intro extends Component {
 
   render(){
   return (
-      <div id="introSectionID" className="sectionAnimation container" >
+      <div id="introSectionID" className="sectionAnimation" >
         <div className="row mb-5" id="logoContainerID" >
             
             
@@ -172,7 +172,7 @@ class Intro extends Component {
           <Link  to={"quickFacts"} className="nav-link" href="#" style={{marginLeft:'1.5rem'}}>
 
             <button
-              className="navSubIcon"
+              className="navSubIcon m-auto"
             >
               <FontAwesomeIcon
                 icon={faArrowDown}
