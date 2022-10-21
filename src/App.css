@@ -476,9 +476,11 @@
   width: fit-content;  
   min-width: 60%;
 }
+
 .accordion-header{
   border: none !important;
 }
+
 .accordion-button{
   background-color: var(--light-navy) !important;
   color: var(--primary-white) !important;
