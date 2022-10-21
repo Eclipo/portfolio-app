@@ -473,6 +473,8 @@
 .accordion{
   padding: 0.25rem;
   margin: 0.25rem;
+  width: fit-content;  
+  min-width: 60%;
 }
 .accordion-header{
   border: none !important;

@@ -219,22 +219,22 @@ export const Navbar = () => {
         
           <ul className="navbar-nav" id="ulNavID" style={{marginLeft:'1rem'}} >
          
-          <div class="accordion mt-5 mb-3" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <div className="accordion mt-5 mb-3" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingOne">
+      <button className="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
         <h3 className='navLinkH3 m-0'>Design tools</h3>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" 
+    <div id="collapseOne" className="accordion-collapse collapse" 
       aria-labelledby="headingOne" 
       data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div className="accordion-body">
       <h4 className='m-0 p-0' style={{ color:'var(--light-slate)' }}>
               Here are my major design tools I have used for this website.<br></br>
               For those who are curious it can be a interesting experience.
             </h4>
-      <div className='navBtnMenu'>
+      <div className='navBtnMenu container-sm m-0'>
         <hr className='bg-white'></hr>
 
         <div className='row'>
@@ -307,8 +307,7 @@ export const Navbar = () => {
                     Shades of grey <br></br>
                     (Achromatopsia)
                   </p>
-                </button>
-                            
+                </button>           
             </div>
 
               </div>
