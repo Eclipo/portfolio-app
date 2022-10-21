@@ -159,12 +159,33 @@
   }
 
   /************************* HTML classes *********************************/
+/*   
+  * {
+    
+    filter:url('../ColorBlindness/filters.svg#protanopia') !important;
+  } */
+
+
   body
   {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--dark-navy) !important;
+  /* */
   /* background: linear-gradient(to right, var(--navy), var(--lightest-navy)); */
   }
+
+  #root{
+    background-color: var(--dark-navy);
+  }
+
+  .colorBlindRedGreen {
+    filter:url('./ColorBlindness/filters.svg#protanopia') !important;
+  }
+
+  .colorBlindYellowBlue{
+    filter:url('./ColorBlindness/filters.svg#tritanopia') !important;
+  }
+
+  
 
   h1{
     font-style: var(--font-sans) !important;
@@ -410,6 +431,10 @@
   
   
   /************************* NAVBAR *********************************/
+  .navLinkH3{
+    font-size: 1.05rem;
+  }
+
 
   .navbar-light .navbar-toggler{
     border-color: none !important;
@@ -423,7 +448,9 @@
 
   .navBtnMenu{
     display:block;
-    margin-top: 4rem;
+    /* margin-top: 3rem; */
+    border-bottom: 0.15rem solid var(--light-slate);
+    margin-bottom: 1rem;
     }
 
   .navSubMenu{
@@ -583,6 +610,9 @@
     color:var(--slate) !important;
   }
 
+  .navP{
+    pointer-events: none !important;
+  }
 
   #navLinkHomeID:focus{
     background: linear-gradient(to right, var(--primary-white) 50%, var(--dark-navy)50%); 

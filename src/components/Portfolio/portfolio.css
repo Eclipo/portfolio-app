@@ -174,7 +174,7 @@ opacity: 0.5;
   margin-left:1.9rem;
   margin-top: 1.3rem;
   z-index: 2;
-  background-color: var(--primary-pink);
+  background-color: deeppink ;
 
   position: absolute;
 }

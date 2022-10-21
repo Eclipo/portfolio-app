@@ -1,12 +1,10 @@
 
 import {React,useRef,useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars, faClose, faFastForward,faArrowDown, faTableCells } from '@fortawesome/free-solid-svg-icons'
+import {faBars, faClose, faTableCells,faPalette } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-scroll';
 import anime from 'animejs';
 import "../IntersectionObserver.js";
-
-// import '../components/navColorListener.js';
 
 
 export const Navbar = () => {
@@ -15,10 +13,18 @@ export const Navbar = () => {
 
   const [isRed, setRedOutline] = useState(false);
 
-  const redToggle = useRef();
-  redToggle.current = isRed;
+  const [isCbRedGreen, setCbRedGreen] = useState(false);
 
-  // const [change, changeMode] = useState(false);
+  const [isCbYellowBlue, setCbYellowBlue] = useState(false);
+
+
+  const redToggle = useRef();
+  const cbRedGreenToggle = useRef();
+  const cbYellowBlueToggle = useRef();
+
+  redToggle.current = isRed;
+  cbRedGreenToggle.current = isCbRedGreen;
+  cbYellowBlueToggle.current = isCbYellowBlue;
 
   const outlineMode = () => {
     setRedOutline(current => !current);
@@ -35,10 +41,63 @@ export const Navbar = () => {
         el.style.outline='';
       }); 
     }
-  
-    
+  }
+
+  function removeColors(input){
+    document.getElementById('ulNavID').classList.remove(input);
+    document.getElementById('introSectionID').classList.remove(input);
+    document.getElementById('quickFacts').classList.remove(input);
+    document.getElementById('aboutMe').classList.remove(input);
+    document.getElementById('skills').classList.remove(input);
+    document.getElementById('personality').classList.remove(input);
+    document.getElementById('resumeOverview').classList.remove(input);
+    document.getElementById('experiencesID').classList.remove(input);
+    document.getElementById('portfolioID').classList.remove(input);
+  }
+
+  function addColors(input){
+    document.getElementById('ulNavID').classList.add(input);
+    document.getElementById('introSectionID').classList.add(input);
+    document.getElementById('quickFacts').classList.add(input);
+    document.getElementById('aboutMe').classList.add(input);
+    document.getElementById('skills').classList.add(input);
+    document.getElementById('personality').classList.add(input);
+    document.getElementById('resumeOverview').classList.add(input);
+    document.getElementById('experiencesID').classList.add(input);
+    document.getElementById('portfolioID').classList.add(input);
+  }
+
+  const cbRedGreenMode = () => {
+    setCbRedGreen(current => !current);
+
+    if(cbRedGreenToggle.current === false){
+      addColors('colorBlindRedGreen');
+
+      if(cbYellowBlueToggle.current === true){
+        cbYellowBlueMode();
+      }
+    }
+
+    else{
+      removeColors('colorBlindRedGreen');
+    }
   }
  
+  const cbYellowBlueMode = () => {
+    setCbYellowBlue(current => !current);
+
+    if(cbYellowBlueToggle.current === false){
+      addColors('colorBlindYellowBlue');
+
+      if(cbRedGreenToggle.current === true){
+        cbRedGreenMode();
+      }    
+    }
+
+    else{
+      removeColors('colorBlindYellowBlue');
+    }
+  }
 
   const handleMode = () => {
     //  toggle
@@ -102,14 +161,7 @@ export const Navbar = () => {
   };
 
     return (
-     <div className="containerNavbar">
-
-     
-      <nav id ="overviewNav" className="navbar">
-        <div className="container-fluid m-0 p-0" >
-      
-        </div>
-      </nav>
+     <div className="containerNavbar" id="navContainerID">
 
         <nav id ="customNav" className="navbar bg-transparent">
       <div className="container-fluid m-0 p-0" id ="fullNavbarID">
@@ -130,31 +182,51 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
   
         
-          <ul className="navbar-nav p-1 mt-2" style={{marginLeft:'1rem'}} >
+          <ul className="navbar-nav p-1" id="ulNavID" style={{marginLeft:'1rem'}} >
           <div className='navBtnMenu'>
+          <h3 className='m-1 p-1 text-left' style={{color:'var(--light-slate)' }}>
+            Designer tools
+          </h3>
             <button
-              className="navSubIcon p-1 mb-4"
-              style={{
-                borderRadius:'18px',
-              borderColor:'var(--slate)'}}
-            >
+              className="navSubIcon mx-auto"
+              style={{borderRadius:'18px',borderColor:'var(--slate)'}}>
               <FontAwesomeIcon
+                className="fntAwesome"
                 icon={faTableCells}
-                style={{
-                  color : isRed ? 'red' : 'var(--light-slate)' 
-                }}
-                className="fntAwesome "
-                onClick={outlineMode}
-              >
+                style={{color : isRed ? 'red' : 'var(--light-slate)' }}
+                onClick={outlineMode}>
               </FontAwesomeIcon>
-              <p className="row navP text-center" >Red outline<br></br>tool</p>
-
+              <p className="row navP text-center">Red outliner</p>
             </button>
-          
-        </div>
-            <li className="nav-item active">
+
+            <button
+              className="navSubIcon mx-auto"
+              style={{borderRadius:'18px',borderColor:'var(--slate)'}}>
+              <FontAwesomeIcon
+                className="fntAwesome"
+                icon={faPalette}
+                style={{color : isCbRedGreen ? 'red' : 'var(--light-slate)' }}
+                onClick={cbRedGreenMode}>
+              </FontAwesomeIcon>
+              <p className="row navP text-center" >Color blindness <br></br>Red & Green</p>
+            </button>
+
+            <button
+              className="navSubIcon mx-auto"
+              style={{borderRadius:'18px',borderColor:'var(--slate)'}}>
+              <FontAwesomeIcon
+                className="fntAwesome"
+                icon={faPalette}
+                style={{color : isCbYellowBlue ? 'red' : 'var(--light-slate)' }}
+                onClick={cbYellowBlueMode}>
+              </FontAwesomeIcon>
+              <p className="row navP text-center" >Color blindness <br></br>Yellow & Blue</p>
+            </button>
+          </div>
+            <li className="nav-item active" style={{marginTop:'-0.25rem'}}>
               <Link smooth={true} to={"introSectionID"} id="navLinkHomeID" className="nav-link" href="#" tabIndex={0}><h3 id="navLinkHomeH3ID" className='navLinkH3'>HOME</h3><span className="sr-only">(current)</span></Link>
             </li>
+
             <li className="nav-item">
               <Link  smooth={true} to={"quickFacts"} id="navLinkQuickFactsID" className="nav-link" href="#" tabIndex={1}><h3 className='navLinkH3'>Quick Facts</h3></Link>
             </li>
@@ -189,14 +261,10 @@ export const Navbar = () => {
               <a className="nav-link" href="#" tabIndex={8}><h3 className='navLinkH3'>Reviews</h3></a>
             </li>
 
-           
             <li className="nav-item mb-5">
               <a className="nav-link" href="#" tabIndex={9}><h3 className='navLinkH3'>Contact</h3></a>
             </li>
-           
-            
           </ul>
-         
         </div>
       </div>
     </nav>
