@@ -489,8 +489,9 @@ class Personality extends Component {
                       <p className="card-text" id="honestyCard_p">
                         In my familly the phrase 
                         <span className="highLight"> "I'm just telling the truth" </span> 
-                        was and is still today abusively applied. Later in life (30+ years) I finally understood I have
-                        another take on honesty compared to most people.
+                        was and is still today abusively applied. 
+                        Later in life (30+ years) I finally understood I have
+                        another take on honesty compared to most people.<br></br><br></br>
                         Nowdays I try to be more diplomatic while expressing my opinion. Often I encourage
                         others to be more honest with me.Honesty is a trait I value very highly.
                       </p>
@@ -526,6 +527,7 @@ class Personality extends Component {
                         Being stubborn is an another familly attribute
                         and it is both <span className="highLight"> a curse and a blessing </span>.
                         Thanks to my stubborness it has taken me where I am today.
+                        <br></br><br></br>
                         On the other hand I might have overdone it at times and thankfully I have grown wiser. 
                         Rather than brute-forcing myself through the obstacles I face nowdays I try to take a step back, 
                         breath alot and find a more elegant solution to the problem.
@@ -562,10 +564,9 @@ class Personality extends Component {
 
                       <p className="card-text" id="structureCard_p">
                         Even though I write task lists and setting reminders I still don't feel great at being structured. 
-
-                        Despite this I still need <span className="highLight"> feng shui </span>since 
-                        it calms my mind and I can channel my focus on more pressing matters such as coding and drinking coffee.
-                        That's why it is important for me to be in a structured environment and team up with someone who is great at project management.
+                        Despite this I still need<span className="highLight"> feng shui </span>where everything is in a harmoniously order.<br></br><br></br> 
+                        Feng shui calms my mind and I can channel my focus on more pressing matters.
+                        Besides a structured environment it also important for me to team up with someone who is great at project management.
                       </p>
                       </button>
                     </div>
@@ -599,9 +600,9 @@ class Personality extends Component {
 
                       <p className="card-text" id="focusCard_p">
                         To reach the very heights of my hyperfocus I need feng shui and enjoyable tasks. 
-                        The consequence of having too much fun will have me completely devoured by my hyperfocus.
+                        The consequence of having too much fun will have me completely devoured by my hyperfocus.<br></br><br></br>
                         In contrast a chaotic environment and boredome will eventually crash me into a blue screen of death.
-                        My focus is a <span className="highLight"> double-edged sword</span>.</p>
+                        My focus is truly a <span className="highLight"> double-edged sword </span> and I try to find a balance between the extremes.</p>
                       </button>
                     </div>
                   </div>
@@ -634,8 +635,8 @@ class Personality extends Component {
                       <h4 id="multiTaskCard_h4">NO!</h4>
 
                       <p className="card-text" id="multiTaskCard_p">
-                      <span className="highLight">No! </span> 
-                        "Multitasking" (read too much tasks) makes my head split and I continually need to reset my focus.<br></br>
+                      <span className="highLight">NO NO NOOO!</span><br></br><br></br> 
+                        "Multitasking" (read too much tasks) makes my head split and I continually need to reset my focus.
                         I rather spend my time doing one thing at a time to the best of my ability.
                       </p>
                       </button>
@@ -670,8 +671,8 @@ class Personality extends Component {
 
                       <p className="card-text" id="patienceCard_p">
                         I want to see result right here and right now.
-                        Consequently I have suffered being impatient at times. But I have learned to take a step back and 
-                        <span className="highLight"> breath alot </span>in order to regain more patience.
+                        Consequently I have suffered being impatient at times.<br></br><br></br> 
+                        But I have learned to take a step back and<span className="highLight"> breath alot </span>in order to regain more patience.
                       </p>
                       </button>
                     </div>
@@ -702,11 +703,11 @@ class Personality extends Component {
                       <h4 id="temperCard_h4">Compass & Engine</h4>
 
                       <p className="card-text" id="temperCard_p">
-                        Often I am very calm but when encountering a setback I do experience a range of fierce emotions.<br></br> 
-                        Thank goodness I do calm down again quite quickly where my emotions will act as the<span className="highLight"> compass </span> 
-                        for my more rational being who then can focus on the solution.  
+                        For most of the time I am calm but I can get angry,sad and anxious at difficult times in life or when facing a code-bug from hell.<br></br><br></br> 
+                        Letting emotions to take place is good and for me they are the very<span className="highLight"> compass </span>which guides
+                        my more rational being. 
                         <br></br><br></br>
-                        Furthermore my emotions are also my very<span className="highLight"> engine </span>where they give me 
+                        My emotions are also my<span className="highLight"> engine </span>where they give me
                         the necessary energy and focus in order to sustain and deal with various difficult situations.
                       </p>
                       </button>
@@ -737,8 +738,10 @@ class Personality extends Component {
                       <h4 id="empathyCard_h4">Coordinator</h4>
 
                       <p className="card-text" id="empathyCard_p">
-                        I don't particular fancy leading others. 
-                        I guess I would do fine as a<span className="highLight"> coordinator </span>since I am very pragmatic, result-oriented and very keen to hear others opinions.
+                        Perhaps I could be an okay leader one day but at the moment in terms of anything that resemble leadership a little bit 
+                        then I guess I would do fine as a<span className="highLight"> coordinator </span>.
+                        <br></br><br></br>
+                        I am very pragmatic,result-oriented,empathic and very keen to hear others' opinions when taking decisions.
                       </p>
                     </button>
                     </div>
