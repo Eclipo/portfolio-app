@@ -61,7 +61,7 @@ class Intro extends Component {
 
   render(){
   return (
-      <div id="introSectionID" className="sectionAnimation" >
+      <div id="introSectionID" className="sectionAnimation mt-0" >
         <div className="row mb-5" id="logoContainerID" >
             
             

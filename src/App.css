@@ -40,7 +40,7 @@
     --dark-slate: #495670;
     --slate: #8892b0;
     --light-slate: #a8b2d1;
-    --lightest-slate: #ccd6f6;
+    --lightest-slate: #c9d1f5;
     --white: #e6f1ff;
     --green: #64ffda;
     --green-tint: rgba(100, 255, 219, 0.404);
@@ -84,7 +84,7 @@
   .sectionAnimation{
     background-color: var(--dark-navy);
     min-height: 90vh;
-    margin-bottom: 5rem !important;
+    /* margin-bottom: 5rem; */
     margin: auto;
     padding-bottom: auto;
     display: block;
@@ -173,7 +173,7 @@
   body
   {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--dark-navy) !important;
+  background-color: var(--dark-navy);
 
   /* background-color: rgb(4, 29, 29) !important; */
 
@@ -191,15 +191,15 @@
   }
 
   .bodyRedGreen{
-    background-color: rgb(9, 9, 34) !important;
+    background-color: rgb(9, 9, 34);
   }
 
   .bodyYellowBlue{
-    background-color: rgb(4, 29, 29) !important;
+    background-color: rgb(4, 29, 29);
   }
 
   .bodyTotalGray{
-    background-color: rgb(15, 15, 15) !important;
+    background-color: rgb(15, 15, 15);
   }
 
 
@@ -706,8 +706,8 @@ align-self: center !important; */
     background-color: var(--darkest-slate);
     /* border-radius: 18px; */
     /* width: 100% !important; */
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 1rem !important;
+    margin: auto !important;
     overflow-y: auto !important;
     max-height: 98vh;
     -webkit-overflow-scrolling: auto !important;

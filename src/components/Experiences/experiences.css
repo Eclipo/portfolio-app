@@ -276,7 +276,8 @@
   color: var(--light-slate);
   text-align: left;
   white-space: normal !important;
-  width: 60%;
+  min-width: 20rem;
+  max-width: 40rem;
 
 }
 

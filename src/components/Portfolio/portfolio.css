@@ -3,6 +3,10 @@
   opacity: 0;
 }
 
+#portfolioID{
+  margin-bottom: 0 !important;
+}
+
 .btnContainer{
   background-color: transparent;
   border-color: transparent;
@@ -59,7 +63,7 @@ opacity: 0.5;
   /* margin-left: -0.6rem; */
 }
 .portfolioTextContainer p{
-  color: var(--light-slate);
+  color: var(--lightest-slate);
   text-align: left;
   display: inline-block;
   padding: 0.5rem;

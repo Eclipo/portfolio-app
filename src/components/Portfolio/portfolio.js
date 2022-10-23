@@ -37,7 +37,7 @@ class Portfolio extends Component {
           <Mario></Mario>
         </div>
 
-        <div className="flexCenter mb-5" id="portfolioContainerID">
+        <div className="flexCenter" id="portfolioContainerID">
           <div className="flexCenter portfolioTextContainer">
             {/* <h2>This is it</h2> */}
               <p className="ml-2"> 

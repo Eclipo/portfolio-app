@@ -73,31 +73,48 @@ export const Navbar = () => {
 
   const cbRedGreenMode = () => {
     setCbRedGreen((current) => !current);
-
+    setIsActive(current => true);
     if (cbRedGreenToggle.current === false) {
       addColors("colorBlindRedGreen");
+
+      document.body.classList.remove("bodyDefaultBg");
+      document.getElementById("root").classList.remove("bodyDefaultBg");
+
       document.body.classList.add("bodyRedGreen");
       document.getElementById("root").classList.add("bodyRedGreen");
-
+      
+      
       if (cbYellowBlueToggle.current === true) {
         cbYellowBlueMode();
+        
       }
 
       if (cbTotalToggle.current === true) {
         cbTotalMode();
       }
+
     } else {
       removeColors("colorBlindRedGreen");
+
       document.body.classList.remove("bodyRedgreen");
-      document.getElementById("root").classList.remove("bodyRedGreen");
+      document.getElementById("root").classList.remove("bodyRedgreen");
+
+      document.body.classList.add("bodyDefaultBg");
+      document.getElementById("root").classList.add("bodyDefaultBg");
+
+      
     }
   };
 
   const cbYellowBlueMode = () => {
     setCbYellowBlue((current) => !current);
-
+    
     if (cbYellowBlueToggle.current === false) {
       addColors("colorBlindYellowBlue");
+
+      document.body.classList.remove("bodyDefaultBg");
+      document.getElementById("root").classList.remove("bodyDefaultBg");
+
       document.body.classList.add("bodyYellowBlue");
       document.getElementById("root").classList.add("bodyYellowBlue");
 
@@ -110,18 +127,29 @@ export const Navbar = () => {
       }
     } else {
       removeColors("colorBlindYellowBlue");
+
       document.body.classList.remove("bodyYellowBlue");
       document.getElementById("root").classList.remove("bodyYellowBlue");
+  
+      document.body.classList.add("bodyDefaultBg");
+      document.getElementById("root").classList.add("bodyDefaultBg");
+      
     }
   };
 
   const cbTotalMode = () => {
     setCbTotal((current) => !current);
-
+    
     if (cbTotalToggle.current === false) {
       addColors("colorBlindTotal");
+
+      document.body.classList.remove("bodyDefaultBg");
+      document.getElementById("root").classList.remove("bodyDefaultBg");
+
       document.body.classList.add("bodyTotalGray");
       document.getElementById("root").classList.add("bodyTotalGray");
+      
+
       if (cbRedGreenToggle.current === true) {
         cbRedGreenMode();
       }
@@ -131,57 +159,20 @@ export const Navbar = () => {
       }
     } else {
       removeColors("colorBlindTotal");
+      
       document.body.classList.remove("bodyTotalGray");
       document.getElementById("root").classList.remove("bodyTotalGray");
+
+      document.body.classList.add("bodyDefaultBg");
+      document.getElementById("root").classList.add("bodyDefaultBg");
+      
     }
   };
 
-  const handleMode = () => {
-    //  toggle
-    // changeMode(current => !current);
-
-    // or set to true
-    // setIsActive(true);
-    document.body.style.backgroundColor = "var(--primary-white)";
-
-    document.getElementById("customNav").style.display = "none";
-    document.getElementById("customNav").style.opacity = "0";
-    document.getElementById("fullNavbarID").style.display = "none";
-
-    // document.getElementById('introSectionID').style.display='none';
-
-    // document.getElementById('quickFacts').style.display='none';
-    // document.getElementById('aboutMe').style.display='none';
-    // document.getElementById('skills').style.display='none';
-    // document.getElementById('personality').style.display='none';
-    const wrappers = document.querySelectorAll(".sectionAnimation");
-    wrappers.forEach((entry) => {
-      entry.setAttribute("style", "display:none");
-    });
-
-    document.getElementById("navHomeID").style.display = "none";
-    document.getElementById("navQuickFactsID").style.display = "none";
-    document.getElementById("navTestimonialsID").style.display = "none";
-    document.getElementById("navSkillsID").style.display = "none";
-    document.getElementById("navPersonalityID").style.display = "none";
-  };
-
-  const animeToggle = anime.timeline({
-    targets: "#navIconID",
-    autoplay: false,
-    loop: false,
-  });
-
-  animeToggle.add({
-    duration: 2500,
-    rotate: "2turn",
-  });
 
   const handleClick = () => {
     //  toggle
     setIsActive((current) => !current);
-
-    animeToggle.restart();
   };
 
   return (
