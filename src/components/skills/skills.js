@@ -606,7 +606,7 @@ class Skills extends Component {
           </div>
 
             <div className="row">
-              <p className="duckText">
+              <div className="duckText">
                 As a developer I slowly became <span className="highLight"> multidisciplinary </span> just like a <span className="highLight"> duck</span>:
                 <br></br><br></br> 
                 <ul className="skillBullet">
@@ -617,7 +617,7 @@ class Skills extends Component {
                 <span className="highLight">So how good of a duck am I?</span><br></br>
                 Code-wise I can get by in the whole stack where I am more tilted towards front-end.Occasionally I do need support from senior developers.<br></br><br></br>
                 The bottomline is I am not a senior (pro) or Bill Gates (legend) but hopefully I am good enough or as we say in Swedish<span className="highLight"> Lagom</span>. 
-              </p>
+              </div>
             </div>
           </div>
       </div>

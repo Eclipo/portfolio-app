@@ -185,7 +185,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="containerNavbar" id="navContainerID">
+    <div className="containerNavbar " id="navContainerID">
       <nav id="customNav" className="navbar bg-transparent">
         <div className="container-fluid m-0 p-0" id="fullNavbarID">
           <button
@@ -214,7 +214,7 @@ export const Navbar = () => {
               id="ulNavID"
               style={{ marginLeft: "1rem" }}
             >
-              <div className="accordion mt-5 mb-3" id="accordionExample">
+              <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingOne">
                     <button
@@ -236,16 +236,13 @@ export const Navbar = () => {
                   >
                     <div className="accordion-body">
                       <p className="navP m-0 p-0">
-                        These design tools have helped me alot with building
-                        this website and I hope you try them out to understand
-                        my take on web design a little better.<br></br>
-                        <br></br>
-                        I will promise you it will be an interesting experience!
+                        These design tools has been really important for me in building my website.
+                        Try them out for an interesting experience and to understand my take on web design.
                       </p>
 
                       <hr className="navDivider"></hr>
 
-                      <div className="navBtnMenu container-sm m-0">
+                      <div className="navBtnMenu container-sm table-sm m-0">
                         <div className="row mx-auto">
                           <div className="col">
                             <button
@@ -265,7 +262,8 @@ export const Navbar = () => {
                           </div>
                           <div className="col-md-5">
                             <p className="navP">
-                              It displays the borders of each HTML-element which is a great method when positioning buttons,fields and tables.
+                              It displays the borders of each HTML-element which is great for positioning buttons,fields and tables.
+                              You will see more than meets the eye.
                             </p>
                           </div>
                         </div>
@@ -355,8 +353,7 @@ export const Navbar = () => {
                           <div className="col-md-5">
                             <p className="navP my-auto">
                               These modes simulate how people with color
-                              blindness see the web.<br></br><br></br>
-                              It has helped me alot to see if any color needs to be adjusted for better contrast thus a more pleasent user experience.<br></br>
+                              blindness see the web.Besides getting useful insights it also helps me in adjusting the colors. 
                             </p>
                           </div>
                         </div>

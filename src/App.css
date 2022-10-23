@@ -475,6 +475,7 @@
   margin: 0.25rem;
   max-width: 40rem;  
   min-width:19.25rem;
+  margin-top: 2rem;
 }
 
 .accordion-header{
@@ -509,6 +510,9 @@
 
 .accordion-body{
   background-color: var(--primary-white);
+  height: fit-content !important;
+  max-height: 80vh !important;
+  overflow-y: auto !important;
 }
 
 .accordion-item{
@@ -639,18 +643,21 @@ align-self: center !important; */
 
   #navbarSupportedContent{
     position: fixed;
-    top:-0.5rem;
-    left:0;
-    width: 100vw;
-    margin-left: -1rem;
+    top:0;
+    right:0;
+    min-width: 25%;
+    width: fit-content;
+    /* margin-right: 0.25rem !important; */
+    margin: 0;
+    padding: 0;
+    /* margin-left: -1rem; */
     /* height: 150vh !important; */
     z-index: -2;
-    border-bottom: 0.1rem whitesmoke solid;
-    border-top: 0.1rem whitesmoke solid;
-    border-left: 0.1rem whitesmoke solid;
-
-
+    border-left: 0.15rem var(--slate) solid;
+    border-top: 0.15rem var(--slate) solid;
+    border-bottom: 0.15rem var(--slate) solid;
   }
+  
   #navIconID{
   color:var(--light-slate) !important;
 
@@ -664,7 +671,8 @@ align-self: center !important; */
   {
     z-index:2;
     width: fit-content !important;
-   
+    overflow: auto !important;
+
   }
 
   nav a.nav-link
@@ -695,10 +703,14 @@ align-self: center !important; */
   }
 
   .navbar-nav{
-    background-color:var(--dark-navy);
-    border-radius: 18px;
-    height:100vh;
-    width: 97%;
+    background-color: var(--darkest-slate);
+    /* border-radius: 18px; */
+    /* width: 100% !important; */
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-y: auto !important;
+    max-height: 98vh;
+    -webkit-overflow-scrolling: auto !important;
     /* border-color: var(--slate);
     border-width: 0.3rem;
     border-style: solid; */
@@ -709,6 +721,7 @@ align-self: center !important; */
     color:var(--primary-white) !important;
     padding:0.5rem !important;
     background-position: right bottom;
+    width: 95% !important;
   }
 
   .navbar-brand
@@ -726,7 +739,7 @@ align-self: center !important; */
 
 
   #navLinkHomeID:focus{
-    background: linear-gradient(to right, var(--primary-white) 50%, var(--dark-navy)50%); 
+    background: linear-gradient(to right, var(--primary-white) 50%, var(--darkest-slate)50%); 
     color:var(--dark-navy) !important;
 
     background-size: 200% 100%; 
@@ -735,13 +748,13 @@ align-self: center !important; */
   }
 
   #navLinkHomeID.navFocus {
-    background: linear-gradient(to left, var(--dark-navy) 50% ,var(--primary-white) 50%); 
+    background: linear-gradient(to left, var(--darkest-slate) 50% ,var(--primary-white) 50%); 
     color:var(--dark-navy) !important; 
     background-size: 200%; 
   }
 
   #navLinkQuickFactsID:focus{
-    background: linear-gradient(to right, var(--primary-yellow) 50%, var(--dark-navy)50%); 
+    background: linear-gradient(to right, var(--primary-yellow) 50%, var(--darkest-slate)50%); 
     color:var(--dark-navy) !important;
 
     background-size: 200% 100%; 
@@ -750,13 +763,13 @@ align-self: center !important; */
   }
 
   #navLinkQuickFactsID.navFocus{
-    background: linear-gradient(to left, var(--dark-navy) 50% ,var(--primary-yellow) 50%); 
+    background: linear-gradient(to left, var(--darkest-slate) 50% ,var(--primary-yellow) 50%); 
     color:var(--dark-navy) !important; 
     background-size: 200%;  
   }
 
   #navLinkAboutID:focus{
-    background: linear-gradient(to right, var(--primary-orange) 50%, var(--dark-navy)50%); 
+    background: linear-gradient(to right, var(--primary-orange) 50%, var(--darkest-slate)50%); 
     color:var(--dark-navy) !important;
 
     background-size: 200% 100%; 
@@ -765,14 +778,14 @@ align-self: center !important; */
   }
 
   #navLinkAboutID.navFocus{
-    background: linear-gradient(to left, var(--dark-navy) 50% ,var(--primary-orange) 50%); 
+    background: linear-gradient(to left, var(--darkest-slate) 50% ,var(--primary-orange) 50%); 
     color:var(--dark-navy) !important; 
     background-size: 200%;  
   }
 
 
   #navLinkSkillsID:focus{
-    background: linear-gradient(to right, var(--primary-lighter-blue) 50%, var(--dark-navy)50%); 
+    background: linear-gradient(to right, var(--primary-lighter-blue) 50%, var(--darkest-slate)50%); 
     color:var(--dark-navy) !important;
 
     background-size: 200% 100%; 
@@ -781,13 +794,13 @@ align-self: center !important; */
   }
 
   #navLinkSkillsID.navFocus{
-    background: linear-gradient(to left, var(--dark-navy) 50% ,var(--primary-lighter-blue) 50%); 
+    background: linear-gradient(to left, var(--darkest-slate) 50% ,var(--primary-lighter-blue) 50%); 
     color:var(--dark-navy) !important; 
     background-size: 200%; 
   }
 
   #navLinkPersonalityID:focus{
-    background: linear-gradient(to right, var(--primary-green) 50%, var(--dark-navy)50%); 
+    background: linear-gradient(to right, var(--primary-green) 50%, var(--darkest-slate)50%); 
     color:var(--dark-navy) !important;
 
     background-size: 200% 100%; 
@@ -796,13 +809,13 @@ align-self: center !important; */
   }
 
   #navLinkPersonalityID.navFocus{
-    background: linear-gradient(to left, var(--dark-navy) 50% ,var(--primary-green) 50%); 
+    background: linear-gradient(to left, var(--darkest-slate) 50% ,var(--primary-green) 50%); 
     color:var(--dark-navy) !important; 
     background-size: 200%; 
   }
 
   #navLinkResumeOverviewID:focus{
-    background: linear-gradient(to right, var(--primary-red) 50%, var(--dark-navy)50%); 
+    background: linear-gradient(to right, var(--primary-red) 50%, var(--darkest-slate)50%); 
     color:var(--dark-navy) !important;
 
     background-size: 200% 100%; 
@@ -811,13 +824,13 @@ align-self: center !important; */
   }
 
   #navLinkResumeOverviewID.navFocus{
-    background: linear-gradient(to left, var(--dark-navy) 50% ,var(--primary-red) 50%); 
+    background: linear-gradient(to left, var(--darkest-slate) 50% ,var(--primary-red) 50%); 
     color:var(--dark-navy) !important; 
     background-size: 200%;  
   }
 
   #navLinkExperiencesID:focus{
-    background: linear-gradient(to right, var(--primary-purple) 50%, var(--dark-navy)50%); 
+    background: linear-gradient(to right, var(--primary-purple) 50%, var(--darkest-slate)50%); 
     color:var(--dark-navy) !important;
 
     background-size: 200% 100%; 
@@ -826,13 +839,13 @@ align-self: center !important; */
   }
 
   #navLinkExperiencesID.navFocus{
-    background: linear-gradient(to left, var(--dark-navy) 50% ,var(--primary-purple) 50%); 
+    background: linear-gradient(to left, var(--darkest-slate) 50% ,var(--primary-purple) 50%); 
     color:var(--dark-navy) !important; 
     background-size: 200%; 
   }
 
     #navLinkPortfolioID:focus{
-      background: linear-gradient(to right, var(--primary-pink) 50%, var(--dark-navy)50%); 
+      background: linear-gradient(to right, var(--primary-pink) 50%, var(--darkest-slate)50%); 
       color:var(--dark-navy) !important;
   
       background-size: 200% 100%; 
@@ -841,7 +854,7 @@ align-self: center !important; */
   }
 
   #navLinkPortfolioID.navFocus{
-    background: linear-gradient(to left, var(--dark-navy) 50% ,var(--primary-pink) 50%); 
+    background: linear-gradient(to left, var(--darkest-slate) 50% ,var(--primary-pink) 50%); 
     color:var(--dark-navy) !important; 
     background-size: 200%; 
   }

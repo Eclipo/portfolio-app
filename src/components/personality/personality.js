@@ -444,7 +444,7 @@ class Personality extends Component {
             <h2 className="mb-1">
               About <br></br>My personality
             </h2>
-            <p className="duckText mt-0">
+            <div className="duckText mt-0">
               The purpose of the personality matrix above is to display two facts:
               <ul className="skillBullet">
                 <li>It is quite <span className="highLight"> easy to label </span>a person based on the first impression.</li>
@@ -452,7 +452,7 @@ class Personality extends Component {
               </ul>
               My particular personality depends on a variety of conditions where I can be either more or less of a specific trait.<br></br><br></br>
               Down below I will go through some of my personal attributes in more detail.
-            </p>
+            </div>
             <h3 className="brokenBanner">
               <div className="d-inline-block brokenLetterC">C</div>
               <span>L</span>
