@@ -37,8 +37,8 @@ class PlayRefresh extends Component {
 
   render() {
     return (
-      <div className="justify-content-center mt-2 mb-2">
-        <div className="flexCenter d-block">
+      <div className="justify-content-center">
+        <div className="flexCenter">
           <button
             id={this.refreshID}
             className="btnRefresh mx-auto bg-transparent"
@@ -52,10 +52,10 @@ class PlayRefresh extends Component {
 
             ></FontAwesomeIcon>
           </button>
-        </div>
+          </div>
 
-        <div className="flexCenter d-block mx-auto w-50">
-        <h4 id={this.textPlayID} style={{color:this.textColor}} >{this.playText}</h4>
+          <div className="flexCenter">
+          <h4 id={this.textPlayID} style={{color:this.textColor}} >{this.playText}</h4>
 
           <button
             id={this.playID}
@@ -69,7 +69,9 @@ class PlayRefresh extends Component {
               style={{margin:'auto'}}
             ></FontAwesomeIcon>
           </button>
-        </div>
+</div>
+
+  
       </div>
     );
   }

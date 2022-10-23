@@ -19,6 +19,7 @@ export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID,inputText
   const textPlay = document.getElementById(inputTextPlayID);
   const btnExpPlay = document.getElementById(inputPlayID);
   const btnRefreshExp = document.getElementById(inputRefreshID);
+  btnRefreshExp.style.display='';
 
   textPlay.style.display='none';
   btnExpPlay.style.display='none';
@@ -45,7 +46,7 @@ export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID,inputText
 export function AnimationPlayRefreshEnd (inputPlayID, inputRefreshID){
 console.log('END IS PLAYING');
   const btnRefreshExp = document.getElementById(inputRefreshID);
-  
+  btnRefreshExp.style.display='';
   
 // console.log('btnRef'+btnRefreshExp.style.display);
 
