@@ -13,7 +13,7 @@ const Contact = () => {
                 <h1 className='flexCenter' style={{color:"var(--slate)"}}>Contact</h1>
                 <p className='techText mx-auto' style={{color:"var(--lightest-slate)"}}>
                     At the moment I am not looking for any new adventures but I am always open for connecting with 
-                    decent people who works within the tech-industry.
+                    decent and honest people who works with tech.
                     <br></br><br></br>
                     Thank you for your time and I wish you an awesome day!<br></br> 
                     Best regards<br></br>
