@@ -242,7 +242,7 @@ export const Navbar = () => {
                                 className="fntAwesome"
                                 icon={faPen}
                                 style={{
-                                  color: isRed ? "red" : "var(--light-slate)",
+                                  color: isRed ? "var(--darkest-slate)" : "var(--light-slate)",
                                 }}
                                 onClick={outlineMode}
                               ></FontAwesomeIcon>
@@ -277,7 +277,7 @@ export const Navbar = () => {
                                     icon={isCbRedGreen ? faEye : faEyeSlash}
                                     style={{
                                       color: isCbRedGreen
-                                        ? "red"
+                                        ? "var(--darkest-slate)"
                                         : "var(--light-slate)",
                                     }}
                                     onClick={cbRedGreenMode}
@@ -302,7 +302,7 @@ export const Navbar = () => {
                                     icon={isCbYellowBlue ? faEye : faEyeSlash}
                                     style={{
                                       color: isCbYellowBlue
-                                        ? "red"
+                                        ? "var(--darkest-slate)"
                                         : "var(--light-slate)",
                                     }}
                                     onClick={cbYellowBlueMode}
@@ -327,7 +327,7 @@ export const Navbar = () => {
                                     icon={isCbTotal ? faEye : faEyeSlash}
                                     style={{
                                       color: isCbTotal
-                                        ? "red"
+                                        ? "var(--darkest-slate)"
                                         : "var(--light-slate)",
                                     }}
                                     onClick={cbTotalMode}
@@ -463,15 +463,16 @@ export const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#" tabIndex={8}>
-                  <h3 className="navLinkH3">Reviews</h3>
-                </a>
-              </li>
-
-              <li className="nav-item mb-5">
-                <a className="nav-link" href="#" tabIndex={9}>
+                <Link
+                  smooth={true}
+                  to={"contactID"}
+                  id="navLinkContactID"
+                  className="nav-link"
+                  href="#"
+                  tabIndex={8}
+                >
                   <h3 className="navLinkH3">Contact</h3>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

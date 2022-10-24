@@ -12,6 +12,8 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   const resumeSection = document.querySelector("#resumeOverview");
   const experienceSection = document.querySelector("#experiencesID");
   const portfolioSection = document.querySelector("#portfolioID");
+  const contactSection = document.querySelector("#contactID");
+
 
   const firstWrapper = [
     introSection,
@@ -24,7 +26,8 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
     experienceSection,
     resumeSection,
     personalitySection,
-    portfolioSection
+    portfolioSection,
+    contactSection
   ];
   
   //Nav-link
@@ -36,7 +39,8 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   const navLinkResumeID = document.getElementById("navLinkResumeOverviewID");
   const navLinkPersonalityID = document.getElementById("navLinkPersonalityID");
   const navLinkPortfolioID = document.getElementById("navLinkPortfolioID");
-  
+  const navLinkContactID = document.getElementById("navLinkContactID");
+
   const navLinksID = [
     navLinkHomeID,
     navLinkQuickID,
@@ -45,7 +49,8 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
     navLinkExperienceID,
     navLinkResumeID,
     navLinkPersonalityID,
-    navLinkPortfolioID
+    navLinkPortfolioID,
+    navLinkContactID
   ];
 
   const navLinks = document.querySelectorAll(".nav-link");
@@ -142,6 +147,10 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
               PlayAnimation('PortfolioAnimation',2);
             break;
 
+            case 5:
+              currentNavLink(8);
+            break;
+
             default:
           }
         }
@@ -151,7 +160,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   const firstOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5
+    threshold: 0.2
   }
 
   const secondOptions = {
@@ -171,4 +180,5 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   myObserver.observe(resumeSection);
   myObserver.observe(experienceSection);
   myObserver.observe(portfolioSection);
+  myObserver.observe(contactSection);
 },100);

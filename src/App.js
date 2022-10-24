@@ -10,6 +10,7 @@ import Personality from "./components/personality/personality";
 import ResumeOverview from "./components/resumeOverview/resumeOverview";
 import Experiences from "./components/Experiences/experiences";
 import Portfolio from "./components/Portfolio/portfolio";
+import Contact from "./components/Contact/Contact";
 function App() {
   
   return (
@@ -23,6 +24,7 @@ function App() {
       <ResumeOverview></ResumeOverview>
       <Personality></Personality>
       <Portfolio></Portfolio>
+      <Contact></Contact>
 
     </>
   );
