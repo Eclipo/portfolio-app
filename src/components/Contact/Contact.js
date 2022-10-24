@@ -12,8 +12,8 @@ const Contact = () => {
             <div className="container-sm">
                 <h1 className='flexCenter' style={{color:"var(--slate)"}}>Contact</h1>
                 <p className='techText mx-auto' style={{color:"var(--lightest-slate)"}}>
-                    At the moment I am not looking for any new adventures but I am always open to know decent people.
-                    Particularly those who love to work with UX, .Net and Angular.
+                    At the moment I am not looking for any new adventures but I am always open for connecting with 
+                    decent people who works within the tech-industry.
                     <br></br><br></br>
                     Thank you for your time and I wish you an awesome day!<br></br> 
                     Best regards<br></br>
@@ -29,7 +29,7 @@ const Contact = () => {
                             <FontAwesomeIcon
                                 icon={faEnvelope}
                                 className="my-auto"
-                                style={{color:'var(--dark-navy)'}}
+                          
                                 
                             />
                         </a>
@@ -40,7 +40,7 @@ const Contact = () => {
                             rel="noopener noreferrer" 
                             target="_blank">in
                         </a>
-                    
+                        
 
                 </div>
             </div>
