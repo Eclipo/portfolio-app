@@ -8,8 +8,7 @@ import {
   faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
-import anime from "animejs";
-import "../IntersectionObserver.js";
+import "../../IntersectionObserver.js";
 
 export const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -227,8 +226,8 @@ export const Navbar = () => {
                   >
                     <div className="accordion-body">
                       <p className="navP m-0 p-0">
-                        These design tools has been really important for me in building my website.
-                        Try them out for an interesting experience and to understand my take on web design.
+                        These design tools have been important to me in building my website.
+                        Try them out for an enhanced experience and to understand my take on web design.
                       </p>
 
                       <hr className="navDivider"></hr>
@@ -253,8 +252,7 @@ export const Navbar = () => {
                           </div>
                           <div className="col-md-5">
                             <p className="navP">
-                              It displays the borders of each HTML-element which is great for positioning buttons,fields and tables.
-                              You will see more than meets the eye.
+                              This tool shows the borders of each HTML element and is great for positioning buttons, fields, and tables. You will see more than meets the eye.
                             </p>
                           </div>
                         </div>
@@ -343,8 +341,7 @@ export const Navbar = () => {
 
                           <div className="col-md-5">
                             <p className="navP my-auto">
-                              These modes simulate how people with color
-                              blindness see the web.Besides getting useful insights it also helps me in adjusting the colors. 
+                              These modes simulate how people with color blindness see the web. Besides getting useful insights, it also helps me with adjusting the colors.
                             </p>
                           </div>
                         </div>

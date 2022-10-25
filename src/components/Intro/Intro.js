@@ -145,10 +145,6 @@ class Intro extends Component {
         <div className='row main-info'>
           <div className='playRefreshIntro'>
             <PlayRefresh  id='IntroAnimation' playBoolean={true}></PlayRefresh>
-            {/* <div id="introTextID" className='d-block m-auto'>
-              <h3 style={{color:'var(--primary-green)'}}>Click & Scroll</h3>
-     
-            </div> */}
           </div>
         </div>
 
@@ -158,11 +154,11 @@ class Intro extends Component {
         </h4>
 
         <p className='welcomeText mx-auto'>
-          This is my handmade<span style={{color:'var(--tint-navy)'}}> resumé website </span> to let colleagues and friends alike to know more about me.
+          This is my handmade résumé website to let colleagues and friends alike know more about me. 
           <br></br><br></br>
-          Being a <span style={{color:'var(--tint-navy)'}}> web developer </span> I want to offer a more creative and personal alternative in contrast to the traditional cover letter and LinkedIn.
+          Being a web developer, I want to offer a more creative and personal alternative in contrast to the traditional cover letter and LinkedIn. 
           <br></br><br></br>
-          To view more of this website you can either<span style={{color:'var(--tint-navy)'}}> scroll down </span>or you can use the<span style={{color:'var(--tint-navy)'}}> navbar </span>in the upper right corner.
+          You can either<span style={{color:'var(--tint-navy)'}}> scroll down </span>or use the<span style={{color:'var(--tint-navy)'}}> navbar </span>in the upper right corner to navigate through the different sections.
         </p>
       
         <div className="row">
@@ -189,15 +185,7 @@ class Intro extends Component {
           
           </div>
         </div>
-        
-       
-        
-
-       
-        
       </div>
-
-
     );
   }
 }

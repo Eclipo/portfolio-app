@@ -17,8 +17,9 @@ export class PersonalityAnimation {
 
       console.log("!!!!!! PLAYEDZERO ÄR !!!! : "+this.playedPersonalityZero);
 
-      anime.remove("#personalityTable");
-      anime.remove("#personalityTable td");
+      anime.remove("#personalityContainerID");
+      anime.remove("#personalityTableID");
+      anime.remove("#personalityTableID td");
       anime.remove(".personalityTraits");
       anime.remove(".personalityBaseTraits");
       let elContainer = document.getElementById("greenSquareTableID");

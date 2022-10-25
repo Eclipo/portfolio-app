@@ -11,35 +11,29 @@ const Contact = () => {
          <div className='sectionLine' style={{backgroundColor:'var(--slate)'}}></div> 
             <div className="container-sm">
                 <h1 className='flexCenter' style={{color:"var(--slate)"}}>Contact</h1>
-                <p className='techText mx-auto' style={{color:"var(--lightest-slate)"}}>
-                    At the moment I am not looking for any new adventures but I am always open for connecting with 
-                    decent and honest people who works with tech.
-                    <br></br><br></br>
-                    Thank you for your time and I wish you an awesome day!<br></br> 
-                    Best regards<br></br>
-                    Edip Sarac
+                <p className='skillText mx-auto' style={{color:"var(--lightest-slate)"}}>
+                At the moment, I am not looking for any new adventure, but I am always open to connecting with decent and honest people who enjoy technology.
+                <br></br><br></br>
+                Send me an e-mail or message on LinkedIn, and I'll do my best to reply.
                 </p>
                 <div className='container-sm'>
                         
-                        <a 
-                             className="emailBtn mailText"
-                            href="mailto:edipsarac.work@gmail.com" 
-                            rel="noopener noreferrer" 
-                            target="_blank">
-                            <FontAwesomeIcon
-                                icon={faEnvelope}
-                                className="my-auto"
-                          
-                                
-                            />
-                        </a>
+                    <a 
+                        className="emailBtn mailText"
+                        href="mailto:edipsarac.work@gmail.com" 
+                        rel="noopener noreferrer" 
+                        target="_blank">
+                        <FontAwesomeIcon
+                            icon={faEnvelope}
+                            className="my-auto"/>
+                    </a>
                     
                     <a 
-                            class="emailBtn linkedInIcon my-auto" 
-                            href="https://se.linkedin.com/in/edipsarac" 
-                            rel="noopener noreferrer" 
-                            target="_blank">in
-                        </a>
+                        class="emailBtn linkedInIcon my-auto" 
+                        href="https://se.linkedin.com/in/edipsarac" 
+                        rel="noopener noreferrer" 
+                        target="_blank">in
+                    </a>
                         
 
                 </div>

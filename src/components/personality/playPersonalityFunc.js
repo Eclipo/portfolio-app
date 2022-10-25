@@ -287,6 +287,11 @@ const playEmpathy = anime({
     
     if(inputBoolean === true){ 
       console.log('STARTA OM FÖR FAAAAN');
+      anime.remove("#personalityContainerID");
+      anime.remove("#personalityTableID");
+      anime.remove("#personalityTableID td");
+      anime.remove(".personalityTraits");
+      anime.remove(".personalityBaseTraits");
     playShakingHonesty.restart();
     playHonesty.restart();
     playTemper.restart();

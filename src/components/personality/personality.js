@@ -46,7 +46,7 @@ class Personality extends Component {
           playText={
             <p>
               WARNING <br></br>
-              CLICKING ON THIS PLAYBUTTON <br></br>
+              CLICKING ON THIS PLAY BUTTON <br></br>
               WILL DISPLAY VERY DISTURBING AND FLASHING ANIMATIONS!
             </p>
           }
@@ -447,11 +447,11 @@ class Personality extends Component {
             <div className="duckText mt-0">
               The purpose of the personality matrix above is to display two facts:
               <ul className="skillBullet">
-                <li>It is quite <span className="highLight"> easy to label </span>a person based on the first impression.</li>
+                <li>It is quite <span className="highLight"> easy to label </span>a person based on the very first impression.</li>
                 <li>A personality is rather <span className="highLight"> dynamic </span> than static.</li>
               </ul>
               My particular personality depends on a variety of conditions where I can be either more or less of a specific trait.<br></br><br></br>
-              Down below I will go through some of my personal attributes in more detail.
+              In the cards shown below, I will go through some of my personal attributes in more detail.
             </div>
             <h3 className="brokenBanner">
               <div className="d-inline-block brokenLetterC">C</div>
@@ -487,13 +487,11 @@ class Personality extends Component {
                       </h3>
                       <h4 id="honestyCard_h4">I'm just telling the truth</h4>
                       <p className="card-text" id="honestyCard_p">
-                        In my familly the phrase 
-                        <span className="highLight"> "I'm just telling the truth" </span> 
-                        was and is still today abusively applied. 
-                        Later in life (30+ years) I finally understood I have
-                        another take on honesty compared to most people.<br></br><br></br>
-                        Nowdays I try to be more diplomatic while expressing my opinion. Often I encourage
-                        others to be more honest with me.Honesty is a trait I value very highly.
+                        In my family, the phrase <span className="highLight"> "I'm just telling the truth" </span> 
+                        was and is still abusively applied.
+                        Later in life (30+ years), I finally understood I have another take on honesty compared to most people.<br></br><br></br>
+                        Nowadays, I try to be more diplomatic while expressing my opinion. 
+                        Often, I encourage others to be more honest with me. Honesty is a trait I value very highly.
                       </p>
                       </button>
                     </div>
@@ -524,13 +522,11 @@ class Personality extends Component {
                       </h3>
                       <h4 id="stubbornCard_h4">A curse and a blessing</h4>
                       <p className="card-text" id="stubbornCard_p">
-                        Being stubborn is an another familly attribute
-                        and it is both <span className="highLight"> a curse and a blessing </span>.
-                        Thanks to my stubborness it has taken me where I am today.
+                        Being stubborn is another family attribute and it is both<span className="highLight"> a curse and a blessing </span>.
+                        Thanks to my stubbornness, it has taken me where I am today.
                         <br></br><br></br>
-                        On the other hand I might have overdone it at times and thankfully I have grown wiser. 
-                        Rather than brute-forcing myself through the obstacles I face nowdays I try to take a step back, 
-                        breath alot and find a more elegant solution to the problem.
+                        On the other hand, I might have overdone it at times. Thankfully, I have grown wiser with the years.
+                        Rather than brute-forcing myself through the obstacles I face nowadays, I try to take a step back, breathe a lot, and find a more elegant solution to the problem.
                       </p>
                       </button>
 
@@ -563,10 +559,10 @@ class Personality extends Component {
                       <h4 id="structureCard_h4">Feng shui</h4>
 
                       <p className="card-text" id="structureCard_p">
-                        Even though I write task lists and setting reminders I still don't feel great at being structured. 
-                        Despite this I still need<span className="highLight"> feng shui </span>where everything is in a harmoniously order.<br></br><br></br> 
+                        Even though I write task lists and set reminders, I still don't feel great at being structured.
+                        Despite this, I still need<span className="highLight"> feng shui </span>where everything is in harmonious order.<br></br><br></br>
                         Feng shui calms my mind and I can channel my focus on more pressing matters.
-                        Besides a structured environment it also important for me to team up with someone who is great at project management.
+                        Besides a structured environment, it is also important for me to team up with someone who is great at project management.
                       </p>
                       </button>
                     </div>
@@ -599,10 +595,11 @@ class Personality extends Component {
                       <h4 id="focusCard_h4">Double-edged sword</h4>
 
                       <p className="card-text" id="focusCard_p">
-                        To reach the very heights of my hyperfocus I need feng shui and enjoyable tasks. 
+                        To reach the very heights of my hyperfocus, I need feng shui and enjoyable tasks.
                         The consequence of having too much fun will have me completely devoured by my hyperfocus.<br></br><br></br>
-                        In contrast a chaotic environment and boredome will eventually crash me into a blue screen of death.
-                        My focus is truly a <span className="highLight"> double-edged sword </span> and I try to find a balance between the extremes.</p>
+                        In contrast a chaotic environment and boredom will eventually crash me into a blue screen of death.
+                        My focus is a<span className="highLight"> double-edged sword</span>, and I try to find a balance between the extremes.
+                      </p>
                       </button>
                     </div>
                   </div>
@@ -636,8 +633,8 @@ class Personality extends Component {
 
                       <p className="card-text" id="multiTaskCard_p">
                       <span className="highLight">NO NO NOOO!</span><br></br><br></br> 
-                        "Multitasking" (read too much tasks) makes my head split and I continually need to reset my focus.
-                        I rather spend my time doing one thing at a time to the best of my ability.
+                      "Multitasking" (Read too many tasks.) makes my head split and I lose focus. 
+                      I'd rather doing one thing at a time to the best of my ability.
                       </p>
                       </button>
                     </div>
@@ -670,9 +667,9 @@ class Personality extends Component {
                       <h4 id="patienceCard_h4">Breath alot</h4>
 
                       <p className="card-text" id="patienceCard_p">
-                        I want to see result right here and right now.
-                        Consequently I have suffered being impatient at times.<br></br><br></br> 
-                        But I have learned to take a step back and<span className="highLight"> breath alot </span>in order to regain more patience.
+                        I want to see the result right here and right now.
+                        Consequently, I have suffered from being impatient at times.<br></br><br></br> 
+                        With time, I have learned to take a step back and<span className="highLight"> breath alot </span>in order to regain more patience.
                       </p>
                       </button>
                     </div>
@@ -703,12 +700,11 @@ class Personality extends Component {
                       <h4 id="temperCard_h4">Compass & Engine</h4>
 
                       <p className="card-text" id="temperCard_p">
-                        For most of the time I am calm but I can get angry,sad and anxious at difficult times in life or when facing a code-bug from hell.<br></br><br></br> 
-                        Letting emotions to take place is good and for me they are the very<span className="highLight"> compass </span>which guides
-                        my more rational being. 
+                        Most of the time, I am calm. It's true!<br></br>
+                        Nevertheless, I can get angry, sad, and anxious at difficult times in life or when facing a code-bug from hell.<br></br><br></br>
+                        Letting emotions take place is good for me since they are the very<span className="highLight"> compass </span>that guides my more rational being.
                         <br></br><br></br>
-                        My emotions are also my<span className="highLight"> engine </span>where they give me
-                        the necessary energy and focus in order to sustain and deal with various difficult situations.
+                        Furthermore, my emotions are the<span className="highLight"> engine </span>that provides me the necessary energy and focus in order to sustain and handle various challenging situations.
                       </p>
                       </button>
                     </div>
@@ -735,13 +731,13 @@ class Personality extends Component {
                       <h3 className="card-title" id="empathyCard_h3">
                         Leadership
                       </h3>
-                      <h4 id="empathyCard_h4">Coordinator</h4>
+                      <h4 id="empathyCard_h4">Sprinter</h4>
 
                       <p className="card-text" id="empathyCard_p">
-                        Perhaps I could be an okay leader one day but at the moment in terms of anything that resemble leadership a little bit 
-                        then I guess I would do fine as a<span className="highLight"> coordinator </span>.
+                        It is possible I could be an good leader one day but at the moment in terms of anything that resemble leadership a 
+                        little bit then I guess I would do fine as a coordinator in very short projects. Like a<span className="highLight"> sprinter</span>.
                         <br></br><br></br>
-                        I am very pragmatic,result-oriented,empathic and very keen to hear others' opinions when taking decisions.
+                        I am very pragmatic, result-oriented, empathic and keen to hear others' opinions when taking decisions.
                       </p>
                     </button>
                     </div>

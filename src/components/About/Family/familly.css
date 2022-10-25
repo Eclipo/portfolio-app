@@ -205,9 +205,7 @@
   height: 15rem;
   background-color: #ffe4be;
   margin-left: -7.5rem;
-  border-color: #eeacff;
-  border-bottom-style: solid;
-  border-width: 0.25rem;
+  border-bottom: 0.1rem black solid;
   z-index: 100;
 }
 
@@ -251,7 +249,7 @@
 .hair-ball {
   height: 4.0625rem;
   width: 4.0625rem;
-  background: #f7f383;
+  background: #eae567;
   margin-left: 35%;
   margin-top: -5rem;
   top: 50;
@@ -263,7 +261,7 @@
 }
 
 .erika-hair {
-  background: #f7f383;
+  background: #eae567;
 
   width: 15.625rem;
   height: 8.5625rem;

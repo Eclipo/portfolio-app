@@ -21,16 +21,17 @@ export const startAttributeAnimation = (inputID) => {
 
         anime({
             targets:[card+'_h3',card+'_h4'],
-            color:'#33d684'
+            color:'#33d684',
+            duration:750
         });
         
         anime({
             targets:card+'_p',
             color:'#a8b2d1',
+            duration:750,
             begin:function(){
                 document.getElementById(inputID+'_p').style.display='block';
                 document.getElementById(inputID+'_closeBtn').style.display='block';
-
             }
         });
     }
@@ -49,7 +50,7 @@ export const resetAttributeAnimation = (inputID) => {
         targets:card,
         backgroundColor:'#33d684',
         scale:[1.15,1],
-        duration:750,
+        duration:1250,
         complete:function(){
             closeWindow = false;
             // anime({
