@@ -592,13 +592,11 @@ class Personality extends Component {
                       <h3 className="card-title" id="focusCard_h3">
                         Focus
                       </h3>
-                      <h4 id="focusCard_h4">Double-edged sword</h4>
+                      <h4 id="focusCard_h4">Blue screen of death</h4>
 
                       <p className="card-text" id="focusCard_p">
                         To reach the very heights of my hyperfocus, I need feng shui and enjoyable tasks.
-                        The consequence of having too much fun will have me completely devoured by my hyperfocus.<br></br><br></br>
-                        In contrast a chaotic environment and boredom will eventually crash me into a blue screen of death.
-                        My focus is a<span className="highLight"> double-edged sword</span>, and I try to find a balance between the extremes.
+                        In contrast a chaotic environment and boredom will eventually crash my focus into a<span className="highLight"> blue screen of death</span>.
                       </p>
                       </button>
                     </div>
@@ -731,11 +729,11 @@ class Personality extends Component {
                       <h3 className="card-title" id="empathyCard_h3">
                         Leadership
                       </h3>
-                      <h4 id="empathyCard_h4">Sprinter</h4>
+                      <h4 id="empathyCard_h4">Mini boss</h4>
 
                       <p className="card-text" id="empathyCard_p">
-                        It is possible I could be an good leader one day but at the moment in terms of anything that resemble leadership a 
-                        little bit then I guess I would do fine as a coordinator in very short projects. Like a<span className="highLight"> sprinter</span>.
+                        It is possible I could be an good leader one day but at the moment in terms of anything that resemble leadership 
+                        then I guess I would do fine as the<span className="highLight"> mini boss </span>in smaller projects.
                         <br></br><br></br>
                         I am very pragmatic, result-oriented, empathic and keen to hear others' opinions when taking decisions.
                       </p>

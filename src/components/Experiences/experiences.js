@@ -65,8 +65,7 @@ class Experiences extends Component {
 
               <div className="col-8">
                 <p className="header3Tech infoTech mb-3">
-                  Click on a major experience to see its content 
-                  and for smaller screens you can see more by scrolling to the right.  
+                  Click on a major experience to see its content, and for smaller screens, you can see more by scrolling to the right.
                 </p>
               </div>
 

@@ -612,7 +612,7 @@ class Skills extends Component {
                 <ul className="skillBullet">
                   <li>I can fly through <span className="highLight"> HTML, CSS and JavaScript</span>.</li><br></br>
                   <li>I can waddle in the dale of<span className="highLight"> .Net </span>and pull off some<span className="highLight"> C#</span>.</li><br></br>
-                  <li>I can even paddle among<span className="highLight"> MSSQL databases</span>.</li>
+                  <li>I can even paddle in the great seas of<span className="highLight"> MSSQL databases</span>.</li>
                 </ul>
                 <span className="highLight">So how good of a duck am I?</span><br></br>
                   I can get by in the whole stack where front-end is my stronger forte. 

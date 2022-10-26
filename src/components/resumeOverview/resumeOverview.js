@@ -160,10 +160,8 @@ class ResumeOverview extends Component  {
                   <h4 className="expHeader-reverseColor">Bad luck</h4>
                   <p
                     className="expHeader-reverseColor m-auto w-75 mb-2"
-                    
                   >
-                    Due to prior financial complications Nexer AB left me
-                    speechless and I returned back to base.
+                   Due to prior financial complications, Nexer AB left me speechless and I returned to base.
                   </p>
                 </div>
               </div>
@@ -229,9 +227,8 @@ class ResumeOverview extends Component  {
                   <p
                     className="expHeader-reverseColor mx-auto w-75"
                   >
-                    I made a vow to never be unemployed again. <br></br>
-                    For three years I studied 50% at Midsweden University while working 100% at
-                    CGI Sverige AB.
+                    I made a vow to never be unemployed again. 
+                    For three years, I studied 50% at Midsweden University while working 100% at CGI Sverige AB.
                   </p>
                 </div>
               </div>
@@ -296,9 +293,8 @@ class ResumeOverview extends Component  {
                   <p
                     className="expHeader-reverseColor mx-auto w-75"
                   >
-                    I was sent away for new adventures despite my best
-                    efforts.<br></br>Long story short I was welcomed back at TP Sweden
-                    (Teleperformance) and for that I am very grateful.
+                    I was sent away for new adventures, despite my best efforts.<br></br>
+                    Long story short, I was welcomed back to TP Sweden (Teleperformance) and for that I am very grateful.
                   </p>
                 </div>
               </div>
@@ -335,8 +331,7 @@ class ResumeOverview extends Component  {
                   <p
                     className="expHeader-reverseColor mx-auto w-75"
                   >
-                    I studied and traveled around in Asia during my studies at
-                    Jönköping International Business School. Good times.
+                    I studied and traveled around Asia during my studies at Jönköping International Business School. Good times.
                   </p>
                 </div>
               </div>

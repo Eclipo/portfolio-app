@@ -15,7 +15,7 @@
       .quickCard{
         /* border:0.25rem var(--primary-pink) solid; */
         /* background-color: var(--primary-yellow); */
-        background:var(--navy);
+        background:var(--light-navy);
         border-width: 0.4rem;
         border-style: solid;
         border-color: var(--primary-yellow);

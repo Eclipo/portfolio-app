@@ -41,13 +41,12 @@ class Portfolio extends Component {
           <div className="flexCenter portfolioTextContainer">
             {/* <h2>This is it</h2> */}
               <p className="ml-2"> 
-                This my resumé website to let friends, 
-                colleagues and others alike to know more about me.
-                The applied tech on this site are React,Bootstrap,AnimeJS,CSS and Javascript.
+                This is my résumé website to let friends, colleagues, and others alike know more about me. 
+                The technologies applied on this site are React, Bootstrap, AnimeJS, CSS, and JavaScript.
                 <br></br><br></br>
-                Downbelow you can click on the arrows to read the story of my journey regarding this website.
+                Down below, you can click on the arrows to read the story of my journey regarding this website.                
                 <br></br><br></br>
-                How it all started, once upon a time.
+                How it all started once upon a time.
               </p>
 
             {/* <h3>The story</h3> */}
@@ -151,8 +150,8 @@ class Portfolio extends Component {
             
             
               <p className="portfolioParagraph">                
-                Covid-19 arrived and in one hit it threaten the lives of my parents. 
-                My dad was at the hospital and my mother just got infected. 
+                COVID-19 arrived and in one hit threatened the lives of my parents. 
+                My dad was at the hospital, and my mother just got infected. 
               </p>
             </div>
             
@@ -205,11 +204,10 @@ class Portfolio extends Component {
                 <div className="lightYear" id="firstLight"></div>
 
               <div className="d-inline-flex">
-              <p className="portfolioParagraph">                  
-                  There was still time for me to help my mom. 
-                  I managed to get her a pulse oximeter even though it was almost sold out. 
-                  My parents survived Covid-19 and I decided to build my very first website namely Coronahero. 
-                  The users could give my avatar various symptoms and learn more about Covid-19. 
+                <p className="portfolioParagraph">                  
+                  There was still time for me to help my mom. I managed to get her a pulse oximeter even though it was almost sold out. 
+                  My parents survived COVID-19 and I decided to build my very first website, namely Coronahero.
+                  The users could give my avatar various symptoms and learn more about COVID-19. 
                 </p>
               </div>
             </div>
@@ -309,9 +307,9 @@ class Portfolio extends Component {
 
               <div className="row">
               <p className="portfolioParagraph">
-                  The website Coronahero was a disaster. 
-                  It looked horrible and wasn't mobile responsive at all. 
-                  I made many mistakes and I realised I had a long way to go.
+                The website Coronahero was a disaster. 
+                It looked horrible and wasn't mobile responsive at all. 
+                I made many mistakes, and I realised I had a long way to go.
                 </p>
               </div>
  
@@ -342,11 +340,10 @@ class Portfolio extends Component {
             </div>
               
             <p className="portfolioParagraph">                
-                Despite my failures I still wanted to achieve one of my dreams. 
-                Making a personal website that would be fun to experience and most importantly mobile responsive.                
-                However I was still a novice and I was left with no choice... but to buy an Udemy course 
-                about building a portfolio website combining React and Bootstrap.
-                On top of that I would use AnimeJS for the animations.
+              Despite my failures, I still wanted to achieve one of my dreams: 
+              making a résumé website that would be fun to experience and, most importantly, mobile responsive. 
+              However, I was still a novice and I was left with no choice but to buy an Udemy course about building a portfolio website combining React and Bootstrap. 
+              On top of that, I would use AnimeJS for the animations.
               </p>
             </div>
              
@@ -393,11 +390,10 @@ class Portfolio extends Component {
               </div>
             </div>
 
-            <p className="portfolioParagraph">                
-                In the process of making this website I struggled between my grand visions 
-                and the acquired skillevel I had at the time. 
-                I had no patience and consequently I wasted alot of time and effort doing the wrong things.
-             </p>
+              <p className="portfolioParagraph">                
+                In the process of making this website, I struggled between my grand vision and the acquired skills I had at the time. 
+                I had no patience and, consequently, I wasted a lot of time and effort doing the wrong things.
+              </p>
             </div>
 
               
@@ -420,15 +416,12 @@ class Portfolio extends Component {
 
              <div className="row zenParagraph">
               <p className="portfolioParagraph">
-                After several setbacks I decided to settle with 'Lagom'.  
-                Then bits and pieces started to slowly fall into place 
-                where I didn't have too high expectations on myself.
+                After several setbacks, I decided to settle with <span className="highLight">Lagom</span>.
+                Then bits and pieces started to slowly fall into place, and I didn't have too high expectations for myself.
                 <br></br><br></br>
-
-                With time I became better and in the end I re-wrote 
-                the whole code I had been given from the Udemy course.
+                With time, my skills gradually improved, and finally I re-wrote the whole code I had been given from the Udemy course.
                 <br></br><br></br>
-                Finally I have found my way of being 'Lagom'.   
+                Finally, I have found my way of being Lagom.
               </p>
              </div>
             </div>

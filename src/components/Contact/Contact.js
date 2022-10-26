@@ -12,7 +12,7 @@ const Contact = () => {
             <div className="container-sm">
                 <h1 className='flexCenter' style={{color:"var(--slate)"}}>Contact</h1>
                 <p className='skillText mx-auto' style={{color:"var(--lightest-slate)"}}>
-                At the moment, I am not looking for any new adventure, but I am always open to connecting with decent and honest people who enjoy technology.
+                At the moment, I am not looking for any new adventures, but I am always open to connecting with decent and honest people who enjoy technology.
                 <br></br><br></br>
                 Send me an e-mail or message on LinkedIn, and I'll do my best to reply.
                 </p>
