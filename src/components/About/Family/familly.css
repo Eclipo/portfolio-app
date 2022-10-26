@@ -237,7 +237,6 @@
 .hair-main {
   width: 13.75rem;
   height: 8.5625rem;
-  /* background: #3f2a14; */
   background: linear-gradient( #141313 60%, rgb(83, 77, 77) 40%) !important;
   border-radius: 3.375rem 3.375rem 0rem 0rem;
   margin-left: -0.75rem;

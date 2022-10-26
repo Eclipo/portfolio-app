@@ -1,14 +1,6 @@
 import anime from "animejs";
 import { wiggle } from "./personalityFunctions";
-// changeBegin:function(){
-//   randomPatienceEl = randomPatience[Math.floor(Math.random() * randomPatience.length)];
-//   console.log('randomEl is...'+randomPatienceEl.toString());
-//  randomPatienceEl="'"+randomPatienceEl+"'";
 
-// },
-
-
-// var randomPatience_target = null;
 const randomPatience = ['#patienceOneID','#patienceTwoID','#patienceThreeID','#patienceFourID','#patienceFiveID'];
 
 const randomCards = ['#honestyCard','#stubbornCard','#structureCard','#multiTaskCard','#focusCard','#patienceCard','#temperCard','#empathyCard'];
@@ -286,7 +278,6 @@ const playEmpathy = anime({
   })
     
     if(inputBoolean === true){ 
-      console.log('STARTA OM FÖR FAAAAN');
       anime.remove("#personalityContainerID");
       anime.remove("#personalityTableID");
       anime.remove("#personalityTableID td");
@@ -307,10 +298,6 @@ const playEmpathy = anime({
   }
 
   if(inputBoolean === false){
-    // anime.remove("#personalityTable td");
-    // anime.remove("#honestySevenID");
-    // anime.remove('#honestyID');
-    // anime.remove(".personalityBaseTraits");
     anime.remove(".personalityTraits");
     anime.remove(".brokenLetterC");
     anime.remove(".brokenLetterK");

@@ -29,7 +29,7 @@ const Contact = () => {
                     </a>
                     
                     <a 
-                        class="emailBtn linkedInIcon my-auto" 
+                        className="emailBtn linkedInIcon my-auto" 
                         href="https://se.linkedin.com/in/edipsarac" 
                         rel="noopener noreferrer" 
                         target="_blank">in

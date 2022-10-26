@@ -1,30 +1,13 @@
 #marioContainer {
   opacity: 0;
-  /* position: absolute; */
   margin-bottom: 5rem;
   margin: auto;
   width: fit-content;
-  /* top: -3.5rem; */
-  /* z-index: 1; */
   position: absolute;
-
 }
 .marioHead, .marioFace, .marioBody{
   display: block;
 }
-
-
-.marioCap{
-  /* overflow: hidden; */
-}
-
-/* .marioBody{
-  background-color: blue;
-  width: 100%;
-  height: fit-content;
-  outline: 1px solid red;
-
-} */
 
 .marioArmLeft{
   margin-top: 8.85rem;
@@ -34,18 +17,13 @@
 
 }
 
-
 .marioArmRight{
   margin-top: 8.85rem;
   left:10rem;
   z-index: -1;
   position: absolute;
 }
-/* 
-.marioLegShoeLeft{
-  width: fit-content;
-  height: f;
-} */
+
 .marioLegLeft{
   height: min-content;
   top: 13rem;

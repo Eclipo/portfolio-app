@@ -10,9 +10,7 @@ export class SkillAnimation {
 
   async playOrStop(input) {
     if (input === 0) {
-      console.log("!!!!!! SKILLS PLAYING 0 !!!!");
       this.playedZero = true;
-      console.log("!!!!!! playedZero ÄR !!!! : "+this.playedZero);
 
       anime.remove(".skillContainer");
       anime.remove(".skillTable");
@@ -36,13 +34,10 @@ export class SkillAnimation {
     }
 
     if (input === 1) {
-      console.log("!!!!!! SKILLS IS TURNING OFF 1 !!!!");
       playPostFunc(false);       
     }
 
     if (input === 2) {
-      console.log("!!!!!! SKILLS IS RESUMING 2!!!!");
-      console.log("!!!!!! playedZero ÄR !!!! : "+this.playedZero);
       if(this.playedZero === true){  
         playPostFunc(true);
 

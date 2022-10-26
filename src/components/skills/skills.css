@@ -10,17 +10,12 @@
 
 
 .skillContainer {
-  margin-top: -35vh;
   margin: auto;
+  margin-top: 1rem;
   opacity: 0;
 }
 
 #duckContainerID {
-  /* background: var(--light-navy);
-  border-color: var(--primary-blue);
-  border-width: 0.25rem;
-  border-style: solid;
-  padding:1.5rem; */
   margin-top: 2rem;
   display: 'none';
   opacity: 0;
@@ -58,7 +53,6 @@
   padding: 5%;
   margin: auto;
   width: fit-content !important;
-  /* font-size: 1.25rem !important; */
   opacity: 0;
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
@@ -77,7 +71,6 @@
 }
 
 .skillPointGround {
-  /* background-color: var(--primary-blue); */
   padding: 0% !important;
   margin: 3% !important;
   color: var(--tint-navy);
@@ -135,7 +128,6 @@
 .duckText {
   margin: auto;
   text-align: left;
-  /* font-weight: "625"; */
   color: var(--light-slate);
   margin-top: 16rem;
   display: block;
@@ -150,12 +142,9 @@
   font-weight: "625";
   color: var(--light-slate);
   display: inline-block;
-  /* margin-top: 16rem; */
 }
 
 ul.skillBullet{
   list-style-type: disc;
   list-style: var(--primary-blue);
-  /* color: var(--primary-blue); */
-  /* border: 1rem var(--primary-blue) solid; */
 }

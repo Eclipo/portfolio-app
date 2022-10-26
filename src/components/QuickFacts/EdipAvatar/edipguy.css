@@ -230,14 +230,12 @@
 }
 
 .triangle-dark {
-    width: 25rem;
-    height: 40.5rem;
-    background: #000000;
-    opacity: 0.2;
-    position: absolute;
-    left: -60%;
-    /* top: 10%; */
+  width: 25rem;
+  height: 40.5rem;
+  background: #000000;
+  opacity: 0.2;
+  position: absolute;
+  left: -60%;
   z-index: 0;
-
 }
 

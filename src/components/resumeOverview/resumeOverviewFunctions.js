@@ -9,21 +9,12 @@ export const animateResume = (inputID) => {
     const resumeNavs = document.querySelectorAll(".resumeNav");
 
     const resumeNavH2 = document.querySelectorAll(".resumeNavH2");
-    // // console.log(inputID);
+
     resumeNavs.forEach((el) => {
           el.classList.remove("resumeNavFocus");
         });
-      
-        
-    //     // document.getElementById('resumeLangID').classList.remove("resumeNavFocus");
-    //     // document.getElementById('langH2').classList.remove("resumeNavFocus");
-
-    // // document.getElementById(inputID).classList.add("resumeNavFocus");
-
     
     let section ='#'+inputID.slice(0,-2)+'SectionID';
-    // console.log(section);
-    // console.log(section.slice(1));
 
     let animate = anime.timeline({});
     
@@ -43,7 +34,6 @@ export const animateResume = (inputID) => {
                 opacity:[0,1],
                 easing:'easeInOutQuad',
                 begin(){
-                    console.log('setting:'+section+'to block')
                     langSection.style.display='block';
                     
                 }
@@ -65,7 +55,6 @@ export const animateResume = (inputID) => {
                 opacity:[0,1],
                 easing:'easeInOutQuad',
                 begin(){
-                    console.log('setting:'+section+'to block')
                     expSection.style.display='block';
                 }
             });
@@ -86,7 +75,6 @@ export const animateResume = (inputID) => {
                 opacity:[0,1],
                 easing:'easeInOutQuad',
                 begin(){
-                    console.log('setting:'+section+'to block')
                     eduSection.style.display='block';
                 }
             });
@@ -98,7 +86,6 @@ export const animateResume = (inputID) => {
 
 
     function resetSections(){
-        console.log('reseting...');
         anime({
             targets:['#resumeLangSectionID','#resumeExpSectionID','#resumeEduSectionID'],
             opacity:0,
@@ -107,7 +94,6 @@ export const animateResume = (inputID) => {
                 langSection.style.display='none';
                 expSection.style.display='none';
                 eduSection.style.display='none';
-    
             }
         });
     

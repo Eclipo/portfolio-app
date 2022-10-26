@@ -12,10 +12,7 @@ export class PersonalityAnimation {
 
   async playOrStop(input) {
     if (input === 0) {
-      console.log("!!!!!!!!! PERSONALITY ANIMATION IS TURNING ON");
       this.playedPersonalityZero = true;
-
-      console.log("!!!!!! PLAYEDZERO ÄR !!!! : "+this.playedPersonalityZero);
 
       anime.remove("#personalityContainerID");
       anime.remove("#personalityTableID");
@@ -29,16 +26,12 @@ export class PersonalityAnimation {
     }
 
     if (input === 1) {
-      console.log("!!!!!!!!! PERSONALITY ANIMATION IS TURNING OFF");
       playPersonalityFunc(false);
     }
 
     if (input === 2) {
-      console.log('STARTA OM FÖR FAN PERSONALITY!');
-      console.log("!!!!!! PLAYEDZERO ÄR !!!! : "+this.playedPersonalityZero);
 
       if (this.playedPersonalityZero === true) {
-        console.log('STARTA OM FÖR FAN PERSONALITY! TRUUUUUUEEEEE');
         playPersonalityFunc(true);
       }
     }

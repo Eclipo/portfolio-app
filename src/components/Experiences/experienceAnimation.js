@@ -11,11 +11,8 @@ export class ExperienceAnimation{
 
         playOrStop(input){
 
-                if(input === true){
-                console.log('SPELA EXPERIENCE');    
-              
+                if(input === true){              
                 KnucklesSvgAnimation();
-               
                 }
 
                 if(input === false){

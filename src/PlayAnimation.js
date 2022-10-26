@@ -15,7 +15,6 @@ const ResumeAnime = new ResumeAnimation();
 const PortfolioAnime = new PortfolioAnimation();
 
 export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID,inputTextPlayID){
-  console.log('!!!!!!!!!!!!  '+inputTextPlayID);
   const textPlay = document.getElementById(inputTextPlayID);
   const btnExpPlay = document.getElementById(inputPlayID);
   const btnRefreshExp = document.getElementById(inputRefreshID);
@@ -41,11 +40,9 @@ export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID,inputText
 }
 
 export function AnimationPlayRefreshEnd (inputPlayID, inputRefreshID){
-console.log('END IS PLAYING');
   const btnRefreshExp = document.getElementById(inputRefreshID);
   btnRefreshExp.style.display='block';
   
-// console.log('btnRef'+btnRefreshExp.style.display);
 
   if(btnRefreshExp.style.display === 'block'){
     anime({
@@ -78,9 +75,7 @@ console.log('END IS PLAYING');
 }
 
 export function PlayAnimation(inputID, inputPlayBoolean){
-  console.log('MAIN IS PLAYING');
 
-    
     const objArray  = new Array;
     objArray.push(IntroAnime);
     objArray.push(SkillAnime);
@@ -90,11 +85,8 @@ export function PlayAnimation(inputID, inputPlayBoolean){
     objArray.push(PortfolioAnime);
 
 
-  //refresh_PersonalityAnime
-  //play_PersonalityAnime
   var idEl='#'+inputID;
   var currentObject = inputID.substring(inputID.indexOf("_") + 1);
-  console.log('---- INPUTID:'+currentObject)
   var delayTime=0;
 
   if(currentObject === 'IntroAnimation'){
@@ -126,31 +118,12 @@ export function PlayAnimation(inputID, inputPlayBoolean){
  
 
   objArray.forEach(element => {
-    console.log('its on');
-    console.log('---- element from array:'+element.constructor.prototype.constructor.name)
-
-    
-
     if(currentObject === element.constructor.prototype.constructor.name){
-      console.log('---- ITS a match, INPUTID:'+currentObject+'---- element from array:'+element.constructor.prototype.constructor.name);
       element.playOrStop(inputPlayBoolean);
-      // if(inputPlayBoolean === false){
-      //   var refreshID = 'refresh_'+currentObject;
-      //   var btnRefrExp = document.getElementById(refreshID);
-      //   btnRefrExp.style.display='none';
-      //   btnRefrExp.style.pointerEvents='none';
-      //   var playID = 'play_'+currentObject;
-      //   var btnPlayExp = document.getElementById(playID);
-      //   btnPlayExp.style.pointerEvents='all';
-      //   btnPlayExp.style.display='block';
-      //   btnPlayExp.style.opacity=1;
-      //   delayTime=0;
-      // }
+
     }
 
   });
-
-  //Behöver hantera när animeringen skall sluta animera och behöver återställa play-knappen... 
 
   return delayTime;
 

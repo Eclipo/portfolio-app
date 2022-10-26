@@ -80,7 +80,6 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
   const firstHandleScrollPosY = (entries, observer) => {
     entries.forEach((entry) => {
     const currentIndex = Array.from(firstWrapper).indexOf(entry.target);
-    console.log('!!!!!!!!!!!!!!!!! CURRENTINDEX !!!!!!! '+currentIndex);
     
     if (entry.isIntersecting) {
     switch(currentIndex) {

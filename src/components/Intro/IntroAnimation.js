@@ -143,7 +143,6 @@ contructor() {
 playOrStop(input){
 
   if(input === true){
-    console.log('!!!!!! INTRO IS TURNING ON !!!!');
     
   anime({
     targets:'.logo',
@@ -163,10 +162,6 @@ playOrStop(input){
    logoAnimation();
   }
 
-  // if(input === false){
-  //   console.log('!!!!!! INTRO IS TURNING OFF !!!!');
-  //   this.logoAnimation.pause();
-  // }
 }
 
 }

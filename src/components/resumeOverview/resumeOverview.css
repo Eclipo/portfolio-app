@@ -58,8 +58,6 @@
   border-style: solid;
   border-radius: 18px;
   margin: auto;
-  /* margin: 1rem !important;
-  padding: 1rem !important; */
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -99,18 +97,8 @@
   margin-bottom: 1rem;
 }
 
-/* #resumeExpSectionID{
-  max-width: 10rem !important;
-} */
 .resumeSection {
-  /* background-color: var(--dark-navy);
-  border-color: var(--primary-red);
-  border-width: 0.16rem;
-  border-style: solid;
-  border-radius: 18px;
-  padding: 1.25rem; */
   color: var(--primary-red);
-  /* min-width: 95%; */
   width: fit-content;
   margin-bottom: 2vh !important;
   margin: auto;
@@ -129,16 +117,14 @@
   margin-bottom: 1rem !important;
   margin: auto;
   margin-top: 2rem;
-  /* z-index: -100 !important; */
   justify-content: center;
 }
-
 
 .resumeNavRow{
   justify-content: center;
   margin-top: 1rem;
-
 }
+
 .resumeNav{
   background-color: var(--navy);
   border-color: var(--primary-red);
@@ -147,9 +133,6 @@
   border-radius: 18px;
   padding: 1rem;
   color: var(--primary-red);
-  /* min-width: 95%; */
-  /* max-width: min-content; */
-  /* width: 15rem; */
   margin-bottom: 2vh !important;
   margin: auto;
   margin-left: 1rem;
@@ -159,39 +142,31 @@
 .resumeNav h2{
   margin: auto;
   color:var(--light-slate);
-
 }
 
 .resumeNav:hover h2{
   color:var(--primary-red);
-
 }
 
  #resumeLangID.resumeNavFocus{
-
   background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
   color:var(--dark-navy) !important;
-  /* height: 85%; */
   background-size: 200%; 
   background-position: right bottom;
   border: none !important;
  }
 
  #resumeExpID.resumeNavFocus{
-
   background: linear-gradient(to left, var(--primary-red) 50%,black); 
   color:var(--dark-navy) !important;
-  /* height: 85%; */
   background-size: 200%; 
   background-position: right bottom;
   border: none !important;
  }
 
  #resumeEduID.resumeNavFocus{
-
   background: linear-gradient(to left, var(--primary-red) 50%,black); 
   color:var(--dark-navy) !important;
-  /* height: 85%; */
   background-size: 200%;
   background-position: right bottom;
   border: none !important;
@@ -200,7 +175,6 @@
 .resumeNav:focus{
   background: linear-gradient(to left, var(--primary-red) 50%,black); 
   color:var(--dark-navy) !important;
-  /* height: 85%; */
   background-size: 200%; 
   background-position: right bottom;
   transition: all 2s ease-out;
@@ -209,7 +183,6 @@
 
 
 .resumeNav:focus h2{
-
   color:black;
 }
 
@@ -225,13 +198,6 @@
 #resumeEduID.resumeNavFocus h2{
   color:black;
 }
-/* .resumeNav:hover{
-  background-color: var(--primary-red);
-  border-color: var(--navy);
-  border-style: double;
-  border-width: 0.4rem;
-  outline: var(--primary-red) outset 0.25rem;
-} */
 
 .activeNav{
   background-color: var(--primary-red);
@@ -240,9 +206,6 @@
   border-width: 0.4rem;
   outline: var(--primary-red) outset 0.25rem;
 }
-
-
-
 
 .resumeSection h3 {
   color: var(--primary-red);
@@ -253,7 +216,6 @@
 }
 
 .header2UnderLine {
-  /* background-color: var(--light-navy); */
   border-color: var(--primary-red);
   border-width: 0.1vw;
   border-style: solid;
@@ -268,7 +230,6 @@
   background-color: var(--primary-red);
   height: 5rem;
   width: 0.2rem;
-  /* margin: auto !important; */
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
 }
@@ -289,7 +250,6 @@
 .experienceTable {
   display: inline-block;
   justify-content: center;
-  /* width: 95%; */
 }
 
 .experienceTable td {

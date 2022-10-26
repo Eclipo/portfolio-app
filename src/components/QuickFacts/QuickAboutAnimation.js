@@ -264,14 +264,10 @@ export class QuickAboutAnimation {
   }
 
   playOrStop(input) {
-    console.log("!!!!!! QUICKABOUT IS TURNING ON!!!!");
-
     if (input === true && this.edipAndFamillyAnimation.paused) {
-      console.log("NOW IT IS GOING TO PLAY!!!");
       this.edipAndFamillyAnimation.play();
       this.rightHand.play();
       this.leftHand.play();
-      // this.familyBlinkAnimation.play();
       this.quickCoffeeSteam.play();
       this.bounceCityHall.play();
       this.bounceFlag.play();
@@ -279,10 +275,7 @@ export class QuickAboutAnimation {
     }
 
     if (input === false) {
-      console.log("!!!!!! QUICKABOUT IS TURNING OFF!!!!");
-
       this.edipAndFamillyAnimation.pause();
-      // this.familyBlinkAnimation.pause();
       this.quickCoffeeSteam.pause();
       this.bounceCityHall.pause();
       this.bounceFlag.pause();

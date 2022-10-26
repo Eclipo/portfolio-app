@@ -56,37 +56,10 @@
   }
 
 
-  /*************************CSS TOOLS *********************************/
-
-
-  /* CSS trick, markerar ut elementen  */
-    
-  
-     /* *{
-      outline: 1px solid red;
-    }        */
-
-
-    /* Färgblindhet */
-    /* *{
-      filter: grayscale(100%);
-      
-    } */
-
-    /* Dyslexi / Förstoring */
-  /* *{
-    line-height: 1.5 !important;
-    letter-spacing: 0.12em !important;
-    word-spacing:0.16em !important;
-  }  */
-  
-    
-
   /************************* MAIN CSS CLASSES *********************************/
   .sectionAnimation{
     background-color: var(--dark-navy);
     min-height: 90vh;
-    /* margin-bottom: 5rem; */
     margin: auto;
     padding-bottom: 2.5rem;
     display: block;
@@ -165,22 +138,11 @@
   }
 
   /************************* HTML classes *********************************/
-/*   
-  * {
-    
-    filter:url('../ColorBlindness/filters.svg#protanopia') !important;
-  } */
-
 
   body
   {
   font-family: 'Roboto', sans-serif;
   background-color: var(--dark-navy) !important;
-
-  /* background-color: rgb(4, 29, 29) !important; */
-
-  /* */
-  /* background: linear-gradient(to right, var(--navy), var(--lightest-navy)); */
   }
 
   
@@ -290,15 +252,6 @@
     transform: scale(0.65) !important;
   }
 
-  /* #KnucklesContainerID {
-    display: flex;
-    margin-top: -15rem;
-    transform: scale(0.45);
-  } */
-  
-  /* .resumeNavRow{
-    display: inline-block;
-  } */
 
   .resumeNavMenu{
     width: 8rem;
@@ -326,11 +279,7 @@
 
   @media (min-width: 30rem) {
 
-    /* #KnucklesContainerID {
-      display: flex;
-      margin-top: -15rem;
-      transform: scale(0.45);
-    } */
+
 
     .typed-text{
       height: 5rem;
@@ -341,7 +290,6 @@
     }
     .duckText, .welcomeText{
       max-width: 30rem !important;
-      /* max-width: 22.5rem !important; */
     }
 
     .seiouslyText{
@@ -350,13 +298,10 @@
 
     .personalityTextContainer{
       width:75% !important;
-      /* margin-top: 10rem !important; */
     }
 
     .portfolioTextContainer{
       width:30rem !important;
-      /* transform: scale(1.5);
-      margin-top: 12rem !important; */
     }
   } 
 
@@ -374,16 +319,9 @@
   }
 
   @media (min-width: 60rem) {
-    /* #KnucklesContainerID {
-      display: block;
-      margin-top: -12rem !important;
-      transform: scale(0.6) !important;
-      z-index: -2 !important;
-    } */
 
     .skill{
       font-size: 1rem !important;
-      /* height:2rem !important; */
     }
 
     p{
@@ -422,15 +360,6 @@
       margin-top: -9rem !important;
       transform: scale(0.68) !important;
     }
-
-
-    /* .duckText, .welcomeText{
-      font-size:1.25rem !important;
-    }
-
-    .seiouslyText{
-      font-size:1.25rem !important;
-    } */
 
     .skillCategory{
       font-size: 3rem !important;
@@ -531,19 +460,6 @@
   width: 100% !important;
 }
 
-/* .accordion-button::after{
-  color: red!important;
-  background-color: red!important;
-} */
-.accordion-button .navLinkh3{
-/* margin: auto !important;
-margin: 0.25rem !important;
-padding: 0.25 !important; */
-/* justify-self: center !important;
-align-self: center !important; */
-}
-
-
   .navLinkH3{
     font-size: 1.05rem;
   }
@@ -564,18 +480,10 @@ align-self: center !important; */
 
   .navBtnMenu{
     display:block;
-    /* margin-top: 3rem; */
-    /* border-bottom: 0.15rem solid var(--light-slate); */
-    /* margin-bottom: 1rem; */
     }
 
   .navSubMenu{
-    /* border-bottom: 0.25rem var(--slate) solid; */
-    /* display: flex; */
-    /* background-color: red; */
-    /* margin-top: -32rem; */
     margin-left: 0.1%;
-     /* justify-content: space-between; */
   }
   
   .navSubIcon{
@@ -599,31 +507,19 @@ align-self: center !important; */
 .containerNavbar {
   z-index:1000 !important;
   position: fixed;
-  /* left:0; */
   right:0;
   background-color: none;
   width:fit-content !important;
   max-width: 98vw;
   margin-right: 1rem;
-  /* default colors + transition */
-  /* background-color: white; */
-  /* color: black; */
-  /* transition: all 0.3s ease-out; */
 }
+
 /* scrolling state */
 .containerNavbar.fixed-top {
   position:fixed;
-  /* top: 0; */
   left:0;
   right:0;
-  
-  /* height:5rem; */
-  /* width: 100%; */
   background-color: none;
-  /* transition: all 1s ease-out; */
-  /* scrolling colors */
-  /* background-color: black;
-  color: white; */
 }
   
   #customNav
@@ -631,24 +527,16 @@ align-self: center !important; */
    
     background-color: none;
     width:12vh;
-    /* height: 5rem; */
     top:0.5rem !important;
     position:sticky;
     position:-webkit-sticky;
-    /* top:0.75rem !important; */
   }
 
   #navbarTogglerID {
-    /* border-color: var(--slate);
-    border-width:0.2rem;
-    border-style:solid; */
     position: relative;
     background-color: none;
     position: sticky;
     position:-webkit-sticky;
-
-    /* margin-top:-0.75rem !important; */
-    /* top: 0rem; */
   }
 
   #navbarSupportedContent{
@@ -657,11 +545,8 @@ align-self: center !important; */
     right:0;
     min-width: 25%;
     width: fit-content;
-    /* margin-right: 0.25rem !important; */
     margin: 0;
     padding: 0;
-    /* margin-left: -1rem; */
-    /* height: 150vh !important; */
     z-index: -2;
     border-left: 0.15rem var(--slate) solid;
     border-top: 0.15rem var(--slate) solid;
@@ -687,24 +572,16 @@ align-self: center !important; */
 
   nav a.nav-link
   {
-    /* font-size: 0.65rem !important; */
-    /* letter-spacing: normal !important; */
     padding: 0;
-    cursor: pointer;
-    /* margin-left: 1rem; */
-    
+    cursor: pointer;    
     display: block;
-    
     width: 98%;
     margin-left: 0.5rem;
     margin-bottom: 0.25rem;
-
   }
 
   a.nav-link h3{
-    /* font-weight: bolder !important; */
     text-align: left !important;
-
   }
 
   nav ul li
@@ -714,16 +591,11 @@ align-self: center !important; */
 
   .navbar-nav{
     background-color: var(--darkest-slate);
-    /* border-radius: 18px; */
-    /* width: 100% !important; */
     padding: 1rem !important;
     margin: auto !important;
     overflow-y: auto !important;
     max-height: 98vh;
     -webkit-overflow-scrolling: auto !important;
-    /* border-color: var(--slate);
-    border-width: 0.3rem;
-    border-style: solid; */
   }
 
   .navbar-nav > li > a

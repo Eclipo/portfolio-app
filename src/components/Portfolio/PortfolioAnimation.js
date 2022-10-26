@@ -12,9 +12,7 @@ export class PortfolioAnimation {
 
   async playOrStop(input) {
     if (input === 0) {
-      console.log("!!!!!! Portfolio PLAYING 0 !!!!");
       this.playedZero = true;
-      console.log("!!!!!! playedZero ÄR !!!! : "+this.playedZero);
 
       anime.remove(".portfolioTextContainer");
       anime.remove(".animContainer");
@@ -28,7 +26,6 @@ export class PortfolioAnimation {
       anime.remove(".lightYear");
       anime.remove(".rainDropTable");
       anime.remove(".rainDropTable tbody");
-      // anime.remove(".noDrop");
 
       anime.remove(".rainDrop");
       anime.remove(".journeyScene");
@@ -51,19 +48,12 @@ export class PortfolioAnimation {
     }
 
     if (input === 1) {
-      console.log("!!!!!! PORTFOLIO IS TURNING OFF 1 !!!!");
-      
-      // anime.remove(".portfolioTextContainer");
-     playPostFunc(false);
+           playPostFunc(false);
     }
 
     if (input === 2) {
-      console.log("!!!!!! PORTFOLIO IS RESUMING 2!!!!");
-      console.log("!!!!!! playedZero ÄR !!!! : "+this.playedZero);
       if(this.playedZero === true){  
-        console.log("!!!!!! STARTA playPostFunc!!!! : "+this.playedZero);
         playPostFunc(true);
-
       }
     }
   }

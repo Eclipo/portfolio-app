@@ -108,10 +108,6 @@ export const EdipGuy = () => {
                       <defs>
                         <style></style>
                       </defs>
-                      {/* <path
-                        className="cupA"
-                        d="M30.1 1.9V23.7c0 2.6-0.9 5.1-5.1 5.1H7.1A4.9 4.9 0 0 1 2 23.8V2 0H3 0. 0 6- 0. 0 6Z"
-                      /> */}
                     
                       <path
                         className="cupB"

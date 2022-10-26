@@ -1,6 +1,7 @@
 #portfolioContainerID {
   display: none;
   opacity: 0;
+  margin-top: 1rem;
 }
 
 #portfolioID{
@@ -38,30 +39,24 @@ opacity: 0.5;
   margin: auto;
     
   display: block;
-  /* position:absolute; */
-  /* margin-top: -6rem; */
   transform: scale(0.25);
 }
 .portfolioTextContainer h2{
   color:var(--primary-pink);
-  /* margin-top: 15rem; */
-  /* margin-left: -0.6rem; */
 }
 
 .portfolioTextContainer h3{
   color:var(--primary-pink);
   text-align: left;
   padding: 0.5rem;
-  
-  /* margin-left: -0.6rem; */
 }
+
 .portfolioTextContainer h4{
   color:var(--primary-pink);
   text-align: left;
   padding: 0.5rem;
-  
-  /* margin-left: -0.6rem; */
 }
+
 .portfolioTextContainer p{
   color: var(--lightest-slate);
   text-align: left;
@@ -134,7 +129,6 @@ opacity: 0.5;
   background-color: var(--primary-light-green);
   margin: 1rem;
   z-index: 3;
-  /* position: absolute; */
 }
 
 .avatarCircle .eyesContainer{
@@ -149,7 +143,6 @@ opacity: 0.5;
   height: 0.35rem;
   background-color: var(--primary-brown);
   margin: 0.1rem;
-  /* margin-left: -0.25rem; */
 }
 
 .eyebrowRightID{
@@ -355,13 +348,8 @@ opacity: 0.5;
   width: 0.1em;
   height: 5rem;
   background-color: var(--primary-white);
-  /* transform: rotate(45deg); */
-  /* margin-left:-.5rem; */
   margin-right: -0.25rem;
   margin-top: 3rem;
-  /* position: absolute; */
-  /* opacity: 0; */
- 
 }
 
 
@@ -370,33 +358,23 @@ opacity: 0.5;
 }
 .wall{
   width: 3.5em;
-  /* padding: 0.25rem; */
   height: fit-content;
   background-color: var(--dark-slate);
   display: block;
-  /* margin: auto; */
-  /* margin: 1rem; */
-  /* padding: 0.5rem; */
   z-index: 1;
   position: inherit;
   margin-left:1rem;
 }
 
 .forceWall{
-  
   box-shadow: 0rem 5rem 10rem 4.25rem #048ced9d;
-
   width: 3.75rem;
   height: fit-content;
-  /* padding: 0.25rem; */
   justify-content: center;
   align-items: center;
   display: block;
-  /* padding: 0.25rem; */
-
   background-color: var(--dark-slate);
   opacity: 0;
-
 }
 
 
@@ -448,8 +426,8 @@ opacity: 0.5;
   margin-bottom: -5rem;
   height: 4rem;
   width: 8.5rem;
-  /* z-index: 1; */
 }
+
 #avatarRegretID{
   margin-right: 5rem;
   z-index: 1;
@@ -469,15 +447,14 @@ opacity: 0.5;
   margin-left:-0.25rem
 }
 #regretEyeBrowRightID{
-float: left;
-width:0.75rem;
-height: 0.35rem;
-background-color: var(--primary-brown);
-margin: 0.1rem;
-transform: rotate(-45deg);
-margin-left:0.75rem;
+  float: left;
+  width:0.75rem;
+  height: 0.35rem;
+  background-color: var(--primary-brown);
+  margin: 0.1rem;
+  transform: rotate(-45deg);
+  margin-left:0.75rem;
   transform: rotate(45deg);
-  /* margin-left:0.75rem; */
 }
 
 #talkChallengeID{
@@ -498,7 +475,6 @@ margin-left:0.75rem;
   margin-bottom: 5rem;
   opacity: 0;
   display: none;
-    /* position: absolute; */
 }
 
 .portfolioParagraph{
@@ -520,53 +496,43 @@ margin-left:0.75rem;
   height: 15rem;
   margin: auto;
   display: block;
-  /* background-color: var(--primary-blue); */
   z-index: 1;
 }
-.sunRise{
 
+.sunRise{
   width: 5rem;
   height: 5rem;
   transform: scale(0.7);
   margin: auto;
- 
   display: block;
-  border-radius: 50%;  /* float: left; */
+  border-radius: 50%;  
   background-color: #dbd659e6;
   box-shadow: 0rem -1rem 5rem 3rem #ffa3059d;
   opacity: 0;
   z-index: -1;
-
 }
 
 .zenBigCircle{
   width: 8rem;
   height: 8rem;
-  /* transform: scale(0.7); */
   margin: auto;
   display: flex;
   margin-top: 1.5rem;
- /* justify-content: center; */
-
-  border-radius: 50%;  /* float: left; */
+  border-radius: 50%;  
   background-color: #dbd659e6;
   box-shadow: 0rem -1rem 3rem 1.25rem #ffa3059d;
   opacity: 1;
-  /* position: absolute; */
-  /* left:45vw; */
-  /* z-index: -1; */
 }
+
 .zenSmallCircle{
   width: 6rem;
   height: 6rem;
-  /* transform: scale(0.7); */
-
-
-  border-radius: 50%;  /* float: left; */
+  border-radius: 50%;  
   background-color: #fdfcd7e6;
   box-shadow: 0rem -1rem 3rem 1rem #fffbf59d;
   opacity: 1
 }
+
 .zenAvatarCircle{
   position: absolute;
   display: inline-flex;
@@ -594,14 +560,13 @@ margin-left:0.75rem;
   margin-left: 1.75rem;
   margin-bottom: -1rem;
   margin-bottom: -10rem;
-  /* transform: rotate(-45deg); */
 }
+
 .emptyHandSpace{
   width:.5rem;
   height: .5rem;
   border-radius: 50%;
   margin: auto;
-  /* margin-top: 0.1rem; */
   display: flex;
   margin-left: 0.12rem;
   margin-top: 0.15rem;
@@ -647,29 +612,21 @@ margin-left:0.75rem;
 
 .journeyScene .ground{
   display: flex;
-  /* position: absolute; */
   width: 100%;
   margin: auto;
   height: 3.9rem;
   margin-top: -1rem;
-  /* margin-top: -5rem; */
   background-color: rgb(121, 100, 62);
-  
 }
 
 .mountainScene{
   display: inline-flex;
-  /* position: absolute; */
   margin: auto;
-  
-  /* margin-top: 20%; */
-  
 }
 
 .mountain{
   display: inline-block;
   float: left;
-  /* margin-left: -10%; */
   margin-top: 15%;
   width: 0; 
   height: 0; 
@@ -677,18 +634,14 @@ margin-left:0.75rem;
   border-right: 3rem solid transparent;
   border-bottom: 5rem solid rgb(152, 61, 34);
   box-decoration-break: clone;
-
   z-index: 4;
-  /* background-color: var(--primary-brown); */
 }
 
 .smallMountain{
   display: inline-block;
-
   float: left;
   margin-left: -5%;
   margin-top: -0.5rem;
-  /* margin-top: -20%; */
   position: absolute;
   width: 0; 
   height: 0; 

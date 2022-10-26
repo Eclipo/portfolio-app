@@ -26,7 +26,6 @@ class PlayRefresh extends Component {
     
     var delayTime = 0;
     delayTime = PlayAnimation(event.currentTarget.id, this.playBoolean);
-    console.log("the returned delayTime is...." + delayTime);
     if (delayTime > 0) {
       setTimeout(
         () => AnimationPlayRefreshEnd(this.playID, this.refreshID),

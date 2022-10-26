@@ -434,8 +434,6 @@ export async function playPostFunc(inputBoolean) {
     mountainFour.play();
     zenBigAnim.play();
     zenSmallAnim.play();    
-    console.log('...playPost PLAY');
-
   }
 
   if(inputBoolean === false){
@@ -450,7 +448,6 @@ export async function playPostFunc(inputBoolean) {
     anime.remove(".lightYear");
     anime.remove(".rainDropTable");
     anime.remove(".rainDropTable table tbody");
-    // anime.remove(".noDrop");
     anime.remove(".rainDrop");
     anime.remove(".journeyScene");
     anime.remove(".sunRise");
@@ -463,7 +460,6 @@ export async function playPostFunc(inputBoolean) {
     anime.remove(".zenBigCircle");
     anime.remove(".zenSmallCircle");
     anime.remove(".zenAvatarCircle");
-    console.log('...playPost REMOVE');
   }
   
 }

@@ -43,7 +43,6 @@ export const closeDialogue = (inputID) => {
     resetAttributeAnimation(resetCard);
 }
 export const resetAttributeAnimation = (inputID) => {
-   console.log('reset:'+inputID)
     let card='#'+inputID;
 
     anime({
@@ -53,15 +52,6 @@ export const resetAttributeAnimation = (inputID) => {
         duration:1250,
         complete:function(){
             closeWindow = false;
-            // anime({
-            //     targets:card,
-            //     scale:[1,1.1],
-            //     rotate:['2deg','-2deg'],
-            //     direction:'alternate',
-            //     duration:750,
-            //     loop:true
-            // })
-
         }
 
     });
