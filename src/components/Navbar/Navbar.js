@@ -56,6 +56,8 @@ export const Navbar = () => {
     document.getElementById("resumeOverview").classList.remove(input);
     document.getElementById("experiencesID").classList.remove(input);
     document.getElementById("portfolioID").classList.remove(input);
+    document.getElementById("contactID").classList.remove(input);
+
   }
 
   function addColors(input) {
@@ -68,6 +70,8 @@ export const Navbar = () => {
     document.getElementById("resumeOverview").classList.add(input);
     document.getElementById("experiencesID").classList.add(input);
     document.getElementById("portfolioID").classList.add(input);
+    document.getElementById("contactID").classList.add(input);
+
   }
 
   const cbRedGreenMode = () => {
@@ -94,7 +98,6 @@ export const Navbar = () => {
 
     } else {
       removeColors("colorBlindRedGreen");
-
       document.body.classList.remove("bodyRedgreen");
       document.getElementById("root").classList.remove("bodyRedgreen");
 
@@ -241,7 +244,7 @@ export const Navbar = () => {
                                 className="fntAwesome"
                                 icon={faPen}
                                 style={{
-                                  color: isRed ? "var(--darkest-slate)" : "var(--light-slate)",
+                                  color: isRed ? "var(--dark-slate)" : "var(--slate)",
                                 }}
                                 onClick={outlineMode}
                               ></FontAwesomeIcon>
@@ -275,8 +278,8 @@ export const Navbar = () => {
                                     icon={isCbRedGreen ? faEye : faEyeSlash}
                                     style={{
                                       color: isCbRedGreen
-                                        ? "var(--darkest-slate)"
-                                        : "var(--light-slate)",
+                                        ? "var(--dark-slate)"
+                                        : "var(--slate)",
                                     }}
                                     onClick={cbRedGreenMode}
                                   ></FontAwesomeIcon>
@@ -300,8 +303,8 @@ export const Navbar = () => {
                                     icon={isCbYellowBlue ? faEye : faEyeSlash}
                                     style={{
                                       color: isCbYellowBlue
-                                        ? "var(--darkest-slate)"
-                                        : "var(--light-slate)",
+                                        ? "var(--dark-slate)"
+                                        : "var(--slate)",
                                     }}
                                     onClick={cbYellowBlueMode}
                                   ></FontAwesomeIcon>
@@ -325,8 +328,8 @@ export const Navbar = () => {
                                     icon={isCbTotal ? faEye : faEyeSlash}
                                     style={{
                                       color: isCbTotal
-                                        ? "var(--darkest-slate)"
-                                        : "var(--light-slate)",
+                                        ? "var(--dark-slate)"
+                                        : "var(--slate)",
                                     }}
                                     onClick={cbTotalMode}
                                   ></FontAwesomeIcon>

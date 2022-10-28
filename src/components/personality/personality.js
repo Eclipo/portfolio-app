@@ -444,7 +444,7 @@ class Personality extends Component {
             <h2 className="mb-1">
               About <br></br>My personality
             </h2>
-            <div className="duckText mt-0">
+            <div className="skillText mx-auto">
               The purpose of the personality matrix above is to display two facts:
               <ul className="skillBullet">
                 <li>It is quite <span className="highLight"> easy to label </span>a person based on the very first impression.</li>
@@ -735,7 +735,9 @@ class Personality extends Component {
                         It is possible I could be an good leader one day but at the moment in terms of anything that resemble leadership 
                         then I guess I would do fine as the<span className="highLight"> mini boss </span>in smaller projects.
                         <br></br><br></br>
-                        I am very pragmatic, result-oriented, empathic and keen to hear others' opinions when taking decisions.
+                        I am very pragmatic and I have my eyes on the target. 
+                        In addition, I am very keen on hearing others' opinions since the best ideas and strategies are created in discussions 
+                        between people who have different perspectives on how a problem can best be handled.
                       </p>
                     </button>
                     </div>

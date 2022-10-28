@@ -46,7 +46,7 @@ class PlayRefresh extends Component {
             <FontAwesomeIcon
               className="fntAwesome"
               icon={faSyncAlt}
-              color="var(--light-slate)"
+              color="var(--slate)"
               style={{margin:'auto'}}
 
             ></FontAwesomeIcon>
@@ -64,7 +64,7 @@ class PlayRefresh extends Component {
             <FontAwesomeIcon
               className="fntAwesome"
               icon={faPlay}
-              color="var(--light-slate)"
+              color="var(--slate)"
               style={{margin:'auto'}}
             ></FontAwesomeIcon>
           </button>

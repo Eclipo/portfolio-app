@@ -145,6 +145,9 @@
   background-color: var(--dark-navy) !important;
   }
 
+  body > :-webkit-scrollbar{
+    filter:url('./assets/filters.svg#achromatopsia') !important;
+  }
   
   #root{
     background-color: var(--dark-navy);
@@ -401,6 +404,42 @@
   
   
   /************************* NAVBAR *********************************/
+/* Handle */
+::-webkit-scrollbar:vertical {
+  width: 0.9rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5rem var(--darkest-navy); 
+  background-color: var(--darkest-navy);
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb:vertical {
+  background: var(--slate); 
+  border-radius: 18px;
+  height: 0.25rem !important;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:vertical:hover {
+  background: var(--tint-navy); 
+  height: 0.25rem !important;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: var(--dark-slate); 
+  height: 0.25rem !important;
+}
+
+
+  .fntAwesome:hover{
+    color:var(--tint-navy) !important;
+  }
+
 .accordion{
   padding: 0.25rem;
   margin: 0.25rem;
@@ -418,7 +457,7 @@
   color: var(--dark-navy) !important;
   justify-content: center !important;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 93%) !important;
-  transition: var(--transition);
+  transition: var(--transition) !important;
 
 
 }
@@ -426,7 +465,7 @@
 .accordion-button:hover{ 
   color: var(--primary-white) !important;
   background-color: var(--slate)!important;
-  transition: var(--transition);
+  transition: var(--transition) !important;
 
 }
 .accordion-button:focus{
@@ -543,6 +582,7 @@
     position: fixed;
     top:0;
     right:0;
+    margin-right: 1rem !important;
     min-width: 25%;
     width: fit-content;
     margin: 0;

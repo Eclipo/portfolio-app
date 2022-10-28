@@ -85,7 +85,7 @@ class Experiences extends Component {
             </div>
 
             <table
-              className="overflow-auto d-block mx-auto justify-content-center"
+              className="d-block mx-auto justify-content-center"
               id="expCategoryMenu"
             >
             <tbody>

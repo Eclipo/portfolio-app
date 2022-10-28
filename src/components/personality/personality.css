@@ -146,8 +146,11 @@
 .personalityTextContainer{
   margin: auto;
   opacity: 0;
+}
 
-
+.personalityTextContainer .skillText{
+  color:var(--lightest-slate) !important;
+  
 }
 
 .personalityTextContainer h2{
