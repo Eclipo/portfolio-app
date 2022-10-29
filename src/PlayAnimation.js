@@ -108,7 +108,7 @@ export function PlayAnimation(inputID, inputPlayBoolean){
   } 
 
   if(currentObject === 'ExperienceAnimation'){
-    delayTime = 6000;
+    delayTime = 8000;
   } 
   
   if(currentObject === 'PortfolioAnimation'){
