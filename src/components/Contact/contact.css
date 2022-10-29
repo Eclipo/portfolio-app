@@ -23,10 +23,10 @@
     background-color: #0a66c2 !important;
   }
 
-  .skillText{
-    text-align: left;
-    max-width: 30rem;
-    width: fit-content;
+  #contactID .duckText{
+   margin-top: 0;
+   margin: 0;
+   padding: 0;
   }
  
 

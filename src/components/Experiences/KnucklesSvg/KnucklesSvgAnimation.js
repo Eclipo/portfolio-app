@@ -10,6 +10,11 @@ export function KnucklesSvgAnimation () {
   expMenu.style.display='inline-flex';
   knuckles.style.opacity='0';
   knucklesSVG.style.display='';
+  var setDashoffset = function(el) {
+    var l = el.getTotalLength();
+    el.setAttribute('stroke-dasharray', l);
+    return [l,0];
+  }
 
       anime({
         targets:['#expMenu','#_container'],
@@ -25,7 +30,17 @@ export function KnucklesSvgAnimation () {
             duration:2000,
             delay:250
           });
-
+          
+          anime({
+            targets: '#testLines path',
+            strokeDashoffset: {
+              value: setDashoffset,
+              
+              duration: 2550,
+              easing: 'easeOutQuad',
+            },
+          });
+          
           anime({
             targets:['#darkRedHeadID','#darkRedSkinID','#redSkinID','#testLines path',
             '#faceID','#shoeOrangeID','#greenShoeID','#noseAndShoeGreyID','#eyesGlovesWhiteID',],
@@ -41,7 +56,7 @@ export function KnucklesSvgAnimation () {
                   targets: '#testLines path',
                   strokeDashoffset: [anime.setDashoffset,0],
                   easing: 'easeInElastic(1, 0.2)',                  
-                  duration: 750,
+                  duration: 2500,
                   delay: function(el, i) { return i * 150 },
                   complete:function(){
                     //Face

@@ -47,7 +47,7 @@ class Personality extends Component {
             <p>
               WARNING <br></br>
               CLICKING ON THIS PLAY BUTTON <br></br>
-              WILL DISPLAY VERY DISTURBING AND FLASHING ANIMATIONS!
+              WILL DISPLAY VERY FLASHING <br></br> ANIMATIONS!
             </p>
           }
           textColor="var(--primary-red)"
@@ -442,9 +442,9 @@ class Personality extends Component {
           </table>
           <div className="personalityTextContainer">
             <h2 className="mb-1">
-              About <br></br>My personality
+              Don't judge a book <br></br>by its cover
             </h2>
-            <div className="skillText mx-auto">
+            <div className="duckText mx-auto">
               The purpose of the personality matrix above is to display two facts:
               <ul className="skillBullet">
                 <li>It is quite <span className="highLight"> easy to label </span>a person based on the very first impression.</li>
@@ -559,10 +559,9 @@ class Personality extends Component {
                       <h4 id="structureCard_h4">Feng shui</h4>
 
                       <p className="card-text" id="structureCard_p">
-                        Even though I write task lists and set reminders, I still don't feel great at being structured.
-                        Despite this, I still need<span className="highLight"> feng shui </span>where everything is in harmonious order.<br></br><br></br>
-                        Feng shui calms my mind and I can channel my focus on more pressing matters.
-                        Besides a structured environment, it is also important for me to team up with someone who is great at project management.
+                        Even though I write task lists and set reminders, being structured isn't my core attribute. 
+                        Despite this, I still need<span className="highLight"> feng shui </span>where everything is in harmonious order. 
+                        Feng shui calms my mind and I can channel my focus on more pressing matters Besides a structured environment, it is also important for me to team up with someone who is great at project management.
                       </p>
                       </button>
                     </div>
@@ -595,7 +594,8 @@ class Personality extends Component {
                       <h4 id="focusCard_h4">Blue screen of death</h4>
 
                       <p className="card-text" id="focusCard_p">
-                        To reach the very heights of my hyperfocus, I need feng shui and enjoyable tasks.
+                        To reach the very heights of my hyperfocus, I need feng shui and enjoyable tasks.                        
+                        <br></br><br></br>
                         In contrast a chaotic environment and boredom will eventually crash my focus into a<span className="highLight"> blue screen of death</span>.
                       </p>
                       </button>
@@ -627,12 +627,13 @@ class Personality extends Component {
                       <h3 className="card-title" id="multiTaskCard_h3">
                         Multitasking
                       </h3>
-                      <h4 id="multiTaskCard_h4">NO!</h4>
+                      <h4 id="multiTaskCard_h4">Single-core processor</h4>
 
                       <p className="card-text" id="multiTaskCard_p">
-                      <span className="highLight">NO NO NOOO!</span><br></br><br></br> 
-                      "Multitasking" (Read too many tasks.) makes my head split and I lose focus. 
-                      I'd rather doing one thing at a time to the best of my ability.
+                        I have unfortunately multitasked during my career, and it's not for me.
+                        I am more of a<span className="highLight"> single-core processor</span> type of person.
+                        <br></br><br></br>
+                        Meaning, I do one thing really well at a time. In contrast to shuffling between completely different tasks.
                       </p>
                       </button>
                     </div>
@@ -662,12 +663,12 @@ class Personality extends Component {
                       <h3 className="card-title" id="patienceCard_h3">
                         Patience
                       </h3>
-                      <h4 id="patienceCard_h4">Breath alot</h4>
+                      <h4 id="patienceCard_h4">Right here and now</h4>
 
                       <p className="card-text" id="patienceCard_p">
-                        I want to see the result right here and right now.
+                        I want to see result<span className="highLight"> right here and now</span>.
                         Consequently, I have suffered from being impatient at times.<br></br><br></br> 
-                        With time, I have learned to take a step back and<span className="highLight"> breath alot </span>in order to regain more patience.
+                        With time, I have learned to take a step back, calm down, and breath alot in order to regain more patience.
                       </p>
                       </button>
                     </div>
@@ -695,14 +696,13 @@ class Personality extends Component {
                       <h3 className="card-title" id="temperCard_h3">
                         Temper
                       </h3>
-                      <h4 id="temperCard_h4">Compass & Engine</h4>
+                      <h4 id="temperCard_h4">Engine</h4>
 
                       <p className="card-text" id="temperCard_p">
-                        Most of the time, I am calm. It's true!<br></br>
-                        Nevertheless, I can get angry, sad, and anxious at difficult times in life or when facing a code-bug from hell.<br></br><br></br>
-                        Letting emotions take place is good for me since they are the very<span className="highLight"> compass </span>that guides my more rational being.
-                        <br></br><br></br>
-                        Furthermore, my emotions are the<span className="highLight"> engine </span>that provides me the necessary energy and focus in order to sustain and handle various challenging situations.
+                        Most of the time, I am calm. It's true!
+                        Nevertheless, if I am having some sort of a setback, such as facing a code-bug from hell, it does trigger some stronger emotions in me.
+                        However, I am truly grateful to have some temper since it is my very<span className="highLight"> engine </span>in life.
+                        My emotions provide me with energy and focus in order to handle various challenging situations.
                       </p>
                       </button>
                     </div>
@@ -729,15 +729,15 @@ class Personality extends Component {
                       <h3 className="card-title" id="empathyCard_h3">
                         Leadership
                       </h3>
-                      <h4 id="empathyCard_h4">Mini boss</h4>
+                      <h4 id="empathyCard_h4">Coordinator</h4>
 
                       <p className="card-text" id="empathyCard_p">
                         It is possible I could be an good leader one day but at the moment in terms of anything that resemble leadership 
-                        then I guess I would do fine as the<span className="highLight"> mini boss </span>in smaller projects.
+                        then I guess I would do fine as the<span className="highLight"> coordinator </span>in a team.
                         <br></br><br></br>
                         I am very pragmatic and I have my eyes on the target. 
                         In addition, I am very keen on hearing others' opinions since the best ideas and strategies are created in discussions 
-                        between people who have different perspectives on how a problem can best be handled.
+                        between people who have different perspectives on how a problem can be solved.
                       </p>
                     </button>
                     </div>

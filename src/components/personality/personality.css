@@ -148,9 +148,9 @@
   opacity: 0;
 }
 
-.personalityTextContainer .skillText{
+.personalityTextContainer .duckText{
   color:var(--lightest-slate) !important;
-  
+   margin: 0;
 }
 
 .personalityTextContainer h2{

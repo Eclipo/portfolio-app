@@ -40,7 +40,7 @@ class Portfolio extends Component {
         <div className="flexCenter" id="portfolioContainerID">
           <div className="flexCenter portfolioTextContainer">
             {/* <h2>This is it</h2> */}
-              <p className="ml-2"> 
+              <p className="duckText mx-auto"> 
                 This is my résumé website to let friends, colleagues, and others alike know more about me. 
                 The technologies applied on this site are React, Bootstrap, AnimeJS, CSS, and JavaScript.
                 <br></br><br></br>
