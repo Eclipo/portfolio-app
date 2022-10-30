@@ -378,7 +378,7 @@ class Skills extends Component {
                 <td>
                   {" "}
                   <p className="skill backEndTheme">
-                    Powershell
+                    PowerShell
                   </p>
                 </td>
                 <td>
