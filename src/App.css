@@ -438,12 +438,11 @@
   }
 
 .accordion{
-  padding: 0.25rem;
+  padding: 0.15rem;
   margin: 0.25rem;
-  max-width: 50rem;
-  width: fit-content;
-  margin-top: 2rem;
-
+  /* max-width: 50rem; */
+  width: 35rem;
+  margin-top: 1.5rem;
 }
 
 .accordion-header{
@@ -456,15 +455,13 @@
   justify-content: center !important;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 93%) !important;
   transition: var(--transition) !important;
-
-
+  padding: 0.45rem !important;
+  margin-right: 0.25rem !important;
 }
 
 .accordion-button:hover{ 
   color: var(--primary-white) !important;
   background-color: var(--slate)!important;
-  transition: var(--transition) !important;
-
 }
 .accordion-button:focus{
   box-shadow:none !important;
@@ -473,6 +470,7 @@
 .accordion-button.collapsed::after {
   border: none !important;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
 }
 
 .accordion-button:not(.collapsed)::after{
@@ -489,6 +487,10 @@
 
 .accordion-item{
   border: none !important;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+  transition: all 1.25s ease-in-out !important;
 }
 
 .navDivider{
@@ -639,7 +641,7 @@
   .navbar-nav > li > a
   {
     color:var(--primary-white) !important;
-    padding:0.5rem !important;
+    padding:0.25rem !important;
     background-position: right bottom;
     width: 95% !important;
   }
@@ -647,8 +649,8 @@
   .navbar-brand
   {
     max-width:17.25rem;
-    padding:0 i !important;
-    height:6rem im !important;
+    padding:0 !important;
+    height:6rem !important;
   }
 
 .navbar-nav > li > a:hover
