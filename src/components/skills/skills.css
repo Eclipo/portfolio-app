@@ -131,7 +131,8 @@
   color: var(--light-slate);
   margin-top: 16rem;
   display: block;
-  width: 75%;
+  width: 90%;
+  max-width: 35rem;
   padding: 2.25rem;
 }
 

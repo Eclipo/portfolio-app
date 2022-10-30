@@ -239,7 +239,7 @@
 
 
   .skillTable tbody p{
-    font-size: 0.475rem;
+    font-size: 0.525rem;
   }
 
 
@@ -256,8 +256,12 @@
   .resumeNavMenu{
     width: 8rem;
     display: flex;
-
   }
+
+  .duckText, .welcomeText{
+    width: 90% ;
+  }
+
 
 }
 
@@ -267,19 +271,20 @@
     display: flex;
   }
   .skillTable tbody p{
-    font-size:0.6rem;
+    font-size:0.7rem;
   }
   
   .skillPointGround{
     font-size: 1.15rem;
   }
 
+  .duckText, .welcomeText{
+    width: 75%;
+  }
  
 }
 
   @media (min-width: 30rem) {
-
-
 
     .typed-text{
       height: 5rem;
@@ -289,7 +294,7 @@
       font-size:0.8375rem;
     }
     .duckText, .welcomeText{
-      max-width: 30rem !important;
+      max-width: 30rem;
     }
 
     .seiouslyText{
@@ -440,13 +445,15 @@
 .accordion{
   padding: 0.15rem;
   margin: 0.25rem;
-  /* max-width: 50rem; */
-  width: 35rem;
+  max-width: 40rem;
+  width: fit-content;
   margin-top: 1.5rem;
+  
 }
 
 .accordion-header{
   border: none !important;
+  
 }
 
 .accordion-button{
@@ -457,6 +464,7 @@
   transition: var(--transition) !important;
   padding: 0.45rem !important;
   margin-right: 0.25rem !important;
+  border-radius: 0px !important;
 }
 
 .accordion-button:hover{ 
