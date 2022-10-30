@@ -440,7 +440,8 @@
 .accordion{
   padding: 0.25rem;
   margin: 0.25rem;
-  max-width: 30rem;
+  max-width: 50rem;
+  width: fit-content;
   margin-top: 2rem;
 
 }
