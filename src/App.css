@@ -170,18 +170,18 @@
 
   .colorBlindRedGreen {
     filter:url('./assets/filters.svg#protanopia');
-    color-interpolation-filters: url('./assets/filters.svg#protanopia');;
+    -webkit-filter: url('./assets/filters.svg#protanopia');
   }
 
   .colorBlindYellowBlue{
     filter:url('./assets/filters.svg#tritanopia');
-    -webkit-filter: url('./assets/filters.svg#tritanopia');;
+    -webkit-filter: url('./assets/filters.svg#tritanopia');
 
   }
 
   .colorBlindTotal{
     filter:url('./assets/filters.svg#achromatopsia');
-    -webkit-filter: url('./assets/filters.svg#achromatopsia');;
+    -webkit-filter: url('./assets/filters.svg#achromatopsia');
 
   }
 
