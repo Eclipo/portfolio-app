@@ -170,7 +170,7 @@
 
   .colorBlindRedGreen {
     filter:url('./assets/filters.svg#protanopia');
-    -webkit-filter: url('./assets/filters.svg#protanopia');;
+    color-interpolation-filters: url('./assets/filters.svg#protanopia');;
   }
 
   .colorBlindYellowBlue{
