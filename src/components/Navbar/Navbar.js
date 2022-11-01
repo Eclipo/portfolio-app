@@ -237,7 +237,7 @@ export const Navbar = () => {
 
                       <div className="navBtnMenu container-sm table-sm m-0">
                         <div className="row mx-auto">
-                          <div className="col">
+                          <div className="col-7">
                             <button
                               className="navSubIcon mx-auto">
                               <FontAwesomeIcon
@@ -253,7 +253,7 @@ export const Navbar = () => {
                               </p>
                             </button>
                           </div>
-                          <div className="col-md-5">
+                          <div className="col-5">
                             <p className="navP">
                               This tool shows the borders of each HTML element and is great for positioning buttons, fields, and tables. You will see more than meets the eye.
                             </p>

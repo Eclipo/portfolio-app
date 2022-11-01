@@ -16,21 +16,12 @@
   }
 
 #choiceID{
-  margin-top:-15rem !important;
+  margin-top:-12.5rem;
 }
 
-
-.welcomeText
-{
-  margin: auto !important;
-  text-align: left;
-  color:var(--lightest-slate);
-  display: inline-block;
-  width: max-content;
+.welcomeText{
+  max-width: 75%;
 }
-
-
- 
 
 }
 
@@ -49,15 +40,21 @@
 :root {
   --size-logoDivisor : 2.75;
 }
-#choiceID{
-  margin-top:0 !important;
-}
+
 }
 
 
 @media (min-width: 48rem) {
 :root {
   --size-logoDivisor : 2.25;
+}
+
+.welcomeText{
+  max-width: 50%;
+}
+
+#choiceID{
+  margin-top:-7.5rem;
 }
 
 }
@@ -70,11 +67,16 @@
 :root {
   --size-logoDivisor : 1.7;
 }
+#choiceID{
+  margin-top:-5rem;
+}
+.welcomeText{
+  max-width: 25%;
+}
 }
 
   #choiceID{
     opacity: 0;
-    margin: auto;
     display:block;
     z-index:-1;
   }
@@ -159,6 +161,14 @@
 }
 
 
+.welcomeText
+{
+  margin: auto !important;
+  text-align: left;
+  color:var(--lightest-slate);
+  display: inline-block;
+  width: fit-content;
+  }
 
 
 /* Logo */

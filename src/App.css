@@ -263,9 +263,10 @@
     display: flex;
   }
 
-  .duckText, .welcomeText{
+  .duckText{
     width: 90% ;
   }
+
 
 
 }
@@ -286,6 +287,8 @@
   .duckText, .welcomeText{
     width: 75%;
   }
+
+  
  
 }
 
@@ -313,6 +316,7 @@
     .portfolioTextContainer{
       width:30rem !important;
     }
+
   } 
 
   @media (min-width: 45rem) {
@@ -325,6 +329,7 @@
       display: inline-flex;
       width: min-content;
     }
+    
 
   }
 
@@ -447,13 +452,55 @@
     color:var(--tint-navy) !important;
   }
 
-.accordion{
-  padding: 0.15rem;
-  margin: 0.25rem;
-  max-width: 40rem;
-  width: fit-content;
-  margin-top: 1.5rem;
+  .accordion ::-webkit-scrollbar-track {
+  background-color: var(--primary-white);
+  box-shadow: inset 0 0 0.5rem var(--slate); 
+  border-radius: 0;
+  }
+
+  .accordion ::-webkit-scrollbar-thumb:vertical {
+    background-color: var(--slate);
+  }
+
+  .accordion ::-webkit-scrollbar-thumb:vertical:hover {
+    background: var(--tint-navy); 
+    height: 0.25rem !important;
+  }
   
+  #navbarSupportedContent.accordion ::-webkit-scrollbar-thumb:vertical:active {
+    background: var(--dark-slate); 
+    height: 0.25rem !important;
+  }
+
+ 
+    #navbarSupportedContent ::-webkit-scrollbar-thumb:vertical {
+      background-color: var(--primary-lightDarkGrey);
+    }
+  
+    #navbarSupportedContent ::-webkit-scrollbar-thumb:vertical:hover {
+      background: var(--tint-navy); 
+      height: 0.25rem !important;
+    }
+    
+    #navbarSupportedContent ::-webkit-scrollbar-thumb:vertical:active {
+      background: var(--dark-slate); 
+      height: 0.25rem !important;
+    }
+
+    #navbarSupportedContent ::-webkit-scrollbar-track {
+      background-color: var(--primary-white);
+      box-shadow: inset 0 0 0.5rem var(--slate); 
+      border-radius: 0;
+      }
+    
+  
+.accordion{
+ 
+  margin-top: 2.75rem;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+  min-width: 95%;
+  max-width: 35rem;
 }
 
 .accordion-header{
@@ -629,7 +676,6 @@
     cursor: pointer;    
     display: block;
     width: 98%;
-    margin-left: 0.5rem;
     margin-bottom: 0.25rem;
   }
 
