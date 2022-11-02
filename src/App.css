@@ -475,10 +475,11 @@
  
     #navbarSupportedContent ::-webkit-scrollbar-thumb:vertical {
       background-color: var(--primary-lightDarkGrey);
+      
     }
   
     #navbarSupportedContent ::-webkit-scrollbar-thumb:vertical:hover {
-      background: var(--tint-navy); 
+      background-color: var(--tint-navy);
       height: 0.25rem !important;
     }
     
@@ -490,13 +491,21 @@
     #navbarSupportedContent ::-webkit-scrollbar-track {
       background-color: var(--primary-white);
       box-shadow: inset 0 0 0.5rem var(--slate); 
-      border-radius: 0;
+      border-radius: 0 0 5px 0;
       }
     
-  
+.contactRow{
+  justify-content: left !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.contactRow .emailBtn{
+  margin-left:0 !important;
+}
 .accordion{
  
-  margin-top: 2.75rem;
+  /* margin-top: 2.75rem; */
   margin-bottom: 1.25rem;
   width: fit-content;
   min-width: 95%;
@@ -509,32 +518,39 @@
 }
 
 .accordion-button{
-  background-color: var(--light-slate) !important;
-  color: var(--dark-navy) !important;
+  background-color: var(--darkest-slate) !important;
+  border-top: 0.1rem solid var(--primary-white) !important;
+  border-left: 0.1rem solid var(--primary-white) !important;
+  border-right: 0.1rem solid var(--primary-white) !important;
+  border-bottom: 0.1rem solid var(--primary-white) !important;
+
+  color: var(--lightest-slate) !important;
   justify-content: center !important;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 93%) !important;
   transition: var(--transition) !important;
   padding: 0.45rem !important;
   margin-right: 0.25rem !important;
-  border-radius: 0px !important;
+  border-radius: 5px 5px 0 0 !important;
 }
 
 .accordion-button:hover{ 
   color: var(--primary-white) !important;
-  background-color: var(--slate)!important;
+  background-color: var(--lightest-navy)!important;
+  border: 0.1rem solid var(--primary-white);
 }
 .accordion-button:focus{
   box-shadow:none !important;
 }
 
 .accordion-button.collapsed::after {
-  border: none !important;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  border-bottom: 0 !important;
 
 }
 
 .accordion-button:not(.collapsed)::after{
-  border: none !important;
+  border-bottom: 0 !important;
+
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 
@@ -543,6 +559,7 @@
   height: fit-content !important;
   max-height: 80vh !important;
   overflow-y: auto !important;
+  border-radius: 0 5px  5px 5px !important;
 }
 
 .accordion-item{

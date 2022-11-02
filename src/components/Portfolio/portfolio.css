@@ -6,6 +6,7 @@
 .portfolioTextContainer .duckText{
   color:var(--lightest-slate) !important;
   margin-top: 0;
+  margin-bottom: 1rem;
 
    width: 100%;
   

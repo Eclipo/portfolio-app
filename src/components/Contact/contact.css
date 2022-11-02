@@ -15,7 +15,7 @@
   
   .emailBtn:hover, .linkedInIcon:hover{ 
     color: var(--primary-white) !important;
-    background-color: var(--light-navy);
+    background-color: var(--lightest-navy);
   }
 
  .linkedInIcon:hover{ 

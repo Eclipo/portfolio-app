@@ -201,7 +201,7 @@ export async function playIntroFunc() {
                         complete:function(){
                           anime({
                             targets:'#duckContainerID',
-                            opacity:[0,1],
+                            opacity:1,
                             duration:750,
                             easing: "easeInOutQuad"
                           });

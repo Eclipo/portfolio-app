@@ -6,6 +6,7 @@ import {
   faPen,
   faEye,
   faEyeSlash,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import "../../IntersectionObserver.js";
@@ -202,11 +203,31 @@ export const Navbar = () => {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
+               
             <ul
               className="navbar-nav"
               id="ulNavID"
               style={{ marginLeft: "1rem" }}
             >
+
+          <div className="contactRow container-sm row mt-3">
+            <a 
+              className="emailBtn mailText"
+              href="mailto:edipsarac.work@gmail.com" 
+              rel="noopener noreferrer" 
+              target="_blank">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="my-auto"/>
+            </a>
+       
+            <a 
+              className="emailBtn linkedInIcon my-auto" 
+              href="https://se.linkedin.com/in/edipsarac" 
+              rel="noopener noreferrer" 
+              target="_blank">in
+            </a>
+          </div>  
               <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingOne">
@@ -236,10 +257,11 @@ export const Navbar = () => {
                       <hr className="navDivider"></hr>
 
                       <div className="navBtnMenu container-sm table-sm m-0">
-                        <div className="row mx-auto">
-                          <div className="col-7">
-                            <button
-                              className="navSubIcon mx-auto">
+                        <div className="row m-auto">
+                          <div className="row m-auto">
+                          <div className="col">
+                          <button
+                              className="navSubIcon m-auto">
                               <FontAwesomeIcon
                                 className="fntAwesome"
                                 icon={faPen}
@@ -253,7 +275,9 @@ export const Navbar = () => {
                               </p>
                             </button>
                           </div>
-                          <div className="col-5">
+                            
+                          </div>
+                          <div className="row m-auto">
                             <p className="navP">
                               This tool shows the borders of each HTML element and is great for positioning buttons, fields, and tables. You will see more than meets the eye.
                             </p>
@@ -263,8 +287,6 @@ export const Navbar = () => {
                       <hr className="navDivider"></hr>
                       <div className="navBtnMenu container-sm m-0">
                         <div className="row mx-auto">
-                          <div className="col-md-7">
-                            <div className="row">
                               <div className="col">
                                 <button
                                   className="navSubIcon mx-auto"
@@ -340,9 +362,8 @@ export const Navbar = () => {
                                 </button>
                               </div>
                             </div>
-                          </div>
 
-                          <div className="col-md-5">
+                          <div className="row m-auto">
                             <p className="navP my-auto">
                               These modes simulate how people with color blindness see the web. Besides getting useful insights, it also helps me with adjusting the colors.
                             </p>
@@ -352,7 +373,6 @@ export const Navbar = () => {
                     </div>
                   </div>
                 </div>
-              </div>
               <li className="nav-item active" style={{ marginTop: "-0.25rem" }}>
                 <Link
                   smooth={true}
