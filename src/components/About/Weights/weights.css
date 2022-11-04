@@ -1,0 +1,383 @@
+﻿:root {
+  --size-divisorWeights: 1.5;
+}
+
+@media (max-width: 19.9rem) {
+  :root {
+    --size-divisorWeights: 3.25 !important;
+  }
+}
+
+@media (min-width: 20rem) {
+  :root {
+    --size-divisorWeights: 2.75 !important;
+  }
+}
+
+@media (min-width: 23rem) {
+  :root {
+    --size-divisorWeights: 2.675 !important;
+  }
+}
+@media (min-width: 36rem) {
+  :root {
+    --size-divisorWeights: 2;
+  }
+}
+@media (min-width: 48rem) {
+  :root {
+    --size-divisorWeights: 1.5;
+  }
+}
+@media (min-width: 62rem) {
+  :root {
+    --size-divisorWeights: 4;
+  }
+}
+
+@media (min-width: 75rem) {
+  :root {
+    --size-divisorWeights: 0.067;
+  }
+}
+
+@media (min-width: 80rem) {
+  :root {
+    --size-divisorWeights: 1.3;
+  }
+}
+
+/*************************Avatar *********************************/
+
+/* ******** HEAD  ******** */
+
+#tableStartWeightsGuyID {
+  transform: scale(calc(0.5 / var(--size-divisorWeights)));
+  margin: auto;
+  top: .5rem;
+  z-index: 1;
+  position: absolute;
+}
+
+.headWeights {
+  width: 0rem;
+  height: 15rem;
+  border-radius: 3.125rem;
+  background: #ffe4be;
+  margin-left: 1.8rem;
+  position: relative;
+  
+}
+
+.hairMainWeights {
+  width: 14rem;
+  height: 13rem;
+  background: #3f2a14;
+  border-radius: 3.375rem 3.375rem 0rem 0rem;
+
+  position: relative;
+}
+
+/* ******** FACE ******** */
+.faceWeights {
+  width: 11.25rem;
+  height: 8.75rem;
+  border-radius: 3rem 3rem 0 0;
+  background: #ffe4be;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 1.3rem;
+  top: 2rem;
+}
+
+.nose {
+  background: #f48e00;
+  width: 1.25rem;
+  height: 2.8125rem;
+  opacity: 1;
+  border-radius: 2.125rem;
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  margin-left: -0.625rem;
+  opacity: 1;
+  z-index: 5;
+}
+
+.eye-shadow {
+  width: 1.875rem;
+  height: 0.9375rem;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  background: rgba(149, 36, 0, 0.1);
+  position: absolute;
+  top: 4.375rem;
+}
+
+.eye-shadow#left {
+  left: 2.1875rem;
+  z-index: 5;
+}
+
+.eye-shadow#right {
+  right: 2.1875rem;
+}
+
+.eyebrow {
+  width: 2.5rem;
+  height: 0.625rem;
+  background: #3f2a14;
+  position: absolute;
+  top: -2.1875rem;
+  left: 50%;
+  margin-left: -1.25rem;
+  opacity: 1;
+}
+
+.eyeBrow_left{
+  transform: rotate(-10deg) !important;
+}
+
+.eyeBrow_right{
+  transform: rotate(10deg) !important;
+}
+
+.eye {
+  width: 1.25rem;
+  height: 1.75rem;
+  border-radius: 0.625rem;
+  background: #654921;
+  position: absolute;
+  top: -1.125rem;
+  left: 50%;
+  margin-left: -0.625rem;
+}
+
+.mouthWeights {
+  width: 4.125rem;
+  height: 1.225rem;
+  border-radius: 0 0 2.0625rem 2.0625rem;
+  background: white;
+  position: absolute;
+  top: 9.375rem;
+  left: 50%;
+  margin-left: -2.0625rem;
+  transform:rotate(180deg);
+}
+
+.shadow-wrapper {
+  width: 6.125rem;
+  height: 16.25rem;
+  position: absolute;
+  left: -0.5rem;
+  bottom: -5.25rem;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.beardWeights {
+  width: 14rem;
+  height: 4rem;
+  background: #3f2a14;
+  border-radius: 0.3125rem 0rem 3.375rem 3.375rem;
+  margin-top: -0.1rem;
+}
+
+/* ******** UPPER BODY ******** */
+
+.bodyWeights {
+  width: 18rem;
+  height: 16rem;
+  background: var(--primary-orange);
+  border-radius: 6.25rem;
+  position: absolute;
+  z-index: -1 !important;
+
+}
+
+#upperBody_1{
+  margin-bottom: -1rem;
+  z-index: 2 !important;
+
+}
+
+#upperBody_2{
+  margin-bottom: -8rem;
+}
+
+.left-shoulder-weights {
+  background: #ffe4be;
+  width: 5rem;
+  height: 8rem;
+  border-top-left-radius: 70%;
+  border-bottom-right-radius: 65%;
+  position: absolute;
+
+  float: left !important;
+  
+}
+
+.left-arm-weights {
+  background: #ffe4be;
+  width: 17rem;
+  height: 4rem;
+  margin-left: -12rem;
+  margin-top: 10rem;
+  position: absolute;
+  transform: rotate(-50deg);
+  z-index: -2 !important;
+  border-radius: 18px;
+
+}
+
+.leftHandWeights {
+  border-radius: 25%;
+  background-color: #ffe4be;
+  height: 2rem;
+  width: 1.125rem;
+  margin-left: 3rem;
+  margin-top: -1.5rem;
+  position: Absolute;
+  z-index: -2 !important;
+}
+
+.right-shoulder-weights {
+  background: #ffe4be;
+  width: 5rem;
+  height: 8rem;
+  border-top-right-radius: 70%;
+  border-bottom-left-radius: 65%;
+  float: right;
+}
+.right-arm-weights {
+  background: #ffe4be;
+  width: 17rem;
+  height: 4rem;
+  margin-left: 12.5rem;
+  margin-top:10rem;
+  transform: rotate(55deg);
+  border-radius: 18px;
+}
+
+
+.deadLift{
+  margin-left: -12.5rem;
+  align-content: left;
+  z-index: 2;
+}
+
+.bar{
+  width: 140%;
+  height:2rem;
+  background-color: var(--slate);
+  margin-top: 2rem;
+}
+
+.weight_left{
+  width: 4rem;
+  height:15rem;
+  background-color: var(--darkest-slate);
+  float: left;
+  margin-top: -6.75rem;
+  
+}
+
+.weight_right{
+  width: 4rem;
+  height:15rem;
+  background-color: var(--darkest-slate);
+  margin-top: -8.5rem;
+  margin-left: 40rem;
+}
+
+.rightHandWeights {
+  border-radius: 25%;
+  background-color: #ffe4be;
+  height: 2rem;
+  width: 1.125rem;
+  margin-left: 11rem;
+
+  margin-top: -1.5rem;
+  position: Absolute;
+}
+
+/* ******** LOWER BODY ******** */
+
+.lowerBodyWeights {
+  position: relative;
+  top: 12rem;
+  background: red;
+  width: 9rem;
+  height: 8rem;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  z-index: -2;
+}
+
+.lowerBodyLeftWeights {
+  margin-left: 1rem;
+  margin-top: 3rem;
+  z-index: -2;
+
+}
+
+#lowerBodyRightWeights {
+  margin-left: 9rem;
+  margin-top: -8rem;
+  z-index: -2;
+}
+.leftLegWeights {
+  background: #ffe4be;
+  width: 6rem;
+  height: 8rem;
+  position: absolute;
+  margin-top: 8.5rem;
+  margin-left: 1rem;
+  z-index: -1;
+}
+
+.rightLegWeights {
+  background: #ffe4be;
+  width: 6rem;
+  height: 10rem;
+  position: absolute;
+  margin-top: 8rem;
+  margin-left: 2rem;
+  z-index: -1;
+}
+
+.leftShoeWeight {
+  width: 0px;
+  height: 4rem;
+  border-top: 1rem solid transparent;
+  border-bottom: 0rem solid transparent;
+  border-right: 10rem solid;
+  color: var(--primary-orange);
+  margin-top: 8rem;
+  margin-left: -4rem;
+}
+.rightShoeWeight {
+  width: 0px;
+  height: 4rem;
+  border-top: 1rem solid transparent;
+  border-bottom: 0rem solid transparent;
+  border-left: 10rem solid;
+  color: var(--primary-orange);
+  margin-top: 8rem;
+}
+
+/************************* Environment *********************************/
+
+.basketRim {
+  transform: scale(calc(8 / var(--size-divisorWeights)));
+  margin-left: 30rem;
+  /* margin-bottom: -10rem; */
+  margin-top: -25rem;
+  z-index: -2 !important;
+  position: relative;
+}
+
+.basketBall {
+  margin-left: -25rem;
+  margin-top: -4rem;
+  transform: scale(1.1);
+}

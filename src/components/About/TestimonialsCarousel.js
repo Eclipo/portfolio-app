@@ -14,6 +14,7 @@ import flags from "./images/flags.png";
 //Family
 import { Family } from "./Family/Family";
 import { EdipBasket } from "./EdipBasket/EdipBasket";
+import { Weights } from "./Weights/Weights";
 const TestimonialsCarousel = () => {
   return (
     <Carousel
@@ -123,7 +124,33 @@ const TestimonialsCarousel = () => {
             }}
           >
             <h2 className="mt-5">Basket</h2>
-            <p>One of my passions. <br></br>I love the game</p>
+            <p>I play basketball<br></br>from time to time</p>
+          </div>
+        </div>
+      </>
+
+      <>
+        <div
+          className="containerSlide container basketContainer position-absolute"
+          style={{
+            background: "var(--primary-lightDarkGrey)",
+            height: "26.5rem",
+          }}
+        >
+          
+
+        <Weights></Weights>
+
+          <div
+            style={{
+              backgroundColor: "var(--primary-grey)",
+              width: "110%",
+              height: "55%",
+              marginTop: "12.5rem",
+            }}
+          >
+            <h2 className="mt-5">Weights</h2>
+            <p>Nowdays I try<br></br>lifting some weights</p>
           </div>
         </div>
       </>

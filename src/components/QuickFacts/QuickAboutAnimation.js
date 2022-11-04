@@ -261,6 +261,29 @@ export class QuickAboutAnimation {
       translateX: 0,
       duration: 250,
     });
+
+    
+    this.weights = anime.timeline({
+      loop: true,
+      autoplay: false,
+      easing: "linear",
+      duration: 1750,
+      direction: "alternate",
+    });
+
+    this.weights.add({
+      targets:'.faceWeights',
+      backgroundColor:['#ffe4be','#fbbdbd'],
+      duration:750
+    })
+    this.weights.add({
+      targets: [".bodyWeights", "#upperBody_1"],
+      translateY: [0, -10,0,-10,0,-15,-100],
+      easing:'easeOutQuad',
+    })
+    
+
+    
   }
 
   playOrStop(input) {
@@ -272,6 +295,7 @@ export class QuickAboutAnimation {
       this.bounceCityHall.play();
       this.bounceFlag.play();
       this.basketAnimation.play();
+      this.weights.play();
     }
 
     if (input === false) {
