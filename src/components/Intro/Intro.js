@@ -148,7 +148,7 @@ class Intro extends Component {
           </div>
         </div>
 
-        <div className='row' id='choiceID'>
+        <div className='row mx-auto' id='choiceID'>
         <h4 className='row navP' style={{color:'var(--tint-navy)'}}>
         Welcome
         </h4>
