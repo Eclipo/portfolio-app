@@ -12,14 +12,12 @@
 .skillContainer {
   margin: auto;
   margin-top: 1rem;
-  opacity: 0;
-  display: none;
+  opacity: 1;
 }
 
 #duckContainerID {
   margin-top: 2rem;
-  display: 'none';
-  opacity: 0;
+  opacity: 1;
 }
 
 
@@ -42,7 +40,7 @@
   margin: auto !important;
 
   border-radius: 10px !important;
-  opacity: 0;
+  opacity: 1;
 }
 
 .skillPoint {
@@ -54,7 +52,7 @@
   padding: 5%;
   margin: auto;
   width: fit-content !important;
-  opacity: 0;
+  opacity: 1;
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
   border-radius: 5px;
@@ -96,12 +94,10 @@
   width: 100%;
   margin: auto;
   padding: 0.5rem;
-  opacity: 0;
+  opacity: 1;
   border-radius: 18px;
   text-align: center !important;
   font-weight: 700 !important;
-
-
 }
 
 
