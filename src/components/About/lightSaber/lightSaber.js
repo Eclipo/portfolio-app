@@ -1,5 +1,5 @@
 import React from "react";
-import "../lightSaber/lightSaber.css";
+import "./lightSaber.css";
 
 export const LightSaber = () => {
   return (

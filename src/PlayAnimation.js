@@ -1,18 +1,12 @@
 import { IntroAnimation } from "./components/Intro/IntroAnimation.js";
 import { PersonalityAnimation } from "../src/components/personality/personalityAnimation.js";
-import { SkillAnimation } from "../src/components/skills/SkillAnimation.js";
-import {ResumeAnimation} from "../src/components/resumeOverview/roAnimation.js";
-import {ExperienceAnimation} from "../src/components/Experiences/experienceAnimation.js";
-import { PortfolioAnimation } from "./components/Portfolio/PortfolioAnimation.js";
+
 import anime from "animejs";
 
 
 const IntroAnime = new IntroAnimation();
-const SkillAnime = new SkillAnimation();
 const PersonalityAnime = new PersonalityAnimation();
-const ExperienceAnime = new ExperienceAnimation();
-const ResumeAnime = new ResumeAnimation();
-const PortfolioAnime = new PortfolioAnimation();
+
 
 export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID,inputTextPlayID){
   const textPlay = document.getElementById(inputTextPlayID);
@@ -78,11 +72,8 @@ export function PlayAnimation(inputID, inputPlayBoolean){
 
     const objArray  = new Array;
     objArray.push(IntroAnime);
-    objArray.push(SkillAnime);
     objArray.push(PersonalityAnime);
-    objArray.push(ExperienceAnime);
-    objArray.push(ResumeAnime);
-    objArray.push(PortfolioAnime);
+
 
 
   var idEl='#'+inputID;
@@ -98,29 +89,11 @@ export function PlayAnimation(inputID, inputPlayBoolean){
     //13000  
     delayTime = 13000;
   }
-    
-  if(currentObject === 'SkillAnimation'){
-    delayTime = 13500;
-  } 
-
-  if(currentObject === 'ResumeAnimation'){
-    delayTime = 7000;
-  } 
-
-  if(currentObject === 'ExperienceAnimation'){
-    delayTime = 8000;
-  } 
-  
-  if(currentObject === 'PortfolioAnimation'){
-    delayTime = 4000;
-  } 
-  
- 
+   
 
   objArray.forEach(element => {
     if(currentObject === element.constructor.prototype.constructor.name){
       element.playOrStop(inputPlayBoolean);
-
     }
 
   });

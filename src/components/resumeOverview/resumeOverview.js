@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 
 import "../resumeOverview/resumeOverview.css";
-import { LightSaber } from "./lightSaber/lightSaber";
+// import { LightSaber } from "./lightSaber/lightSaber";
 import "../../IntersectionObserver.js";
-import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
+// import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
 import { animateResume } from "./resumeOverviewFunctions";
 
 class ResumeOverview extends Component  {
@@ -28,12 +28,6 @@ class ResumeOverview extends Component  {
       ></div>
 
       <h1 style={{ color: "var(--primary-red" }}>Resumé <br></br>Overview</h1>
-      <PlayRefresh id="ResumeAnimation" playBoolean={true}></PlayRefresh>
-
-      <div className="flexCenter" >
-        <LightSaber></LightSaber>
-      </div>
-
       <div id="resumeContainerID">
         <div className="resumeTable">
           <div className="resumeNavMenu mt-5">

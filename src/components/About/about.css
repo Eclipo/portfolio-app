@@ -113,6 +113,33 @@
   z-index: -2;
 }
 
+.starWarsBg {
+background-color: black;
+}
+
+.stars{
+  /* position: fixed; */
+  margin: auto;
+  z-index: -2 !important;
+  margin-top: 10rem;
+  height: 1px;
+  width: 1px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 12rem -1rem 0px 3px #fff,-3rem 13rem 0px 1px #fff,22rem -1rem 1px 0px #fff,26rem -8rem 1px 3px #fff,15rem 9rem 3px 1px #fff,15rem -2rem 0px 3px #fff,-28rem -13rem 2px 0px #fff,-16rem 15rem 3px 1px #fff,21rem 8rem 0px 3px #fff,-23rem -1rem 0px 1px #fff,20rem 13rem 3px 0px #fff,5rem 4rem 0px 1px #fff,26rem 5rem 0px 0px #fff,-1rem 4rem 1px 1px #fff,16rem -12rem 0px 3px #fff,-3rem 0rem 3px 3px #fff,-9rem -14rem 1px 0px #fff,12rem 6rem 3px 3px #fff,22rem -1rem 0px 3px #fff,-26rem 11rem 0px 2px #fff,-12rem 13rem 2px 3px #fff,1rem -15rem 2px 3px #fff,19rem -15rem 1px 2px #fff,-24rem 11rem 0px 0px #fff,20rem 14rem 3px 1px #fff,-22rem 8rem 0px 1px #fff,-19rem 1rem 2px 0px #fff,-9rem 6rem 3px 1px #fff,3rem 1rem 2px 1px #fff,12rem 12rem 2px 3px #fff,-29rem -9rem 2px 3px #fff,10rem 1rem 1px 0px #fff,-21rem 9rem 2px 0px #fff,-8rem 3rem 3px 3px #fff,26rem -10rem 3px 3px #fff,16rem 6rem 2px 1px #fff,6rem -2rem 1px 0px #fff,-10rem -12rem 1px 2px #fff,17rem -12rem 3px 2px #fff,-27rem 13rem 1px 1px #fff,-14rem -1rem 1px 0px #fff,-24rem -7rem 1px 1px #fff,1rem -1rem 0px 3px #fff,18rem -9rem 3px 0px #fff,21rem 13rem 0px 2px #fff,16rem 9rem 0px 2px #fff,0rem 14rem 2px 3px #fff,-22rem 2rem 2px 2px #fff,22rem -11rem 0px 3px #fff,-28rem 9rem 2px 0px #fff,12rem -4rem 1px 3px #fff,-2rem 2rem 0px 0px #fff,-25rem -9rem 0px 2px #fff,25rem -15rem 1px 1px #fff,1rem -13rem 2px 3px #fff,-13rem 5rem 1px 2px #fff,-20rem 2rem 0px 1px #fff,-1rem -9rem 2px 1px #fff,-18rem -14rem 2px 3px #fff,-17rem 11rem 0px 3px #fff,-21rem -11rem 1px 3px #fff,-29rem 13rem 2px 3px #fff,28rem 8rem 1px 1px #fff,-7rem 15rem 1px 3px #fff,-7rem -15rem 1px 2px #fff,-1rem 10rem 2px 1px #fff,-1rem 9rem 3px 0px #fff,3rem -6rem 2px 0px #fff,-29rem -7rem 1px 0px #fff,10rem 4rem 3px 1px #fff,2rem 5rem 1px 1px #fff,23rem 8rem 3px 0px #fff,25rem -11rem 3px 2px #fff,-17rem -8rem 3px 1px #fff,7rem -2rem 2px 1px #fff,-11rem 5rem 2px 1px #fff,-20rem -15rem 3px 0px #fff,3rem -8rem 3px 1px #fff,13rem -2rem 3px 0px #fff,-26rem 14rem 2px 1px #fff,-7rem 15rem 2px 0px #fff,10rem 6rem 2px 2px #fff,-15rem -4rem 3px 2px #fff,18rem -11rem 1px 2px #fff,-24rem 12rem 0px 0px #fff,1rem 10rem 0px 3px #fff,-5rem 15rem 0px 1px #fff,-7rem -8rem 1px 2px #fff,-26rem 9rem 3px 3px #fff,12rem -9rem 3px 0px #fff,2rem -6rem 1px 2px #fff,-29rem -8rem 3px 0px #fff,-16rem 2rem 1px 2px #fff,-27rem 13rem 0px 2px #fff,27rem -5rem 0px 2px #fff,-30rem 0rem 0px 2px #fff,-3rem 7rem 0px 0px #fff,10rem 12rem 0px 0px #fff,17rem 12rem 3px 1px #fff,13rem -13rem 2px 1px #fff;
+  animation: zoom 6s infinite;
+}
+
+@keyframes zoom {
+  0%{
+      transform: scale(0.05);
+  }
+  100%{
+      transform: scale(0.65);
+
+  }
+}
+
 .flag-holder {
   width: 25%;
   height: 25%;

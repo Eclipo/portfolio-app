@@ -1,5 +1,4 @@
 import anime from "animejs";
-
 export class QuickAboutAnimation {
   constructor() {
     var windowHeight = window.outerHeight;
@@ -7,24 +6,13 @@ export class QuickAboutAnimation {
     var windowArea = windowHeight * windowWidht;
     var flagSize = windowArea * 0.0000045;
     var flagSizeIncrease = flagSize + 0.3;
+    const roGrid = [13, 10];
+
     if (windowWidht > 1200) {
       flagSize = 1.9;
       flagSizeIncrease = 2;
     }
-
-    // this.familyBlinkAnimation = anime.timeline({
-    //   loop: true,
-    //   autoplay: false,
-    //   easing: "easeInOutQuad",
-    //   direction: "alternate",
-    // });
-
-    // this.familyBlinkAnimation.add({
-    //   targets: ["#erikaEyeLeftID", "#noahEyeLeftID", "#lalehEyeLeftID"],
-    //   height: ["1.75rem", "0.5rem", "1.75rem"],
-    //   duration: 500,
-    //   delay: 750,
-    // });
+    
     this.rightHand = anime.timeline({
       loop: true,
       autoplay: false,
@@ -283,6 +271,46 @@ export class QuickAboutAnimation {
     })
     
 
+
+    this.lightSaberAnimation = anime.timeline({
+      loop: true,
+      easing: "easeInOutSine",
+      autoplay: false,
+    });
+    
+     this.lightSaberAnimation.add({
+      targets: [".emptyLightSaberSquare", ".baseLeft", ".baseCenter", ".baseRight", ".baseDarkLeft", ".baseDarkCenter", ".baseDarkRight"],
+      opacity: [0, 1],
+      easing: "linear",
+      translateX: 0,
+      translateY: 0,
+      delay: anime.stagger(50, { grid: roGrid, from: "last" })
+    });
+    
+    this.lightSaberAnimation.add({
+      targets: ".outerLightSaber, .coreLightSaber",
+      opacity: [0, 0.25, 0, 0.5, 0, 1],
+      easing: "easeOutElastic(1, .9)",
+      duration: 750,
+      endDelay: 1250
+    });
+    
+    this.lightSaberAnimation.add({
+      targets: ".outerLightSaber, .coreLightSaber",
+      opacity: [1, 0.25, 1, 0.5, 1, 0],
+      easing: "easeOutElastic(1, .9)",
+      duration: 750,
+    });
+    
+    this.lightSaberAnimation.add({
+      targets:
+        ".emptyLightSaberSquare, .baseLeft, .baseCenter, .baseRight, .baseDarkLeft, .baseDarkCenter, .baseDarkRight",
+      opacity: [1, 0],
+      easing: "linear",
+      translateX: () => anime.random(-250, 250),
+      translateY: () => anime.random(-150, 150),    
+      delay: anime.stagger(50, { grid: roGrid, from: "first" })
+    });
     
   }
 
@@ -296,6 +324,18 @@ export class QuickAboutAnimation {
       this.bounceFlag.play();
       this.basketAnimation.play();
       this.weights.play();
+      this.lightSaberAnimation.play();
+      function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min
+    }
+    
+    const STAR_COUNT = 100
+    let result = ""
+    for(let i = 0; i < STAR_COUNT; i++){
+        result += `${randomNumber(-30, 30)}rem ${randomNumber(-15, 15)}rem ${randomNumber(0, 3)}px ${randomNumber(0, 3)}px #fff,`
+    }
+    console.log(result.substring(0, result.length - 1))
+    
     }
 
     if (input === false) {
@@ -304,6 +344,8 @@ export class QuickAboutAnimation {
       this.bounceCityHall.pause();
       this.bounceFlag.pause();
       this.basketAnimation.pause();
+      this.weights.pause();
+      this.lightSaberAnimation.pause();
     }
   }
 }

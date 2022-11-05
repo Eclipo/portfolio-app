@@ -5,16 +5,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // AVATARS IMPORTS
 import stadshus from "./images/stadshuset.png";
 import cloud from "./images/miniCloud.png";
-import swedishFlag from "./images/Flag_of_Sweden.svg.png";
-import turkishFlag from "./images/Flag_of_Turkey.svg.png";
-
-import kurdishFlag from "./images/Flag_of_Kurdistan.svg.png";
 import flags from "./images/flags.png";
 
 //Family
 import { Family } from "./Family/Family";
 import { EdipBasket } from "./EdipBasket/EdipBasket";
 import { Weights } from "./Weights/Weights";
+import { LightSaber } from "./lightSaber/lightSaber";
 const TestimonialsCarousel = () => {
   return (
     <Carousel
@@ -88,7 +85,7 @@ const TestimonialsCarousel = () => {
             }}
           >
             <h2>Stockholm</h2>
-            <p>A true Stockholmare</p>
+            <p>A Stockholmare since the 80s.</p>
           </div>
         </div>
       </>
@@ -154,6 +151,31 @@ const TestimonialsCarousel = () => {
           </div>
         </div>
       </>
+
+      <>
+        <div
+          className="containerSlide container basketContainer starWarsBg position-absolute"
+         
+        >
+        <span className="stars"></span>
+        <div className="flexCenter">
+        <LightSaber></LightSaber>
+        </div>
+
+        
+          <div
+            style={{
+              width: "110%",
+              height: "65%",
+              marginTop: "-7rem",
+            }}
+          >
+            <h2 className="mt-3">Star Wars</h2>
+            <p>One of my favorite series<br></br>is the Mandalorian.</p>
+          </div>
+        </div>
+      </>
+
     </Carousel>
   );
 };

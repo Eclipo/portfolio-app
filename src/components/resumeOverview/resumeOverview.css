@@ -7,14 +7,14 @@
 }
 
 #resumeContainerID {
-  display: none;
+  display: block;
 }
 
 .resumeTable {
   width: 95%;
   margin: auto;
   border-spacing: 0;
-  opacity: 0;
+  opacity: 1;
 }
 
 .resumeTable h2 {
