@@ -1,29 +1,22 @@
 import React, { Component, useState } from "react";
 import "./experiences.css";
 import "../../IntersectionObserver.js";
-import { ExperienceAnimation } from "./experienceAnimation.js";
 import { animate } from "./experienceFunctions.js";
-import { KnucklesSvg } from "./KnucklesSvg/KnucklesSvg.js";
 import { faArrowLeft, faArrowRight,faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
 
 class Experiences extends Component {
-  expAnime = new ExperienceAnimation();
   constructor(props) {
     super(props);
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
-    this.playAnimation = this.playAnimation.bind(this);
   }
 
   handleClick(event) {
     animate(event.currentTarget.id);
   }
 
-  playAnimation() {
-    this.expAnime.playOrStop(true);
-  }
+
 
   render() {
 
@@ -37,18 +30,7 @@ class Experiences extends Component {
         <h1 style={{ color: "var(--primary-purple)" }}>Major<br></br>Experiences</h1>
        
       <div className="container-sm">
-        <div className="row m-0">
-        
-          <div id="displayKnucklesID">
-            <div className="d-flex justify-content-center" id="KnucklesContainerID">
-              <KnucklesSvg></KnucklesSvg>
-            </div>
-          </div>
-          <PlayRefresh
-          id="ExperienceAnimation"
-          playBoolean={true}>
-        </PlayRefresh>
-        </div>
+      
         <div className="row">
           <div className="container-sm row" id="expMenu">
             <div className="row mx-auto ">
@@ -208,8 +190,8 @@ class Experiences extends Component {
                   <h4
                     className="header3Tech pt-0 mt-0"
                     id="jobTitleID"
-                    style={{ color: "var(--primary-light-green)" }}
-                  ></h4>
+                    style={{ color: "var(--primary-light-green)" }}>
+                  </h4>
                 </div>
               </div>
 

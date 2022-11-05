@@ -130,7 +130,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
             //Resume Overview Section - Turn OFF Personality
             case 2:
-              // currentNavLink(5);
+              currentNavLink(5);
               PlayAnimation('SkillAnimation',1);
               PlayAnimation('PortfolioAnimation',1);                
             break;

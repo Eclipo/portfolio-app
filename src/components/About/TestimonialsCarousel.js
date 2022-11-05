@@ -12,6 +12,7 @@ import { Family } from "./Family/Family";
 import { EdipBasket } from "./EdipBasket/EdipBasket";
 import { Weights } from "./Weights/Weights";
 import { LightSaber } from "./lightSaber/lightSaber";
+import {KnucklesSvg} from "../Experiences/KnucklesSvg/KnucklesSvg";
 const TestimonialsCarousel = () => {
   return (
     <Carousel
@@ -171,7 +172,29 @@ const TestimonialsCarousel = () => {
             }}
           >
             <h2 className="mt-3">Star Wars</h2>
-            <p>One of my favorite series<br></br>is the Mandalorian.</p>
+            <p>One of my favorite series<br></br>is The Mandalorian.</p>
+          </div>
+        </div>
+      </>
+
+      <>
+        <div
+          className="containerSlide container basketContainer starWarsBg position-absolute"
+         
+        >
+        <div className="flexCenter" id="KnucklesContainerID">
+        <KnucklesSvg></KnucklesSvg>
+        </div>
+
+        
+          <div
+            style={{
+              width: "110%",
+              height: "65%",              
+            }}
+          >
+            <h2 className="knucklesText">Video games</h2>
+            <p>My favorite character Knuckles from Sonic the hedgehog 3.<br></br>Love the music and the graphics</p>
           </div>
         </div>
       </>

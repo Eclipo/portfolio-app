@@ -93,8 +93,8 @@
 
   #KnucklesContainerID {
     display: block;
-    margin-top: -13rem;
-    transform: scale(0.5);
+    margin-top: 25rem;
+    transform: scale(0.15);
   }
  
 }
@@ -106,23 +106,23 @@
 }
 
 #displayKnucklesID{
-  display: none;
+  
   z-index: 1 !important;
 }
 
 #KnucklesContainerID {
   display: flex;
   width: 100%;
-  opacity: 0;
   z-index: -1 !important;
+  transform: scale(0.15);
+
 }
 
 #expMenu {
-  opacity: 0;
+  opacity: 1;
   padding: 1%;
   position: relative;
   width: 90%;
-  display: none;
   margin: auto;
 }
 
@@ -201,7 +201,7 @@
 
 /************************* EXP Information *********************************/
 #_container {
-  opacity: 0;
+  opacity: 1;
 }
 
 #_header {

@@ -1,34 +1,32 @@
-import anime from "animejs";
-import {KnucklesSvgAnimation} from './KnucklesSvg/KnucklesSvgAnimation.js';
+// import anime from "animejs";
+// import {KnucklesSvgAnimation} from './KnucklesSvg/KnucklesSvgAnimation.js';
 
 
-export class ExperienceAnimation{
+// export class ExperienceAnimation{
     
-    constructor(){
-    }
+//     constructor(){
+//     }
 
   
 
-        playOrStop(input){
+//         playOrStop(input){
 
-                if(input === true){              
-                KnucklesSvgAnimation();
-                }
+//                 if(input === true){              
+//                 KnucklesSvgAnimation();
+//                 }
 
-                if(input === false){
+//                 if(input === false){
                   
-                    anime({
-                        targets:['#knucklesContainer','#expMenu','#_container'],
-                        opacity:0
-                    });
+//                     anime({
+//                         targets:['#knucklesContainer','#expMenu','#_container'],
+//                         opacity:0
+//                     });
 
-                    const expMenu = document.getElementById('expMenu');
-                    expMenu.style.display='none';
-                }       
-        }
-
-    
-}
+//                     const expMenu = document.getElementById('expMenu');
+//                     expMenu.style.display='none';
+//                 }       
+//         }
+// }
     
 
     

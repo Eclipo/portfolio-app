@@ -1,4 +1,5 @@
 import anime from "animejs";
+import { KnucklesSvgAnimation } from "../Experiences/KnucklesSvg/KnucklesSvgAnimation";
 export class QuickAboutAnimation {
   constructor() {
     var windowHeight = window.outerHeight;
@@ -6,6 +7,17 @@ export class QuickAboutAnimation {
     var windowArea = windowHeight * windowWidht;
     var flagSize = windowArea * 0.0000045;
     var flagSizeIncrease = flagSize + 0.3;
+
+    const displayKnuckles = document.getElementById('displayKnucklesID');
+    const knuckles = document.getElementById('KnucklesContainerID');
+    const knucklesSVG = document.getElementById('KnucklesSvgID');
+
+    var setDashoffset = function(el) {
+      var l = el.getTotalLength();
+      el.setAttribute('stroke-dasharray', l);
+      return [l,0];
+    }
+  
     const roGrid = [13, 10];
 
     if (windowWidht > 1200) {
@@ -312,6 +324,116 @@ export class QuickAboutAnimation {
       delay: anime.stagger(50, { grid: roGrid, from: "first" })
     });
     
+    
+  this.knucklesAnime = anime.timeline({
+    loop: true,
+    autoplay: false
+  });
+
+  this.knucklesAnime.add({
+            targets:'#KnucklesContainerID',
+            opacity:1,
+            duration:2000,
+            delay:250});
+
+          
+            this.knucklesAnime.add({         
+              targets:['#darkRedHeadID','#darkRedSkinID','#redSkinID','#testLines path',
+              '#faceID','#shoeOrangeID','#greenShoeID','#noseAndShoeGreyID','#eyesGlovesWhiteID',],
+              fill:'#000000',
+              duration:50,
+            });
+  
+          this.knucklesAnime.add({         
+                targets:'#KnucklesSvgID',
+                opacity:1,
+                duration:50});
+
+                this.knucklesAnime.add({         
+
+                  targets: '#testLines path',
+                  strokeDashoffset: [anime.setDashoffset,0],
+                  easing: 'easeInElastic(1, 0.2)',                  
+                  duration: 2500,
+                  delay: function(el, i) { return i * 150 },
+                  endDelay:2000,
+                });
+
+                  this.knucklesAnime.add({
+                      targets: '#darkRedHeadID',
+                      fill:'#611211',
+                      opacity:1,
+                      duration:150,
+                      endDelay:100
+                    });
+
+                    this.knucklesAnime.add({
+                      targets: '#darkRedSkinID',
+                      fill:'#a51515',
+                      opacity:1,
+                      duration:150,
+                      endDelay:100
+                    });
+
+                    this.knucklesAnime.add({
+                      targets: '#redSkinID',
+                      fill:'#e21b19',
+                      opacity:1,
+                      duration:150,
+                      endDelay:100
+                    });
+
+                    this.knucklesAnime.add({
+                      targets: '#faceID',
+                      fill:'#fbccad',
+                      opacity:1,
+                      duration:150,
+                      endDelay:100
+                    });
+
+                    this.knucklesAnime.add({
+                      targets: '#shoeOrangeID',
+                      fill:'#f0a51d',
+                      
+                      opacity:1,
+                      duration:150,
+                      endDelay:100
+                    });
+                                      
+                    this.knucklesAnime.add({
+                      targets: '#greenShoeID',
+                      fill:'#00a819',
+                      opacity:1,
+                      duration:150,
+                      endDelay:100
+                    });
+                                    
+                    this.knucklesAnime.add({
+                      targets: '#noseAndShoeGreyID',
+                      fill:'#524f4f',
+                      opacity:1,
+                      duration:150,
+                      endDelay:100
+
+                    });
+
+                    this.knucklesAnime.add({
+                      targets: '#eyesGlovesWhiteID',
+                      fill:'#f5f5f5',
+                      opacity:1,
+                      duration:150,
+                      endDelay:1500
+                    });
+
+                    this.knucklesAnime.add({         
+                      targets:'#KnucklesSvgID',
+                      opacity:[1,0],
+                      duration:1150,
+                      endDelay:250,
+                      easing:'linear'
+                    });
+
+
   }
 
   playOrStop(input) {
@@ -325,6 +447,8 @@ export class QuickAboutAnimation {
       this.basketAnimation.play();
       this.weights.play();
       this.lightSaberAnimation.play();
+      this.knucklesAnime.play();
+
       function randomNumber(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min
     }
@@ -346,6 +470,7 @@ export class QuickAboutAnimation {
       this.basketAnimation.pause();
       this.weights.pause();
       this.lightSaberAnimation.pause();
+      this.knucklesAnime.pause();    
     }
   }
 }
