@@ -1,5 +1,5 @@
 import React from "react";
-import "../Mario/mario.css";
+import "./mario.css";
 
 export const Mario = () => {
   return (

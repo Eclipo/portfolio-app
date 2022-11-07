@@ -192,6 +192,7 @@ export const Navbar = () => {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+           
           >
             <FontAwesomeIcon
               icon={isActive ? faClose : faBars}

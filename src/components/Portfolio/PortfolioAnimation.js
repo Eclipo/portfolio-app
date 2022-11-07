@@ -1,10 +1,4 @@
-import anime from "animejs";
-import { playMarioFunc } from "./introPortfolioAnime";
 import { playPostFunc } from "./postPortfolioAnime";
-// import { playIntroFunc } from "./introSkillAnime";
-// import { playPostFunc } from "./postPortfolioAnime";
-// const ratio = 0.25 * window.innerWidth;
-
 export class PortfolioAnimation {
   constructor() {}
 

@@ -42,7 +42,7 @@
     --slate: #8892b0;
     --light-slate: #a8b2d1;
     --lightest-slate: #c9d1f5;
-    --whiteBg-hover: #c9d1f567;
+    --whiteBg-hover: #c9d1f5c2;
     --white: #e6f1ff;
     --green: #64ffda;
     --green-tint: rgba(100, 255, 219, 0.404);
@@ -450,9 +450,9 @@
 }
 
 
-  /* .fntAwesome:hover{
-    color:var(--tint-navy) !important;
-  } */
+   .fntAwesome{
+    color:var(--lightest-navy) !important;
+  } 
 
   .accordion ::-webkit-scrollbar-track {
   background-color: var(--primary-white);
@@ -606,17 +606,17 @@
   
   .navSubIcon{
     color: var(--primary-blue);
-    border:none !important;
-    background-color: transparent;
+    border:0.05rem solid var(--darkest-slate) !important;
     width: fit-content;
     display: block;
     border-radius: 18px;
+    transition: var(--transition);
 
   }
 
   .navSubIcon:hover{
     color: var(--slate);
-    background-color: var(--whiteBg-hover) !important;
+    background-color: var(--slate) !important;
   }
 
   .navSubIcon:focus{
@@ -657,6 +657,11 @@
     background-color: none;
     position: sticky;
     position:-webkit-sticky;
+    transition: var(--transition);
+  }
+
+  #navbarTogglerID:hover{
+    background-color: var(--dark-slate) !important;
   }
 
   #navbarSupportedContent{
@@ -678,10 +683,10 @@
   color:var(--light-slate) !important;
 
   }
-
+/* 
   #navIconID:hover{
     color:var(--tint-navy) !important;
-  }
+  } */
 
   nav
   {

@@ -13,7 +13,7 @@ import { EdipBasket } from "./EdipBasket/EdipBasket";
 import { Weights } from "./Weights/Weights";
 import { LightSaber } from "./lightSaber/lightSaber";
 import {KnucklesSvg} from "../Experiences/KnucklesSvg/KnucklesSvg";
-import { Mario } from "../Portfolio/Mario/mario";
+import { Mario } from "./Mario/mario";
 const TestimonialsCarousel = () => {
   return (
     <Carousel

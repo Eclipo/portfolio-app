@@ -41,7 +41,7 @@ export const leftNavigate = (inputID) => {
         // alert('LEFT next:'+nextStory);
         anime({
             targets:'#'+currentStory,
-            opacity:[1,0],
+            opacity:0,
             duration:750,
             easing:'linear',
             complete:function(){
@@ -49,7 +49,7 @@ export const leftNavigate = (inputID) => {
                 document.getElementById(nextStory).style.display="block";
                 anime({
                     targets:'#'+nextStory,
-                    opacity:[0,1],
+                    opacity:1,
                     delay:850,
                     easing:'linear',
                     duration:750,
@@ -96,27 +96,29 @@ export const rightNavigate = (inputID) => {
            
     anime({
         targets:'#'+currentStory,
-        opacity:[1,0],
-        duration:1250,
+        opacity:0,
+        duration:250,
         easing:'linear',
+        endDelay:500,
         complete:function(){
             document.getElementById(currentStory).style.display="none";
+            anime({
+                targets:'#'+nextStory,
+                opacity:1,
+                delay:1350,
+                easing:'linear',
+                duration:1250,
+                begin:function(){
+                    document.getElementById(nextStory).style.display="block";
+                },
+                complete:function(){
+                    disableScroll.off();
+                }
+            });
         }
     });
 
-    anime({
-        targets:'#'+nextStory,
-        opacity:[0,1],
-        delay:1350,
-        easing:'linear',
-        duration:1250,
-        begin:function(){
-            document.getElementById(nextStory).style.display="block";
-        },
-        complete:function(){
-            disableScroll.off();
-        }
-    });
+  
 
     if(chapterIndex === 5){
         document.getElementById('rightBtnID').disabled=true;

@@ -132,7 +132,7 @@ class Intro extends Component {
           <br></br><br></br>
           Being a web developer, I want to offer a more creative and personal alternative in contrast to the traditional cover letter and LinkedIn. 
           <br></br><br></br>
-          Simply <span style={{color:'var(--tint-navy)'}}> scroll down </span>or use the<span style={{color:'var(--tint-navy)'}}> navbar </span>in the upper right corner to navigate through the different sections.
+          Simply <span style={{color:'var(--tint-navy)'}}> scroll down </span> to view more. Or you can use the<span style={{color:'var(--tint-navy)'}}> navbar </span> which also has some design tools.
         </p>
       
         <div className="row">

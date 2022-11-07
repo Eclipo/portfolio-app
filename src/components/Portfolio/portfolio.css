@@ -7,17 +7,25 @@
   margin-top: 0;
   margin-bottom: 1rem;
 
-   width: 100%;
+   width: 90%;
   
 }
 #portfolioID{
   margin-bottom: 0 !important;
 }
 
+.portfolioNavBtn{
+  background-color: var(--light-navy);
+  border-radius: 18px;
+  max-width: 90%;
+  margin-bottom: -0.5rem !important;
+  
+}
 .btnContainer{
   background-color: transparent;
   border-color: transparent;
 }
+
 .leftBtn{
 transform: rotate(180deg);
 width: 2rem;
@@ -31,6 +39,21 @@ opacity: 0.5;
   height: 2rem;
   color: var(--primary-white);
   }
+
+  .rightBtn:hover{
+    color:var(--slate) !important;
+  }
+  .rightBtn:active{
+    color:var(--dark-slate) !important;
+  }
+
+  .leftBtn:hover{
+    color:var(--slate) !important;
+  }
+  .leftBtn:active{
+    color:var(--dark-slate) !important;
+  }
+
 
 .portfolioTextContainer{
   margin: auto;
