@@ -451,8 +451,10 @@
 
 
    .fntAwesome{
-    color:var(--lightest-navy) !important;
+    color:var(--lightest-slate);
   } 
+
+ 
 
   .accordion ::-webkit-scrollbar-track {
   background-color: var(--primary-white);
@@ -616,7 +618,7 @@
 
   .navSubIcon:hover{
     color: var(--slate);
-    background-color: var(--slate) !important;
+    background-color: var(--lightest-slate) !important;
   }
 
   .navSubIcon:focus{
@@ -661,8 +663,11 @@
   }
 
   #navbarTogglerID:hover{
-    background-color: var(--dark-slate) !important;
+    background-color: var(--lightest-navy) !important;
   }
+
+
+
 
   #navbarSupportedContent{
     position: fixed;

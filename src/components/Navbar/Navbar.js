@@ -197,9 +197,6 @@ export const Navbar = () => {
             <FontAwesomeIcon
               icon={isActive ? faClose : faBars}
               id="navIconID"
-              style={{
-                color: isActive ? "var(--tint-navy)" : "var(--tint-navy)",
-              }}
             />
           </button>
 
@@ -265,13 +262,13 @@ export const Navbar = () => {
                               className="navSubIcon m-auto"
                               onClick={outlineMode}
                               style={{
-                                  backgroundColor: isRed ?   "var(--primary-lightGrey)" :  "transparent"
+                                  backgroundColor: isRed ?   "var(--light-slate)" :  "transparent"
                                 }}>
                               <FontAwesomeIcon
                                 className="fntAwesome"
                                 icon={faPen}
                                 style={{
-                                  color: isRed ? "var(--dark-slate)" : "var(--slate)"
+                                  color: isRed ? "var(--darkest-navy)" : "var(--dark-slate)"
                                 }}
                                
                               ></FontAwesomeIcon>
@@ -298,16 +295,14 @@ export const Navbar = () => {
                                   style={{
                                     borderRadius: "18px",
                                     borderColor: "var(--slate)",
-                                    backgroundColor: isCbRedGreen ?   "var(--primary-lightGrey)" :  "transparent"
+                                    backgroundColor: isCbRedGreen ? "var(--light-slate)" :  "transparent"
                                   }}
                                   onClick={cbRedGreenMode}>
                                   <FontAwesomeIcon
                                     className="fntAwesome"
                                     icon={isCbRedGreen ? faEye : faEyeSlash}
                                     style={{
-                                      color: isCbRedGreen
-                                        ? "var(--dark-slate)"
-                                        : "var(--slate)",
+                                      color: isCbRedGreen ? "var(--darkest-navy)" : "var(--dark-slate)"
                                     }}
                                   
                                   ></FontAwesomeIcon>
@@ -324,7 +319,7 @@ export const Navbar = () => {
                                   style={{
                                     borderRadius: "18px",
                                     borderColor: "var(--slate)",
-                                    backgroundColor: isCbYellowBlue ?   "var(--primary-lightGrey)" :  "transparent"
+                                    backgroundColor: isCbYellowBlue ? "var(--light-slate)" :  "transparent"
                                   }}
                                   onClick={cbYellowBlueMode}
                                 >
@@ -332,9 +327,7 @@ export const Navbar = () => {
                                     className="fntAwesome"
                                     icon={isCbYellowBlue ? faEye : faEyeSlash}
                                     style={{
-                                      color: isCbYellowBlue
-                                        ? "var(--dark-slate)"
-                                        : "var(--slate)",
+                                      color: isCbYellowBlue ? "var(--darkest-navy)" : "var(--dark-slate)"
                                     }}></FontAwesomeIcon>
                                   <p className="row navP text-center">
                                     Yellow & Blue<br></br>
@@ -349,7 +342,7 @@ export const Navbar = () => {
                                   style={{
                                     borderRadius: "18px",
                                     borderColor: "var(--slate)",
-                                    backgroundColor: isCbTotal ?   "var(--primary-lightGrey)" :  ""
+                                    backgroundColor: isCbTotal ?  "var(--light-slate)" :  "transparent"
 
                                   }}
                                   onClick={cbTotalMode}>
@@ -357,9 +350,7 @@ export const Navbar = () => {
                                     className="fntAwesome"
                                     icon={isCbTotal ? faEye : faEyeSlash}
                                     style={{
-                                      color: isCbTotal
-                                        ? "var(--dark-slate)"
-                                        : "var(--slate)",
+                                      color: isCbTotal ? "var(--darkest-navy)" : "var(--dark-slate)"
                                     }}
                                   ></FontAwesomeIcon>
                                   <p className="row navP text-center">

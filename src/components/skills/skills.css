@@ -122,6 +122,10 @@
   color: var(--primary-white) !important;
 }
 
+.duckContainer{
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
 .duckText {
   margin: auto;
   text-align: left;

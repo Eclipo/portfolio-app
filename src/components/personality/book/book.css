@@ -1,0 +1,175 @@
+﻿:root {
+  --size-bookDivisor: 1.5;
+}
+@media (max-width: 19.9rem) {
+  :root {
+    --size-bookDivisor: 6;
+  }
+}
+
+@media (min-width: 20rem) {
+  :root {
+    --size-bookDivisor: 4;
+  }
+}
+@media (min-width: 25rem) {
+  :root {
+    --size-bookDivisor: 3.75;
+  }
+}
+
+#bookID {
+  transform: scale(calc(2 / var(--size-bookDivisor)));
+
+  /* margin-top: -5rem; */
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+.bookBackground-circle {
+  width: 26.25rem;
+  height: 26.25rem;
+  border-radius: 100%;
+  overflow: hidden;
+  background: #95b3bf !important;
+  background: transparent;
+  position: relative;
+  border: 1rem solid var(--primary-blue);
+  z-index: -1;
+}
+
+.bookHead {
+  width: 12.25rem;
+  height: 16.25rem;
+  border-radius: 3.125rem;
+  background: #eeebe6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13.125rem;
+  margin-left: -6.125rem;
+  z-index: 3;
+}
+
+.bookFace {
+  width: 12rem;
+  height: 16rem;
+  border-radius:18px;
+  background: #817663;
+  position: absolute;
+  top: 5rem;
+  left: 20%;
+  z-index: 2 !important;
+}
+
+.bookFace_2 {
+  width: 12rem;
+  height: 16rem;
+  border-radius:18px;
+  background: #5b5447;
+  position: absolute;
+  top: 2.75rem;
+  left: 25%;
+  z-index: -1 !important;
+}
+
+
+
+.bookBody {
+  width: 11rem;
+  height: 16rem;
+  margin: 0 auto;
+  background: #eeebe6;
+  border-radius:18px;
+  position: relative;
+  left: -2%;
+  top: 3.5rem;
+  margin-bottom: 5%;
+  z-index: 1 !important;
+  /* display: none; */
+}
+
+.bookEye {
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: -1.125rem;
+  left: 50%;
+  margin-left: -0.625rem;
+}
+#bookEye_one{
+  /* margin-left: -1.5rem; */
+}
+
+#bookEye_two{
+  /* margin-left: 2rem; */
+}
+
+.bookEye-shadow {
+  width: 1.875rem;
+  height: 0.9375rem;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  background: rgba(50, 39, 35, 0.637);
+  position: absolute;
+  top: 4.375rem;
+  z-index: 2;
+}
+
+.bookEye-shadow#bookLeft {
+  left: 1.25rem;
+  z-index: 5;
+}
+
+.bookEye-shadow#bookRight {
+  right: 5.25rem;
+}
+
+.bookEyebrow {
+  width: 2.75rem;
+  height: 1rem;
+  background: #3f2a14;
+  position: absolute;
+  top: -1.8rem;
+  left: 50%;
+  margin-left: -1.25rem;
+  opacity: 1;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+}
+
+.bookMouthUpper {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background: var(--primary-pink);
+  position: absolute;
+  top: 5.5rem;
+  right: 65%;
+  /* display: none; */
+}
+
+.bookMouthUnder {
+  width: 5rem;
+  height: 0.5rem;
+  border-radius: 18px;
+  background: black;
+  position: absolute;
+  top: 8rem;
+  right: 45%;
+}
+
+.shadow-wrapper {
+  width: 6.125rem;
+  height: 16.25rem;
+  position: absolute;
+  left: -0.5rem;
+  bottom: -5.25rem;
+  z-index: 4;
+  overflow: hidden;
+}

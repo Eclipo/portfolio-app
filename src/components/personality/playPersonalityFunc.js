@@ -261,21 +261,21 @@ const playEmpathy = anime({
       duration: 150,
     });
 
-   
+    
+    const bookEyeBrowAnim = anime.timeline({
+      loop: true,
+      autoplay: false,
+      direction: "alternate",
+      easing: "easeInOutQuad",
+    });
 
-    const brokenBannerAnim = anime.timeline({
-      loop:true,
-      autoplay:false,
-      direction:'alternate'
-  });
-  
-  brokenBannerAnim.add({
-      targets:['.brokenLetterC','.brokenLetterK'],
-      opacity:[0,1,0,0,1],
-      delay:anime.stagger(500),
-      duration:1050,
-      endDelay:500
-  })
+    bookEyeBrowAnim.add({
+      targets: ".bookEyebrow",
+      translateY: [0, "-0.5rem", "0.5rem"],
+      delay: 500,
+      duration: 500,
+    });
+   
     
     if(inputBoolean === true){ 
       anime.remove("#personalityContainerID");
@@ -292,19 +292,14 @@ const playEmpathy = anime({
     playStructure.restart();
     playEmpathy.restart();
     wiggleCard.restart();
-    brokenBannerAnim.restart();
+    bookEyeBrowAnim.play();
     
    
   }
 
   if(inputBoolean === false){
     anime.remove(".personalityTraits");
-    anime.remove(".brokenLetterC");
-    anime.remove(".brokenLetterK");
-    anime.remove(".brokenBanner");
-
     anime.remove(".personalityCard");
-    
-
+    anime.remove("bookEyebrow");
   }
 }

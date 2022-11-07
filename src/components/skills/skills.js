@@ -588,7 +588,7 @@ class Skills extends Component {
           <div className="row">
           <h2 style={{ color: "var(--primary-blue"}}>I am a duck</h2>
 
-            <div className="flexCenter">
+            <div className="flexCenter duckContainer">
             
               <Duck></Duck>
             </div>

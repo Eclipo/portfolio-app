@@ -147,7 +147,10 @@
   margin: auto;
   opacity: 0;
 }
-
+.bookContainer{
+  margin-top: -4.75rem;
+  margin-bottom: -5rem;
+}
 .personalityTextContainer .duckText{
   color:var(--lightest-slate) !important;
    margin: 0;

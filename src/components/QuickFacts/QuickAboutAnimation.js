@@ -480,7 +480,11 @@ export class QuickAboutAnimation {
       this.basketAnimation.pause();
       this.weights.pause();
       this.lightSaberAnimation.pause();
-      this.knucklesAnime.pause();    
+      this.marioArmHandRightAnimation.pause();
+      this.marioLegRightAnimation.pause();
+      this.marioArmHandLeftAnimation.pause();
+      this.marioLegLeftAnimation.pause();
+      this.marioAnimation.pause();
     }
   }
 }

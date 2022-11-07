@@ -3,9 +3,11 @@ import { PersonalityAnimation } from "../src/components/personality/personalityA
 import { PortfolioAnimation } from "./components/Portfolio/PortfolioAnimation.js";
 
 import anime from "animejs";
+import { SkillAnimation } from "./components/skills/SkillAnimation.js";
 
 
 const IntroAnime = new IntroAnimation();
+const SkillsAnime = new SkillAnimation();
 const PersonalityAnime = new PersonalityAnimation();
 const PortfolioAnime = new PortfolioAnimation();
 
@@ -73,9 +75,10 @@ export function PlayAnimation(inputID, inputPlayBoolean){
 
     const objArray  = new Array;
     objArray.push(IntroAnime);
+    objArray.push(SkillsAnime);
     objArray.push(PersonalityAnime);
     objArray.push(PortfolioAnime);
-
+  
 
   var idEl='#'+inputID;
   var currentObject = inputID.substring(inputID.indexOf("_") + 1);
@@ -83,7 +86,6 @@ export function PlayAnimation(inputID, inputPlayBoolean){
 
   if(currentObject === 'IntroAnimation'){
     delayTime = 4500;
-
   }
 
   if(currentObject === 'PersonalityAnimation'){
