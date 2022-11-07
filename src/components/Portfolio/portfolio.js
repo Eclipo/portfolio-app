@@ -31,11 +31,6 @@ class Portfolio extends Component {
           style={{backgroundColor:"var(--primary-pink)" }}
         ></div>
         <h1 style={{ color: "var(--primary-pink" }}>The story</h1>
-        <PlayRefresh id="PortfolioAnimation" playBoolean={0}></PlayRefresh>
-
-        <div className="flexCenter">
-          <Mario></Mario>
-        </div>
 
         <div className="flexCenter" id="portfolioContainerID">
           <div className="flexCenter portfolioTextContainer">

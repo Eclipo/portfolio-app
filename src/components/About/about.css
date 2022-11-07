@@ -105,67 +105,44 @@
   /* padding: 1rem; */
 }
 
+.containerSlide h2{
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
 .basketContainer {
   background: var(--primary-blue);
   height: 25rem;
-  /* position: absolute; */
   margin-top: 2rem;
   z-index: -2;
 }
 
 .starWarsBg {
 background-color: black;
+overflow-x: hidden;
 }
 
 .stars{
-  /* position: fixed; */
   margin: auto;
-  z-index: -2 !important;
+  z-index: -30 !important;
   margin-top: 10rem;
   height: 1px;
   width: 1px;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 12rem -1rem 0px 3px #fff,-3rem 13rem 0px 1px #fff,22rem -1rem 1px 0px #fff,26rem -8rem 1px 3px #fff,15rem 9rem 3px 1px #fff,15rem -2rem 0px 3px #fff,-28rem -13rem 2px 0px #fff,-16rem 15rem 3px 1px #fff,21rem 8rem 0px 3px #fff,-23rem -1rem 0px 1px #fff,20rem 13rem 3px 0px #fff,5rem 4rem 0px 1px #fff,26rem 5rem 0px 0px #fff,-1rem 4rem 1px 1px #fff,16rem -12rem 0px 3px #fff,-3rem 0rem 3px 3px #fff,-9rem -14rem 1px 0px #fff,12rem 6rem 3px 3px #fff,22rem -1rem 0px 3px #fff,-26rem 11rem 0px 2px #fff,-12rem 13rem 2px 3px #fff,1rem -15rem 2px 3px #fff,19rem -15rem 1px 2px #fff,-24rem 11rem 0px 0px #fff,20rem 14rem 3px 1px #fff,-22rem 8rem 0px 1px #fff,-19rem 1rem 2px 0px #fff,-9rem 6rem 3px 1px #fff,3rem 1rem 2px 1px #fff,12rem 12rem 2px 3px #fff,-29rem -9rem 2px 3px #fff,10rem 1rem 1px 0px #fff,-21rem 9rem 2px 0px #fff,-8rem 3rem 3px 3px #fff,26rem -10rem 3px 3px #fff,16rem 6rem 2px 1px #fff,6rem -2rem 1px 0px #fff,-10rem -12rem 1px 2px #fff,17rem -12rem 3px 2px #fff,-27rem 13rem 1px 1px #fff,-14rem -1rem 1px 0px #fff,-24rem -7rem 1px 1px #fff,1rem -1rem 0px 3px #fff,18rem -9rem 3px 0px #fff,21rem 13rem 0px 2px #fff,16rem 9rem 0px 2px #fff,0rem 14rem 2px 3px #fff,-22rem 2rem 2px 2px #fff,22rem -11rem 0px 3px #fff,-28rem 9rem 2px 0px #fff,12rem -4rem 1px 3px #fff,-2rem 2rem 0px 0px #fff,-25rem -9rem 0px 2px #fff,25rem -15rem 1px 1px #fff,1rem -13rem 2px 3px #fff,-13rem 5rem 1px 2px #fff,-20rem 2rem 0px 1px #fff,-1rem -9rem 2px 1px #fff,-18rem -14rem 2px 3px #fff,-17rem 11rem 0px 3px #fff,-21rem -11rem 1px 3px #fff,-29rem 13rem 2px 3px #fff,28rem 8rem 1px 1px #fff,-7rem 15rem 1px 3px #fff,-7rem -15rem 1px 2px #fff,-1rem 10rem 2px 1px #fff,-1rem 9rem 3px 0px #fff,3rem -6rem 2px 0px #fff,-29rem -7rem 1px 0px #fff,10rem 4rem 3px 1px #fff,2rem 5rem 1px 1px #fff,23rem 8rem 3px 0px #fff,25rem -11rem 3px 2px #fff,-17rem -8rem 3px 1px #fff,7rem -2rem 2px 1px #fff,-11rem 5rem 2px 1px #fff,-20rem -15rem 3px 0px #fff,3rem -8rem 3px 1px #fff,13rem -2rem 3px 0px #fff,-26rem 14rem 2px 1px #fff,-7rem 15rem 2px 0px #fff,10rem 6rem 2px 2px #fff,-15rem -4rem 3px 2px #fff,18rem -11rem 1px 2px #fff,-24rem 12rem 0px 0px #fff,1rem 10rem 0px 3px #fff,-5rem 15rem 0px 1px #fff,-7rem -8rem 1px 2px #fff,-26rem 9rem 3px 3px #fff,12rem -9rem 3px 0px #fff,2rem -6rem 1px 2px #fff,-29rem -8rem 3px 0px #fff,-16rem 2rem 1px 2px #fff,-27rem 13rem 0px 2px #fff,27rem -5rem 0px 2px #fff,-30rem 0rem 0px 2px #fff,-3rem 7rem 0px 0px #fff,10rem 12rem 0px 0px #fff,17rem 12rem 3px 1px #fff,13rem -13rem 2px 1px #fff;
-  animation: zoom 6s infinite;
+  box-shadow: -21rem -15rem 1px 2px #fff,5rem -13rem 2px 2px #fff,0rem -13rem 0px 3px #fff,-1rem -1rem 3px 3px #fff,-9rem -15rem 1px 2px #fff,27rem -3rem 0px 2px #fff,4rem -4rem 2px 3px #fff,-14rem -5rem 2px 0px #fff,19rem -12rem 0px 3px #fff,-20rem -11rem 3px 3px #fff,28rem -4rem 3px 1px #fff,-15rem -4rem 0px 2px #fff,-24rem 11rem 1px 2px #fff,11rem 3rem 1px 2px #fff,-3rem 3rem 2px 3px #fff,-9rem 8rem 1px 3px #fff,-30rem -6rem 1px 3px #fff,4rem 14rem 0px 0px #fff,-27rem 10rem 1px 0px #fff,17rem -5rem 2px 0px #fff,-30rem 14rem 3px 3px #fff,-18rem 0rem 0px 2px #fff,23rem 8rem 3px 0px #fff,-2rem -3rem 3px 1px #fff,-23rem 4rem 0px 2px #fff,5rem -11rem 0px 3px #fff,-3rem -13rem 3px 1px #fff,7rem 4rem 3px 2px #fff,4rem 10rem 1px 2px #fff,-7rem -10rem 1px 3px #fff,-6rem 11rem 0px 3px #fff,13rem -8rem 3px 2px #fff,19rem -11rem 0px 2px #fff,-26rem -13rem 1px 0px #fff,6rem -12rem 2px 3px #fff,-21rem -14rem 3px 1px #fff,25rem -2rem 0px 0px #fff,-17rem -12rem 0px 3px #fff,-25rem -13rem 1px 0px #fff,28rem -15rem 0px 3px #fff,26rem 2rem 0px 1px #fff,9rem -10rem 1px 2px #fff,24rem -1rem 3px 1px #fff,-2rem -12rem 0px 1px #fff,7rem -4rem 1px 0px #fff,9rem 14rem 3px 0px #fff,-26rem -9rem 0px 3px #fff,-26rem -9rem 0px 1px #fff,-21rem -12rem 3px 3px #fff,-27rem -4rem 2px 1px #fff,24rem 4rem 3px 1px #fff,-3rem 4rem 0px 2px #fff,21rem -14rem 3px 2px #fff,3rem -14rem 0px 1px #fff,-7rem -6rem 1px 3px #fff,9rem -6rem 0px 1px #fff,0rem 1rem 1px 0px #fff,30rem 11rem 3px 1px #fff,-19rem 8rem 0px 3px #fff,2rem -2rem 3px 3px #fff,4rem -5rem 3px 3px #fff,13rem -11rem 2px 2px #fff,3rem 14rem 2px 2px #fff,11rem 8rem 3px 1px #fff,-7rem 0rem 1px 1px #fff,26rem -10rem 3px 0px #fff,12rem -3rem 1px 1px #fff,16rem 8rem 1px 1px #fff,21rem -9rem 3px 0px #fff,15rem -2rem 1px 2px #fff,4rem -14rem 2px 3px #fff,11rem 8rem 0px 2px #fff,-26rem -12rem 1px 1px #fff,-16rem 2rem 1px 2px #fff,4rem -10rem 1px 3px #fff,28rem 6rem 3px 1px #fff,-23rem 12rem 3px 3px #fff,5rem 13rem 2px 0px #fff,12rem 13rem 2px 0px #fff,-14rem -10rem 0px 2px #fff,-25rem 15rem 2px 3px #fff,25rem 7rem 2px 1px #fff,12rem -2rem 1px 2px #fff,9rem -5rem 1px 0px #fff,15rem -11rem 3px 2px #fff,-30rem -5rem 2px 3px #fff,-20rem 0rem 1px 0px #fff,-12rem -7rem 1px 1px #fff,20rem -3rem 1px 2px #fff,17rem 11rem 0px 2px #fff,9rem 4rem 3px 0px #fff,4rem 6rem 0px 1px #fff,-21rem 2rem 0px 0px #fff,-22rem -5rem 3px 3px #fff,-16rem 15rem 0px 2px #fff,-9rem -8rem 2px 3px #fff,-6rem -7rem 0px 2px #fff,-4rem 10rem 0px 0px #fff,27rem -8rem 2px 1px #fff,5rem 6rem 2px 0px #fff;
 }
 
-@keyframes zoom {
-  0%{
-      transform: scale(0.05);
-  }
-  100%{
-      transform: scale(0.65);
 
-  }
-}
-#KnucklesContainerID {
-  display: flex;
-  width: 100%;
-  opacity: 0;
-  z-index: -1 !important;
-}
-
-.knucklesText{
-  margin-top: -22rem;
-}
 
 .flag-holder {
   width: 25%;
   height: 25%;
-  /* margin:1.75rem; */
-
-  /* padding:0.25rem; */
 }
 
 .flagContainer {
   display: inline-block;
-  /* justify-content: center; */
-  /* margin: auto; */
-  /* width:fit-content ; */
-  /* margin-right: 5.rem; */
   margin-left: -4rem;
-  /* margin-top: 3.5rem; */
 }
 
 .cityHall {

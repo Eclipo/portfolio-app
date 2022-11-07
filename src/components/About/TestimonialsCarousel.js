@@ -13,6 +13,7 @@ import { EdipBasket } from "./EdipBasket/EdipBasket";
 import { Weights } from "./Weights/Weights";
 import { LightSaber } from "./lightSaber/lightSaber";
 import {KnucklesSvg} from "../Experiences/KnucklesSvg/KnucklesSvg";
+import { Mario } from "../Portfolio/Mario/mario";
 const TestimonialsCarousel = () => {
   return (
     <Carousel
@@ -86,7 +87,7 @@ const TestimonialsCarousel = () => {
             }}
           >
             <h2>Stockholm</h2>
-            <p>A Stockholmare since the 80s.</p>
+            <p>Borned in this beautiful city.</p>
           </div>
         </div>
       </>
@@ -147,7 +148,7 @@ const TestimonialsCarousel = () => {
               marginTop: "12.5rem",
             }}
           >
-            <h2 className="mt-5">Weights</h2>
+            <h2 className="mt-4">Weights</h2>
             <p>Nowdays I try<br></br>lifting some weights</p>
           </div>
         </div>
@@ -156,9 +157,9 @@ const TestimonialsCarousel = () => {
       <>
         <div
           className="containerSlide container basketContainer starWarsBg position-absolute"
-         
+            id="starsWarsID"
         >
-        <span className="stars"></span>
+        <span className="stars" id="starsID"></span>
         <div className="flexCenter">
         <LightSaber></LightSaber>
         </div>
@@ -180,21 +181,26 @@ const TestimonialsCarousel = () => {
       <>
         <div
           className="containerSlide container basketContainer starWarsBg position-absolute"
-         
+          style={{
+            background: "var(--primary-blue)",
+          }}
         >
-        <div className="flexCenter" id="KnucklesContainerID">
-        <KnucklesSvg></KnucklesSvg>
+        <div className="flexCenter">
+        <Mario></Mario>
+
         </div>
 
-        
           <div
             style={{
+              backgroundColor: "var(--primary-dark-brown)",
               width: "110%",
-              height: "65%",              
+              height: "65%",
+              marginTop: "14.75rem",
+              
             }}
           >
-            <h2 className="knucklesText">Video games</h2>
-            <p>My favorite character Knuckles from Sonic the hedgehog 3.<br></br>Love the music and the graphics</p>
+            <h2 className="">Video games</h2>
+            <p>I love retrogames<br></br> from the 80s and 90s.</p>
           </div>
         </div>
       </>

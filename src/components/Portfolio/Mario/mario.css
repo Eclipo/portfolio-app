@@ -1,9 +1,9 @@
 #marioContainer {
-  opacity: 0;
-  margin-bottom: 5rem;
-  margin: auto;
+margin-top: 4rem;  
+margin: auto;
   width: fit-content;
   position: absolute;
+  transform: scale(0.75) !important;
 }
 .marioHead, .marioFace, .marioBody{
   display: block;

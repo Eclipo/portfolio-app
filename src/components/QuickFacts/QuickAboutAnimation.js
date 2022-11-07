@@ -289,6 +289,13 @@ export class QuickAboutAnimation {
       easing: "easeInOutSine",
       autoplay: false,
     });
+
+    this.lightSaberAnimation.add({
+      targets:".stars",
+      scale:[0.05,0.5],
+      easing:"easeOutQuad",
+      duration:750
+    })
     
      this.lightSaberAnimation.add({
       targets: [".emptyLightSaberSquare", ".baseLeft", ".baseCenter", ".baseRight", ".baseDarkLeft", ".baseDarkCenter", ".baseDarkRight"],
@@ -303,8 +310,8 @@ export class QuickAboutAnimation {
       targets: ".outerLightSaber, .coreLightSaber",
       opacity: [0, 0.25, 0, 0.5, 0, 1],
       easing: "easeOutElastic(1, .9)",
-      duration: 750,
-      endDelay: 1250
+      duration: 550,
+      endDelay: 1500
     });
     
     this.lightSaberAnimation.add({
@@ -321,117 +328,113 @@ export class QuickAboutAnimation {
       easing: "linear",
       translateX: () => anime.random(-250, 250),
       translateY: () => anime.random(-150, 150),    
-      delay: anime.stagger(50, { grid: roGrid, from: "first" })
+      delay: anime.stagger(40, { grid: roGrid, from: "first" })
     });
     
-    
-  this.knucklesAnime = anime.timeline({
+    const ratio = 0.25 * window.innerWidth;
+  const marioContainer = document.getElementById('marioContainer');
+ 
+  this.marioAnimation = anime.timeline({
     loop: true,
-    autoplay: false
+    autoplay: false,
+    duration: 350,
+
+    easing:'linear',
+    endDelay:250,
+    direction:'alternate'
+  });
+  
+
+  this.marioArmHandRightAnimation = anime.timeline({
+        loop: true,
+        autoplay: false,
+        duration: 350,
+
+        easing:'linear',
+        delay:1500,
+        endDelay:250,
+        direction:'alternate'
+      });
+
+      this.marioLegRightAnimation = anime.timeline({
+        loop: true,
+        autoplay: false,
+        duration: 350,
+
+        easing:'linear',
+        delay:1500,
+        endDelay:250,
+        direction:'alternate'
+      });
+
+      this.marioLegLeftAnimation = anime.timeline({
+        loop: true,
+        autoplay: false,
+        duration: 350,
+    
+        easing:'linear',
+        delay:1500,
+        endDelay:250,
+        direction:'alternate'
+        });
+    
+        
+        this.marioArmHandLeftAnimation = anime.timeline({
+          loop: true,
+          autoplay: false,
+          duration: 350,
+          delay:1500,
+          easing:'linear',
+          endDelay:250,
+          direction:'alternate'
+          });
+
+        this.marioLegRightAnimation.add({
+      targets:'.marioLegShoeRight',
+      translateY:[0,'6rem'],
+      translateX:[0,'-8rem'],
+    rotate:[0,'-45deg'],
+    // scale:0.8
+
   });
 
-  this.knucklesAnime.add({
-            targets:'#KnucklesContainerID',
-            opacity:1,
-            duration:2000,
-            delay:250});
+  this.marioArmHandRightAnimation.add({
+      targets:'.marioArmRight',
+      translateY:[0,'-6rem'],
+      translateX:[0,'0.25rem'],
+    rotate:[0,'-180deg'],
+    // scale:0.8
 
-          
-            this.knucklesAnime.add({         
-              targets:['#darkRedHeadID','#darkRedSkinID','#redSkinID','#testLines path',
-              '#faceID','#shoeOrangeID','#greenShoeID','#noseAndShoeGreyID','#eyesGlovesWhiteID',],
-              fill:'#000000',
-              duration:50,
-            });
+  });
+
   
-          this.knucklesAnime.add({         
-                targets:'#KnucklesSvgID',
-                opacity:1,
-                duration:50});
+ 
 
-                this.knucklesAnime.add({         
+  this.marioLegLeftAnimation.add({
+      targets:'.marioLegShoeLeft',
+      translateY:[0,'3rem'],
+      translateX:[0,'4.5rem'],
+    rotate:[0,'25deg'],
+    // scale:0.8
 
-                  targets: '#testLines path',
-                  strokeDashoffset: [anime.setDashoffset,0],
-                  easing: 'easeInElastic(1, 0.2)',                  
-                  duration: 2500,
-                  delay: function(el, i) { return i * 150 },
-                  endDelay:2000,
-                });
+  });
 
-                  this.knucklesAnime.add({
-                      targets: '#darkRedHeadID',
-                      fill:'#611211',
-                      opacity:1,
-                      duration:150,
-                      endDelay:100
-                    });
 
-                    this.knucklesAnime.add({
-                      targets: '#darkRedSkinID',
-                      fill:'#a51515',
-                      opacity:1,
-                      duration:150,
-                      endDelay:100
-                    });
+  this.marioArmHandLeftAnimation.add({
+        targets:'.marioArmLeft',
+        translateY:[0,'-2rem'],
+        translateX:[0,'-1.25rem'],
+      rotate:[0,'90deg'],
+      // scale:0.8
 
-                    this.knucklesAnime.add({
-                      targets: '#redSkinID',
-                      fill:'#e21b19',
-                      opacity:1,
-                      duration:150,
-                      endDelay:100
-                    });
+    });
 
-                    this.knucklesAnime.add({
-                      targets: '#faceID',
-                      fill:'#fbccad',
-                      opacity:1,
-                      duration:150,
-                      endDelay:100
-                    });
 
-                    this.knucklesAnime.add({
-                      targets: '#shoeOrangeID',
-                      fill:'#f0a51d',
-                      
-                      opacity:1,
-                      duration:150,
-                      endDelay:100
-                    });
-                                      
-                    this.knucklesAnime.add({
-                      targets: '#greenShoeID',
-                      fill:'#00a819',
-                      opacity:1,
-                      duration:150,
-                      endDelay:100
-                    });
-                                    
-                    this.knucklesAnime.add({
-                      targets: '#noseAndShoeGreyID',
-                      fill:'#524f4f',
-                      opacity:1,
-                      duration:150,
-                      endDelay:100
+      
+     
 
-                    });
 
-                    this.knucklesAnime.add({
-                      targets: '#eyesGlovesWhiteID',
-                      fill:'#f5f5f5',
-                      opacity:1,
-                      duration:150,
-                      endDelay:1500
-                    });
 
-                    this.knucklesAnime.add({         
-                      targets:'#KnucklesSvgID',
-                      opacity:[1,0],
-                      duration:1150,
-                      endDelay:250,
-                      easing:'linear'
-                    });
 
 
   }
@@ -447,17 +450,24 @@ export class QuickAboutAnimation {
       this.basketAnimation.play();
       this.weights.play();
       this.lightSaberAnimation.play();
-      this.knucklesAnime.play();
-
+      this.marioArmHandRightAnimation.play();
+      this.marioLegRightAnimation.play();
+      this.marioArmHandLeftAnimation.play();
+      this.marioLegLeftAnimation.play();
+      this.marioAnimation.play();
+      
       function randomNumber(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min
     }
     
     const STAR_COUNT = 100
     let result = ""
+
     for(let i = 0; i < STAR_COUNT; i++){
         result += `${randomNumber(-30, 30)}rem ${randomNumber(-15, 15)}rem ${randomNumber(0, 3)}px ${randomNumber(0, 3)}px #fff,`
     }
+ 
+    
     console.log(result.substring(0, result.length - 1))
     
     }

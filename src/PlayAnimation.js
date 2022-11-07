@@ -1,12 +1,13 @@
 import { IntroAnimation } from "./components/Intro/IntroAnimation.js";
 import { PersonalityAnimation } from "../src/components/personality/personalityAnimation.js";
+import { PortfolioAnimation } from "./components/Portfolio/PortfolioAnimation.js";
 
 import anime from "animejs";
 
 
 const IntroAnime = new IntroAnimation();
 const PersonalityAnime = new PersonalityAnimation();
-
+const PortfolioAnime = new PortfolioAnimation();
 
 export function AnimationPlayRefreshBegin (inputPlayID, inputRefreshID,inputTextPlayID){
   const textPlay = document.getElementById(inputTextPlayID);
@@ -73,7 +74,7 @@ export function PlayAnimation(inputID, inputPlayBoolean){
     const objArray  = new Array;
     objArray.push(IntroAnime);
     objArray.push(PersonalityAnime);
-
+    objArray.push(PortfolioAnime);
 
 
   var idEl='#'+inputID;
