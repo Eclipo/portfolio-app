@@ -261,14 +261,18 @@ export const Navbar = () => {
                           <div className="row m-auto">
                           <div className="col">
                           <button
-                              className="navSubIcon m-auto">
+                              className="navSubIcon m-auto"
+                              onClick={outlineMode}
+                              style={{
+                                  backgroundColor: isRed ?   "var(--primary-lightGrey)" :  "transparent"
+                                }}>
                               <FontAwesomeIcon
                                 className="fntAwesome"
                                 icon={faPen}
                                 style={{
-                                  color: isRed ? "var(--dark-slate)" : "var(--slate)",
+                                  color: isRed ? "var(--dark-slate)" : "var(--slate)"
                                 }}
-                                onClick={outlineMode}
+                               
                               ></FontAwesomeIcon>
                               <p className="row navP text-center">
                                 Red outliner
@@ -293,8 +297,9 @@ export const Navbar = () => {
                                   style={{
                                     borderRadius: "18px",
                                     borderColor: "var(--slate)",
+                                    backgroundColor: isCbRedGreen ?   "var(--primary-lightGrey)" :  "transparent"
                                   }}
-                                >
+                                  onClick={cbRedGreenMode}>
                                   <FontAwesomeIcon
                                     className="fntAwesome"
                                     icon={isCbRedGreen ? faEye : faEyeSlash}
@@ -303,7 +308,7 @@ export const Navbar = () => {
                                         ? "var(--dark-slate)"
                                         : "var(--slate)",
                                     }}
-                                    onClick={cbRedGreenMode}
+                                  
                                   ></FontAwesomeIcon>
                                   <p className="row navP text-center">
                                     Red & Green<br></br>
@@ -318,7 +323,9 @@ export const Navbar = () => {
                                   style={{
                                     borderRadius: "18px",
                                     borderColor: "var(--slate)",
+                                    backgroundColor: isCbYellowBlue ?   "var(--primary-lightGrey)" :  "transparent"
                                   }}
+                                  onClick={cbYellowBlueMode}
                                 >
                                   <FontAwesomeIcon
                                     className="fntAwesome"
@@ -327,9 +334,7 @@ export const Navbar = () => {
                                       color: isCbYellowBlue
                                         ? "var(--dark-slate)"
                                         : "var(--slate)",
-                                    }}
-                                    onClick={cbYellowBlueMode}
-                                  ></FontAwesomeIcon>
+                                    }}></FontAwesomeIcon>
                                   <p className="row navP text-center">
                                     Yellow & Blue<br></br>
                                     (Tritanopia)
@@ -343,8 +348,10 @@ export const Navbar = () => {
                                   style={{
                                     borderRadius: "18px",
                                     borderColor: "var(--slate)",
+                                    backgroundColor: isCbTotal ?   "var(--primary-lightGrey)" :  ""
+
                                   }}
-                                >
+                                  onClick={cbTotalMode}>
                                   <FontAwesomeIcon
                                     className="fntAwesome"
                                     icon={isCbTotal ? faEye : faEyeSlash}
@@ -353,7 +360,6 @@ export const Navbar = () => {
                                         ? "var(--dark-slate)"
                                         : "var(--slate)",
                                     }}
-                                    onClick={cbTotalMode}
                                   ></FontAwesomeIcon>
                                   <p className="row navP text-center">
                                     Shades of grey <br></br>

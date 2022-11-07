@@ -18,43 +18,17 @@ class Intro extends Component {
   }
 
   handleClick(event) {
-    // animate(event.currentTarget.id);
     document.body.style.backgroundColor = 'var(--primary-white)';
     
     document.getElementById('customNav').style.display='none';
     document.getElementById('fullNavbarID').style.display='none';
-
-    // document.getElementById('customNav').style.opacity='0';
-
-    // document.getElementById('introSectionID').style.display='none';
-
-    // document.getElementById('quickFacts').style.display='none';
-    // document.getElementById('aboutMe').style.display='none';
-    // document.getElementById('skills').style.display='none';
-    // document.getElementById('personality').style.display='none';
     const wrappers = document.querySelectorAll(".sectionAnimation");
     wrappers.forEach((entry) => {
     entry.setAttribute('style','display:none');
     });
 
-
-    // document.getElementById('').style.display='none';
-    // document.getElementById('').style.display='none';
-    // anime({
-    //   targets:'.sectionAnimation',
-    //   opacity:[1,0],
-    //   duration:500,
-    //   complete:function(){
-    //     wrappers.forEach((entry) => {
-    //       entry.setAttribute('style','display:none');
-    //     });
-    //   }
-    // });
-
     let resumeOverview = document.getElementById('#resumeOverview').style;
     resumeOverview.setAttribute('style','display:block');
-
-    
 
   }
 
@@ -158,7 +132,7 @@ class Intro extends Component {
           <br></br><br></br>
           Being a web developer, I want to offer a more creative and personal alternative in contrast to the traditional cover letter and LinkedIn. 
           <br></br><br></br>
-          You can either<span style={{color:'var(--tint-navy)'}}> scroll down </span>or use the<span style={{color:'var(--tint-navy)'}}> navbar </span>in the upper right corner to navigate through the different sections.
+          Simply <span style={{color:'var(--tint-navy)'}}> scroll down </span>or use the<span style={{color:'var(--tint-navy)'}}> navbar </span>in the upper right corner to navigate through the different sections.
         </p>
       
         <div className="row">

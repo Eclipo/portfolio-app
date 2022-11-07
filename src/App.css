@@ -42,6 +42,7 @@
     --slate: #8892b0;
     --light-slate: #a8b2d1;
     --lightest-slate: #c9d1f5;
+    --whiteBg-hover: #c9d1f567;
     --white: #e6f1ff;
     --green: #64ffda;
     --green-tint: rgba(100, 255, 219, 0.404);
@@ -449,9 +450,9 @@
 }
 
 
-  .fntAwesome:hover{
+  /* .fntAwesome:hover{
     color:var(--tint-navy) !important;
-  }
+  } */
 
   .accordion ::-webkit-scrollbar-track {
   background-color: var(--primary-white);
@@ -609,11 +610,13 @@
     background-color: transparent;
     width: fit-content;
     display: block;
+    border-radius: 18px;
 
   }
 
   .navSubIcon:hover{
     color: var(--slate);
+    background-color: var(--whiteBg-hover) !important;
   }
 
   .navSubIcon:focus{

@@ -142,11 +142,17 @@
 .resumeNav h2{
   margin: auto;
   color:var(--light-slate);
+  transition:var(--transition);
 }
 
 .resumeNav:hover h2{
   color:var(--primary-red);
 }
+
+.resumeNav:hover{
+  background-color: var(--dark-navy);
+}
+
 
  #resumeLangID.resumeNavFocus{
   background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
