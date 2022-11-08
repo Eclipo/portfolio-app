@@ -28,11 +28,12 @@
   display: table-cell;
   vertical-align: middle;
   position: relative;
+  
 }
 
 .bookBackground-circle {
-  width: 26.25rem;
-  height: 26.25rem;
+  width: 24rem;
+  height: 25rem;
   border-radius: 100%;
   overflow: hidden;
   background: #95b3bf !important;
@@ -60,6 +61,13 @@
   height: 16rem;
   border-radius:18px;
   background: #817663;
+    background: repeating-linear-gradient(
+    91deg,
+    #3d3c3a 1px,
+    #322c21 1px,
+    #856d43 1px,
+    #5f5240 0.25rem
+  );
   position: absolute;
   top: 5rem;
   left: 20%;
@@ -67,27 +75,27 @@
 }
 
 .bookFace_2 {
-  width: 12rem;
+  width: 13rem;
   height: 16rem;
   border-radius:18px;
-  background: #5b5447;
+  background: rgb(72, 65, 52);
   position: absolute;
-  top: 2.75rem;
-  left: 25%;
+  top: 3.1rem;
+  left: 20%;
   z-index: -1 !important;
 }
 
 
 
 .bookBody {
-  width: 11rem;
+  width: 12rem;
   height: 16rem;
   margin: 0 auto;
   background: #eeebe6;
   border-radius:18px;
   position: relative;
   left: -2%;
-  top: 3.5rem;
+  top: 3.70rem;
   margin-bottom: 5%;
   z-index: 1 !important;
   /* display: none; */
