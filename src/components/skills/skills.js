@@ -20,7 +20,7 @@ class Skills extends Component {
           style={{ backgroundColor: "var(--primary-blue)" }}
         ></div>
         <h1 style={{ color: "var(--primary-blue" }}>Skills</h1>
-
+    
         <div
           className="container-sm skillContainer"
           id="skillContainerID">
@@ -582,6 +582,17 @@ class Skills extends Component {
               {/* <SkillDivider className="rolesTheme"></SkillDivider> */}
             </tbody>
           </table>
+          <div className="duckText mt-4 m-0">
+          <h4></h4>
+            <ul className="a">
+              <li><p>NOOB = Struggling with the basics and I haven't been paid for the skill.</p></li>
+              <li><p>BASIC = Got the basics covered and I worked professionally with it.</p></li>
+              <li><p>LAGOM = A swedish word for "good enough" and it is very positive among Swedes. I am quite self-going but still need help from others.</p></li>
+              <li><p>PRO = An technical oracle with great wisedom. It is usually someone who has 15 years left to retirement.</p></li>
+              <li><p>LEGEND = On par with Alan Turing, Grade Hopper and Bill Gates.</p></li>
+
+            </ul>
+          </div>
         </div>
       
         <div className="container-sm" id="duckContainerID">          
