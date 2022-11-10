@@ -494,13 +494,6 @@ class Skills extends Component {
               {/* <SkillDivider className="rolesTheme"></SkillDivider> */}
             </tbody>
           </table>
-          <div className="duckText m-0 ml-2">
-            <ul>
-              <li>
-              <p className="p-italic">*Intermediate</p>
-              </li>
-            </ul>
-          </div>
         </div>
       
         <div className="container-sm" id="duckContainerID">          
@@ -515,17 +508,18 @@ class Skills extends Component {
 
             <div className="row">
               <div className="duckText">
-                <p>As a developer, I slowly became <span className="highLight"> multidisciplinary </span> just like a <span className="highLight"> duck</span>:</p>
+                <p>
+                  As a developer, I slowly became <span className="highLight"> multidisciplinary </span> just like a <span className="highLight"> duck</span>:</p>
                 <ul className="skillBullet">
                   <li>I can fly through <span className="highLight"> HTML, CSS and JavaScript</span>.</li><br></br>
                   <li>I can waddle in the dale of<span className="highLight"> .Net </span>and pull off some<span className="highLight"> C#</span>.</li><br></br>
                   <li>I can even paddle in the great seas of<span className="highLight"> MSSQL databases</span>.</li>
                 </ul>
-                  <p>
+                
+                <p>
                   I can get by in the whole stack where front-end is my stronger forte. 
-                  Occasionally I need support from the senior developers when facing a code-bug from hell or in the making of a solid plan before getting my hands dirty.<br></br><br></br>
-                  The bottom line is I am not a senior (pro) and I am absolutely not a Bill Gates (legend) but hopefully I am good enough or as we say in Swedish<span className="highLight"> Lagom </span>. 
-                  </p>
+                  Occasionally I need support from the senior developers when facing a code-bug from hell or in the making of a solid plan before getting my hands dirty.
+                </p>
               </div>
             </div>
           </div>
