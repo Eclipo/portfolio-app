@@ -230,7 +230,8 @@
     vertical-align: middle !important;
     word-wrap: break-word;
     word-spacing: normal;
-    ;
+
+    color:var(--light-slate);
   }
 
   /* Specialtext - undantag från paragraph*/ 

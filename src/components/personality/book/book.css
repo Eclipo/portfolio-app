@@ -62,11 +62,11 @@
   border-radius:18px;
   background: #817663;
     background: repeating-linear-gradient(
-    91deg,
+    100deg,
     #3d3c3a 1px,
     #322c21 1px,
-    #856d43 1px,
-    #5f5240 0.25rem
+    #8f713d 2px,
+    #5f5240 2px
   );
   position: absolute;
   top: 5rem;
@@ -78,7 +78,13 @@
   width: 13rem;
   height: 16rem;
   border-radius:18px;
-  background: rgb(72, 65, 52);
+    background: repeating-linear-gradient(
+    100deg,
+    #3d3c3a 1px,
+    #322c21 1px,
+    rgb(72, 65, 52) 2px,
+    #5f5240 2px
+  );
   position: absolute;
   top: 3.1rem;
   left: 20%;

@@ -87,7 +87,7 @@ const TestimonialsCarousel = () => {
             }}
           >
             <h2>Stockholm</h2>
-            <p>Borned in this beautiful city.</p>
+            <p>My hometown and I still live here.</p>
           </div>
         </div>
       </>
@@ -200,7 +200,7 @@ const TestimonialsCarousel = () => {
             }}
           >
             <h2 className="">Video games</h2>
-            <p>I love retrogames<br></br> from the 80s and 90s.</p>
+            <p>I have a passion for retrogames <br></br>from the late 80s and the 90s.</p>
           </div>
         </div>
       </>

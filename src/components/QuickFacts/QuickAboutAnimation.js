@@ -464,7 +464,7 @@ export class QuickAboutAnimation {
     let result = ""
 
     for(let i = 0; i < STAR_COUNT; i++){
-        result += `${randomNumber(-30, 30)}rem ${randomNumber(-15, 15)}rem ${randomNumber(0, 3)}px ${randomNumber(0, 3)}px #fff,`
+        result += `${randomNumber(-35, 35)}rem ${randomNumber(-15, 15)}rem ${randomNumber(0, 3)}px ${randomNumber(0, 3)}px #fff,`
     }
  
     
