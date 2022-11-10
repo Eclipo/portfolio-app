@@ -87,7 +87,7 @@ class Skills extends Component {
                     Pro
                   </h3>
                 </td>
-          
+                  
               </tr>
             </thead>
             
@@ -95,7 +95,7 @@ class Skills extends Component {
         
               <tr>
               
-              <td>
+                <td>
                   <p className="skill frontEndTheme">
                     ReactJS
                   </p>
@@ -107,7 +107,7 @@ class Skills extends Component {
                     Angular
                   </p>
                 </td>
-
+                  
                 <td>
                   <p className="skill frontEndTheme" id="skillElemAndInter">
                     TypeScript
@@ -123,7 +123,7 @@ class Skills extends Component {
               </tr>
 
               <tr>
-                
+                  
 
                 <td>
                   <div
@@ -131,7 +131,7 @@ class Skills extends Component {
                     style={{ opacity: "0" }}
                   ></div>
                 </td>
-                 <td> 
+                <td>
                   <p className="skill frontEndTheme">
                     Redux
                   </p>
@@ -256,7 +256,7 @@ class Skills extends Component {
                     C#
                   </p>
                 </td>
-                <td> 
+                <td>
                   <p className="skill frontEndTheme" id="skillElemAndInter">
                     AnimeJS
                   </p>
@@ -285,7 +285,7 @@ class Skills extends Component {
                   ></div>
                 </td>
               
-                <td>
+                <td> 
                   <div
                     className="skillPointGround"
                     style={{ opacity: "0" }}
