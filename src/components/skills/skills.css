@@ -127,11 +127,6 @@ ul.a {
   color: var(--primary-white) !important;
 }
 
-.applicationsTheme {
-  background-color: rgb(65, 107, 185) !important;
-  color: var(--primary-white) !important;
-}
-
 .rolesTheme {
   background-color: rgb(52, 101, 193) !important;
   color: var(--primary-white) !important;
