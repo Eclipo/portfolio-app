@@ -234,6 +234,9 @@
     color:var(--light-slate);
   }
 
+  .p-italic{
+    font-style: italic !important;
+  }
   /* Specialtext - undantag från paragraph*/ 
   .skill{
     font-size:0.6rem;

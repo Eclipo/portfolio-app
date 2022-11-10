@@ -57,7 +57,7 @@ class Skills extends Component {
                     id="Beginner"
                     style={{ marginBottom: "2%" }}
                   >
-                    Noob
+                    Novice
                   </h3>
                 </td>
                 <td>
@@ -67,7 +67,7 @@ class Skills extends Component {
                     id="Elementary"
                     style={{ marginBottom: "2%" }}
                   >
-                    Basic
+                    Junior
                   </h3>
                 </td>
                 <td>
@@ -75,7 +75,7 @@ class Skills extends Component {
                     className="skillPointGround"
                     id="Intermediate"
                     style={{ marginBottom: "2%" }}>
-                    Interm*
+                    Mid-level
                   </h3>
                 </td>
                 <td>
@@ -84,7 +84,7 @@ class Skills extends Component {
                     className="skillPointGround"
                     id="Advanced"
                     style={{ marginBottom: "2%" }}>
-                    Pro
+                    Senior
                   </h3>
                 </td>
           
@@ -482,7 +482,7 @@ class Skills extends Component {
           <div className="duckText m-0 ml-2">
             <ul>
               <li>
-              <p>*Intermediate</p>
+              <p className="p-italic">*Intermediate</p>
               </li>
             </ul>
           </div>
