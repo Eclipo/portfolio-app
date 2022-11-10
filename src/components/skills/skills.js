@@ -59,16 +59,23 @@ class Skills extends Component {
                   >
                     Novice
                   </h3>
+                  <div
+                    className="sectionLine "
+                     >
+                  </div>
                 </td>
                 <td>
                   
                   <h3
                     className="skillPointGround"
                     id="Elementary"
-                    style={{ marginBottom: "2%" }}
-                  >
+                    style={{ marginBottom: "2%" }}>
                     Junior
                   </h3>
+                  <div
+                    className="sectionLine "
+                    >
+                  </div>
                 </td>
                 <td>
                   <h3
@@ -77,6 +84,10 @@ class Skills extends Component {
                     style={{ marginBottom: "2%" }}>
                     Mid-level
                   </h3>
+                  <div
+                    className="sectionLine "
+                     >
+                  </div>
                 </td>
                 <td>
                   
@@ -86,6 +97,10 @@ class Skills extends Component {
                     style={{ marginBottom: "2%" }}>
                     Senior
                   </h3>
+                  <div
+                    className="sectionLine "
+                     >
+                  </div>
                 </td>
                   
               </tr>
@@ -500,17 +515,17 @@ class Skills extends Component {
 
             <div className="row">
               <div className="duckText">
-                As a developer, I slowly became <span className="highLight"> multidisciplinary </span> just like a <span className="highLight"> duck</span>:
-                <br></br><br></br> 
+                <p>As a developer, I slowly became <span className="highLight"> multidisciplinary </span> just like a <span className="highLight"> duck</span>:</p>
                 <ul className="skillBullet">
                   <li>I can fly through <span className="highLight"> HTML, CSS and JavaScript</span>.</li><br></br>
                   <li>I can waddle in the dale of<span className="highLight"> .Net </span>and pull off some<span className="highLight"> C#</span>.</li><br></br>
                   <li>I can even paddle in the great seas of<span className="highLight"> MSSQL databases</span>.</li>
                 </ul>
-                <span className="highLight">So how good of a duck am I?</span><br></br>
+                  <p>
                   I can get by in the whole stack where front-end is my stronger forte. 
                   Occasionally I need support from the senior developers when facing a code-bug from hell or in the making of a solid plan before getting my hands dirty.<br></br><br></br>
                   The bottom line is I am not a senior (pro) and I am absolutely not a Bill Gates (legend) but hopefully I am good enough or as we say in Swedish<span className="highLight"> Lagom </span>. 
+                  </p>
               </div>
             </div>
           </div>

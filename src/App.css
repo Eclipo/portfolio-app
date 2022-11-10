@@ -222,7 +222,7 @@
     font-size:1rem !important;
   }
 
-  p{
+  p, ul>li{
     font-style: var(--font-mono) !important;
     font-weight: 625 !important;
     
@@ -286,9 +286,9 @@
     font-size:0.7rem;
   }
   
-  .skillPointGround{
+  /* .skillPointGround{
     font-size: 1.15rem;
-  }
+  } */
 
   .duckText, .welcomeText{
     width: 75%;

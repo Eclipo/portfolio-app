@@ -77,11 +77,19 @@ ul.a {
 .skillPointGround {
   padding: 0% !important;
   /* margin: 3% !important; */
-  color: var(--tint-navy);
+  color: var(--lightest-slate);
   border-radius: 5px;
   /* text-transform: uppercase; */
   width: fit-content;
   margin: auto !important;
+  /* color: var(--tint-navy) !important; */
+}
+
+  tr > td > .sectionLine{
+  margin-bottom: 0.25rem !important;
+  background-color: var(--dark-slate) !important;
+  height: 0.6rem;
+  width: 100%;
 }
 
 .emptyPointGround {
