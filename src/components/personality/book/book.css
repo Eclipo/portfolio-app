@@ -28,7 +28,6 @@
   display: table-cell;
   vertical-align: middle;
   position: relative;
-  
 }
 
 .bookBackground-circle {
@@ -39,7 +38,7 @@
   background: #95b3bf !important;
   background: transparent;
   position: relative;
-  border: 1rem solid var(--primary-blue);
+  border: 1rem solid var(--primary-darker-green);
   z-index: -1;
 }
 
@@ -59,9 +58,9 @@
 .bookFace {
   width: 12rem;
   height: 16rem;
-  border-radius:18px;
+  border-radius: 18px;
   background: #817663;
-    background: repeating-linear-gradient(
+  background: repeating-linear-gradient(
     100deg,
     #3d3c3a 1px,
     #322c21 1px,
@@ -77,8 +76,8 @@
 .bookFace_2 {
   width: 13rem;
   height: 16rem;
-  border-radius:18px;
-    background: repeating-linear-gradient(
+  border-radius: 18px;
+  background: repeating-linear-gradient(
     100deg,
     #3d3c3a 1px,
     #322c21 1px,
@@ -91,17 +90,15 @@
   z-index: -1 !important;
 }
 
-
-
 .bookBody {
   width: 12rem;
   height: 16rem;
   margin: 0 auto;
   background: #eeebe6;
-  border-radius:18px;
+  border-radius: 18px;
   position: relative;
   left: -2%;
-  top: 3.70rem;
+  top: 3.7rem;
   margin-bottom: 5%;
   z-index: 1 !important;
   /* display: none; */
@@ -117,11 +114,11 @@
   left: 50%;
   margin-left: -0.625rem;
 }
-#bookEye_one{
+#bookEye_one {
   /* margin-left: -1.5rem; */
 }
 
-#bookEye_two{
+#bookEye_two {
   /* margin-left: 2rem; */
 }
 

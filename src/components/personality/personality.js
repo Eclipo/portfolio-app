@@ -36,8 +36,7 @@ class Personality extends Component {
       <div id="personality" className="sectionAnimation">
         <div
           className="sectionLine"
-          style={{ backgroundColor: "var(--primary-green)" }}
-        ></div>
+          style={{ backgroundColor: "var(--primary-green)" }}></div>
 
         <h1 style={{ color: "var(--primary-green)" }}>Personality</h1>
 
@@ -51,8 +50,7 @@ class Personality extends Component {
               WILL DISPLAY VERY FLASHING <br></br> ANIMATIONS!
             </p>
           }
-          textColor="var(--primary-red)"
-        ></PlayRefresh>
+          textColor="var(--primary-red)"></PlayRefresh>
         <div id="greenSquareTableID" className="flexCenter">
           <PixelHead></PixelHead>
         </div>
@@ -110,44 +108,37 @@ class Personality extends Component {
                 <td>
                   <div
                     className="personalityTraits gradeOne"
-                    id="honestyID"
-                  ></div>
+                    id="honestyID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeTwo"
-                    id="honestyID"
-                  ></div>
+                    id="honestyID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeThree"
-                    id="honestyID"
-                  ></div>
+                    id="honestyID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFour"
-                    id="honestyID"
-                  ></div>
+                    id="honestyID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFive"
-                    id="honestyID"
-                  ></div>
+                    id="honestyID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeSix"
-                    id="honestyID"
-                  ></div>
+                    id="honestyID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeSeven"
-                    id="honestySevenID"
-                  ></div>
+                    id="honestySevenID"></div>
                 </td>
               </tr>
 
@@ -159,44 +150,37 @@ class Personality extends Component {
                 <td>
                   <div
                     className="personalityTraits gradeOne"
-                    id="focusOneID"
-                  ></div>
+                    id="focusOneID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeTwo"
-                    id="focusTwoID"
-                  ></div>
+                    id="focusTwoID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeThree"
-                    id="focusThreeID"
-                  ></div>
+                    id="focusThreeID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFour"
-                    id="focusFourID"
-                  ></div>
+                    id="focusFourID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFive"
-                    id="focusFiveID"
-                  ></div>
+                    id="focusFiveID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeSix"
-                    id="focusSixID"
-                  ></div>
+                    id="focusSixID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeSeven"
-                    id="focusSevenID"
-                  ></div>
+                    id="focusSevenID"></div>
                 </td>
               </tr>
 
@@ -208,20 +192,17 @@ class Personality extends Component {
                 <td>
                   <div
                     className="personalityTraits gradeOne"
-                    id="structureID"
-                  ></div>
+                    id="structureID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeTwo"
-                    id="structureTwoID"
-                  ></div>
+                    id="structureTwoID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeThree"
-                    id="structureThreeID"
-                  ></div>
+                    id="structureThreeID"></div>
                 </td>
                 <td>
                   <div className="personalityTraits"></div>
@@ -244,44 +225,37 @@ class Personality extends Component {
                 <td>
                   <div
                     className="personalityTraits gradeOne temper"
-                    id="temperID"
-                  ></div>
+                    id="temperID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeTwo temper"
-                    id="temperTwoID"
-                  ></div>
+                    id="temperTwoID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeThree temper"
-                    id="temperThreeID"
-                  ></div>
+                    id="temperThreeID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFour temper"
-                    id="temperFourID"
-                  ></div>
+                    id="temperFourID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFive temper"
-                    id="temperFiveID"
-                  ></div>
+                    id="temperFiveID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeSix temper"
-                    id="temperSixID"
-                  ></div>
+                    id="temperSixID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeSeven temper"
-                    id="temperSevenID"
-                  ></div>
+                    id="temperSevenID"></div>
                 </td>
               </tr>
 
@@ -293,32 +267,27 @@ class Personality extends Component {
                 <td>
                   <div
                     className="personalityTraits gradeOne patience"
-                    id="patienceOneID"
-                  ></div>
+                    id="patienceOneID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeTwo"
-                    id="patienceTwoID"
-                  ></div>
+                    id="patienceTwoID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeThree"
-                    id="patienceThreeID"
-                  ></div>
+                    id="patienceThreeID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFour"
-                    id="patienceFourID"
-                  ></div>
+                    id="patienceFourID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFive"
-                    id="patienceFiveID"
-                  ></div>
+                    id="patienceFiveID"></div>
                 </td>
               </tr>
 
@@ -330,14 +299,12 @@ class Personality extends Component {
                 <td>
                   <div
                     className="personalityTraits gradeOne"
-                    id="structureTwoID"
-                  ></div>
+                    id="structureTwoID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeTwo"
-                    id="structureThreeID"
-                  ></div>
+                    id="structureThreeID"></div>
                 </td>
                 <td>
                   <div className="personalityTraits"></div>
@@ -364,30 +331,23 @@ class Personality extends Component {
                 <td>
                   <div
                     className="personalityTraits gradeOne"
-                    id="empathyID"
-                  ></div>
+                    id="empathyID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeTwo"
-                    id="empathyID"
-                  ></div>
+                    id="empathyID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeThree"
-                    id="empathyID"
-                  ></div>
+                    id="empathyID"></div>
                 </td>
                 <td>
-                  <div
-                    className="personalityTraits"
-                  ></div>
+                  <div className="personalityTraits"></div>
                 </td>
                 <td>
-                  <div
-                    className="personalityTraits"
-                  ></div>
+                  <div className="personalityTraits"></div>
                 </td>
                 <td>
                   <div className="personalityTraits"></div>
@@ -405,32 +365,27 @@ class Personality extends Component {
                 <td>
                   <div
                     className="personalityTraits gradeOne"
-                    id="honestySevenID"
-                  ></div>
+                    id="honestySevenID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeTwo"
-                    id="honestySevenID"
-                  ></div>
+                    id="honestySevenID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeThree"
-                    id="honestySevenID"
-                  ></div>
+                    id="honestySevenID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFour"
-                    id="honestySevenID"
-                  ></div>
+                    id="honestySevenID"></div>
                 </td>
                 <td>
                   <div
                     className="personalityTraits gradeFive"
-                    id="honestySevenID"
-                  ></div>
+                    id="honestySevenID"></div>
                 </td>
                 <td>
                   <div className="personalityTraits"></div>
@@ -449,13 +404,23 @@ class Personality extends Component {
               <Book></Book>
             </div>
             <div className="duckText mx-auto">
-              The purpose of the personality matrix above is to display two facts:
+              The purpose of the personality matrix above is to display two
+              facts:
               <ul className="skillBullet">
-                <li>It is quite <span className="highLight"> easy to label </span>a person based on the very first impression.</li>
-                <li>A personality is rather <span className="highLight"> dynamic </span> than static.</li>
+                <li>
+                  It is quite <span className="highLight"> easy to label </span>
+                  a person based on the very first impression.
+                </li>
+                <li>
+                  A personality is rather{" "}
+                  <span className="highLight"> dynamic </span> than static.
+                </li>
               </ul>
-              My particular personality depends on a variety of conditions where I can be either more or less of a specific trait.<br></br><br></br>
-              In the cards shown below, I will go through some of my personal attributes in more detail.
+              My particular personality depends on a variety of conditions where
+              I can be either more or less of a specific trait.<br></br>
+              <br></br>
+              In the cards shown below, I will go through some of my personal
+              attributes in more detail.
             </div>
 
             <div className="container flexCenter">
@@ -464,32 +429,36 @@ class Personality extends Component {
                   <div
                     className="card personalityCard"
                     id="honestyCard"
-                    onClick={this.handleClick}
-                  >
+                    onClick={this.handleClick}>
                     <div>
                       <button
                         id="honestyCard_closeBtn"
                         className="personalityCloseBtn"
-                        onClick={this.closeWindow}
-                      >
+                        onClick={this.closeWindow}>
                         <FontAwesomeIcon icon={faClose} id="navIconID" />
                       </button>
                     </div>
 
                     <div className="card-body">
-                    <button className="btnPersonalityCard">
-
-                      <h3 className="card-title" id="honestyCard_h3">
-                        Honesty
-                      </h3>
-                      <h4 id="honestyCard_h4">I'm just telling the truth</h4>
-                      <p className="card-text" id="honestyCard_p">
-                        In my family the phrase <span className="highLight"> "I'm just telling the truth" </span> 
-                        was and is still abusively applied.
-                        Later in life (30+ years), I finally understood I have another take on honesty compared to most people.<br></br><br></br>
-                        Nowadays, I try to be more diplomatic while expressing my opinion. 
-                        Often I encourage others to be more honest with me. Honesty is a trait I value very highly.
-                      </p>
+                      <button className="btnPersonalityCard">
+                        <h3 className="card-title" id="honestyCard_h3">
+                          Honesty
+                        </h3>
+                        <h4 id="honestyCard_h4">I'm just telling the truth</h4>
+                        <p className="card-text" id="honestyCard_p">
+                          In my family the phrase{" "}
+                          <span className="highLight">
+                            {" "}
+                            "I'm just telling the truth"{" "}
+                          </span>
+                          was and is still abusively applied. Later in life (30+
+                          years), I finally understood I have another take on
+                          honesty compared to most people.<br></br>
+                          <br></br>
+                          Nowadays, I try to be more diplomatic while expressing
+                          my opinion. Often I encourage others to be more honest
+                          with me. Honesty is a trait I value very highly.
+                        </p>
                       </button>
                     </div>
                   </div>
@@ -499,34 +468,40 @@ class Personality extends Component {
                   <div
                     className="card personalityCard"
                     id="stubbornCard"
-                    onClick={this.handleClick}
-                  >
+                    onClick={this.handleClick}>
                     <div>
                       <button
                         id="stubbornCard_closeBtn"
                         className="personalityCloseBtn"
-                        onClick={this.closeWindow}
-                      >
+                        onClick={this.closeWindow}>
                         <FontAwesomeIcon icon={faClose} id="navIconID" />
                       </button>
                     </div>
 
                     <div className="card-body">
-                    <button className="btnPersonalityCard">
-
-                      <h3 className="card-title" id="stubbornCard_h3">
-                        Stubborn
-                      </h3>
-                      <h4 id="stubbornCard_h4">A curse and a blessing</h4>
-                      <p className="card-text" id="stubbornCard_p">
-                        Being stubborn is another family attribute and it is both<span className="highLight"> a curse and a blessing</span>.
-                        Thanks to my stubbornness, it has taken me where I am today.
-                        <br></br><br></br>
-                        On the other hand, I might have overdone it at times which has made me a bit wiser.
-                        Rather than brute-forcing myself through the obstacles I face nowadays I try to take a step back, breathe a lot, and find a more elegant solution to the problem.
-                      </p>
+                      <button className="btnPersonalityCard">
+                        <h3 className="card-title" id="stubbornCard_h3">
+                          Stubborn
+                        </h3>
+                        <h4 id="stubbornCard_h4">A curse and a blessing</h4>
+                        <p className="card-text" id="stubbornCard_p">
+                          Being stubborn is another family attribute and it is
+                          both
+                          <span className="highLight">
+                            {" "}
+                            a curse and a blessing
+                          </span>
+                          . Thanks to my stubbornness, it has taken me where I
+                          am today.
+                          <br></br>
+                          <br></br>
+                          On the other hand, I might have overdone it at times
+                          which has made me a bit wiser. Rather than
+                          brute-forcing myself through the obstacles I face
+                          nowadays I try to take a step back, breathe a lot, and
+                          find a more elegant solution to the problem.
+                        </p>
                       </button>
-
                     </div>
                   </div>
                 </div>
@@ -534,106 +509,117 @@ class Personality extends Component {
                   <div
                     className="card personalityCard"
                     id="structureCard"
-                    onClick={this.handleClick}
-                  >
+                    onClick={this.handleClick}>
                     <div>
                       <button
                         id="structureCard_closeBtn"
                         className="personalityCloseBtn"
-                        onClick={this.closeWindow}
-                      >
+                        onClick={this.closeWindow}>
                         {" "}
                         <FontAwesomeIcon icon={faClose} id="navIconID" />
                       </button>
                     </div>
 
                     <div className="card-body">
-                    <button className="btnPersonalityCard">
+                      <button className="btnPersonalityCard">
+                        <h3 className="card-title" id="structureCard_h3">
+                          Structure
+                        </h3>
+                        <h4 id="structureCard_h4">Feng shui</h4>
 
-                      <h3 className="card-title" id="structureCard_h3">
-                        Structure
-                      </h3>
-                      <h4 id="structureCard_h4">Feng shui</h4>
-
-                      <p className="card-text" id="structureCard_p">
-                        Even though I write task lists and set reminders, being structured isn't my core attribute. 
-                        Despite this, I still need<span className="highLight"> feng shui </span>where everything is in harmonious order. 
-                        Feng shui calms my mind and I can channel my focus on more pressing matters. 
-                        <br></br><br></br>
-                        Besides a structured environment, it is also important for me to team up with someone who is great at project management.
-                      </p>
+                        <p className="card-text" id="structureCard_p">
+                          Even though I write task lists and set reminders,
+                          being structured isn't my core attribute. Despite
+                          this, I still need
+                          <span className="highLight"> feng shui </span>where
+                          everything is in harmonious order. Feng shui calms my
+                          mind and I can channel my focus on more pressing
+                          matters.
+                          <br></br>
+                          <br></br>
+                          Besides a structured environment, it is also important
+                          for me to team up with someone who is great at project
+                          management.
+                        </p>
                       </button>
                     </div>
                   </div>
                 </div>
 
                 <div className="col flexCenter">
-                <div
+                  <div
                     className="card personalityCard"
                     id="focusCard"
-                    onClick={this.handleClick}
-                  >
+                    onClick={this.handleClick}>
                     <div>
                       <button
                         id="focusCard_closeBtn"
                         className="personalityCloseBtn"
-                        onClick={this.closeWindow}
-                      >
+                        onClick={this.closeWindow}>
                         {" "}
                         <FontAwesomeIcon icon={faClose} id="navIconID" />
                       </button>
                     </div>
 
                     <div className="card-body">
-                    <button className="btnPersonalityCard">
+                      <button className="btnPersonalityCard">
+                        <h3 className="card-title" id="focusCard_h3">
+                          Focus
+                        </h3>
+                        <h4 id="focusCard_h4">Blue screen of death</h4>
 
-                      <h3 className="card-title" id="focusCard_h3">
-                        Focus
-                      </h3>
-                      <h4 id="focusCard_h4">Blue screen of death</h4>
-
-                      <p className="card-text" id="focusCard_p">
-                        To reach the very heights of my hyperfocus I need feng shui and enjoyable tasks.                        
-                        <br></br><br></br>
-                        In contrast a chaotic environment and boredom will eventually crash my focus into a<span className="highLight"> blue screen of death</span>.
-                      </p>
+                        <p className="card-text" id="focusCard_p">
+                          To reach the very heights of my hyperfocus I need feng
+                          shui and enjoyable tasks.
+                          <br></br>
+                          <br></br>
+                          In contrast a chaotic environment and boredom will
+                          eventually crash my focus into a
+                          <span className="highLight">
+                            {" "}
+                            blue screen of death
+                          </span>
+                          .
+                        </p>
                       </button>
                     </div>
                   </div>
-
                 </div>
 
                 <div className="col flexCenter">
-                <div
+                  <div
                     className="card personalityCard"
                     id="multiTaskCard"
-                    onClick={this.handleClick}
-                  >
+                    onClick={this.handleClick}>
                     <div>
                       <button
                         id="multiTaskCard_closeBtn"
                         className="personalityCloseBtn"
-                        onClick={this.closeWindow}
-                      >
+                        onClick={this.closeWindow}>
                         {" "}
                         <FontAwesomeIcon icon={faClose} id="navIconID" />
                       </button>
                     </div>
 
                     <div className="card-body">
-                    <button className="btnPersonalityCard">
+                      <button className="btnPersonalityCard">
+                        <h3 className="card-title" id="multiTaskCard_h3">
+                          Multitasking
+                        </h3>
+                        <h4 id="multiTaskCard_h4">Single-core processor</h4>
 
-                      <h3 className="card-title" id="multiTaskCard_h3">
-                        Multitasking
-                      </h3>
-                      <h4 id="multiTaskCard_h4">Single-core processor</h4>
-
-                      <p className="card-text" id="multiTaskCard_p">
-                        I have unfortunately multitasked during my career and it's not for me.
-                        I am more of a<span className="highLight"> single-core processor</span> type of person.
-                        <br></br><br></br>
-                        Meaning, I do one thing really well at a time.
-                      </p>
+                        <p className="card-text" id="multiTaskCard_p">
+                          I have unfortunately multitasked during my career and
+                          it's not for me. I am more of a
+                          <span className="highLight">
+                            {" "}
+                            single-core processor
+                          </span>{" "}
+                          type of person.
+                          <br></br>
+                          <br></br>
+                          Meaning, I do one thing really well at a time.
+                        </p>
                       </button>
                     </div>
                   </div>
@@ -643,32 +629,34 @@ class Personality extends Component {
                   <div
                     className="card personalityCard"
                     id="patienceCard"
-                    onClick={this.handleClick}
-                  >
+                    onClick={this.handleClick}>
                     <div>
                       <button
                         id="patienceCard_closeBtn"
                         className="personalityCloseBtn"
-                        onClick={this.closeWindow}
-                      >
+                        onClick={this.closeWindow}>
                         {" "}
                         <FontAwesomeIcon icon={faClose} id="navIconID" />
                       </button>
                     </div>
 
                     <div className="card-body">
-                    <button className="btnPersonalityCard">
+                      <button className="btnPersonalityCard">
+                        <h3 className="card-title" id="patienceCard_h3">
+                          Patience
+                        </h3>
+                        <h4 id="patienceCard_h4">Right here and now</h4>
 
-                      <h3 className="card-title" id="patienceCard_h3">
-                        Patience
-                      </h3>
-                      <h4 id="patienceCard_h4">Right here and now</h4>
-
-                      <p className="card-text" id="patienceCard_p">
-                        I want to see result<span className="highLight"> right here and now</span>.
-                        Consequently, I have suffered from being impatient at times.<br></br><br></br> 
-                        Fortunately, I have learned to take a step back, calm down, and breath alot in order to regain more patience.
-                      </p>
+                        <p className="card-text" id="patienceCard_p">
+                          I want to see result
+                          <span className="highLight"> right here and now</span>
+                          . Consequently, I have suffered from being impatient
+                          at times.<br></br>
+                          <br></br>
+                          Fortunately, I have learned to take a step back, calm
+                          down, and breath alot in order to regain more
+                          patience.
+                        </p>
                       </button>
                     </div>
                   </div>
@@ -678,31 +666,32 @@ class Personality extends Component {
                   <div
                     className="card personalityCard"
                     id="temperCard"
-                    onClick={this.handleClick}
-                  >
+                    onClick={this.handleClick}>
                     <div>
                       <button
                         id="temperCard_closeBtn"
                         className="personalityCloseBtn"
                         onClick={this.closeWindow}>
-                          <FontAwesomeIcon icon={faClose} id="navIconID" />
+                        <FontAwesomeIcon icon={faClose} id="navIconID" />
                       </button>
                     </div>
 
                     <div className="card-body">
-                    <button className="btnPersonalityCard">
+                      <button className="btnPersonalityCard">
+                        <h3 className="card-title" id="temperCard_h3">
+                          Temper
+                        </h3>
+                        <h4 id="temperCard_h4">Engine</h4>
 
-                      <h3 className="card-title" id="temperCard_h3">
-                        Temper
-                      </h3>
-                      <h4 id="temperCard_h4">Engine</h4>
-
-                      <p className="card-text" id="temperCard_p">
-                        Most of the time I am calm. It's true!
-                        Nevertheless, if I am having some sort of a setback such as facing a code-bug from hell then it will trigger me.
-                        However, I am truly grateful to have some temper since it is my very<span className="highLight"> engine </span>in life.
-                        My emotions provide me with energy and focus in order to handle various challenging situations.
-                      </p>
+                        <p className="card-text" id="temperCard_p">
+                          Most of the time I am calm. It's true! Nevertheless,
+                          if I am having some sort of a setback such as facing a
+                          code-bug from hell then it will trigger me. However, I
+                          am truly grateful to have some temper since it is my
+                          very<span className="highLight"> engine </span>in
+                          life. My emotions provide me with energy and focus in
+                          order to handle various challenging situations.
+                        </p>
                       </button>
                     </div>
                   </div>
@@ -712,33 +701,37 @@ class Personality extends Component {
                   <div
                     className="card personalityCard"
                     id="empathyCard"
-                    onClick={this.handleClick}
-                  >
+                    onClick={this.handleClick}>
                     <div>
                       <button
                         id="empathyCard_closeBtn"
                         className="personalityCloseBtn"
                         onClick={this.closeWindow}>
-                        <FontAwesomeIcon icon={faClose} id="navIconID"/>
+                        <FontAwesomeIcon icon={faClose} id="navIconID" />
                       </button>
                     </div>
 
                     <div className="card-body">
-                    <button className="btnPersonalityCard">
-                      <h3 className="card-title" id="empathyCard_h3">
-                        Leadership
-                      </h3>
-                      <h4 id="empathyCard_h4">Coordinator</h4>
+                      <button className="btnPersonalityCard">
+                        <h3 className="card-title" id="empathyCard_h3">
+                          Leadership
+                        </h3>
+                        <h4 id="empathyCard_h4">Coordinator</h4>
 
-                      <p className="card-text" id="empathyCard_p">
-                        It is possible I could be an good leader one day but at the moment in terms of anything that resemble leadership 
-                        then I guess I would do fine as the<span className="highLight"> coordinator </span>in a team.
-                        <br></br><br></br>
-                        I am very pragmatic and I have my eyes on the target. 
-                        In addition, I am very keen on hearing others' opinions. The best ideas are made in discussions 
-                        between people with different perspectives on how a problem can be solved.
-                      </p>
-                    </button>
+                        <p className="card-text" id="empathyCard_p">
+                          It is possible I could be an good leader one day but
+                          at the moment in terms of anything that resemble
+                          leadership then I guess I would do fine as the
+                          <span className="highLight"> coordinator </span>in a
+                          team.
+                          <br></br>
+                          <br></br>I am very pragmatic and I have my eyes on the
+                          target. In addition, I am very keen on hearing others'
+                          opinions. The best ideas are made in discussions
+                          between people with different perspectives on how a
+                          problem can be solved.
+                        </p>
+                      </button>
                     </div>
                   </div>
                 </div>

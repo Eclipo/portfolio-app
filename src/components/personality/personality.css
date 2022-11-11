@@ -4,7 +4,7 @@
 
 #personalityContainerID {
   display: inline-block;
-  max-width:100vw;
+  max-width: 100vw;
   margin-top: 1rem;
   display: none;
 }
@@ -54,7 +54,7 @@
   margin-left: 0.1rem;
   margin-right: 0.1rem;
   margin-top: 0.15rem;
-  font-weight: bold !important; 
+  font-weight: bold !important;
   color: black;
   opacity: 1;
 }
@@ -139,48 +139,48 @@
   opacity: 0;
 }
 
-.personalityTraits .gradeOne .patience{
+.personalityTraits .gradeOne .patience {
   opacity: 0;
 }
 
-.personalityTextContainer{
+.personalityTextContainer {
   margin: auto;
   opacity: 0;
 }
-.bookContainer{
+.bookContainer {
   margin-top: -4.75rem;
   margin-bottom: -5rem;
 }
-.personalityTextContainer .duckText{
-  color:var(--lightest-slate) !important;
-   margin: 0;
+.personalityTextContainer .duckText {
+  color: var(--lightest-slate) !important;
+  margin: 0;
 }
 
-.personalityTextContainer h2{
-  color:var(--primary-green);
+.personalityTextContainer h2 {
+  color: var(--primary-green);
   margin-top: 15rem;
 }
-.personalityTextContainer h4{
-  color:var(--primary-green);
+.personalityTextContainer h4 {
+  color: var(--primary-green);
   text-align: left;
   padding: 0.5rem;
 }
 
-.personalityTextContainer p{
+.personalityTextContainer p {
   color: var(--light-slate);
   text-align: left;
   display: inline-block;
   padding: 0.5rem;
 }
 
-.brokenBanner{
+.brokenBanner {
   margin-top: 1rem !important;
   color: var(--dark-navy);
-  -webkit-text-stroke:  1px var(--primary-green); 
+  -webkit-text-stroke: 1px var(--primary-green);
   background-color: var(--dark-navy) !important;
 }
 
-.brokenArrow{
+.brokenArrow {
   color: var(--primary-green);
   -webkit-text-stroke: 1px var(--primary-green);
   box-shadow: 0rem -1rem 5.25rem 0.5rem var(--primary-green);
@@ -188,31 +188,53 @@
 
   transform: scale(2.5);
   margin-top: 1rem;
-
-
 }
-.personalityTextContainer .col{
+.personalityTextContainer .col {
   margin: auto;
 }
-.personalityCard{
-background-color: var(--primary-green);
-border-width: 0.25rem;
-border-style: solid;
-border-color: var(--primary-green);
-width: 25rem;
-height:fit-content;
-margin: 3rem;
+.personalityCard {
+  background-color: var(--primary-green);
+  border-width: 0.25rem;
+  border-style: solid;
+  border-color: var(--primary-green);
+  width: 25rem;
+  height: fit-content;
+  margin: 2rem;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  /* margin-bottom: 1rem; */
 }
-.btnPersonalityCard{
-border: none;
-background-color: transparent;
+
+.personalityCard:hover {
+  border-color: var(--primary-light-green);
+  border-width: 0.35rem;
 }
-.personalityCard h4{
-  margin:auto;
+
+.personalityCard.selectedPersonalityCard {
+  border-color: var(--primary-light-green);
+  border-width: 0.35rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.selectedPersonalityCard > .card-body {
+  border: none !important;
+}
+
+.personalityCard:hover > .card-body {
+  border: 0.1rem var(--dark-navy) solid;
+}
+
+.btnPersonalityCard {
+  border: none;
+  background-color: transparent;
+}
+.personalityCard h4 {
+  margin: auto;
   text-align: center;
 }
 
-.personalityCloseBtn{
+.personalityCloseBtn {
   float: right;
   margin: 0.5rem;
   border: none;
@@ -221,16 +243,29 @@ background-color: transparent;
 
   color: var(--primary-pink);
   display: none;
+  transition: var(--transition);
 }
 
-.personalityCard h3, .personalityCard h4{
+.personalityCloseBtn:hover {
+  color: var(--slate);
+  background-color: var(--lightest-navy) !important;
+  border-radius: 5px;
+}
+
+.personalityCard h3,
+.personalityCard h4 {
   color: var(--light-navy);
 }
 
-.personalityCard p{
+.personalityCard p {
   color: var(--primary-green);
   display: none;
-
 }
 
+.card-text {
+  display: inline-block;
+}
 
+.card-body {
+  padding: 0.25rem 0.25rem;
+}
