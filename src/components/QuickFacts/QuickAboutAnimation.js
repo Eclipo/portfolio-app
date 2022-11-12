@@ -8,50 +8,48 @@ export class QuickAboutAnimation {
     var flagSize = windowArea * 0.0000045;
     var flagSizeIncrease = flagSize + 0.3;
 
-    const displayKnuckles = document.getElementById('displayKnucklesID');
-    const knuckles = document.getElementById('KnucklesContainerID');
-    const knucklesSVG = document.getElementById('KnucklesSvgID');
+    const displayKnuckles = document.getElementById("displayKnucklesID");
+    const knuckles = document.getElementById("KnucklesContainerID");
+    const knucklesSVG = document.getElementById("KnucklesSvgID");
 
-    var setDashoffset = function(el) {
+    var setDashoffset = function (el) {
       var l = el.getTotalLength();
-      el.setAttribute('stroke-dasharray', l);
-      return [l,0];
-    }
-  
+      el.setAttribute("stroke-dasharray", l);
+      return [l, 0];
+    };
+
     const roGrid = [13, 10];
 
     if (windowWidht > 1200) {
       flagSize = 1.9;
       flagSizeIncrease = 2;
     }
-    
+
     this.rightHand = anime.timeline({
       loop: true,
       autoplay: false,
       easing: "easeInOutQuad",
-      direction: "alternate"
-
+      direction: "alternate",
     });
 
     this.rightHand.add({
-      targets:['.right-hand','#steamContainerId','.coffee-cup-container',],
+      targets: [".right-hand", "#steamContainerId", ".coffee-cup-container"],
       translateY: [0, "-0.15rem", "0.15rem"],
-      duration: 1750
-    })
+      duration: 1750,
+    });
 
     this.leftHand = anime.timeline({
       loop: true,
       autoplay: false,
       easing: "easeInOutQuad",
-      direction: "alternate"
+      direction: "alternate",
     });
 
     this.leftHand.add({
-      targets:'.left-hand',
+      targets: ".left-hand",
       translateY: [0, "-0.15rem", "0.15rem"],
-      duration: 1750
-
-    })
+      duration: 1750,
+    });
 
     this.edipAndFamillyAnimation = anime.timeline({
       loop: true,
@@ -71,11 +69,8 @@ export class QuickAboutAnimation {
     this.edipAndFamillyAnimation.add({
       targets: ".eyebrow",
       translateY: [0, "-0.5rem", "0.5rem"],
-      duration: 500      
-    
+      duration: 500,
     });
-
-    
 
     this.quickCoffeeSteam = anime.timeline({
       loop: true,
@@ -262,7 +257,6 @@ export class QuickAboutAnimation {
       duration: 250,
     });
 
-    
     this.weights = anime.timeline({
       loop: true,
       autoplay: false,
@@ -272,17 +266,15 @@ export class QuickAboutAnimation {
     });
 
     this.weights.add({
-      targets:'.faceWeights',
-      backgroundColor:['#ffe4be','#fbbdbd'],
-      duration:750
-    })
+      targets: ".faceWeights",
+      backgroundColor: ["#ffe4be", "#fbbdbd"],
+      duration: 750,
+    });
     this.weights.add({
       targets: [".bodyWeights", "#upperBody_1"],
-      translateY: [0, -10,0,-10,0,-15,-100],
-      easing:'easeOutQuad',
-    })
-    
-
+      translateY: [0, -10, 0, -10, 0, -15, -100],
+      easing: "easeOutQuad",
+    });
 
     this.lightSaberAnimation = anime.timeline({
       loop: true,
@@ -291,152 +283,141 @@ export class QuickAboutAnimation {
     });
 
     this.lightSaberAnimation.add({
-      targets:".stars",
-      scale:[0.05,0.5],
-      easing:"easeOutQuad",
-      duration:750
-    })
-    
-     this.lightSaberAnimation.add({
-      targets: [".emptyLightSaberSquare", ".baseLeft", ".baseCenter", ".baseRight", ".baseDarkLeft", ".baseDarkCenter", ".baseDarkRight"],
+      targets: ".stars",
+      scale: [0.05, 0.5],
+      easing: "easeOutQuad",
+      duration: 750,
+    });
+
+    this.lightSaberAnimation.add({
+      targets: [
+        ".emptyLightSaberSquare",
+        ".baseLeft",
+        ".baseCenter",
+        ".baseRight",
+        ".baseDarkLeft",
+        ".baseDarkCenter",
+        ".baseDarkRight",
+      ],
       opacity: [0, 1],
       easing: "linear",
       translateX: 0,
       translateY: 0,
-      delay: anime.stagger(50, { grid: roGrid, from: "last" })
+      delay: anime.stagger(50, { grid: roGrid, from: "last" }),
     });
-    
+
     this.lightSaberAnimation.add({
       targets: ".outerLightSaber, .coreLightSaber",
       opacity: [0, 0.25, 0, 0.5, 0, 1],
       easing: "easeOutElastic(1, .9)",
       duration: 550,
-      endDelay: 1500
+      endDelay: 1500,
     });
-    
+
     this.lightSaberAnimation.add({
       targets: ".outerLightSaber, .coreLightSaber",
       opacity: [1, 0.25, 1, 0.5, 1, 0],
       easing: "easeOutElastic(1, .9)",
       duration: 750,
     });
-    
+
     this.lightSaberAnimation.add({
       targets:
         ".emptyLightSaberSquare, .baseLeft, .baseCenter, .baseRight, .baseDarkLeft, .baseDarkCenter, .baseDarkRight",
       opacity: [1, 0],
       easing: "linear",
       translateX: () => anime.random(-250, 250),
-      translateY: () => anime.random(-150, 150),    
-      delay: anime.stagger(40, { grid: roGrid, from: "first" })
+      translateY: () => anime.random(-150, 150),
+      delay: anime.stagger(40, { grid: roGrid, from: "first" }),
     });
-    
+
     const ratio = 0.25 * window.innerWidth;
-  const marioContainer = document.getElementById('marioContainer');
- 
-  this.marioAnimation = anime.timeline({
-    loop: true,
-    autoplay: false,
-    duration: 350,
+    const marioContainer = document.getElementById("marioContainer");
 
-    easing:'linear',
-    endDelay:250,
-    direction:'alternate'
-  });
-  
+    this.marioAnimation = anime.timeline({
+      loop: true,
+      autoplay: false,
+      duration: 350,
 
-  this.marioArmHandRightAnimation = anime.timeline({
-        loop: true,
-        autoplay: false,
-        duration: 350,
-
-        easing:'linear',
-        delay:1500,
-        endDelay:250,
-        direction:'alternate'
-      });
-
-      this.marioLegRightAnimation = anime.timeline({
-        loop: true,
-        autoplay: false,
-        duration: 350,
-
-        easing:'linear',
-        delay:1500,
-        endDelay:250,
-        direction:'alternate'
-      });
-
-      this.marioLegLeftAnimation = anime.timeline({
-        loop: true,
-        autoplay: false,
-        duration: 350,
-    
-        easing:'linear',
-        delay:1500,
-        endDelay:250,
-        direction:'alternate'
-        });
-    
-        
-        this.marioArmHandLeftAnimation = anime.timeline({
-          loop: true,
-          autoplay: false,
-          duration: 350,
-          delay:1500,
-          easing:'linear',
-          endDelay:250,
-          direction:'alternate'
-          });
-
-        this.marioLegRightAnimation.add({
-      targets:'.marioLegShoeRight',
-      translateY:[0,'6rem'],
-      translateX:[0,'-8rem'],
-    rotate:[0,'-45deg'],
-    // scale:0.8
-
-  });
-
-  this.marioArmHandRightAnimation.add({
-      targets:'.marioArmRight',
-      translateY:[0,'-6rem'],
-      translateX:[0,'0.25rem'],
-    rotate:[0,'-180deg'],
-    // scale:0.8
-
-  });
-
-  
- 
-
-  this.marioLegLeftAnimation.add({
-      targets:'.marioLegShoeLeft',
-      translateY:[0,'3rem'],
-      translateX:[0,'4.5rem'],
-    rotate:[0,'25deg'],
-    // scale:0.8
-
-  });
-
-
-  this.marioArmHandLeftAnimation.add({
-        targets:'.marioArmLeft',
-        translateY:[0,'-2rem'],
-        translateX:[0,'-1.25rem'],
-      rotate:[0,'90deg'],
-      // scale:0.8
-
+      easing: "linear",
+      endDelay: 250,
+      direction: "alternate",
     });
 
+    this.marioArmHandRightAnimation = anime.timeline({
+      loop: true,
+      autoplay: false,
+      duration: 350,
 
-      
-     
+      easing: "linear",
+      delay: 1500,
+      endDelay: 250,
+      direction: "alternate",
+    });
 
+    this.marioLegRightAnimation = anime.timeline({
+      loop: true,
+      autoplay: false,
+      duration: 350,
 
+      easing: "linear",
+      delay: 1500,
+      endDelay: 250,
+      direction: "alternate",
+    });
 
+    this.marioLegLeftAnimation = anime.timeline({
+      loop: true,
+      autoplay: false,
+      duration: 350,
 
+      easing: "linear",
+      delay: 1500,
+      endDelay: 250,
+      direction: "alternate",
+    });
 
+    this.marioArmHandLeftAnimation = anime.timeline({
+      loop: true,
+      autoplay: false,
+      duration: 350,
+      delay: 1500,
+      easing: "linear",
+      endDelay: 250,
+      direction: "alternate",
+    });
+
+    this.marioLegRightAnimation.add({
+      targets: ".marioLegShoeRight",
+      translateY: [0, "6rem"],
+      translateX: [0, "-8rem"],
+      rotate: [0, "-45deg"],
+      // scale:0.8
+    });
+
+    this.marioArmHandRightAnimation.add({
+      targets: ".marioArmRight",
+      translateY: [0, "-6rem"],
+      translateX: [0, "0.25rem"],
+      rotate: [0, "-180deg"],
+      // scale:0.8
+    });
+
+    this.marioLegLeftAnimation.add({
+      targets: ".marioLegShoeLeft",
+      translateY: [0, "3rem"],
+      translateX: [0, "4.5rem"],
+      rotate: [0, "25deg"],
+      // scale:0.8
+    });
+
+    this.marioArmHandLeftAnimation.add({
+      targets: ".marioArmLeft",
+      translateY: [0, "-2rem"],
+      translateX: [0, "-1.25rem"],
+      rotate: [0, "90deg"],
+      // scale:0.8
+    });
   }
 
   playOrStop(input) {
@@ -455,21 +436,22 @@ export class QuickAboutAnimation {
       this.marioArmHandLeftAnimation.play();
       this.marioLegLeftAnimation.play();
       this.marioAnimation.play();
-      
-      function randomNumber(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min
-    }
-    
-    const STAR_COUNT = 100
-    let result = ""
 
-    for(let i = 0; i < STAR_COUNT; i++){
-        result += `${randomNumber(-35, 35)}rem ${randomNumber(-15, 15)}rem ${randomNumber(0, 3)}px ${randomNumber(0, 3)}px #fff,`
-    }
- 
-    
-    console.log(result.substring(0, result.length - 1))
-    
+      function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      const STAR_COUNT = 100;
+      let result = "";
+
+      for (let i = 0; i < STAR_COUNT; i++) {
+        result += `${randomNumber(-35, 35)}rem ${randomNumber(
+          -15,
+          15
+        )}rem ${randomNumber(0, 3)}px ${randomNumber(0, 3)}px #fff,`;
+      }
+
+      console.log(result.substring(0, result.length - 1));
     }
 
     if (input === false) {

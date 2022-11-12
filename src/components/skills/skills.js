@@ -327,7 +327,6 @@ class Skills extends Component {
                     style={{ opacity: "0" }}></div>
                 </td>
               </tr>
-              
             </tbody>
           </table>
         </div>
