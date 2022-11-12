@@ -201,7 +201,7 @@
   height: fit-content;
   margin: 2rem;
   cursor: pointer;
-  transition: all 0.25s ease-out;
+  transition: var(--transition);
   /* margin-bottom: 1rem; */
 }
 
