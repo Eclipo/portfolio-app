@@ -45,8 +45,8 @@ export const leftNavigate = (inputID) => {
             duration:750,
             easing:'linear',
             complete:function(){
-                document.getElementById(currentStory).style.display="none";
                 document.getElementById(nextStory).style.display="block";
+                document.getElementById(currentStory).style.display="none";
                 anime({
                     targets:'#'+nextStory,
                     opacity:1,
@@ -101,7 +101,6 @@ export const rightNavigate = (inputID) => {
         easing:'linear',
         endDelay:500,
         complete:function(){
-            document.getElementById(currentStory).style.display="none";
             anime({
                 targets:'#'+nextStory,
                 opacity:1,
@@ -110,6 +109,7 @@ export const rightNavigate = (inputID) => {
                 duration:1250,
                 begin:function(){
                     document.getElementById(nextStory).style.display="block";
+                    document.getElementById(currentStory).style.display="none";
                 },
                 complete:function(){
                     disableScroll.off();

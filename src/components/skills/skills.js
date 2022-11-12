@@ -327,15 +327,7 @@ class Skills extends Component {
                     style={{ opacity: "0" }}></div>
                 </td>
               </tr>
-              <div className="col">
-                <div className="row">
-                  <h2 className="skillCategory frontEndTheme">
-                    Front <br></br> end
-                  </h2>
-                </div>
-              </div>
-
-              {/* <SkillDivider className="rolesTheme"></SkillDivider> */}
+              
             </tbody>
           </table>
         </div>

@@ -494,7 +494,8 @@ opacity: 0.5;
 .animContainer{
   margin: auto ;
   width: 95%;
-  height: 90%;
+  min-height: 30rem;
+  height: fit-content;
   border-width: 0.1rem;
   border-style: solid;
   border-color: var(--primary-pink);
@@ -612,7 +613,7 @@ opacity: 0.5;
 
 .zenEyes{
   width: 0.75rem;
-  height: 0.05rem;
+  height: 0.1rem;
   background-color: black;
   margin:auto;
 }

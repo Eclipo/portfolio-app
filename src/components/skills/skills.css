@@ -82,7 +82,7 @@ ul.a {
 tr > td > .sectionLine {
   margin-bottom: 0.25rem !important;
   background-color: var(--dark-slate) !important;
-  height: 0.6rem;
+  height: 0.25rem;
   width: 100%;
 }
 
@@ -120,7 +120,7 @@ tr > td > .sectionLine {
 }
 
 .rolesTheme {
-  background-color: rgb(95, 129, 191) !important;
+  background-color: rgb(80, 117, 185) !important;
   color: var(--primary-white) !important;
 }
 
