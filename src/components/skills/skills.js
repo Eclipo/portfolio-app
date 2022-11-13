@@ -1,16 +1,84 @@
 import React, { Component } from "react";
 import "../skills/skills.css";
-import { IntroSkill } from "./introSkill/introSkill";
-import SkillDivider from "./skillDivider/skillDivider";
 import "../../IntersectionObserver.js";
-import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
 import { Duck } from "./duck/duck.js";
+import anime from "animejs";
+import { faSyncAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Skills extends Component {
   frontEndTheme = "frontEndTheme";
   backEndTheme = "backEndTheme";
   appTheme = "applicationsTheme";
   rolesTheme = "rolesTheme";
+
+  constructor(props) {
+    super(props);
+  }
+
+  resetSkills(event) {
+    anime({
+      targets: ".skill",
+      easing: "linear",
+      opacity: 1,
+    });
+  }
+
+  filterSkills(event) {
+    let filter = event.currentTarget.id;
+    console.log(event.currentTarget.id);
+    const skillsFrontEnd = document.querySelectorAll(".skill.frontEndTheme");
+    const skillsBackend = document.querySelectorAll(".skill.backEndTheme");
+    const skillsRoles = document.querySelectorAll(".skill.rolesTheme");
+    switch (filter) {
+      case "frontEnd":
+        anime({
+          targets: ".skill",
+          easing: "linear",
+          opacity: 0.25,
+          complete: function () {
+            anime({
+              targets: skillsFrontEnd,
+              easing: "linear",
+              opacity: 1,
+            });
+          },
+        });
+        break;
+
+      case "backEnd":
+        anime({
+          targets: ".skill",
+          easing: "linear",
+          opacity: 0.25,
+          complete: function () {
+            anime({
+              targets: skillsBackend,
+              easing: "linear",
+              opacity: 1,
+            });
+          },
+        });
+        break;
+
+      case "roles":
+        anime({
+          targets: ".skill",
+          easing: "linear",
+          opacity: 0.25,
+          complete: function () {
+            anime({
+              targets: skillsRoles,
+              easing: "linear",
+              opacity: 1,
+            });
+          },
+        });
+        break;
+
+      default:
+    }
+  }
 
   render() {
     return (
@@ -25,25 +93,61 @@ class Skills extends Component {
             <tbody>
               <tr>
                 <td>
-                  <h2 className="skillCategory frontEndTheme">
-                    Front <br></br> end
-                  </h2>
+                  <button
+                    className="bg-transparent"
+                    id="frontEnd"
+                    onClick={this.filterSkills}>
+                    <h2 className="skillCategory frontEndTheme">
+                      Front <br></br> end
+                    </h2>
+                  </button>
                 </td>
                 <td>
-                  <h2 className="skillCategory backEndTheme">
-                    Back <br></br> end
-                  </h2>
+                  <button
+                    className="bg-transparent"
+                    id="backEnd"
+                    onClick={this.filterSkills}>
+                    <h2 className="skillCategory backEndTheme">
+                      Back <br></br> end
+                    </h2>
+                  </button>
                 </td>
 
                 <td>
-                  <h2 className="skillCategory rolesTheme d-inline-flex justify-content-center">
-                    JOB<br></br> roles
-                  </h2>
+                  <button
+                    className="bg-transparent"
+                    id="roles"
+                    onClick={this.filterSkills}>
+                    <h2 className="skillCategory rolesTheme d-inline-flex justify-content-center">
+                      JOB<br></br> roles
+                    </h2>
+                  </button>
                 </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <div className="flexCenter">
+                    <button id="resetSkills" onClick={this.resetSkills}>
+                      <FontAwesomeIcon
+                        className="fntAwesome p-2"
+                        icon={faSyncAlt}
+                        color="var(--slate)"
+                        style={{ margin: "auto" }}></FontAwesomeIcon>
+                    </button>
+                  </div>
+                </td>
+                <td></td>
               </tr>
             </tbody>
           </table>
-
+          <div className="row"></div>
+          <div className="row">
+            <p>
+              Click on the buttons above to filter out the selected skill
+              category.
+            </p>
+          </div>
           <table className="skillTable">
             <thead>
               <tr>
@@ -115,9 +219,7 @@ class Skills extends Component {
                 </td>
 
                 <td>
-                  <p className="skill frontEndTheme" id="skillElemAndInter">
-                    HTML
-                  </p>
+                  <p className="skill frontEndTheme">HTML</p>
                 </td>
               </tr>
 

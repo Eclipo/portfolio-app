@@ -10,7 +10,7 @@ import {
 class PlayRefresh extends Component {
   refreshID = "refresh_" + this.props.id;
   playID = "play_" + this.props.id;
-  textPlayID = "textPlay_"+this.props.id;
+  textPlayID = "textPlay_" + this.props.id;
   playBoolean = this.props.playBoolean;
   playText = this.props.playText;
   textColor = this.props.textColor;
@@ -21,9 +21,8 @@ class PlayRefresh extends Component {
   }
 
   handleClick(event) {
-    
-    AnimationPlayRefreshBegin(this.playID, this.refreshID,this.textPlayID);
-    
+    AnimationPlayRefreshBegin(this.playID, this.refreshID, this.textPlayID);
+
     var delayTime = 0;
     delayTime = PlayAnimation(event.currentTarget.id, this.playBoolean);
     if (delayTime > 0) {
@@ -41,36 +40,29 @@ class PlayRefresh extends Component {
           <button
             id={this.refreshID}
             className="btnRefresh mx-auto bg-transparent"
-            onClick={this.handleClick}
-          >
+            onClick={this.handleClick}>
             <FontAwesomeIcon
               className="fntAwesome"
               icon={faSyncAlt}
-              color="var(--slate)"
-              style={{margin:'auto'}}
-
-            ></FontAwesomeIcon>
+              style={{ margin: "auto" }}></FontAwesomeIcon>
           </button>
-          </div>
+        </div>
 
-          <h4 id={this.textPlayID} style={{color:this.textColor}} >{this.playText}</h4>
+        <h4 id={this.textPlayID} style={{ color: this.textColor }}>
+          {this.playText}
+        </h4>
 
-          <div className="flexCenter">
+        <div className="flexCenter">
           <button
             id={this.playID}
             className="btnPlay"
-            onClick={this.handleClick}
-          >
+            onClick={this.handleClick}>
             <FontAwesomeIcon
               className="fntAwesome"
               icon={faPlay}
-              color="var(--slate)"
-              style={{margin:'auto'}}
-            ></FontAwesomeIcon>
+              style={{ margin: "auto" }}></FontAwesomeIcon>
           </button>
-</div>
-
-  
+        </div>
       </div>
     );
   }

@@ -28,11 +28,11 @@
   --primary-lightPink: rgb(255, 182, 194);
   --primary-purple: #bf65f3;
 
-  --darkest-navy: #041122;
+  --darkest-navy: #020b16;
   --dark-navy: #031127;
   --navy: #0a192f;
   --light-navy: #112240;
-  --lightest-navy: #233554;
+  --lightest-navy: #283c60;
   --tint-navy: #7cacfd;
   --navy-shadow: rgba(2, 12, 27, 0.7);
   --darkest-slate: #1d232f;
@@ -237,7 +237,7 @@ ul > li {
   }
 
   .skillTable tbody p {
-    font-size: .725rem;
+    font-size: 0.725rem;
   }
 
   .expOverviewPeriod p {
@@ -566,7 +566,7 @@ ul > li {
 }
 
 .navSubIcon {
-  color: var(--primary-blue);
+  color: var(--light-slate);
   border: 0.05rem solid var(--darkest-slate) !important;
   width: fit-content;
   display: block;
@@ -575,12 +575,13 @@ ul > li {
 }
 
 .navSubIcon:hover {
-  color: var(--slate);
-  background-color: var(--lightest-slate) !important;
+  color: var(--light-navy);
+  background-color: var(--light-slate) !important;
 }
 
-.navSubIcon:focus {
-  color: var(--darkest-slate);
+.navSubIcon:active {
+  color: var(--slate);
+  background-color: var(--slate) !important;
 }
 
 /* default state */
@@ -622,6 +623,14 @@ ul > li {
   background-color: var(--lightest-navy) !important;
 }
 
+#navbarTogglerID:hover > #navIconID {
+  color: var(--lightest-slate) !important;
+}
+
+#navbarTogglerID:active > #navIconID {
+  color: var(--slate) !important;
+}
+
 #navbarSupportedContent {
   position: fixed;
   top: 0;
@@ -639,6 +648,7 @@ ul > li {
 
 #navIconID {
   color: var(--light-slate) !important;
+  margin: auto;
 }
 /* 
   #navIconID:hover{
