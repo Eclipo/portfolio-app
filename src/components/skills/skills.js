@@ -451,27 +451,33 @@ class Skills extends Component {
               </p>
               <ul className="skillBullet">
                 <li>
-                  I can fly through{" "}
-                  <span className="highLight"> HTML, CSS and JavaScript</span>.
+                  <p>
+                    I can fly through{" "}
+                    <span className="highLight"> HTML, CSS and JavaScript</span>
+                    .
+                  </p>
                 </li>
-                <br></br>
                 <li>
-                  I can waddle in the dale of
-                  <span className="highLight"> .Net </span>and pull off some
-                  <span className="highLight"> C#</span>.
+                  <p>
+                    {" "}
+                    I can waddle in the dale of
+                    <span className="highLight"> .Net </span>and pull off some
+                    <span className="highLight"> C#</span>.
+                  </p>
                 </li>
-                <br></br>
                 <li>
-                  I can even paddle in the great seas of
-                  <span className="highLight"> MSSQL databases</span>.
+                  <p>
+                    I can even paddle in the great seas of
+                    <span className="highLight"> MSSQL databases</span>.
+                  </p>
                 </li>
               </ul>
 
               <p>
                 I can get by in the whole stack where front-end is my stronger
-                forte. Occasionally I need support from the senior developers
-                when facing a code-bug from hell or in the making of a solid
-                plan before getting my hands dirty.
+                forte. Occasionally, I seek support from the senior developers
+                when the code-terrain is a bit too complex and I need a plan
+                before getting into some action.
               </p>
             </div>
           </div>

@@ -8,10 +8,6 @@ export class QuickAboutAnimation {
     var flagSize = windowArea * 0.0000045;
     var flagSizeIncrease = flagSize + 0.3;
 
-    const displayKnuckles = document.getElementById("displayKnucklesID");
-    const knuckles = document.getElementById("KnucklesContainerID");
-    const knucklesSVG = document.getElementById("KnucklesSvgID");
-
     var setDashoffset = function (el) {
       var l = el.getTotalLength();
       el.setAttribute("stroke-dasharray", l);
@@ -286,7 +282,7 @@ export class QuickAboutAnimation {
       targets: ".stars",
       scale: [0.05, 0.5],
       easing: "easeOutQuad",
-      duration: 750,
+      duration: 500,
     });
 
     this.lightSaberAnimation.add({
@@ -303,22 +299,22 @@ export class QuickAboutAnimation {
       easing: "linear",
       translateX: 0,
       translateY: 0,
-      delay: anime.stagger(50, { grid: roGrid, from: "last" }),
+      delay: anime.stagger(10, { grid: roGrid, from: "last" }),
     });
 
     this.lightSaberAnimation.add({
       targets: ".outerLightSaber, .coreLightSaber",
       opacity: [0, 0.25, 0, 0.5, 0, 1],
       easing: "easeOutElastic(1, .9)",
-      duration: 550,
-      endDelay: 1500,
+      duration: 500,
+      endDelay: 500,
     });
 
     this.lightSaberAnimation.add({
       targets: ".outerLightSaber, .coreLightSaber",
       opacity: [1, 0.25, 1, 0.5, 1, 0],
       easing: "easeOutElastic(1, .9)",
-      duration: 750,
+      duration: 500,
     });
 
     this.lightSaberAnimation.add({
@@ -328,7 +324,7 @@ export class QuickAboutAnimation {
       easing: "linear",
       translateX: () => anime.random(-250, 250),
       translateY: () => anime.random(-150, 150),
-      delay: anime.stagger(40, { grid: roGrid, from: "first" }),
+      delay: anime.stagger(25, { grid: roGrid, from: "first" }),
     });
 
     const ratio = 0.25 * window.innerWidth;
@@ -337,53 +333,53 @@ export class QuickAboutAnimation {
     this.marioAnimation = anime.timeline({
       loop: true,
       autoplay: false,
-      duration: 350,
+      duration: 150,
 
       easing: "linear",
-      endDelay: 250,
+      endDelay: 50,
       direction: "alternate",
     });
 
     this.marioArmHandRightAnimation = anime.timeline({
       loop: true,
       autoplay: false,
-      duration: 350,
+      duration: 250,
 
       easing: "linear",
-      delay: 1500,
-      endDelay: 250,
+      delay: 500,
+      endDelay: 50,
       direction: "alternate",
     });
 
     this.marioLegRightAnimation = anime.timeline({
       loop: true,
       autoplay: false,
-      duration: 350,
+      duration: 250,
 
       easing: "linear",
-      delay: 1500,
-      endDelay: 250,
+      delay: 500,
+      endDelay: 50,
       direction: "alternate",
     });
 
     this.marioLegLeftAnimation = anime.timeline({
       loop: true,
       autoplay: false,
-      duration: 350,
+      duration: 250,
 
       easing: "linear",
-      delay: 1500,
-      endDelay: 250,
+      delay: 500,
+      endDelay: 50,
       direction: "alternate",
     });
 
     this.marioArmHandLeftAnimation = anime.timeline({
       loop: true,
       autoplay: false,
-      duration: 350,
-      delay: 1500,
+      duration: 250,
+      delay: 500,
       easing: "linear",
-      endDelay: 250,
+      endDelay: 50,
       direction: "alternate",
     });
 
