@@ -229,8 +229,8 @@ export const Navbar = () => {
                     data-bs-parent="#accordionExample">
                     <div className="accordion-body">
                       <p className="navP m-0 p-0">
-                        These design tools have been important to me in building
-                        my website. Try them out for an enhanced experience and
+                        These design tools have helpt me in building websites.{" "}
+                        <br></br>Try them out for an enhanced experience and
                         understand my take on web design.
                       </p>
 
@@ -361,7 +361,7 @@ export const Navbar = () => {
                             <br></br>
                             <br></br>
                             Unfortunately, it does not work on the iPhone's
-                            mobile browser Safari.
+                            mobile browser Safari and I don't know why.
                           </p>
                         </div>
                       </div>

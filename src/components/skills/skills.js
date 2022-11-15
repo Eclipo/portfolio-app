@@ -89,65 +89,55 @@ class Skills extends Component {
         <h1 style={{ color: "var(--primary-blue" }}>Skills</h1>
 
         <div className="container-sm skillContainer" id="skillContainerID">
-          <table className="skillTable">
-            <tbody>
-              <tr>
-                <td>
-                  <button
-                    className="bg-transparent"
-                    id="frontEnd"
-                    onClick={this.filterSkills}>
-                    <h2 className="skillCategory frontEndTheme">
-                      Front <br></br> end
-                    </h2>
-                  </button>
-                </td>
-                <td>
-                  <button
-                    className="bg-transparent"
-                    id="backEnd"
-                    onClick={this.filterSkills}>
-                    <h2 className="skillCategory backEndTheme">
-                      Back <br></br> end
-                    </h2>
-                  </button>
-                </td>
-
-                <td>
-                  <button
-                    className="bg-transparent"
-                    id="roles"
-                    onClick={this.filterSkills}>
-                    <h2 className="skillCategory rolesTheme d-inline-flex justify-content-center">
-                      JOB<br></br> roles
-                    </h2>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>
-                  <div className="flexCenter">
-                    <button id="resetSkills" onClick={this.resetSkills}>
-                      <FontAwesomeIcon
-                        className="fntAwesome p-2"
-                        icon={faSyncAlt}
-                        color="var(--slate)"
-                        style={{ margin: "auto" }}></FontAwesomeIcon>
-                    </button>
-                  </div>
-                </td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
           <div className="row"></div>
-          <div className="row">
-            <p>
-              Click on the buttons above to filter out the selected skill
-              category.
-            </p>
+          <div className="row m-auto">
+            <div className="col">
+              <button
+                className="bg-transparent"
+                id="frontEnd"
+                onClick={this.filterSkills}>
+                <h2 className="skillCategory frontEndTheme">
+                  Front <br></br> end
+                </h2>
+              </button>
+            </div>
+            <div className="col">
+              <button
+                className="bg-transparent"
+                id="backEnd"
+                onClick={this.filterSkills}>
+                <h2 className="skillCategory backEndTheme">
+                  Back <br></br> end
+                </h2>
+              </button>
+            </div>
+            <div className="col">
+              <button
+                className="bg-transparent"
+                id="roles"
+                onClick={this.filterSkills}>
+                <h2 className="skillCategory rolesTheme d-inline-flex justify-content-center">
+                  JOB<br></br> roles
+                </h2>
+              </button>
+            </div>
           </div>
+          <div className="row m-auto">
+            <div className="col"></div>
+            <div className="col">
+              <div className="flexCenter">
+                <button id="resetSkills" onClick={this.resetSkills}>
+                  <FontAwesomeIcon
+                    className="fntAwesome p-2"
+                    icon={faSyncAlt}
+                    color="var(--slate)"
+                    style={{ margin: "auto" }}></FontAwesomeIcon>
+                </button>
+              </div>
+            </div>
+            <div className="col"></div>
+          </div>
+
           <table className="skillTable">
             <thead>
               <tr>

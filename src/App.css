@@ -577,6 +577,7 @@ ul > li {
 .navSubIcon:hover {
   color: var(--light-navy);
   background-color: var(--light-slate) !important;
+  border: 0.15rem solid var(--darkest-slate) !important;
 }
 
 .navSubIcon:active {
