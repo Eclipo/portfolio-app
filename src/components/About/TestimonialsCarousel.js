@@ -7,14 +7,12 @@ import stadshus from "./images/stadshuset.png";
 import cloud from "./images/miniCloud.png";
 import marioCloud from "./images/cloud-small.png";
 import flags from "./images/flags.png";
-import questionBrick from "./images/question-mark-block.gif";
 
 //Family
 import { Family } from "./Family/Family";
 import { EdipBasket } from "./EdipBasket/EdipBasket";
 import { Weights } from "./Weights/Weights";
 import { LightSaber } from "./lightSaber/lightSaber";
-import { KnucklesSvg } from "../Experiences/KnucklesSvg/KnucklesSvg";
 import { Mario } from "./Mario/mario";
 const TestimonialsCarousel = () => {
   return (
@@ -179,11 +177,6 @@ const TestimonialsCarousel = () => {
             background: "var(--primary-blue)",
           }}>
           <img className="marioCloud" src={marioCloud} alt="mario cloud" />
-          <img
-            className="questionBrick"
-            src={questionBrick}
-            alt="mario question brick"
-          />
 
           <div className="flexCenter">
             <Mario></Mario>

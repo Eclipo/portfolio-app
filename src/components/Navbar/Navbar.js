@@ -245,7 +245,7 @@ export const Navbar = () => {
                                 onClick={outlineMode}
                                 style={{
                                   backgroundColor: isRed
-                                    ? "var(--light-slate)"
+                                    ? "var(--lightest-slate)"
                                     : "transparent",
                                 }}>
                                 <FontAwesomeIcon
@@ -281,7 +281,7 @@ export const Navbar = () => {
                                 borderRadius: "18px",
                                 borderColor: "var(--slate)",
                                 backgroundColor: isCbRedGreen
-                                  ? "var(--light-slate)"
+                                  ? "var(--lightest-slate)"
                                   : "transparent",
                               }}
                               onClick={cbRedGreenMode}>
@@ -307,7 +307,7 @@ export const Navbar = () => {
                                 borderRadius: "18px",
                                 borderColor: "var(--slate)",
                                 backgroundColor: isCbYellowBlue
-                                  ? "var(--light-slate)"
+                                  ? "var(--lightest-slate)"
                                   : "transparent",
                               }}
                               onClick={cbYellowBlueMode}>
@@ -333,7 +333,7 @@ export const Navbar = () => {
                                 borderRadius: "18px",
                                 borderColor: "var(--slate)",
                                 backgroundColor: isCbTotal
-                                  ? "var(--light-slate)"
+                                  ? "var(--lightest-slate)"
                                   : "transparent",
                               }}
                               onClick={cbTotalMode}>

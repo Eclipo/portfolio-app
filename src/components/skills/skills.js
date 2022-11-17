@@ -116,7 +116,7 @@ class Skills extends Component {
                 className="bg-transparent"
                 id="roles"
                 onClick={this.filterSkills}>
-                <h2 className="skillCategory rolesTheme d-inline-flex justify-content-center">
+                <h2 className="skillCategory rolesTheme">
                   JOB<br></br> roles
                 </h2>
               </button>
