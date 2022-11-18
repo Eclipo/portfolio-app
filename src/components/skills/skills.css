@@ -90,20 +90,55 @@ button .skillCategory {
   border-radius: 18px;
   border: 0.4rem solid var(--slate);
   transition: var(--transition);
-  box-shadow: 0 0.5rem var(--lightest-navy);
+  box-shadow: 0 0.5rem var(--dark-slate);
 }
 
 .skillCategory:hover {
   opacity: 0.9;
-  border: 0.45rem solid var(--light-slate);
+  /* border: 0.45rem solid var(--light-slate); */
 }
 
 .skillCategory:active {
   opacity: 0.75;
   border: 0.3rem solid var(--lightest-slate);
-  box-shadow: 0 0.2rem var(--lightest-navy);
+  /* box-shadow: 0 0.2rem var(--lightest-navy); */
+}
 
-  /* margin: 0.1rem; */
+.shadowAnimation {
+  animation-duration: 1.75s;
+  animation-name: animateShadow;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.shadowAnimation_2 {
+  animation-duration: 1.75s;
+  animation-delay: 0.75s;
+  animation-name: animateShadow;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.shadowAnimation_3 {
+  animation-duration: 1.75s;
+  animation-delay: 1.5s;
+  animation-name: animateShadow;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animateShadow {
+  from {
+    box-shadow: 0 0.5rem var(--dark-slate);
+    scale: 1;
+    opacity: 1;
+  }
+
+  to {
+    box-shadow: 0 0rem var(--dark-slate);
+    scale: 0.95;
+    opacity: 0.75;
+  }
 }
 
 .skillPointPelar {

@@ -416,15 +416,15 @@ export class QuickAboutAnimation {
 
     this.marioCloud = anime.timeline({
       easing: "easeInOutQuad",
-      duration: 10000,
+      duration: 5250,
+      direction: "alternate",
       loop: true,
       autoplay: false,
     });
 
     this.marioCloud.add({
       targets: ".marioCloud",
-      translateX: ["-50vw", "110vw"],
-      opacity: [0.5, 1, 0.75, 0.5, 0.25, 0],
+      translateY: ["0", "-1rem"],
     });
   }
 
@@ -454,7 +454,7 @@ export class QuickAboutAnimation {
       let result = "";
 
       for (let i = 0; i < STAR_COUNT; i++) {
-        result += `${randomNumber(-35, 35)}rem ${randomNumber(
+        result += `${randomNumber(-50, 50)}rem ${randomNumber(
           -15,
           15
         )}rem ${randomNumber(0, 3)}px ${randomNumber(0, 3)}px #fff,`;

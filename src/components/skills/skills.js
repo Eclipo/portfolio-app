@@ -30,6 +30,13 @@ class Skills extends Component {
     const skillsFrontEnd = document.querySelectorAll(".skill.frontEndTheme");
     const skillsBackend = document.querySelectorAll(".skill.backEndTheme");
     const skillsRoles = document.querySelectorAll(".skill.rolesTheme");
+    const frontEnd = document.getElementById("frontEndHeaderBtn");
+    frontEnd.classList.remove("shadowAnimation");
+    const backEnd = document.getElementById("backEndHeaderBtn");
+    backEnd.classList.remove("shadowAnimation_2");
+    const roles = document.getElementById("rolesHeaderBtn");
+    roles.classList.remove("shadowAnimation_3");
+
     switch (filter) {
       case "frontEnd":
         anime({
@@ -96,7 +103,9 @@ class Skills extends Component {
                 className="bg-transparent"
                 id="frontEnd"
                 onClick={this.filterSkills}>
-                <h2 className="skillCategory frontEndTheme">
+                <h2
+                  className="skillCategory frontEndTheme shadowAnimation"
+                  id="frontEndHeaderBtn">
                   Front <br></br> end
                 </h2>
               </button>
@@ -106,7 +115,9 @@ class Skills extends Component {
                 className="bg-transparent"
                 id="backEnd"
                 onClick={this.filterSkills}>
-                <h2 className="skillCategory backEndTheme">
+                <h2
+                  className="skillCategory backEndTheme shadowAnimation_2"
+                  id="backEndHeaderBtn">
                   Back <br></br> end
                 </h2>
               </button>
@@ -116,7 +127,9 @@ class Skills extends Component {
                 className="bg-transparent"
                 id="roles"
                 onClick={this.filterSkills}>
-                <h2 className="skillCategory rolesTheme">
+                <h2
+                  className="skillCategory rolesTheme shadowAnimation_3"
+                  id="rolesHeaderBtn">
                   JOB<br></br> roles
                 </h2>
               </button>

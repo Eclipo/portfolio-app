@@ -594,6 +594,7 @@ ul > li {
   width: fit-content !important;
   max-width: 98vw;
   margin-right: 1rem;
+  border-radius: 5%;
 }
 
 /* scrolling state */
@@ -642,9 +643,10 @@ ul > li {
   margin: 0;
   padding: 0;
   z-index: -2;
-  border-left: 0.15rem var(--slate) solid;
-  border-top: 0.15rem var(--slate) solid;
-  border-bottom: 0.15rem var(--slate) solid;
+  border-left: 0.2rem var(--slate) solid;
+  border-top: 0.45rem var(--slate) solid;
+  border-bottom: 0.45rem var(--slate) solid;
+  border-radius: 5px 0 0 5px;
 }
 
 #navIconID {
@@ -685,6 +687,7 @@ nav ul li {
   overflow-y: auto !important;
   max-height: 98vh;
   -webkit-overflow-scrolling: auto !important;
+  border-radius: 5px 0 0 5px;
 }
 
 .navbar-nav > li > a {
