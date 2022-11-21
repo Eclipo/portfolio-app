@@ -1,22 +1,24 @@
 .btnRefresh {
-  background-color: "none";
-  border: 0.3rem var(--light-slate) solid !important;
+  background-color: var(--lightest-navy) !important;
+  border: 0.15rem black solid !important;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
   opacity: 0;
   pointer-events: none;
   display: none;
-  transition: var(--transition);
+  transition: var(--transition) !important;
+  box-shadow: var(--btnShadow);
 }
 
 .btnPlay {
-  background-color: var(--navy);
-  border: 0.3rem var(--light-slate) solid;
+  background-color: var(--lightest-navy);
+  border: 0.15rem black solid;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
-  transition: var(--transition);
+  transition: var(--transition) !important;
+  box-shadow: var(--btnShadow);
 }
 
 .fntAwesome {
@@ -25,8 +27,7 @@
 }
 
 .btnPlay:hover {
-  border: 0.3rem var(--lightest-slate) solid;
-  background-color: var(--dark-navy);
+  box-shadow: var(--btnHoverShadow);
 }
 
 .btnPlay:hover > .fntAwesome {
@@ -34,8 +35,7 @@
 }
 
 .btnPlay:active {
-  border: 0.3rem var(--lightest-slate) solid;
-  background-color: var(--darkest-navy);
+  box-shadow: var(--btnActiveShadow);
 }
 
 .btnPlay:active > .fntAwesome {
@@ -43,8 +43,7 @@
 }
 
 .btnRefresh:hover {
-  border: 0.3rem var(--lightest-slate) solid;
-  background-color: var(--dark-navy) !important;
+  box-shadow: var(--btnHoverShadow);
 }
 
 .btnRefresh:hover > .fntAwesome {
@@ -52,8 +51,7 @@
 }
 
 .btnRefresh:active {
-  border: 0.3rem var(--lightest-slate) solid;
-  background-color: var(--darkest-navy) !important;
+  box-shadow: var(--btnActiveShadow);
 }
 
 .btnRefresh:active > .fntAwesome {

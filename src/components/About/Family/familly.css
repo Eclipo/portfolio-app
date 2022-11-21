@@ -80,7 +80,7 @@
   font-family: "Open Sans", sans-serif;
   height: 37.5rem;
   margin: 0 auto;
-  background: #423c0a!important;
+  background: #423c0a !important;
   border-radius: 6.25rem;
   position: relative;
   top: 12.5rem;
@@ -237,7 +237,7 @@
 .hair-main {
   width: 13.75rem;
   height: 8.5625rem;
-  background: linear-gradient( #141313 60%, rgb(83, 77, 77) 40%) !important;
+  background: linear-gradient(#141313 60%, rgb(83, 77, 77) 40%) !important;
   border-radius: 3.375rem 3.375rem 0rem 0rem;
   margin-left: -0.75rem;
   margin-top: -0.625rem;
@@ -257,6 +257,8 @@
   border-bottom-right-radius: 40%;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  box-shadow: 0 0rem 0.25rem 0 var(--primary-white),
+    inset 0 -0.5rem 1rem 0 #959241;
 }
 
 .erika-hair {
@@ -269,6 +271,8 @@
   margin-top: 0.5rem;
   position: absolute;
   z-index: 2;
+  box-shadow: 0 0rem 0.25rem 0 var(--primary-white),
+    inset 0 -0.5rem 1rem 0 #959241;
 }
 
 .noah-hair-top {
@@ -281,29 +285,49 @@
   margin-top: -1.5rem;
   position: relative;
   z-index: 2;
+  box-shadow: 0 0rem 0.25rem 0 var(--primary-white),
+    inset 1.25rem 0.5rem 1rem 0 #959241;
 }
 
 .noah-hair-side-left {
   background: #edd88a;
 
-  width: 4rem;
+  width: 3.1rem !important;
   height: 13rem !important;
   border-radius: 0rem 1.375rem 2.375rem 0rem;
   margin-left: -1.5rem;
   margin-top: -6.25rem;
   position: relative;
   z-index: 2;
+  box-shadow: 0 0 0 0 var(--primary-white),
+    inset 0.5rem 0.45rem 1.5rem -1.5rem #959241;
+}
+
+#firstRightCurly {
+  box-shadow: 0 0rem 0rem 0 var(--primary-white),
+    inset -0.75rem 0.45rem 0.9rem 0 #959241;
+  width: 5.5rem !important;
+}
+
+#firstLeftCurly {
+  box-shadow: 0 0rem 0rem 0 var(--primary-white),
+    inset 0.85rem 0.1rem 0.5rem -0.1rem #959241;
+  border-top: transparent;
+  border: transparent !important;
+  width: 4rem;
 }
 
 .noah-hair-side-right {
   background: #edd88a;
 
-  width: 4rem;
+  width: 3.5rem;
   height: 15.5rem !important;
   border-radius: 0rem 5rem 0rem 5rem;
   margin-left: 10.25rem;
   margin-top: -0.5rem !important;
   position: relative;
+  box-shadow: 0 0 0 0 var(--primary-white),
+    inset 0.5rem 0.45rem 1.5rem -1.5rem #959241;
 }
 
 .curly-ball-right {
@@ -312,6 +336,8 @@
   width: 5rem;
   height: 2.5rem;
   border-radius: 0rem 2rem 0rem 2rem;
+  box-shadow: 0 0rem 0 0 var(--primary-white),
+    inset -1rem -0.15rem 0.75rem 0 #959241;
 }
 
 .curly-ball-left {
@@ -321,6 +347,8 @@
   height: 2.5rem;
   border-radius: 2rem 0rem 2rem 0rem;
   margin-left: -1.25rem;
+  box-shadow: 0 0rem 0 0 var(--primary-white),
+    inset 1rem -0.15rem 0.75rem 0 #959241;
 }
 .beard {
   width: 13.7rem;
@@ -351,11 +379,20 @@
   margin-left: 2%;
 }
 
+.erika-head {
+  box-shadow: 0.1rem 0 0.1rem #f4c37e, inset 0 -0.5rem 1rem 0 #9e7843;
+}
+
+.face.erika-face {
+  box-shadow: 0 0 0 #f4c37e, inset 0rem 0.5rem 1rem -0.75rem #9e7843;
+}
+
 .noah-face {
   width: 10.8rem;
   height: 9.75rem;
   border-radius: 4rem 4rem 4rem 4rem;
   left: 0.3125rem;
+  box-shadow: 0 0.1rem 0.25rem 0 #f4c37e, inset 0 -0.2rem 1rem 0 #9e7843;
 }
 .laleh-face {
   width: 11.25rem;
@@ -376,6 +413,8 @@
   margin-left: -0.625rem;
 
   z-index: 4;
+  box-shadow: 0 0.1rem 0.25rem 0 #e7ab57,
+    inset 0 -0.5rem 1rem 0 var(--lightest-navy);
 }
 
 .erika-nose {
@@ -383,6 +422,8 @@
   height: 0.625rem !important;
   border-radius: 0rem 0rem 2.125rem 2.125rem !important;
   margin-top: 1.25rem !important;
+  box-shadow: 0 0.1rem 0.1rem 0 #c35263,
+    inset 0rem -0.1rem 0.25rem 0 var(--primary-white);
 }
 
 .noah-nose {
@@ -390,6 +431,8 @@
   height: 0.75rem !important;
   border-radius: 0rem 0rem 2.125rem 2.125rem !important;
   margin-top: 1.25rem !important;
+  box-shadow: 0 0.1rem 0.1rem 0 #c13f53,
+    inset 0rem -0.1rem 0.25rem 0 var(--primary-white);
 }
 
 .laleh-nose {
@@ -397,6 +440,8 @@
   height: 0.9rem !important;
   border-radius: 0rem 0rem 2.125rem 2.125rem !important;
   margin-top: 0.75rem !important;
+  box-shadow: 0 0.1rem 0.1rem 0 #fa2645,
+    inset 0rem -0.1rem 0.25rem 0 var(--primary-white);
 }
 
 .mouth {
@@ -482,7 +527,7 @@
 }
 
 .laleh-eye {
-  background: radial-gradient(#238a5c,#311a00) !important;
+  background: radial-gradient(#238a5c, #311a00) !important;
 }
 
 .shadow-wrapper {

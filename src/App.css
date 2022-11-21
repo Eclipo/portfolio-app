@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 :root {
+  /*Claymorphism boxShadows*/
+  --btnShadow: 0 0.1rem 0.25rem 0 var(--slate),
+    inset 0 -0.5rem 1rem 0 var(--navy);
+
+  --btnHoverShadow: 0 0.125rem 0.25rem 0 var(--light-slate),
+    inset 0 -0.75rem 2rem 0 var(--darkest-navy);
+
+  --btnActiveShadow: 0 0.125rem 0.25rem 0 var(--lightest-slate),
+    inset 0 -1rem 3rem 0 var(--darkest-navy);
+
+  --faceShadow: 0 0.1rem 0.25rem 0 var(--primary-red),
+    inset 0 -0.5rem 1rem 0 var(#ffe4be);
+
   /* Colors */
   --primary-white: rgba(249, 247, 247, 0.969);
   --primary-lighter-blue: #51a0ee;
@@ -59,6 +72,7 @@
 }
 
 /************************* MAIN CSS CLASSES *********************************/
+
 .sectionAnimation {
   background-color: var(--dark-navy);
   min-height: 90vh;
