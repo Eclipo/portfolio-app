@@ -54,7 +54,7 @@
 #tableStartWeightsGuyID {
   transform: scale(calc(0.5 / var(--size-divisorWeights)));
   margin: auto;
-  top: .5rem;
+  top: 0.5rem;
   z-index: 1;
   position: absolute;
 }
@@ -66,15 +66,15 @@
   background: #ffe4be;
   margin-left: 1.8rem;
   position: relative;
-  
 }
 
 .hairMainWeights {
   width: 14rem;
   height: 13rem;
-  background: #3f2a14;
+  background: linear-gradient(#141313 60%, rgb(83, 77, 77) 40%) !important;
   border-radius: 3.375rem 3.375rem 0rem 0rem;
-
+  box-shadow: 0.25rem 0.25rem 0.5rem -0.5rem #adabab,
+    inset 0.25rem 0.5rem 1.5rem 0.5rem #2a2828;
   position: relative;
 }
 
@@ -88,6 +88,7 @@
   margin-top: 1rem;
   margin-left: 1.3rem;
   top: 2rem;
+  box-shadow: 0 0 0.25rem 0 #f4c37e, inset 0 0 1.5rem 0.25rem #9c7742;
 }
 
 .nose {
@@ -133,11 +134,11 @@
   opacity: 1;
 }
 
-.eyeBrow_left{
+.eyeBrow_left {
   transform: rotate(-10deg) !important;
 }
 
-.eyeBrow_right{
+.eyeBrow_right {
   transform: rotate(10deg) !important;
 }
 
@@ -161,7 +162,7 @@
   top: 9.375rem;
   left: 50%;
   margin-left: -2.0625rem;
-  transform:rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .shadow-wrapper {
@@ -177,9 +178,11 @@
 .beardWeights {
   width: 14rem;
   height: 4rem;
-  background: #3f2a14;
+  background: #111111 !important;
   border-radius: 0.3125rem 0rem 3.375rem 3.375rem;
   margin-top: -0.1rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem -0.5rem #adabab,
+    inset 0.25rem 0.5rem 1rem 0.5rem #3c3939;
 }
 
 /* ******** UPPER BODY ******** */
@@ -191,16 +194,15 @@
   border-radius: 6.25rem;
   position: absolute;
   z-index: -1 !important;
-
+  box-shadow: 0 0 2.5rem -0.5rem #fbcd79, inset 0 0 2rem 0.25rem #9e6907;
 }
 
-#upperBody_1{
+#upperBody_1 {
   margin-bottom: -1rem;
   z-index: 2 !important;
-
 }
 
-#upperBody_2{
+#upperBody_2 {
   margin-bottom: -8rem;
 }
 
@@ -213,7 +215,6 @@
   position: absolute;
 
   float: left !important;
-  
 }
 
 .left-arm-weights {
@@ -226,7 +227,6 @@
   transform: rotate(-50deg);
   z-index: -2 !important;
   border-radius: 18px;
-
 }
 
 .leftHandWeights {
@@ -253,40 +253,47 @@
   width: 17rem;
   height: 4rem;
   margin-left: 12.5rem;
-  margin-top:10rem;
+  margin-top: 10rem;
   transform: rotate(55deg);
   border-radius: 18px;
 }
 
-
-.deadLift{
+.deadLift {
   margin-left: -12.5rem;
   align-content: left;
   z-index: 2;
 }
 
-.bar{
+.bar {
   width: 140%;
-  height:2rem;
+  height: 2rem;
   background-color: var(--slate);
   margin-top: 2rem;
+  box-shadow: var(--btnShadow);
 }
 
-.weight_left{
+.weight_left {
   width: 4rem;
-  height:15rem;
+  height: 15rem;
   background-color: var(--darkest-slate);
   float: left;
   margin-top: -6.75rem;
-  
+  box-shadow: var(--btnShadow);
+  border-radius: 18px;
+  box-shadow: 0.25rem 0.25rem 0.5rem -0.5rem #adabab,
+    inset 0 0 2rem 1rem #010101;
 }
 
-.weight_right{
+.weight_right {
   width: 4rem;
-  height:15rem;
+  height: 15rem;
   background-color: var(--darkest-slate);
+  border-radius: 18px;
+
   margin-top: -8.5rem;
   margin-left: 40rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem -0.5rem #adabab,
+    inset 0 0 2rem 1rem #010101;
 }
 
 .rightHandWeights {
@@ -311,13 +318,14 @@
   border-bottom-left-radius: 25%;
   border-bottom-right-radius: 25%;
   z-index: -2;
+  box-shadow: 0 0 1rem -0.5rem rgb(255, 90, 90),
+    inset 0 0 2rem 0.25rem rgb(153, 7, 7);
 }
 
 .lowerBodyLeftWeights {
   margin-left: 1rem;
   margin-top: 3rem;
   z-index: -2;
-
 }
 
 #lowerBodyRightWeights {
