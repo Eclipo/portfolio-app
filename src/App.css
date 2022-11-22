@@ -628,15 +628,17 @@ ul > li {
 }
 
 #navbarTogglerID {
+  margin-top: 0.5rem;
   position: relative;
-  background-color: none;
+  background-color: none !important;
   position: sticky;
   position: -webkit-sticky;
   transition: var(--transition);
+  border: 0.1rem var(--dark-slate) solid;
 }
 
 #navbarTogglerID:hover {
-  background-color: var(--lightest-navy) !important;
+  /* background-color: var(--lightest-navy) !important; */
 }
 
 #navbarTogglerID:hover > #navIconID {
