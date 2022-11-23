@@ -1,5 +1,5 @@
 .btnRefresh {
-  background-color: var(--lightest-navy) !important;
+  background-color: var(--btnLight-navy) !important;
   border: 0.15rem black solid !important;
   border-radius: 50%;
   width: 5rem;
@@ -12,7 +12,7 @@
 }
 
 .btnPlay {
-  background-color: var(--lightest-navy);
+  background-color: var(--btnLight-navy);
   border: 0.15rem black solid;
   border-radius: 50%;
   width: 5rem;
