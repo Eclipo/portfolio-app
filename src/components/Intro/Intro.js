@@ -238,18 +238,19 @@ class Intro extends Component {
             <span style={{ color: "var(--tint-navy)" }}> navbar </span>.
           </p>
 
-          <div className="row">
+          <div className="row mt-3">
             <div className="col">
               <Link
                 to={"quickFacts"}
-                className="nav-link"
+                className=""
                 href="#"
                 style={{ marginLeft: "1.5rem" }}>
-                <button className="navSubIcon m-auto">
+                <button className="bg-transparent m-auto">
                   <FontAwesomeIcon
                     icon={faArrowDown}
-                    color="var(--tint-navy)"
+                    color="var(--slate)"
                     className="fntAwesome"
+                    id="arrowDown"
                     style={{ transform: "scale(2)" }}></FontAwesomeIcon>
                 </button>
               </Link>

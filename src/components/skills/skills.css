@@ -21,22 +21,26 @@
   margin: auto;
   /* padding: 0.5rem; */
   scale: 1.5;
+  margin-bottom: 1rem;
 }
 
 #resetSkills .fntAwesome {
-  border-radius: 5px;
+  border-radius: 50%;
   transition: var(--transition);
   margin-top: 1rem !important;
+  background-color: var(--lightest-navy);
+  border-radius: 0.5rem black solid;
+  box-shadow: var(--btnShadow);
 }
 
 #resetSkills .fntAwesome:hover {
   color: var(--lightest-slate);
-  background-color: var(--lightest-navy);
+  box-shadow: var(--btnActiveShadow);
 }
 
 #resetSkills .fntAwesome:active {
   color: var(--slate);
-  /* background-color: var(--light-navy); */
+  box-shadow: var(--btnActiveShadow);
 }
 
 ul.a {
@@ -87,23 +91,24 @@ button .skillCategory {
   opacity: 1;
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
-  border-radius: 18px;
-  border: 0.4rem solid var(--slate);
+  border-radius: 5%;
+  border: 0.1rem solid black;
   transition: var(--transition);
-  box-shadow: 0 0.5rem var(--dark-slate);
+  box-shadow: var(--btnSkillShadow);
 }
 
 .skillCategory:hover {
-  opacity: 0.9;
-  /* border: 0.45rem solid var(--light-slate); */
+  box-shadow: var(--btnHoverShadow);
+  /* border: none; */
 }
 
 .skillCategory:active {
-  opacity: 0.75;
-  border: 0.3rem solid var(--lightest-slate);
+  box-shadow: var(--btnActiveShadow);
+  /* opacity: 0.75;
+  border: 0.3rem solid var(--lightest-slate); */
   /* box-shadow: 0 0.2rem var(--lightest-navy); */
 }
-
+/* 
 .shadowAnimation {
   animation-duration: 1.75s;
   animation-name: animateShadow;
@@ -125,7 +130,7 @@ button .skillCategory {
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-}
+} */
 
 @keyframes animateShadow {
   from {

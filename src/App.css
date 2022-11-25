@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 :root {
   /*Claymorphism boxShadows*/
-  --btnShadow: 0 0.1rem 0.15rem 0 var(--slate),
-    inset 0 0rem 0.75rem 0.75rem var(--light-navy);
+  --btnSkillShadow: 0.1rem 0.1rem 0.25rem 0.1rem black,
+    inset -0.1rem -0.25rem 0.25rem 0.1rem var(--dark-slate),
+    inset -0.2rem -0.25rem 0.5rem 0.1rem var(--light-navy),
+    inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
 
-  --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--light-slate),
+  --btnShadow: 0.1rem 0.1rem 0.25rem 0.1rem black,
+    inset -0.2rem -0.25rem 0.5rem 0.1rem var(--light-navy),
+    inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
+
+  --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--navy);
 
   --btnActiveShadow: 0 0.3rem 0.25rem 0 var(--lightest-slate),
@@ -46,7 +52,7 @@
   --navy: #0a192f;
   --light-navy: #112240;
   --lightest-navy: #283c60;
-  --btnLight-navy: #5877ad;
+  --btnLight-navy: #214478;
 
   --tint-navy: #7cacfd;
   --navy-shadow: rgba(2, 12, 27, 0.7);
@@ -632,15 +638,18 @@ ul > li {
 #navbarTogglerID {
   margin-top: 0.5rem;
   position: relative;
-  background-color: none !important;
+  background-color: var(--lightest-navy) !important;
   position: sticky;
   position: -webkit-sticky;
   transition: var(--transition);
-  border: 0.1rem var(--dark-slate) solid;
+  border: 0.1rem black solid;
+  box-shadow: var(--btnShadow);
+
+  /* border: 0.1rem var(--dark-slate) solid; */
 }
 
 #navbarTogglerID:hover {
-  /* background-color: var(--lightest-navy) !important; */
+  box-shadow: var(--btnLight-navy);
 }
 
 #navbarTogglerID:hover > #navIconID {
