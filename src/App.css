@@ -6,10 +6,15 @@
     inset -0.2rem -0.25rem 0.5rem 0.1rem var(--lightest-navy),
     inset 0.2rem 0.4rem 0.1rem -0.1rem var(--primary-white);
 
-  --navBtnSkillShadow: 0 0.1rem 0.25rem 0.15rem black,
+  --navBtnSkillShadow: 0 0.1rem 0.25rem -0.1rem black,
     inset 0.1rem -0.25rem 0.5rem 0.3rem var(--lightest-navy),
     inset -0.2rem -0.25rem 0.5rem 0.1rem var(--btnLight-navy),
     inset 0.2rem 0.4rem 0.1rem -0.1rem var(--primary-white);
+
+  --navExpandedShadow: 0.1rem 0.25rem 0.25rem 0.25rem black,
+    inset -0.2rem 0.1rem 0.5rem 0.1rem var(--dark-navy),
+    inset 0.1rem 0.5rem 0.5rem -0.1rem var(--primary-white),
+    inset -0.2rem 0.1rem 0.5rem 0.5rem var(--light-navy);
 
   --btnSkillShadow: 0.2rem 0.25rem 0.25rem 0.25rem black,
     inset 0.1rem -0.25rem 0.5rem 0.3rem var(--navy),
@@ -26,14 +31,23 @@
     inset -0.2rem -0.25rem 0.5rem 0.1rem var(--light-navy),
     inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
 
-  --btnNavHoverActiveShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
-    inset 0 0 0.5rem 0 var(--slate);
-
   --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--navy);
 
   --btnActiveShadow: 0 0.3rem 0.25rem 0 var(--lightest-slate),
-    inset 0 0 3rem 0 var(--darkest-navy);
+    inset 0 0 3rem 0 var(--navy);
+
+  --btnDesinShadow: 0 0 0.1rem -0.1rem black,
+    inset -0rem -0.1rem 0.2rem 0.1rem var(--light-navy),
+    inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
+
+  --btnDesinHoverShadow: 0 0 0 0 black,
+    inset 0 -0.1rem 0.25rem 0.25rem var(--navy);
+
+  --btnDesinActiveShadow: 0 -0.1rem 0.1rem 0.2rem black;
+
+  --btnNavHoverActiveShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
+    inset 0 0 0.5rem 0 var(--slate);
 
   --faceShadow: 0 0.1rem 0.25rem 0 var(--primary-red),
     inset 0 -0.5rem 1rem 0 var(#ffe4be);
@@ -49,6 +63,7 @@
   --primary-dark-yellow: #fced20;
 
   --primary-orange: #f39e00;
+  --primary-light-orange: #ffbd42;
 
   --primary-green: #2ec479;
   --primary-darker-green: #3d9a6c;
@@ -57,7 +72,7 @@
   --primary-dark-brown: #5f3314;
 
   --primary-greenBlue: rgb(49, 221, 192);
-  --primary-light-green: #a9fad2;
+  --primary-light-green: rgb(96, 208, 186);
 
   --primary-grey: rgb(75, 75, 75);
   --primary-lightGrey: #cccccc;
@@ -521,18 +536,9 @@ ul > li {
   box-shadow: inset 0 0 0.5rem var(--slate);
   border-radius: 0 0 5px 0;
 }
-
-.contactRow {
-  justify-content: left !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.contactRow .emailBtn {
-  margin-left: 0 !important;
-}
 .accordion {
-  /* margin-top: 2.75rem; */
+  margin-top: 2.75rem;
+  display: block;
   margin-bottom: 1.25rem;
   width: fit-content;
   min-width: 95%;
@@ -544,28 +550,24 @@ ul > li {
 }
 
 .accordion-button {
-  background-color: var(--darkest-slate) !important;
-  border-top: 0.1rem solid var(--primary-white) !important;
-  border-left: 0.1rem solid var(--primary-white) !important;
-  border-right: 0.1rem solid var(--primary-white) !important;
-  border-bottom: 0.1rem solid var(--primary-white) !important;
+  background-color: var(--dark-slate) !important;
+  border: 0.1rem black solid !important;
 
   color: var(--lightest-slate) !important;
   justify-content: center !important;
-  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 93%) !important;
+  /* box-shadow: inset 0 -1px 0 rgb(0 0 0 / 93%) !important; */
   transition: var(--transition) !important;
   padding: 0.45rem !important;
   margin-right: 0.25rem !important;
-  border-radius: 5px 5px 0 0 !important;
+  border-radius: 1px !important;
+  box-shadow: var(--btnShadow) !important;
 }
 
 .accordion-button:hover {
-  color: var(--primary-white) !important;
-  background-color: var(--lightest-navy) !important;
-  border: 0.1rem solid var(--primary-white);
+  box-shadow: var(--btnHoverShadow) !important;
 }
 .accordion-button:focus {
-  box-shadow: none !important;
+  box-shadow: var(--btnActiveShadow) !important;
 }
 
 .accordion-button.collapsed::after {
@@ -623,23 +625,23 @@ ul > li {
 }
 
 .navSubIcon {
-  color: var(--light-slate);
-  border: 0.05rem solid var(--darkest-slate) !important;
+  color: var(--lightest-slate) !important;
+  padding-bottom: 0.5rem !important;
   width: fit-content;
   display: block;
   border-radius: 18px;
   transition: var(--transition);
+  box-shadow: var(--btnDesinShadow);
 }
 
 .navSubIcon:hover {
-  color: var(--light-navy);
-  background-color: var(--light-slate) !important;
-  border: 0.15rem solid var(--darkest-slate) !important;
+  box-shadow: var(--btnDesinHoverShadow);
 }
 
 .navSubIcon:active {
-  color: var(--slate);
-  background-color: var(--slate) !important;
+  box-shadow: var(--btnDesinActiveShadow);
+  background-color: var(--light-slate) !important;
+  /* border: 0.1rem black solid !important; */
 }
 
 /* default state */
@@ -676,7 +678,7 @@ ul > li {
   position: sticky;
   position: -webkit-sticky;
   transition: var(--transition);
-  background-color: var(--lightest-navy) !important;
+  background-color: var(--btnLight-navy) !important;
 }
 
 #navbarTogglerID:hover {
@@ -701,9 +703,9 @@ ul > li {
   margin: 0;
   padding: 0;
   z-index: -2;
-  border-left: 0.2rem var(--slate) solid;
+  /* border-left: 0.2rem var(--slate) solid;
   border-top: 0.45rem var(--slate) solid;
-  border-bottom: 0.45rem var(--slate) solid;
+  border-bottom: 0.45rem var(--slate) solid; */
   border-radius: 5px 0 0 5px;
 }
 
@@ -735,13 +737,14 @@ nav ul li {
 }
 
 .navbar-nav {
-  background-color: var(--darkest-slate);
+  background-color: var(--dark-slate);
   padding: 1rem !important;
   margin: auto !important;
   overflow-y: auto !important;
   max-height: 98vh;
   -webkit-overflow-scrolling: auto !important;
   border-radius: 5px 0 0 5px;
+  box-shadow: var(--navExpandedShadow) !important;
 }
 
 .navbar-nav > li > a {

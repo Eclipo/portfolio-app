@@ -28,7 +28,7 @@
   border-radius: 50%;
   transition: var(--transition);
   margin-top: 1rem !important;
-  background-color: var(--lightest-navy);
+  background-color: var(--btnLight-navy);
   border: 0.1rem black solid;
   box-shadow: var(--btnShadow);
 }
@@ -84,7 +84,7 @@ button .skillCategory {
   margin: 0;
 }
 .skillCategory {
-  padding: 0.35rem !important;
+  padding: 0.75rem !important;
   margin: 0.25rem !important;
   width: fit-content;
 
@@ -108,41 +108,38 @@ button .skillCategory {
   border: 0.3rem solid var(--lightest-slate); */
   /* box-shadow: 0 0.2rem var(--lightest-navy); */
 }
-/* 
+
 .shadowAnimation {
-  animation-duration: 1.75s;
+  animation-duration: 2s;
+  animation-delay: 2s;
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
 
 .shadowAnimation_2 {
-  animation-duration: 1.75s;
-  animation-delay: 0.75s;
+  animation-duration: 2s;
+  animation-delay: 2s;
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
 
 .shadowAnimation_3 {
-  animation-duration: 1.75s;
-  animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-delay: 2s;
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-} */
+}
 
 @keyframes animateShadow {
   from {
-    box-shadow: 0 0.5rem var(--dark-slate);
-    scale: 1;
-    opacity: 1;
+    box-shadow: var(--btnSkillShadow);
   }
 
   to {
-    box-shadow: 0 0rem var(--dark-slate);
-    scale: 0.95;
-    opacity: 0.75;
+    box-shadow: var(--btnSkillActiveShadow);
   }
 }
 
@@ -198,7 +195,7 @@ tr > td > .sectionLine {
 }
 
 .frontEndTheme {
-  background-color: rgb(31, 62, 114) !important;
+  background-color: rgb(35, 71, 134) !important;
   color: var(--primary-white) !important;
 }
 
@@ -208,7 +205,7 @@ tr > td > .sectionLine {
 }
 
 .rolesTheme {
-  background-color: rgb(80, 117, 185) !important;
+  background-color: rgb(66, 105, 175) !important;
   color: var(--primary-white) !important;
 }
 

@@ -192,23 +192,6 @@ export const Navbar = () => {
               className="navbar-nav"
               id="ulNavID"
               style={{ marginLeft: "1rem" }}>
-              <div className="contactRow container-sm row mt-3">
-                <a
-                  className="emailBtn mailText"
-                  href="mailto:edipsarac.work@gmail.com"
-                  rel="noopener noreferrer"
-                  target="_blank">
-                  <FontAwesomeIcon icon={faEnvelope} className="my-auto" />
-                </a>
-
-                <a
-                  className="emailBtn linkedInIcon my-auto"
-                  href="https://se.linkedin.com/in/edipsarac"
-                  rel="noopener noreferrer"
-                  target="_blank">
-                  in
-                </a>
-              </div>
               <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingOne">

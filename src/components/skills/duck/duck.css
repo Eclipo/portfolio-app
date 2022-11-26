@@ -125,7 +125,7 @@
   width: 9rem;
   height: 2rem;
   border-radius: 0 2.0625rem 0 2.0625rem;
-  background: var(--primary-orange);
+  background: var(--primary-light-orange);
   position: absolute;
   top: 7rem;
   right: 75%;
@@ -135,7 +135,7 @@
   width: 9rem;
   height: 2rem;
   border-radius: 2.0625rem 0 2.0625rem 0;
-  background: var(--primary-orange);
+  background: var(--primary-light-orange);
   position: absolute;
   top: 9.25rem;
   right: 75%;

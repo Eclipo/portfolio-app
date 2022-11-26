@@ -125,8 +125,8 @@
 }
 
 .resumeNav {
-  background-color: var(--navy);
-  border-color: 0.1rem var(--darkest-slate) solid;
+  background-color: var(--lightest-navy);
+  /* border-color: 0.1rem var(--darkest-slate) solid; */
   border-radius: 18px;
   padding: 1rem;
   color: var(--primary-red);
@@ -139,7 +139,7 @@
 
 .resumeNav h2 {
   margin: auto;
-  color: var(--light-slate);
+  color: var(--lightest-slate);
   transition: var(--transition);
 }
 
