@@ -1,14 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 :root {
   /*Claymorphism boxShadows*/
-  --btnSkillShadow: 0.1rem 0.1rem 0.25rem 0.1rem black,
-    inset -0.1rem -0.25rem 0.25rem 0.1rem var(--dark-slate),
+  --menuBtnSkillShadow: 0 0.1rem 0.25rem 0.15rem black,
+    inset 0.1rem -0.25rem 0.5rem 0.3rem var(--light-navy),
+    inset -0.2rem -0.25rem 0.5rem 0.1rem var(--lightest-navy),
+    inset 0.2rem 0.4rem 0.1rem -0.1rem var(--primary-white);
+
+  --navBtnSkillShadow: 0 0.1rem 0.25rem 0.15rem black,
+    inset 0.1rem -0.25rem 0.5rem 0.3rem var(--lightest-navy),
+    inset -0.2rem -0.25rem 0.5rem 0.1rem var(--btnLight-navy),
+    inset 0.2rem 0.4rem 0.1rem -0.1rem var(--primary-white);
+
+  --btnSkillShadow: 0.2rem 0.25rem 0.25rem 0.25rem black,
+    inset 0.1rem -0.25rem 0.5rem 0.3rem var(--navy),
     inset -0.2rem -0.25rem 0.5rem 0.1rem var(--light-navy),
-    inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
+    inset 0.2rem 0.4rem 0.1rem -0.1rem var(--primary-white);
+
+  --btnSkillHoverShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
+    inset 0 0 1rem 0.5rem var(--navy);
+
+  --btnSkillActiveShadow: 0 0.15rem 0.25rem 0 var(--primary-white),
+    inset 0 0 3rem 0 black;
 
   --btnShadow: 0.1rem 0.1rem 0.25rem 0.1rem black,
     inset -0.2rem -0.25rem 0.5rem 0.1rem var(--light-navy),
     inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
+
+  --btnNavHoverActiveShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
+    inset 0 0 0.5rem 0 var(--slate);
 
   --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--navy);
@@ -118,6 +137,26 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.menuBtn {
+  border-radius: 50%;
+
+  transition: var(--transition);
+  box-shadow: var(--navBtnSkillShadow) !important;
+}
+
+.menuBtn .fntAwesome {
+  background-color: var(--lightest-navy) !important;
+}
+.menuBtn:hover {
+  color: var(--lightest-slate);
+  box-shadow: var(--btnActiveShadow);
+}
+
+.menuBtn:active {
+  color: var(--slate);
+  box-shadow: var(--btnActiveShadow);
 }
 
 .playIcon {
@@ -575,10 +614,6 @@ ul > li {
   border: none !important;
 }
 
-.navbar-toggler:focus {
-  box-shadow: none !important;
-}
-
 .navBtnMenu {
   display: block;
 }
@@ -638,18 +673,14 @@ ul > li {
 #navbarTogglerID {
   margin-top: 0.5rem;
   position: relative;
-  background-color: var(--lightest-navy) !important;
   position: sticky;
   position: -webkit-sticky;
   transition: var(--transition);
-  border: 0.1rem black solid;
-  box-shadow: var(--btnShadow);
-
-  /* border: 0.1rem var(--dark-slate) solid; */
+  background-color: var(--lightest-navy) !important;
 }
 
 #navbarTogglerID:hover {
-  box-shadow: var(--btnLight-navy);
+  box-shadow: var(--btnNavHoverActiveShadow) !important;
 }
 
 #navbarTogglerID:hover > #navIconID {
@@ -680,10 +711,6 @@ ul > li {
   color: var(--light-slate) !important;
   margin: auto;
 }
-/* 
-  #navIconID:hover{
-    color:var(--tint-navy) !important;
-  } */
 
 nav {
   z-index: 2;

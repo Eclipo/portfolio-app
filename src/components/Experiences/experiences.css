@@ -142,20 +142,30 @@
   width: fit-content;
   padding: 1rem;
   color: var(--primary-purple);
-  border-color: var(--primary-light-green);
-  border-width: 0.1rem;
+  border: 0.1rem black solid;
+  /* border-color: var(--primary-light-green); */
+  /* border-width: 0.1rem; */
   border-style: solid;
   opacity: 1;
-  background-color: var(--navy);
+  background-color: var(--light-navy);
   display: flex;
   transition: var(--transition);
+  box-shadow: var(--btnShadow);
+  border-radius: 18px;
 }
 
 .techCategory:hover {
-  border-width: 0.3rem;
-  background-color: var(--darkest-navy);
+  /* border-width: 0.3rem; */
+  box-shadow: var(--btnSkillHoverShadow);
+
+  /* background-color: var(--darkest-navy); */
 }
 
+.techCategory:active {
+  /* border-width: 0.3rem; */
+  box-shadow: var(--btnSkillActiveShadow) !important;
+  /* background-color: var(--darkest-navy); */
+}
 .scrollLine {
   /* background-color: var(--primary-light-green);
   border-radius: 16px;

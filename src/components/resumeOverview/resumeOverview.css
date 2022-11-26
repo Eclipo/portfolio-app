@@ -29,24 +29,24 @@
   color: var(--primary-red);
 }
 
-.expTableText{
-  margin:auto;
+.expTableText {
+  margin: auto;
 }
 
-.row>*{
+.row > * {
   padding: 0;
 }
 
-.width1{
+.width1 {
   width: 1%;
   margin: auto !important;
 }
 
-.width25{
+.width25 {
   width: 25%;
 }
 
-.width30{
+.width30 {
   width: 30%;
 }
 
@@ -61,7 +61,6 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-
 
 .expOverviewPeriod td {
   text-align: center;
@@ -82,7 +81,7 @@
 }
 
 .expOverviewPeriod-reverseColor h3 {
-  color: black!important;
+  color: black !important;
 }
 
 .expOverviewPeriod-reverseColor h4 {
@@ -106,7 +105,7 @@
   display: none;
 }
 
-.resumeNavMenu{
+.resumeNavMenu {
   background-color: black;
   border-color: var(--primary-red);
   border-width: 0.16rem;
@@ -120,16 +119,14 @@
   justify-content: center;
 }
 
-.resumeNavRow{
+.resumeNavRow {
   justify-content: center;
   margin-top: 1rem;
 }
 
-.resumeNav{
+.resumeNav {
   background-color: var(--navy);
-  border-color: var(--primary-red);
-  border-width: 0.25rem;
-  border-style: solid;
+  border-color: 0.1rem var(--darkest-slate) solid;
   border-radius: 18px;
   padding: 1rem;
   color: var(--primary-red);
@@ -137,75 +134,78 @@
   margin: auto;
   margin-left: 1rem;
   margin-right: 1rem;
+  box-shadow: var(--btnShadow);
 }
 
-.resumeNav h2{
+.resumeNav h2 {
   margin: auto;
-  color:var(--light-slate);
-  transition:var(--transition);
+  color: var(--light-slate);
+  transition: var(--transition);
 }
 
-.resumeNav:hover h2{
-  color:var(--primary-red);
+.resumeNav:hover h2 {
+  color: var(--primary-red);
 }
 
-.resumeNav:hover{
+.resumeNav:hover {
   background-color: var(--dark-navy);
+  box-shadow: var(--btnSkillHoverShadow);
 }
 
-
- #resumeLangID.resumeNavFocus{
-  background: linear-gradient(to left, var(--primary-red) 50%,var(--dark-navy)); 
-  color:var(--dark-navy) !important;
-  background-size: 200%; 
-  background-position: right bottom;
-  border: none !important;
- }
-
- #resumeExpID.resumeNavFocus{
-  background: linear-gradient(to left, var(--primary-red) 50%,black); 
-  color:var(--dark-navy) !important;
-  background-size: 200%; 
-  background-position: right bottom;
-  border: none !important;
- }
-
- #resumeEduID.resumeNavFocus{
-  background: linear-gradient(to left, var(--primary-red) 50%,black); 
-  color:var(--dark-navy) !important;
+#resumeLangID.resumeNavFocus {
+  background: linear-gradient(
+    to left,
+    var(--primary-red) 50%,
+    var(--dark-navy)
+  );
+  color: var(--dark-navy) !important;
   background-size: 200%;
   background-position: right bottom;
   border: none !important;
- }
+}
 
-.resumeNav:focus{
-  background: linear-gradient(to left, var(--primary-red) 50%,black); 
-  color:var(--dark-navy) !important;
-  background-size: 200%; 
+#resumeExpID.resumeNavFocus {
+  background: linear-gradient(to left, var(--primary-red) 50%, black);
+  color: var(--dark-navy) !important;
+  background-size: 200%;
+  background-position: right bottom;
+  border: none !important;
+}
+
+#resumeEduID.resumeNavFocus {
+  background: linear-gradient(to left, var(--primary-red) 50%, black);
+  color: var(--dark-navy) !important;
+  background-size: 200%;
+  background-position: right bottom;
+  border: none !important;
+}
+
+.resumeNav:focus {
+  background: linear-gradient(to left, var(--primary-red) 50%, black);
+  color: var(--dark-navy) !important;
+  background-size: 200%;
   background-position: right bottom;
   transition: all 2s ease-out;
   border: none !important;
 }
 
-
-.resumeNav:focus h2{
-  color:black;
+.resumeNav:focus h2 {
+  color: black;
 }
 
-
-#resumeLangID.resumeNavFocus h2{
-  color:black;
+#resumeLangID.resumeNavFocus h2 {
+  color: black;
 }
 
-#resumeExpID.resumeNavFocus h2{
-  color:black;
+#resumeExpID.resumeNavFocus h2 {
+  color: black;
 }
 
-#resumeEduID.resumeNavFocus h2{
-  color:black;
+#resumeEduID.resumeNavFocus h2 {
+  color: black;
 }
 
-.activeNav{
+.activeNav {
   background-color: var(--primary-red);
   border-color: var(--navy);
   border-style: double;
@@ -250,7 +250,6 @@
   margin: auto;
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
-
 }
 
 .experienceTable {

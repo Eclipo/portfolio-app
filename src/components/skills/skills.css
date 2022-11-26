@@ -29,18 +29,18 @@
   transition: var(--transition);
   margin-top: 1rem !important;
   background-color: var(--lightest-navy);
-  border-radius: 0.5rem black solid;
+  border: 0.1rem black solid;
   box-shadow: var(--btnShadow);
 }
 
 #resetSkills .fntAwesome:hover {
   color: var(--lightest-slate);
-  box-shadow: var(--btnActiveShadow);
+  box-shadow: var(--btnSkillHoverShadow);
 }
 
 #resetSkills .fntAwesome:active {
   color: var(--slate);
-  box-shadow: var(--btnActiveShadow);
+  box-shadow: var(--btnSkillActiveShadow);
 }
 
 ul.a {
@@ -91,19 +91,19 @@ button .skillCategory {
   opacity: 1;
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
-  border-radius: 5%;
+  border-radius: 18px;
   border: 0.1rem solid black;
   transition: var(--transition);
-  box-shadow: var(--btnSkillShadow);
+  box-shadow: var(--menuBtnSkillShadow);
 }
 
 .skillCategory:hover {
-  box-shadow: var(--btnHoverShadow);
+  box-shadow: var(--btnSkillHoverShadow);
   /* border: none; */
 }
 
 .skillCategory:active {
-  box-shadow: var(--btnActiveShadow);
+  box-shadow: var(--btnSkillActiveShadow);
   /* opacity: 0.75;
   border: 0.3rem solid var(--lightest-slate); */
   /* box-shadow: 0 0.2rem var(--lightest-navy); */

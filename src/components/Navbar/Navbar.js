@@ -169,11 +169,11 @@ export const Navbar = () => {
 
   return (
     <div className="containerNavbar " id="navContainerID">
-      <nav id="customNav" className="navbar bg-transparent">
+      <nav id="customNav" className="navbar">
         <div className="container-fluid m-0 p-0" id="fullNavbarID">
           <button
             id="navbarTogglerID"
-            className="navbar-toggler bg-transparent"
+            className="menuBtn"
             type="button"
             onClick={handleClick}
             data-bs-toggle="collapse"
