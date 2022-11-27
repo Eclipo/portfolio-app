@@ -173,7 +173,36 @@ export const Family = () => {
                 right: "5rem",
               }}>
               <div className="head laleh-head">
-                <div className="laleh-hair"></div>
+                <div className="laleh-hair-bg">
+                  <div
+                    className="laleh-hair"
+                    style={{ marginLeft: "-4rem" }}></div>
+                  <div
+                    className="laleh-hair"
+                    style={{ marginLeft: "-3rem" }}></div>
+                  <div
+                    className="laleh-hair"
+                    style={{ marginLeft: "-2rem" }}></div>
+                  <div
+                    className="laleh-hair"
+                    style={{ marginLeft: "-1rem" }}></div>
+                  <div className="laleh-hair"></div>
+                  <div
+                    className="laleh-hair"
+                    style={{ marginLeft: "1rem" }}></div>
+                  <div
+                    className="laleh-hair"
+                    style={{ marginLeft: "2rem" }}></div>
+                  <div
+                    className="laleh-hair"
+                    style={{ marginLeft: "3rem" }}></div>
+                  <div
+                    className="laleh-hair"
+                    style={{ marginLeft: "4rem" }}></div>
+                  <div
+                    className="laleh-hair"
+                    style={{ marginLeft: "5rem" }}></div>
+                </div>
                 <div className="face laleh-face">
                   <div className="nose laleh-nose"></div>
                   <div className="eye-shadow" id="left">
@@ -195,12 +224,7 @@ export const Family = () => {
                   <div className="shadow-wrapper"></div>
                 </div>
               </div>
-              <div className="laleh-body">
-                <div className="laleh-np left-1"></div>
-                <div className="laleh-np right-2"></div>
-
-                <div className="laleh-diaper"></div>
-              </div>
+              <div className="laleh-body"></div>
             </div>
           </td>
         </tr>
