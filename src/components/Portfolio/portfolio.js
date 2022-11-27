@@ -450,9 +450,9 @@ class Portfolio extends Component {
               <div className="row zenParagraph">
                 <p className="portfolioParagraph">
                   After several setbacks, I decided to settle with{" "}
-                  <span className="highLight">Lagom</span>. Then bits and pieces
-                  started to slowly fall into place and I didn't have too high
-                  expectations for myself.
+                  <span className="highLight">Lagom</span>, meaning good enough.
+                  Then bits and pieces started to slowly fall into place and I
+                  didn't have too high expectations for myself.
                   <br></br>
                   <br></br>
                   With time, my skills gradually improved and in the end I

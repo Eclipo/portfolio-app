@@ -679,6 +679,7 @@ ul > li {
   position: -webkit-sticky;
   transition: var(--transition);
   background-color: var(--btnLight-navy) !important;
+  border: 0.1rem black solid !important;
 }
 
 #navbarTogglerID:hover {

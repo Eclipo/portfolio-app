@@ -275,9 +275,7 @@ class Skills extends Component {
                 </td>
 
                 <td>
-                  <div
-                    className="skillPointGround"
-                    style={{ opacity: "0" }}></div>
+                  <p className="skill rolesTheme">UI designer</p>
                 </td>
                 <td>
                   <p className="skill rolesTheme">Tester</p>
