@@ -24,8 +24,8 @@
   --btnSkillHoverShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--navy);
 
-  --btnSkillActiveShadow: 0 0.15rem 0.25rem 0 var(--primary-white),
-    inset 0 0 3rem 0 black;
+  --btnSkillActiveShadow: 0 0.15rem 0.25rem 0.1rem var(--primary-white),
+    inset 0 0 2rem 1.5rem var(--darkest-navy);
 
   --btnShadow: 0.1rem 0.1rem 0.25rem 0.1rem black,
     inset -0.2rem -0.25rem 0.5rem 0.1rem var(--light-navy),

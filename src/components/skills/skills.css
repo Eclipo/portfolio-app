@@ -109,12 +109,22 @@ button .skillCategory {
   /* box-shadow: 0 0.2rem var(--lightest-navy); */
 }
 
+.selectedBtn {
+  box-shadow: var(--btnSkillActiveShadow);
+}
+
 .shadowAnimation {
   animation-duration: 2s;
   animation-delay: 2s;
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-name: animateShadow;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
 }
 
 .shadowAnimation_2 {
@@ -123,6 +133,12 @@ button .skillCategory {
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-name: animateShadow;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
 }
 
 .shadowAnimation_3 {
@@ -131,6 +147,12 @@ button .skillCategory {
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-name: animateShadow;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes animateShadow {

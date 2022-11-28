@@ -17,6 +17,14 @@ class Skills extends Component {
   }
 
   resetSkills(event) {
+    const frontEnd = document.getElementById("frontEndHeaderBtn");
+    const backEnd = document.getElementById("backEndHeaderBtn");
+    const roles = document.getElementById("rolesHeaderBtn");
+
+    frontEnd.classList.remove("selectedBtn");
+    backEnd.classList.remove("selectedBtn");
+    roles.classList.remove("selectedBtn");
+
     anime({
       targets: ".skill",
       easing: "linear",
@@ -31,14 +39,17 @@ class Skills extends Component {
     const skillsBackend = document.querySelectorAll(".skill.backEndTheme");
     const skillsRoles = document.querySelectorAll(".skill.rolesTheme");
     const frontEnd = document.getElementById("frontEndHeaderBtn");
-    frontEnd.classList.remove("shadowAnimation");
     const backEnd = document.getElementById("backEndHeaderBtn");
-    backEnd.classList.remove("shadowAnimation_2");
     const roles = document.getElementById("rolesHeaderBtn");
+
+    frontEnd.classList.remove("shadowAnimation");
+    backEnd.classList.remove("shadowAnimation_2");
     roles.classList.remove("shadowAnimation_3");
 
     switch (filter) {
       case "frontEnd":
+        frontEnd.classList.add("selectedBtn");
+
         anime({
           targets: ".skill",
           easing: "linear",
@@ -49,11 +60,16 @@ class Skills extends Component {
               easing: "linear",
               opacity: 1,
             });
+
+            backEnd.classList.remove("selectedBtn");
+            roles.classList.remove("selectedBtn");
           },
         });
         break;
 
       case "backEnd":
+        backEnd.classList.add("selectedBtn");
+
         anime({
           targets: ".skill",
           easing: "linear",
@@ -64,11 +80,15 @@ class Skills extends Component {
               easing: "linear",
               opacity: 1,
             });
+            frontEnd.classList.remove("selectedBtn");
+            roles.classList.remove("selectedBtn");
           },
         });
         break;
 
       case "roles":
+        roles.classList.add("selectedBtn");
+
         anime({
           targets: ".skill",
           easing: "linear",
@@ -79,6 +99,8 @@ class Skills extends Component {
               easing: "linear",
               opacity: 1,
             });
+            frontEnd.classList.remove("selectedBtn");
+            backEnd.classList.remove("selectedBtn");
           },
         });
         break;
