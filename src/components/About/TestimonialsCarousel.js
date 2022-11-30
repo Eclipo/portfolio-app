@@ -36,7 +36,7 @@ const TestimonialsCarousel = () => {
             <Family></Family>
           </div>
 
-          <div className="d-block " style={{ marginTop: "-14.75rem" }}>
+          <div className="d-block " style={{ marginTop: "-15.5rem" }}>
             <h2>Family</h2>
             <p>Me, Erika, our son Noah and baby girl Laleh</p>
           </div>
