@@ -38,7 +38,7 @@ const TestimonialsCarousel = () => {
 
           <div className="d-block " style={{ marginTop: "-14.75rem" }}>
             <h2>Family</h2>
-            <p>Me, Erika, our son Noah and baby girl Laleh.</p>
+            <p>Me, Erika, our son Noah and baby girl Laleh</p>
           </div>
         </div>
       </>
@@ -61,7 +61,7 @@ const TestimonialsCarousel = () => {
           <div
             style={{ display: "block position-absolute", marginTop: "3rem" }}>
             <h2>Origin</h2>
-            <p>I am born in Sweden with Kurdish origin from Turkey.</p>
+            <p>I am born in Sweden with Kurdish origin from Turkey</p>
           </div>
         </div>
       </>
@@ -82,7 +82,7 @@ const TestimonialsCarousel = () => {
               height: "10rem",
             }}>
             <h2>Stockholm</h2>
-            <p>My hometown and I still live here.</p>
+            <p>My hometown</p>
           </div>
         </div>
       </>
@@ -108,13 +108,7 @@ const TestimonialsCarousel = () => {
 
           <EdipBasket></EdipBasket>
 
-          <div
-            style={{
-              backgroundColor: "var(--primary-grey)",
-              width: "110%",
-              height: "55%",
-              marginTop: "12.5rem",
-            }}>
+          <div className="basketBg">
             <h2 className="mt-5">Basket</h2>
             <p>
               I play basketball<br></br>from time to time
@@ -132,13 +126,7 @@ const TestimonialsCarousel = () => {
           }}>
           <Weights></Weights>
 
-          <div
-            style={{
-              backgroundColor: "var(--primary-grey)",
-              width: "110%",
-              height: "55%",
-              marginTop: "12.5rem",
-            }}>
+          <div className="basketBg">
             <h2 className="mt-4">Weights</h2>
             <p>
               Nowdays I try<br></br>lifting some weights
@@ -164,7 +152,7 @@ const TestimonialsCarousel = () => {
             }}>
             <h2 className="mt-3">Star Wars</h2>
             <p>
-              One of my favorite series<br></br>is The Mandalorian.
+              The Mandalorian <br></br>is my favorite tv-show!
             </p>
           </div>
         </div>
@@ -178,16 +166,17 @@ const TestimonialsCarousel = () => {
           }}>
           <img className="marioCloud" src={marioCloud} alt="mario cloud" />
 
-          <div className="flexCenter">
+          <div className="flexCenter marioAvatar">
             <Mario></Mario>
           </div>
 
           <div className="brickFloor">
-            <h2 className="">Video games</h2>
-            <p>
-              I have a passion for retrogames <br></br>from the late 80s and the
-              90s.
-            </p>
+            <span className="marioText">
+              <h2 className="">Video games</h2>
+              <p className="">
+                I have a passion for retrogames from the late 80s and the 90s
+              </p>
+            </span>
           </div>
         </div>
       </>

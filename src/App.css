@@ -27,9 +27,9 @@
   --btnSkillActiveShadow: 0 0.15rem 0.25rem 0.1rem var(--primary-white),
     inset 0 0 2rem 1.5rem var(--darkest-navy);
 
-  --btnShadow: 0.1rem 0.1rem 0.25rem 0.1rem black,
-    inset -0.2rem -0.25rem 0.5rem 0.1rem var(--light-navy),
-    inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
+  --btnShadow: -0.1rem 0.25rem 0.25rem 0.1rem black,
+    inset -0.3rem -0.2rem 0.5rem 0.1rem var(--navy),
+    inset 0.2rem 0.4rem 0.5rem -0.2rem var(--primary-white);
 
   --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--navy);
@@ -52,6 +52,17 @@
   --faceShadow: 0 0.1rem 0.25rem 0 var(--primary-red),
     inset 0 -0.5rem 1rem 0 var(#ffe4be);
 
+  --btnPersonalityCardShadow: 0.1rem 0.1rem 0.25rem 0.2rem black,
+    inset -0.3rem -0.3rem 0.5rem 0.2rem var(--primary-dark-green),
+    inset 0.1rem 0.1rem 0.5rem 0.2rem var(--primary-white),
+    inset 0.2rem 0.4rem 0.5rem 0.1rem var(--primary-greenBlue);
+
+  --btnPersonalityCardHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
+    inset 0 0 4rem 1rem var(--primary-dark-green);
+
+  --btnPersonalityCardActiveShadow: 0 0.3rem 0.25rem 0 var(--lightest-slate),
+    inset 0 0 3rem 0 var(--navy);
+
   /* Colors */
   --primary-white: rgba(249, 247, 247, 0.969);
   --primary-lighter-blue: #51a0ee;
@@ -67,7 +78,7 @@
 
   --primary-green: #2ec479;
   --primary-darker-green: #3d9a6c;
-
+  --primary-dark-green: #102a1d;
   --primary-brown: #96592d;
   --primary-dark-brown: #5f3314;
 

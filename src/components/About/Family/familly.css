@@ -220,7 +220,7 @@
   border-bottom: 0.1rem black solid;
   z-index: 100;
   box-shadow: 0.5rem 0.25rem 0.25rem -0.25rem #f4c37e,
-    inset 0.25rem 0.25rem 2rem 0.5rem rgb(239, 187, 114);
+    inset 0.25rem 0.25rem 2rem 0.25rem #9e7843;
 }
 
 .cheek {
@@ -421,7 +421,7 @@
   border-radius: 4rem 4rem 4rem 4rem;
   background-color: #ffe4be;
   left: 2rem;
-  box-shadow: none !important;
+  box-shadow: 0 0rem 0rem 0 #f4c37e, inset 0 0rem 0rem 0 #9e7843;
 }
 
 .nose {

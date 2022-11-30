@@ -147,10 +147,12 @@
   margin: auto;
   opacity: 0;
 }
+
 .bookContainer {
   margin-top: -4.75rem;
   margin-bottom: -5rem;
 }
+
 .personalityTextContainer .duckText {
   color: var(--lightest-slate) !important;
   margin: 0;
@@ -173,41 +175,28 @@
   padding: 0.5rem;
 }
 
-.brokenBanner {
-  margin-top: 1rem !important;
-  color: var(--dark-navy);
-  -webkit-text-stroke: 1px var(--primary-green);
-  background-color: var(--dark-navy) !important;
-}
-
-.brokenArrow {
-  color: var(--primary-green);
-  -webkit-text-stroke: 1px var(--primary-green);
-  box-shadow: 0rem -1rem 5.25rem 0.5rem var(--primary-green);
-  background-color: transparent;
-
-  transform: scale(2.5);
-  margin-top: 1rem;
-}
 .personalityTextContainer .col {
   margin: auto;
 }
+
 .personalityCard {
+  border: none !important;
   background-color: var(--primary-green);
-  border-width: 0.25rem;
-  border-style: solid;
-  border-color: var(--primary-green);
   width: 25rem;
   height: fit-content;
   margin: 2rem;
   cursor: pointer;
   transition: var(--transition);
-  /* margin-bottom: 1rem; */
+  box-shadow: var(--btnPersonalityCardShadow);
 }
 
 .personalityCard:hover {
-  border-color: var(--primary-light-green);
-  border-width: 0.35rem;
+  box-shadow: var(--btnPersonalityCardHoverShadow);
+}
+
+.personalityCard:active {
+  opacity: 0.9;
+  box-shadow: var(--btnPersonalityCardActiveShadow);
 }
 
 .personalityCard.selectedPersonalityCard {
@@ -215,6 +204,8 @@
   border-width: 0.35rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  background-color: var(--light-navy) !important;
+  box-shadow: var(--btnSkillShadow);
 }
 
 .selectedPersonalityCard > .card-body {
