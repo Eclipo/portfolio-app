@@ -59,11 +59,15 @@
   width: 9.25rem;
   height: 12.5625rem;
   border-radius: 3rem 3rem 0 0;
+  border-bottom: none !important;
   background: #eeebe6;
   position: absolute;
   top: 2.5rem;
   left: 33%;
   z-index: 4;
+  box-shadow: 0.5rem -0.35rem 0.5rem -0.15rem var(--slate),
+    inset -0rem 0.1rem 0.2rem -0.1rem var(--light-navy),
+    inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
 }
 
 .duckBody {
@@ -78,6 +82,7 @@
   top: 12.5rem;
   margin-bottom: 5%;
   z-index: 0;
+  box-shadow: var(--btnShadow);
 }
 
 .duckEye {
@@ -89,6 +94,8 @@
   top: -1.125rem;
   left: 50%;
   margin-left: -0.625rem;
+  box-shadow: var(--btnDesinShadow);
+  /* z-index: -1; */
 }
 
 .duckEye-shadow {
@@ -119,6 +126,7 @@
   margin-left: -1.25rem;
   opacity: 1;
   -webkit-backface-visibility: hidden;
+  /* box-shadow: var(--btnDesinShadow); */
 }
 
 .duckMouthUpper {
@@ -129,6 +137,7 @@
   position: absolute;
   top: 7rem;
   right: 75%;
+  box-shadow: var(--btnDesinShadow);
 }
 
 .duckMouthUnder {
@@ -139,6 +148,7 @@
   position: absolute;
   top: 9.25rem;
   right: 75%;
+  box-shadow: var(--btnDesinShadow);
 }
 
 .shadow-wrapper {

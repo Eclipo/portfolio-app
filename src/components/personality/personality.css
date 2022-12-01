@@ -228,19 +228,20 @@
 .personalityCloseBtn {
   float: right;
   margin: 0.5rem;
-  border: none;
-  background-color: var(--dark-navy);
+  border: 0.1rem black solid;
+  background-color: var(--btnLight-navy);
   font-weight: 800;
-
+  border-radius: 50%;
   color: var(--primary-pink);
   display: none;
+  box-shadow: var(--navBtnSkillShadow);
   transition: var(--transition);
 }
 
 .personalityCloseBtn:hover {
   color: var(--slate);
   background-color: var(--lightest-navy) !important;
-  border-radius: 5px;
+  box-shadow: var(--btnHoverShadow);
 }
 
 .personalityCard h3,
