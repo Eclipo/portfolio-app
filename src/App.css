@@ -38,7 +38,7 @@
     inset 0 0 3rem 0 var(--navy);
 
   --btnDesinShadow: 0 0 0.1rem -0.1rem black,
-    inset -0rem -0.1rem 0.2rem 0.1rem var(--light-navy),
+    inset -0rem -0.1rem 0.2rem 0.2rem var(--light-navy),
     inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
 
   --btnDesinHoverShadow: 0 0 0 0 black,
