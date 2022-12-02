@@ -99,18 +99,23 @@ button .skillCategory {
 
 .skillCategory:hover {
   box-shadow: var(--btnSkillHoverShadow);
+  transition: var(--transition);
+
   /* border: none; */
 }
 
 .skillCategory:active {
   box-shadow: var(--btnSkillActiveShadow);
+  transition: var(--transition);
+
   /* opacity: 0.75;
   border: 0.3rem solid var(--lightest-slate); */
   /* box-shadow: 0 0.2rem var(--lightest-navy); */
 }
 
 .selectedBtn {
-  box-shadow: var(--btnSkillActiveShadow);
+  box-shadow: var(--btnSkillActiveShadow) !important;
+  transition: var(--transition);
 }
 
 .shadowAnimation {
