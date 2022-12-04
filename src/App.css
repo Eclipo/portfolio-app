@@ -61,7 +61,12 @@
     inset 0 0 4rem 1rem var(--primary-dark-green);
 
   --btnPersonalityCardActiveShadow: 0 0.3rem 0.25rem 0 var(--lightest-slate),
-    inset 0 0 3rem 0 var(--light-navy);
+    inset 0 0 3rem 0 var(--lightest-navy);
+
+  --btnSelectedPersonalityCardShadow: 0.2rem 0.2rem 0.5rem 0.2rem black,
+    inset 0.1rem -0.1rem 0.5rem 0.1rem var(--lightest-navy),
+    inset -0.2rem -0.25rem 0.5rem 0.25rem var(--navy),
+    inset 0.2rem 0.2rem 0.25rem 0.1rem var(--primary-green);
 
   /* Colors */
   --primary-white: rgba(249, 247, 247, 0.969);

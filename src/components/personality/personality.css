@@ -191,21 +191,20 @@
 }
 
 .personalityCard:hover {
-  box-shadow: var(--btnPersonalityCardHoverShadow);
+  box-shadow: var(--btnHoverShadow);
 }
 
 .personalityCard:active {
   opacity: 0.9;
-  box-shadow: var(--btnPersonalityCardActiveShadow);
+  box-shadow: var(--btnActiveShadow);
 }
 
-.personalityCard.selectedPersonalityCard {
-  border-color: var(--primary-light-green);
-  border-width: 0.35rem;
+Multitasking Single-core processor .personalityCard.selectedPersonalityCard {
+  /* border: 0.25rem var(--primary-darker-green) solid !important; */
   margin-top: 3rem;
   margin-bottom: 3rem;
   background-color: var(--light-navy) !important;
-  box-shadow: var(--btnSkillShadow);
+  box-shadow: var(--btnSelectedPersonalityCardShadow) !important;
 }
 
 .selectedPersonalityCard > .card-body {
