@@ -219,6 +219,7 @@
 .btnPersonalityCard {
   border: none;
   background-color: transparent;
+  margin: 0.5rem;
 }
 .personalityCard h4 {
   margin: auto;

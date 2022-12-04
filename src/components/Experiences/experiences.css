@@ -244,11 +244,19 @@
   opacity: 1;
 }
 
+.periodColContainer {
+  display: block;
+  max-width: 10rem;
+  width: fit-content;
+  /* margin: auto; */
+}
+
 .header3Tech {
   color: var(--primary-purple);
   display: inline-block;
   height: fit-content;
-  min-width: 10rem;
+  max-width: 10rem;
+  width: max-content;
   margin: auto;
   align-content: center;
   position: relative;
@@ -256,6 +264,7 @@
   word-break: keep-all;
   border-width: 1rem;
   margin: 0.5rem;
+  float: left;
 }
 
 .infoTech {
@@ -308,8 +317,8 @@
   color: var(--light-slate);
   text-align: left;
   white-space: normal !important;
-  min-width: 20rem;
-  max-width: 40rem;
+  min-width: 45%;
+  max-width: 90%;
 }
 
 .majorExphighLight {

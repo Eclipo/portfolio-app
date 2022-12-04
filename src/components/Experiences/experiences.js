@@ -90,70 +90,62 @@ class Experiences extends Component {
             <div
               className="d-block container-md expTable expInfo mb-2"
               id="_container">
-              <div className="row expInfo" id="_periodSystem">
+              <div
+                className="m-0 p-0 row row-cols-lg-5 row-cols-md-3 row-cols-xs-2 expInfo"
+                id="_periodSystem">
                 <div className="col">
-                  <div className="row">
+                  <span className="periodColContainer">
                     <h4 className="header3Tech pb-0 mb-0">Employer:</h4>
-                  </div>
 
-                  <div className="row">
                     <h4
                       className="header3Tech pt-0 mt-0"
                       style={{ color: "var(--primary-light-green)" }}>
                       CGI Sverige AB
                     </h4>
-                  </div>
+                  </span>
                 </div>
 
                 <div className="col">
-                  <div className="row">
+                  <span className="periodColContainer">
                     <h4 className="header3Tech pb-0 mb-0">Customer:</h4>
-                  </div>
 
-                  <div className="row">
                     <h4
                       className="header3Tech pt-0 mt-0"
                       id="linkID"
                       style={{ color: "var(--primary-light-green)" }}></h4>
-                  </div>
+                  </span>
                 </div>
 
                 <div className="col m-0 p-0">
-                  <div className="row">
+                  <span className="periodColContainer">
                     <h4 className="header3Tech pb-0 mb-0">Period (YY/MM):</h4>
-                  </div>
 
-                  <div className="row">
                     <h4
                       className="header3Tech pt-0 mt-0"
                       id="period"
                       style={{ color: "var(--primary-light-green)" }}></h4>
-                  </div>
+                  </span>
                 </div>
 
                 <div className="col">
-                  <div className="row">
+                  <span className="periodColContainer">
                     <h4 className="header3Tech pb-0 mb-0">System:</h4>
-                  </div>
-                  <div className="row">
                     <h4
                       className="header3Tech pt-0 mt-0"
                       id="system"
                       style={{ color: "var(--primary-light-green)" }}></h4>
-                  </div>
+                  </span>
                 </div>
 
                 <div className="col">
-                  <div className="row">
+                  <span className="periodColContainer">
                     <h4 className="header3Tech pb-0 mb-0">Role:</h4>
-                  </div>
 
-                  <div className="row">
                     <h4
                       className="header3Tech pt-0 mt-0"
                       id="jobTitleID"
                       style={{ color: "var(--primary-light-green)" }}></h4>
-                  </div>
+                  </span>
                 </div>
 
                 <div className="techUnderLine mt-2 mb-3"></div>

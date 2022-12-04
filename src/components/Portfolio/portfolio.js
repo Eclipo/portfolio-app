@@ -33,8 +33,14 @@ class Portfolio extends Component {
             {/* <h2>This is it</h2> */}
             <p className="duckText mx-auto">
               This is my résumé website to let friends, colleagues, and others
-              alike know more about me. The technologies applied on this site
-              are React, Bootstrap, AnimeJS, CSS, and JavaScript.
+              alike know more about me.<br></br>
+              <br></br> My major goal with the website was to improve my
+              front-end and design skills, but also making it mobile responsive
+              (down to 320 px wide).
+              <br></br>
+              <br></br>
+              The technologies applied on this site are React, Bootstrap,
+              AnimeJS, CSS, and JavaScript.
               <br></br>
               <br></br>
               You can click on the arrows to read the story of my journey
@@ -73,7 +79,7 @@ class Portfolio extends Component {
             <div className="container animContainer" id="story_0">
               <h4 className="mb-5">Covid-19</h4>
 
-              <div className="row">
+              <div className="row mx-auto">
                 <div className="avatarCircle">
                   <div className="eyesContainer">
                     <div className="eyeBrows"></div>

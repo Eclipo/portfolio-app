@@ -61,7 +61,7 @@
     inset 0 0 4rem 1rem var(--primary-dark-green);
 
   --btnPersonalityCardActiveShadow: 0 0.3rem 0.25rem 0 var(--lightest-slate),
-    inset 0 0 3rem 0 var(--navy);
+    inset 0 0 3rem 0 var(--light-navy);
 
   /* Colors */
   --primary-white: rgba(249, 247, 247, 0.969);
@@ -414,6 +414,10 @@ ul > li {
   .mokaTableContainer {
     transform: scale(0.7) !important;
     margin-top: -5rem !important ;
+  }
+
+  .periodColContainer {
+    margin: auto;
   }
 }
 

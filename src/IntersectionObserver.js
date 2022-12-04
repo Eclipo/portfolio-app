@@ -155,7 +155,7 @@ setTimeout(function () {
   const secondOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.5,
+    threshold: 0.25,
   };
 
   const firstObserver = new IntersectionObserver(

@@ -60,7 +60,7 @@
     margin-top: -5rem;
   }
   .welcomeText {
-    max-width: 25%;
+    max-width: 30%;
   }
 }
 
@@ -164,8 +164,9 @@
   margin: auto !important;
   text-align: left;
   color: var(--lightest-slate);
-  display: inline-block;
+  display: block;
   width: fit-content;
+  padding: 1rem !important;
 }
 
 /* Logo */

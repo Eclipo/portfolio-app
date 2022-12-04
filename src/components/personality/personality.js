@@ -645,11 +645,14 @@ class Personality extends Component {
                         <h3 className="card-title" id="patienceCard_h3">
                           Patience
                         </h3>
-                        <h4 id="patienceCard_h4">Right here and now</h4>
+                        <h4 id="patienceCard_h4">Right here and right now</h4>
 
                         <p className="card-text" id="patienceCard_p">
                           I want to see result
-                          <span className="highLight"> right here and now</span>
+                          <span className="highLight">
+                            {" "}
+                            right here and right now
+                          </span>
                           . Consequently, I have suffered from being impatient
                           at times.<br></br>
                           <br></br>
