@@ -6,7 +6,6 @@
   display: inline-block;
   max-width: 100vw;
   margin-top: 1rem;
-  display: none;
 }
 
 #personalityTableID {
@@ -145,7 +144,7 @@
 
 .personalityTextContainer {
   margin: auto;
-  opacity: 0;
+  opacity: 1;
 }
 
 .bookContainer {
@@ -191,15 +190,15 @@
 }
 
 .personalityCard:hover {
-  box-shadow: var(--btnHoverShadow);
+  box-shadow: var(--btnPersonalityCardActiveShadow);
 }
 
 .personalityCard:active {
   opacity: 0.9;
-  box-shadow: var(--btnActiveShadow);
+  box-shadow: var(--btnPersonalityCardHoverShadow);
 }
 
-Multitasking Single-core processor .personalityCard.selectedPersonalityCard {
+.personalityCard.selectedPersonalityCard {
   /* border: 0.25rem var(--primary-darker-green) solid !important; */
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -223,6 +222,7 @@ Multitasking Single-core processor .personalityCard.selectedPersonalityCard {
 .personalityCard h4 {
   margin: auto;
   text-align: center;
+  transition: var(--transition);
 }
 
 .personalityCloseBtn {
@@ -247,15 +247,18 @@ Multitasking Single-core processor .personalityCard.selectedPersonalityCard {
 .personalityCard h3,
 .personalityCard h4 {
   color: var(--light-navy);
+  transition: var(--transition);
 }
 
 .personalityCard p {
   color: var(--primary-green);
   display: none;
+  transition: var(--transition);
 }
 
 .card-text {
   display: inline-block;
+  transition: var(--transition);
 }
 
 .card-body {
