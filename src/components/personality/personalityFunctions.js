@@ -12,19 +12,19 @@ export const startAttributeAnimation = (inputID) => {
       backgroundColor: "#041122",
       // easing:'linear',
       scale: [1, 1.15],
-      duration: 750,
+      duration: 250,
     });
 
     anime({
       targets: [card + "_h3", card + "_h4"],
       color: "#33d684",
-      duration: 750,
+      duration: 250,
     });
 
     anime({
       targets: card + "_p",
       color: "#a8b2d1",
-      duration: 750,
+      duration: 250,
       begin: function () {
         document.getElementById(inputID + "_p").style.display = "block";
         document.getElementById(inputID + "_closeBtn").style.display = "block";
