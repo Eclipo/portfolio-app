@@ -86,15 +86,15 @@ export const animate = (inputID) => {
                     easing: "easeInOutQuad",
                     complete: function () {
                       if (inputID === "fintech") {
-                        jobTitle = "Webdeveloper";
+                        jobTitle = "Front-end developer";
                         linkCustomerTitle = "Fintech company";
                         linkToCustomer = "";
                         period.innerText = "22-02 - Present";
                         system.innerText = "Custom SPA";
                         descOneEl.innerHTML =
-                          'I am currently active within the fintech industry as a<span class="highLight"> front-end developer</span>. We are building an awesome application.';
+                          'The customer is within the fintech industry and we are building a new application where my role is<span class="highLight"> front-end developer</span>.';
                         descTwoEl.innerHTML =
-                          'The major technologies are<span class="highLight"> Angular, Bootstrap and .Net</span>.';
+                          'From the specifications and requirements I have been able to code and design mostly independtly in the front-end where I have used <span class="highLight">Angular,TypeScript, HTML and CSS </span>.';
                         descThreeEl.innerHTML =
                           'I have improved the<span class="highLight"> UX </span>and in<span class="highLight"> Angular </span>I have worked with forms, validators, services, and formguards. Occasionally I code in<span class="highLight"> C# </span>to ensure the front-/and the back-end work well with each other.';
                         descFourEl.innerText = "";

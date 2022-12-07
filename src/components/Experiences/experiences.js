@@ -91,7 +91,7 @@ class Experiences extends Component {
               className="d-block container-md expTable expInfo mb-2"
               id="_container">
               <div
-                className="m-0 p-0 row row-cols-lg-5 row-cols-md-3 row-cols-xs-2 expInfo"
+                className="row row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-xs-2 expInfo"
                 id="_periodSystem">
                 <div className="col">
                   <span className="periodColContainer">

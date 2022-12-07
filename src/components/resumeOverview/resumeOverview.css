@@ -18,15 +18,15 @@
 }
 
 .resumeTable h2 {
-  color: var(--primary-red);
+  color: var(--primary-greyBlue);
 }
 .resumeTable h3 {
-  color: var(--primary-red);
+  color: var(--primary-greyBlue);
   margin: auto;
 }
 
 .resumeTable p {
-  color: var(--primary-red);
+  color: var(--primary-greyBlue);
 }
 
 .expTableText {
@@ -51,32 +51,25 @@
 }
 
 .expOverviewPeriod {
-  background-color: black;
-  color: var(--primary-red);
-  border-color: var(--primary-red);
-  border-width: 0.16rem;
-  border-style: solid;
+  background-color: var(--darkest-navy);
+  color: var(--primary-greyBlue);
+  /* border: 0.3rem var(--dark-slate) solid; */
   border-radius: 18px;
   margin: auto;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  padding: 1rem !important;
+  box-shadow: var(--btnDesinShadow);
 }
 
-.expOverviewPeriod td {
-  text-align: center;
-  vertical-align: middle !important ;
-}
-.expOverviewPeriod p {
-  width: 100%;
-}
 .expOverviewPeriod-dotted {
   margin-bottom: 0.75rem;
   margin-top: 0.75rem;
-  border-style: dashed;
+  /* border-style: dashed; */
 }
 
 .expOverviewPeriod-reverseColor {
-  background-color: var(--primary-red);
+  background-color: var(--primary-pink);
   color: black !important;
 }
 
@@ -93,11 +86,11 @@
   text-align: left;
   margin: auto;
   width: 50%;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .resumeSection {
-  color: var(--primary-red);
+  color: var(--primary-greyBlue);
   width: fit-content;
   margin-bottom: 2vh !important;
   margin: auto;
@@ -106,17 +99,18 @@
 }
 
 .resumeNavMenu {
-  background-color: black;
-  border-color: var(--primary-red);
+  background-color: var(--darkest-navy);
+  /* border-color: var(--primary-greyBlue);
   border-width: 0.16rem;
-  border-style: solid;
+  border-style: solid; */
   border-radius: 18px;
   padding: 0.25rem;
-  color: var(--primary-red);
+  color: var(--primary-greyBlue);
   margin-bottom: 1rem !important;
   margin: auto;
   margin-top: 2rem;
   justify-content: center;
+  box-shadow: var(--btnResumeShadow);
 }
 
 .resumeNavRow {
@@ -125,11 +119,11 @@
 }
 
 .resumeNav {
-  background-color: var(--lightest-navy);
+  background-color: var(--light-navy);
   /* border-color: 0.1rem var(--darkest-slate) solid; */
   border-radius: 18px;
   padding: 1rem;
-  color: var(--primary-red);
+  color: var(--primary-greyBlue);
   margin-bottom: 2vh !important;
   margin: auto;
   margin-left: 1rem;
@@ -144,7 +138,7 @@
 }
 
 .resumeNav:hover h2 {
-  color: var(--primary-red);
+  color: var(--primary-greyBlue);
 }
 
 .resumeNav:hover {
@@ -155,7 +149,7 @@
 #resumeLangID.resumeNavFocus {
   background: linear-gradient(
     to left,
-    var(--primary-red) 50%,
+    var(--primary-greyBlue) 50%,
     var(--dark-navy)
   );
   color: var(--dark-navy) !important;
@@ -165,7 +159,7 @@
 }
 
 #resumeExpID.resumeNavFocus {
-  background: linear-gradient(to left, var(--primary-red) 50%, black);
+  background: linear-gradient(to left, var(--primary-greyBlue) 50%, black);
   color: var(--dark-navy) !important;
   background-size: 200%;
   background-position: right bottom;
@@ -173,7 +167,7 @@
 }
 
 #resumeEduID.resumeNavFocus {
-  background: linear-gradient(to left, var(--primary-red) 50%, black);
+  background: linear-gradient(to left, var(--primary-greyBlue) 50%, black);
   color: var(--dark-navy) !important;
   background-size: 200%;
   background-position: right bottom;
@@ -181,7 +175,7 @@
 }
 
 .resumeNav:focus {
-  background: linear-gradient(to left, var(--primary-red) 50%, black);
+  background: linear-gradient(to left, var(--primary-greyBlue) 50%, black);
   color: var(--dark-navy) !important;
   background-size: 200%;
   background-position: right bottom;
@@ -206,15 +200,15 @@
 }
 
 .activeNav {
-  background-color: var(--primary-red);
+  background-color: var(--primary-greyBlue);
   border-color: var(--navy);
   border-style: double;
   border-width: 0.4rem;
-  outline: var(--primary-red) outset 0.25rem;
+  outline: var(--primary-greyBlue) outset 0.25rem;
 }
 
 .resumeSection h3 {
-  color: var(--primary-red);
+  color: var(--primary-greyBlue);
 }
 
 .expHeader-reverseColor {
@@ -222,7 +216,7 @@
 }
 
 .header2UnderLine {
-  border-color: var(--primary-red);
+  border-color: var(--primary-greyBlue);
   border-width: 0.1vw;
   border-style: solid;
   height: 1.5vh;
@@ -233,15 +227,15 @@
 }
 
 .header2VerticalUnderLine {
-  background-color: var(--primary-red);
-  height: 5rem;
+  background-color: var(--primary-greyBlue);
+  height: 3.5rem;
   width: 0.2rem;
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
 }
 
 .header3UnderLine {
-  background-color: var(--primary-red);
+  background-color: var(--primary-greyBlue);
   height: 0.75vh;
   border-color: var(--navy);
   border-width: 0.1vw;
