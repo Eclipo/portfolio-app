@@ -75,22 +75,25 @@ setTimeout(function () {
 
       if (entry.isIntersecting) {
         switch (currentIndex) {
-          // Intro Section - Turn ON QuickAboutAnimation  ...
+          // Intro Section - Turn ON QuickFacts&About
           case 0:
             currentNavLink(0);
+            animationQuickFactAbout.playOrStop(true);
+
             break;
 
-          // Quick Facts Section - Turn off Skills
+          // Quick Facts Section - TURN ON QuickFacts&About + Turn OFF Skills
           case 1:
             currentNavLink(1);
             PlayAnimation("SkillAnimation", 1);
-            animationQuickFactAbout.playOrStop(true);
             break;
 
-          //About me Section - Turn Off Personality
+          //About me Section - Turn ON QuickFacts&About and Skills
           case 2:
             currentNavLink(2);
+            PlayAnimation("SkillAnimation", 2);
             animationQuickFactAbout.playOrStop(true);
+
             break;
 
           default:
@@ -109,35 +112,40 @@ setTimeout(function () {
           case 0:
             currentNavLink(3);
             animationQuickFactAbout.playOrStop(false);
-            PlayAnimation("SkillAnimation", 2);
             break;
 
-          //Major experiences - Turn OFF Skills
+          //Major experiences - Turn OFF Personality
           case 1:
             currentNavLink(4);
             PlayAnimation("PersonalityAnimation", 1);
             break;
 
-          //Resume Overview Section - Turn OFF Personality
+          //Resume Overview Section - Turn ON Personality + Turn OFF Skills and Portfolio
           case 2:
             currentNavLink(5);
             PlayAnimation("SkillAnimation", 1);
             PlayAnimation("PortfolioAnimation", 1);
+
             break;
 
+          //Personality
           case 3:
             currentNavLink(6);
             PlayAnimation("PersonalityAnimation", 2);
+
             break;
 
           //Portfolio - Turn Off Personality
           case 4:
             currentNavLink(7);
             PlayAnimation("PortfolioAnimation", 2);
+
             break;
 
           case 5:
             currentNavLink(8);
+            PlayAnimation("PersonalityAnimation", 1);
+
             break;
 
           default:

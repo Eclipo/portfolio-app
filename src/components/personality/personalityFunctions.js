@@ -1,11 +1,9 @@
 import anime from "animejs";
-import { wiggleCard } from "./playPersonalityFunc";
 var closeWindow = false;
 
 export const startAttributeAnimation = (inputID) => {
   if (closeWindow === false) {
     let card = "#" + inputID;
-    anime.remove(card);
 
     anime({
       targets: card,
@@ -68,7 +66,6 @@ export const resetAttributeAnimation = (inputID) => {
       document
         .getElementById(inputID)
         .classList.remove("selectedPersonalityCard");
-      wiggleCard.restart();
     },
   });
 };

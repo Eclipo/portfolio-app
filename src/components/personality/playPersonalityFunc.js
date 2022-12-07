@@ -1,95 +1,73 @@
 import anime from "animejs";
-import { wiggle } from "./personalityFunctions";
 
-const randomPatience = ['#patienceOneID','#patienceTwoID','#patienceThreeID','#patienceFourID','#patienceFiveID'];
+const randomPatience = [
+  "#patienceOneID",
+  "#patienceTwoID",
+  "#patienceThreeID",
+  "#patienceFourID",
+  "#patienceFiveID",
+];
 
-const randomCards = ['#honestyCard','#stubbornCard','#structureCard','#multiTaskCard','#focusCard','#patienceCard','#temperCard','#empathyCard'];
-
-export const wiggleCard = anime({
-  loopBegin:function(){
-    animateCard(getRandomCard());
-  },
-  loopComplete: function() {
-    
-    setTimeout(animateCard(getRandomTarget()),1000);
-  },
-  loop:true,
-  autoplay:false,
-  duration:1250,
-});
-
-function getRandomCard() {
-  return randomCards[Math.floor(Math.random() * randomCards.length)];
-}
-
- function animateCard(inputTarget){
-  anime({
-    targets:inputTarget,
-    rotate:['-1deg','1deg',0],
-    easing: "easeInOutQuad",
-    duration:1250  
-  })
-}
-
-function getRandomTarget() {
-  return randomPatience[Math.floor(Math.random() * randomPatience.length)];
-}
-
- function animatePatience(inputTarget){
-  anime({
-    targets:inputTarget,
-    opacity:[0,1,0],
-    easing: "easeInOutSine",
-    duration:750  
-  })
-}
-
-
-var randomEmpathy =['#ff0000','#e71bf2','#ffc0cb','#90ee90','#add8e6','#eb9e34','#345ceb','#f2eb1b','#fffafa'];
-var random_empathy = null;
-
-function getRandomEmpathy() {
-  return randomEmpathy[Math.floor(Math.random() * randomEmpathy.length)];
-}
-
- function animateEmpathy(inputTarget){
-  anime({
-    targets:'#empathyID',
-    backgroundColor:inputTarget,
-    easing: "easeInOutSine",
-    duration:250
-  })
-}
-
-
-
+const randomEmpathy = [
+  "#ff0000",
+  "#e71bf2",
+  "#ffc0cb",
+  "#90ee90",
+  "#add8e6",
+  "#eb9e34",
+  "#345ceb",
+  "#f2eb1b",
+  "#fffafa",
+];
 
 export async function playPersonalityFunc(inputBoolean) {
+  function getRandomTarget() {
+    return randomPatience[Math.floor(Math.random() * randomPatience.length)];
+  }
 
-const playPatience = anime({
-  loopBegin:function(){
-    animatePatience(getRandomTarget());
-  },
-  loop:true,
-  autoplay:false,
-  duration:500,
-  delay:500
+  function animatePatience(inputTarget) {
+    anime({
+      targets: inputTarget,
+      opacity: [0, 1, 0],
+      easing: "easeInOutSine",
+      duration: 750,
+    });
+  }
 
-});
+  function getRandomEmpathy() {
+    return randomEmpathy[Math.floor(Math.random() * randomEmpathy.length)];
+  }
 
-const playEmpathy = anime({
-  loopBegin:function(){
-    animateEmpathy(getRandomEmpathy());
-  },
-  loopComplete: function() {
-    
-    setTimeout(animateEmpathy(getRandomEmpathy()),1000);
-  },
-  loop:true,
-  autoplay:false,
-  duration:500,
+  function animateEmpathy(inputTarget) {
+    anime({
+      targets: "#empathyID",
+      backgroundColor: inputTarget,
+      easing: "easeInOutSine",
+      duration: 250,
+    });
+  }
 
-});
+  const playPatience = anime({
+    loopBegin: function () {
+      animatePatience(getRandomTarget());
+    },
+    loop: true,
+    autoplay: false,
+    duration: 500,
+    delay: 500,
+  });
+
+  const playEmpathy = anime({
+    loopBegin: function () {
+      animateEmpathy(getRandomEmpathy());
+    },
+    loopComplete: function () {
+      animateEmpathy(getRandomEmpathy());
+    },
+    loop: true,
+    autoplay: false,
+    duration: 500,
+  });
 
   const playHonesty = anime({
     targets: "#honestySevenID",
@@ -261,43 +239,38 @@ const playEmpathy = anime({
       duration: 150,
     });
 
-    
-    const bookEyeBrowAnim = anime.timeline({
-      loop: true,
-      autoplay: false,
-      direction: "alternate",
-      easing: "easeInOutQuad",
-    });
+  const bookEyeBrowAnim = anime.timeline({
+    loop: true,
+    autoplay: false,
+    direction: "alternate",
+    easing: "easeInOutQuad",
+  });
 
-    bookEyeBrowAnim.add({
-      targets: ".bookEyebrow",
-      translateY: [0, "-0.5rem", "0.5rem"],
-      delay: 500,
-      duration: 500,
-    });
-   
-    
-    if(inputBoolean === true){ 
-      anime.remove("#personalityContainerID");
-      anime.remove("#personalityTableID");
-      anime.remove("#personalityTableID td");
-      anime.remove(".personalityTraits");
-      anime.remove(".personalityBaseTraits");
+  bookEyeBrowAnim.add({
+    targets: ".bookEyebrow",
+    translateY: [0, "-0.5rem", "0.5rem"],
+    delay: 500,
+    duration: 500,
+  });
+
+  if (inputBoolean === true) {
+    anime.remove("#personalityContainerID");
+    anime.remove("#personalityTableID");
+    anime.remove("#personalityTableID td");
+    anime.remove(".personalityTraits");
+    anime.remove(".personalityBaseTraits");
     playShakingHonesty.restart();
     playHonesty.restart();
     playTemper.restart();
     playFocus.restart();
-    playPatience.restart();
+    playPatience.play();
     playCreativity.restart();
     playStructure.restart();
-    playEmpathy.restart();
-    wiggleCard.restart();
+    playEmpathy.play();
     bookEyeBrowAnim.play();
-    
-   
   }
 
-  if(inputBoolean === false){
+  if (inputBoolean === false) {
     anime.remove(".personalityTraits");
     anime.remove(".personalityCard");
     anime.remove("bookEyebrow");
