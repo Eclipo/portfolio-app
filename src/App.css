@@ -71,6 +71,25 @@
     inset -0.3rem -0.2rem 0.5rem 0.1rem var(--navy),
     inset 0.2rem 0.4rem 0.5rem -0.2rem var(--primary-greyBlue);
 
+  --portfolioAnimeShadow: -0.1rem 0.25rem 0.1rem 0.1rem black,
+    inset 0rem 0rem 0.1rem 0.1rem var(--navy),
+    inset 0rem 0rem 0.25rem 0.5rem var(--primary-pink);
+
+  --smallShadow: -0.1rem 0.25rem 0.25rem 0rem var(--dark-navy),
+    inset -0.2rem -0.2rem 0.5rem 0rem var(--navy),
+    inset 0.3rem 0.4rem 0.5rem -0.3rem var(--primary-white);
+
+  --xsSmallShadow: 0 0.1rem 0.25rem 0rem var(--light-navy),
+    inset -0.2rem -0.2rem 0.5rem 0rem var(--lightest-navy),
+    inset 0.3rem 0.4rem 0.5rem -0.3rem var(--primary-white);
+
+  --avatarLegArmShadow: -0.1rem 0.25rem 0.5rem 0.1rem var(--darkest-navy),
+    inset -0.2rem -0.2rem 0.25rem 0.1rem var(--primary-dark-red),
+    inset 0.3rem 0.4rem 0.1rem -0.3rem var(--primary-white);
+
+  --blackWhiteShadow: 0 0rem 0.1rem 0rem black,
+    inset 0rem 0.1rem 0.1rem 0 var(--primary-white);
+
   /* Colors */
   --primary-white: rgba(249, 247, 247, 0.969);
   --primary-lighter-blue: #51a0ee;
@@ -78,6 +97,7 @@
   --primary-darker-blue: #2d6296;
 
   --primary-orangeRed: rgb(226, 128, 53);
+  --primary-dark-red: rgb(149, 49, 49);
   --primary-red: rgb(211, 67, 67);
   --primary-greyBlue: #a8b7e4;
   --primary-dark-greyBlue: #7d89ac;

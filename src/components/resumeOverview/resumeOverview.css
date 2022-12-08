@@ -100,9 +100,6 @@
 
 .resumeNavMenu {
   background-color: var(--darkest-navy);
-  /* border-color: var(--primary-greyBlue);
-  border-width: 0.16rem;
-  border-style: solid; */
   border-radius: 18px;
   padding: 0.25rem;
   color: var(--primary-greyBlue);

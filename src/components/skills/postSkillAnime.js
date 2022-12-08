@@ -46,7 +46,6 @@ export async function playPostFunc(inputBoolean) {
   });
 
   if (inputBoolean === true) {
-    console.log("duck");
     duckEyeBrowAnim.play();
     duckMouthUnderAnim.play();
     duckMouthUppderAnim.play();

@@ -14,10 +14,16 @@
 }
 
 .portfolioNavBtn {
-  background-color: var(--light-navy);
+  background-color: var(--darkest-navy);
   border-radius: 18px;
-  max-width: 90%;
-  margin-bottom: -0.5rem !important;
+  padding: 0.25rem;
+  color: var(--primary-greyBlue);
+  margin-bottom: 1rem !important;
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: center;
+  box-shadow: var(--btnResumeShadow);
+  width: 90%;
 }
 .btnContainer {
   background-color: transparent;
@@ -30,12 +36,14 @@
   height: 2rem;
   color: var(--primary-white);
   opacity: 0.5;
+  margin-top: 0.5rem;
 }
 
 .rightBtn {
   width: 2rem;
   height: 2rem;
   color: var(--primary-white);
+  margin-top: 0.5rem;
 }
 
 .rightBtn:hover {
@@ -112,12 +120,11 @@
 .avatarMom p {
   color: var(--primary-white);
   font-weight: bolder !important;
-  margin-left: -0.25rem;
 }
 
 .avatarEdipParagraph {
   margin-top: 4.25rem;
-  margin-left: 1.25rem;
+  margin-left: 1.5rem;
   width: 5rem;
 
   color: white !important;
@@ -127,7 +134,7 @@
 
 .avatarDadParagraph {
   margin-top: 4.25rem;
-  margin-left: 9.5rem;
+  margin-left: 9rem;
   width: 5rem;
 
   color: white !important;
@@ -137,7 +144,7 @@
 
 .avatarMomParagraph {
   margin-top: 4.25rem;
-  margin-left: 14.5rem;
+  margin-left: 13.5rem;
   width: 5rem;
   color: white !important;
   font-weight: bolder !important;
@@ -151,6 +158,7 @@
   background-color: var(--primary-light-green);
   margin: 1rem;
   z-index: 3;
+  box-shadow: var(--smallShadow);
 }
 
 .avatarCircle .eyesContainer {
@@ -178,6 +186,7 @@
   background-color: var(--primary-white);
   margin-left: 0.1rem;
 }
+
 .eyePupil {
   width: 0.4rem;
   height: 0.4rem;
@@ -194,6 +203,7 @@
   margin-top: 1.3rem;
   z-index: 2;
   background-color: deeppink;
+  box-shadow: var(--blackWhiteShadow);
 
   position: absolute;
 }
@@ -205,6 +215,8 @@
   background-color: var(--primary-red);
   margin-top: 0.5rem;
   margin-left: -0.5rem;
+  box-shadow: var(--avatarLegArmShadow);
+  rotate: 90deg;
 }
 
 .rightArmAvatar {
@@ -214,6 +226,8 @@
   background-color: var(--primary-red);
   margin-top: -2.25rem;
   margin-left: 3.5rem;
+  box-shadow: var(--avatarLegArmShadow);
+  rotate: 90deg;
 }
 
 .leftLegAvatar {
@@ -224,6 +238,7 @@
   background-color: var(--primary-red);
   margin-top: -1.25rem;
   margin-left: -0.25rem;
+  box-shadow: var(--avatarLegArmShadow);
 }
 
 .rightLegAvatar {
@@ -234,6 +249,7 @@
   background-color: var(--primary-red);
   margin-top: 0.15rem;
   margin-left: 2.25rem;
+  box-shadow: var(--avatarLegArmShadow);
 }
 
 .avatarMouth {
@@ -292,14 +308,14 @@
   background-color: #ffe864;
 
   margin: 1rem;
-  margin-left: 9rem;
+  margin-left: 8.5rem;
   position: absolute;
 }
 
 #avatarMom {
   background-color: #fcbfdf;
   margin: 1rem;
-  margin-left: 14rem;
+  margin-left: 13rem;
   position: absolute;
 }
 
@@ -474,18 +490,19 @@
 
 .animContainer {
   margin: auto;
+  padding: 1rem;
   width: 95%;
   min-height: 30rem;
   height: fit-content;
-  border-width: 0.1rem;
-  border-style: solid;
-  border-color: var(--primary-pink);
+  /* border: 0.4rem var(--primary-pink) solid; */
+  border-radius: 18px;
   background-color: var(--darkest-navy);
   display: block;
   margin-top: 1rem;
   margin-bottom: 5rem;
   opacity: 0;
   display: none;
+  box-shadow: var(--portfolioAnimeShadow);
 }
 
 .portfolioParagraph {
@@ -530,7 +547,9 @@
   margin-top: 1.5rem;
   border-radius: 50%;
   background-color: #dbd659e6;
-  box-shadow: 0rem -1rem 3rem 1.25rem #ffa3059d;
+  box-shadow: 0 0.1rem 0.25rem 0rem var(--darkest-navy),
+    inset -0.2rem -0.2rem 0.5rem 0rem var(--lightest-navy),
+    inset 0.3rem 0.4rem 0.5rem 0.1rem var(--primary-white);
   opacity: 1;
 }
 
@@ -538,8 +557,10 @@
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-color: #fdfcd7e6;
-  box-shadow: 0rem -1rem 3rem 1rem #fffbf59d;
+  background-color: #f4f086e6;
+  border: 0.25rem #f5f183e6 solid;
+
+  box-shadow: 0 0 3rem -0.1rem #fffbf59d;
   opacity: 1;
 }
 
@@ -550,6 +571,8 @@
   height: 3.75rem;
   border-radius: 50%;
   background-color: var(--primary-light-green);
+  box-shadow: var(--xsSmallShadow);
+
   margin: 1rem;
   margin: auto;
   margin-left: 0.1rem;

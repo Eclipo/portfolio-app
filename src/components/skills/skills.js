@@ -34,7 +34,6 @@ class Skills extends Component {
 
   filterSkills(event) {
     let filter = event.currentTarget.id;
-    console.log(event.currentTarget.id);
     const skillsFrontEnd = document.querySelectorAll(".skill.frontEndTheme");
     const skillsBackend = document.querySelectorAll(".skill.backEndTheme");
     const skillsRoles = document.querySelectorAll(".skill.rolesTheme");

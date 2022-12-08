@@ -1,4 +1,4 @@
-import { PlayAnimation } from "./PlayAnimation.js";
+import { PlayAnimation } from "./components/Animations/PlayAnimation";
 import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation.js";
 
 setTimeout(function () {
@@ -79,6 +79,7 @@ setTimeout(function () {
           case 0:
             currentNavLink(0);
             animationQuickFactAbout.playOrStop(true);
+            console.log("hheeeelloooo IntersectionObserver");
 
             break;
 
@@ -108,15 +109,16 @@ setTimeout(function () {
       const currentIndex = Array.from(secondWrapper).indexOf(entry.target);
       if (entry.isIntersecting) {
         switch (currentIndex) {
-          //Skills Section -  Turn OFF QuickAbout
+          //Skills Section
           case 0:
             currentNavLink(3);
-            animationQuickFactAbout.playOrStop(false);
             break;
 
-          //Major experiences - Turn OFF Personality
+          //Major experiences - Turn OFF QuickAbout and Personality
           case 1:
             currentNavLink(4);
+            animationQuickFactAbout.playOrStop(false);
+
             PlayAnimation("PersonalityAnimation", 1);
             break;
 

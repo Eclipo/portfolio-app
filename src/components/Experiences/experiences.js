@@ -2,12 +2,6 @@ import React, { Component, useState } from "react";
 import "./experiences.css";
 import "../../IntersectionObserver.js";
 import { animate } from "./experienceFunctions.js";
-import {
-  faArrowLeft,
-  faArrowRight,
-  faClose,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Experiences extends Component {
   constructor(props) {

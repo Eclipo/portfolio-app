@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./IntroAnimation.js";
 import "./edipLogo.css";
 import "../../IntersectionObserver.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +6,6 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 
 import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
-import anime from "animejs";
 
 class Intro extends Component {
   constructor(props) {
