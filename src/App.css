@@ -51,7 +51,7 @@
   --faceShadow: 0 0.1rem 0.25rem 0 var(--primary-red),
     inset 0 -0.5rem 1rem 0 var(#ffe4be);
 
-  --btnPersonalityCardShadow: 0.1rem 0.1rem 0.25rem 0.2rem black,
+  --btnPersonalityCardShadow: 0.1rem 0.1rem 0.25rem 0.2rem var(--dark-navy),
     inset -0.3rem -0.3rem 0.5rem 0.2rem var(--primary-dark-green),
     inset 0.1rem 0.1rem 0.5rem 0.2rem var(--primary-white),
     inset 0.2rem 0.4rem 0.5rem 0.1rem var(--primary-greenBlue);
@@ -62,8 +62,9 @@
   --btnPersonalityCardActiveShadow: 0 0.3rem 0.25rem 0 var(--lightest-slate),
     inset 0 0 3rem 0 var(--lightest-navy);
 
-  --btnSelectedPersonalityCardShadow: -0.1rem 0.25rem 0.25rem 0.1rem black,
-    inset -0.3rem -0.2rem 0.5rem 0.1rem var(--navy),
+  --btnSelectedPersonalityCardShadow: 0.1rem 0.25rem 0.5rem 0.1rem
+      var(--darkest-navy),
+    inset -0.1rem -0.2rem 0.5rem 0.1rem var(--dark-navy),
     inset 0.2rem 0.4rem 0.5rem -0.2rem var(--primary-green) !important;
 
   --btnResumeShadow: -0.1rem 0.25rem 0.25rem 0.1rem black,
