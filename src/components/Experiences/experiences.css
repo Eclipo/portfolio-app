@@ -258,19 +258,27 @@
 
 .periodColContainer {
   display: block;
-  max-width: 10rem;
+  max-width: 8.75rem;
   width: max-content;
   float: left;
 
   /* margin: auto; */
 }
 
+.minRight {
+  /* margin-right: 0 !important;
+  padding-right: 0 !important;
+  width: min-content !important; */
+  margin: auto !important;
+  display: inline-block !important;
+}
+
 .header3Tech {
   color: var(--primary-purple);
   display: inline-block;
   height: fit-content;
-  /* max-width: 10rem; */
-  width: fit-content;
+  max-width: 11.25rem;
+  width: max-content;
   margin: auto;
   align-content: center;
   position: relative;

@@ -41,8 +41,7 @@
     inset -0rem -0.1rem 0.2rem 0.2rem var(--light-navy),
     inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
 
-  --btnDesinHoverShadow: 0 0 0 0 black,
-    inset 0 -0.1rem 0.25rem 0.25rem var(--navy);
+  --btnDesinHoverShadow: 0 0 0 0 black, inset 0 0rem 0.25rem 0.25rem var(--navy);
 
   --btnDesinActiveShadow: 0 -0.1rem 0.1rem 0.2rem black;
 
@@ -496,7 +495,7 @@ ul > li {
   }
 
   h4 {
-    font-size: 1.5rem !important;
+    font-size: 1.35rem !important;
   }
 
   p {
@@ -686,7 +685,7 @@ ul > li {
 
 .navSubIcon:active {
   box-shadow: var(--btnDesinActiveShadow);
-  background-color: var(--light-slate) !important;
+  background-color: rgb(211, 211, 211) !important;
   /* border: 0.1rem black solid !important; */
 }
 

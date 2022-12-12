@@ -85,7 +85,7 @@ class Experiences extends Component {
               className="d-block container-md expTable expInfo mb-2"
               id="_container">
               <div
-                className="row row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-xs-2 expInfo"
+                className="row row-cols-2 row-cols-lg-5 row-cols-md-2 row-cols-sm-2 row-cols-xs-2 expInfo"
                 id="_periodSystem">
                 <div className="col">
                   <span className="periodColContainer">
@@ -123,21 +123,21 @@ class Experiences extends Component {
 
                 <div className="col">
                   <span className="periodColContainer">
-                    <h4 className="header3Tech pb-0 mb-0">System:</h4>
+                    <h4 className="header3Tech pb-0 mb-0">Role:</h4>
+
                     <h4
                       className="header3Tech pt-0 mt-0"
-                      id="system"
+                      id="jobTitleID"
                       style={{ color: "var(--primary-light-green)" }}></h4>
                   </span>
                 </div>
 
                 <div className="col">
                   <span className="periodColContainer">
-                    <h4 className="header3Tech pb-0 mb-0">Role:</h4>
-
+                    <h4 className="header3Tech pb-0 mb-0">System:</h4>
                     <h4
                       className="header3Tech pt-0 mt-0"
-                      id="jobTitleID"
+                      id="system"
                       style={{ color: "var(--primary-light-green)" }}></h4>
                   </span>
                 </div>

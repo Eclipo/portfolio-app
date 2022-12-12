@@ -86,13 +86,13 @@ export const animate = (inputID) => {
                     easing: "easeInOutQuad",
                     complete: function () {
                       if (inputID === "fintech") {
-                        jobTitle = "Front-end developer";
-                        linkCustomerTitle = "Fintech company";
+                        jobTitle = "Web developer";
+                        linkCustomerTitle = "Fintech";
                         linkToCustomer = "";
                         period.innerText = "22-02 - Present";
                         system.innerText = "Custom SPA";
                         descOneEl.innerHTML =
-                          'The customer is within the fintech industry and we are building a new application where my role is<span class="highLight"> front-end developer</span>.';
+                          'The customer is within the fintech industry and we are building a new application where my role is<span class="highLight"> web developer</span>.';
                         descTwoEl.innerHTML =
                           'From the specifications and requirements I have been able to code and design mostly independtly in the front-end where I have used <span class="highLight">Angular,TypeScript, HTML and CSS </span>.';
                         descThreeEl.innerHTML =

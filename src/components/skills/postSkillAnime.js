@@ -5,14 +5,14 @@ export async function playPostFunc(inputBoolean) {
     loop: true,
     autoplay: false,
     direction: "alternate",
-    easing: "easeInOutQuad",
+    easing: "linear",
   });
 
   const duckMouthUnderAnim = anime.timeline({
     loop: true,
     autoplay: false,
     direction: "alternate",
-    easing: "easeInOutQuad",
+    easing: "linear",
   });
 
   const duckEyeBrowAnim = anime.timeline({
@@ -27,7 +27,7 @@ export async function playPostFunc(inputBoolean) {
     translateY: ["-0.25rem", 0, "-0.25rem", 0],
     rotate: ["10deg", 0, "10deg", 0],
     endDelay: 500,
-    duration: 500,
+    duration: 600,
   });
 
   duckMouthUnderAnim.add({
@@ -35,14 +35,14 @@ export async function playPostFunc(inputBoolean) {
     translateY: ["0.25rem", 0, "0.25rem", 0],
     rotate: ["-10deg", 0, "-10deg", 0],
     endDelay: 500,
-    duration: 500,
+    duration: 600,
   });
 
   duckEyeBrowAnim.add({
     targets: ".duckEyebrow",
     translateY: [0, "-0.5rem", "0.5rem"],
     delay: 500,
-    duration: 500,
+    duration: 600,
   });
 
   if (inputBoolean === true) {

@@ -4,7 +4,7 @@
   height: 4rem;
   width: 5.5rem;
   border-radius: 10px;
-  background-color: var(--light-navy);
+  background-color: var(--lightest-navy);
   text-decoration: none;
   font-weight: 900;
   display: inline-flex;
@@ -17,7 +17,6 @@
 .emailBtn:hover,
 .linkedInIcon:hover {
   color: var(--primary-white) !important;
-  background-color: var(--navy);
   box-shadow: var(--btnHoverShadow);
 }
 
