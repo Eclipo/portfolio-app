@@ -459,6 +459,10 @@ export async function playPostFunc(inputBoolean) {
   if (inputBoolean === false) {
     anime.remove(".animContainer");
     anime.remove(".avatarCircle");
+    anime.remove("#avatarMom");
+    anime.remove("#avatarDad");
+    anime.remove("#avatarEdipID");
+    anime.remove(".talkBubble");
     anime.remove(".eyesContainer");
     anime.remove(".eyeBrows");
     anime.remove(".eyeAvatar");
