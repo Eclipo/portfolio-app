@@ -4,11 +4,18 @@ import { PortfolioAnimation } from "../Portfolio/PortfolioAnimation.js";
 
 import anime from "animejs";
 import { SkillAnimation } from "../skills/SkillAnimation.js";
+import { QuickAboutAnimation } from "../About/Animations/AboutAnimation.js";
 
 const IntroAnime = new IntroAnimation();
 const SkillsAnime = new SkillAnimation();
 const PersonalityAnime = new PersonalityAnimation();
 const PortfolioAnime = new PortfolioAnimation();
+const QuickAboutAnime = new QuickAboutAnimation();
+
+export async function PlaySlide(selectedIndex) {
+  console.log("here we are PlayAnimation", selectedIndex);
+  QuickAboutAnime.playOrStop(selectedIndex);
+}
 
 export function AnimationPlayRefreshBegin(
   inputPlayID,

@@ -236,8 +236,11 @@
 }
 
 .marioText {
-  /* margin-top: -0.25rem !important;
-  display: block; */
+  margin-top: 4rem !important;
+  display: block;
+}
+.weightsText {
+  margin-top: 2.7rem !important;
 }
 
 .questionBrick {

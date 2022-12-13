@@ -18,16 +18,14 @@ export const EdipBasket = () => {
                   <div className="eye-shadow" id="left">
                     <div className="eyebrow"></div>
                     <div className="eye" id="eye_one">
-                    <div className="laleh-kawai"></div>
-
+                      <div className="laleh-kawai"></div>
                     </div>
                   </div>
 
                   <div className="eye-shadow" id="right">
                     <div className="eyebrow"></div>
                     <div className="eye" id="eye_two">
-                    <div className="laleh-kawai"></div>
-
+                      <div className="laleh-kawai"></div>
                     </div>
                   </div>
 
