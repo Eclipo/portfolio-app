@@ -436,24 +436,24 @@ export async function playPostFunc(inputBoolean) {
   });
 
   if (inputBoolean === true) {
-    talkBubbleCovid.play();
-    blinkEyeEdip.play();
-    blinkEyeBawo.play();
-    eyeBrowAnim.play();
-    firstLightYearAnim.play();
-    secondLightYearAnim.play();
-    hitHeadWall.play();
-    talkBubbleRegret.play();
+    talkBubbleCovid.restart();
+    blinkEyeEdip.restart();
+    blinkEyeBawo.restart();
+    eyeBrowAnim.restart();
+    firstLightYearAnim.restart();
+    secondLightYearAnim.restart();
+    hitHeadWall.restart();
+    talkBubbleRegret.restart();
     rainAnim.restart();
-    changeJourneyScene.play();
-    groundAnim.play();
-    sunRiseAnim.play();
-    mountainOne.play();
-    mountainTwp.play();
-    mountainThree.play();
-    mountainFour.play();
-    zenBigAnim.play();
-    zenSmallAnim.play();
+    changeJourneyScene.restart();
+    groundAnim.restart();
+    sunRiseAnim.restart();
+    mountainOne.restart();
+    mountainTwp.restart();
+    mountainThree.restart();
+    mountainFour.restart();
+    zenBigAnim.restart();
+    zenSmallAnim.restart();
   }
 
   if (inputBoolean === false) {
