@@ -1,14 +1,22 @@
-import { playPostFunc } from "./postPortfolioAnime";
+import { chapterIndex, playStory } from "./portfolioFunctions";
+import { covidAnimation, playPostFunc } from "./postPortfolioAnime";
+let firstTime = false;
 export class PortfolioAnimation {
   constructor() {}
 
   async playOrStop(input) {
     if (input === 1) {
-           playPostFunc(false);
+      playPostFunc(false);
     }
 
     if (input === 2) {
-        playPostFunc(true);
+      if (!firstTime) {
+        firstTime = true;
+        covidAnimation();
+      }
+      let currentStory = "story_" + chapterIndex;
+      playStory(currentStory);
+      playPostFunc(true);
     }
   }
 }

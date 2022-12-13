@@ -1,42 +1,255 @@
 import anime from "animejs";
 
-export async function playPostFunc(inputBoolean) {
-  const wall = document.getElementById("avatarWall");
-  // const moveRight = (wall.offsetWidth+70).toString() + "px";
+export async function removePortfolioAnimations() {
+  anime.remove(".avatarCircle");
+  anime.remove("#avatarMom");
+  anime.remove("#avatarDad");
+  anime.remove("#avatarEdipID");
+  anime.remove(".talkBubble");
+  anime.remove(".eyesContainer");
+  anime.remove(".eyeBrows");
+  anime.remove(".eyeAvatar");
+  anime.remove(".eyePupil");
+  anime.remove(".avatarMouth");
+  anime.remove(".talkBubble");
+  anime.remove(".lightYear");
+  anime.remove(".rainDropTable");
+  anime.remove(".rainDropTable table tbody");
+  anime.remove(".rainDrop");
+  anime.remove(".journeyScene");
+  anime.remove(".sunRise");
+  anime.remove(".mountain");
+  anime.remove(".smallMountain");
+  anime.remove(".ground");
+  anime.remove("#headHitWall");
+  anime.remove(".wall");
+  anime.remove(".forceWall");
+  anime.remove(".zenBigCircle");
+  anime.remove(".zenSmallCircle");
+  anime.remove(".zenAvatarCircle");
+}
+
+export async function covidAnimation() {
+  const paragraphCovid = document.getElementById("talkCovidParagraphID");
 
   async function setText(input, inputMouth, inputBackGroundColor) {
     anime({
       targets: inputMouth,
       height: [".5rem", 0, ".5rem", 0, ".5rem"],
-      duration: 750,
+      duration: 500,
     });
 
     anime({
       targets: "#talkCovidID",
       backgroundColor: inputBackGroundColor,
-      duration: 250,
+      duration: 150,
       easing: "linear",
     });
 
     paragraphCovid.innerText = input;
   }
 
-  const paragraphCovid = document.getElementById("talkCovidParagraphID");
-
-  const paragraphRegret = document.getElementById("talkRegretsID");
-
   const talkBubbleCovid = anime.timeline({
     loop: true,
     autoplay: false,
-    duration: 1250,
-    endDelay: 750,
+    duration: 750,
+    endDelay: 500,
   });
+
+  const blinkEyeBawo = anime.timeline({
+    loop: true,
+    autoplay: false,
+    duration: 1000,
+    delay: 750,
+  });
+
+  blinkEyeBawo.add({
+    targets: "#bawoEyesID",
+    opacity: [1, 0, 1],
+  });
+
+  blinkEyeBawo.add({
+    targets: "#momEyesID",
+    opacity: [1, 0, 1],
+  });
+
+  talkBubbleCovid.add({
+    targets: "#talkCovidID",
+    translateX: 0,
+    change: function () {
+      setText("I will help you!", "#avatarEdipMouthID", "#64ffda");
+    },
+  });
+
+  talkBubbleCovid.add({
+    targets: "#talkCovidID",
+    translateX: "2.5rem",
+    delay: 750,
+    change: function () {
+      setText("Thanks son", "#avatarDadMouthID", "#ffe864");
+    },
+  });
+
+  talkBubbleCovid.add({
+    targets: "#talkCovidID",
+    translateX: 0,
+    delay: 500,
+    change: function () {
+      setText("I meant mom...", "#avatarEdipMouthID", "#64ffda");
+    },
+  });
+
+  talkBubbleCovid.add({
+    targets: "#talkCovidID",
+    translateX: "2.5rem",
+    delay: 500,
+    change: function () {
+      setText("Im dying over here!!!", "#avatarDadMouthID", "#ffe864");
+    },
+  });
+
+  talkBubbleCovid.add({
+    targets: ["#bawoEyesID", "#bawoEyePupilID"],
+    scale: [1, 0.75],
+    easing: "easeInOutQuad",
+    duration: 250,
+  });
+
+  talkBubbleCovid.add({
+    targets: "#avatarDad",
+    backgroundColor: "#7cacfd",
+    easing: "linear",
+    duration: 100,
+  });
+
+  talkBubbleCovid.add({
+    targets: "#talkCovidID",
+    translateX: "7.25rem",
+    change: function () {
+      setText("Love you honeybear!", "#avatarMomMouthID", "#fcbfdf");
+    },
+  });
+
+  talkBubbleCovid.add({
+    targets: "#talkCovidID",
+    translateX: 0,
+    change: function () {
+      setText("...", "#avatarEdipMouthID", "#64ffda");
+    },
+  });
+
+  talkBubbleCovid.add({
+    targets: ["#edipEyesID", "#edipEyePupilID"],
+    scale: [1, 1.25, 1, 1.25, 1],
+    easing: "easeInOutQuad",
+    duration: 1250,
+  });
+
+  talkBubbleCovid.add({
+    targets: "#talkCovidID",
+    translateX: 0,
+    change: function () {
+      setText("HEEELP!!!", "#avatarEdipMouthID", "#64ffda");
+    },
+    endDelay: 1250,
+  });
+
+  eyeBrowAnimation();
+  talkBubbleCovid.play();
+  edipEyeBlinkAnimation();
+  blinkEyeBawo.play();
+}
+
+export async function edipEyeBlinkAnimation() {
+  const blinkEyeEdip = anime.timeline({
+    loop: true,
+    autoplay: false,
+    duration: 1500,
+    delay: 500,
+  });
+
+  blinkEyeEdip.add({
+    targets: "#edipEyesID",
+    opacity: [1, 0, 1],
+  });
+
+  blinkEyeEdip.play();
+}
+export async function eyeBrowAnimation() {
+  const eyeBrowAnim = anime.timeline({
+    loop: true,
+    autoplay: false,
+    direction: "alternate",
+    easing: "linear",
+  });
+
+  eyeBrowAnim.add({
+    targets: ".eyeBrows",
+    translateY: [0, "-0.25rem", "0.25rem"],
+    delay: 750,
+    duration: 500,
+  });
+  eyeBrowAnim.play();
+}
+
+export async function heroAnimation() {
+  console.log("heroAnimation");
+  const firstLightYearAnim = anime.timeline({
+    loop: true,
+    autoplay: false,
+  });
+
+  firstLightYearAnim.add({
+    targets: "#firstLight",
+    delay: anime.stagger(75, { from: "last" }),
+    translateX: ["3rem", 0],
+    translateY: ["-3rem", "1rem"],
+    opacity: [1, 0],
+    rotate: ["45deg", "45deg"],
+    complete: function () {
+      anime({
+        targets: ".lightYear",
+        opacity: 0,
+      });
+    },
+  });
+
+  const secondLightYearAnim = anime.timeline({
+    loop: true,
+    autoplay: false,
+    // delay:500
+  });
+
+  secondLightYearAnim.add({
+    targets: "#secondLight",
+    delay: anime.stagger(75, { from: "first" }),
+    translateX: ["3rem", 0],
+    translateY: ["-3rem", "1rem"],
+
+    opacity: [1, 0],
+    rotate: ["45deg", "45deg"],
+    complete: function () {
+      anime({
+        targets: ".lightYear",
+        opacity: 0,
+      });
+    },
+  });
+
+  firstLightYearAnim.play();
+  secondLightYearAnim.play();
+  eyeBrowAnimation();
+  edipEyeBlinkAnimation();
+}
+
+export async function rainAnimation() {
+  const paragraphRegret = document.getElementById("talkRegretsID");
 
   const talkBubbleRegret = anime.timeline({
     loop: true,
     autoplay: false,
     easing: "easeInCubic",
-    duration: 3000,
+    duration: 1750,
   });
 
   talkBubbleRegret.add({
@@ -99,143 +312,27 @@ export async function playPostFunc(inputBoolean) {
     },
   });
 
-  const blinkEyeEdip = anime.timeline({
+  const rainAnim = anime.timeline({
     loop: true,
     autoplay: false,
-    duration: 750,
-    delay: 500,
-  });
-
-  blinkEyeEdip.add({
-    targets: "#edipEyesID",
-    opacity: [1, 0, 1],
-  });
-
-  const blinkEyeBawo = anime.timeline({
-    loop: true,
-    autoplay: false,
-    duration: 1000,
-    delay: 750,
-  });
-
-  blinkEyeBawo.add({
-    targets: "#bawoEyesID",
-    opacity: [1, 0, 1],
-  });
-
-  blinkEyeBawo.add({
-    targets: "#momEyesID",
-    opacity: [1, 0, 1],
-  });
-
-  const eyeBrowAnim = anime.timeline({
-    loop: true,
-    autoplay: false,
-    direction: "alternate",
     easing: "linear",
+    endDelay: 250,
   });
 
-  eyeBrowAnim.add({
-    targets: ".eyeBrows",
-    translateY: [0, "-0.25rem", "0.25rem"],
-    delay: 750,
-    duration: 500,
-  });
-
-  talkBubbleCovid.add({
-    targets: "#talkCovidID",
-    translateX: 0,
-    change: function () {
-      setText("I will help you!", "#avatarEdipMouthID", "#64ffda");
-    },
-  });
-
-  talkBubbleCovid.add({
-    targets: "#talkCovidID",
-    translateX: "2.5rem",
-    delay: 750,
-    change: function () {
-      setText("Thanks son", "#avatarDadMouthID", "#ffe864");
-    },
-  });
-
-  talkBubbleCovid.add({
-    targets: "#talkCovidID",
-    translateX: 0,
-    delay: 500,
-    change: function () {
-      setText("I meant mom...", "#avatarEdipMouthID", "#64ffda");
-    },
-  });
-
-  talkBubbleCovid.add({
-    targets: "#talkCovidID",
-    translateX: "2.5rem",
-    delay: 500,
-    change: function () {
-      setText("Im dying over here!!!", "#avatarDadMouthID", "#ffe864");
-    },
-  });
-
-  talkBubbleCovid.add({
-    targets: "#talkCovidID",
-    translateX: "7.25rem",
-    delay: 500,
-    change: function () {
-      setText("Love you honeybear!", "#avatarMomMouthID", "#fcbfdf");
-    },
-  });
-
-  talkBubbleCovid.add({
-    targets: "#talkCovidID",
-    translateX: 0,
-    change: function () {
-      setText("HEEELP!!!", "#avatarEdipMouthID", "#64ffda");
-    },
-  });
-
-  const firstLightYearAnim = anime.timeline({
-    loop: true,
-    autoplay: false,
-  });
-
-  firstLightYearAnim.add({
-    targets: "#firstLight",
-    delay: anime.stagger(75, { from: "last" }),
-    translateX: ["3rem", 0],
-    translateY: ["-3rem", "1rem"],
-    opacity: [1, 0],
-    rotate: ["45deg", "45deg"],
-    complete: function () {
-      anime({
-        targets: ".lightYear",
-        opacity: 0,
-      });
-    },
-  });
-
-  const secondLightYearAnim = anime.timeline({
-    loop: true,
-    autoplay: false,
-    // delay:500
-  });
-
-  secondLightYearAnim.add({
-    targets: "#secondLight",
-    delay: anime.stagger(75, { from: "first" }),
-    translateX: ["3rem", 0],
-    translateY: ["-3rem", "1rem"],
+  rainAnim.add({
+    targets: ".rainDrop",
+    delay: anime.stagger(250),
+    translateY: [0, "5rem"],
 
     opacity: [1, 0],
-    rotate: ["45deg", "45deg"],
-    complete: function () {
-      anime({
-        targets: ".lightYear",
-        opacity: 0,
-      });
-    },
   });
 
+  rainAnim.play();
+  talkBubbleRegret.play();
+  edipEyeBlinkAnimation();
+}
+
+export async function hitWallAnimation() {
   const forceWallAnim = anime.timeline({
     loop: false,
     autoplay: false,
@@ -286,28 +383,11 @@ export async function playPostFunc(inputBoolean) {
       }
     },
   });
+  edipEyeBlinkAnimation();
+  hitHeadWall.play();
+}
 
-  const rainAnim = anime.timeline({
-    loop: true,
-    autoplay: false,
-    easing: "linear",
-    endDelay: 250,
-  });
-
-  rainAnim.add({
-    targets: ".rainDrop",
-    delay: anime.stagger(250),
-    translateY: [0, "5rem"],
-
-    opacity: [1, 0],
-    // update:function(){
-    //   anime({
-    //     targets:'.rainDrop',
-    //     opacity:0
-    //   });
-    // }
-  });
-
+export async function sunRiseAnimation() {
   const sunRiseAnim = anime.timeline({
     loop: true,
     autoplay: false,
@@ -325,6 +405,7 @@ export async function playPostFunc(inputBoolean) {
     backgroundColor: ["#0a192f", "#3F7FBF"],
     duration: 5000,
     endDelay: 2500,
+    delay: 2000,
   });
 
   const groundAnim = anime.timeline({
@@ -338,6 +419,7 @@ export async function playPostFunc(inputBoolean) {
     backgroundColor: ["rgb(54, 46, 29)", "rgb(121, 100, 62)"],
     duration: 5000,
     endDelay: 2500,
+    delay: 2000,
   });
 
   const mountainOne = anime.timeline({
@@ -351,6 +433,7 @@ export async function playPostFunc(inputBoolean) {
     borderBottom: ["5rem solid rgb(63, 26, 15)", "5rem solid rgb(121, 51, 30)"],
     duration: 5000,
     endDelay: 2500,
+    delay: 2000,
   });
 
   const mountainTwp = anime.timeline({
@@ -364,6 +447,7 @@ export async function playPostFunc(inputBoolean) {
     borderBottom: ["5rem solid rgb(63, 26, 15)", "5rem solid rgb(143, 57, 31)"],
     duration: 5000,
     endDelay: 2500,
+    delay: 2000,
   });
 
   const mountainThree = anime.timeline({
@@ -380,6 +464,7 @@ export async function playPostFunc(inputBoolean) {
     ],
     duration: 5000,
     endDelay: 2500,
+    delay: 2000,
   });
 
   const mountainFour = anime.timeline({
@@ -393,6 +478,7 @@ export async function playPostFunc(inputBoolean) {
     borderBottom: ["5rem solid rgb(63, 26, 15)", "5rem solid rgb(132, 55, 31)"],
     duration: 5000,
     endDelay: 2500,
+    delay: 2000,
   });
 
   sunRiseAnim.add({
@@ -400,15 +486,20 @@ export async function playPostFunc(inputBoolean) {
     translateY: ["7rem", "5rem"],
     duration: 5000,
     endDelay: 2500,
+    delay: 2000,
     opacity: [0, 1],
-    // update:function(){
-    //   anime({
-    //     targets:'.rainDrop',
-    //     opacity:0
-    //   });
-    // }
   });
 
+  changeJourneyScene.play();
+  groundAnim.play();
+  sunRiseAnim.play();
+  mountainOne.play();
+  mountainTwp.play();
+  mountainThree.play();
+  mountainFour.play();
+}
+
+export async function zenAnimation() {
   const zenBigAnim = anime.timeline({
     loop: true,
     autoplay: false,
@@ -435,27 +526,11 @@ export async function playPostFunc(inputBoolean) {
     duration: 3000,
   });
 
-  if (inputBoolean === true) {
-    talkBubbleCovid.restart();
-    blinkEyeEdip.restart();
-    blinkEyeBawo.restart();
-    eyeBrowAnim.restart();
-    firstLightYearAnim.restart();
-    secondLightYearAnim.restart();
-    hitHeadWall.restart();
-    talkBubbleRegret.restart();
-    rainAnim.restart();
-    changeJourneyScene.restart();
-    groundAnim.restart();
-    sunRiseAnim.restart();
-    mountainOne.restart();
-    mountainTwp.restart();
-    mountainThree.restart();
-    mountainFour.restart();
-    zenBigAnim.restart();
-    zenSmallAnim.restart();
-  }
+  zenBigAnim.play();
+  zenSmallAnim.play();
+}
 
+export async function playPostFunc(inputBoolean) {
   if (inputBoolean === false) {
     anime.remove(".animContainer");
     anime.remove(".avatarCircle");

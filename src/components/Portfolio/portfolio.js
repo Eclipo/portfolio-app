@@ -85,11 +85,11 @@ class Portfolio extends Component {
                     <div className="eyeBrows"></div>
                     <div className="eyeBrows" id="eyebrowRightID"></div>
                     <div className="eyeAvatar" id="edipEyesID">
-                      <div className="eyePupil"></div>
+                      <div className="eyePupil" id="edipEyePupilID"></div>
                     </div>
 
                     <div className="eyeAvatar" id="edipEyesID">
-                      <div className="eyePupil"></div>
+                      <div className="eyePupil" id="edipEyePupilID"></div>
                     </div>
                   </div>
 
@@ -107,11 +107,11 @@ class Portfolio extends Component {
                     <div className="eyeBrows"></div>
                     <div className="eyeBrows" id="eyebrowRightID"></div>
                     <div className="eyeAvatar" id="bawoEyesID">
-                      <div className="eyePupil"></div>
+                      <div className="eyePupil" id="bawoEyePupilID"></div>
                     </div>
 
                     <div className="eyeAvatar" id="bawoEyesID">
-                      <div className="eyePupil"></div>
+                      <div className="eyePupil" id="bawoEyePupilID"></div>
                     </div>
                   </div>
 
@@ -249,7 +249,9 @@ class Portfolio extends Component {
                 <div className="d-inline-flex">
                   <p className="portfolioParagraph">
                     There was still time for me to help my mom. I managed to get
-                    her a pulse oximeter even though it was almost sold out.
+                    her a pulse oximeter even though it was almost sold out and
+                    would only give her a small fighting chance if things would
+                    be really bad.
                     <br></br>
                     <br></br>
                     My parents survived COVID-19 and I decided to build my very
