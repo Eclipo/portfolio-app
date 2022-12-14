@@ -36,7 +36,7 @@ export async function covidAnimation() {
     anime({
       targets: inputMouth,
       height: [".5rem", 0, ".5rem", 0, ".5rem"],
-      duration: 500,
+      duration: 750,
     });
 
     anime({
