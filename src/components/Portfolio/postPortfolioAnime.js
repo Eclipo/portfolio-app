@@ -75,6 +75,20 @@ export async function covidAnimation(input) {
   });
 
   talkBubbleCovid.add({
+    targets: "#avatarDad",
+    backgroundColor: ["#7cacfd","#d4bb32"],
+    easing: "linear",
+    duration: 250,
+  });
+
+  talkBubbleCovid.add({
+    targets: ["#bawoEyesID", "#bawoEyePupilID"],
+    scale: [0.75, 1],
+    easing: "easeInOutQuad",
+    duration: 250,
+  });
+
+  talkBubbleCovid.add({
     targets: "#talkCovidID",
     translateX: 0,
 
@@ -125,7 +139,7 @@ export async function covidAnimation(input) {
 
   talkBubbleCovid.add({
     targets: "#avatarDad",
-    backgroundColor: "#7cacfd",
+    backgroundColor: ["#d4bb32","#7cacfd"],
     easing: "linear",
     duration: 250,
   });
