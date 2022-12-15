@@ -29,13 +29,14 @@ export async function removePortfolioAnimations() {
   anime.remove(".zenAvatarCircle");
 }
 
-export async function covidAnimation() {
+export async function covidAnimation(input) {
   const paragraphCovid = document.getElementById("talkCovidParagraphID");
 
   async function setText(input, inputMouth, inputBackGroundColor) {
     anime({
       targets: inputMouth,
       height: [".5rem", 0, ".5rem", 0, ".5rem"],
+      easing: "linear",
       duration: 750,
     });
 
@@ -76,6 +77,7 @@ export async function covidAnimation() {
   talkBubbleCovid.add({
     targets: "#talkCovidID",
     translateX: 0,
+
     change: function () {
       setText("I will help you!", "#avatarEdipMouthID", "#64ffda");
     },
@@ -83,8 +85,10 @@ export async function covidAnimation() {
 
   talkBubbleCovid.add({
     targets: "#talkCovidID",
-    translateX: "2.5rem",
-    delay: 750,
+    translateX: ".25rem",
+    delay: 250,
+    easing: "linear",
+
     change: function () {
       setText("Thanks son", "#avatarDadMouthID", "#ffe864");
     },
@@ -93,7 +97,9 @@ export async function covidAnimation() {
   talkBubbleCovid.add({
     targets: "#talkCovidID",
     translateX: 0,
-    delay: 500,
+    delay: 250,
+    easing: "linear",
+
     change: function () {
       setText("I meant mom...", "#avatarEdipMouthID", "#64ffda");
     },
@@ -101,8 +107,10 @@ export async function covidAnimation() {
 
   talkBubbleCovid.add({
     targets: "#talkCovidID",
-    translateX: "2.5rem",
-    delay: 500,
+    translateX: ".25rem",
+    delay: 250,
+    easing: "linear",
+
     change: function () {
       setText("Im dying over here!!!", "#avatarDadMouthID", "#ffe864");
     },
@@ -119,12 +127,14 @@ export async function covidAnimation() {
     targets: "#avatarDad",
     backgroundColor: "#7cacfd",
     easing: "linear",
-    duration: 100,
+    duration: 250,
   });
 
   talkBubbleCovid.add({
     targets: "#talkCovidID",
     translateX: "7.25rem",
+    duration: 2000,
+    endDelay: 1000,
     change: function () {
       setText("Love you honeybear!", "#avatarMomMouthID", "#fcbfdf");
     },
@@ -133,6 +143,7 @@ export async function covidAnimation() {
   talkBubbleCovid.add({
     targets: "#talkCovidID",
     translateX: 0,
+    duration: 2000,
     change: function () {
       setText("...", "#avatarEdipMouthID", "#64ffda");
     },
@@ -201,15 +212,16 @@ export async function heroAnimation() {
 
   firstLightYearAnim.add({
     targets: "#firstLight",
-    delay: anime.stagger(75, { from: "last" }),
+    delay: anime.stagger(100, { from: "last" }),
     translateX: ["3rem", 0],
     translateY: ["-3rem", "1rem"],
-    opacity: [1, 0],
+    opacity: [0.5, 0],
     rotate: ["45deg", "45deg"],
     complete: function () {
       anime({
         targets: ".lightYear",
         opacity: 0,
+        endDelay: 500,
       });
     },
   });
@@ -222,16 +234,16 @@ export async function heroAnimation() {
 
   secondLightYearAnim.add({
     targets: "#secondLight",
-    delay: anime.stagger(75, { from: "first" }),
+    delay: anime.stagger(100, { from: "first" }),
     translateX: ["3rem", 0],
     translateY: ["-3rem", "1rem"],
-
-    opacity: [1, 0],
+    opacity: [0.5, 0],
     rotate: ["45deg", "45deg"],
     complete: function () {
       anime({
         targets: ".lightYear",
         opacity: 0,
+        endDelay: 500,
       });
     },
   });
@@ -242,6 +254,21 @@ export async function heroAnimation() {
   edipEyeBlinkAnimation();
 }
 
+async function mouthAnimation() {
+  const mouth = anime.timeline({
+    loop: true,
+    autoplay: false,
+  });
+
+  mouth.add({
+    targets: "#avatarEdipMouthID",
+    height: [".5rem", 0, ".5rem", 0, ".5rem"],
+    duration: 500,
+    easing: "linear",
+    endDelay: 1750,
+  });
+  mouth.play();
+}
 export async function rainAnimation() {
   const paragraphRegret = document.getElementById("talkRegretsID");
 
@@ -330,6 +357,7 @@ export async function rainAnimation() {
   rainAnim.play();
   talkBubbleRegret.play();
   edipEyeBlinkAnimation();
+  mouthAnimation();
 }
 
 export async function hitWallAnimation() {

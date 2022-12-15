@@ -71,7 +71,8 @@ export const leftNavigate = (inputID) => {
     anime({
       targets: "#" + currentStory,
       opacity: 0,
-      duration: 750,
+      duration: 250,
+      delay: 150,
       easing: "linear",
       complete: function () {
         document.getElementById(nextStory).style.display = "block";
@@ -79,9 +80,9 @@ export const leftNavigate = (inputID) => {
         anime({
           targets: "#" + nextStory,
           opacity: 1,
-          delay: 850,
+          delay: 150,
           easing: "linear",
-          duration: 750,
+          duration: 500,
           complete: function () {
             playStory(nextStory);
             disableScroll.off();
@@ -125,14 +126,14 @@ export const rightNavigate = (inputID) => {
       opacity: 0,
       duration: 250,
       easing: "linear",
-      endDelay: 500,
+      delay: 150,
       complete: function () {
         anime({
           targets: "#" + nextStory,
           opacity: 1,
-          delay: 1350,
+          delay: 150,
           easing: "linear",
-          duration: 1250,
+          duration: 500,
           begin: function () {
             document.getElementById(nextStory).style.display = "block";
             document.getElementById(currentStory).style.display = "none";

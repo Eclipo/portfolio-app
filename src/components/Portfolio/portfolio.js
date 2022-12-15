@@ -11,6 +11,33 @@ class Portfolio extends Component {
     // This binding is necessary to make `this` work in the callback
     this.leftNav = this.leftNav.bind(this);
     this.rightNav = this.rightNav.bind(this);
+
+    this.onTouchStart = this.onTouchStart.bind(this);
+    this.onTouchMove = this.onTouchMove.bind(this);
+    this.onTouchEnd = this.onTouchEnd.bind(this);
+    this.state = {
+      touchStart: null,
+      touchEnd: null,
+      minSwipeDistance: 50,
+    };
+  }
+
+  onTouchStart(event) {
+    this.setState({ touchEnd: null }); // otherwise the swipe is fired even with usual touch events
+    this.setState({ touchStart: event.targetTouches[0].clientX }); // otherwise the swipe is fired even with usual touch events
+  }
+
+  onTouchMove(event) {
+    this.setState({ touchEnd: event.targetTouches[0].clientX });
+  }
+
+  onTouchEnd(event) {
+    if (!this.state.touchStart || !this.state.touchEnd) return;
+    const distance = this.state.touchStart - this.state.touchEnd;
+    const isLeftSwipe = distance > this.state.minSwipeDistance;
+    const isRightSwipe = distance < -this.state.minSwipeDistance;
+    if (isLeftSwipe || isRightSwipe)
+      isLeftSwipe ? rightNavigate() : leftNavigate();
   }
 
   leftNav(event) {
@@ -20,6 +47,7 @@ class Portfolio extends Component {
   rightNav(event) {
     rightNavigate();
   }
+
   render() {
     return (
       <div id="portfolioID" className="sectionAnimation">
@@ -56,7 +84,7 @@ class Portfolio extends Component {
               <div className="row">
                 <div className="col">
                   <button
-                    className="btnContainer"
+                    className="btnContainer mt-2"
                     id="leftBtnID"
                     onClick={this.leftNav}>
                     <FontAwesomeIcon
@@ -64,9 +92,10 @@ class Portfolio extends Component {
                       className="leftBtn"></FontAwesomeIcon>
                   </button>
                 </div>
+
                 <div className="col">
                   <button
-                    className="btnContainer"
+                    className="btnContainer mt-2"
                     id="rightBtnID"
                     onClick={this.rightNav}>
                     <FontAwesomeIcon
@@ -76,8 +105,13 @@ class Portfolio extends Component {
                 </div>
               </div>
             </div>
-            <div className="container animContainer" id="story_0">
-              <h4 className="mb-5">Covid-19</h4>
+            <div
+              id="story_0"
+              className="container animContainer"
+              onTouchStart={this.onTouchStart}
+              onTouchMove={this.onTouchMove}
+              onTouchEnd={this.onTouchEnd}>
+              <h4 className="mb-5">Covid-19, march 2020</h4>
 
               <div className="row mx-auto">
                 <div className="avatarCircle">
@@ -141,16 +175,22 @@ class Portfolio extends Component {
               </div>
 
               <p className="portfolioParagraph">
-                COVID-19 arrived and in one hit threatened the lives of my
-                parents. My dad was at the hospital and my mother just got
-                infected.
+                My dad ended up at the hospital.<br></br>
+                My mom just got infected.<br></br>
+                <br></br>
+                Nobody knew what was going on.
               </p>
             </div>
 
-            <div className="container animContainer" id="story_1">
+            <div
+              id="story_1"
+              onTouchStart={this.onTouchStart}
+              onTouchMove={this.onTouchMove}
+              onTouchEnd={this.onTouchEnd}
+              className="container animContainer">
               <h4>Coronahero</h4>
 
-              <div className="row flexCenter">
+              <div className="row flexCenter m-auto">
                 <div className="lightYear" id="firstLight"></div>
                 <div className="lightYear" id="firstLight"></div>
 
@@ -248,22 +288,27 @@ class Portfolio extends Component {
 
                 <div className="d-inline-flex">
                   <p className="portfolioParagraph">
-                    There was still time for me to help my mom. I managed to get
-                    her a pulse oximeter even though it was almost sold out and
-                    would only give her a small fighting chance if things would
-                    be really bad.
+                    I had to do something for my mom before it would be too
+                    late.
+                    <br></br>
+                    <br></br>I got her a pulse oximeter just to give her any
+                    fighting chance possible.
                     <br></br>
                     <br></br>
                     My parents survived COVID-19 and I decided to build my very
-                    first website which was named Coronahero. The users could
-                    give my avatar various symptoms and learn more about
-                    COVID-19.
+                    first website, Coronahero. The users could give my avatar
+                    various symptoms and learn more about COVID-19.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="container animContainer" id="story_2">
+            <div
+              id="story_2"
+              onTouchStart={this.onTouchStart}
+              onTouchMove={this.onTouchMove}
+              onTouchEnd={this.onTouchEnd}
+              className="container animContainer">
               <h4>The mistakes</h4>
 
               <div className="row mb-4">
@@ -346,15 +391,21 @@ class Portfolio extends Component {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="row flexCenter m-auto">
                 <p className="portfolioParagraph">
                   The website Coronahero was a disaster. It looked horrible and
-                  wasn't mobile responsive at all. I made many mistakes and I
-                  realised I had a long way to go.
+                  wasn't mobile responsive at all. <br></br>
+                  <br></br>I made many mistakes and I realised I had a long way
+                  to go.
                 </p>
               </div>
             </div>
-            <div className="container animContainer" id="story_3">
+            <div
+              id="story_3"
+              onTouchStart={this.onTouchStart}
+              onTouchMove={this.onTouchMove}
+              onTouchEnd={this.onTouchEnd}
+              className="container animContainer">
               <h4>A new journey begins</h4>
               {/* A sunrising and avatar looks to the horizon wiht a talkbubble */}
 
@@ -391,7 +442,12 @@ class Portfolio extends Component {
 
             {/* NOOB WALL....*/}
 
-            <div className="container animContainer" id="story_4">
+            <div
+              id="story_4"
+              onTouchStart={this.onTouchStart}
+              onTouchMove={this.onTouchMove}
+              onTouchEnd={this.onTouchEnd}
+              className="container animContainer">
               <h4>The struggle</h4>
 
               <div className="container">
@@ -439,10 +495,15 @@ class Portfolio extends Component {
               </p>
             </div>
 
-            <div className="container animContainer" id="story_5">
+            <div
+              id="story_5"
+              onTouchStart={this.onTouchStart}
+              onTouchMove={this.onTouchMove}
+              onTouchEnd={this.onTouchEnd}
+              className="container animContainer">
               <h4>Becomming Lagom</h4>
               {/* Zen-mode */}
-              <div className="row flexCenter">
+              <div className="row flexCenter m-auto">
                 <div className="zenBigCircle" id="helveteCIRCLE">
                   <div className="zenSmallCircle m-auto mt-3"></div>
                 </div>
