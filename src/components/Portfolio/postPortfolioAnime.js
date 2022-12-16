@@ -9,7 +9,10 @@ export async function removePortfolioAnimations() {
   anime.remove(".eyesContainer");
   anime.remove(".eyeBrows");
   anime.remove(".eyeAvatar");
+  anime.remove("#edipEyesID");
+  anime.remove("#bawoEyesID");
   anime.remove(".eyePupil");
+  anime.remove("#bawoEyePupilID");
   anime.remove(".avatarMouth");
   anime.remove(".talkBubble");
   anime.remove(".lightYear");
@@ -76,7 +79,7 @@ export async function covidAnimation(input) {
 
   talkBubbleCovid.add({
     targets: "#avatarDad",
-    backgroundColor: ["#7cacfd","#d4bb32"],
+    backgroundColor: ["#7cacfd", "#d4bb32"],
     easing: "linear",
     duration: 250,
   });
@@ -139,7 +142,7 @@ export async function covidAnimation(input) {
 
   talkBubbleCovid.add({
     targets: "#avatarDad",
-    backgroundColor: ["#d4bb32","#7cacfd"],
+    backgroundColor: ["#d4bb32", "#7cacfd"],
     easing: "linear",
     duration: 250,
   });
@@ -168,6 +171,7 @@ export async function covidAnimation(input) {
     scale: [1, 1.25, 1, 1.25, 1],
     easing: "easeInOutQuad",
     duration: 1250,
+    endDelay: 7500,
   });
 
   talkBubbleCovid.add({
@@ -189,7 +193,7 @@ export async function edipEyeBlinkAnimation() {
   const blinkEyeEdip = anime.timeline({
     loop: true,
     autoplay: false,
-    duration: 1500,
+    duration: 750,
     delay: 500,
   });
 
@@ -211,7 +215,7 @@ export async function eyeBrowAnimation() {
   eyeBrowAnim.add({
     targets: ".eyeBrows",
     translateY: [0, "-0.25rem", "0.25rem"],
-    delay: 750,
+    delay: 1250,
     duration: 500,
   });
   eyeBrowAnim.play();
@@ -238,6 +242,7 @@ export async function heroAnimation() {
         endDelay: 500,
       });
     },
+    endDelay: 2500,
   });
 
   const secondLightYearAnim = anime.timeline({
@@ -260,6 +265,7 @@ export async function heroAnimation() {
         endDelay: 500,
       });
     },
+    endDelay: 2500,
   });
 
   firstLightYearAnim.play();
@@ -290,7 +296,7 @@ export async function rainAnimation() {
     loop: true,
     autoplay: false,
     easing: "easeInCubic",
-    duration: 1750,
+    duration: 2500,
   });
 
   talkBubbleRegret.add({
@@ -351,6 +357,7 @@ export async function rainAnimation() {
     change: function () {
       paragraphRegret.innerText = "WHY!!??";
     },
+    endDelay: 2500,
   });
 
   const rainAnim = anime.timeline({

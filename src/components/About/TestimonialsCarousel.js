@@ -39,13 +39,15 @@ class TestimonialsCarousel extends Component {
               background: "var(--primary-darker-green)",
               height: "26.5rem",
             }}>
-            <div className="d-block" style={{ marginTop: "-11rem" }}>
+            <div className="d-block" style={{ marginTop: "-13rem" }}>
               <Family></Family>
             </div>
 
             <div className="d-block " style={{ marginTop: "-15.5rem" }}>
               <h2>Family</h2>
-              <p>Me, Erika, our son Noah and baby girl Laleh</p>
+              <p>
+                Me, Erika, our son Noah<br></br> and baby girl Laleh
+              </p>
             </div>
           </div>
         </>
@@ -71,7 +73,9 @@ class TestimonialsCarousel extends Component {
                 marginTop: "6.5rem",
               }}>
               <h2>Origin</h2>
-              <p>I am born in Sweden with Kurdish origin from Turkey</p>
+              <p>
+                I am born in Sweden with <br></br>Kurdish origin from Turkey
+              </p>
             </div>
           </div>
         </>
@@ -92,7 +96,7 @@ class TestimonialsCarousel extends Component {
                 height: "10rem",
               }}>
               <h2>Stockholm</h2>
-              <p>My hometown</p>
+              <p>My beautiful hometown</p>
             </div>
           </div>
         </>
@@ -121,7 +125,7 @@ class TestimonialsCarousel extends Component {
             <div className="basketBg">
               <h2 style={{ marginTop: "2.7rem" }}>Basket</h2>
               <p>
-                I play basketball from <br></br> time to time
+                I play basketball<br></br>from time to time
               </p>
             </div>
           </div>
@@ -161,8 +165,9 @@ class TestimonialsCarousel extends Component {
                 marginTop: "-6.75rem",
               }}>
               <h2>Star Wars</h2>
-              <p>
-                Music, graphics, story...<br></br>All of it inspires me
+              <p style={{ backgroundColor: "black", width: "fit-content" }}>
+                The music, graphics and story<br></br>are huge inspiration to
+                me.
               </p>
             </div>
           </div>
@@ -183,7 +188,9 @@ class TestimonialsCarousel extends Component {
             <div className="brickFloor">
               <span className="marioText">
                 <h2 className="">Video games</h2>
-                <p className="">I have a passion for retrogames</p>
+                <p className="">
+                  I have a passion<br></br> for retrogames
+                </p>
               </span>
             </div>
           </div>

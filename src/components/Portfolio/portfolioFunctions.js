@@ -42,15 +42,15 @@ export async function playStory(story) {
 
 export const leftNavigate = (inputID) => {
   disableScroll.on();
-
-  if (chapterIndex < 0 || chapterIndex === 0) {
-    document.getElementById("leftBtnID").disabled = true;
-    anime({
-      targets: ".leftBtn",
-      opacity: 0.5,
-    });
-    chapterIndex = 0;
-  }
+  let checkNext = { ...(chapterIndex - 1) };
+  // if (chapterIndex < 0 || chapterIndex === 0 || checkNext === 0) {
+  //   document.getElementById("leftBtnID").disabled = true;
+  //   anime({
+  //     targets: ".leftBtn",
+  //     opacity: 0,
+  //   });
+  //   chapterIndex = 0;
+  // }
 
   if (chapterIndex > 0 && chapterIndex <= 5) {
     document.getElementById("leftBtnID").disabled = false;
@@ -90,12 +90,13 @@ export const leftNavigate = (inputID) => {
         });
       },
     });
+    let checkNext = { ...(chapterIndex - 1) };
 
-    if (chapterIndex < 0 || chapterIndex === 0) {
+    if (chapterIndex < 0 || chapterIndex === 0 || checkNext === 0) {
       document.getElementById("leftBtnID").disabled = true;
       anime({
         targets: ".leftBtn",
-        opacity: 0.5,
+        opacity: 0,
       });
       chapterIndex = 0;
     }
@@ -146,16 +147,29 @@ export const rightNavigate = (inputID) => {
       },
     });
 
-    if (chapterIndex === 5) {
+    let checkNext = { ...(chapterIndex + 1) };
+
+    if (chapterIndex === 5 || checkNext === 5) {
       document.getElementById("rightBtnID").disabled = true;
       anime({
         targets: ".rightBtn",
-        opacity: 0.5,
+        opacity: 0,
       });
       chapterIndex = 5;
-      // disableScroll.off();
+      disableScroll.off();
       return;
     }
+
+    // if (chapterIndex === 5) {
+    //   document.getElementById("rightBtnID").disabled = true;
+    //   anime({
+    //     targets: ".rightBtn",
+    //     opacity: 0.5,
+    //   });
+    //   chapterIndex = 5;
+    //   // disableScroll.off();
+    //   return;
+    // }
   }
 
   if (chapterIndex > 5) {

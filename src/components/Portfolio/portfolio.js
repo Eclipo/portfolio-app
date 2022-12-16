@@ -289,9 +289,7 @@ class Portfolio extends Component {
                 <div className="d-inline-flex">
                   <p className="portfolioParagraph">
                     I had to do something for my mom before it would be too
-                    late.
-                    <br></br>
-                    <br></br>I got her a pulse oximeter just to give her any
+                    late, where I got her a pulseoximeter to give her any
                     fighting chance possible.
                     <br></br>
                     <br></br>

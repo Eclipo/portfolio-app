@@ -59,6 +59,18 @@ export const Family = () => {
                 <div className="hair-ball"></div>
                 <div className="erika-hair"></div>
                 <div className="face erika-face">
+                  <div className="freckles-left">
+                    <div className="freckle freckle_1"></div>
+                    <div className="freckle freckle_2"></div>
+                    <div className="freckle freckle_3"></div>
+                  </div>
+
+                  <div className="freckles-right">
+                    <div className="freckle freckle_1"></div>
+                    <div className="freckle freckle_2"></div>
+                    <div className="freckle freckle_3"></div>
+                  </div>
+
                   <div className="nose erika-nose"></div>
                   <div className="eye-shadow" id="left">
                     <div className="eyebrow erika-brow"></div>

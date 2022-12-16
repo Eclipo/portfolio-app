@@ -67,6 +67,8 @@
   background: var(--primary-orange) !important;
   margin-bottom: 3.5rem !important;
   height: 2.25rem !important;
+  max-width: 50rem;
+
   justify-content: center !important;
   align-content: center !important;
   border-radius: 5px !important;
@@ -76,6 +78,7 @@
 .carousel-root {
   margin: auto !important;
   margin-top: 1% !important;
+  max-width: 50rem;
 }
 .carousel.carousel-slider .control-arrow {
   bottom: 0 !important;
@@ -118,7 +121,7 @@
   align-items: center;
   text-align: center;
   max-height: 22rem;
-  max-width: initial;
+  max-width: 50rem;
   margin: auto;
   border-radius: 18px !important;
   box-shadow: -0.1rem 0.25rem 0.25rem -0.1rem black,

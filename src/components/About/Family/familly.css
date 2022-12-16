@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-:root {
+/* :root {
   --size-familyDivisor: 1.5;
 }
 
@@ -47,13 +47,17 @@
   :root {
     --size-familyDivisor: 2.25;
   }
-}
+} */
 
 #tableFamilyID {
-  transform: scale(calc(1 / var(--size-familyDivisor)));
+  /* transform: scale(calc(0.91 / var(--size-familyDivisor))); */
   z-index: 2;
   border-spacing: 5% 0%;
   border-collapse: collapse;
+
+  height: fit-content;
+  max-width: 50rem;
+  transform: scale(0.325) !important;
 }
 
 #tableFamilyID td {
@@ -400,6 +404,48 @@
   margin-left: 2%;
 }
 
+.freckles-left {
+  height: fit-content;
+  width: fit-content;
+  display: inline-flex;
+  justify-content: center;
+  /* float: left; */
+}
+
+.freckles-right {
+  height: fit-content;
+  width: fit-content;
+  display: inline-flex;
+  justify-content: center;
+  /* float: right; */
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.freckle {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--primary-lightPink);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.freckle_1 {
+  margin-top: 6.4rem;
+  margin-left: -6rem;
+}
+
+.freckle_2 {
+  margin-top: 6rem;
+  margin-left: 0.25rem;
+}
+
+.freckle_3 {
+  margin-top: 6.75rem;
+  margin-left: -0.25rem;
+}
+
 .erika-head {
   box-shadow: 0.1rem 0 0.1rem #f4c37e, inset 0 -0.5rem 1rem 0 #9e7843;
 }
@@ -548,7 +594,7 @@
 }
 
 .laleh-eye {
-  background: #675119 !important;
+  background: #5d6913 !important;
 }
 
 .shadow-wrapper {
