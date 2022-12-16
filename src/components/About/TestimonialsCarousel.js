@@ -59,7 +59,7 @@ class TestimonialsCarousel extends Component {
               background: "var(--primary-lightDarkGrey)",
               height: "26.5rem",
             }}>
-            <div className="mt-4">
+            <div style={{ marginTop: "4rem" }}>
               <img
                 className="flag"
                 src={flags}
@@ -70,7 +70,7 @@ class TestimonialsCarousel extends Component {
             <div
               style={{
                 display: "block position-absolute",
-                marginTop: "6.5rem",
+                marginTop: "3.5rem",
               }}>
               <h2>Origin</h2>
               <p>
