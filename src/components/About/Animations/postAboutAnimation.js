@@ -254,6 +254,13 @@ async function lightSaberAnimation() {
   });
 
   lightSaber.add({
+    targets: ".outerLightSaber, .coreLightSaber",
+    opacity: 0,
+    easing: "linear",
+    duration: 10,
+  });
+
+  lightSaber.add({
     targets: ".stars",
     scale: [0.05, 0.65],
     easing: "easeOutQuad",
