@@ -719,13 +719,17 @@ ul > li {
 }
 
 #navbarTogglerID {
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem;
   position: relative;
   position: sticky;
-  position: -webkit-sticky;
-  transition: var(--transition);
+  position: -webkit-sticky; */
+  /* transition: var(--transition);
   background-color: var(--btnLight-navy) !important;
-  border: 0.1rem black solid !important;
+  border: 0.1rem black solid !important; */
+  margin-top: 0.5rem;
+  width: 3rem;
+    background-color: var(--btnLight-navy) !important;
+      border: 0.1rem black solid !important;
 }
 
 #navbarTogglerID:hover {
@@ -756,9 +760,11 @@ ul > li {
   border-radius: 5px 0 0 5px;
 }
 
+
 #navIconID {
   color: var(--light-slate) !important;
-  margin: auto;
+  padding-top:0.5rem !important;
+  padding-bottom:0.25rem !important;  
 }
 
 nav {
