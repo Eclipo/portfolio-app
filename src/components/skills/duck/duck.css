@@ -137,7 +137,7 @@
   position: absolute;
   top: 7rem;
   right: 75%;
-  box-shadow: var(--btnDesinShadow);
+  box-shadow: var(--duckMouthUpperShadow);
 }
 
 .duckMouthUnder {
@@ -148,7 +148,7 @@
   position: absolute;
   top: 9.25rem;
   right: 75%;
-  box-shadow: var(--btnDesinShadow);
+  box-shadow: var(--duckMouthLowerShadow);
 }
 
 .shadow-wrapper {

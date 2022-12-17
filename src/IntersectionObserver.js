@@ -127,6 +127,8 @@ setTimeout(function () {
 
           //Resume Overview Section - Turn ON Personality + Turn OFF Skills and Portfolio
           case 2:
+            console.log('we är ju fan här i RESUME OVERVIEW');
+
             currentNavLink(5);
             PlayAnimation("PortfolioAnimation", 1);
 
@@ -135,6 +137,7 @@ setTimeout(function () {
           //Personality
           case 3:
             currentNavLink(6);
+            console.log('we är ju fan här i personality och skall trigga 2an');
             PlayAnimation("PersonalityAnimation", 2);
 
             break;
@@ -168,7 +171,7 @@ setTimeout(function () {
   const secondOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.25,
+    threshold: 0.1,
   };
 
   const firstObserver = new IntersectionObserver(

@@ -26,14 +26,18 @@ export class PersonalityAnimation {
     }
 
     if (input === 1) {
+      console.log('personalityAnimation it is 1',input);
+
       playPersonalityFunc(false);
     }
 
     if (input === 2) {
-
-      if (this.playedPersonalityZero === true) {
+      console.log('personalityAnimation it is 2',input);
+      if(this.playedPersonalityZero === true){
         playPersonalityFunc(true);
       }
+        
+      
     }
   }
 }

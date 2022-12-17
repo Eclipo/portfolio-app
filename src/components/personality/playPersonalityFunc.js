@@ -20,88 +20,50 @@ const randomEmpathy = [
   "#fffafa",
 ];
 
-export async function playPersonalityFunc(inputBoolean) {
-  function getRandomTarget() {
-    return randomPatience[Math.floor(Math.random() * randomPatience.length)];
-  }
+function getRandomTarget() {
+  return randomPatience[Math.floor(Math.random() * randomPatience.length)];
+}
 
-  function animatePatience(inputTarget) {
-    anime({
-      targets: inputTarget,
-      opacity: [0, 1, 0],
-      easing: "easeInOutSine",
-      duration: 750,
-    });
-  }
+function animatePatience(inputTarget) {
+  anime({
+    targets: inputTarget,
+    opacity: [0, 1, 0],
+    easing: "easeInOutSine",
+    duration: 750,
+  });
+}
 
-  function getRandomEmpathy() {
-    return randomEmpathy[Math.floor(Math.random() * randomEmpathy.length)];
-  }
-
-  function animateEmpathy(inputTarget) {
-    anime({
-      targets: "#empathyID",
-      backgroundColor: inputTarget,
-      easing: "easeInOutSine",
-      duration: 250,
-    });
-  }
-
-  const playPatience = anime.timeline({
+ async function patienceAnimation(){
+  const playPatience = anime({
+    loopBegin: function () {
+      animatePatience(getRandomTarget());
+    },
+    loopComplete: function () {
+      animatePatience(getRandomTarget());
+    },
     loop: true,
     autoplay: false,
+    duration: 500,
   });
 
+  playPatience.play();
+}
 
-    playPatience.add({
-    targets:['#patienceOneID',
-      '#patienceTwoID',
-      '#patienceThreeID',
-      '#patienceFourID',
-      '#patienceFiveID'],
-    easing: "easeInOutSine",
-    duration: 10,
-    opacity:0
-  });
 
-  playPatience.add({
-    targets:'#patienceTwoID',
-    easing: "easeInOutSine",
-    duration: 750,
-    opacity:[0,1,0]
-  });
+function getRandomEmpathy() {
+  return randomEmpathy[Math.floor(Math.random() * randomEmpathy.length)];
+}
 
-  playPatience.add({
-    targets:'#patienceFiveID',
+function animateEmpathy(inputTarget) {
+  anime({
+    targets: "#empathyID",
+    backgroundColor: inputTarget,
     easing: "easeInOutSine",
-    duration: 750,
-    opacity:[0,1,0]
+    duration: 250,
   });
-  
-  playPatience.add({
-    targets:'#patienceThreeID',
-    easing: "easeInOutSine",
-    duration: 750,
-    opacity:[0,1,0]
-  });
+}
 
-  playPatience.add({
-    targets:'#patienceFourID',
-    easing: "easeInOutSine",
-    duration: 750,
-    opacity:[0,1,0]
-  });
-  
-  playPatience.add({
-    targets:'#patienceOneID',
-    easing: "easeInOutSine",
-    duration: 750,
-    opacity:[0,1,0]
-  });
- 
-  
-  
-
+async function empathyAnimation(){
   const playEmpathy = anime({
     loopBegin: function () {
       animateEmpathy(getRandomEmpathy());
@@ -113,6 +75,14 @@ export async function playPersonalityFunc(inputBoolean) {
     autoplay: false,
     duration: 500,
   });
+
+  playEmpathy.play();
+}
+
+
+export async function playPersonalityFunc(inputBoolean) {
+
+
 
   const playHonesty = anime({
     targets: "#honestySevenID",
@@ -299,25 +269,26 @@ export async function playPersonalityFunc(inputBoolean) {
   });
 
   if (inputBoolean === true) {
+    console.log('playPersonalityFunc is true');
+    
+    patienceAnimation();
+    empathyAnimation();
+    playShakingHonesty.play();
+    playHonesty.play();
+    playTemper.play();
+    playFocus.play();
+    playCreativity.play();
+    playStructure.play();
+    bookEyeBrowAnim.play();
+  }
+
+  if (inputBoolean === false) {
+    console.log('playPersonalityFunc is false');
+
     anime.remove("#personalityContainerID");
     anime.remove("#personalityTableID");
     anime.remove("#personalityTableID td");
     anime.remove(".personalityTraits");
     anime.remove(".personalityBaseTraits");
-    playShakingHonesty.restart();
-    playHonesty.restart();
-    playTemper.restart();
-    playFocus.restart();
-    playPatience.play();
-    playCreativity.restart();
-    playStructure.restart();
-    playEmpathy.play();
-    bookEyeBrowAnim.play();
-  }
-
-  if (inputBoolean === false) {
-    anime.remove(".personalityTraits");
-    anime.remove(".personalityCard");
-    anime.remove("bookEyebrow");
   }
 }
