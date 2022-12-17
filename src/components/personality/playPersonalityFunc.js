@@ -47,15 +47,60 @@ export async function playPersonalityFunc(inputBoolean) {
     });
   }
 
-  const playPatience = anime({
-    loopBegin: function () {
-      animatePatience(getRandomTarget());
-    },
+  const playPatience = anime.timeline({
     loop: true,
     autoplay: false,
-    duration: 500,
-    delay: 500,
   });
+
+
+    playPatience.add({
+    targets:['#patienceOneID',
+      '#patienceTwoID',
+      '#patienceThreeID',
+      '#patienceFourID',
+      '#patienceFiveID'],
+    easing: "easeInOutSine",
+    duration: 10,
+    opacity:0
+  });
+
+  playPatience.add({
+    targets:'#patienceTwoID',
+    easing: "easeInOutSine",
+    duration: 750,
+    opacity:[0,1,0]
+  });
+
+  playPatience.add({
+    targets:'#patienceFiveID',
+    easing: "easeInOutSine",
+    duration: 750,
+    opacity:[0,1,0]
+  });
+  
+  playPatience.add({
+    targets:'#patienceThreeID',
+    easing: "easeInOutSine",
+    duration: 750,
+    opacity:[0,1,0]
+  });
+
+  playPatience.add({
+    targets:'#patienceFourID',
+    easing: "easeInOutSine",
+    duration: 750,
+    opacity:[0,1,0]
+  });
+  
+  playPatience.add({
+    targets:'#patienceOneID',
+    easing: "easeInOutSine",
+    duration: 750,
+    opacity:[0,1,0]
+  });
+ 
+  
+  
 
   const playEmpathy = anime({
     loopBegin: function () {

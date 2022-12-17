@@ -8,6 +8,14 @@
   margin-top: 1rem;
 }
 
+#patienceOneID,
+#patienceTwoID,
+#patienceThreeID,
+#patienceFourID,
+#patienceFiveID{
+  opacity:0;
+}
+
 #personalityTableID {
   opacity: 0;
   margin: auto;
