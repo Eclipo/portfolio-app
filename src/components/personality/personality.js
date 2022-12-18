@@ -404,23 +404,29 @@ class Personality extends Component {
               <Book></Book>
             </div>
             <div className="duckText mx-auto">
+              <p>
               The purpose of the personality matrix above is to display two
               facts:
+              </p>
               <ul className="skillBullet">
                 <li>
                   It is quite <span className="highLight"> easy to label </span>
                   a person based on the very first impression.
                 </li>
+                <br></br>
                 <li>
                   A personality is rather{" "}
                   <span className="highLight"> dynamic </span> than static.
                 </li>
               </ul>
+              <p>
               My particular personality depends on a variety of conditions where
               I can be either more or less of a specific trait.<br></br>
               <br></br>
               In the cards shown below, I will go through some of my personal
               attributes in more detail.
+              </p>
+            
             </div>
 
             <div className="container flexCenter">

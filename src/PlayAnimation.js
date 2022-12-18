@@ -1,10 +1,10 @@
-import { IntroAnimation } from "./IntroAnimation.js";
-import { PersonalityAnimation } from "../personality/personalityAnimation.js";
-import { PortfolioAnimation } from "../Portfolio/PortfolioAnimation.js";
+import { IntroAnimation } from "./components/Intro/IntroAnimation.js";
+import { PersonalityAnimation } from "./components/personality/personalityAnimation.js";
+import { PortfolioAnimation } from "./components/Portfolio/PortfolioAnimation.js";
 
 import anime from "animejs";
-import { SkillAnimation } from "../skills/SkillAnimation.js";
-import { QuickAboutAnimation } from "../About/Animations/AboutAnimation.js";
+import { SkillAnimation } from "./components/skills/SkillAnimation.js";
+import { QuickAboutAnimation } from "./components/About/Animations/AboutAnimation.js";
 
 const IntroAnime = new IntroAnimation();
 const SkillsAnime = new SkillAnimation();

@@ -3,16 +3,13 @@
 
 // Write your JavaScript code.
 import anime from "animejs";
-
+var playOnce = false;
 var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 var ff = navigator.userAgent.indexOf('Firefox') > 0;
 var tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown';
 if (iOS) document.body.classList.add('iOS');
 
 var logoAnimation = function() {
-
-  
-
   var setDashoffset = function(el) {
     var l = el.getTotalLength();
     el.setAttribute('stroke-dasharray', l);
@@ -116,17 +113,17 @@ var logoAnimation = function() {
     duration: 500,
     easing: 'linear',
     complete:function(){
-      anime({
-        targets:['#introTextID','#choiceID'],
-        opacity:[0,1],
-        easing:'linear',
-        duration:1250
-      });
+      if(playOnce === false){
+        playOnce =true;
+        anime({
+          targets:['#introTextID','#choiceID'],
+          opacity:[0,1],
+          easing:'linear',
+          duration:1250
+        });
+      }
     }
-    
   });
-
-  
 }
 // Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
@@ -143,23 +140,12 @@ contructor() {
 playOrStop(input){
 
   if(input === true){
-    
-  anime({
-    targets:'.logo',
-    opacity:[0,1],
-    begin:function(){
-      anime({
-        targets:'#introTextID',
-        opacity:[1,0],
-        easing:'linear',
-        duration:500
-      });
-    }
-  });
+    anime({
+      targets:'.logo',
+      opacity:[0,1]
+    });
 
-
-
-   logoAnimation();
+    logoAnimation();
   }
 
 }

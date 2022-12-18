@@ -1,4 +1,4 @@
-import { PlayAnimation } from "./components/Animations/PlayAnimation";
+import { PlayAnimation } from "./PlayAnimation";
 import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation.js";
 
 setTimeout(function () {
@@ -94,7 +94,6 @@ setTimeout(function () {
           case 2:
             currentNavLink(2);
             animationQuickFactAbout.playOrStop(true);
-
             break;
 
           default:
@@ -171,7 +170,7 @@ setTimeout(function () {
   const secondOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.1,
+    threshold: 0,
   };
 
   const firstObserver = new IntersectionObserver(

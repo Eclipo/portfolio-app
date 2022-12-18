@@ -126,6 +126,7 @@
   margin-left: -1.25rem;
   opacity: 1;
   -webkit-backface-visibility: hidden;
+  z-index: 100 !important;
   /* box-shadow: var(--btnDesinShadow); */
 }
 

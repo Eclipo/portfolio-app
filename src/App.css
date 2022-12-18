@@ -302,6 +302,7 @@ body {
 .colorBlindTotal {
   filter: url("./assets/filters.svg#achromatopsia");
   -webkit-filter: url("./assets/filters.svg#achromatopsia");
+  transform: translate3d(0, 0, 0);
 }
 
 h1 {

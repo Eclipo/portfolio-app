@@ -19,6 +19,7 @@ export class PersonalityAnimation {
       anime.remove("#personalityTableID td");
       anime.remove(".personalityTraits");
       anime.remove(".personalityBaseTraits");
+      anime.remove(".bookEyebrow");
       let elContainer = document.getElementById("greenSquareTableID");
       elContainer.style.display = "";
       elContainer.style.opacity = 1;
@@ -26,13 +27,11 @@ export class PersonalityAnimation {
     }
 
     if (input === 1) {
-      console.log('personalityAnimation it is 1',input);
 
       playPersonalityFunc(false);
     }
 
     if (input === 2) {
-      console.log('personalityAnimation it is 2',input);
       if(this.playedPersonalityZero === true){
         playPersonalityFunc(true);
       }

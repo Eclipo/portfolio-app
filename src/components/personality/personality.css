@@ -236,6 +236,10 @@
 .personalityCloseBtn {
   float: right;
   margin: 0.5rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  padding-bottom:0rem;
+  padding-top: 0rem;
   border: 0.1rem black solid;
   background-color: var(--btnLight-navy);
   font-weight: 800;

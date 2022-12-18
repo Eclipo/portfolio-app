@@ -1,5 +1,5 @@
 import anime from "animejs";
-import { playPostFunc } from "../About/Animations/postAboutAnimation";
+import { playPostFunc, selectedIndex } from "../About/Animations/postAboutAnimation";
 export class QuickAboutAnimation {
   constructor() {
     // const windowHeight = window.innerHeight * 0.25;
@@ -85,8 +85,15 @@ export class QuickAboutAnimation {
   }
 
   async playOrStop(input) {
-    if (input === true && this.edipAndFamillyAnimation.paused) {
+    if (input === true) {
       this.edipAndFamillyAnimation.play();
+      if(selectedIndex >0){
+        playPostFunc(selectedIndex);
+      }
+
+      else{
+        this.edipAndFamillyAnimation.play();
+      }  
     }
 
     if (input === false) {

@@ -343,8 +343,7 @@ export const Navbar = () => {
                             also helps me with adjusting the colors.
                             <br></br>
                             <br></br>
-                            Unfortunately, it does not work on the iPhone's
-                            mobile browser Safari and I don't know why.
+                            Unfortunately, filter-effect is not supported on the iPhone's browser Safari.
                           </p>
                         </div>
                       </div>

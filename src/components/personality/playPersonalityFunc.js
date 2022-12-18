@@ -268,9 +268,7 @@ export async function playPersonalityFunc(inputBoolean) {
     duration: 500,
   });
 
-  if (inputBoolean === true) {
-    console.log('playPersonalityFunc is true');
-    
+  if (inputBoolean === true) {    
     patienceAnimation();
     empathyAnimation();
     playShakingHonesty.play();
@@ -283,12 +281,11 @@ export async function playPersonalityFunc(inputBoolean) {
   }
 
   if (inputBoolean === false) {
-    console.log('playPersonalityFunc is false');
-
     anime.remove("#personalityContainerID");
     anime.remove("#personalityTableID");
     anime.remove("#personalityTableID td");
     anime.remove(".personalityTraits");
     anime.remove(".personalityBaseTraits");
+    anime.remove(".bookEyebrow");
   }
 }

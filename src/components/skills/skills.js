@@ -310,9 +310,9 @@ class Skills extends Component {
                     style={{ opacity: "0" }}></div>
                 </td>
                 <td>
-                  <div
-                    className="skillPointGround"
-                    style={{ opacity: "0" }}></div>
+                <p className="skill rolesTheme" id="skillElemAndInter">
+                    Presale
+                  </p>
                 </td>
                 <td>
                   <p className="skill rolesTheme">Developer</p>
@@ -367,6 +367,27 @@ class Skills extends Component {
                 forte. Occasionally, I seek support from the senior developers
                 when the code-terrain is a bit too complex and I need a plan
                 before getting into some action.
+              </p>
+                <br></br>
+              <p>Finally, this duck also has some experience within<span className="highLight"> sales</span>.</p>
+              
+              <ul className="skillBullet">
+                <li>
+                  <p>
+                    I've been a dedicated<span className="highLight"> prospecter </span>
+                    where one of my leads resulted into a closed deal worth 1MSEK in licenses and implementation. 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    During my 5 first years at CGI I have occasionally been involved as a <span className="highLight"> presale </span> in public procurements and held demos for customers. 
+                    I've been part of some success stories.
+                  </p>
+                </li>
+              </ul>
+               
+                <p>
+                  Even though I am a software developer, I still understand the importance of sales and having healthy customer relationsships.
               </p>
             </div>
           </div>

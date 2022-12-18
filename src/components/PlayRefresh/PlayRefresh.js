@@ -6,7 +6,7 @@ import {
   PlayAnimation,
   AnimationPlayRefreshEnd,
   AnimationPlayRefreshBegin,
-} from "../Animations/PlayAnimation.js";
+} from "../../PlayAnimation.js";
 class PlayRefresh extends Component {
   refreshID = "refresh_" + this.props.id;
   playID = "play_" + this.props.id;

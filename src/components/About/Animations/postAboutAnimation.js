@@ -1,5 +1,6 @@
 import anime from "animejs";
 
+export var selectedIndex = 0;
 async function bounceFlagAnimation() {
   console.log("WE ONLY DECLARE ONCE FLAG!!!!");
   const windowHeight = window.outerHeight;
@@ -422,32 +423,26 @@ async function marioAnimation() {
 }
 
 export async function playPostFunc(index) {
-  console.log("we declare all this shit...again");
   removeAboutAnimations();
 
-  if (index !== false)
+  if (index !== false){
+  selectedIndex=index;
+
     switch (index) {
       case 0:
 
       case 1:
-        console.log("postAbout OMG !!!");
-        // basketAnimation.pause();
         bounceFlagAnimation();
         break;
       case 2:
         bounceCityHallAnimation();
         break;
       case 3:
-        console.log("postAbout OMG basket");
-        // basketAnimation.restart();
-        // basketAnimation.pause();
-        // removeAboutAnimations();
         basketAnimation();
         break;
 
       case 4:
         console.log("Weights");
-        // removeAboutAnimations();
         weightsAnimation();
         break;
       case 5:
@@ -459,15 +454,14 @@ export async function playPostFunc(index) {
       default:
         break;
     }
+  }
 
   if (index === false) {
-    console.log("TURN IT ALL OFF");
     removeAboutAnimations();
   }
 }
 
 async function removeAboutAnimations() {
-  console.log("REEEEMOVING");
   //FLAG
   anime.remove(".flag");
 

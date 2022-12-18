@@ -14,7 +14,7 @@ import { EdipBasket } from "./EdipBasket/EdipBasket";
 import { Weights } from "./Weights/Weights";
 import { LightSaber } from "./lightSaber/lightSaber";
 import { Mario } from "./Mario/mario";
-import { PlaySlide } from "../Animations/PlayAnimation";
+import { PlaySlide } from "../../PlayAnimation.js";
 class TestimonialsCarousel extends Component {
   constructor(props) {
     super(props);
