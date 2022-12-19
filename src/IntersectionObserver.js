@@ -78,9 +78,6 @@ setTimeout(function () {
           // Intro Section - Turn ON QuickFacts&About
           case 0:
             currentNavLink(0);
-            console.log("hheeeelloooo IntersectionObserver");
-            animationQuickFactAbout.playOrStop(false);
-
             break;
 
           // Quick Facts Section - TURN ON QuickFacts&About + Turn OFF Skills
@@ -111,7 +108,6 @@ setTimeout(function () {
           //Skills Section
           case 0:
             currentNavLink(3);
-            animationQuickFactAbout.playOrStop(false);
             PlayAnimation("SkillAnimation", 2);
 
             break;
@@ -119,7 +115,8 @@ setTimeout(function () {
           //Major experiences - Turn OFF QuickAbout and Personality
           case 1:
             currentNavLink(4);
-            PlayAnimation("SkillAnimation", 1);
+            animationQuickFactAbout.playOrStop(false);
+
 
             PlayAnimation("PersonalityAnimation", 1);
             break;
@@ -127,6 +124,7 @@ setTimeout(function () {
           //Resume Overview Section - Turn ON Personality + Turn OFF Skills and Portfolio
           case 2:
             console.log('we är ju fan här i RESUME OVERVIEW');
+            PlayAnimation("SkillAnimation", 1);
 
             currentNavLink(5);
             PlayAnimation("PortfolioAnimation", 1);
@@ -170,7 +168,7 @@ setTimeout(function () {
   const secondOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0,
+    threshold: 0.15,
   };
 
   const firstObserver = new IntersectionObserver(

@@ -361,34 +361,31 @@ class Skills extends Component {
                   </p>
                 </li>
               </ul>
-
-              <p>
-                I can get by in the whole stack where front-end is my stronger
-                forte. Occasionally, I seek support from the senior developers
-                when the code-terrain is a bit too complex and I need a plan
-                before getting into some action.
-              </p>
-                <br></br>
-              <p>Finally, this duck also has some experience within<span className="highLight"> sales</span>.</p>
+              
+              <p>Furthermore, this duck also has some experience within<span className="highLight"> sales</span>.</p>
               
               <ul className="skillBullet">
                 <li>
                   <p>
-                    I've been a dedicated<span className="highLight"> prospecter </span>
-                    where one of my leads resulted into a closed deal worth 1MSEK in licenses and implementation. 
+                    I've worked as a <span className="highLight"> prospecter </span>
+                    where one of my leads resulted into a sale worth 1MSEK. 
                   </p>
                 </li>
                 <li>
                   <p>
-                    During my 5 first years at CGI I have occasionally been involved as a <span className="highLight"> presale </span> in public procurements and held demos for customers. 
+                    The 5 first years at CGI I have occasionally supported as a <span className="highLight"> presale </span> in public procurements and held demos. 
                     I've been part of some success stories.
                   </p>
                 </li>
               </ul>
-               
-                <p>
-                  Even though I am a software developer, I still understand the importance of sales and having healthy customer relationsships.
-              </p>
+
+              <p>
+                To summarize, I am a full-stack developer where front-end is my stronger
+                forte. Occasionally, I seek support from the senior developers
+                when the code-terrain is a bit too complex before getting into some action.
+                <br></br><br></br>
+                Even though I am a software developer, I still understand the importance of sales and having good relationships with the customers.
+              </p> 
             </div>
           </div>
         </div>

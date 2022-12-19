@@ -135,7 +135,7 @@ class ResumeOverview extends Component {
                     <p className="m-1 mx-auto">
                       Present<br></br>2019-12
                     </p>
-                    <p className="m-1 mx-auto">CGI Sverige AB</p>
+                    <p className="m-1 mx-auto" style={{paddingRight:"0.35rem"}}>CGI Sverige AB</p>
                   </div>
                   <div className="width1 m-auto">
                     <div className=" header2VerticalUnderLine"></div>
@@ -163,7 +163,7 @@ class ResumeOverview extends Component {
                     <h4 className="expHeader-reverseColor">Bad luck</h4>
                     <p className="expHeader-reverseColor m-auto w-75">
                       Due to prior financial complications, Nexer AB left me
-                      speechless and I returned back to base.
+                      speechless and I returned back to base. I guess that sometimes <b>bad luck</b> happens in life.
                     </p>
                   </div>
                 </div>
@@ -200,7 +200,7 @@ class ResumeOverview extends Component {
                     <p className="m-1 mx-auto">
                       2019-08<br></br>2015-09
                     </p>
-                    <p className="m-1 mx-auto">CGI Sverige AB</p>
+                    <p className="m-1 mx-auto" style={{paddingRight:"0.35rem"}}>CGI Sverige AB</p>
                   </div>
 
                   <div className="width1 m-auto">
@@ -231,12 +231,15 @@ class ResumeOverview extends Component {
                     </h3>
                     <h3 className=" expHeader-reverseColor">Unemployment</h3>
                     <h4 className="expHeader-reverseColor">
-                      The lifechanging decision
+                      The vow
                     </h4>
                     <p className="expHeader-reverseColor mx-auto w-75">
-                      I made a vow to never be unemployed again. For three
+                      The company had to increase its margin and unfortunately I was no longer needed in any position.
+                      Six months later the company was bought up by TietoEvry AB.
+                      <br></br><br></br>
+                       I made a <b>vow</b> to never be unemployed again. For three
                       years, I studied 50% at Midsweden University while working
-                      100% at CGI Sverige AB.
+                      100% at CGI Sverige AB where I acted as a business consultant and ironically it was the same system which Software Innovation provided.
                     </p>
                   </div>
                 </div>
@@ -246,7 +249,7 @@ class ResumeOverview extends Component {
                     <p className="m-1 mx-auto">
                       2015-01<br></br>2013-08
                     </p>
-                    <p className="m-1 mx-auto">Software Innovation AB</p>
+                    <p className="m-1 mx-auto" style={{paddingRight:"0.35rem"}}>Software Innovation AB</p>
                   </div>
 
                   <div className="width1 m-auto">
@@ -302,15 +305,14 @@ class ResumeOverview extends Component {
                     </h3>
                     <h3 className="expHeader-reverseColor">Unemployment</h3>
                     <h4 className="expHeader-reverseColor">
-                      Two steps forward<br></br>Two steps back
+                      Welcome back
                     </h4>
                     <p className="expHeader-reverseColor mx-auto w-75">
                       I was sent away for new adventures, despite my best
-                      efforts.<br></br>
-                      Perhaps it was meant to be because a couple years later
+                      efforts. Perhaps it was meant to be because a couple years later
                       they had to shut down the business.<br></br>
                       <br></br>
-                      Long story short, I was welcomed back to TP Sweden
+                      Long story short, I was <b>welcome back</b> at TP Sweden
                       (Teleperformance) and for that I am very grateful.
                     </p>
                   </div>

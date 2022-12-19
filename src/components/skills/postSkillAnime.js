@@ -46,6 +46,9 @@ export async function playPostFunc(inputBoolean) {
   });
 
   if (inputBoolean === true) {
+    anime.remove(".duckMouthUpper");
+    anime.remove(".duckMouthUnder");
+    anime.remove(".duckEyebrow");
     duckEyeBrowAnim.play();
     duckMouthUnderAnim.play();
     duckMouthUppderAnim.play();

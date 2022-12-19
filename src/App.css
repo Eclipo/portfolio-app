@@ -341,7 +341,7 @@ h4 {
 p,
 ul > li {
   font-style: var(--font-mono) !important;
-  font-weight: 625 !important;
+  font-weight: 550 !important;
 
   font-size: 0.8375rem;
   vertical-align: middle !important;
@@ -599,6 +599,7 @@ ul > li {
   width: fit-content;
   min-width: 95%;
   max-width: 35rem;
+  padding-right:0.5rem
 }
 
 .accordion-header {

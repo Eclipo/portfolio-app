@@ -94,7 +94,7 @@ export const animate = (inputID) => {
                         descOneEl.innerHTML =
                           'The customer is within the fintech industry and we are building a new application where my role is<span class="highLight"> web developer</span>.';
                         descTwoEl.innerHTML =
-                          'From the specifications and requirements I have been able to code and design mostly independtly in the front-end where I have used <span class="highLight">Angular,TypeScript, HTML and CSS </span>.';
+                          'From the specifications and requirements I have been able to code and design the solution in the front-end where I have used <span class="highLight">Angular,TypeScript, HTML and CSS </span>.';
                         descThreeEl.innerHTML =
                           'I have improved the<span class="highLight"> UX </span>and in<span class="highLight"> Angular </span>I have worked with forms, validators, services, and formguards. Occasionally I code in<span class="highLight"> C# </span>to ensure the front-/and the back-end work well with each other.';
                         descFourEl.innerText = "";

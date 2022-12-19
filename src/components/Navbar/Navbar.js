@@ -341,9 +341,11 @@ export const Navbar = () => {
                             These modes simulate how people with color blindness
                             see the web. Besides getting useful insights, it
                             also helps me with adjusting the colors.
+                          </p>
+                          <p>
                             <br></br>
-                            <br></br>
-                            Unfortunately, filter-effect is not supported on the iPhone's browser Safari.
+                            Worth to mention, the filter-effects might slow down the animations.
+                            Furthermore, I can't get it to work with the mobilebrowser Safari on iPhone. Sorry.
                           </p>
                         </div>
                       </div>
