@@ -20,8 +20,6 @@
 
 #bookID {
   transform: scale(calc(2 / var(--size-bookDivisor)));
-
-  /* margin-top: -5rem; */
 }
 
 .wrapper {
@@ -101,7 +99,6 @@
   top: 3.7rem;
   margin-bottom: 5%;
   z-index: 1 !important;
-  /* display: none; */
 }
 
 .bookEye {
@@ -113,13 +110,6 @@
   top: -1.125rem;
   left: 50%;
   margin-left: -0.625rem;
-}
-#bookEye_one {
-  /* margin-left: -1.5rem; */
-}
-
-#bookEye_two {
-  /* margin-left: 2rem; */
 }
 
 .bookEye-shadow {
@@ -162,7 +152,6 @@
   position: absolute;
   top: 5.5rem;
   right: 65%;
-  /* display: none; */
 }
 
 .bookMouthUnder {

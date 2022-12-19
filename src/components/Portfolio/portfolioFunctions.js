@@ -43,20 +43,11 @@ export async function playStory(story) {
 export const leftNavigate = (inputID) => {
   disableScroll.on();
   let checkNext = { ...(chapterIndex - 1) };
-  // if (chapterIndex < 0 || chapterIndex === 0 || checkNext === 0) {
-  //   document.getElementById("leftBtnID").disabled = true;
-  //   anime({
-  //     targets: ".leftBtn",
-  //     opacity: 0,
-  //   });
-  //   chapterIndex = 0;
-  // }
 
   if (chapterIndex > 0 && chapterIndex <= 5) {
     document.getElementById("leftBtnID").disabled = false;
     document.getElementById("rightBtnID").disabled = false;
 
-    // leftBtn.style.opacity="1";
     anime({
       targets: [".leftBtn", ".rightBtn"],
       opacity: 1,
@@ -66,8 +57,6 @@ export const leftNavigate = (inputID) => {
     chapterIndex = chapterIndex - 1;
     let nextStory = targetStory + chapterIndex;
 
-    // alert('LEFT current:'+currentStory);
-    // alert('LEFT next:'+nextStory);
     anime({
       targets: "#" + currentStory,
       opacity: 0,
@@ -116,7 +105,6 @@ export const rightNavigate = (inputID) => {
     document.getElementById("leftBtnID").disabled = false;
     document.getElementById("rightBtnID").disabled = false;
 
-    // leftBtn.style.opacity="1";
     anime({
       targets: [".leftBtn", ".rightBtn"],
       opacity: 1,
@@ -160,16 +148,6 @@ export const rightNavigate = (inputID) => {
       return;
     }
 
-    // if (chapterIndex === 5) {
-    //   document.getElementById("rightBtnID").disabled = true;
-    //   anime({
-    //     targets: ".rightBtn",
-    //     opacity: 0.5,
-    //   });
-    //   chapterIndex = 5;
-    //   // disableScroll.off();
-    //   return;
-    // }
   }
 
   if (chapterIndex > 5) {

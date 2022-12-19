@@ -155,8 +155,6 @@
   padding: 1rem;
   color: var(--primary-purple);
   border: 0.1rem black solid;
-  /* border-color: var(--primary-light-green); */
-  /* border-width: 0.1rem; */
   border-style: solid;
   opacity: 1;
   background-color: var(--light-navy);
@@ -167,28 +165,13 @@
 }
 
 .techCategory:hover {
-  /* border-width: 0.3rem; */
   box-shadow: var(--btnSkillHoverShadow);
-
-  /* background-color: var(--darkest-navy); */
 }
 
 .techCategory:active {
-  /* border-width: 0.3rem; */
   box-shadow: var(--btnSkillActiveShadow) !important;
-  /* background-color: var(--darkest-navy); */
 }
 .scrollLine {
-  /* background-color: var(--primary-light-green);
-  border-radius: 16px;
-  border-color: var(--primary-purple);
-
-  border-width: 0.13rem;
-  border-style: solid;
-  box-shadow: 0 0 1.95rem var(--primary-light-green);
-  height: 0.3rem;
-  width: 12rem;
-  opacity: 0; */
   margin: auto;
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
@@ -197,6 +180,7 @@
 #expCategoryMenu {
   overflow: auto;
 }
+
 /* Handle */
 ::-webkit-scrollbar {
   width: 1rem;
@@ -261,14 +245,9 @@
   max-width: 8.75rem;
   width: max-content;
   float: left;
-
-  /* margin: auto; */
 }
 
 .minRight {
-  /* margin-right: 0 !important;
-  padding-right: 0 !important;
-  width: min-content !important; */
   margin: auto !important;
   display: inline-block !important;
 }

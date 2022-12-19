@@ -1,6 +1,5 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import './components/QuickFacts/EdipAvatar/edipguy.css';
 import { Navbar } from "./components/Navbar/Navbar";
 import QuickFacts from "./components/QuickFacts/QuickFacts";
 import Intro from "./components/Intro/Intro";

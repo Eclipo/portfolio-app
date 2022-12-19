@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-
 import "../resumeOverview/resumeOverview.css";
-// import { LightSaber } from "./lightSaber/lightSaber";
 import "../../IntersectionObserver.js";
-// import PlayRefresh from "../PlayRefresh/PlayRefresh.js";
 import { animateResume } from "./resumeOverviewFunctions";
 
 class ResumeOverview extends Component {

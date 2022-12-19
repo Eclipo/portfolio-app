@@ -123,7 +123,6 @@ setTimeout(function () {
 
           //Resume Overview Section - Turn ON Personality + Turn OFF Skills and Portfolio
           case 2:
-            console.log('we är ju fan här i RESUME OVERVIEW');
             PlayAnimation("SkillAnimation", 1);
 
             currentNavLink(5);
@@ -134,7 +133,6 @@ setTimeout(function () {
           //Personality
           case 3:
             currentNavLink(6);
-            console.log('we är ju fan här i personality och skall trigga 2an');
             PlayAnimation("PersonalityAnimation", 2);
 
             break;

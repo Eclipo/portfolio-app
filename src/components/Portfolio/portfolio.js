@@ -58,7 +58,6 @@ class Portfolio extends Component {
 
         <div className="flexCenter" id="portfolioContainerID">
           <div className="flexCenter portfolioTextContainer">
-            {/* <h2>This is it</h2> */}
             <p className="duckText mx-auto">
               This is my résumé website to let friends, colleagues, and others
               alike know more about me.<br></br>
@@ -77,8 +76,6 @@ class Portfolio extends Component {
               <br></br>
               How it all started once upon a time.
             </p>
-
-            {/* <h3>The story</h3> */}
 
             <div className="container flexCenter portfolioNavBtn">
               <div className="row">
@@ -405,7 +402,6 @@ class Portfolio extends Component {
               onTouchEnd={this.onTouchEnd}
               className="container animContainer">
               <h4>A new journey begins</h4>
-              {/* A sunrising and avatar looks to the horizon wiht a talkbubble */}
 
               <div className="flexCenter">
                 <div className="journeyScene">
@@ -437,8 +433,6 @@ class Portfolio extends Component {
                 AnimeJS for the animations.
               </p>
             </div>
-
-            {/* NOOB WALL....*/}
 
             <div
               id="story_4"
@@ -500,7 +494,6 @@ class Portfolio extends Component {
               onTouchEnd={this.onTouchEnd}
               className="container animContainer">
               <h4>Becomming Lagom</h4>
-              {/* Zen-mode */}
               <div className="row flexCenter m-auto">
                 <div className="zenBigCircle" id="helveteCIRCLE">
                   <div className="zenSmallCircle m-auto mt-3"></div>

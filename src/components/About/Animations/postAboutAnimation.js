@@ -2,7 +2,6 @@ import anime from "animejs";
 
 export var selectedIndex = 0;
 async function bounceFlagAnimation() {
-  console.log("WE ONLY DECLARE ONCE FLAG!!!!");
   const windowHeight = window.outerHeight;
   const windowWidht = window.outerWidth;
 
@@ -49,7 +48,6 @@ async function bounceCityHallAnimation() {
 }
 
 async function basketAnimation() {
-  console.log("WE ONLY DECLARE ONCE BAAASKET!!!!");
   const basketAnimation = anime.timeline({
     loop: true,
     autoplay: false,
@@ -376,7 +374,6 @@ async function marioAnimation() {
     translateY: [0, "6rem"],
     translateX: [0, "-8rem"],
     rotate: [0, "-45deg"],
-    // scale:0.8
   });
 
   marioArmHandRightAnimation.add({
@@ -384,7 +381,6 @@ async function marioAnimation() {
     translateY: [0, "-6rem"],
     translateX: [0, "0.25rem"],
     rotate: [0, "-180deg"],
-    // scale:0.8
   });
 
   marioLegLeftAnimation.add({
@@ -442,7 +438,6 @@ export async function playPostFunc(index) {
         break;
 
       case 4:
-        console.log("Weights");
         weightsAnimation();
         break;
       case 5:

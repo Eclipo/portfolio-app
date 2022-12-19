@@ -36,13 +36,8 @@
   border: 0.3rem var(--light-slate) solid;
   display: inline-block;
   width: fit-content;
-
-  /* padding-left: 0.4rem;
-  padding-right: 0.1rem; */
-  /* padding-bottom: 0.1rem;
-  padding-top: 0; */
-  /* padding-bottom: 0.25rem; */
 }
+
 .portfolioPlayBtn > .btnContainer {
   transform: scale(0.75);
   margin: auto;
@@ -515,7 +510,6 @@
   min-height: 30rem;
   max-height: 40rem;
   height: fit-content;
-  /* border: 0.4rem var(--primary-pink) solid; */
   border-radius: 18px;
   background-color: var(--darkest-navy);
   display: block;

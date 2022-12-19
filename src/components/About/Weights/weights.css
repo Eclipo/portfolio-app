@@ -378,7 +378,6 @@
 .basketRim {
   transform: scale(calc(8 / var(--size-divisorWeights)));
   margin-left: 30rem;
-  /* margin-bottom: -10rem; */
   margin-top: -25rem;
   z-index: -2 !important;
   position: relative;

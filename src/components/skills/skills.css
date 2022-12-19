@@ -19,7 +19,6 @@
   border: none;
   background-color: transparent;
   margin: auto;
-  /* padding: 0.5rem; */
   scale: 1.5;
   margin-bottom: 1rem;
 }
@@ -100,17 +99,11 @@ button .skillCategory {
 .skillCategory:hover {
   box-shadow: var(--btnSkillHoverShadow);
   transition: var(--transition);
-
-  /* border: none; */
 }
 
 .skillCategory:active {
   box-shadow: var(--btnSkillActiveShadow);
   transition: var(--transition);
-
-  /* opacity: 0.75;
-  border: 0.3rem solid var(--lightest-slate); */
-  /* box-shadow: 0 0.2rem var(--lightest-navy); */
 }
 
 .selectedBtn {
@@ -182,13 +175,10 @@ button .skillCategory {
 
 .skillPointGround {
   padding: 0% !important;
-  /* margin: 3% !important; */
   color: var(--lightest-slate);
   border-radius: 5px;
-  /* text-transform: uppercase; */
   width: fit-content;
   margin: auto !important;
-  /* color: var(--tint-navy) !important; */
 }
 
 tr > td > .sectionLine {

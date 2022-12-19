@@ -222,7 +222,6 @@ export async function eyeBrowAnimation() {
 }
 
 export async function heroAnimation() {
-  console.log("heroAnimation");
   const firstLightYearAnim = anime.timeline({
     loop: true,
     autoplay: false,

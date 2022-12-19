@@ -10,7 +10,6 @@
 
 #aboutMe{
   min-height:97.5vh !important;
-  /* margin-bottom:.5rem; */
 }
 
 .testimonials {
@@ -34,7 +33,6 @@
 .myCarousel {
   color: var(--primary-white);
   background: transparent;
-  /* margin-top: -6%; */
   width: 54%;
   margin-left: auto;
   margin-right: auto;

@@ -53,7 +53,6 @@
 .expOverviewPeriod {
   background-color: var(--darkest-navy);
   color: var(--primary-greyBlue);
-  /* border: 0.3rem var(--dark-slate) solid; */
   border-radius: 18px;
   margin: auto;
   margin-top: 0.5rem;
@@ -65,7 +64,6 @@
 .expOverviewPeriod-dotted {
   margin-bottom: 0.75rem;
   margin-top: 0.75rem;
-  /* border-style: dashed; */
 }
 
 .expOverviewPeriod-reverseColor {
@@ -86,7 +84,6 @@
   text-align: left;
   margin: auto;
   width: 50%;
-  /* margin-bottom: 1rem; */
 }
 
 .resumeSection {
@@ -117,7 +114,6 @@
 
 .resumeNav {
   background-color: var(--light-navy);
-  /* border-color: 0.1rem var(--darkest-slate) solid; */
   border-radius: 18px;
   padding: 1rem;
   color: var(--primary-greyBlue);

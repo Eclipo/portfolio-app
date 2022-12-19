@@ -396,10 +396,6 @@ ul > li {
     font-size: 0.9rem;
   }
 
-  /* .skillPointGround{
-    font-size: 1.15rem;
-  } */
-
   .duckText,
   .welcomeText {
     width: 75%;
@@ -612,7 +608,6 @@ ul > li {
 
   color: var(--lightest-slate) !important;
   justify-content: center !important;
-  /* box-shadow: inset 0 -1px 0 rgb(0 0 0 / 93%) !important; */
   transition: var(--transition) !important;
   padding: 0.45rem !important;
   margin-right: 0.25rem !important;
@@ -698,7 +693,6 @@ ul > li {
 .navSubIcon:active {
   box-shadow: var(--btnDesinActiveShadow);
   background-color: rgb(211, 211, 211) !important;
-  /* border: 0.1rem black solid !important; */
 }
 
 /* default state */
@@ -730,13 +724,6 @@ ul > li {
 }
 
 #navbarTogglerID {
-  /* margin-top: 0.5rem;
-  position: relative;
-  position: sticky;
-  position: -webkit-sticky; */
-  /* transition: var(--transition);
-  background-color: var(--btnLight-navy) !important;
-  border: 0.1rem black solid !important; */
   margin-top: 0.5rem;
   width: 3rem;
     background-color: var(--btnLight-navy) !important;

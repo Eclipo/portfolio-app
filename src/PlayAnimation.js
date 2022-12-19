@@ -13,7 +13,6 @@ const PortfolioAnime = new PortfolioAnimation();
 const QuickAboutAnime = new QuickAboutAnimation();
 
 export async function PlaySlide(selectedIndex) {
-  console.log("here we are PlayAnimation", selectedIndex);
   QuickAboutAnime.playOrStop(selectedIndex);
 }
 
@@ -75,12 +74,6 @@ export function AnimationPlayRefreshEnd(inputPlayID, inputRefreshID) {
 }
 
 export function PlayAnimation(inputID, inputPlayBoolean) {
-  // const objArray = new Array();
-  // objArray.push(IntroAnime);
-  // objArray.push(SkillsAnime);
-  // objArray.push(PersonalityAnime);
-  // objArray.push(PortfolioAnime);
-
   var idEl = "#" + inputID;
   var currentObject = inputID.substring(inputID.indexOf("_") + 1);
   var delayTime = 0;
@@ -89,36 +82,21 @@ export function PlayAnimation(inputID, inputPlayBoolean) {
     delayTime = 4500;
     IntroAnime.playOrStop(inputPlayBoolean);
     return delayTime;
-    console.log("hheeeelloooo Intro PlayAnimation");
   }
 
   if (currentObject === "SkillAnimation") {
-    //13000
     SkillsAnime.playOrStop(inputPlayBoolean);
-    // delayTime = 13000;
-    // return 0;
   }
 
   if (currentObject === "PersonalityAnimation") {
-    //13000
     PersonalityAnime.playOrStop(inputPlayBoolean);
     delayTime = 13000;
     return delayTime;
   }
 
   if (currentObject === "PortfolioAnimation") {
-    //13000
     PortfolioAnime.playOrStop(inputPlayBoolean);
-    // delayTime = 13000;
-    // return delayTime;
   }
-
-  // objArray.forEach((element) => {
-  //   if (currentObject === element.constructor.prototype.constructor.name) {
-  //     element.playOrStop(inputPlayBoolean);
-  //     console.log("BOOM IS GOING TO PLAY - PlayAnimation");
-  //   }
-  // });
 
   return delayTime;
 }

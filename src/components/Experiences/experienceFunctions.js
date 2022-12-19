@@ -58,17 +58,13 @@ export const animate = (inputID) => {
 
       anime({
         targets: ".techCategory",
-        //backgroundColor: "#0a192f",
         color: "#d080ff",
-        // borderColor: "#64ffda",
         easing: "linear",
         duration: 50,
         complete: function () {
           anime({
             targets: tab,
             color: "#64ffda",
-            //borderColor: "#d080ff",
-
             easing: "linear",
             duration: 50,
             complete: function () {

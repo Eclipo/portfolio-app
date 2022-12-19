@@ -1,7 +1,5 @@
 import anime from "animejs";
 
-// const sections= document.querySelectorAll('.resumeSection');
-
 export const animateResume = (inputID) => {
     const langSection = document.getElementById('resumeLangSectionID');
     const expSection = document.getElementById('resumeExpSectionID');

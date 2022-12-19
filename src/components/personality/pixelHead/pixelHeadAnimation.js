@@ -49,7 +49,6 @@ export function pixelHeadAnimation () {
     }).add({
         targets:".greenSquare",
         delay: anime.stagger(50,{grid:this.grid,from: "first"}),
-        // scale:[1,0.5],
         translateY: ()=>  anime.random(-ratio,ratio),
         opacity:[1,0],
 

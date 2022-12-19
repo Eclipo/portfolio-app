@@ -207,7 +207,6 @@
 }
 
 .personalityCard.selectedPersonalityCard {
-  /* border: 0.25rem var(--primary-darker-green) solid !important; */
   margin-top: 3rem;
   margin-bottom: 3rem;
   background-color: var(--light-navy) !important;
