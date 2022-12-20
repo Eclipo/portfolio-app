@@ -618,7 +618,7 @@ ul > li {
 .accordion-button:hover {
   box-shadow: var(--btnHoverShadow) !important;
 }
-.accordion-button:focus {
+.accordion-button:active {
   box-shadow: var(--btnActiveShadow) !important;
 }
 

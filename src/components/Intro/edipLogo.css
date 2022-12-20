@@ -60,6 +60,12 @@
     margin-top: -5rem;
   }
   .welcomeText {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 85rem) {
+  .welcomeText {
     max-width: 30%;
   }
 }

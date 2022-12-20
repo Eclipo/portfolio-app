@@ -368,13 +368,13 @@ class Skills extends Component {
                 <li>
                   <p>
                     I've worked as a <span className="highLight"> prospecter </span>
-                    where one of my leads resulted into a sale worth 1MSEK. 
+                    where one of my leads<br></br>resulted into a sale worth 1MSEK. 
                   </p>
                 </li>
                 <li>
                   <p>
-                    The 5 first years at CGI I have occasionally supported as a <span className="highLight"> presale </span> in public procurements and held demos. 
-                    I've been part of some success stories.
+                    The 5 first years at CGI I have occasionally supported as<br></br>
+                    a <span className="highLight"> presale </span> in public procurements and held demos.
                   </p>
                 </li>
               </ul>

@@ -228,7 +228,7 @@ class ResumeOverview extends Component {
                     </h3>
                     <h3 className=" expHeader-reverseColor">Unemployment</h3>
                     <h4 className="expHeader-reverseColor">
-                      The vow
+                      The vow & The irony
                     </h4>
                     <p className="expHeader-reverseColor mx-auto w-75">
                       The company had to increase its margin and unfortunately I was no longer needed in any position.
@@ -236,7 +236,7 @@ class ResumeOverview extends Component {
                       <br></br><br></br>
                        I made a <b>vow</b> to never be unemployed again. For three
                       years, I studied 50% at Midsweden University while working
-                      100% at CGI Sverige AB where I acted as a business consultant and ironically it was the same system which Software Innovation provided.
+                      100% at CGI Sverige AB where I acted as a business consultant. The <b>irony</b> of it all, was I consulted CGI's customers regarding Software Innovation's products.
                     </p>
                   </div>
                 </div>

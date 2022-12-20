@@ -41,10 +41,12 @@ export async function playStory(story) {
 }
 
 export const leftNavigate = (inputID) => {
-  disableScroll.on();
-  let checkNext = { ...(chapterIndex - 1) };
+
+  document.getElementById("leftBtnID").disabled = true;
+  document.getElementById("rightBtnID").disabled = true;
 
   if (chapterIndex > 0 && chapterIndex <= 5) {
+    disableScroll.on();
     document.getElementById("leftBtnID").disabled = false;
     document.getElementById("rightBtnID").disabled = false;
 
@@ -74,7 +76,6 @@ export const leftNavigate = (inputID) => {
           duration: 500,
           complete: function () {
             playStory(nextStory);
-            disableScroll.off();
           },
         });
       },
@@ -89,11 +90,11 @@ export const leftNavigate = (inputID) => {
       });
       chapterIndex = 0;
     }
+    disableScroll.off();
   }
 };
 
 export const rightNavigate = (inputID) => {
-  disableScroll.on();
   document.getElementById("leftBtnID").disabled = true;
   document.getElementById("rightBtnID").disabled = true;
 
@@ -102,6 +103,8 @@ export const rightNavigate = (inputID) => {
   let nextStory = targetStory + chapterIndex;
 
   if (chapterIndex > 0 && chapterIndex <= 5) {
+    disableScroll.on();
+
     document.getElementById("leftBtnID").disabled = false;
     document.getElementById("rightBtnID").disabled = false;
 
@@ -127,10 +130,7 @@ export const rightNavigate = (inputID) => {
             document.getElementById(nextStory).style.display = "block";
             document.getElementById(currentStory).style.display = "none";
             playStory(nextStory);
-          },
-          complete: function () {
-            disableScroll.off();
-          },
+          }
         });
       },
     });
@@ -144,10 +144,8 @@ export const rightNavigate = (inputID) => {
         opacity: 0,
       });
       chapterIndex = 5;
-      disableScroll.off();
-      return;
     }
-
+    disableScroll.off();
   }
 
   if (chapterIndex > 5) {
