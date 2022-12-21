@@ -286,7 +286,7 @@ class Portfolio extends Component {
 
                 <div className="d-inline-flex">
                   <p className="portfolioParagraph">
-                    I had to do help my mom before it would be too
+                    I had to help my mom before it would be too
                     late. I got her a pulseoximeter to check the saturation level wouldn't be too low.
                     <br></br>
                     <br></br>
@@ -500,11 +500,10 @@ class Portfolio extends Component {
                 <p className="portfolioParagraph">
                   After several setbacks, I decided to settle with{" "}
                   <span className="highLight">Lagom</span>, meaning good enough
-                  in Swedish. Then everything started fall into
-                  place.
+                  in Swedish. Then everything started to slowly fall into place.
                   <br></br>
                   <br></br>
-                  At last I have found my way of being Lagom.
+                  Finally I have found my way of being Lagom.
                 </p>
               </div>
             </div>

@@ -367,21 +367,13 @@ class Skills extends Component {
               <ul className="skillBullet">
                 <li>
                   <p>
-                    I've worked as a <span className="highLight"> prospecter </span>
-                    where one of my leads<br></br>resulted into a sale worth 1MSEK. 
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    The 5 first years at CGI I have occasionally supported as<br></br>
-                    a <span className="highLight"> presale </span> in public procurements and held demos.
-                  </p>
+                    I've worked as a<span className="highLight"> prospecter </span>and at CGI I have occasionally supported as a<span className="highLight"> presale</span>.</p>
                 </li>
               </ul>
 
               <p>
                 To summarize, I am a full-stack developer where front-end is my stronger
-                forte. Occasionally, I seek support from the senior developers
+                forte. Occasionally, I seek support from senior developers
                 when the code-terrain is a bit too complex before getting into some action.
                 <br></br><br></br>
                 Even though I am a software developer, I still understand the importance of sales and having good relationships with the customers.

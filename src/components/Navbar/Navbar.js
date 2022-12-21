@@ -257,7 +257,7 @@ export const Navbar = () => {
                       <hr className="navDivider"></hr>
                       <div className="navBtnMenu container-sm m-0">
                         <div className="row mx-auto">
-                          <div className="col">
+                          <div className="col m-1">
                             <button
                               className="navSubIcon mx-auto"
                               style={{
@@ -283,7 +283,7 @@ export const Navbar = () => {
                             </button>
                           </div>
 
-                          <div className="col">
+                          <div className="col m-1">
                             <button
                               className="navSubIcon mx-auto"
                               style={{
@@ -309,7 +309,7 @@ export const Navbar = () => {
                             </button>
                           </div>
 
-                          <div className="col">
+                          <div className="col m-1">
                             <button
                               className="navSubIcon mx-auto"
                               style={{
