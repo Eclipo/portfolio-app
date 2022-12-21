@@ -343,7 +343,7 @@ ul > li {
   font-style: var(--font-mono) !important;
   font-weight: 550 !important;
 
-  font-size: 0.8375rem;
+  font-size: 0.85rem;
   vertical-align: middle !important;
   word-wrap: break-word;
   word-spacing: normal;
@@ -369,7 +369,7 @@ ul > li {
   }
 
   .expOverviewPeriod p {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 740;
   }
 

@@ -193,13 +193,21 @@ export async function edipEyeBlinkAnimation() {
   const blinkEyeEdip = anime.timeline({
     loop: true,
     autoplay: false,
-    duration: 750,
-    delay: 500,
+
+  });
+
+
+blinkEyeEdip.add({
+    targets: "#edipEyesID",
+    opacity: 1,
+    duration:100
   });
 
   blinkEyeEdip.add({
     targets: "#edipEyesID",
     opacity: [1, 0, 1],
+    duration: 750,
+    delay: 1750,
   });
 
   blinkEyeEdip.play();
@@ -214,7 +222,7 @@ export async function eyeBrowAnimation() {
 
   eyeBrowAnim.add({
     targets: ".eyeBrows",
-    translateY: [0, "-0.25rem", "0.25rem"],
+    translateY: [0, "-0.25rem", "0"],
     delay: 1250,
     duration: 500,
   });
@@ -318,6 +326,107 @@ export async function rainAnimation() {
     },
   });
 
+  talkBubbleRegret.add({
+    targets: "#avatarRegretID",
+    translateY: [
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+    ],
+    change: function () {
+      paragraphRegret.innerText = "No responsive...";
+    },
+  });
+
+  talkBubbleRegret.add({
+    targets: "#avatarRegretID",
+    translateY: [
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+    ],
+    change: function () {
+      paragraphRegret.innerText = "MUSIC!? SERIOSLY!?";
+    },
+  });
+
+  talkBubbleRegret.add({
+    targets: "#avatarRegretID",
+    translateY: [
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+    ],
+    change: function () {
+      paragraphRegret.innerText = "Oh god...";
+    },
+  });
+
+  talkBubbleRegret.add({
+    targets: "#avatarRegretID",
+    translateY: [
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+    ],
+    change: function () {
+      paragraphRegret.innerText = "What have I done!?";
+    },
+  });
+
+  talkBubbleRegret.add({
+    targets: "#avatarRegretID",
+    translateY: [
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+      "-0.1rem",
+      0,
+    ],
+    change: function () {
+      paragraphRegret.innerText = "Design like in the 90s!?";
+    },
+  });
+
+ 
   talkBubbleRegret.add({
     targets: "#avatarRegretID",
     translateY: [

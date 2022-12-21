@@ -236,7 +236,8 @@ class ResumeOverview extends Component {
                       <br></br><br></br>
                        I made a <b>vow</b> to never be unemployed again. For three
                       years, I studied 50% at Midsweden University while working
-                      100% at CGI Sverige AB where I acted as a business consultant. The <b>irony</b> of it all, was I consulted CGI's customers regarding Software Innovation's products.
+                      100% at CGI Sverige AB. 
+                      The <b>irony</b> of it all, I consulted CGI's customers who used Software Innovation's products.
                     </p>
                   </div>
                 </div>

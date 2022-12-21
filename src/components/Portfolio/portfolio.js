@@ -102,6 +102,7 @@ class Portfolio extends Component {
                 </div>
               </div>
             </div>
+            <div className="d-flex" >
             <div
               id="story_0"
               className="container animContainer"
@@ -285,14 +286,12 @@ class Portfolio extends Component {
 
                 <div className="d-inline-flex">
                   <p className="portfolioParagraph">
-                    I had to do something for my mom before it would be too
-                    late, where I got her a pulseoximeter to give her any
-                    fighting chance possible.
+                    I had to do help my mom before it would be too
+                    late. I got her a pulseoximeter to check the saturation level wouldn't be too low.
                     <br></br>
                     <br></br>
-                    My parents survived COVID-19 and I decided to build my very
-                    first website, Coronahero. The users could give my avatar
-                    various symptoms and learn more about COVID-19.
+                    My parents survived COVID-19 and I built my very
+                    first website, Coronahero. 
                   </p>
                 </div>
               </div>
@@ -381,17 +380,17 @@ class Portfolio extends Component {
                     </div>
                   </div>
 
-                  <div className="avatarNose" id="avatarEdipID"></div>
+                  <div className="regretNose"></div>
                   <div className="avatarMouth" id="avatarEdipMouthID"></div>
                 </div>
               </div>
 
               <div className="row flexCenter m-auto">
                 <p className="portfolioParagraph">
-                  The website Coronahero was a disaster. It looked horrible and
-                  wasn't mobile responsive at all. <br></br>
-                  <br></br>I made many mistakes and I realised I had a long way
-                  to go.
+                  The users could give my avatar
+                    various symptoms and learn more about COVID-19.<br></br><br></br> 
+                    But the website was a disaster. 
+                  I made many mistakes and I realised I had a long way to go.
                 </p>
               </div>
             </div>
@@ -422,15 +421,9 @@ class Portfolio extends Component {
               </div>
 
               <p className="portfolioParagraph">
-                Despite my failures, I still wanted to achieve one of my dreams:
-                making a résumé website that would be fun to experience and
-                mobile responsive.
-                <br></br>
-                <br></br>
-                However, I was still a novice and I was left with no choice but
-                to buy an Udemy course about building a portfolio website
-                combining React and Bootstrap. On top of that, I would use
-                AnimeJS for the animations.
+                I wouldn't give up my dream to make a résumé website.
+                However, I was left with no choice but
+                to buy an Udemy course about building a portfolio website. 
               </p>
             </div>
 
@@ -457,7 +450,7 @@ class Portfolio extends Component {
                       </div>
                     </div>
 
-                    <div className="avatarNose" id="avatarEdipID"></div>
+                    <div className="regretNose"></div>
                     <div className="avatarMouth" id="avatarEdipMouthID"></div>
                   </div>
 
@@ -476,13 +469,9 @@ class Portfolio extends Component {
                 </div>
               </div>
 
-              <p className="portfolioParagraph">
-                In the process of making this website I struggled between my
-                grand vision and the acquired skills I had at the time.
-                <br></br>
-                <br></br>
-                Due to my limited patience it consequently resulted into
-                misplaced time and effort. I simply did the wrong things in a
+              <p className="portfolioParagraph mt-2">
+                I struggled between my grand vision and the skills I had at the time.
+                My limited patience made me simply do the wrong things in a
                 rush.
               </p>
             </div>
@@ -495,7 +484,7 @@ class Portfolio extends Component {
               className="container animContainer">
               <h4>Becomming Lagom</h4>
               <div className="row flexCenter m-auto">
-                <div className="zenBigCircle" id="helveteCIRCLE">
+                <div className="zenBigCircle">
                   <div className="zenSmallCircle m-auto mt-3"></div>
                 </div>
                 <div className="zenAvatarCircle">
@@ -511,19 +500,16 @@ class Portfolio extends Component {
                 <p className="portfolioParagraph">
                   After several setbacks, I decided to settle with{" "}
                   <span className="highLight">Lagom</span>, meaning good enough
-                  in Swedish. Then bits and pieces started to slowly fall into
-                  place and I didn't have too high expectations for myself.
-                  <br></br>
-                  <br></br>
-                  With time, my skills gradually improved and in the end I
-                  re-wrote the whole code I had been given from the Udemy
-                  course.
+                  in Swedish. Then everything started fall into
+                  place.
                   <br></br>
                   <br></br>
                   At last I have found my way of being Lagom.
                 </p>
               </div>
             </div>
+            </div>
+
           </div>
         </div>
       </div>
