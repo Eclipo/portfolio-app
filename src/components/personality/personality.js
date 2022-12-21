@@ -404,7 +404,7 @@ class Personality extends Component {
               <Book></Book>
             </div>
             <div className="duckText mx-auto">
-              <p>
+              <p className="mb-0">
               The purpose of the personality matrix above is to display two
               facts:
               </p>
@@ -420,11 +420,9 @@ class Personality extends Component {
                 </li>
               </ul>
               <p>
-              My particular personality depends on a variety of conditions where
-              I can be either more or less of a specific trait.<br></br>
-              <br></br>
-              In the cards shown below, I will go through some of my personal
-              attributes in more detail.
+                My particular personality depends on a variety of conditions where
+                I can be either more or less of a specific trait. In the cards shown below, I will go through some of my personal
+                attributes in more detail.
               </p>
             
             </div>

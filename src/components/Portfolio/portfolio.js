@@ -172,10 +172,9 @@ class Portfolio extends Component {
                 <p className="avatarMomParagraph">Mom</p>
               </div>
 
-              <p className="portfolioParagraph">
+              <p className="portfolioParagraph mt-2">
                 My dad ended up at the hospital.<br></br>
                 My mom just got infected.<br></br>
-                <br></br>
                 Nobody knew what was going on.
               </p>
             </div>
@@ -387,10 +386,9 @@ class Portfolio extends Component {
 
               <div className="row flexCenter m-auto">
                 <p className="portfolioParagraph">
-                  The users could give my avatar
-                    various symptoms and learn more about COVID-19.<br></br><br></br> 
-                    But the website was a disaster. 
-                  I made many mistakes and I realised I had a long way to go.
+                  The website helpt users to know more about Covid-19 by giving
+                  my avatar related symptoms. <br></br><br></br>
+                  However, the website was a disaster and I had a long way to go in becoming a good web developer.
                 </p>
               </div>
             </div>

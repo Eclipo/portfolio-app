@@ -212,9 +212,9 @@ export const Navbar = () => {
                     data-bs-parent="#accordionExample">
                     <div className="accordion-body">
                       <p className="navP m-0 p-0">
-                        These design tools have helpt me in building websites.{" "}
-                        <br></br>Try them out for an enhanced experience and
-                        understand my take on web design.
+                        These design tools have helped me in building websites.
+                        <br></br>
+                        Try them out for an enhanced experience and understand my take on web design.
                       </p>
 
                       <hr className="navDivider"></hr>

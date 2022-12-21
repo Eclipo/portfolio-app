@@ -445,7 +445,7 @@ ul > li {
     font-size: 1rem !important;
   }
 
-  p {
+  p, ul > li {
     font-size: 0.95rem;
   }
   .mokaTableContainer {
@@ -505,7 +505,7 @@ ul > li {
     font-size: 1.35rem !important;
   }
 
-  p {
+  p, ul > li {
     font-size: 1.15rem !important;
   }
 

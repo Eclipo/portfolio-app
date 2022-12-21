@@ -333,7 +333,7 @@ class Skills extends Component {
 
           <div className="row">
             <div className="duckText">
-              <p>
+              <p className="mb-0">
                 As a developer, I slowly became{" "}
                 <span className="highLight"> multidisciplinary </span> just like
                 a <span className="highLight"> duck</span>:
@@ -362,7 +362,7 @@ class Skills extends Component {
                 </li>
               </ul>
               
-              <p>Furthermore, this duck also has some experience within<span className="highLight"> sales</span>.</p>
+              <p className="mb-0">Furthermore, this duck also has some experience within<span className="highLight"> sales</span>.</p>
               
               <ul className="skillBullet">
                 <li>
