@@ -11,17 +11,10 @@ export class QuickAboutAnimation {
     });
 
     this.edipAndFamillyAnimation.add({
-      targets: ".head",
-      translateY: [5, -5, 5],
-      rotate: ["4deg", "-4deg"],
-      duration: 750,
-      easing: "easeInOutQuad",
-    });
-
-    this.edipAndFamillyAnimation.add({
       targets: ".eyebrow",
       translateY: [0, "-0.5rem", "0.5rem"],
-      duration: 500,
+      duration: 750,
+      delay:1000,
     });
 
     this.quickCoffeeSteam = anime.timeline({

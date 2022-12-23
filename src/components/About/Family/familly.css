@@ -122,6 +122,8 @@
   left: 50%;
   margin-top: -13.125rem;
   margin-left: -6.125rem;
+  animation:music-move 1.5s 3.3s infinite alternate ease-in-out;
+    -webkit-animation:music-move 1.5s 3.3s infinite alternate ease-in-out;
 }
 
 .erika-head {
@@ -546,3 +548,44 @@
   bottom: -5.25rem;
   z-index: 4;
 }
+
+@keyframes music-move
+{
+0% { 
+  -webkit-transform: rotate(0deg) translateZ(0);
+  transform: rotate(0deg) translateZ(0);
+} 
+33% {  
+  -webkit-transform: rotate(-5deg) translateZ(0);
+  transform: rotate(-5deg) translateZ(0);
+}
+66% {  
+  -webkit-transform: rotate(5deg) translateZ(0);
+  transform: rotate(5deg) translateZ(0);
+}
+100% {  
+  -webkit-transform: rotate(0deg) translateZ(0);
+  transform: rotate(0deg) translateZ(0);
+}
+}
+
+@-webkit-keyframes music-move /* Safari and Chrome */
+  {
+  0% { 
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+  33% {  
+    -webkit-transform: rotate(-5deg) translateZ(0);
+    transform: rotate(-5deg) translateZ(0);
+  }
+  66% {  
+    -webkit-transform: rotate(5deg) translateZ(0);
+    transform: rotate(5deg) translateZ(0);
+  }
+  100% {  
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+  }
+
