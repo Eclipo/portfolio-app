@@ -160,7 +160,7 @@ class ResumeOverview extends Component {
                     <h4 className="expHeader-reverseColor">Bad luck</h4>
                     <p className="expHeader-reverseColor m-auto w-75">
                       Due to prior financial complications, Nexer AB left me
-                      speechless and I returned back to base. I guess that sometimes <b>bad luck</b> happens in life.
+                      speechless and I returned back to base. I guess that sometimes <span className="resumeHighLight">bad luck</span> happens in life.
                     </p>
                   </div>
                 </div>
@@ -234,10 +234,10 @@ class ResumeOverview extends Component {
                       The company had to increase its margin and unfortunately I was no longer needed in any position.
                       Six months later the company was bought up by TietoEvry AB.
                       <br></br><br></br>
-                       I made a <b>vow</b> to never be unemployed again. For three
+                       I made a <span className="resumeHighLight">vow</span> to never be unemployed again. For three
                       years, I studied 50% at Midsweden University while working
                       100% at CGI Sverige AB. 
-                      The <b>irony</b> of it all, I consulted CGI's customers who used Software Innovation's products.
+                      The <span className="resumeHighLight"> irony </span> of it all, I consulted CGI's customers who used Software Innovation's products.
                     </p>
                   </div>
                 </div>
@@ -310,7 +310,7 @@ class ResumeOverview extends Component {
                       efforts. Perhaps it was meant to be because a couple years later
                       they had to shut down the business.<br></br>
                       <br></br>
-                      Long story short, I was <b>welcome back</b> at TP Sweden
+                      Long story short, I was <span className="resumeHighLight">welcome back</span> at TP Sweden
                       (Teleperformance) and for that I am very grateful.
                     </p>
                   </div>

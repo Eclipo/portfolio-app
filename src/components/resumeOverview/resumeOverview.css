@@ -17,6 +17,11 @@
   opacity: 1;
 }
 
+.resumeHighLight{
+  color:var(--btnLight-navy) !important;
+  font-weight: 750;
+}
+
 .resumeTable h2 {
   color: var(--primary-greyBlue);
 }
