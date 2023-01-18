@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 :root {
   /*Claymorphism boxShadows*/
   --menuBtnSkillShadow: 0 0.1rem 0.25rem 0.15rem black,
@@ -306,7 +305,7 @@ body {
 }
 
 h1 {
-  font-style: var(--font-sans) !important;
+  font-family: var(--font-sans) !important;
   font-size: 2.5rem !important;
   font-weight: 1000 !important;
   text-transform: uppercase !important;
@@ -315,7 +314,7 @@ h1 {
 }
 
 h2 {
-  font-style: var(--font-sans) !important;
+  font-family: var(--font-sans) !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
   font-size: 2rem;
@@ -340,8 +339,7 @@ h4 {
 
 p,
 ul > li {
-  font-style: var(--font-mono) !important;
-  font-weight: 550 !important;
+  font-weight: 400 !important;
 
   font-size: 0.85rem;
   vertical-align: middle !important;
