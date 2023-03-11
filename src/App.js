@@ -24,7 +24,7 @@ function App() {
       <Personality></Personality>
       <Portfolio></Portfolio>
       <Contact></Contact>
-
+ 
     </>
   );
 }

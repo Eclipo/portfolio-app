@@ -305,7 +305,7 @@ body {
 }
 
 h1 {
-  font-family: var(--font-sans) !important;
+  font-family: Fredoka One, sans-serif !important;
   font-size: 2.5rem !important;
   font-weight: 1000 !important;
   text-transform: uppercase !important;
@@ -314,14 +314,14 @@ h1 {
 }
 
 h2 {
-  font-family: var(--font-sans) !important;
+  font-family: Fredoka One, sans-serif !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
   font-size: 2rem;
 }
 
 h3 {
-  font-style: var(--font-sans) !important;
+  font-family: Fredoka One, sans-serif !important;
   font-weight: 750 !important;
 
   font-size: 1.75rem;
@@ -331,14 +331,16 @@ h3 {
 }
 
 h4 {
-  font-style: var(--font-sans) !important;
+  font-family: Fredoka One, sans-serif !important;
   font-weight: 650 !important;
   padding: 0.5rem !important;
   font-size: 1rem !important;
 }
 
+
 p,
 ul > li {
+  font-family: Rubik, cursive !important; 
   font-weight: 400 !important;
 
   font-size: 0.85rem;

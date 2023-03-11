@@ -202,7 +202,7 @@ export const Navbar = () => {
                       data-bs-target="#collapseOne"
                       aria-expanded="false"
                       aria-controls="collapseOne">
-                      <h3 className="navLinkH3 m-0">Design tools</h3>
+                      <h3 className="navLinkH3 m-0">Web tools</h3>
                     </button>
                   </h2>
                   <div
@@ -239,9 +239,9 @@ export const Navbar = () => {
                                       ? "var(--darkest-navy)"
                                       : "var(--dark-slate)",
                                   }}></FontAwesomeIcon>
-                                <p className="row navP text-center">
+                                <h4 className="row navP text-center text-uppercase text-black">
                                   Red outliner
-                                </p>
+                                </h4>
                               </button>
                             </div>
                           </div>
@@ -276,10 +276,10 @@ export const Navbar = () => {
                                     ? "var(--darkest-navy)"
                                     : "var(--dark-slate)",
                                 }}></FontAwesomeIcon>
-                              <p className="row navP text-center">
-                                Red & Green<br></br>
+                              <h4 className="row navP text-center text-uppercase text-black">
+                                Red/Green<br></br>
                                 (Protanopia)
-                              </p>
+                              </h4>
                             </button>
                           </div>
 
@@ -302,10 +302,10 @@ export const Navbar = () => {
                                     ? "var(--darkest-navy)"
                                     : "var(--dark-slate)",
                                 }}></FontAwesomeIcon>
-                              <p className="row navP text-center">
-                                Yellow & Blue<br></br>
+                              <h4 className="row navP text-center text-uppercase text-black">
+                                Yellow/Blue<br></br>
                                 (Tritanopia)
-                              </p>
+                              </h4>
                             </button>
                           </div>
 
@@ -328,10 +328,10 @@ export const Navbar = () => {
                                     ? "var(--darkest-navy)"
                                     : "var(--dark-slate)",
                                 }}></FontAwesomeIcon>
-                              <p className="row navP text-center">
-                                Shades of grey <br></br>
+                              <h4 className="row navP text-center text-uppercase text-black">
+                                Grey<br></br>
                                 (Achromatopsia)
-                              </p>
+                              </h4>
                             </button>
                           </div>
                         </div>
