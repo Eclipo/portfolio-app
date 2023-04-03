@@ -6,7 +6,6 @@ import {
   faPen,
   faEye,
   faEyeSlash,
-  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import "../../IntersectionObserver.js";
@@ -49,7 +48,6 @@ export const Navbar = () => {
 
   function removeColors(input) {
     document.getElementById("ulNavID").classList.remove(input);
-    document.getElementById("introSectionID").classList.remove(input);
     document.getElementById("quickFacts").classList.remove(input);
     document.getElementById("aboutMe").classList.remove(input);
     document.getElementById("skills").classList.remove(input);
@@ -62,7 +60,6 @@ export const Navbar = () => {
 
   function addColors(input) {
     document.getElementById("ulNavID").classList.add(input);
-    document.getElementById("introSectionID").classList.add(input);
     document.getElementById("quickFacts").classList.add(input);
     document.getElementById("aboutMe").classList.add(input);
     document.getElementById("skills").classList.add(input);
@@ -353,30 +350,19 @@ export const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <li className="nav-item active" style={{ marginTop: "-0.25rem" }}>
-                <Link
-                  smooth={true}
-                  to={"introSectionID"}
-                  id="navLinkHomeID"
-                  className="nav-link"
-                  href="#"
-                  tabIndex={0}>
-                  <h3 id="navLinkHomeH3ID" className="navLinkH3">
-                    HOME
-                  </h3>
-                  <span className="sr-only">(current)</span>
-                </Link>
-              </li>
+            
 
-              <li className="nav-item">
+              <li className="nav-item active" style={{ marginTop: "-0.25rem" }}>
                 <Link
                   smooth={true}
                   to={"quickFacts"}
                   id="navLinkQuickFactsID"
                   className="nav-link"
                   href="#"
-                  tabIndex={1}>
+                  tabIndex={0}>
                   <h3 className="navLinkH3">Quick Facts</h3>
+                  <span className="sr-only">(current)</span>
+
                 </Link>
               </li>
 
@@ -387,7 +373,7 @@ export const Navbar = () => {
                   id="navLinkAboutID"
                   className="nav-link"
                   href="#"
-                  tabIndex={2}>
+                  tabIndex={1}>
                   <h3 className="navLinkH3">About</h3>
                 </Link>
               </li>
@@ -399,7 +385,7 @@ export const Navbar = () => {
                   id="navLinkSkillsID"
                   className="nav-link"
                   href="#"
-                  tabIndex={3}>
+                  tabIndex={2}>
                   <h3 className="navLinkH3">Skills</h3>
                 </Link>
               </li>
@@ -411,7 +397,7 @@ export const Navbar = () => {
                   id="navLinkExperiencesID"
                   className="nav-link"
                   href="#"
-                  tabIndex={6}>
+                  tabIndex={3}>
                   <h3 className="navLinkH3">Major experiences</h3>
                 </Link>
               </li>
@@ -423,7 +409,7 @@ export const Navbar = () => {
                   id="navLinkResumeOverviewID"
                   className="nav-link"
                   href="#"
-                  tabIndex={5}>
+                  tabIndex={4}>
                   <h3 className="navLinkH3">Resumé Overview</h3>
                 </Link>
               </li>
@@ -435,22 +421,10 @@ export const Navbar = () => {
                   id="navLinkPersonalityID"
                   className="nav-link"
                   href="#"
-                  tabIndex={4}>
+                  tabIndex={5}>
                   <h3 id="navLinkPersonalityH3ID" className="navLinkH3">
                     Personality
                   </h3>
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to={"portfolioID"}
-                  id="navLinkPortfolioID"
-                  className="nav-link"
-                  href="#"
-                  tabIndex={7}>
-                  <h3 className="navLinkH3">The story</h3>
                 </Link>
               </li>
 
@@ -461,7 +435,7 @@ export const Navbar = () => {
                   id="navLinkContactID"
                   className="nav-link"
                   href="#"
-                  tabIndex={8}>
+                  tabIndex={6}>
                   <h3 className="navLinkH3">Contact</h3>
                 </Link>
               </li>

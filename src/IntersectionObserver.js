@@ -3,47 +3,40 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 
 setTimeout(function () {
   //Sections
-  const introSection = document.querySelector("#introSectionID");
   const quickFactsSection = document.querySelector("#quickFacts");
   const aboutMeSection = document.querySelector("#aboutMe");
   const skillsSection = document.querySelector("#skills");
   const personalitySection = document.querySelector("#personality");
   const resumeSection = document.querySelector("#resumeOverview");
   const experienceSection = document.querySelector("#experiencesID");
-  const portfolioSection = document.querySelector("#portfolioID");
   const contactSection = document.querySelector("#contactID");
 
-  const firstWrapper = [introSection, quickFactsSection, aboutMeSection];
+  const firstWrapper = [quickFactsSection, aboutMeSection];
 
   const secondWrapper = [
     skillsSection,
     experienceSection,
     resumeSection,
     personalitySection,
-    portfolioSection,
     contactSection,
   ];
 
   //Nav-link
-  const navLinkHomeID = document.getElementById("navLinkHomeID");
   const navLinkQuickID = document.getElementById("navLinkQuickFactsID");
   const navLinkAboutID = document.getElementById("navLinkAboutID");
   const navLinkSkillsID = document.getElementById("navLinkSkillsID");
   const navLinkExperienceID = document.getElementById("navLinkExperiencesID");
   const navLinkResumeID = document.getElementById("navLinkResumeOverviewID");
   const navLinkPersonalityID = document.getElementById("navLinkPersonalityID");
-  const navLinkPortfolioID = document.getElementById("navLinkPortfolioID");
   const navLinkContactID = document.getElementById("navLinkContactID");
 
   const navLinksID = [
-    navLinkHomeID,
     navLinkQuickID,
     navLinkAboutID,
     navLinkSkillsID,
     navLinkExperienceID,
     navLinkResumeID,
     navLinkPersonalityID,
-    navLinkPortfolioID,
     navLinkContactID,
   ];
 
@@ -75,21 +68,16 @@ setTimeout(function () {
 
       if (entry.isIntersecting) {
         switch (currentIndex) {
-          // Intro Section - Turn ON QuickFacts&About
+          // Quick Facts Section - TURN ON QuickFacts&About + Turn OFF Skills
           case 0:
             currentNavLink(0);
-            break;
-
-          // Quick Facts Section - TURN ON QuickFacts&About + Turn OFF Skills
-          case 1:
-            currentNavLink(1);
             animationQuickFactAbout.playOrStop(true);
             PlayAnimation("SkillAnimation", 1);
             break;
 
           //About me Section - Turn ON QuickFacts&About and Skills
-          case 2:
-            currentNavLink(2);
+          case 1:
+            currentNavLink(1);
             animationQuickFactAbout.playOrStop(true);
             break;
 
@@ -107,14 +95,14 @@ setTimeout(function () {
         switch (currentIndex) {
           //Skills Section
           case 0:
-            currentNavLink(3);
+            currentNavLink(2);
             PlayAnimation("SkillAnimation", 2);
 
             break;
 
           //Major experiences - Turn OFF QuickAbout and Personality
           case 1:
-            currentNavLink(4);
+            currentNavLink(3);
             animationQuickFactAbout.playOrStop(false);
 
 
@@ -125,28 +113,20 @@ setTimeout(function () {
           case 2:
             PlayAnimation("SkillAnimation", 1);
 
-            currentNavLink(5);
-            PlayAnimation("PortfolioAnimation", 1);
+            currentNavLink(4);
+            // PlayAnimation("PortfolioAnimation", 1);
 
             break;
 
           //Personality
           case 3:
-            currentNavLink(6);
+            currentNavLink(5);
             PlayAnimation("PersonalityAnimation", 2);
 
             break;
 
-          //Portfolio - Turn Off Personality
           case 4:
-            currentNavLink(7);
-            PlayAnimation("PortfolioAnimation", 2);
-            PlayAnimation("PersonalityAnimation", 1);
-
-            break;
-
-          case 5:
-            currentNavLink(8);
+            currentNavLink(6);
             PlayAnimation("PersonalityAnimation", 1);
 
             break;
@@ -173,7 +153,6 @@ setTimeout(function () {
     firstHandleScrollPosY,
     firstOptions
   );
-  firstObserver.observe(introSection);
   firstObserver.observe(quickFactsSection);
   firstObserver.observe(aboutMeSection);
 
@@ -185,6 +164,5 @@ setTimeout(function () {
   myObserver.observe(personalitySection);
   myObserver.observe(resumeSection);
   myObserver.observe(experienceSection);
-  myObserver.observe(portfolioSection);
   myObserver.observe(contactSection);
 }, 100);

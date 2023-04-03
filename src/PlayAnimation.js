@@ -1,15 +1,10 @@
-import { IntroAnimation } from "./components/Intro/IntroAnimation.js";
-import { PersonalityAnimation } from "./components/personality/personalityAnimation.js";
-import { PortfolioAnimation } from "./components/Portfolio/PortfolioAnimation.js";
-
 import anime from "animejs";
 import { SkillAnimation } from "./components/skills/SkillAnimation.js";
 import { QuickAboutAnimation } from "./components/About/Animations/AboutAnimation.js";
+import { PersonalityAnimation } from "./components/personality/personalityAnimation.js";
 
-const IntroAnime = new IntroAnimation();
 const SkillsAnime = new SkillAnimation();
 const PersonalityAnime = new PersonalityAnimation();
-const PortfolioAnime = new PortfolioAnimation();
 const QuickAboutAnime = new QuickAboutAnimation();
 
 export async function PlaySlide(selectedIndex) {
@@ -78,11 +73,6 @@ export function PlayAnimation(inputID, inputPlayBoolean) {
   var currentObject = inputID.substring(inputID.indexOf("_") + 1);
   var delayTime = 0;
 
-  if (currentObject === "IntroAnimation") {
-    delayTime = 4500;
-    IntroAnime.playOrStop(inputPlayBoolean);
-    return delayTime;
-  }
 
   if (currentObject === "SkillAnimation") {
     SkillsAnime.playOrStop(inputPlayBoolean);
@@ -92,10 +82,6 @@ export function PlayAnimation(inputID, inputPlayBoolean) {
     PersonalityAnime.playOrStop(inputPlayBoolean);
     delayTime = 13000;
     return delayTime;
-  }
-
-  if (currentObject === "PortfolioAnimation") {
-    PortfolioAnime.playOrStop(inputPlayBoolean);
   }
 
   return delayTime;
