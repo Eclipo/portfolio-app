@@ -1,9 +1,7 @@
 :root {
   /*Claymorphism boxShadows*/
-  --menuBtnSkillShadow: 0 0.1rem 0.25rem 0.15rem black,
-    inset 0.1rem -0.25rem 0.5rem 0.3rem var(--light-navy),
-    inset -0.2rem -0.25rem 0.5rem 0.1rem var(--lightest-navy),
-    inset 0.2rem 0.4rem 0.1rem -0.1rem var(--primary-white);
+  --menuBtnSkillShadow: 0 0.1rem -0.1rem 0.1rem black,
+    inset 0.2rem 0.5rem 0.1rem -0.1rem var(--primary-white);
 
   --navBtnSkillShadow: 0 0.1rem 0.25rem -0.1rem black,
     inset 0.1rem -0.25rem 0.5rem 0.3rem var(--lightest-navy),
@@ -15,7 +13,7 @@
     inset 0.1rem 0.5rem 0.5rem -0.1rem var(--primary-white),
     inset -0.2rem 0.1rem 0.5rem 0.5rem var(--light-navy);
 
-  --btnSkillShadow: 0.2rem 0.25rem 0.25rem 0.25rem black,
+  --btnSkillShadow: 0.1rem 0.1rem 0.25rem 0.1rem black,
     inset 0.1rem -0.25rem 0.5rem 0.3rem var(--navy),
     inset -0.2rem -0.25rem 0.5rem 0.1rem var(--light-navy),
     inset 0.2rem 0.4rem 0.1rem -0.1rem var(--primary-white);
@@ -24,7 +22,7 @@
     inset 0 0 1rem 0.5rem var(--navy);
 
   --btnSkillActiveShadow: 0 0.15rem 0.25rem 0.1rem var(--primary-white),
-    inset 0 0 2rem 1.5rem var(--darkest-navy);
+    inset 0 0 2.5rem 0.25rem var(--darkest-navy);
 
   --btnShadow: -0.1rem 0.25rem 0.25rem 0.1rem black,
     inset -0.3rem -0.2rem 0.5rem 0.1rem var(--navy),
@@ -47,7 +45,7 @@
   --btnNavHoverActiveShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
     inset 0 0 0.5rem 0 var(--slate);
 
-  --faceShadow: 0 0.1rem 0.25rem 0 var(--primary-red),
+  --faceShadow: 0 0.1rem 0.25rem 0 var(--primarymenuBtn-red),
     inset 0 -0.5rem 1rem 0 var(#ffe4be);
 
   --btnPersonalityCardShadow: 0.1rem 0.1rem 0.25rem 0.2rem var(--dark-navy),
@@ -89,14 +87,13 @@
   --blackWhiteShadow: 0 0rem 0.1rem 0rem black,
     inset 0rem 0.1rem 0.1rem 0 var(--primary-white);
 
-    --duckMouthUpperShadow: 0 0.1rem 0.25rem 0.1rem black,
+  --duckMouthUpperShadow: 0 0.1rem 0.25rem 0.1rem black,
     inset 0 -0.2rem 0.75rem 0.1rem var(--navy),
     inset 0 0.4rem 0.5rem -0.2rem var(--primary-white);
 
-    --duckMouthLowerShadow: 0 -0.1rem 0.75rem 0.1rem black,
+  --duckMouthLowerShadow: 0 -0.1rem 0.75rem 0.1rem black,
     inset 0 -0.2rem 0.75rem 0.1rem var(--navy),
     inset 0.2rem -0.5rem 0.25rem -0.1rem var(--primary-white);
-
 
   /* Colors */
   --primary-white: rgba(249, 247, 247, 0.969);
@@ -154,10 +151,17 @@
   --pink: #f57dff;
   --blue: #57cbff;
 
-/*THESE COLORS ONLY!!!!*/  
-  --bg: #ebebc7;
-  --primaryColor:#575e6e;
-  --secondaryColor:#c9a7c5;
+  /*THESE COLORS ONLY!!!!*/
+  /* #ebebc7; */
+
+  --bg: #f6f6eb;
+  --primaryColor: #d5d6ea;
+  --primaryText: VAR(--dark-slate);
+  --secondaryColor: #d14998;
+  --secondaryColor-dark: #8d005f;
+  --secondaryColor-darkest: #550030;
+
+  --accent: #9ae7a7;
 
   --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -180,6 +184,17 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+}
+
+.mainContainer {
+  background-color: var(--primaryColor);
+  box-shadow: var(--blackWhiteShadow);
+  width: 95% !important;
+  border-radius: 18px;
+  margin: 1rem;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .sectionLine {
@@ -215,7 +230,7 @@
   border-radius: 50%;
 
   transition: var(--transition);
-  box-shadow: var(--navBtnSkillShadow) !important;
+  box-shadow: var(--blackWhiteShadow) !important;
 }
 
 .menuBtn .fntAwesome {
@@ -265,18 +280,19 @@
 }
 
 .highLight {
-  color: var(--tint-navy);
+  color: var(--secondaryColor);
+  font-weight: bolder;
 }
 
 /************************* HTML classes *********************************/
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--dark-navy) !important;
+  background-color: var(--bg) !important;
 }
 
 #root {
-  background-color: var(--dark-navy);
+  background-color: var(--bg);
 }
 
 .bodyDefaultBg {
@@ -318,7 +334,7 @@ h1 {
   text-transform: uppercase !important;
   text-align: center !important;
   margin-bottom: 1rem !important;
-  color: var(--primaryColor) !important;
+  color: var(--primaryText) !important;
 }
 
 h2 {
@@ -326,6 +342,7 @@ h2 {
   font-weight: 800 !important;
   text-transform: uppercase !important;
   font-size: 2rem;
+  color: var(--primaryText);
 }
 
 h3 {
@@ -336,6 +353,7 @@ h3 {
   margin: auto !important;
   text-align: center !important;
   word-break: keep-all !important;
+  color: var(--primaryText) !important;
 }
 
 h4 {
@@ -345,10 +363,9 @@ h4 {
   font-size: 1rem !important;
 }
 
-
 p,
 ul > li {
-  font-family: Rubik, cursive !important; 
+  font-family: Rubik, cursive !important;
   font-weight: 400 !important;
 
   font-size: 0.85rem;
@@ -356,7 +373,7 @@ ul > li {
   word-wrap: break-word;
   word-spacing: normal;
 
-  color: var(--slate);
+  color: var(--darkest-slate);
 }
 
 .p-italic {
@@ -453,7 +470,8 @@ ul > li {
     font-size: 1rem !important;
   }
 
-  p, ul > li {
+  p,
+  ul > li {
     font-size: 0.95rem;
   }
   .mokaTableContainer {
@@ -513,7 +531,8 @@ ul > li {
     font-size: 1.35rem !important;
   }
 
-  p, ul > li {
+  p,
+  ul > li {
     font-size: 1.15rem !important;
   }
 
@@ -603,7 +622,7 @@ ul > li {
   width: fit-content;
   min-width: 95%;
   max-width: 35rem;
-  padding-right:0.5rem
+  padding-right: 0.5rem;
 }
 
 .accordion-header {
@@ -734,8 +753,8 @@ ul > li {
 #navbarTogglerID {
   margin-top: 0.5rem;
   width: 3rem;
-    background-color: var(--btnLight-navy) !important;
-      border: 0.1rem black solid !important;
+  background-color: var(--secondaryColor) !important;
+  border: 0.1rem black solid !important;
 }
 
 #navbarTogglerID:hover {
@@ -762,11 +781,10 @@ ul > li {
   border-radius: 5px 0 0 5px;
 }
 
-
 #navIconID {
-  color: var(--light-slate) !important;
-  padding-top:0.5rem !important;
-  padding-bottom:0.25rem !important;  
+  color: var(--bg) !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.25rem !important;
 }
 
 nav {

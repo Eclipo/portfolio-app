@@ -29,7 +29,7 @@
   margin-top: 1rem !important;
   background-color: var(--btnLight-navy);
   border: 0.1rem black solid;
-  box-shadow: var(--btnShadow);
+  box-shadow: var(--btnDesinShadow);
 }
 
 #resetSkills .fntAwesome:hover {
@@ -38,8 +38,7 @@
 }
 
 #resetSkills .fntAwesome:active {
-  color: var(--slate);
-  box-shadow: var(--btnSkillActiveShadow);
+  color: var(--dark-slate);
 }
 
 ul.a {
@@ -81,6 +80,7 @@ ul.a {
 button .skillCategory {
   padding: 0;
   margin: 0;
+  background-color: var(--secondaryColor);
 }
 .skillCategory {
   padding: 0.75rem !important;
@@ -93,21 +93,23 @@ button .skillCategory {
   border-radius: 18px;
   border: 0.1rem solid black;
   transition: var(--transition);
-  box-shadow: var(--menuBtnSkillShadow);
+  box-shadow: var(--btnSkillShadow);
 }
 
 .skillCategory:hover {
+  color: var(--light-slate);
   box-shadow: var(--btnSkillHoverShadow);
   transition: var(--transition);
 }
 
 .skillCategory:active {
+  color: var(--slate);
   box-shadow: var(--btnSkillActiveShadow);
   transition: var(--transition);
 }
 
 .selectedBtn {
-  box-shadow: var(--btnSkillActiveShadow) !important;
+  color: var(--bg) !important;
   transition: var(--transition);
 }
 
@@ -159,7 +161,7 @@ button .skillCategory {
   }
 
   to {
-    box-shadow: var(--btnSkillActiveShadow);
+    box-shadow: var(--btnSkillHoverShadow);
   }
 }
 
@@ -211,19 +213,23 @@ tr > td > .sectionLine {
   font-weight: 700 !important;
 }
 
+.skillP {
+  color: var(--bg);
+}
+
 .frontEndTheme {
-  background-color: #ec3608 !important;
-  color: var(--primary-white) !important;
+  background-color: var(--secondaryColor) !important;
+  color: var(--lightest-slate);
 }
 
 .backEndTheme {
-  background-color: #d85f02!important;
-  color: var(--primary-white) !important;
+  background-color: var(--secondaryColor-dark) !important;
+  color: var(--lightest-slate);
 }
 
 .rolesTheme {
-  background-color: #d1a000!important;
-  color: var(--primary-white) !important;
+  background-color: var(--secondaryColor-darkest) !important;
+  color: var(--lightest-slate);
 }
 
 .duckContainer {

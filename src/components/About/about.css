@@ -8,8 +8,8 @@
   }
 }
 
-#aboutMe{
-  min-height:97.5vh !important;
+#aboutMe {
+  min-height: 97.5vh !important;
 }
 
 .testimonials {
@@ -44,7 +44,7 @@
 }
 
 .testimonials h2 {
-  color: var(--primary-orange);
+  color: var(--bg);
 }
 
 .testimonials p {
@@ -67,7 +67,7 @@
   margin-bottom: 7rem !important;
 }
 .carousel .control-dots {
-  background: var(--primary-orange) !important;
+  background: var(--secondaryColor) !important;
   margin-bottom: 3.5rem !important;
   height: 2.25rem !important;
   max-width: 50rem;
@@ -89,27 +89,30 @@
   margin: 0 !important;
 }
 .carousel .control-prev.control-arrow:before {
-  border-right: 0.75rem solid var(--primary-white) !important;
+  border-right: 0.75rem solid var(--secondaryColor) !important;
   margin-left: 0.25rem !important;
 }
 
 .carousel .control-next.control-arrow:before {
-  border-left: 0.75rem solid var(--primary-white) !important;
+  border-left: 0.75rem solid var(--secondaryColor) !important;
   margin-right: 0.75rem !important;
 }
 
 .control-next:hover,
 .control-prev:hover {
   background-color: transparent !important;
+  color: var(--secondaryColor) !important;
 }
 
 .control-next,
 .control-prev {
   scale: 1.5 !important;
+  color: var(--secondaryColor) !important;
 }
 .carousel .control-dots .dot {
   opacity: 0.6;
   margin-top: 0.75rem;
+  color: var(--secondaryColor) !important;
 }
 
 .containerSlide {

@@ -6,7 +6,6 @@ export const EdipGuy = () => {
     <div className="wrapper" id="tableStartGuyID">
       <div className="edipCircleBackground-circle">
         <div className="triangle-light"></div>
-        <div className="triangle-dark"></div>
 
         <div className="body" id="bodyStart"></div>
       </div>

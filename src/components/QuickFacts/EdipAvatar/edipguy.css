@@ -23,7 +23,6 @@
   :root {
     --size-edipGuyDivisor: 3;
   }
-
 }
 
 #tableStartGuyID {
@@ -44,7 +43,7 @@
   background: #95b3bf !important;
   background: transparent;
   position: relative;
-  border: 1rem solid var(--secondaryColor);
+  border: 1rem solid var(--primary-white);
   z-index: -1;
 }
 
@@ -222,7 +221,7 @@
   background: #ffffff;
   opacity: 0.2;
   position: absolute;
-  right: -60%;
+  right: -50%;
   z-index: 0;
 }
 
@@ -232,6 +231,6 @@
   background: #000000;
   opacity: 0.2;
   position: absolute;
-  left: -60%;
+  left: -50%;
   z-index: 0;
 }

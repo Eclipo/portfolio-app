@@ -111,9 +111,11 @@ class Skills extends Component {
   render() {
     return (
       <div id="skills" className="sectionAnimation">
-        <h1 style={{ color: "var(--primary-blue" }}>Skills</h1>
+        <div
+          className="container-sm skillContainer mainContainer"
+          id="skillContainerID">
+          <h1>Skills</h1>
 
-        <div className="container-sm skillContainer" id="skillContainerID">
           <div className="row"></div>
           <div className="row m-auto">
             <div className="col">
@@ -205,15 +207,17 @@ class Skills extends Component {
             <tbody>
               <tr>
                 <td>
-                  <p className="skill frontEndTheme">ReactJS</p>
+                  <p className="skill frontEndTheme skillP">ReactJS</p>
                 </td>
 
                 <td>
-                  <p className="skill frontEndTheme">Angular</p>
+                  <p className="skill frontEndTheme skillP">Angular</p>
                 </td>
 
                 <td>
-                  <p className="skill frontEndTheme" id="skillElemAndInter">
+                  <p
+                    className="skill frontEndTheme skillP"
+                    id="skillElemAndInter">
                     TypeScript
                   </p>
                 </td>
@@ -221,29 +225,31 @@ class Skills extends Component {
 
               <tr>
                 <td>
-                  <p className="skill backEndTheme">C++</p>
+                  <p className="skill backEndTheme skillP">C++</p>
                 </td>
 
                 <td>
-                  <p className="skill frontEndTheme">Redux</p>
+                  <p className="skill frontEndTheme skillP">Redux</p>
                 </td>
 
                 <td>
-                  <p className="skill frontEndTheme">HTML</p>
+                  <p className="skill frontEndTheme skillP">HTML</p>
                 </td>
               </tr>
 
               <tr>
                 <td>
-                  <p className="skill backEndTheme">Java</p>
+                  <p className="skill backEndTheme skillP">Java</p>
                 </td>
 
                 <td>
-                  <p className="skill backEndTheme">PowerShell</p>
+                  <p className="skill backEndTheme skillP">PowerShell</p>
                 </td>
 
                 <td>
-                  <p className="skill frontEndTheme" id="skillElemAndInter">
+                  <p
+                    className="skill frontEndTheme skillP"
+                    id="skillElemAndInter">
                     CSS
                   </p>
                 </td>
@@ -257,10 +263,12 @@ class Skills extends Component {
                 </td>
 
                 <td>
-                  <p className="skill backEndTheme">C#</p>
+                  <p className="skill backEndTheme skillP">C#</p>
                 </td>
                 <td>
-                  <p className="skill frontEndTheme" id="skillElemAndInter">
+                  <p
+                    className="skill frontEndTheme skillP"
+                    id="skillElemAndInter">
                     AnimeJS
                   </p>
                 </td>
@@ -274,12 +282,14 @@ class Skills extends Component {
                 </td>
 
                 <td>
-                  <p className="skill rolesTheme" id="skillElemAndInter">
+                  <p className="skill rolesTheme skillP" id="skillElemAndInter">
                     Coordinator
                   </p>
                 </td>
                 <td>
-                  <p className="skill backEndTheme" id="skillElemAndInter">
+                  <p
+                    className="skill backEndTheme skillP"
+                    id="skillElemAndInter">
                     SQL
                   </p>
                 </td>
@@ -293,10 +303,10 @@ class Skills extends Component {
                 </td>
 
                 <td>
-                  <p className="skill rolesTheme">UI designer</p>
+                  <p className="skill rolesTheme skillP">UI designer</p>
                 </td>
                 <td>
-                  <p className="skill rolesTheme">Tester</p>
+                  <p className="skill rolesTheme skillP">Tester</p>
                 </td>
               </tr>
 
@@ -307,12 +317,12 @@ class Skills extends Component {
                     style={{ opacity: "0" }}></div>
                 </td>
                 <td>
-                <p className="skill rolesTheme" id="skillElemAndInter">
+                  <p className="skill rolesTheme skillP" id="skillElemAndInter">
                     Presale
                   </p>
                 </td>
                 <td>
-                  <p className="skill rolesTheme">Developer</p>
+                  <p className="skill rolesTheme skillP">Developer</p>
                 </td>
               </tr>
             </tbody>
@@ -358,23 +368,34 @@ class Skills extends Component {
                   </p>
                 </li>
               </ul>
-              
-              <p className="mb-0">Furthermore, this duck also has some experience within<span className="highLight"> sales</span>.</p>
-              
+
+              <p className="mb-0">
+                Furthermore, this duck also has some experience within
+                <span className="highLight"> sales</span>.
+              </p>
+
               <ul className="skillBullet">
                 <li>
                   <p>
-                    I've worked as a<span className="highLight"> prospecter </span>and at CGI I have occasionally supported as a<span className="highLight"> presale</span>.</p>
+                    I've worked as a
+                    <span className="highLight"> prospecter </span>and at CGI I
+                    have occasionally supported as a
+                    <span className="highLight"> presale</span>.
+                  </p>
                 </li>
               </ul>
 
               <p>
-                To summarize, I am a full-stack developer where front-end is my stronger
-                forte. Occasionally, I seek support from senior developers
-                when the code-terrain is a bit too complex before getting into some action.
-                <br></br><br></br>
-                Even though I am a software developer, I still understand the importance of sales and having good relationships with the customers.
-              </p> 
+                To summarize, I am a full-stack developer where front-end is my
+                stronger forte. Occasionally, I seek support from senior
+                developers when the code-terrain is a bit too complex before
+                getting into some action.
+                <br></br>
+                <br></br>
+                Even though I am a software developer, I still understand the
+                importance of sales and having good relationships with the
+                customers.
+              </p>
             </div>
           </div>
         </div>

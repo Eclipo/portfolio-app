@@ -1,5 +1,5 @@
 .btnRefresh {
-  background-color: var(--btnLight-navy) !important;
+  background-color: var(--secondaryColor) !important;
   border: 0.15rem black solid !important;
   border-radius: 50%;
   width: 5rem;
@@ -8,7 +8,7 @@
   pointer-events: none;
   display: none;
   transition: var(--transition) !important;
-  box-shadow: var(--btnShadow);
+  box-shadow: var(--blackWhiteShadow) !important;
 }
 
 .btnPlay {

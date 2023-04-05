@@ -5,11 +5,12 @@ import "./about.css";
 const Testimonials = () => {
   return (
     <div id="aboutMe" className="sectionAnimation">
-      <div
-        className="sectionLine"
-      ></div>
-      <div id="testimonials" className="testimonials">
-        <h1 className="testimonials-h1" style={{ color: "var(--primary-orange" }}>About me</h1>
+      <div id="testimonials" className="testimonials mainContainer">
+        <h1
+          className="testimonials-h1"
+          style={{ color: "var(--primary-orange" }}>
+          About me
+        </h1>
         <div className="testimonials-content">
           <TestimonialsCarousel />
         </div>
