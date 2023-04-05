@@ -214,7 +214,7 @@ tr > td > .sectionLine {
 }
 
 .skillP {
-  color: var(--bg);
+  color: var(--bg) !important;
 }
 
 .frontEndTheme {
