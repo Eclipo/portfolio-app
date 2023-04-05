@@ -212,17 +212,17 @@ tr > td > .sectionLine {
 }
 
 .frontEndTheme {
-  background-color: rgb(30, 75, 152) !important;
+  background-color: #ec3608 !important;
   color: var(--primary-white) !important;
 }
 
 .backEndTheme {
-  background-color: rgb(84, 96, 169) !important;
+  background-color: #d85f02!important;
   color: var(--primary-white) !important;
 }
 
 .rolesTheme {
-  background-color: rgb(109, 133, 178) !important;
+  background-color: #d1a000!important;
   color: var(--primary-white) !important;
 }
 

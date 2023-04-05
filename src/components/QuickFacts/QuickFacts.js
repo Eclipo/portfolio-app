@@ -11,30 +11,23 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 const QuickFacts = () => {
   return (
     <div id="quickFacts" className="sectionAnimation">
-      <div
-        className="sectionLine"
-        style={{ backgroundColor: "var(--primary-yellow)" }}
-      ></div>
+
       <div className="container d-block">
-        <h1 className="flexCenter" style={{ color: "var(--primary-yellow" }}>
-          Hey!
+        <h1 className="flexCenter">
+          Hey!<br></br>
+          I'm  Edip Sarac!
         </h1>
 
-        <div className="row">
-          <div className="col">
-            <div className="flexCenter" style={{ marginTop: "-7.5rem" }}>
-              <EdipGuy></EdipGuy>
+          <div className="flexCenter mb-0 pb-0" style={{ marginTop: "-7.5rem"}}>
+              <EdipGuy></EdipGuy>  
             </div>
-          </div>
-          <div className="col">
-            <div className="row">
-              <p className="welcomeText">
-                My name is Edip Sarac and this is my résumé website.<br></br> 
-                Being a web developer I want to offer a more creative and
-                personal alternative in contrast to the traditional cover letter.
+            <div className="flexCenter mb-0 pb-0" style={{ marginTop: "-6rem"}}>
+
+    <p className="welcomeText">
+                This is my personal website dedicated to potential employers, current colleagues or someone who wants to know more about me.
                 <br></br>
                 <br></br>
-                Simply{" "}
+                You can simply{" "}
                 <span style={{ color: "var(--tint-navy)" }}>
                   {" "}
                   scroll down{" "}
@@ -42,32 +35,12 @@ const QuickFacts = () => {
                 to view more or you can use the
                 <span style={{ color: "var(--tint-navy)" }}> navbar </span>.
               </p>
-
-              <div className="row mt-3">
-                <div className="col">
-                  <Link
-                    to={"quickFacts"}
-                    className=""
-                    href="#"
-                    style={{ marginLeft: "1.5rem" }}
-                  >
-                    <button className="bg-transparent m-auto">
-                      <FontAwesomeIcon
-                        icon={faArrowDown}
-                        color="var(--slate)"
-                        className="fntAwesome"
-                        id="arrowDown"
-                        style={{ transform: "scale(2)" }}
-                      ></FontAwesomeIcon>
-                    </button>
-                  </Link>
-                </div>
-              </div>
+    </div>
+        
+              
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+    
   );
 };
 

@@ -111,9 +111,6 @@ class Skills extends Component {
   render() {
     return (
       <div id="skills" className="sectionAnimation">
-        <div
-          className="sectionLine"
-          style={{ backgroundColor: "var(--primary-blue)" }}></div>
         <h1 style={{ color: "var(--primary-blue" }}>Skills</h1>
 
         <div className="container-sm skillContainer" id="skillContainerID">

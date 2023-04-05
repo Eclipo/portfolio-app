@@ -172,7 +172,7 @@
   color: var(--dark-slate);
   display: block;
   width: fit-content;
-  padding: 1rem !important;
+  padding: 0.25rem !important;
 }
 
 /* Logo */

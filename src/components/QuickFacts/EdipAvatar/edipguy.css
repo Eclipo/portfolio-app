@@ -24,9 +24,6 @@
     --size-edipGuyDivisor: 3;
   }
 
-  #tableStartGuyID {
-    margin-top: 7rem;
-  }
 }
 
 #tableStartGuyID {
@@ -47,7 +44,7 @@
   background: #95b3bf !important;
   background: transparent;
   position: relative;
-  border: 1rem solid var(--primary-yellow);
+  border: 1rem solid var(--secondaryColor);
   z-index: -1;
 }
 

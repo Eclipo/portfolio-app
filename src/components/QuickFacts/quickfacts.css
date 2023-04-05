@@ -6,10 +6,6 @@
   font-size: 1.75rem !important;
 }
 
-#quickFacts {
-  min-height: 110vh;
-}
-
 .quickCard {
   background: var(--light-navy);
   border-width: 0.4rem;
