@@ -169,7 +169,6 @@
 .welcomeText {
   margin: auto !important;
   text-align: left;
-  color: var(--dark-slate);
   display: block;
   width: fit-content;
   padding: 0.25rem !important;

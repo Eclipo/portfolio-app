@@ -166,8 +166,7 @@ class TestimonialsCarousel extends Component {
               }}>
               <h2>Star Wars</h2>
               <p style={{ backgroundColor: "black", width: "fit-content" }}>
-                The music, graphics and story<br></br>are huge inspiration to
-                me.
+                A huge inspiration to me.
               </p>
             </div>
           </div>

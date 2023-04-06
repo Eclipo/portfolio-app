@@ -93,7 +93,7 @@ button .skillCategory {
   border-radius: 18px;
   border: 0.1rem solid black;
   transition: var(--transition);
-  box-shadow: var(--btnSkillShadow);
+  box-shadow: var(--btnShadow);
 }
 
 .skillCategory:hover {

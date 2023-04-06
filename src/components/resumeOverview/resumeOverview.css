@@ -15,8 +15,8 @@
   opacity: 1;
 }
 
-.resumeHighLight{
-  color:var(--btnLight-navy) !important;
+.resumeHighLight {
+  color: var(--btnLight-navy) !important;
   font-weight: 750;
 }
 
@@ -99,15 +99,16 @@
 }
 
 .resumeNavMenu {
-  background-color: var(--darkest-navy);
+  background-color: var(--bg-sub-dark);
   border-radius: 18px;
   padding: 0.25rem;
-  color: var(--primary-greyBlue);
+  /* color: var(--primary-greyBlue); */
   margin-bottom: 1rem !important;
   margin: auto;
   margin-top: 2rem;
   justify-content: center;
-  box-shadow: var(--btnResumeShadow);
+  box-shadow: var(--blackWhiteShadow);
+  border: 0.15rem solid black;
 }
 
 .resumeNavRow {
@@ -116,20 +117,22 @@
 }
 
 .resumeNav {
-  background-color: var(--light-navy);
+  background-color: var(--secondaryColor);
+  color: var(--primary-white) !important;
+
   border-radius: 18px;
   padding: 1rem;
-  color: var(--primary-greyBlue);
   margin-bottom: 2vh !important;
   margin: auto;
   margin-left: 1rem;
   margin-right: 1rem;
   box-shadow: var(--btnShadow);
+  border: 0.1rem black solid;
 }
 
 .resumeNav h2 {
   margin: auto;
-  color: var(--lightest-slate);
+  color: var(--primary-white);
   transition: var(--transition);
 }
 

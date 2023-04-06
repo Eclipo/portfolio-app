@@ -15,7 +15,7 @@
 .testimonials {
   background-size: cover;
   text-align: center;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
   margin: auto;
   width: fit-content;
 }
@@ -30,21 +30,8 @@
   transform: (0.95);
 }
 
-.myCarousel {
-  color: var(--primary-white);
-  background: transparent;
-  width: 54%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 6%;
-  padding-bottom: 8%;
-  padding-left: 5%;
-  padding-right: 5%;
-  height: 17.875rem;
-}
-
 .testimonials h2 {
-  color: var(--bg);
+  color: var(--secondaryColor);
 }
 
 .testimonials p {
@@ -80,22 +67,30 @@
 
 .carousel-root {
   margin: auto !important;
-  margin-top: 1% !important;
-  max-width: 50rem;
+  margin-top: 1.5rem !important;
+  /* background-color: var(--primaryColor) !important; */
+  /* box-shadow: var(--blackWhiteShadow) !important; */
+  max-width: 98% !important;
+  max-height: 29rem !important;
+  padding: 0.1rem !important;
+  border-radius: 18px !important;
+  display: inline-block;
 }
 .carousel.carousel-slider .control-arrow {
   bottom: 0 !important;
   top: -15% !important;
   margin: 0 !important;
+  padding: 0 !important;
 }
 .carousel .control-prev.control-arrow:before {
   border-right: 0.75rem solid var(--secondaryColor) !important;
-  margin-left: 0.25rem !important;
+
+  /* margin-left: 0.25rem !important; */
 }
 
 .carousel .control-next.control-arrow:before {
   border-left: 0.75rem solid var(--secondaryColor) !important;
-  margin-right: 0.75rem !important;
+  /* margin-right: 0.75rem !important; */
 }
 
 .control-next:hover,
@@ -109,8 +104,9 @@
   scale: 1.5 !important;
   color: var(--secondaryColor) !important;
 }
+
 .carousel .control-dots .dot {
-  opacity: 0.6;
+  opacity: 0.9 !important;
   margin-top: 0.75rem;
   color: var(--secondaryColor) !important;
 }
@@ -127,7 +123,7 @@
   align-items: center;
   text-align: center;
   max-height: 22rem;
-  max-width: 50rem;
+  max-width: 80%;
   margin: auto;
   border-radius: 18px !important;
   box-shadow: -0.1rem 0.25rem 0.25rem -0.1rem black,

@@ -43,7 +43,7 @@
   background: #95b3bf !important;
   background: transparent;
   position: relative;
-  border: 1rem solid var(--slate);
+  border: 1rem solid var(--secondaryColor-dark);
   z-index: -1;
 }
 

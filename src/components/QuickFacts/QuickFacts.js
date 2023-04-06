@@ -11,7 +11,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 const QuickFacts = () => {
   return (
     <div id="quickFacts" className="sectionAnimation">
-      <div className="container">
+      <div className="container primaryContainer">
         <h1 className="flexCenter">
           Hey!<br></br>
           I'm Edip Sarac!

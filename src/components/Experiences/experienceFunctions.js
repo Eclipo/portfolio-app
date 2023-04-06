@@ -47,6 +47,7 @@ export const animate = (inputID) => {
     targets: [
       contentHeader,
       contentPeriod,
+      ".techText",
       ".techText ul li",
       ".techRow",
       ".li_icon",
@@ -195,6 +196,7 @@ export const animate = (inputID) => {
                         targets: [
                           contentHeader,
                           contentPeriod,
+                          ".techText",
                           ".techText ul li",
                           ".techRow",
                           ".li_icon",

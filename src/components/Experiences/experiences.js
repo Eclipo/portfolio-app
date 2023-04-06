@@ -17,7 +17,7 @@ class Experiences extends Component {
   render() {
     return (
       <div className="sectionAnimation" id="experiencesID">
-        <h1 style={{ color: "var(--primary-purple)" }}>
+        <h1>
           Major<br></br>Experiences
         </h1>
 
@@ -89,7 +89,7 @@ class Experiences extends Component {
 
                     <h4
                       className="header3Tech pt-0 mt-0"
-                      style={{ color: "var(--primary-light-green)" }}>
+                      style={{ color: "var(--darkest-slate)" }}>
                       CGI Sverige AB
                     </h4>
                   </span>
@@ -102,7 +102,7 @@ class Experiences extends Component {
                     <h4
                       className="header3Tech pt-0 mt-0"
                       id="linkID"
-                      style={{ color: "var(--primary-light-green)" }}></h4>
+                      style={{ color: "var(--darkest-slate)" }}></h4>
                   </span>
                 </div>
 
@@ -113,7 +113,7 @@ class Experiences extends Component {
                     <h4
                       className="header3Tech pt-0 mt-0"
                       id="period"
-                      style={{ color: "var(--primary-light-green)" }}></h4>
+                      style={{ color: "var(--darkest-slate)" }}></h4>
                   </span>
                 </div>
 
@@ -124,7 +124,7 @@ class Experiences extends Component {
                     <h4
                       className="header3Tech pt-0 mt-0"
                       id="jobTitleID"
-                      style={{ color: "var(--primary-light-green)" }}></h4>
+                      style={{ color: "var(--darkest-slate)" }}></h4>
                   </span>
                 </div>
 
@@ -134,7 +134,7 @@ class Experiences extends Component {
                     <h4
                       className="header3Tech pt-0 mt-0"
                       id="system"
-                      style={{ color: "var(--primary-light-green)" }}></h4>
+                      style={{ color: "var(--darkest-slate)" }}></h4>
                   </span>
                 </div>
 
@@ -256,7 +256,7 @@ class Experiences extends Component {
                 <button
                   type="button"
                   className="btn"
-                  style={{ backgroundColor: "var(--primary-light-green)" }}
+                  style={{ backgroundColor: "var(--darkest-slate)" }}
                   data-bs-dismiss="modal">
                   Close
                 </button>

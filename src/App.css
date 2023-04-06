@@ -24,9 +24,9 @@
   --btnSkillActiveShadow: 0 0.15rem 0.25rem 0.1rem var(--primary-white),
     inset 0 0 2.5rem 0.25rem var(--darkest-navy);
 
-  --btnShadow: -0.1rem 0.25rem 0.25rem 0.1rem black,
+  --btnShadow: -0.05rem 0.1rem 0.1rem 0.1rem black,
     inset -0.3rem -0.2rem 0.5rem 0.1rem var(--navy),
-    inset 0.2rem 0.4rem 0.5rem -0.2rem var(--primary-white);
+    inset 0.3rem 0.5rem 0.5rem -0.2rem var(--primary-white);
 
   --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--navy);
@@ -64,7 +64,7 @@
     inset -0.1rem -0.2rem 0.5rem 0.1rem var(--dark-navy),
     inset 0.2rem 0.4rem 0.5rem -0.2rem var(--primary-green) !important;
 
-  --btnResumeShadow: -0.1rem 0.25rem 0.25rem 0.1rem black,
+  --btnResumeShadow: -0.1rem 0rem 0.1rem 0.1rem black,
     inset -0.3rem -0.2rem 0.5rem 0.1rem var(--navy),
     inset 0.2rem 0.4rem 0.5rem -0.2rem var(--primary-greyBlue);
 
@@ -96,7 +96,7 @@
     inset 0.2rem -0.5rem 0.25rem -0.1rem var(--primary-white);
 
   /* Colors */
-  --primary-white: rgba(249, 247, 247, 0.969);
+  --primary-white: rgba(245, 234, 234, 0.973);
   --primary-lighter-blue: #51a0ee;
   --primary-blue: #4485c6;
   --primary-darker-blue: #2d6296;
@@ -155,12 +155,13 @@
   /* #ebebc7; */
 
   --bg: #fafad236;
-  --bg-pink: #fde0c536;
-  --primaryColor: #f3e8d393;
-  --primaryText: VAR(--dark-slate);
-  --secondaryColor: #d7a23a;
-  --secondaryColor-dark: #966503;
-  --secondaryColor-darkest: #573a01;
+  --bg-pink: #f8bf6a48;
+  --bg-sub-dark: #583f192f;
+  --primaryColor: #f8efdd93;
+  --primaryText: #573a01;
+  --secondaryColor: #ce9b34;
+  --secondaryColor-dark: #916610;
+  --secondaryColor-darkest: #5c3e03;
 
   --accent: #9ae7a7;
 
@@ -281,8 +282,8 @@
 }
 
 .highLight {
-  color: var(--secondaryColor);
-  font-weight: bolder;
+  color: var(--secondaryColor-dark);
+  font-weight: boldest;
 }
 
 /************************* HTML classes *********************************/
