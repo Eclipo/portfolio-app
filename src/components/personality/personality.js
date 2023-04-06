@@ -34,10 +34,6 @@ class Personality extends Component {
   render() {
     return (
       <div id="personality" className="sectionAnimation">
-        <div
-          className="sectionLine"
-          style={{ backgroundColor: "var(--primary-green)" }}></div>
-
         <h1 style={{ color: "var(--primary-green)" }}>Personality</h1>
 
         <PlayRefresh
@@ -405,8 +401,8 @@ class Personality extends Component {
             </div>
             <div className="duckText mx-auto">
               <p className="mb-0">
-              The purpose of the personality matrix above is to display two
-              facts:
+                The purpose of the personality matrix above is to display two
+                facts:
               </p>
               <ul className="skillBullet">
                 <li>
@@ -420,11 +416,11 @@ class Personality extends Component {
                 </li>
               </ul>
               <p>
-                My particular personality depends on a variety of conditions where
-                I can be either more or less of a specific trait. In the cards shown below, I will go through some of my personal
+                My particular personality depends on a variety of conditions
+                where I can be either more or less of a specific trait. In the
+                cards shown below, I will go through some of my personal
                 attributes in more detail.
               </p>
-            
             </div>
 
             <div className="container flexCenter">

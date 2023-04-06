@@ -51,9 +51,7 @@ class Portfolio extends Component {
   render() {
     return (
       <div id="portfolioID" className="sectionAnimation">
-        <div
-          className="sectionLine"
-          style={{ backgroundColor: "var(--primary-pink)" }}></div>
+        
         <h1 style={{ color: "var(--primary-pink" }}>The story</h1>
 
         <div className="flexCenter" id="portfolioContainerID">

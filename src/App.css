@@ -154,12 +154,13 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg: #f6f6eb;
-  --primaryColor: #d5d6ea;
+  --bg: #fafad236;
+  --bg-pink: #fde0c536;
+  --primaryColor: #f3e8d393;
   --primaryText: VAR(--dark-slate);
-  --secondaryColor: #d14998;
-  --secondaryColor-dark: #8d005f;
-  --secondaryColor-darkest: #550030;
+  --secondaryColor: #d7a23a;
+  --secondaryColor-dark: #966503;
+  --secondaryColor-darkest: #573a01;
 
   --accent: #9ae7a7;
 
@@ -175,18 +176,26 @@
 
 /************************* MAIN CSS CLASSES *********************************/
 
+.sectionAnimation:nth-child(even) {
+  background: var(--bg);
+}
+.sectionAnimation:nth-child(odd) {
+  background: var(--bg-pink);
+}
+
 .sectionAnimation {
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
   min-height: 50vh;
   margin: auto;
-  padding-bottom: 2.5rem;
   display: block;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.mainContainer {
+.primaryContainer {
   background-color: var(--primaryColor);
   box-shadow: var(--blackWhiteShadow);
   width: 95% !important;
@@ -195,14 +204,6 @@
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.sectionLine {
-  width: 90% !important;
-  height: 0.3rem !important;
-  margin-bottom: 1.5rem !important;
-  margin: auto;
-  background-color: var(--secondaryColor) !important;
 }
 
 .flexCenter {
@@ -782,7 +783,7 @@ ul > li {
 }
 
 #navIconID {
-  color: var(--bg) !important;
+  color: var(--primary-white) !important;
   padding-top: 0.5rem !important;
   padding-bottom: 0.25rem !important;
 }

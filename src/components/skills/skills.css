@@ -97,19 +97,16 @@ button .skillCategory {
 }
 
 .skillCategory:hover {
-  color: var(--light-slate);
   box-shadow: var(--btnSkillHoverShadow);
   transition: var(--transition);
 }
 
 .skillCategory:active {
-  color: var(--slate);
   box-shadow: var(--btnSkillActiveShadow);
   transition: var(--transition);
 }
 
 .selectedBtn {
-  color: var(--bg) !important;
   transition: var(--transition);
 }
 
@@ -214,22 +211,22 @@ tr > td > .sectionLine {
 }
 
 .skillP {
-  color: var(--bg) !important;
+  color: var(--primary-white) !important;
 }
 
 .frontEndTheme {
   background-color: var(--secondaryColor) !important;
-  color: var(--lightest-slate);
+  color: var(--primary-white);
 }
 
 .backEndTheme {
   background-color: var(--secondaryColor-dark) !important;
-  color: var(--lightest-slate);
+  color: var(--primary-white);
 }
 
 .rolesTheme {
   background-color: var(--secondaryColor-darkest) !important;
-  color: var(--lightest-slate);
+  color: var(--primary-white);
 }
 
 .duckContainer {

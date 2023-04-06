@@ -17,10 +17,6 @@ class Experiences extends Component {
   render() {
     return (
       <div className="sectionAnimation" id="experiencesID">
-        <div
-          className="sectionLine"
-          style={{ backgroundColor: "var(--primary-purple)" }}></div>
-
         <h1 style={{ color: "var(--primary-purple)" }}>
           Major<br></br>Experiences
         </h1>

@@ -111,9 +111,7 @@ class Skills extends Component {
   render() {
     return (
       <div id="skills" className="sectionAnimation">
-        <div
-          className="container-sm skillContainer mainContainer"
-          id="skillContainerID">
+        <div className="container-sm skillContainer" id="skillContainerID">
           <h1>Skills</h1>
 
           <div className="row"></div>
@@ -329,9 +327,11 @@ class Skills extends Component {
           </table>
         </div>
 
-        <div className="container-sm" id="duckContainerID">
+        <div className="container-sm primaryContainer" id="duckContainerID">
           <div className="row">
-            <h2 style={{ color: "var(--primary-blue" }}>I am a duck</h2>
+            <h1>
+              I am<br></br>a duck
+            </h1>
 
             <div className="flexCenter duckContainer">
               <Duck></Duck>

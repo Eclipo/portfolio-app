@@ -17,10 +17,6 @@ class ResumeOverview extends Component {
   render() {
     return (
       <div id="resumeOverview" className="sectionAnimation">
-        <div
-          className="sectionLine"
-          style={{ backgroundColor: "var(--primary-greyBlue)" }}></div>
-
         <h1 style={{ color: "var(--primary-greyBlue" }}>
           Resumé <br></br>Overview
         </h1>
@@ -132,7 +128,11 @@ class ResumeOverview extends Component {
                     <p className="m-1 mx-auto">
                       Present<br></br>2019-12
                     </p>
-                    <p className="m-1 mx-auto" style={{paddingRight:"0.35rem"}}>CGI Sverige AB</p>
+                    <p
+                      className="m-1 mx-auto"
+                      style={{ paddingRight: "0.35rem" }}>
+                      CGI Sverige AB
+                    </p>
                   </div>
                   <div className="width1 m-auto">
                     <div className=" header2VerticalUnderLine"></div>
@@ -160,7 +160,10 @@ class ResumeOverview extends Component {
                     <h4 className="expHeader-reverseColor">Bad luck</h4>
                     <p className="expHeader-reverseColor m-auto w-75">
                       Due to prior financial complications, Nexer AB left me
-                      speechless and I returned back to base. I guess that sometimes <span className="resumeHighLight">bad luck</span> happens in life.
+                      speechless and I returned back to base. I guess that
+                      sometimes{" "}
+                      <span className="resumeHighLight">bad luck</span> happens
+                      in life.
                     </p>
                   </div>
                 </div>
@@ -197,7 +200,11 @@ class ResumeOverview extends Component {
                     <p className="m-1 mx-auto">
                       2019-08<br></br>2015-09
                     </p>
-                    <p className="m-1 mx-auto" style={{paddingRight:"0.35rem"}}>CGI Sverige AB</p>
+                    <p
+                      className="m-1 mx-auto"
+                      style={{ paddingRight: "0.35rem" }}>
+                      CGI Sverige AB
+                    </p>
                   </div>
 
                   <div className="width1 m-auto">
@@ -231,13 +238,17 @@ class ResumeOverview extends Component {
                       The vow & The irony
                     </h4>
                     <p className="expHeader-reverseColor mx-auto w-75">
-                      The company had to increase its margin and unfortunately I was no longer needed in any position.
-                      Six months later the company was bought up by TietoEvry AB.
-                      <br></br><br></br>
-                       I made a <span className="resumeHighLight">vow</span> to never be unemployed again. For three
-                      years, I studied 50% at Midsweden University while working
-                      100% at CGI Sverige AB. 
-                      The <span className="resumeHighLight"> irony </span> of it all, I consulted CGI's customers who used Software Innovation's products.
+                      The company had to increase its margin and unfortunately I
+                      was no longer needed in any position. Six months later the
+                      company was bought up by TietoEvry AB.
+                      <br></br>
+                      <br></br>I made a{" "}
+                      <span className="resumeHighLight">vow</span> to never be
+                      unemployed again. For three years, I studied 50% at
+                      Midsweden University while working 100% at CGI Sverige AB.
+                      The <span className="resumeHighLight"> irony </span> of it
+                      all, I consulted CGI's customers who used Software
+                      Innovation's products.
                     </p>
                   </div>
                 </div>
@@ -247,7 +258,11 @@ class ResumeOverview extends Component {
                     <p className="m-1 mx-auto">
                       2015-01<br></br>2013-08
                     </p>
-                    <p className="m-1 mx-auto" style={{paddingRight:"0.35rem"}}>Software Innovation AB</p>
+                    <p
+                      className="m-1 mx-auto"
+                      style={{ paddingRight: "0.35rem" }}>
+                      Software Innovation AB
+                    </p>
                   </div>
 
                   <div className="width1 m-auto">
@@ -302,16 +317,16 @@ class ResumeOverview extends Component {
                       2013-02 - 2013-04
                     </h3>
                     <h3 className="expHeader-reverseColor">Unemployment</h3>
-                    <h4 className="expHeader-reverseColor">
-                      Welcome back
-                    </h4>
+                    <h4 className="expHeader-reverseColor">Welcome back</h4>
                     <p className="expHeader-reverseColor mx-auto w-75">
                       I was sent away for new adventures, despite my best
-                      efforts. Perhaps it was meant to be because a couple years later
-                      they had to shut down the business.<br></br>
+                      efforts. Perhaps it was meant to be because a couple years
+                      later they had to shut down the business.<br></br>
                       <br></br>
-                      Long story short, I was <span className="resumeHighLight">welcome back</span> at TP Sweden
-                      (Teleperformance) and for that I am very grateful.
+                      Long story short, I was{" "}
+                      <span className="resumeHighLight">welcome back</span> at
+                      TP Sweden (Teleperformance) and for that I am very
+                      grateful.
                     </p>
                   </div>
                 </div>
