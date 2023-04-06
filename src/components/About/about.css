@@ -96,13 +96,14 @@
 .control-next:hover,
 .control-prev:hover {
   background-color: transparent !important;
-  color: var(--secondaryColor) !important;
+  color: var(--secondaryColor-dark) !important;
 }
 
 .control-next,
 .control-prev {
   scale: 1.5 !important;
   color: var(--secondaryColor) !important;
+  opacity: 1 !important;
 }
 
 .carousel .control-dots .dot {
