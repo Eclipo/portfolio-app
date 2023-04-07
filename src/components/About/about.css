@@ -264,3 +264,67 @@
   z-index: -1;
   opacity: 1;
 }
+
+.customArrowBtn {
+  padding: 0.75rem !important;
+  margin: 0.25rem !important;
+  width: fit-content;
+
+  opacity: 1;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  border-radius: 18px;
+  border: 0.1rem solid black;
+  transition: var(--transition);
+  box-shadow: var(--btnShadow);
+  background-color: var(--secondaryColor);
+}
+
+.customArrowBtn:hover {
+  box-shadow: var(--btnSkillHoverShadow);
+  transition: var(--transition);
+}
+
+.customArrowBtn:active {
+  box-shadow: var(--btnSkillActiveShadow);
+  transition: var(--transition);
+}
+
+.leftBtn {
+  transform: rotate(180deg);
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-style: solid;
+  /* border-width: 200px 200px 0 0; */
+  /* border-color: #007bff transparent transparent transparent; */
+  /* border: 0.2rem solid var(--secondaryColor-darkest); */
+  color: var(--primary-white);
+  border: none;
+  margin-right: 0.25rem;
+  /* background-color: var(--secondaryColor-dark); */
+
+  /* position: absolute; */
+  margin-top: 0.5rem;
+}
+
+.rightBtn {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-white);
+  margin-top: 0.5rem;
+}
+
+.rightBtn:hover {
+  color: var(--slate) !important;
+}
+.rightBtn:active {
+  color: var(--dark-slate) !important;
+}
+
+.leftBtn:hover {
+  color: var(--slate) !important;
+}
+.leftBtn:active {
+  color: var(--dark-slate) !important;
+}

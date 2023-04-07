@@ -24,9 +24,10 @@
   --btnSkillActiveShadow: 0 0.15rem 0.25rem 0.1rem var(--primary-white),
     inset 0 0 2.5rem 0.25rem var(--darkest-navy);
 
-  --btnShadow: -0.05rem 0.1rem 0.1rem 0.1rem black,
-    inset -0.3rem -0.2rem 0.5rem 0.1rem var(--navy),
-    inset 0.3rem 0.5rem 0.5rem -0.2rem var(--primary-white);
+  /*NYA KNAPP SHADOW!!!! */
+  --btnShadow: 0.15rem 0.15rem 0.25rem 0.15rem black,
+    inset -0.1rem -0.1rem 0.5rem 0.1rem var(--secondaryColor-shadow),
+    inset 0.7rem 0.75rem 0.25rem -0.4rem var(--primary-white);
 
   --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--navy);
@@ -162,6 +163,7 @@
   --secondaryColor: #ce9b34;
   --secondaryColor-dark: #916610;
   --secondaryColor-darkest: #5c3e03;
+  --secondaryColor-shadow: #462f02;
 
   --accent: #9ae7a7;
 

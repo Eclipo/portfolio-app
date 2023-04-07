@@ -15,6 +15,8 @@ import { Weights } from "./Weights/Weights";
 import { LightSaber } from "./lightSaber/lightSaber";
 import { Mario } from "./Mario/mario";
 import { PlaySlide } from "../../PlayAnimation.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 class TestimonialsCarousel extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +33,15 @@ class TestimonialsCarousel extends Component {
         // infiniteLoop={true}
         // autoPlay={true}
         // interval={17500}
-      >
+        renderArrowPrev={(clickHandler, hasPrev, labelPrev) =>
+          hasPrev && (
+            <button class="customArrowBtn" onClick={clickHandler}>
+              <FontAwesomeIcon
+                icon={faPlay}
+                className="leftBtn"></FontAwesomeIcon>
+            </button>
+          )
+        }>
         <>
           <div
             className="containerSlide PT-4"
