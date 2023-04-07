@@ -17,7 +17,7 @@ class ResumeOverview extends Component {
   render() {
     return (
       <div id="resumeOverview" className="sectionAnimation">
-        <h1 style={{ color: "var(--primary-greyBlue" }}>
+        <h1>
           Resumé <br></br>Overview
         </h1>
         <div id="resumeContainerID">
@@ -59,7 +59,7 @@ class ResumeOverview extends Component {
                     <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                       <h3>Swedish</h3>
                       <div className="header3UnderLine"></div>
-                      <h4 className="m-auto p-1">Native</h4>
+                      <h4 className="roHeader4 m-auto p-1">Native</h4>
                     </div>
                   </div>
                   <div className="col m-2">
@@ -92,7 +92,7 @@ class ResumeOverview extends Component {
 
             <div className="resumeSection container-md" id="resumeEduSectionID">
               <div className="experienceTable">
-                <div className="row m-auto mb-4">
+                <div className="row m-auto mb-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2 m-1">
                     <h3 className="m-auto p-1">2015 - 2018</h3>
                     <h3 className="m-auto p-1">
@@ -105,7 +105,7 @@ class ResumeOverview extends Component {
                   </div>
                 </div>
 
-                <div className="row m-auto mb-4">
+                <div className="row m-auto mb-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2 m-1">
                     <h3 className="m-auto p-1">2009 - 2012</h3>
                     <h3 className="m-auto p-1">
@@ -148,23 +148,6 @@ class ResumeOverview extends Component {
                   <div className="col m-auto">
                     <p className="m-auto">Full-stack .Net</p>
                     <p className="m-auto">Angular</p>
-                  </div>
-                </div>
-
-                <div className="row expOverviewPeriod expOverviewPeriod-reverseColor mb-4">
-                  <div className="mt-2 mb-3 col m-auto">
-                    <h3 className="expHeader-reverseColor">
-                      2019-10 - 2019-12
-                    </h3>
-                    <h3 className=" expHeader-reverseColor">Unemployment</h3>
-                    <h4 className="expHeader-reverseColor">Bad luck</h4>
-                    <p className="expHeader-reverseColor m-auto w-75">
-                      Due to prior financial complications, Nexer AB left me
-                      speechless and I returned back to base. I guess that
-                      sometimes{" "}
-                      <span className="resumeHighLight">bad luck</span> happens
-                      in life.
-                    </p>
                   </div>
                 </div>
 
@@ -228,31 +211,6 @@ class ResumeOverview extends Component {
                   </div>
                 </div>
 
-                <div className="row expOverviewPeriod expOverviewPeriod-reverseColor mb-4">
-                  <div className="mt-2 mb-3 col m-auto">
-                    <h3 className="expHeader-reverseColor">
-                      2015-02 - 2015-08
-                    </h3>
-                    <h3 className=" expHeader-reverseColor">Unemployment</h3>
-                    <h4 className="expHeader-reverseColor">
-                      The vow & The irony
-                    </h4>
-                    <p className="expHeader-reverseColor mx-auto w-75">
-                      The company had to increase its margin and unfortunately I
-                      was no longer needed in any position. Six months later the
-                      company was bought up by TietoEvry AB.
-                      <br></br>
-                      <br></br>I made a{" "}
-                      <span className="resumeHighLight">vow</span> to never be
-                      unemployed again. For three years, I studied 50% at
-                      Midsweden University while working 100% at CGI Sverige AB.
-                      The <span className="resumeHighLight"> irony </span> of it
-                      all, I consulted CGI's customers who used Software
-                      Innovation's products.
-                    </p>
-                  </div>
-                </div>
-
                 <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                   <div className="col m-auto">
                     <p className="m-1 mx-auto">
@@ -311,26 +269,6 @@ class ResumeOverview extends Component {
                   </div>
                 </div>
 
-                <div className="row expOverviewPeriod expOverviewPeriod-reverseColor mb-4">
-                  <div className="mt-2 mb-3 col m-auto">
-                    <h3 className="expHeader-reverseColor">
-                      2013-02 - 2013-04
-                    </h3>
-                    <h3 className="expHeader-reverseColor">Unemployment</h3>
-                    <h4 className="expHeader-reverseColor">Welcome back</h4>
-                    <p className="expHeader-reverseColor mx-auto w-75">
-                      I was sent away for new adventures, despite my best
-                      efforts. Perhaps it was meant to be because a couple years
-                      later they had to shut down the business.<br></br>
-                      <br></br>
-                      Long story short, I was{" "}
-                      <span className="resumeHighLight">welcome back</span> at
-                      TP Sweden (Teleperformance) and for that I am very
-                      grateful.
-                    </p>
-                  </div>
-                </div>
-
                 <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
                   <div className="col m-auto">
                     <p className="m-1 mx-auto">
@@ -353,21 +291,6 @@ class ResumeOverview extends Component {
 
                   <div className="col m-auto">
                     <p className="m-auto">SAP</p>
-                  </div>
-                </div>
-
-                <div
-                  className="row expOverviewPeriod expOverviewPeriod-reverseColor mb-4"
-                  style={{ backgroundColor: "var(--primary-greyBlue)" }}>
-                  <div className="mt-2 mb-3 col m-auto">
-                    <h3 className="expHeader-reverseColor">2009 - 2012</h3>
-                    <h3 className="expHeader-reverseColor">
-                      Full-time studies
-                    </h3>
-                    <p className="expHeader-reverseColor mx-auto w-75">
-                      I studied and traveled around Asia during my studies at
-                      Jönköping International Business School. Good times.
-                    </p>
                   </div>
                 </div>
 

@@ -34,26 +34,26 @@ class TestimonialsCarousel extends Component {
         // autoPlay={true}
         // interval={17500}
         renderArrowPrev={(clickHandler, hasPrev, labelPrev) =>
-          hasPrev && (
+          (hasPrev = true && (
             <button
-              class="customArrowBtn customLeftArrowBtn"
+              className="customArrowBtn customLeftArrowBtn"
               onClick={clickHandler}>
               <FontAwesomeIcon
                 icon={faPlay}
                 className="leftBtn"></FontAwesomeIcon>
             </button>
-          )
+          ))
         }
         renderArrowNext={(clickHandler, hasNext, labelNext) =>
-          hasNext && (
+          (hasNext = true && (
             <button
-              class="customArrowBtn customRightArrowBtn"
+              className="customArrowBtn customRightArrowBtn"
               onClick={clickHandler}>
               <FontAwesomeIcon
                 icon={faPlay}
                 className="rightBtn"></FontAwesomeIcon>
             </button>
-          )
+          ))
         }>
         <>
           <div

@@ -29,7 +29,7 @@
 }
 
 .resumeTable p {
-  color: var(--primary-greyBlue);
+  color: var(--primaryText);
 }
 
 .expTableText {
@@ -53,15 +53,21 @@
   width: 30%;
 }
 
+h4 {
+  color: var(--secondaryColor-darkest);
+}
+
 .expOverviewPeriod {
-  background-color: var(--darkest-navy);
-  color: var(--primary-greyBlue);
+  background-color: var(--primaryColor);
+  color: var(--primaryText);
   border-radius: 18px;
-  margin: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding: 1rem !important;
-  box-shadow: var(--btnDesinShadow);
+  margin: auto !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
+  border: 0.1rem solid black;
+  box-shadow: var(--blackWhiteShadow);
+  padding: 0.5rem;
+  width: 100%;
 }
 
 .expOverviewPeriod-dotted {
@@ -75,7 +81,7 @@
 }
 
 .expOverviewPeriod-reverseColor h3 {
-  color: black !important;
+  color: var(--primaryText) !important;
 }
 
 .expOverviewPeriod-reverseColor h4 {
@@ -90,12 +96,17 @@
 }
 
 .resumeSection {
-  color: var(--primary-greyBlue);
-  width: fit-content;
+  color: var(--primary-white);
+  background: var(--bg-sub-dark);
+
+  border-radius: 18px;
+  min-width: 80%;
+
   margin-bottom: 2vh !important;
-  margin: auto;
+  margin: auto !important;
   opacity: 0;
   display: none;
+  padding: 0.5rem;
 }
 
 .resumeNavMenu {
@@ -136,70 +147,58 @@
   transition: var(--transition);
 }
 
-.resumeNav:hover h2 {
-  color: var(--primary-greyBlue);
-}
-
 .resumeNav:hover {
-  background-color: var(--dark-navy);
-  box-shadow: var(--btnSkillHoverShadow);
+  background-color: var(--btnHoverColor);
 }
 
 #resumeLangID.resumeNavFocus {
   background: linear-gradient(
     to left,
-    var(--primary-greyBlue) 50%,
-    var(--dark-navy)
+    var(--btnHoverColor) 50%,
+    var(--secondaryColor-darkest)
   );
-  color: var(--dark-navy) !important;
+  color: var(--primary-white) !important;
   background-size: 200%;
   background-position: right bottom;
   border: none !important;
 }
 
 #resumeExpID.resumeNavFocus {
-  background: linear-gradient(to left, var(--primary-greyBlue) 50%, black);
-  color: var(--dark-navy) !important;
+  background: linear-gradient(
+    to left,
+    var(--btnHoverColor) 50%,
+    var(--secondaryColor-darkest)
+  );
   background-size: 200%;
   background-position: right bottom;
   border: none !important;
 }
 
 #resumeEduID.resumeNavFocus {
-  background: linear-gradient(to left, var(--primary-greyBlue) 50%, black);
-  color: var(--dark-navy) !important;
+  background: linear-gradient(
+    to left,
+    var(--btnHoverColor) 50%,
+    var(--secondaryColor-darkest)
+  );
   background-size: 200%;
   background-position: right bottom;
   border: none !important;
 }
 
 .resumeNav:focus {
-  background: linear-gradient(to left, var(--primary-greyBlue) 50%, black);
-  color: var(--dark-navy) !important;
+  background: linear-gradient(
+    to left,
+    var(--btnHoverColor) 50%,
+    var(--secondaryColor-darkest)
+  );
   background-size: 200%;
   background-position: right bottom;
   transition: all 2s ease-out;
   border: none !important;
 }
 
-.resumeNav:focus h2 {
-  color: black;
-}
-
-#resumeLangID.resumeNavFocus h2 {
-  color: black;
-}
-
-#resumeExpID.resumeNavFocus h2 {
-  color: black;
-}
-
-#resumeEduID.resumeNavFocus h2 {
-  color: black;
-}
-
 .activeNav {
-  background-color: var(--primary-greyBlue);
+  background-color: var(--darkest-slate);
   border-color: var(--navy);
   border-style: double;
   border-width: 0.4rem;
@@ -207,7 +206,7 @@
 }
 
 .resumeSection h3 {
-  color: var(--primary-greyBlue);
+  color: var(--primaryText);
 }
 
 .expHeader-reverseColor {
@@ -215,7 +214,7 @@
 }
 
 .header2UnderLine {
-  border-color: var(--primary-greyBlue);
+  border-color: var(--secondaryColor-darkest);
   border-width: 0.1vw;
   border-style: solid;
   height: 1.5vh;
@@ -226,20 +225,22 @@
 }
 
 .header2VerticalUnderLine {
-  background-color: var(--primary-greyBlue);
+  background-color: var(--secondaryColor-darkest);
   height: 3.5rem;
   width: 0.2rem;
+  margin-left: 0.1rem !important;
+  margin-right: 0.1rem !important;
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
 }
 
 .header3UnderLine {
-  background-color: var(--primary-greyBlue);
+  background-color: var(--secondaryColor-darkest);
   height: 0.75vh;
   border-color: var(--navy);
   border-width: 0.1vw;
   border-style: solid;
-  width: 50%;
+  max-width: 40%;
   margin: auto;
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;

@@ -8,17 +8,17 @@
   pointer-events: none;
   display: none;
   transition: var(--transition) !important;
-  box-shadow: var(--blackWhiteShadow) !important;
+  box-shadow: var(--btnShadow) !important;
 }
 
 .btnPlay {
-  background-color: var(--btnLight-navy);
+  background-color: var(--secondaryColor) !important;
   border: 0.15rem black solid;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
   transition: var(--transition) !important;
-  box-shadow: var(--btnShadow);
+  box-shadow: var(--btnShadow) !important;
 }
 
 .fntAwesome {
@@ -27,35 +27,11 @@
 }
 
 .btnPlay:hover {
-  box-shadow: var(--btnHoverShadow);
-}
-
-.btnPlay:hover > .fntAwesome {
-  color: var(--light-slate);
-}
-
-.btnPlay:active {
-  box-shadow: var(--btnActiveShadow);
-}
-
-.btnPlay:active > .fntAwesome {
-  color: var(--slate);
+  background-color: var(--secondaryColor-dark) !important;
 }
 
 .btnRefresh:hover {
-  box-shadow: var(--btnHoverShadow);
-}
-
-.btnRefresh:hover > .fntAwesome {
-  color: var(--light-slate);
-}
-
-.btnRefresh:active {
-  box-shadow: var(--btnActiveShadow);
-}
-
-.btnRefresh:active > .fntAwesome {
-  color: var(--slate);
+  background-color: var(--secondaryColor-dark) !important;
 }
 
 .row {

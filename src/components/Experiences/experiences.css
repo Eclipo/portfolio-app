@@ -145,10 +145,11 @@
 .scrollArrow {
   vertical-align: middle !important;
   transition: var(--transition);
+  color: var(--secondaryColor-dark);
 }
 
 .scrollArrow:hover {
-  color: #64ffda;
+  color: var(--secondaryColor-dark);
 }
 
 h2 {
@@ -173,16 +174,17 @@ h2 {
 }
 
 .techCategory:hover {
-  box-shadow: var(--btnSkillHoverShadow);
+  background-color: var(--btnHoverColor) !important;
 }
 
 .techCategory:active {
-  box-shadow: var(--btnSkillActiveShadow) !important;
+  background-color: var(--btnActiveColor) !important;
 }
 .scrollLine {
   margin: auto;
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
+  height: 0.25rem;
 }
 
 #expCategoryMenu {
@@ -213,7 +215,7 @@ h2 {
 }
 
 ::-webkit-scrollbar-thumb:horizontal:hover {
-  background-color: var(--primary-light-green);
+  background-color: var(--secondaryColor-darkest);
 }
 
 /************************* EXP Information *********************************/
@@ -261,7 +263,7 @@ h2 {
 }
 
 .header3Tech {
-  color: var(--secondaryColor-darkest);
+  color: var(--primaryText);
   display: inline-block;
   height: fit-content;
   max-width: 11.25rem;
@@ -323,7 +325,7 @@ h2 {
 }
 
 .techText {
-  color: var(--light-slate);
+  color: var(--primaryText);
   text-align: left;
   white-space: normal !important;
   opacity: 0;

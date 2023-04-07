@@ -101,7 +101,7 @@
     inset 0.2rem -0.5rem 0.25rem -0.1rem var(--primary-white);
 
   /* Colors */
-  --primary-white: rgba(245, 234, 234, 0.973);
+  --primary-white: rgba(245, 237, 237, 0.993);
   --primary-lighter-blue: #51a0ee;
   --primary-blue: #4485c6;
   --primary-darker-blue: #2d6296;
@@ -133,7 +133,7 @@
   --primary-lightPink: rgb(255, 182, 194);
   --primary-purple: #bf65f3;
 
-  --darkest-navy: #160602;
+  --darkest-navy: #050216;
   --dark-navy: #270303;
   --navy: #2f0c0a;
   --light-navy: #401111;
@@ -161,10 +161,10 @@
 
   --bg: #fafad236;
   --bg-pink: #f8bf6a48;
-  --bg-sub-dark: #583f192f;
-  --primaryColor: #f8efdd93;
+  --bg-sub-dark: #7757272f;
+  --primaryColor: #fcfaee;
   --primaryText: #573a01;
-  --secondaryColor: #c48e22;
+  --secondaryColor: #cf9625;
   --secondaryColor-dark: #916610;
   --secondaryColor-darkest: #5c3e03;
   --secondaryColor-shadow: #462f02;
@@ -187,10 +187,10 @@
 /************************* MAIN CSS CLASSES *********************************/
 
 .sectionAnimation:nth-child(even) {
-  background: var(--bg);
+  background: var(--bg-pink);
 }
 .sectionAnimation:nth-child(odd) {
-  background: var(--bg-pink);
+  background: var(--bg);
 }
 
 .sectionAnimation {
@@ -355,7 +355,7 @@ h1 {
   text-transform: uppercase !important;
   text-align: center !important;
   margin-bottom: 1rem !important;
-  color: var(--primaryText) !important;
+  color: var(--primaryText);
 }
 
 h2 {

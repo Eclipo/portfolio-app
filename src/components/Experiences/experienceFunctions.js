@@ -59,13 +59,13 @@ export const animate = (inputID) => {
 
       anime({
         targets: ".techCategory",
-        color: "#d080ff",
+        backgroundColor: "#cf9625",
         easing: "linear",
         duration: 50,
         complete: function () {
           anime({
             targets: tab,
-            color: "#64ffda",
+            backgroundColor: "#5c3e03",
             easing: "linear",
             duration: 50,
             complete: function () {
@@ -81,6 +81,7 @@ export const animate = (inputID) => {
                     width: [0, 100],
                     duration: 350,
                     easing: "easeInOutQuad",
+                    backgroundColor: "#916610",
                     complete: function () {
                       if (inputID === "fintech") {
                         jobTitle = "Web developer";

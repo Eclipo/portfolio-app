@@ -112,6 +112,10 @@
   color: var(--secondaryColor) !important;
 }
 
+.dot.selected {
+  background-color: var(--secondaryColor-darkest) !important;
+}
+
 .containerSlide {
   display: flex;
   position: relative;
@@ -270,7 +274,7 @@
   padding: 0.5rem !important;
   width: 5rem;
   height: 3rem;
-  opacity: 1;
+  opacity: 1 !important;
 
   border-radius: 18px;
   border: 0.1rem solid black;
@@ -285,13 +289,18 @@
   top: 0;
   left: 0;
   position: absolute;
+  margin-bottom: 0.5rem !important;
+  margin-left: 1rem !important;
+  margin-top: 0.5rem;
 }
 
 .customRightArrowBtn {
   top: 0;
   right: 0;
   position: absolute;
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  margin-right: 1rem !important;
+  margin-top: 0.5rem;
 }
 
 .customArrowBtn:hover {
@@ -327,18 +336,4 @@
   border: none;
   margin: auto;
   margin-top: 0.15rem;
-}
-
-.rightBtn:hover {
-  color: var(--slate) !important;
-}
-.rightBtn:active {
-  color: var(--dark-slate) !important;
-}
-
-.leftBtn:hover {
-  color: var(--slate) !important;
-}
-.leftBtn:active {
-  color: var(--dark-slate) !important;
 }

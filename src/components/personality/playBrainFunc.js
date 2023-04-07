@@ -69,6 +69,8 @@ export async function playBrainFunc() {
         elContainer.style.display = "block";
         elContainer = document.getElementById("greenSquareTableID");
         elContainer.style.display = "none";
+        document.getElementById("bookSection").style.display = "block";
+
         anime({
           targets: ".personalityTraits",
           opacity: 0,
@@ -81,7 +83,7 @@ export async function playBrainFunc() {
 
               complete: function () {
                 anime({
-                  targets: ["#personalityTableID",".personalityTextContainer"],
+                  targets: ["#personalityTableID", ".personalityTextContainer"],
                   opacity: 1,
                   duration: 50,
                   easing: "linear",
