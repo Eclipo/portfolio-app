@@ -1,7 +1,11 @@
 :root {
   /*Claymorphism boxShadows*/
-  --menuBtnSkillShadow: 0 0.1rem -0.1rem 0.1rem black,
-    inset 0.2rem 0.5rem 0.1rem -0.1rem var(--primary-white);
+  --menuBtnShadow: 0rem 0rem 0.1rem -0.1rem black,
+    inset -0.1rem -0.1rem 0.5rem 0.1rem var(--secondaryColor-shadow),
+    inset 0rem 0.2rem 0.25rem 0.1rem var(--primary-white);
+
+  --menuBtnHoverShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
+    inset 0 0 1rem 0.5rem var(--navy);
 
   --navBtnSkillShadow: 0 0.1rem 0.25rem -0.1rem black,
     inset 0.1rem -0.25rem 0.5rem 0.3rem var(--lightest-navy),
@@ -25,15 +29,15 @@
     inset 0 0 2.5rem 0.25rem var(--darkest-navy);
 
   /*NYA KNAPP SHADOW!!!! */
-  --btnShadow: 0.15rem 0.15rem 0.25rem 0.15rem black,
+  --btnShadow: 0.15rem 0.15rem 0.25rem 0.1rem black,
     inset -0.1rem -0.1rem 0.5rem 0.1rem var(--secondaryColor-shadow),
-    inset 0.7rem 0.75rem 0.25rem -0.4rem var(--primary-white);
+    inset 0.6rem 0.65rem 0.25rem -0.4rem var(--primary-white);
 
   --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
-    inset 0 0 1rem 0.5rem var(--navy);
+    inset 0 0 1rem 0.5rem var(--secondary-shadow);
 
   --btnActiveShadow: 0 0.3rem 0.25rem 0 var(--lightest-slate),
-    inset 0 0 3rem 0 var(--navy);
+    inset 0 0 3rem 0 var(--secondary-shadow);
 
   --btnDesinShadow: 0 0 0.1rem -0.1rem var(--darkest-navy),
     inset -0rem -0.1rem 0.2rem 0.2rem var(--light-navy),
@@ -160,10 +164,13 @@
   --bg-sub-dark: #583f192f;
   --primaryColor: #f8efdd93;
   --primaryText: #573a01;
-  --secondaryColor: #ce9b34;
+  --secondaryColor: #c48e22;
   --secondaryColor-dark: #916610;
   --secondaryColor-darkest: #5c3e03;
   --secondaryColor-shadow: #462f02;
+
+  --btnHoverColor: #ac7b1b;
+  --btnActiveColor: #a3710c;
 
   --accent: #9ae7a7;
 
@@ -230,24 +237,34 @@
   text-align: center;
 }
 
+button:hover {
+  background-color: var(--btnHoverColor);
+  transition: var(--transition);
+}
+
+button:active {
+  transition: var(--transition);
+  scale: 0.95;
+}
+
 .menuBtn {
   border-radius: 50%;
 
   transition: var(--transition);
-  box-shadow: var(--blackWhiteShadow) !important;
+  box-shadow: var(--menuBtnShadow);
 }
 
 .menuBtn .fntAwesome {
-  background-color: var(--lightest-navy) !important;
+  background-color: var(--secondaryColor);
 }
 .menuBtn:hover {
-  color: var(--lightest-slate);
-  box-shadow: var(--btnActiveShadow);
+  background-color: var(--btnHoverColor);
 }
 
 .menuBtn:active {
   color: var(--slate);
-  box-shadow: var(--btnActiveShadow);
+  background-color: var(--btnActiveColor) !important;
+  scale: 0.95;
 }
 
 .playIcon {
@@ -755,23 +772,23 @@ ul > li {
 }
 
 #navbarTogglerID {
-  margin-top: 0.5rem;
+  margin: 0.5rem;
   width: 3rem;
-  background-color: var(--secondaryColor) !important;
+  background-color: var(--secondaryColor);
   border: 0.1rem black solid !important;
 }
-
 #navbarTogglerID:hover {
-  box-shadow: var(--btnNavHoverActiveShadow) !important;
+  background-color: var(--btnHoverColor);
 }
+
+/* 
 
 #navbarTogglerID:hover > #navIconID {
   color: var(--lightest-slate) !important;
 }
 
-#navbarTogglerID:active > #navIconID {
-  color: var(--slate) !important;
-}
+#
+} */
 
 #navbarSupportedContent {
   position: fixed;

@@ -97,56 +97,62 @@ button .skillCategory {
 }
 
 .skillCategory:hover {
-  box-shadow: var(--btnSkillHoverShadow);
-  transition: var(--transition);
-}
-
-.skillCategory:active {
-  box-shadow: var(--btnSkillActiveShadow);
   transition: var(--transition);
 }
 
 .selectedBtn {
+  scale: 0.95;
   transition: var(--transition);
 }
 
+button .selectedBtn.frontEndTheme {
+  background-color: var(--btnHoverColor) !important;
+}
+button .selectedBtn.backEndTheme {
+  background-color: #7a5408 !important;
+}
+
+button .selectedBtn.rolesTheme {
+  background-color: #3b2801 !important;
+}
+
 .shadowAnimation {
-  animation-duration: 2s;
-  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 1s;
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-name: animateShadow;
   -webkit-animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
 }
 
 .shadowAnimation_2 {
-  animation-duration: 2s;
-  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 1s;
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-name: animateShadow;
   -webkit-animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
 }
 
 .shadowAnimation_3 {
-  animation-duration: 2s;
-  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 1s;
   animation-name: animateShadow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-name: animateShadow;
   -webkit-animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
@@ -154,11 +160,11 @@ button .skillCategory {
 
 @keyframes animateShadow {
   from {
-    box-shadow: var(--btnSkillShadow);
+    box-shadow: var(--btnShadow);
   }
 
   to {
-    box-shadow: var(--btnSkillHoverShadow);
+    scale: 0.95;
   }
 }
 
@@ -199,7 +205,6 @@ tr > td > .sectionLine {
 }
 
 .skill {
-  background-color: var(--primary-blue);
   width: 85%;
   margin: auto;
   margin-top: 0.5rem;
@@ -226,6 +231,26 @@ tr > td > .sectionLine {
 
 .rolesTheme {
   background-color: var(--secondaryColor-darkest) !important;
+  color: var(--primary-white);
+}
+
+button .frontEndTheme:hover {
+  background-color: var(--btnHoverColor) !important;
+}
+
+button .backEndTheme:hover {
+  background-color: #7a5408 !important;
+}
+
+button .rolesTheme:hover {
+  background-color: #3b2801 !important;
+}
+
+button .frontEndTheme:active,
+button .backEndTheme:active,
+button .rolesTheme:active {
+  scale: 0.98;
+  transition: var(--transition);
   color: var(--primary-white);
 }
 

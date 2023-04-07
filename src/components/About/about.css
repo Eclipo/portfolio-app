@@ -67,7 +67,7 @@
 
 .carousel-root {
   margin: auto !important;
-  margin-top: 1.5rem !important;
+  margin-top: 2.5rem !important;
   /* background-color: var(--primaryColor) !important; */
   /* box-shadow: var(--blackWhiteShadow) !important; */
   max-width: 98% !important;
@@ -108,7 +108,7 @@
 
 .carousel .control-dots .dot {
   opacity: 0.9 !important;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem !important;
   color: var(--secondaryColor) !important;
 }
 
@@ -124,7 +124,8 @@
   align-items: center;
   text-align: center;
   max-height: 22rem;
-  max-width: 80%;
+  max-width: 98%;
+  margin-top: 2rem !important;
   margin: auto;
   border-radius: 18px !important;
   box-shadow: -0.1rem 0.25rem 0.25rem -0.1rem black,
@@ -266,53 +267,66 @@
 }
 
 .customArrowBtn {
-  padding: 0.75rem !important;
-  margin: 0.25rem !important;
-  width: fit-content;
-
+  padding: 0.5rem !important;
+  width: 5rem;
+  height: 3rem;
   opacity: 1;
-  margin-bottom: 0.25rem;
-  margin-top: 0.25rem;
+
   border-radius: 18px;
   border: 0.1rem solid black;
   transition: var(--transition);
-  box-shadow: var(--btnShadow);
+  box-shadow: var(--menuBtnShadow);
   background-color: var(--secondaryColor);
+  margin-bottom: -1rem !important;
+  z-index: 1000 !important;
+}
+
+.customLeftArrowBtn {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.customRightArrowBtn {
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin-bottom: 1rem !important;
 }
 
 .customArrowBtn:hover {
-  box-shadow: var(--btnSkillHoverShadow);
+  background-color: var(--btnHoverColor);
   transition: var(--transition);
 }
 
 .customArrowBtn:active {
-  box-shadow: var(--btnSkillActiveShadow);
+  background-color: var(--btnHoverColor);
+  scale: 0.95;
   transition: var(--transition);
 }
 
 .leftBtn {
   transform: rotate(180deg);
   width: 2rem;
-  height: 2rem;
+  height: 1.5rem;
   padding: 0;
   border-style: solid;
-  /* border-width: 200px 200px 0 0; */
-  /* border-color: #007bff transparent transparent transparent; */
-  /* border: 0.2rem solid var(--secondaryColor-darkest); */
   color: var(--primary-white);
   border: none;
-  margin-right: 0.25rem;
-  /* background-color: var(--secondaryColor-dark); */
-
-  /* position: absolute; */
-  margin-top: 0.5rem;
+  margin: auto;
+  margin-left: -0.25rem !important;
+  margin-top: 0.15rem;
 }
 
 .rightBtn {
   width: 2rem;
-  height: 2rem;
+  height: 1.5rem;
+  padding: 0;
+  border-style: solid;
   color: var(--primary-white);
-  margin-top: 0.5rem;
+  border: none;
+  margin: auto;
+  margin-top: 0.15rem;
 }
 
 .rightBtn:hover {

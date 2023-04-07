@@ -35,10 +35,23 @@ class TestimonialsCarousel extends Component {
         // interval={17500}
         renderArrowPrev={(clickHandler, hasPrev, labelPrev) =>
           hasPrev && (
-            <button class="customArrowBtn" onClick={clickHandler}>
+            <button
+              class="customArrowBtn customLeftArrowBtn"
+              onClick={clickHandler}>
               <FontAwesomeIcon
                 icon={faPlay}
                 className="leftBtn"></FontAwesomeIcon>
+            </button>
+          )
+        }
+        renderArrowNext={(clickHandler, hasNext, labelNext) =>
+          hasNext && (
+            <button
+              class="customArrowBtn customRightArrowBtn"
+              onClick={clickHandler}>
+              <FontAwesomeIcon
+                icon={faPlay}
+                className="rightBtn"></FontAwesomeIcon>
             </button>
           )
         }>
@@ -113,7 +126,7 @@ class TestimonialsCarousel extends Component {
 
         <>
           <div
-            className="containerSlide container basketContainer position-absolute"
+            className="containerSlide container basketContainer PT-4"
             style={{
               background: "var(--primary-darker-blue)",
               height: "26.5rem",
@@ -143,7 +156,7 @@ class TestimonialsCarousel extends Component {
 
         <>
           <div
-            className="containerSlide container basketContainer position-absolute"
+            className="containerSlide container basketContainer"
             style={{
               background: "var(--primary-lightDarkGrey)",
               height: "26.5rem",
@@ -161,7 +174,7 @@ class TestimonialsCarousel extends Component {
 
         <>
           <div
-            className="containerSlide container basketContainer starWarsBg position-absolute"
+            className="containerSlide container basketContainer starWarsBg"
             id="starsWarsID">
             <span className="stars" id="starsID"></span>
             <div className="flexCenter">
@@ -184,7 +197,7 @@ class TestimonialsCarousel extends Component {
 
         <>
           <div
-            className="containerSlide container basketContainer starWarsBg position-absolute"
+            className="containerSlide container basketContainer starWarsBg"
             style={{
               background: "var(--primary-blue)",
             }}>
