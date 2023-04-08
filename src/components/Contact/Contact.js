@@ -7,14 +7,9 @@ const Contact = () => {
   return (
     <div id="contactID" className="sectionAnimation">
       <div className="container-sm">
-        <h1 className="flexCenter" style={{ color: "var(--slate)" }}>
-          Contact
-        </h1>
-        <p
-          className="duckText mx-auto"
-          style={{ color: "var(--lightest-slate)" }}>
-          At the moment, I am not looking for any new adventures, but I am
-          always open to connecting with decent and honest people who enjoy
+        <h1 className="flexCenter">Contact</h1>
+        <p className="duckText mx-auto">
+          I am always open to connecting with decent and honest people who enjoy
           technology.
           <br></br>
           <br></br>
@@ -42,10 +37,8 @@ const Contact = () => {
 
       <div
         className="bottom-0"
-        style={{ marginTop: "5rem", marginBottom: "0rem" }}>
-        <p style={{ color: "var(--slate)" }}>
-          Designed and built by Edip Sarac
-        </p>
+        style={{ marginTop: "1rem", marginBottom: "0rem" }}>
+        <p>Designed and built by Edip Sarac</p>
         <a
           href="https://www.simpleanalytics.com/?utm_source=edipsarac.com&utm_content=badge"
           referrerpolicy="origin"

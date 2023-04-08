@@ -159,7 +159,7 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg: #fafad236;
+  --bg: #f1f1ca36;
   --bg-pink: #f8bf6a48;
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfaee;
@@ -301,7 +301,7 @@ button:active {
 }
 
 .highLight {
-  color: var(--secondaryColor-dark);
+  color: var(--secondaryColor-darkest);
   font-weight: boldest;
 }
 

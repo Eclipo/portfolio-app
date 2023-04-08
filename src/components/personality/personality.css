@@ -197,44 +197,56 @@
 
 .personalityCard {
   border: none !important;
-  background-color: var(--primary-green);
+  border-radius: 18px !important;
+  background-color: var(--secondaryColor);
   width: 25rem;
   height: fit-content;
   margin: 2rem;
   cursor: pointer;
   transition: var(--transition);
-  box-shadow: var(--btnPersonalityCardShadow);
+  box-shadow: var(--btnShadow);
 }
 
 .personalityCard:hover {
-  box-shadow: var(--btnPersonalityCardActiveShadow);
+  background-color: var(--secondaryColor-dark);
+}
+
+.personalityCard.selectedPersonalityCard:hover {
+  background-color: var(--primaryColor);
+}
+
+.btnPersonalityCard:hover {
+  background-color: var(--primaryColor) !important;
 }
 
 .personalityCard:active {
   opacity: 0.9;
-  box-shadow: var(--btnPersonalityCardHoverShadow);
+  scale: 0.95;
 }
 
 .personalityCard.selectedPersonalityCard {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: var(--light-navy) !important;
-  box-shadow: var(--btnSelectedPersonalityCardShadow) !important;
+  background-color: var(--primaryColor) !important;
+  box-shadow: var(--blackWhiteShadow) !important;
+  border: 0.125rem solid black !important;
+  border-radius: 18px !important;
 }
 
-.selectedPersonalityCard > .card-body {
+/* .selectedPersonalityCard > .card-body {
   border: none !important;
-}
+} */
 
-.personalityCard:hover > .card-body {
+/* .personalityCard:hover > .card-body {
   border: 0.1rem var(--dark-navy) solid;
-}
+} */
 
 .btnPersonalityCard {
   border: none;
   background-color: transparent;
   margin: 0.5rem;
 }
+
 .personalityCard h4 {
   margin: auto;
   text-align: center;
@@ -249,24 +261,38 @@
   padding-bottom: 0rem;
   padding-top: 0rem;
   border: 0.1rem black solid;
-  background-color: var(--btnLight-navy);
+  background-color: var(--secondaryColor);
   font-weight: 800;
   border-radius: 50%;
-  color: var(--primary-pink);
   display: none;
-  box-shadow: var(--navBtnSkillShadow);
+  box-shadow: var(--menuBtnShadow);
   transition: var(--transition);
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .personalityCloseBtn:hover {
   color: var(--slate);
-  background-color: var(--lightest-navy) !important;
-  box-shadow: var(--btnHoverShadow);
+  background-color: var(--secondaryColor-dark) !important;
 }
 
-.personalityCard h3,
+.personalityCard h3 {
+  color: var(--primary-white) !important;
+  transition: var(--transition);
+}
+
+.personalityCard.selectedPersonalityCard h3 {
+  color: var(--primaryText) !important;
+  transition: var(--transition);
+}
+
 .personalityCard h4 {
-  color: var(--light-navy);
+  color: var(--secondaryColor-darkest) !important;
+  transition: var(--transition);
+}
+
+.personalityCard.selectedPersonalityCard h4 {
+  color: var(--secondaryColor-dark) !important;
   transition: var(--transition);
 }
 

@@ -7,20 +7,32 @@ export const startAttributeAnimation = (inputID) => {
 
     anime({
       targets: card,
-      backgroundColor: "#041122",
+      backgroundColor: "#fcfaee",
       scale: [1, 1.15],
       duration: 250,
     });
 
     anime({
       targets: [card + "_h3", card + "_h4"],
-      color: "#33d684",
+      color: "rgba(245, 237, 237, 0.993)",
+      duration: 250,
+    });
+
+    anime({
+      targets: [card + "_h3"],
+      color: "#5c3e03",
+      duration: 250,
+    });
+
+    anime({
+      targets: [card + "_h4"],
+      color: "#462f02",
       duration: 250,
     });
 
     anime({
       targets: card + "_p",
-      color: "#a8b2d1",
+      color: "#1d232f",
       duration: 250,
       begin: function () {
         document.getElementById(inputID + "_p").style.display = "block";
@@ -43,7 +55,7 @@ export const resetAttributeAnimation = (inputID) => {
 
   anime({
     targets: card,
-    backgroundColor: "#33d684",
+    backgroundColor: "#cf9625",
     scale: [1.15, 1],
     duration: 1250,
     complete: function () {
