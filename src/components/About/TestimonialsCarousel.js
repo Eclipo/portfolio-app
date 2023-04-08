@@ -30,9 +30,7 @@ class TestimonialsCarousel extends Component {
         showThumbs={false}
         showStatus={false}
         onChange={PlaySlide}
-        // infiniteLoop={true}
-        // autoPlay={true}
-        // interval={17500}
+        infiniteLoop={true}
         renderArrowPrev={(clickHandler, hasPrev, labelPrev) =>
           (hasPrev = true && (
             <button

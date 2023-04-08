@@ -27,18 +27,17 @@
   border-radius: 50%;
   transition: var(--transition);
   margin-top: 1rem !important;
-  background-color: var(--btnLight-navy);
+  background-color: var(--secondaryColor);
   border: 0.1rem black solid;
-  box-shadow: var(--btnDesinShadow);
+  box-shadow: var(--menuBtnShadow);
 }
 
 #resetSkills .fntAwesome:hover {
-  color: var(--lightest-slate);
-  box-shadow: var(--btnSkillHoverShadow);
+  background-color: var(--secondaryColor-dark);
 }
 
 #resetSkills .fntAwesome:active {
-  color: var(--dark-slate);
+  scale: 0.95;
 }
 
 ul.a {

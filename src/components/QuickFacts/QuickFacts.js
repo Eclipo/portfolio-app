@@ -17,7 +17,7 @@ const QuickFacts = () => {
           I'm Edip Sarac!
         </h1>
 
-        <div className="flexCenter mb-0 pb-0" style={{ marginTop: "-7.5rem" }}>
+        <div className="flexCenter mb-3 pb-0" style={{ marginTop: "-6.5rem" }}>
           <EdipGuy></EdipGuy>
         </div>
         <div className="flexCenter mb-0 pb-0" style={{ marginTop: "-6rem" }}>

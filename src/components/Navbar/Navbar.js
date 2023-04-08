@@ -54,7 +54,6 @@ export const Navbar = () => {
     document.getElementById("personality").classList.remove(input);
     document.getElementById("resumeOverview").classList.remove(input);
     document.getElementById("experiencesID").classList.remove(input);
-    document.getElementById("portfolioID").classList.remove(input);
     document.getElementById("contactID").classList.remove(input);
   }
 
@@ -66,16 +65,14 @@ export const Navbar = () => {
     document.getElementById("personality").classList.add(input);
     document.getElementById("resumeOverview").classList.add(input);
     document.getElementById("experiencesID").classList.add(input);
-    document.getElementById("portfolioID").classList.add(input);
     document.getElementById("contactID").classList.add(input);
   }
 
   const cbRedGreenMode = () => {
     setCbRedGreen((current) => !current);
-    setIsActive((current) => true);
+    //
     if (cbRedGreenToggle.current === false) {
       addColors("colorBlindRedGreen");
-
       document.body.classList.remove("bodyDefaultBg");
       document.getElementById("root").classList.remove("bodyDefaultBg");
 
@@ -96,6 +93,7 @@ export const Navbar = () => {
 
       document.body.classList.add("bodyDefaultBg");
       document.getElementById("root").classList.add("bodyDefaultBg");
+      console.log("redgren...", isCbRedGreen);
     }
   };
 
@@ -211,7 +209,8 @@ export const Navbar = () => {
                       <p className="navP m-0 p-0">
                         These design tools have helped me in building websites.
                         <br></br>
-                        Try them out for an enhanced experience and understand my take on web design.
+                        Try them out for an enhanced experience and understand
+                        my take on web design.
                       </p>
 
                       <hr className="navDivider"></hr>
@@ -341,8 +340,9 @@ export const Navbar = () => {
                           </p>
                           <p>
                             <br></br>
-                            Worth to mention, the filter-effects might slow down the animations.
-                            Furthermore, I can't get it to work with the mobilebrowser Safari on iPhone. Sorry.
+                            Worth to mention, the filter-effects might slow down
+                            the animations. Furthermore, I can't get it to work
+                            with the mobilebrowser Safari on iPhone. Sorry.
                           </p>
                         </div>
                       </div>
@@ -350,7 +350,6 @@ export const Navbar = () => {
                   </div>
                 </div>
               </div>
-            
 
               <li className="nav-item active" style={{ marginTop: "-0.25rem" }}>
                 <Link
@@ -362,7 +361,6 @@ export const Navbar = () => {
                   tabIndex={0}>
                   <h3 className="navLinkH3">Quick Facts</h3>
                   <span className="sr-only">(current)</span>
-
                 </Link>
               </li>
 

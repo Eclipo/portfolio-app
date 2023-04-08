@@ -146,7 +146,7 @@ class ResumeOverview extends Component {
                     <div className="header2VerticalUnderLine"></div>
                   </div>
                   <div className="col m-auto">
-                    <p className="m-auto">Full-stack .Net</p>
+                    <p className="m-auto">.Net</p>
                     <p className="m-auto">Angular</p>
                   </div>
                 </div>

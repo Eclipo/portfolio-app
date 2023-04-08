@@ -35,19 +35,20 @@ class Personality extends Component {
     return (
       <div id="personality" className="sectionAnimation">
         <div className="animationPersonaSection">
-          <h1 style={{ color: "var(--primary-green)" }}>Personality</h1>
+          <h1 className="personalityFont">
+            My<br></br>Persona
+          </h1>
 
           <PlayRefresh
             id="PersonalityAnimation"
             playBoolean={0}
             playText={
-              <p className="introPersonalitytext">
-                For those who want to know me a bit better.
+              <p className="introPersonalitytext ">
+                For those who <br></br>want to know me.
                 <br></br>
-                <br></br>
-                Just a little head's up. Don't stare at it for too long.
-                <br></br>
-                You'll know what I mean...
+                <br></br>A warning. <br></br>
+                Don't stare at it.
+                <br></br>I have spoken...
               </p>
             }
             textColor="var(--primary-red)"></PlayRefresh>
@@ -415,25 +416,15 @@ class Personality extends Component {
           </div>
           <div className="duckText mx-auto">
             <p className="mb-0">
-              The purpose of the personality matrix above is to display two
-              facts:
-            </p>
-            <ul className="skillBullet">
-              <li>
-                It is quite <span className="highLight"> easy to label </span>a
-                person based on the very first impression.
-              </li>
+              Hopefully you didn't stare at my personality for too long and it
+              shouldn't be taken too seriously though. My personality is a bit
+              messy, just like with most people.
               <br></br>
-              <li>
-                A personality is rather{" "}
-                <span className="highLight"> dynamic </span> than static.
-              </li>
-            </ul>
-            <p>
-              My particular personality depends on a variety of conditions where
-              I can be either more or less of a specific trait. In the cards
-              shown below, I will go through some of my personal attributes in
-              more detail.
+              <br></br>
+              In the cards shown below, I will go through some of my personal
+              attributes in more detail. This is probably the most important
+              section of the website, at least for those of you who truly want
+              to know me better.
             </p>
           </div>
 

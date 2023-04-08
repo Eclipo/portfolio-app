@@ -31,7 +31,7 @@
 }
 
 .testimonials h2 {
-  color: var(--secondaryColor);
+  color: var(--primary-white);
 }
 
 .testimonials p {
@@ -57,7 +57,6 @@
   background: var(--secondaryColor) !important;
   margin-bottom: 3.5rem !important;
   height: 2.25rem !important;
-  max-width: 50rem;
 
   justify-content: center !important;
   align-content: center !important;
@@ -290,7 +289,8 @@
   position: absolute;
   margin-bottom: 0.5rem !important;
   margin-left: 1rem !important;
-  margin-top: 0.5rem;
+  margin-top: 0.5rem !important;
+  z-index: 1 !important;
 }
 
 .customRightArrowBtn {

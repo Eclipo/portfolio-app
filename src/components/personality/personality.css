@@ -15,6 +15,7 @@
 
 .introPersonalitytext {
   color: var(--lightest-slate);
+  font-family: "PressStart" !important;
 }
 
 #patienceOneID,
@@ -32,7 +33,6 @@
 
 .personalityTable {
   position: relative;
-  width: 75vw;
   margin: auto !;
   border-spacing: 0.5rem;
   border-collapse: collapse;
@@ -71,6 +71,8 @@
   margin-right: 0.1rem;
   margin-top: 0.15rem;
   font-weight: bold !important;
+  font-family: "PressStart" !important;
+  font-size: 0.65rem !important;
   color: black;
   opacity: 1;
 }
@@ -117,6 +119,8 @@
   margin-top: 0.15rem;
   color: rgb(83, 255, 120) !important;
   opacity: 1;
+  font-family: "PressStart" !important;
+  font-size: 0.65rem !important;
 }
 
 .gradeSeven {
@@ -175,13 +179,19 @@
   margin: 0;
 }
 
-.personalityTextContainer h1 {
+h1 {
   margin-top: 2rem;
 }
+.personalityFont {
+  font-family: "PressStart" !important;
+  color: rgb(83, 255, 120) !important;
+}
+
 .personalityTextContainer h4 {
   color: var(--primary-green);
   text-align: left;
   padding: 0.5rem;
+  font-size: 0.5rem !important;
 }
 
 .personalityTextContainer p {
@@ -189,6 +199,7 @@
   text-align: left;
   display: inline-block;
   padding: 0.5rem;
+  font-family: "Press Start 2P" !important;
 }
 
 .personalityTextContainer .col {
@@ -208,16 +219,16 @@
 }
 
 .personalityCard:hover {
-  background-color: var(--secondaryColor-dark);
+  background-color: var(--secondaryColor-dark) !important;
 }
 
 .personalityCard.selectedPersonalityCard:hover {
-  background-color: var(--primaryColor);
+  background-color: var(--secondaryColor-dark);
 }
 
-.btnPersonalityCard:hover {
+/* .btnPersonalityCard:hover {
   background-color: var(--primaryColor) !important;
-}
+} */
 
 .personalityCard:active {
   opacity: 0.9;
@@ -233,17 +244,9 @@
   border-radius: 18px !important;
 }
 
-/* .selectedPersonalityCard > .card-body {
-  border: none !important;
-} */
-
-/* .personalityCard:hover > .card-body {
-  border: 0.1rem var(--dark-navy) solid;
-} */
-
 .btnPersonalityCard {
   border: none;
-  background-color: transparent;
+  background-color: transparent !important;
   margin: 0.5rem;
 }
 

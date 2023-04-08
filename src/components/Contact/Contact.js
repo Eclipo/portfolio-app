@@ -41,18 +41,18 @@ const Contact = () => {
         <p>Designed and built by Edip Sarac</p>
         <a
           href="https://www.simpleanalytics.com/?utm_source=edipsarac.com&utm_content=badge"
-          referrerpolicy="origin"
+          referrerPolicy="origin"
           target="_blank">
           <picture>
             <source
-              srcset="https://simpleanalyticsbadges.com/edipsarac.com?mode=dark"
+              srcSet="https://simpleanalyticsbadges.com/edipsarac.com?mode=dark"
               media="(prefers-color-scheme: dark)"
             />
             <img
               src="https://simpleanalyticsbadges.com/edipsarac.com?mode=dark&text=a8b2d1"
               loading="lazy"
-              referrerpolicy="no-referrer"
-              crossorigin="anonymous"
+              referrerPolicy="no-referrer"
+              crossOrigin="anonymous"
             />
           </picture>
         </a>

@@ -117,7 +117,7 @@
   --primary-orange: #f39e00;
   --primary-light-orange: #ffbd42;
 
-  --primary-green: #2ec479;
+  --primary-green: #0eff06;
   --primary-darker-green: #3d9a6c;
   --primary-dark-green: #08150f;
   --primary-brown: #96592d;
@@ -164,7 +164,9 @@
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfaee;
   --primaryText: #573a01;
-  --secondaryColor: #cf9625;
+  --bg-nav: #cfae6c;
+
+  --secondaryColor: #c78d18;
   --secondaryColor-dark: #916610;
   --secondaryColor-darkest: #5c3e03;
   --secondaryColor-shadow: #462f02;
@@ -308,7 +310,7 @@ button:active {
 /************************* HTML classes *********************************/
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "PressStart", sans-serif !important;
   background-color: var(--bg) !important;
 }
 
@@ -349,7 +351,7 @@ body {
 }
 
 h1 {
-  font-family: Fredoka One, sans-serif !important;
+  font-family: Fredoka One, sans-serif;
   font-size: 2.5rem !important;
   font-weight: 1000 !important;
   text-transform: uppercase !important;
@@ -394,7 +396,7 @@ ul > li {
   word-wrap: break-word;
   word-spacing: normal;
 
-  color: var(--darkest-slate);
+  color: var(--darkest-navy);
 }
 
 .p-italic {
@@ -594,11 +596,12 @@ ul > li {
 }
 
 .fntAwesome {
-  color: var(--lightest-slate);
+  color: var(--primary-white);
+  margin-top: 0.5rem;
 }
 
 .accordion ::-webkit-scrollbar-track {
-  background-color: var(--primary-white);
+  background-color: var(--bg-sub-dark);
   box-shadow: inset 0 0 0.5rem var(--slate);
   border-radius: 0;
 }
@@ -648,28 +651,30 @@ ul > li {
 
 .accordion-header {
   border: none !important;
+  background-color: var(--secondaryColor-dark) !important;
 }
 
 .accordion-button {
-  background-color: var(--dark-slate) !important;
+  background-color: var(--secondaryColor) !important;
   border: 0.1rem black solid !important;
+  height: 3rem;
 
-  color: var(--lightest-slate) !important;
   justify-content: center !important;
   transition: var(--transition) !important;
   padding: 0.45rem !important;
   margin-right: 0.25rem !important;
-  border-radius: 1px !important;
-  box-shadow: var(--btnShadow) !important;
+  border-radius: 5px !important;
+  border: 0.15rem solid black !important;
+  box-shadow: var(--menuBtnShadow) !important;
 }
 
 .accordion-button:hover {
-  box-shadow: var(--btnHoverShadow) !important;
-}
-.accordion-button:active {
-  box-shadow: var(--btnActiveShadow) !important;
+  background-color: var(--secondaryColor-dark) !important;
 }
 
+.accordion-button:active {
+  scale: 1 !important;
+}
 .accordion-button.collapsed::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   border-bottom: 0 !important;
@@ -682,7 +687,6 @@ ul > li {
 }
 
 .accordion-body {
-  background-color: var(--primary-white);
   height: fit-content !important;
   max-height: 80vh !important;
   overflow-y: auto !important;
@@ -697,18 +701,17 @@ ul > li {
   transition: all 1.25s ease-in-out !important;
 }
 
-.navDivider {
-  color: var(--dark-navy) !important;
-  height: 0.1rem !important;
-  width: 100% !important;
-}
-
 .navLinkH3 {
   font-size: 1.05rem;
+  color: var(--primary-white) !important;
+}
+
+h4.navP {
+  color: var(--primary-white) !important;
 }
 
 .accordion-body p {
-  color: var(--navy);
+  color: var(--darkest-navy);
 }
 
 .navbar-light .navbar-toggler {
@@ -725,22 +728,24 @@ ul > li {
 }
 
 .navSubIcon {
-  color: var(--lightest-slate) !important;
+  background-color: var(--secondaryColor) !important;
   padding-bottom: 0.5rem !important;
   width: fit-content;
   display: block;
   border-radius: 18px;
   transition: var(--transition);
-  box-shadow: var(--btnDesinShadow);
+  box-shadow: var(--btnShadow);
 }
 
 .navSubIcon:hover {
-  box-shadow: var(--btnDesinHoverShadow);
+  background-color: var(--secondaryColor-dark) !important;
+  transition: var(--transition) !important;
 }
 
 .navSubIcon:active {
-  box-shadow: var(--btnDesinActiveShadow);
-  background-color: rgb(211, 211, 211) !important;
+  background-color: var(--secondaryColor-darkest);
+  scale: 0.95;
+  transition: var(--transition) !important;
 }
 
 /* default state */
@@ -831,14 +836,15 @@ nav ul li {
 }
 
 .navbar-nav {
-  background-color: var(--dark-slate);
+  background-color: var(--secondaryColor-dark);
   padding: 1rem !important;
   margin: auto !important;
   overflow-y: auto !important;
   max-height: 98vh;
   -webkit-overflow-scrolling: auto !important;
   border-radius: 5px 0 0 5px;
-  box-shadow: var(--navExpandedShadow) !important;
+  border: 0.15rem solid black;
+  box-shadow: var(--blackWhiteShadow) !important;
 }
 
 .navbar-nav > li > a {
@@ -855,7 +861,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a:hover {
-  border-bottom: 0.1875rem solid var(--dark-slate);
+  border-bottom: 0.1875rem solid var(--secondaryColor);
   color: var(--slate) !important;
 }
 
@@ -875,18 +881,18 @@ nav ul li {
 #navLinkHomeID.navFocus {
   background: linear-gradient(
     to left,
-    var(--darkest-slate) 50%,
-    var(--primary-white) 50%
+    var(--primary-white) 50%,
+    var(--secondaryColor-shadow) 50%
   );
-  color: var(--dark-navy) !important;
+  color: var(--secondaryColor-shadow) !important;
   background-size: 200%;
 }
 
 #navLinkQuickFactsID:focus {
   background: linear-gradient(
     to right,
-    var(--primary-yellow) 50%,
-    var(--darkest-slate) 50%
+    var(--secondaryColor-darkest) 50%,
+    var(--secondaryColor-dark) 50%
   );
   color: var(--dark-navy) !important;
 
@@ -898,8 +904,8 @@ nav ul li {
 #navLinkQuickFactsID.navFocus {
   background: linear-gradient(
     to left,
-    var(--darkest-slate) 50%,
-    var(--primary-yellow) 50%
+    var(--secondaryColor-dark) 50%,
+    var(--secondaryColor-darkest) 50%
   );
   color: var(--dark-navy) !important;
   background-size: 200%;
@@ -908,8 +914,8 @@ nav ul li {
 #navLinkAboutID:focus {
   background: linear-gradient(
     to right,
-    var(--primary-orange) 50%,
-    var(--darkest-slate) 50%
+    var(--secondaryColor-darkest) 50%,
+    var(--secondaryColor-dark) 50%
   );
   color: var(--dark-navy) !important;
 
@@ -921,8 +927,8 @@ nav ul li {
 #navLinkAboutID.navFocus {
   background: linear-gradient(
     to left,
-    var(--darkest-slate) 50%,
-    var(--primary-orange) 50%
+    var(--secondaryColor-dark) 50%,
+    var(--secondaryColor-darkest) 50%
   );
   color: var(--dark-navy) !important;
   background-size: 200%;
@@ -931,8 +937,8 @@ nav ul li {
 #navLinkSkillsID:focus {
   background: linear-gradient(
     to right,
-    var(--primary-lighter-blue) 50%,
-    var(--darkest-slate) 50%
+    var(--secondaryColor-darkest) 50%,
+    var(--secondaryColor-dark) 50%
   );
   color: var(--dark-navy) !important;
 
@@ -944,8 +950,8 @@ nav ul li {
 #navLinkSkillsID.navFocus {
   background: linear-gradient(
     to left,
-    var(--darkest-slate) 50%,
-    var(--primary-lighter-blue) 50%
+    var(--secondaryColor-dark) 50%,
+    var(--secondaryColor-darkest) 50%
   );
   color: var(--dark-navy) !important;
   background-size: 200%;
@@ -954,8 +960,8 @@ nav ul li {
 #navLinkPersonalityID:focus {
   background: linear-gradient(
     to right,
-    var(--primary-green) 50%,
-    var(--darkest-slate) 50%
+    var(--secondaryColor-darkest) 50%,
+    var(--secondaryColor-dark) 50%
   );
   color: var(--dark-navy) !important;
 
@@ -967,8 +973,8 @@ nav ul li {
 #navLinkPersonalityID.navFocus {
   background: linear-gradient(
     to left,
-    var(--darkest-slate) 50%,
-    var(--primary-green) 50%
+    var(--secondaryColor-dark) 50%,
+    var(--secondaryColor-darkest) 50%
   );
   color: var(--dark-navy) !important;
   background-size: 200%;
@@ -977,8 +983,8 @@ nav ul li {
 #navLinkResumeOverviewID:focus {
   background: linear-gradient(
     to right,
-    var(--primary-greyBlue) 50%,
-    var(--darkest-slate) 50%
+    var(--secondaryColor-darkest) 50%,
+    var(--secondaryColor-dark) 50%
   );
   color: var(--dark-navy) !important;
 
@@ -990,8 +996,8 @@ nav ul li {
 #navLinkResumeOverviewID.navFocus {
   background: linear-gradient(
     to left,
-    var(--darkest-slate) 50%,
-    var(--primary-greyBlue) 50%
+    var(--secondaryColor-dark) 50%,
+    var(--secondaryColor-darkest) 50%
   );
   color: var(--dark-navy) !important;
   background-size: 200%;
@@ -1000,8 +1006,8 @@ nav ul li {
 #navLinkExperiencesID:focus {
   background: linear-gradient(
     to right,
-    var(--primary-purple) 50%,
-    var(--darkest-slate) 50%
+    var(--secondaryColor-darkest) 50%,
+    var(--secondaryColor-dark) 50%
   );
   color: var(--dark-navy) !important;
 
@@ -1013,31 +1019,8 @@ nav ul li {
 #navLinkExperiencesID.navFocus {
   background: linear-gradient(
     to left,
-    var(--darkest-slate) 50%,
-    var(--primary-purple) 50%
-  );
-  color: var(--dark-navy) !important;
-  background-size: 200%;
-}
-
-#navLinkPortfolioID:focus {
-  background: linear-gradient(
-    to right,
-    var(--primary-pink) 50%,
-    var(--darkest-slate) 50%
-  );
-  color: var(--dark-navy) !important;
-
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 2s ease-out;
-}
-
-#navLinkPortfolioID.navFocus {
-  background: linear-gradient(
-    to left,
-    var(--darkest-slate) 50%,
-    var(--primary-pink) 50%
+    var(--secondaryColor-dark) 50%,
+    var(--secondaryColor-darkest) 50%
   );
   color: var(--dark-navy) !important;
   background-size: 200%;
@@ -1046,8 +1029,8 @@ nav ul li {
 #navLinkContactID:focus {
   background: linear-gradient(
     to right,
-    var(--slate) 50%,
-    var(--darkest-slate) 50%
+    var(--secondaryColor-darkest) 50%,
+    var(--secondaryColor-dark) 50%
   );
   color: var(--dark-navy) !important;
 
@@ -1059,8 +1042,8 @@ nav ul li {
 #navLinkContactID.navFocus {
   background: linear-gradient(
     to left,
-    var(--darkest-slate) 50%,
-    var(--slate) 50%
+    var(--secondaryColor-dark) 50%,
+    var(--secondaryColor-darkest) 50%
   );
   color: var(--dark-navy) !important;
   background-size: 200%;
