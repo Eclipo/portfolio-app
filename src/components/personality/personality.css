@@ -187,11 +187,14 @@ h1 {
   color: rgb(83, 255, 120) !important;
 }
 
+.personalityBaseTraits h4 {
+  font-size: 0.5rem;
+}
+
 .personalityTextContainer h4 {
   color: var(--primary-green);
   text-align: left;
   padding: 0.5rem;
-  font-size: 0.5rem !important;
 }
 
 .personalityTextContainer p {
