@@ -118,7 +118,7 @@
   --primary-light-orange: #ffbd42;
 
   --primary-green: #0eff06;
-  --primary-darker-green: #3d9a6c;
+  --primary-darker-green: #2f8f5f;
   --primary-dark-green: #08150f;
   --primary-brown: #96592d;
   --primary-dark-brown: #5f3314;
@@ -389,9 +389,9 @@ h4 {
 p,
 ul > li {
   font-family: Rubik, cursive !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   vertical-align: middle !important;
   word-wrap: break-word;
   word-spacing: normal;
@@ -433,6 +433,10 @@ ul > li {
   .duckText {
     width: 90%;
   }
+  .personalityTraits,
+  .personalityBaseTraits {
+    font-size: 0.65rem !important;
+  }
 }
 
 @media (min-width: 25.1rem) {
@@ -447,6 +451,11 @@ ul > li {
   .duckText,
   .welcomeText {
     width: 75%;
+  }
+
+  .personalityTraits,
+  .personalityBaseTraits {
+    font-size: 0.65rem !important;
   }
 }
 
@@ -494,7 +503,8 @@ ul > li {
   }
 
   p,
-  ul > li {
+  ul > li,
+  .skill {
     font-size: 0.95rem;
   }
   .mokaTableContainer {
@@ -555,8 +565,11 @@ ul > li {
   }
 
   p,
-  ul > li {
-    font-size: 1.15rem !important;
+  ul > li,
+  .skill,
+  .personalityBaseTraits,
+  .personalityTraits {
+    font-size: 1.25rem !important;
   }
 
   .quickH4 {

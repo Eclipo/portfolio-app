@@ -48,14 +48,17 @@ class Personality extends Component {
                 <br></br>
                 <br></br>A warning. <br></br>
                 Don't stare at it.
-                <br></br>I have spoken...
+                <br></br>I have spoken.
               </p>
             }
             textColor="var(--primary-red)"></PlayRefresh>
           <div id="greenSquareTableID" className="flexCenter">
             <PixelHead></PixelHead>
           </div>
-          <div className="flexCenter" id="personalityContainerID">
+          <div
+            className="flexCenter"
+            id="personalityContainerID"
+            style={{ height: "70vh" }}>
             <table className="personalityTable" id="personalityTableID">
               <tbody>
                 <tr className="personalityBaseRow">

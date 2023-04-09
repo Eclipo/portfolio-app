@@ -359,7 +359,7 @@ export const Navbar = () => {
                   className="nav-link"
                   href="#"
                   tabIndex={0}>
-                  <h3 className="navLinkH3">Quick Facts</h3>
+                  <h3 className="navLinkH3">Welcome</h3>
                   <span className="sr-only">(current)</span>
                 </Link>
               </li>

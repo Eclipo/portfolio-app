@@ -330,7 +330,9 @@ class Skills extends Component {
         <div className="container-sm primaryContainer" id="duckContainerID">
           <div className="row">
             <h1>
-              I am<br></br>a duck
+              MY
+              <br></br>
+              SPIRIT ANIMAL
             </h1>
 
             <div className="flexCenter duckContainer">
@@ -341,7 +343,7 @@ class Skills extends Component {
           <div className="row">
             <div className="duckText">
               <p className="mb-0">
-                As a developer, I slowly became{" "}
+                As a developer I am
                 <span className="highLight"> multidisciplinary </span> just like
                 a <span className="highLight"> duck</span>:
               </p>
@@ -370,7 +372,7 @@ class Skills extends Component {
               </ul>
 
               <p className="mb-0">
-                Furthermore, this duck also has some experience within
+                Furthermore, I have some experience within
                 <span className="highLight"> sales</span>.
               </p>
 

@@ -17,10 +17,10 @@ const QuickFacts = () => {
           I'm Edip Sarac!
         </h1>
 
-        <div className="flexCenter mb-3 pb-0" style={{ marginTop: "-6.5rem" }}>
+        <div className="flexCenter mb-lg-4 pb-0" style={{ marginTop: "-6rem" }}>
           <EdipGuy></EdipGuy>
         </div>
-        <div className="flexCenter mb-0 pb-0" style={{ marginTop: "-6rem" }}>
+        <div className="flexCenter mb-4" style={{ marginTop: "-6rem" }}>
           <p className="welcomeText">
             Welcome to my resumé website! <br></br>
             Here you can read about me, my skills and my prior experiences. I am

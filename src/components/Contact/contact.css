@@ -10,7 +10,7 @@
   display: inline-flex;
   transition: var(--transition);
   margin: 1rem !important;
-  color: var(--secondaryColor-darkest);
+  color: var(--primary-white);
   box-shadow: var(--btnShadow);
 }
 
@@ -46,7 +46,7 @@
   padding-bottom: 0.25rem !important;
   border-radius: 5px !important;
   margin: auto;
-  color: var(--secondaryColor-darkest);
+  color: var(--primary-white);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
