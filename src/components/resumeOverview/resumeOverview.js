@@ -122,258 +122,170 @@ class ResumeOverview extends Component {
             </div>
 
             <div className="resumeSection container-md" id="resumeExpSectionID">
-              <div className="experienceTable  mt-2">
-                <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
-                  <div className="col m-auto">
-                    <p className="m-1 mx-auto">
-                      Present<br></br>2019-12
-                    </p>
-                    <p
-                      className="m-1 mx-auto"
-                      style={{ paddingRight: "0.35rem" }}>
-                      CGI Sverige AB
-                    </p>
-                  </div>
-                  <div className="width1 m-auto">
-                    <div className=" header2VerticalUnderLine"></div>
-                  </div>
-                  <span className="col m-auto">
-                    <p className="m-auto">
-                      Developer <br></br>Consultant
-                    </p>
-                  </span>
-                  <div className="width1 m-auto">
-                    <div className="header2VerticalUnderLine"></div>
-                  </div>
-                  <div className="col m-auto">
-                    <p className="m-auto">.Net</p>
-                    <p className="m-auto">Angular</p>
-                  </div>
-                </div>
+              <div className="experienceTable mt-2">
+                <div className="expSubContainer">
+                  <div className=" row expRow">
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">CGI SVERIGE AB</h4>
+                        <p className="resumeExpText">Present - 12/2019</p>
+                      </div>
+                    </div>
 
-                <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
-                  <div className="col m-auto">
-                    <p className="m-1 mx-auto">
-                      2019-09<br></br>2019-09
-                    </p>
-                    <p className="m-1 mx-auto">Nexer AB</p>
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">DEVELOPER</h4>
+                      </div>
+                      <div className="row">
+                        <p className="resumeExpText">.Net Angular</p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="width1 m-auto">
-                    <div className=" header2VerticalUnderLine"></div>
+                  <div className=" row expRow">
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">NEXER AB</h4>
+                        <p className="resumeExpText">09/2019 - 09/2019</p>
+                      </div>
+                    </div>
+
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">DEVELOPER</h4>
+                      </div>
+                      <div className="row">
+                        <p className="resumeExpText">Null</p>
+                      </div>
+                    </div>
                   </div>
 
-                  <span className="col m-auto">
-                    <p className="m-auto">
-                      Developer <br></br>Consultant
-                    </p>
-                  </span>
+                  <div className=" row expRow">
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">CGI SVERIGE AB</h4>
+                        <p className="resumeExpText">09/2015 - 08/2019</p>
+                      </div>
+                    </div>
 
-                  <div className="width1 m-auto">
-                    <div className="header2VerticalUnderLine"></div>
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">CONSULTANT</h4>
+                      </div>
+                      <div className="row">
+                        <p className="resumeExpText">Business & Testing</p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="col m-auto">
-                    <p className="m-auto">Null</p>
-                  </div>
-                </div>
+                  <div className=" row expRow">
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">
+                          SOFTWARE INNOVATION AB
+                        </h4>
+                        <p className="resumeExpText">08/2013 - 01/2015</p>
+                      </div>
+                    </div>
 
-                <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
-                  <div className="col m-auto">
-                    <p className="m-1 mx-auto">
-                      2019-08<br></br>2015-09
-                    </p>
-                    <p
-                      className="m-1 mx-auto"
-                      style={{ paddingRight: "0.35rem" }}>
-                      CGI Sverige AB
-                    </p>
-                  </div>
-
-                  <div className="width1 m-auto">
-                    <div className=" header2VerticalUnderLine"></div>
-                  </div>
-
-                  <span className="col m-auto">
-                    <p className="m-auto">
-                      Business <br></br>Consultant
-                    </p>
-                  </span>
-
-                  <div className="width1 m-auto">
-                    <div className="header2VerticalUnderLine"></div>
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">SALES ASSISTANT</h4>
+                      </div>
+                      <div className="row">
+                        <p className="resumeExpText">Prospecting</p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="col m-auto">
-                    <p className="m-auto">
-                      Consulting <br></br>&<br></br>Testing
-                    </p>
-                  </div>
-                </div>
+                  <div className=" row expRow">
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">TP SWEDEN AB</h4>
+                        <p className="resumeExpText">05/2013 - 08/2013</p>
+                      </div>
+                    </div>
 
-                <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
-                  <div className="col m-auto">
-                    <p className="m-1 mx-auto">
-                      2015-01<br></br>2013-08
-                    </p>
-                    <p
-                      className="m-1 mx-auto"
-                      style={{ paddingRight: "0.35rem" }}>
-                      Software Innovation AB
-                    </p>
-                  </div>
-
-                  <div className="width1 m-auto">
-                    <div className=" header2VerticalUnderLine"></div>
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">SUPPORT</h4>
+                      </div>
+                      <div className="row">
+                        <p className="resumeExpText">Tech & Sales </p>
+                      </div>
+                    </div>
                   </div>
 
-                  <span className="col m-auto">
-                    <p className="m-auto">
-                      Sales<br></br>Assistant
-                    </p>
-                  </span>
+                  <div className="row expRow">
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">KMD AB</h4>
+                        <p className="resumeExpText">09/2012 - 01/2013</p>
+                      </div>
+                    </div>
 
-                  <div className="width1 m-auto">
-                    <div className="header2VerticalUnderLine"></div>
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">TESTER</h4>
+                      </div>
+                      <div className="row">
+                        <p className="resumeExpText">SAP</p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="col m-auto">
-                    <p className="m-auto">Prospecting</p>
-                  </div>
-                </div>
+                  <div className="row expRow">
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">EDIP SARAC AB</h4>
+                        <p className="resumeExpText">08/2011 - 09/2011</p>
+                      </div>
+                    </div>
 
-                <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
-                  <div className="col m-auto">
-                    <p className="m-1 mx-auto">
-                      2013-08<br></br>2013-05
-                    </p>
-                    <p className="m-1 mx-auto">TP Sweden AB</p>
-                  </div>
-
-                  <div className="width1 m-auto">
-                    <div className=" header2VerticalUnderLine"></div>
-                  </div>
-
-                  <span className="col m-auto">
-                    <p className="m-auto">
-                      Customer<br></br>Service
-                    </p>
-                  </span>
-
-                  <div className="width1 m-auto">
-                    <div className="header2VerticalUnderLine"></div>
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">Consultant</h4>
+                      </div>
+                      <div className="row">
+                        <p className="resumeExpText">Strategy</p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="col m-auto">
-                    <p className="m-auto">Support</p>
-                  </div>
-                </div>
+                  <div className="row expRow">
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">TELIASONERA AB</h4>
+                        <p className="resumeExpText">06/2010 - 08/2010</p>
+                      </div>
+                    </div>
 
-                <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
-                  <div className="col m-auto">
-                    <p className="m-1 mx-auto">
-                      2013-01<br></br>2012-09
-                    </p>
-                    <p className="m-1 mx-auto">KMD AB</p>
-                  </div>
-
-                  <div className="width1 m-auto">
-                    <div className=" header2VerticalUnderLine"></div>
-                  </div>
-
-                  <span className="col m-auto">
-                    <p className="m-auto">Tester</p>
-                  </span>
-
-                  <div className="width1 m-auto">
-                    <div className="header2VerticalUnderLine"></div>
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">SUPPORT</h4>
+                      </div>
+                      <div className="row">
+                        <p className="resumeExpText">Tech</p>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="col m-auto">
-                    <p className="m-auto">SAP</p>
-                  </div>
-                </div>
+                  <div className="row expRow">
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">TP SWEDEN AB</h4>
+                        <p className="resumeExpText">11/2007 - 04/2009</p>
+                      </div>
+                    </div>
 
-                <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
-                  <div className="col m-auto">
-                    <p className="m-1 mx-auto">
-                      2011-09<br></br>2011-08
-                    </p>
-                    <p className="m-1 mx-auto">Edip Sarac AB</p>
-                  </div>
-
-                  <div className="width1 m-auto">
-                    <div className=" header2VerticalUnderLine"></div>
-                  </div>
-
-                  <span className="col m-auto">
-                    <p className="m-auto">Solo trader</p>
-                  </span>
-
-                  <div className="width1 m-auto">
-                    <div className="header2VerticalUnderLine"></div>
-                  </div>
-
-                  <div className="col m-auto">
-                    <p className="m-auto">
-                      Marketing <br></br>Analysis
-                    </p>
-                  </div>
-                </div>
-
-                <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
-                  <div className="col m-auto">
-                    <p className="m-1 mx-auto">
-                      2010-08<br></br>2010-06
-                    </p>
-                    <p className="m-1 mx-auto">TeliaSonera AB</p>
-                  </div>
-
-                  <div className="width1 m-auto">
-                    <div className=" header2VerticalUnderLine"></div>
-                  </div>
-
-                  <span className="col m-auto">
-                    <p className="m-auto">
-                      Customer<br></br>Service
-                    </p>
-                  </span>
-
-                  <div className="width1 m-auto">
-                    <div className="header2VerticalUnderLine"></div>
-                  </div>
-
-                  <div className="col m-auto">
-                    <p className="m-auto">Support</p>
-                  </div>
-                </div>
-
-                <div className="row expOverviewPeriod expOverviewPeriod-dotted mb-4">
-                  <div className="col m-auto">
-                    <p className="m-1 mx-auto">
-                      2009-04<br></br>2007-11
-                    </p>
-                    <p className="m-1 mx-auto">TP Sweden AB</p>
-                  </div>
-
-                  <div className="width1 m-auto">
-                    <div className=" header2VerticalUnderLine"></div>
-                  </div>
-
-                  <span className="col m-auto">
-                    <p className="m-auto">
-                      Customer<br></br>Service
-                    </p>
-                  </span>
-
-                  <div className="width1 m-auto">
-                    <div className="header2VerticalUnderLine"></div>
-                  </div>
-
-                  <div className="col m-auto">
-                    <p className="m-auto">
-                      Sales &<br></br>Support
-                    </p>
+                    <div className="col-6">
+                      <div className="row">
+                        <h4 className="resumeExpText m-1">SUPPORT</h4>
+                      </div>
+                      <div className="row">
+                        <p className="resumeExpText">Tech & Sales</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

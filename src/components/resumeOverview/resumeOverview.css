@@ -73,6 +73,12 @@ h4 {
   max-width: 30rem;
 }
 
+.resumeExpText {
+  text-align: left;
+  margin-bottom: 0.1rem !important;
+  padding-bottom: 0 !important;
+}
+
 .expOverviewPeriod-dotted {
   margin-bottom: 0.75rem;
   margin-top: 0.75rem;
@@ -248,6 +254,19 @@ h4 {
   justify-content: center;
 }
 
+.expSubContainer {
+  background-color: var(--primaryColor);
+  padding: 1.5rem;
+  border-radius: 18px;
+  width: 99%;
+  margin: auto;
+}
+
+.expRow {
+  padding: 0;
+  margin: 0;
+  border-bottom: 0.15rem var(--secondaryColor-darkest) solid;
+}
 .experienceTable td {
   overflow: hidden;
   display: inline-block;
