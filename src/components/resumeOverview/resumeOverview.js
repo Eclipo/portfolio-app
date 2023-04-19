@@ -94,45 +94,47 @@ class ResumeOverview extends Component {
               <div className="experienceTable">
                 <div className="row m-auto mb-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2 m-1">
-                    <h3 className="m-auto p-1">2015 - 2018</h3>
                     <h3 className="m-auto p-1">
                       Mid Sweden <br></br> Unviersity
                     </h3>
+                    <h3 className="m-auto p-1">2015 - 2018</h3>
+
                     <div className="header2UnderLine"></div>
                     <h4 className="m-auto p-1">Higher education diploma</h4>
                     <div className="header3UnderLine mt-1"></div>
-                    <h4 className="m-auto p-1"> Computer science</h4>
+                    <p className="m-auto p-1"> Computer science</p>
                   </div>
                 </div>
 
                 <div className="row m-auto mb-2">
                   <div className="expOverviewPeriod expOverviewPeriod-dotted p-2 m-1">
-                    <h3 className="m-auto p-1">2009 - 2012</h3>
                     <h3 className="m-auto p-1">
                       Jönköping International <br></br> Business School
                     </h3>
+                    <h3 className="m-auto p-1">2009 - 2012</h3>
+
                     <div className="header2UnderLine"></div>
                     <h4 className="m-auto p-1">Bachelor degree</h4>
                     <div className="header3UnderLine mt-1"></div>
 
-                    <h4 className="m-auto p-1">Business administration</h4>
+                    <p className="m-auto p-1">Business administration</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="resumeSection container-md" id="resumeExpSectionID">
-              <div className="experienceTable mt-2">
+              <div className="experienceTable">
                 <div className="expSubContainer">
                   <div className=" row expRow">
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
                         <h4 className="resumeExpText m-1">CGI SVERIGE AB</h4>
                         <p className="resumeExpText">Present - 12/2019</p>
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-5">
                       <div className="row">
                         <h4 className="resumeExpText m-1">DEVELOPER</h4>
                       </div>
@@ -143,14 +145,14 @@ class ResumeOverview extends Component {
                   </div>
 
                   <div className=" row expRow">
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
                         <h4 className="resumeExpText m-1">NEXER AB</h4>
                         <p className="resumeExpText">09/2019 - 09/2019</p>
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-5">
                       <div className="row">
                         <h4 className="resumeExpText m-1">DEVELOPER</h4>
                       </div>
@@ -161,25 +163,25 @@ class ResumeOverview extends Component {
                   </div>
 
                   <div className=" row expRow">
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
                         <h4 className="resumeExpText m-1">CGI SVERIGE AB</h4>
                         <p className="resumeExpText">09/2015 - 08/2019</p>
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-5">
                       <div className="row">
                         <h4 className="resumeExpText m-1">CONSULTANT</h4>
                       </div>
                       <div className="row">
-                        <p className="resumeExpText">Business & Testing</p>
+                        <p className="resumeExpText">Handyman</p>
                       </div>
                     </div>
                   </div>
 
                   <div className=" row expRow">
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
                         <h4 className="resumeExpText m-1">
                           SOFTWARE INNOVATION AB
@@ -188,25 +190,25 @@ class ResumeOverview extends Component {
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-5">
                       <div className="row">
                         <h4 className="resumeExpText m-1">SALES ASSISTANT</h4>
                       </div>
                       <div className="row">
-                        <p className="resumeExpText">Prospecting</p>
+                        <p className="resumeExpText">Prospecter</p>
                       </div>
                     </div>
                   </div>
 
                   <div className=" row expRow">
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
                         <h4 className="resumeExpText m-1">TP SWEDEN AB</h4>
                         <p className="resumeExpText">05/2013 - 08/2013</p>
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-5">
                       <div className="row">
                         <h4 className="resumeExpText m-1">SUPPORT</h4>
                       </div>
@@ -217,14 +219,14 @@ class ResumeOverview extends Component {
                   </div>
 
                   <div className="row expRow">
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
                         <h4 className="resumeExpText m-1">KMD AB</h4>
                         <p className="resumeExpText">09/2012 - 01/2013</p>
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-5">
                       <div className="row">
                         <h4 className="resumeExpText m-1">TESTER</h4>
                       </div>
@@ -235,14 +237,14 @@ class ResumeOverview extends Component {
                   </div>
 
                   <div className="row expRow">
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
                         <h4 className="resumeExpText m-1">EDIP SARAC AB</h4>
                         <p className="resumeExpText">08/2011 - 09/2011</p>
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-5">
                       <div className="row">
                         <h4 className="resumeExpText m-1">Consultant</h4>
                       </div>
@@ -253,14 +255,14 @@ class ResumeOverview extends Component {
                   </div>
 
                   <div className="row expRow">
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
                         <h4 className="resumeExpText m-1">TELIASONERA AB</h4>
                         <p className="resumeExpText">06/2010 - 08/2010</p>
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-5">
                       <div className="row">
                         <h4 className="resumeExpText m-1">SUPPORT</h4>
                       </div>
@@ -271,14 +273,14 @@ class ResumeOverview extends Component {
                   </div>
 
                   <div className="row expRow">
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="row">
                         <h4 className="resumeExpText m-1">TP SWEDEN AB</h4>
                         <p className="resumeExpText">11/2007 - 04/2009</p>
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-5">
                       <div className="row">
                         <h4 className="resumeExpText m-1">SUPPORT</h4>
                       </div>

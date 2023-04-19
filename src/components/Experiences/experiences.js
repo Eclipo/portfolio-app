@@ -18,7 +18,7 @@ class Experiences extends Component {
     return (
       <div className="sectionAnimation" id="experiencesID">
         <h1>
-          Major<br></br>Experiences
+          Selected<br></br>work
         </h1>
 
         <div className="container-sm">
@@ -110,7 +110,7 @@ class Experiences extends Component {
 
                 <div className="col m-0 p-0">
                   <span className="periodColContainer">
-                    <h4 className="header3Tech pb-0 mb-0">Period (YY/MM):</h4>
+                    <h4 className="header3Tech pb-0 mb-0">Period (MM/YY):</h4>
 
                     <h4
                       className="header3Tech pt-0 mt-0"
@@ -237,32 +237,9 @@ class Experiences extends Component {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="modal fade"
-          id="modal"
-          tabIndex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div className="modal-dialog">
-            <div className="modal-content techCategory mx-auto my-auto">
-              <div className="modal-header" style={{ borderBottom: "none" }}>
-                <h5 className="modal-title" id="exampleModalLabel">
-                  An arrow that doesn't scroll around
-                </h5>
-              </div>
-              <div className="modal-footer" style={{ borderTop: "none" }}>
-                <button
-                  type="button"
-                  className="btn"
-                  style={{ backgroundColor: "var(--darkest-slate)" }}
-                  data-bs-dismiss="modal">
-                  Close
-                </button>
-              </div>
+              <p id="confidentialParagraph">
+                *Due to confidentiality I cannot share the name of the customer.
+              </p>
             </div>
           </div>
         </div>

@@ -1,12 +1,7 @@
 import React from "react";
 import { EdipGuy } from "./EdipAvatar/EdipGuy";
-import Typed from "react-typed";
 import "../../IntersectionObserver.js";
 import "./edipLogo.css";
-import "./quickfacts.css";
-import { Link } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const QuickFacts = () => {
   return (
@@ -28,8 +23,11 @@ const QuickFacts = () => {
             but I am quite picky though.
             <br></br>
             <br></br>
-            <span className="highLight">Scroll down </span> or use the
-            <span className="highLight"> navbar </span> to view more.
+            <span className="highLight">Scroll down </span> to see more.
+            <span className="highLight">The navbar </span> in the upper right
+            corner helps you to navigate through the website but it also has
+            some <span className="highLight">web tools</span> which I highly
+            recommend you to try out for an enchanced experience.
           </p>
         </div>
       </div>

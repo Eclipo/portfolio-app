@@ -72,12 +72,6 @@
   height: 3.125rem;
 }
 
-.coffee-container {
-  width: 6.25rem;
-  height: 6.25rem;
-  position: relative;
-}
-
 .coffee-cup {
   width: 5rem;
 }
@@ -124,10 +118,6 @@
   border: none;
   margin-left: -0.5rem;
   margin-top: 0.33rem;
-}
-
-.cupB {
-  transform: translate(0 -0.06);
 }
 
 .right-hand {
@@ -205,16 +195,6 @@
   overflow: hidden;
 }
 
-.shadow {
-  width: 6.125rem;
-  height: 16.25rem;
-  border-radius: 3.125rem;
-  background: rgba(149, 36, 0, 0.1);
-  position: absolute;
-  z-index: 4;
-  opacity: 1;
-}
-
 .triangle-light {
   width: 24rem;
   height: 37.5rem;
@@ -222,15 +202,5 @@
   opacity: 0.2;
   position: absolute;
   right: -50%;
-  z-index: 0;
-}
-
-.triangle-dark {
-  width: 25rem;
-  height: 40.5rem;
-  background: #000000;
-  opacity: 0.2;
-  position: absolute;
-  left: -50%;
   z-index: 0;
 }

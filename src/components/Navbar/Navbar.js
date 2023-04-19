@@ -396,7 +396,7 @@ export const Navbar = () => {
                   className="nav-link"
                   href="#"
                   tabIndex={3}>
-                  <h3 className="navLinkH3">Major experiences</h3>
+                  <h3 className="navLinkH3">Selected work</h3>
                 </Link>
               </li>
 
@@ -421,7 +421,7 @@ export const Navbar = () => {
                   href="#"
                   tabIndex={5}>
                   <h3 id="navLinkPersonalityH3ID" className="navLinkH3">
-                    Personality
+                    My persona
                   </h3>
                 </Link>
               </li>

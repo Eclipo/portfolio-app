@@ -15,7 +15,9 @@ export const animate = (inputID) => {
   var liTwo = document.getElementById("_liTwo");
   var liThree = document.getElementById("_liThree");
   var liFour = document.getElementById("_liFour");
+  var confidentialParagraph = document.getElementById("confidentialParagraph");
 
+  confidentialParagraph.style.display = "none";
   var techSkills = inputID + "_tech";
   var chosenTechSkillContainer = document.getElementById(techSkills);
   var descOneEl = document.getElementById("_descOne");
@@ -52,8 +54,8 @@ export const animate = (inputID) => {
       ".techRow",
       ".li_icon",
     ],
-    opacity: 0,
-    duration: 50,
+    opacity: 0.25,
+    duration: 250,
     complete: function () {
       expCategoryMenu.style.pointerEvents = "none";
 
@@ -61,33 +63,34 @@ export const animate = (inputID) => {
         targets: ".techCategory",
         backgroundColor: "#cf9625",
         easing: "linear",
-        duration: 50,
+        duration: 250,
         complete: function () {
           anime({
             targets: tab,
             backgroundColor: "#5c3e03",
             easing: "linear",
-            duration: 50,
+            duration: 150,
             complete: function () {
               anime({
                 targets: ".scrollLine",
                 opacity: 0,
-                duration: 50,
+                duration: 150,
                 complete: function () {
                   anime({
                     targets: tabScrollLine,
                     opacity: [0, 1],
                     translateX: ["-50px", "50px", 0],
                     width: [0, 100],
-                    duration: 350,
+                    duration: 500,
                     easing: "easeInOutQuad",
                     backgroundColor: "#916610",
                     complete: function () {
                       if (inputID === "fintech") {
+                        confidentialParagraph.style.display = "block";
                         jobTitle = "Web developer";
-                        linkCustomerTitle = "Fintech";
+                        linkCustomerTitle = "Fintech *";
                         linkToCustomer = "";
-                        period.innerText = "22-02 - Present";
+                        period.innerText = "02/22 - Present";
                         system.innerText = "Custom SPA";
                         descOneEl.innerHTML =
                           'The customer is within the fintech industry and we are building a new application where my role is<span class="highLight"> web developer</span>.';
@@ -108,10 +111,11 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_3") {
+                        confidentialParagraph.style.display = "block";
                         jobTitle = "Handyman";
-                        linkCustomerTitle = "#3 Municipality";
+                        linkCustomerTitle = "#3 Municipality *";
                         linkToCustomer = "";
-                        period.innerText = "20-08 - 22-02";
+                        period.innerText = "08/20 - 02/22";
                         system.innerText = "Platina (.Net)";
                         liTwo.style.display = "flex";
                         liThree.style.display = "flex";
@@ -136,11 +140,12 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_2") {
+                        confidentialParagraph.style.display = "block";
                         jobTitle = "Handyman";
 
-                        linkCustomerTitle = "#2 Municipality";
+                        linkCustomerTitle = "#2 Municipality *";
                         linkToCustomer = "";
-                        period.innerText = "20-05 - 20-10";
+                        period.innerText = "05/20 - 10/20";
                         system.innerText = "Platina (.Net)";
                         descOneEl.innerHTML =
                           'Together with a project leader, I acted as a<span class="highLight"> developer, deployer and solution architect</span>.';
@@ -165,11 +170,12 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_1") {
+                        confidentialParagraph.style.display = "";
                         jobTitle = "Handyman";
 
-                        linkCustomerTitle = "#1 Municipality";
+                        linkCustomerTitle = "#1 Municipality *";
                         linkToCustomer = "";
-                        period.innerText = "20-02 - 20-06";
+                        period.innerText = "02/20 - 06/20";
                         system.innerText = "Platina (.Net)";
 
                         descOneEl.innerHTML =
@@ -197,15 +203,15 @@ export const animate = (inputID) => {
                         targets: [
                           contentHeader,
                           contentPeriod,
-                          ".techText",
-                          ".techText ul li",
                           ".techRow",
                           ".li_icon",
+                          ".techText",
+                          ".techText ul li",
                         ],
-                        opacity: [0, 1],
-                        translateX: ["-10px", 0],
+                        opacity: [0.25, 1],
                         display: "block",
-                        delay: anime.stagger(75),
+                        duration: 500,
+                        easing: "linear",
                         complete: function () {
                           expCategoryMenu.style.pointerEvents = "all";
                         },

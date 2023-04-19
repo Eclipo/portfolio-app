@@ -7,27 +7,6 @@
   --menuBtnHoverShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--navy);
 
-  --navBtnSkillShadow: 0 0.1rem 0.25rem -0.1rem black,
-    inset 0.1rem -0.25rem 0.5rem 0.3rem var(--lightest-navy),
-    inset -0.2rem -0.25rem 0.5rem 0.1rem var(--btnLight-navy),
-    inset 0.2rem 0.4rem 0.1rem -0.1rem var(--primary-white);
-
-  --navExpandedShadow: 0.1rem 0.25rem 0.25rem 0.25rem black,
-    inset -0.2rem 0.1rem 0.5rem 0.1rem var(--dark-navy),
-    inset 0.1rem 0.5rem 0.5rem -0.1rem var(--primary-white),
-    inset -0.2rem 0.1rem 0.5rem 0.5rem var(--light-navy);
-
-  --btnSkillShadow: 0.1rem 0.1rem 0.25rem 0.1rem black,
-    inset 0.1rem -0.25rem 0.5rem 0.3rem var(--navy),
-    inset -0.2rem -0.25rem 0.5rem 0.1rem var(--light-navy),
-    inset 0.2rem 0.4rem 0.1rem -0.1rem var(--primary-white);
-
-  --btnSkillHoverShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
-    inset 0 0 1rem 0.5rem var(--navy);
-
-  --btnSkillActiveShadow: 0 0.15rem 0.25rem 0.1rem var(--primary-white),
-    inset 0 0 2.5rem 0.25rem var(--darkest-navy);
-
   /*NYA KNAPP SHADOW!!!! */
   --btnShadow: 0.15rem 0.15rem 0.25rem 0.1rem black,
     inset -0.1rem -0.1rem 0.5rem 0.1rem var(--secondaryColor-shadow),
@@ -47,48 +26,6 @@
 
   --btnDesinActiveShadow: 0 -0.1rem 0.1rem 0.2rem black;
 
-  --btnNavHoverActiveShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
-    inset 0 0 0.5rem 0 var(--slate);
-
-  --faceShadow: 0 0.1rem 0.25rem 0 var(--primarymenuBtn-red),
-    inset 0 -0.5rem 1rem 0 var(#ffe4be);
-
-  --btnPersonalityCardShadow: 0.1rem 0.1rem 0.25rem 0.2rem var(--dark-navy),
-    inset -0.3rem -0.3rem 0.5rem 0.2rem var(--primary-dark-green),
-    inset 0.1rem 0.1rem 0.5rem 0.2rem var(--primary-white),
-    inset 0.2rem 0.4rem 0.5rem 0.1rem var(--primary-greenBlue);
-
-  --btnPersonalityCardHoverShadow: 0 0.5rem 0.25rem -0.1rem var(--primary-white),
-    inset 0 0 4rem 1rem var(--primary-dark-green);
-
-  --btnPersonalityCardActiveShadow: 0 0.3rem 0.25rem 0 var(--lightest-slate),
-    inset 0 0 3rem 0 var(--lightest-navy);
-
-  --btnSelectedPersonalityCardShadow: 0.1rem 0.25rem 0.5rem 0.1rem
-      var(--darkest-navy),
-    inset -0.1rem -0.2rem 0.5rem 0.1rem var(--dark-navy),
-    inset 0.2rem 0.4rem 0.5rem -0.2rem var(--primary-green) !important;
-
-  --btnResumeShadow: -0.1rem 0rem 0.1rem 0.1rem black,
-    inset -0.3rem -0.2rem 0.5rem 0.1rem var(--navy),
-    inset 0.2rem 0.4rem 0.5rem -0.2rem var(--primary-greyBlue);
-
-  --portfolioAnimeShadow: -0.1rem 0.25rem 0.1rem 0.1rem black,
-    inset 0rem 0rem 0.1rem 0.1rem var(--navy),
-    inset 0rem 0rem 0.25rem 0.5rem var(--primary-pink);
-
-  --smallShadow: -0.1rem 0.25rem 0.25rem 0rem var(--dark-navy),
-    inset -0.2rem -0.2rem 0.5rem 0rem var(--navy),
-    inset 0.3rem 0.4rem 0.5rem -0.3rem var(--primary-white);
-
-  --xsSmallShadow: 0 0.1rem 0.25rem 0rem var(--light-navy),
-    inset -0.2rem -0.2rem 0.5rem 0rem var(--lightest-navy),
-    inset 0.3rem 0.4rem 0.5rem -0.3rem var(--primary-white);
-
-  --avatarLegArmShadow: -0.1rem 0.25rem 0.5rem 0.1rem var(--darkest-navy),
-    inset -0.2rem -0.2rem 0.25rem 0.1rem var(--primary-dark-red),
-    inset 0.3rem 0.4rem 0.1rem -0.3rem var(--primary-white);
-
   --blackWhiteShadow: 0 0rem 0.1rem 0rem black,
     inset 0rem 0.1rem 0.1rem 0 var(--primary-white);
 
@@ -102,36 +39,29 @@
 
   /* Colors */
   --primary-white: rgba(245, 237, 237, 0.993);
-  --primary-lighter-blue: #51a0ee;
+
+  /*About */
   --primary-blue: #4485c6;
   --primary-darker-blue: #2d6296;
+  --primary-darker-green: #2f8f5f;
+  --primary-dark-brown: #5f3314;
+  --primary-grey: rgb(75, 75, 75);
+  --primary-lightDarkGrey: #747070;
+  --primary-lightPink: rgb(255, 182, 194);
 
-  --primary-orangeRed: rgb(226, 128, 53);
-  --primary-dark-red: rgb(149, 49, 49);
-  --primary-red: rgb(211, 67, 67);
-  --primary-greyBlue: #a8b7e4;
-  --primary-dark-greyBlue: #7d89ac;
-  --primary-yellow: #fffc66;
-  --primary-dark-yellow: #fced20;
-
+  /*Duck & Basket*/
   --primary-orange: #f39e00;
   --primary-light-orange: #ffbd42;
 
-  --primary-green: #0eff06;
-  --primary-darker-green: #2f8f5f;
-  --primary-dark-green: #08150f;
-  --primary-brown: #96592d;
-  --primary-dark-brown: #5f3314;
-
-  --primary-greenBlue: rgb(49, 221, 192);
-  --primary-light-green: rgb(96, 208, 186);
-
-  --primary-grey: rgb(75, 75, 75);
+  /* SKILLS */
   --primary-lightGrey: #cccccc;
-  --primary-lightDarkGrey: #747070;
+
+  /*Personality*/
+  --primary-green: #0eff06;
+  --primary-brown: #96592d;
+
+  /*Book */
   --primary-pink: #e5a7d6;
-  --primary-lightPink: rgb(255, 182, 194);
-  --primary-purple: #bf65f3;
 
   --darkest-navy: #050216;
   --dark-navy: #270303;
@@ -223,22 +153,6 @@
   justify-content: center;
 }
 
-.header-wraper {
-  position: relative;
-}
-
-.main-info {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 button:hover {
   background-color: var(--btnHoverColor);
   transition: var(--transition);
@@ -250,7 +164,7 @@ button:active {
 }
 
 .menuBtn {
-  border-radius: 50%;
+  border-radius: 15% 15% 50% 50%;
 
   transition: var(--transition);
   box-shadow: var(--menuBtnShadow);
@@ -269,16 +183,6 @@ button:active {
   scale: 0.95;
 }
 
-.playIcon {
-  width: 5rem;
-  height: 5rem;
-  border-width: 0.5rem;
-  border-style: solid;
-  border-color: var(--light-slate);
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
 .btnPlay {
   width: 4rem;
   height: 4rem;
@@ -289,17 +193,6 @@ button:active {
   border-radius: 50%;
   justify-content: start;
   align-content: space-around;
-}
-
-.iconPlay {
-  position: absolute;
-  margin: auto;
-  margin-top: -0.75rem;
-  margin-left: -0.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: block;
-  z-index: 100;
 }
 
 .highLight {
@@ -421,10 +314,6 @@ ul > li {
     font-weight: 740;
   }
 
-  .mokaTableContainer {
-    transform: scale(0.65) !important;
-  }
-
   .resumeNavMenu {
     width: 8rem;
     display: flex;
@@ -460,10 +349,6 @@ ul > li {
 }
 
 @media (min-width: 30rem) {
-  .typed-text {
-    height: 5rem;
-  }
-
   .skillTable tbody p {
     font-size: 0.8375rem;
   }
@@ -472,16 +357,8 @@ ul > li {
     max-width: 30rem;
   }
 
-  .seiouslyText {
-    width: 30rem !important;
-  }
-
   .personalityTextContainer {
     width: 75% !important;
-  }
-
-  .portfolioTextContainer {
-    width: 30rem !important;
   }
 }
 
@@ -507,10 +384,6 @@ ul > li {
   .skill {
     font-size: 0.95rem;
   }
-  .mokaTableContainer {
-    transform: scale(0.7) !important;
-    margin-top: -5rem !important ;
-  }
 
   .periodColContainer {
     margin: auto;
@@ -528,16 +401,6 @@ ul > li {
     width: 35vw;
     margin-top: 5rem !important ;
     justify-content: center;
-  }
-
-  .mokaTableContainer {
-    transform: scale(0.9) !important;
-    margin-top: -4rem !important ;
-  }
-
-  #KnucklesContainerID {
-    margin-top: -5rem !important;
-    transform: scale(0.25) !important;
   }
 
   .skillCategory {
@@ -570,10 +433,6 @@ ul > li {
   .personalityBaseTraits,
   .personalityTraits {
     font-size: 1.25rem !important;
-  }
-
-  .quickH4 {
-    font-size: 1.15rem !important;
   }
 }
 
@@ -784,13 +643,15 @@ h4.navP {
 #customNav {
   background-color: none;
   width: 12vh;
-  top: 0.5rem !important;
+  top: 0 !important;
+  right: 0 !important;
+  padding-top: 0.25rem !important;
+  margin-right: -0.75rem !important;
   position: sticky;
   position: -webkit-sticky;
 }
 
 #navbarTogglerID {
-  margin: 0.5rem;
   width: 3rem;
   background-color: var(--secondaryColor);
   border: 0.1rem black solid !important;
@@ -798,15 +659,6 @@ h4.navP {
 #navbarTogglerID:hover {
   background-color: var(--btnHoverColor);
 }
-
-/* 
-
-#navbarTogglerID:hover > #navIconID {
-  color: var(--lightest-slate) !important;
-}
-
-#
-} */
 
 #navbarSupportedContent {
   position: fixed;

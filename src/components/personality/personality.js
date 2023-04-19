@@ -50,8 +50,7 @@ class Personality extends Component {
                 Don't stare at it.
                 <br></br>I have spoken.
               </p>
-            }
-            textColor="var(--primary-red)"></PlayRefresh>
+            }></PlayRefresh>
           <div id="greenSquareTableID" className="flexCenter">
             <PixelHead></PixelHead>
           </div>
@@ -425,9 +424,8 @@ class Personality extends Component {
               <br></br>
               <br></br>
               In the cards shown below, I will go through some of my personal
-              attributes in more detail. This is probably the most important
-              section of the website, at least for those of you who truly want
-              to know me better.
+              attributes in more detail. Hopefully you will have a better idea
+              of who I am.
             </p>
           </div>
 

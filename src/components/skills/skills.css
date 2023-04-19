@@ -1,8 +1,5 @@
 /***************** SKILLS *********************/
 
-@media (min-width: 20rem) {
-}
-
 @media (min-width: 120rem) {
 }
 
@@ -42,7 +39,7 @@
 
 ul.a {
   list-style-type: circle;
-  color: var(--lightest-slate);
+  color: var(--secondaryColor-darkest);
 }
 
 #duckContainerID {
@@ -63,19 +60,6 @@ ul.a {
   margin-bottom: 0.1rem;
 }
 
-#skillDividerTd {
-  width: 15vw !important;
-  height: 0.5rem !important;
-  margin: auto !important;
-
-  border-radius: 10px !important;
-  opacity: 1;
-}
-
-.skillPoint {
-  height: 1rem;
-  margin-left: -5rem;
-}
 button .skillCategory {
   padding: 0;
   margin: 0;
@@ -167,16 +151,6 @@ button .selectedBtn.rolesTheme {
   }
 }
 
-.skillPointPelar {
-  height: 3rem;
-  width: 1.75rem;
-  background-color: var(--primary-lightGrey);
-  position: relative;
-  margin: auto;
-  z-index: 2;
-  border-radius: 10px;
-}
-
 .skillPointGround {
   padding: 0% !important;
   color: var(--lightest-slate);
@@ -190,17 +164,6 @@ tr > td > .sectionLine {
   background-color: var(--dark-slate) !important;
   height: 0.25rem;
   width: 100%;
-}
-
-.emptyPointGround {
-  background-color: var(--primary-lightDarkGrey);
-  position: relative;
-  padding: 0.3rem;
-  margin: auto;
-  margin-left: 0.1rem;
-  margin-right: 0.1rem;
-  font-weight: 500;
-  color: var(--primary-white);
 }
 
 .skill {
@@ -268,16 +231,7 @@ button .rolesTheme:active {
   padding: 0;
 }
 
-.seiouslyText {
-  margin: auto;
-  text-align: left;
-  font-size: "0.8375rem";
-  font-weight: "625";
-  color: var(--light-slate);
-  display: inline-block;
-}
-
 ul.skillBullet {
   list-style-type: disc;
-  list-style: var(--primary-blue);
+  list-style: var(--secondaryColor-darkest);
 }

@@ -174,7 +174,6 @@
 }
 
 .personalityTextContainer .duckText {
-  /* color: var(--lightest-slate) !important; */
   margin: 0;
 }
 
@@ -197,7 +196,6 @@ h1 {
 }
 
 .personalityTextContainer p {
-  /* color: var(--light-slate); */
   text-align: left;
   display: inline-block;
   padding: 0.5rem;
@@ -227,10 +225,6 @@ h1 {
 .personalityCard.selectedPersonalityCard:hover {
   background-color: var(--secondaryColor-dark);
 }
-
-/* .btnPersonalityCard:hover {
-  background-color: var(--primaryColor) !important;
-} */
 
 .personalityCard:active {
   opacity: 0.9;

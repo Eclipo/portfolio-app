@@ -371,24 +371,8 @@ class Skills extends Component {
                 </li>
               </ul>
 
-              <p className="mb-0">
-                Furthermore, I have some experience within
-                <span className="highLight"> sales</span>.
-              </p>
-
-              <ul className="skillBullet">
-                <li>
-                  <p>
-                    I've worked as a
-                    <span className="highLight"> prospecter </span>and at CGI I
-                    have occasionally supported as a
-                    <span className="highLight"> presale</span>.
-                  </p>
-                </li>
-              </ul>
-
               <p>
-                To summarize, I am a full-stack developer where front-end is my
+                Simply put, I am a full-stack developer where front-end is my
                 stronger forte. Occasionally, I seek support from senior
                 developers when the code-terrain is a bit too complex before
                 getting into some action.

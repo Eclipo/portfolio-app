@@ -296,17 +296,6 @@
     inset 0 0 2rem 1rem #010101;
 }
 
-.rightHandWeights {
-  border-radius: 25%;
-  background-color: #ffe4be;
-  height: 2rem;
-  width: 1.125rem;
-  margin-left: 11rem;
-
-  margin-top: -1.5rem;
-  position: Absolute;
-}
-
 /* ******** LOWER BODY ******** */
 
 .lowerBodyWeights {
@@ -371,20 +360,4 @@
   border-left: 10rem solid;
   color: var(--primary-orange);
   margin-top: 8rem;
-}
-
-/************************* Environment *********************************/
-
-.basketRim {
-  transform: scale(calc(8 / var(--size-divisorWeights)));
-  margin-left: 30rem;
-  margin-top: -25rem;
-  z-index: -2 !important;
-  position: relative;
-}
-
-.basketBall {
-  margin-left: -25rem;
-  margin-top: -4rem;
-  transform: scale(1.1);
 }
