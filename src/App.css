@@ -196,8 +196,8 @@ button:active {
 }
 
 .highLight {
-  color: var(--secondaryColor-darkest);
-  font-weight: boldest;
+  color: var(--secondaryColor-dark);
+  font-weight: 600;
 }
 
 /************************* HTML classes *********************************/

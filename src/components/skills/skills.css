@@ -34,7 +34,7 @@
 }
 
 #resetSkills .fntAwesome:active {
-  scale: 0.95;
+  scale: 0.925;
 }
 
 ul.a {
@@ -51,7 +51,7 @@ ul.a {
   width: 100%;
   table-layout: fixed;
   border-radius: 18px;
-  transform: scale(0.95);
+  transform: scale(0.925);
   border-collapse: separate;
 }
 
@@ -84,7 +84,7 @@ button .skillCategory {
 }
 
 .selectedBtn {
-  scale: 0.95;
+  scale: 0.925;
   transition: var(--transition);
 }
 
@@ -147,7 +147,7 @@ button .selectedBtn.rolesTheme {
   }
 
   to {
-    scale: 0.95;
+    scale: 0.925;
   }
 }
 
@@ -211,7 +211,7 @@ button .rolesTheme:hover {
 button .frontEndTheme:active,
 button .backEndTheme:active,
 button .rolesTheme:active {
-  scale: 0.98;
+  scale: 0.925;
   transition: var(--transition);
   color: var(--primary-white);
 }

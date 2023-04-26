@@ -237,9 +237,12 @@ class Experiences extends Component {
                   </li>
                 </ul>
               </div>
-              <p id="confidentialParagraph">
-                *Due to confidentiality I cannot share the name of the customer.
-              </p>
+              <span className="d-inline-block">
+                <p id="confidentialParagraph">
+                  *Due to confidentiality I cannot share the name of the
+                  customer.
+                </p>
+              </span>
             </div>
           </div>
         </div>

@@ -100,16 +100,14 @@ setTimeout(function () {
 
             break;
 
-          //Major experiences - Turn OFF QuickAbout and Personality
+          //Selected Work - Turn OFF QuickAbout and Personality
           case 1:
             currentNavLink(3);
             animationQuickFactAbout.playOrStop(false);
-
-
             PlayAnimation("PersonalityAnimation", 1);
             break;
 
-          //Resume Overview Section - Turn ON Personality + Turn OFF Skills and Portfolio
+          //Resume Overview Section - Turn OFF Skills
           case 2:
             PlayAnimation("SkillAnimation", 1);
 
@@ -127,7 +125,6 @@ setTimeout(function () {
 
           case 4:
             currentNavLink(6);
-            PlayAnimation("PersonalityAnimation", 1);
 
             break;
 

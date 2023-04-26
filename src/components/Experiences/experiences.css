@@ -192,6 +192,8 @@ h2 {
 #confidentialParagraph {
   font-style: italic;
   display: none;
+  text-align: left;
+  margin-top: 0.5rem;
 }
 .header3Tech {
   color: var(--primaryText);

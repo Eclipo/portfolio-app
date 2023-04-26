@@ -5,7 +5,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // AVATARS IMPORTS
 import stadshus from "./images/stadshuset.png";
 import cloud from "./images/miniCloud.png";
-import marioCloud from "./images/cloud-small.png";
 import flags from "./images/flags.png";
 
 //Family
@@ -13,7 +12,6 @@ import { Family } from "./Family/Family";
 import { EdipBasket } from "./EdipBasket/EdipBasket";
 import { Weights } from "./Weights/Weights";
 import { LightSaber } from "./lightSaber/lightSaber";
-import { Mario } from "./Mario/mario";
 import { PlaySlide } from "../../PlayAnimation.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
@@ -189,29 +187,6 @@ class TestimonialsCarousel extends Component {
               <p style={{ backgroundColor: "black", width: "fit-content" }}>
                 A huge inspiration to me.
               </p>
-            </div>
-          </div>
-        </>
-
-        <>
-          <div
-            className="containerSlide container basketContainer starWarsBg"
-            style={{
-              background: "var(--primary-blue)",
-            }}>
-            <img className="marioCloud" src={marioCloud} alt="mario cloud" />
-
-            <div className="flexCenter marioAvatar">
-              <Mario></Mario>
-            </div>
-
-            <div className="brickFloor">
-              <span className="marioText">
-                <h2 className="">Video games</h2>
-                <p className="">
-                  I have a passion<br></br> for retrogames
-                </p>
-              </span>
             </div>
           </div>
         </>

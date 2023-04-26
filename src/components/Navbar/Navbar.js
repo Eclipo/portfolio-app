@@ -207,7 +207,7 @@ export const Navbar = () => {
                     data-bs-parent="#accordionExample">
                     <div className="accordion-body">
                       <p className="navP m-0 p-0">
-                        These design tools have helped me in building websites.
+                        These web tools have helped me in building websites.
                         <br></br>
                         Try them out for an enhanced experience and understand
                         my take on web design.

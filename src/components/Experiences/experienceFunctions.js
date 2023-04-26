@@ -170,7 +170,7 @@ export const animate = (inputID) => {
                       }
 
                       if (inputID === "municipality_1") {
-                        confidentialParagraph.style.display = "";
+                        confidentialParagraph.style.display = "block";
                         jobTitle = "Handyman";
 
                         linkCustomerTitle = "#1 Municipality *";

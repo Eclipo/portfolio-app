@@ -17,17 +17,15 @@ const QuickFacts = () => {
         </div>
         <div className="flexCenter mb-4" style={{ marginTop: "-6rem" }}>
           <p className="welcomeText">
-            Welcome to my resumé website! <br></br>
-            Here you can read about me, my skills and my prior experiences. I am
-            always open to consider new possibilities with potential employers,
-            but I am quite picky though.
+            This website is made by me and it is dedicated to familly, friends,
+            colleagues and future employers. Simply a presentation of who I am
+            and my experiences.<br></br>
             <br></br>
-            <br></br>
-            <span className="highLight">Scroll down </span> to see more.
-            <span className="highLight">The navbar </span> in the upper right
-            corner helps you to navigate through the website but it also has
-            some <span className="highLight">web tools</span> which I highly
-            recommend you to try out for an enchanced experience.
+            You can <span className="highLight">scroll down </span> or use
+            <span className="highLight"> the navbar </span> in the upper right
+            corner to view more. The navbar has some{" "}
+            <span className="highLight">web tools</span> I've made and it shows
+            my take on web development.
           </p>
         </div>
       </div>
