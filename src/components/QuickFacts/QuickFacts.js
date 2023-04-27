@@ -7,19 +7,26 @@ const QuickFacts = () => {
   return (
     <div id="quickFacts" className="sectionAnimation">
       <div className="container primaryContainer">
-        <h1 className="flexCenter">
+        <h1 data-aos="fade-down" className="flexCenter">
           Hey!<br></br>
           I'm Edip Sarac!
         </h1>
 
-        <div className="flexCenter mb-lg-4 pb-0" style={{ marginTop: "-6rem" }}>
+        <div
+          data-aos="fade-up"
+          className="flexCenter mb-lg-4 pb-0"
+          style={{ marginTop: "-6rem" }}>
           <EdipGuy></EdipGuy>
         </div>
-        <div className="flexCenter mb-4" style={{ marginTop: "-6rem" }}>
+        <div
+          data-aos="fade-down"
+          data-aos-delay="1750"
+          data-aos-duration="650"
+          className="flexCenter mb-4"
+          style={{ marginTop: "-6rem" }}>
           <p className="welcomeText">
-            This website is made by me and it is dedicated to familly, friends,
-            colleagues and future employers. Simply a presentation of who I am
-            and my experiences.<br></br>
+            This website is simply a presentation of who I am and my
+            experiences.<br></br>
             <br></br>
             You can <span className="highLight">scroll down </span> or use
             <span className="highLight"> the navbar </span> in the upper right

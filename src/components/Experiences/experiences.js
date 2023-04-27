@@ -17,11 +17,15 @@ class Experiences extends Component {
   render() {
     return (
       <div className="sectionAnimation" id="experiencesID">
-        <h1>
+        <h1 data-aos="fade-up" data-aos-duration="650">
           Selected<br></br>work
         </h1>
 
-        <div className="container-sm">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="650"
+          className="container-sm">
           <div className="row">
             <div className="container-sm row" id="expMenu">
               <table

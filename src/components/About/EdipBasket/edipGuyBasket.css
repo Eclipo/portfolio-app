@@ -133,16 +133,16 @@
   margin-left: -1.25rem;
   opacity: 1;
 }
-
 .eye {
   width: 1.25rem;
   height: 1.75rem;
   border-radius: 0.625rem;
-  background: #654921;
+  background: linear-gradient(#5c4636, #3e2d23);
   position: absolute;
   top: -1.125rem;
   left: 50%;
   margin-left: -0.625rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
 .mouth {

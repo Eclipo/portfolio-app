@@ -293,7 +293,7 @@
   position: relative;
   z-index: 2;
   box-shadow: 0 0 0.5rem -0.5rem #adabab,
-    inset 0.25rem 0.5rem 1rem 0.5rem #3c3939;
+    inset 0.25rem 0.5rem 2rem 0.5rem #3c3939;
 }
 
 .face {
@@ -390,7 +390,8 @@
   margin-left: -0.625rem;
 
   z-index: 4;
-  box-shadow: 0 0.1rem 0.25rem 0 #e7ab57, inset 0 -0.5rem 1rem 0 #9c743b;
+  box-shadow: 0 0.1rem 0.5rem 0.1rem #e7ab57,
+    inset 0rem -0.45rem 0.5rem 0.25rem #5a4322;
 }
 
 .erika-nose {

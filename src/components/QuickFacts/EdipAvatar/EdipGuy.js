@@ -7,10 +7,22 @@ export const EdipGuy = () => {
       <div className="edipCircleBackground-circle">
         <div className="triangle-light"></div>
 
-        <div className="body" id="bodyStart"></div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="250"
+          data-aos-easing="ease-in-out-sine"
+          className="body"
+          id="bodyStart"></div>
       </div>
 
-      <div className="head" id="headOne">
+      <div
+        data-aos="fade-down"
+        data-aos-delay="600"
+        data-aos-duration="500"
+        data-aos-easing="ease"
+        className="head"
+        id="headOne">
         <div className="hair-main" style={{ background: "#3f2a14" }}></div>
 
         <div className="face" id="faceID">
@@ -37,7 +49,12 @@ export const EdipGuy = () => {
         <div className="beard"></div>
       </div>
 
-      <div className="position-absolute cupSteamContainerTable ">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="750"
+        data-aos-duration="500"
+        data-aos-easing="ease"
+        className="position-absolute cupSteamContainerTable ">
         <div className="right-hand" id="rightAnim"></div>
         <div className="left-hand"></div>
 
