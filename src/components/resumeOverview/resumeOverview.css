@@ -55,7 +55,7 @@ h4 {
 
 .resumeSection {
   color: var(--primary-white);
-  background: var(--bg-sub-dark);
+  /* background: var(--bg-sub-dark); */
   border-radius: 18px;
   margin-bottom: 2vh !important;
   margin: auto !important;
@@ -190,7 +190,9 @@ h4 {
 .expSubContainer {
   background-color: var(--primaryColor);
   padding: 1rem;
-  padding-bottom: 2rem;
+  border: 0.1rem solid black !important;
+  padding-bottom: 1.5rem;
+  border: 0.1rem solid;
   justify-items: center;
   border-radius: 18px;
   width: 99%;

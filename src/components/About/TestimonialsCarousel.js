@@ -55,7 +55,7 @@ class TestimonialsCarousel extends Component {
           <div
             className="containerSlide PT-4"
             style={{
-              background: "var(--primary-darker-green)",
+              background: "var(--primary-darker-blue)",
               height: "26.5rem",
             }}>
             <div className="d-block" style={{ marginTop: "-13rem" }}>
@@ -75,7 +75,7 @@ class TestimonialsCarousel extends Component {
           <div
             className="containerSlide container"
             style={{
-              background: "var(--primary-lightDarkGrey)",
+              background: "var(--primary-grey)",
               height: "26.5rem",
             }}>
             <div style={{ marginTop: "4rem" }}>

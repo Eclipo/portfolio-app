@@ -2,6 +2,12 @@ import React, { Component, useState } from "react";
 import "./experiences.css";
 import "../../IntersectionObserver.js";
 import { animate } from "./experienceFunctions.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowLeftLong,
+  faArrowRightLong,
+} from "@fortawesome/free-solid-svg-icons";
+import { faHand } from "@fortawesome/free-solid-svg-icons";
 
 class Experiences extends Component {
   constructor(props) {
@@ -21,6 +27,21 @@ class Experiences extends Component {
           Selected<br></br>work
         </h1>
 
+        <div className="smallScreen" data-aos="fade-up" data-aos-duration="650">
+          <FontAwesomeIcon
+            icon={faArrowLeftLong}
+            className="scrollIcon"></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faHand}
+            className="scrollIcon"></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faArrowRightLong}
+            className="scrollIcon"></FontAwesomeIcon>
+        </div>
+
+        <p className="smallScreen" data-aos="fade-up" data-aos-duration="650">
+          Scroll the selected work horizontally to view more.
+        </p>
         <div
           data-aos="fade-up"
           data-aos-delay="500"

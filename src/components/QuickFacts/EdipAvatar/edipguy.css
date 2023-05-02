@@ -21,12 +21,12 @@
 
 @media (min-width: 120rem) {
   :root {
-    --size-edipGuyDivisor: 3;
+    --size-edipGuyDivisor: 3.65;
   }
 }
 
 #tableStartGuyID {
-  transform: scale(calc(2 / var(--size-edipGuyDivisor)));
+  transform: scale(calc(2.1 / var(--size-edipGuyDivisor)));
 }
 
 .wrapper {
@@ -36,8 +36,8 @@
 }
 
 .edipCircleBackground-circle {
-  width: 30.25rem;
-  height: 30.25rem;
+  width: 29.5rem;
+  height: 29.5rem;
   border-radius: 100%;
   overflow: hidden;
   background: #95b3bf !important;

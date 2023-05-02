@@ -20,20 +20,15 @@ const QuickFacts = () => {
         </div>
         <div
           data-aos="fade-down"
-          data-aos-delay="1750"
+          data-aos-delay="1250"
           data-aos-duration="650"
-          className="flexCenter mb-4"
+          className="text-left mb-4"
           style={{ marginTop: "-6rem" }}>
-          <p className="welcomeText">
-            This website is simply a presentation of who I am and my
-            experiences.<br></br>
-            <br></br>
-            You can <span className="highLight">scroll down </span> or use
-            <span className="highLight"> the navbar </span> in the upper right
-            corner to view more. The navbar has some{" "}
-            <span className="highLight">web tools</span> I've made and it shows
-            my take on web development.
-          </p>
+          <h3>
+            A full-stack developer
+            <br></br>from Sweden who enjoys
+            <br></br>front-end and playful design.
+          </h3>
         </div>
       </div>
     </div>

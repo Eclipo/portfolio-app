@@ -44,12 +44,12 @@
   font-family: "Open Sans", sans-serif;
   height: 37.5rem;
   margin: 0 auto;
-  background: #6d40de;
+  background: #197250;
   border-radius: 6.25rem;
+
   position: relative;
   top: 12.5rem;
-  box-shadow: 0.15rem 2rem 2.5rem #a683ff,
-    inset 1rem 1rem 1.5rem 1.25rem #462795;
+  box-shadow: 0 1.25rem 0rem #83ffb3, inset 1rem 1rem 1.5rem 0.5rem #27956b;
 }
 
 .laleh-body {
@@ -62,7 +62,7 @@
   position: relative;
   top: 7.5rem;
 
-  box-shadow: 0 0.25rem 0.5rem 0.1rem #e799fb,
+  box-shadow: 0 -0.5rem 0.5rem 0.1rem #e799fb,
     inset 0.25rem 0.25rem 2rem 0.5rem #7d428c;
 }
 

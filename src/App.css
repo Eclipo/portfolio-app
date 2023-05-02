@@ -8,7 +8,7 @@
     inset 0 0 1rem 0.5rem var(--navy);
 
   /*NYA KNAPP SHADOW!!!! */
-  --btnShadow: 0.15rem 0.15rem 0.25rem 0.1rem black,
+  --btnShadow: 0.1rem 0.1rem 0.1rem 0.1rem black,
     inset -0.1rem -0.1rem 0.5rem 0.1rem var(--secondaryColor-shadow),
     inset 0.6rem 0.65rem 0.25rem -0.4rem var(--primary-white);
 
@@ -89,14 +89,13 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg: #f1f1ca36;
-  --bg-pink: #f8bf6a48;
+  --bg: #f1e5ca3f;
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfaee;
-  --primaryText: #573a01;
+  --primaryText: #533905ef;
   --bg-nav: #cfae6c;
 
-  --secondaryColor: #c78d18;
+  --secondaryColor: #c58e20;
   --secondaryColor-dark: #916610;
   --secondaryColor-darkest: #5c3e03;
   --secondaryColor-shadow: #462f02;
@@ -118,10 +117,7 @@
 
 /************************* MAIN CSS CLASSES *********************************/
 
-.sectionAnimation:nth-child(even) {
-  background: var(--bg-pink);
-}
-.sectionAnimation:nth-child(odd) {
+.sectionAnimation {
   background: var(--bg);
 }
 
@@ -138,8 +134,8 @@
 }
 
 .primaryContainer {
-  background-color: var(--primaryColor);
-  box-shadow: var(--blackWhiteShadow);
+  /* background-color: var(--primaryColor); */
+  /* box-shadow: var(--blackWhiteShadow); */
   width: 95% !important;
   border-radius: 18px;
   margin: 1rem;

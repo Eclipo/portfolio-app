@@ -31,6 +31,9 @@
 }
 
 @media (min-width: 40rem) {
+  .smallScreen {
+    display: none;
+  }
   #municipality_3_sql {
     width: 75%;
   }
@@ -82,13 +85,12 @@
 #expMenu {
   opacity: 1;
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: auto;
   border-radius: 18px;
   background-color: var(--bg-sub-dark);
   border: 0.15rem solid black;
   box-shadow: var(--blackWhiteShadow);
-  width: 100%;
   padding: 0.75rem;
   margin: 0.75rem;
 }
@@ -106,10 +108,12 @@ h2 {
 
 .techCategory {
   margin: auto;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin-top: 0.75rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   width: fit-content;
   padding: 1rem;
+
   color: var(--primary-white);
   border: 0.1rem black solid;
   border-style: solid;
@@ -135,8 +139,18 @@ h2 {
   height: 0.25rem;
 }
 
+.scrollIcon {
+  color: var(--secondaryColor-dark);
+  scale: 1.5;
+  margin: 0.5rem;
+}
+
 #expCategoryMenu {
   overflow: auto;
+  border-radius: 18px;
+  padding: 0.5rem;
+  /* background-color: var(--bg-sub-dark); */
+  /* width: 90%; */
 }
 
 /* Handle */
@@ -258,12 +272,11 @@ h2 {
   text-align: left;
   white-space: normal !important;
   opacity: 0;
-  background-color: var(--primaryColor);
-  box-shadow: var(--blackWhiteShadow);
+
   width: 95% !important;
   border-radius: 18px;
   /* margin: 1rem; */
-  display: inline-block;
+  display: block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
