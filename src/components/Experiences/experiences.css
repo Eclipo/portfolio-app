@@ -31,9 +31,6 @@
 }
 
 @media (min-width: 40rem) {
-  .smallScreen {
-    display: none;
-  }
   #municipality_3_sql {
     width: 75%;
   }
@@ -51,6 +48,10 @@
 }
 
 @media (min-width: 60rem) {
+  .smallScreen {
+    display: none;
+  }
+
   #municipality_3_sql {
     width: 75%;
   }
@@ -207,7 +208,6 @@ h2 {
   font-style: italic;
   display: none;
   text-align: left;
-  margin-top: 0.5rem;
 }
 .header3Tech {
   color: var(--primaryText);
@@ -275,10 +275,7 @@ h2 {
 
   width: 95% !important;
   border-radius: 18px;
-  /* margin: 1rem; */
   display: block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .majorExphighLight {

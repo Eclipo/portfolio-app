@@ -416,16 +416,15 @@ class Personality extends Component {
           <div className="flexCenter bookContainer">
             <Book></Book>
           </div>
-          <div className="duckText mx-auto">
+          <div className="mx-auto">
             <p className="mb-0">
               Hopefully you didn't stare at my personality for too long and it
-              shouldn't be taken too seriously though. My personality is a bit
-              messy, just like with most people.
+              shouldn't be taken too seriously though.
               <br></br>
               <br></br>
               In the cards shown below, I will go through some of my personal
-              attributes in more detail. Hopefully you will have a better idea
-              of who I am.
+              attributes in more detail. Hopefully you will have a better
+              understanding of who my persona.
             </p>
           </div>
 

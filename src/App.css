@@ -89,7 +89,9 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg: #f1e5ca3f;
+  --bg: #f8eeb85b;
+  --bg-light: #f7f7e6da;
+
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfaee;
   --primaryText: #533905ef;
@@ -117,7 +119,10 @@
 
 /************************* MAIN CSS CLASSES *********************************/
 
-.sectionAnimation {
+.sectionAnimation:nth-child(even) {
+  background: var(--bg-light);
+}
+.sectionAnimation:nth-child(odd) {
   background: var(--bg);
 }
 

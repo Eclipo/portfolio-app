@@ -132,22 +132,25 @@
   width: 9rem;
   height: 2rem;
   border-radius: 0 2.0625rem 0 2.0625rem;
-  background: var(--primary-light-orange);
+  background: var(--primary-orange);
   position: absolute;
   top: 7rem;
   right: 75%;
-  box-shadow: var(--duckMouthUpperShadow);
+  border: 0.1rem solid black;
+  /* box-shadow: var(--duckMouthUpperShadow); */
 }
 
 .duckMouthUnder {
   width: 9rem;
   height: 2rem;
   border-radius: 2.0625rem 0 2.0625rem 0;
-  background: var(--primary-light-orange);
+  background: var(--primary-orange);
   position: absolute;
   top: 9.25rem;
   right: 75%;
-  box-shadow: var(--duckMouthLowerShadow);
+  border: 0.1rem solid black;
+
+  /* box-shadow: var(--duckMouthLowerShadow); */
 }
 
 .shadow-wrapper {
