@@ -23,11 +23,11 @@ class Experiences extends Component {
   render() {
     return (
       <div className="sectionAnimation" id="experiencesID">
-        <h1 data-aos="fade-up" data-aos-duration="650">
+        <h1>
           Selected<br></br>work
         </h1>
 
-        <div className="smallScreen" data-aos="fade-up" data-aos-duration="650">
+        <div className="smallScreen">
           <FontAwesomeIcon
             icon={faArrowLeftLong}
             className="scrollIcon"></FontAwesomeIcon>
@@ -39,14 +39,10 @@ class Experiences extends Component {
             className="scrollIcon"></FontAwesomeIcon>
         </div>
 
-        <p className="smallScreen" data-aos="fade-up" data-aos-duration="650">
+        <p className="smallScreen">
           Scroll the selected work horizontally to view more.
         </p>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="500"
-          data-aos-duration="650"
-          className="container-sm">
+        <div className="container-sm">
           <div className="row">
             <div className="container-sm row" id="expMenu">
               <table

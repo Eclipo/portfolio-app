@@ -112,16 +112,12 @@ class Skills extends Component {
     return (
       <div id="skills" className="sectionAnimation">
         <div className="container-sm skillContainer" id="skillContainerID">
-          <h1 data-aos="fade-up" data-aos-duration="500">
-            Skills
-          </h1>
+          <h1>Skills</h1>
 
           <div className="row"></div>
           <div className="row m-auto">
             <div className="col">
               <button
-                data-aos="fade-right"
-                data-aos-duration="500"
                 className="bg-transparent"
                 id="frontEnd"
                 onClick={this.filterSkills}>
@@ -134,9 +130,6 @@ class Skills extends Component {
             </div>
             <div className="col">
               <button
-                data-aos="fade-right"
-                data-aos-delay="500"
-                data-aos-duration="500"
                 className="bg-transparent"
                 id="backEnd"
                 onClick={this.filterSkills}>
@@ -149,9 +142,6 @@ class Skills extends Component {
             </div>
             <div className="col">
               <button
-                data-aos="fade-right"
-                data-aos-delay="750"
-                data-aos-duration="500"
                 className="bg-transparent"
                 id="roles"
                 onClick={this.filterSkills}>
@@ -167,12 +157,7 @@ class Skills extends Component {
             <div className="col"></div>
             <div className="col">
               <div className="flexCenter">
-                <button
-                  data-aos="fade-up"
-                  data-aos-delay="1000"
-                  data-aos-duration="500"
-                  id="resetSkills"
-                  onClick={this.resetSkills}>
+                <button id="resetSkills" onClick={this.resetSkills}>
                   <FontAwesomeIcon
                     className="fntAwesome p-2"
                     icon={faSyncAlt}
@@ -184,11 +169,7 @@ class Skills extends Component {
             <div className="col"></div>
           </div>
 
-          <table
-            data-aos="fade-up"
-            data-aos-delay="1250"
-            data-aos-duration="500"
-            className="skillTable">
+          <table className="skillTable">
             <thead>
               <tr>
                 <td>
@@ -348,26 +329,18 @@ class Skills extends Component {
 
         <div className="container-sm primaryContainer" id="duckContainerID">
           <div className="row">
-            <h1 data-aos="fade-down" data-aos-duration="650">
+            <h1>
               MY
               <br></br>
               SPIRIT ANIMAL
             </h1>
 
-            <div
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="650"
-              className="flexCenter duckContainer">
+            <div className="flexCenter duckContainer">
               <Duck></Duck>
             </div>
           </div>
 
-          <div
-            data-aos="fade-up"
-            data-aos-delay="950"
-            data-aos-duration="650"
-            className="row">
+          <div className="row">
             <div className="duckText">
               <p className="mb-0">
                 As a developer I am

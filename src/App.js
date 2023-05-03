@@ -1,7 +1,5 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "aos/dist/aos.css";
-import Aos from "aos";
 
 import { Navbar } from "./components/Navbar/Navbar";
 import QuickFacts from "./components/QuickFacts/QuickFacts";
@@ -12,9 +10,6 @@ import ResumeOverview from "./components/resumeOverview/resumeOverview";
 import Experiences from "./components/Experiences/experiences";
 import Contact from "./components/Contact/Contact";
 function App() {
-  Aos.init({
-    once: true,
-  });
   return (
     <>
       <Navbar></Navbar>

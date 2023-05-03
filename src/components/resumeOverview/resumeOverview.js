@@ -17,16 +17,14 @@ class ResumeOverview extends Component {
   render() {
     return (
       <div id="resumeOverview" className="sectionAnimation">
-        <h1 ata-aos="fade-up" data-aos-duration="500">
+        <h1>
           Resumé <br></br>Overview
         </h1>
         <div id="resumeContainerID">
           <div className="resumeTable">
-            <div data-aos="fade-up" className="resumeNavMenu mt-5">
+            <div className="resumeNavMenu mt-5">
               <div className="resumeNavRow">
                 <button
-                  data-aos="fade-down"
-                  data-aos-duration="500"
                   id="resumeLangID"
                   className="resumeNav col"
                   onClick={this.handleClick}>
@@ -35,9 +33,6 @@ class ResumeOverview extends Component {
                   </h2>
                 </button>
                 <button
-                  data-aos="fade-down"
-                  data-aos-delay="500"
-                  data-aos-duration="500"
                   className="resumeNav col"
                   id="resumeExpID"
                   onClick={this.handleClick}>
@@ -46,9 +41,6 @@ class ResumeOverview extends Component {
                   </h2>
                 </button>
                 <button
-                  data-aos="fade-down"
-                  data-aos-delay="1000"
-                  data-aos-duration="500"
                   className="resumeNav col"
                   id="resumeEduID"
                   onClick={this.handleClick}>

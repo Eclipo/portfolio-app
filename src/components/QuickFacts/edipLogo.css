@@ -70,6 +70,11 @@
   }
 }
 
+#quickFacts h1,
+#quickFacts h3 {
+  opacity: 0;
+}
+
 #choiceID {
   opacity: 0;
   display: block;

@@ -45,6 +45,7 @@
   position: relative;
   border: 1rem solid var(--secondaryColor-dark);
   z-index: -1;
+  opacity: 0;
 }
 
 .body {
@@ -60,8 +61,12 @@
   z-index: 1;
   box-shadow: 0.15rem 2rem 2.5rem -1rem #cecbb7,
     inset 0 1rem 1.5rem 2.25rem #373206;
+  opacity: 0;
 }
 
+#headOne {
+  opacity: 0;
+}
 .cupSteamContainerTable {
   margin-left: 52%;
   margin-top: 60%;
@@ -70,12 +75,16 @@
 .steam-container {
   width: 3.75rem;
   height: 3.125rem;
+  opacity: 0;
 }
 
 .coffee-cup {
   width: 5rem;
 }
 
+.coffee-cup-container {
+  opacity: 0;
+}
 .squiggle-container {
   width: 0.625rem;
   height: 1.875rem;
@@ -130,6 +139,7 @@
   position: absolute;
   z-index: -1;
   box-shadow: 0 0 0.25rem 0 #f4c37e, inset 0 0 1.5rem 0.25rem #9c7742;
+  opacity: 0;
 }
 
 .left-hand {
@@ -142,6 +152,7 @@
   position: absolute;
   z-index: 1;
   box-shadow: 0 0 0.25rem 0 #f4c37e, inset 0 0 1.5rem 0.25rem #9c7742;
+  opacity: 0;
 }
 
 .mouth {

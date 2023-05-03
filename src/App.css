@@ -89,8 +89,7 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg: #f8eeb85b;
-  --bg-light: #f7f7e6da;
+  --bg: #f8f1b827;
 
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfaee;
@@ -119,16 +118,9 @@
 
 /************************* MAIN CSS CLASSES *********************************/
 
-.sectionAnimation:nth-child(even) {
-  background: var(--bg-light);
-}
-.sectionAnimation:nth-child(odd) {
-  background: var(--bg);
-}
-
 .sectionAnimation {
-  /* background-color: var(--bg); */
-  min-height: 50vh;
+  background-color: var(--bg);
+  min-height: 75vh;
   margin: auto;
   display: block;
   flex-wrap: wrap;
@@ -252,6 +244,7 @@ h1 {
   text-align: center !important;
   margin-bottom: 1rem !important;
   color: var(--primaryText);
+  /* opacity: 0; */
 }
 
 h2 {
@@ -271,6 +264,7 @@ h3 {
   text-align: center !important;
   word-break: keep-all !important;
   color: var(--primaryText) !important;
+  /* opacity: 0; */
 }
 
 h4 {
