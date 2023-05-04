@@ -6,14 +6,8 @@ import {
 export class QuickAboutAnimation {
   constructor() {
     this.firstTimeIntro = true;
-    this.firstTimeAbout = true;
 
     this.firstIntroAnimation = anime.timeline({
-      loop: false,
-      autoplay: false,
-    });
-
-    this.firstAboutAnimation = anime.timeline({
       loop: false,
       autoplay: false,
     });
@@ -24,39 +18,20 @@ export class QuickAboutAnimation {
       opacity: [0, 1],
       duration: 250,
       complete: function () {
-        if (!this.firstTimeAbout) {
-          anime({
-            targets: [
-              "#bodyStart",
-              "#headOne",
-              ".right-hand",
-              ".left-hand",
-              ".coffee-cup-container",
-              ".steam-container",
-            ],
-            easing: "easeInOutSine",
-            translateY: ["-2rem", "3rem", 0],
-            opacity: [0, 1],
-            delay: anime.stagger(150),
-          });
-        }
-
-        if (this.firstTimeAbout) {
-          anime({
-            targets: [
-              "#bodyStart",
-              "#headOne",
-              ".right-hand",
-              ".left-hand",
-              ".coffee-cup-container",
-              ".steam-container",
-            ],
-            easing: "easeInOutSine",
-            translateY: ["-2rem", "2rem", 0],
-            opacity: [0, 1],
-            delay: anime.stagger(150),
-          });
-        }
+        anime({
+          targets: [
+            "#quickFacts #bodyStart",
+            "#quickFacts #headOne",
+            ".right-hand",
+            ".left-hand",
+            ".coffee-cup-container",
+            ".steam-container",
+          ],
+          easing: "easeInOutSine",
+          translateY: ["-2rem", "2rem", 0],
+          opacity: [0, 1],
+          delay: anime.stagger(150),
+        });
       },
     });
 
@@ -74,57 +49,6 @@ export class QuickAboutAnimation {
       opacity: [0, 1],
       duration: 250,
       delay: 100,
-    });
-
-    this.firstAboutAnimation.add({
-      targets: ["#bodyStart", "#headOne"],
-      opacity: 0,
-      duration: 50,
-    });
-    this.firstAboutAnimation.add({
-      targets: ".customLeftArrowBtn",
-      easing: "easeInOutSine",
-      translateY: ["1rem", "-1rem", 0],
-      opacity: [0, 1],
-      duration: 350,
-      delay: 100,
-    });
-
-    this.firstAboutAnimation.add({
-      targets: [".customRightArrowBtn"],
-      easing: "easeInOutSine",
-      translateX: ["-1rem", "1rem", 0],
-      opacity: [0, 1],
-      duration: 350,
-    });
-
-    this.firstAboutAnimation.add({
-      targets: [".containerSlide", ".control-dots"],
-      easing: "easeInOutSine",
-      translateY: ["-1rem", "1rem", 0],
-      opacity: [0, 1],
-      duration: 650,
-      delay: 50,
-    });
-
-    this.firstAboutAnimation.add({
-      targets: ["#aboutMe h1"],
-      easing: "easeInOutSine",
-      translateY: ["-1rem", "1rem", 0],
-      opacity: [0, 1],
-      duration: 500,
-      endDelay: 50,
-      complete: function () {
-        if (!this.firstTimeIntro) {
-          anime({
-            targets: ["#bodyStart", "#headOne"],
-            easing: "easeInOutSine",
-            translateY: ["-2rem", "3rem", 0],
-            opacity: [0, 1],
-            duration: 650,
-          });
-        }
-      },
     });
 
     this.edipAndFamillyAnimation = anime.timeline({
@@ -160,9 +84,9 @@ export class QuickAboutAnimation {
   async playOrStop(input) {
     if (input === 0) {
       if (this.firstTimeIntro) {
-        this.firstTimeIntro = false;
         document.getElementById("headOne").style.opacity = 0;
         document.getElementById("bodyStart").style.opacity = 0;
+        this.firstTimeIntro = false;
         this.firstIntroAnimation.play();
       }
       this.edipAndFamillyAnimation.play();
@@ -174,11 +98,6 @@ export class QuickAboutAnimation {
     }
 
     if (input === 1) {
-      if (this.firstTimeAbout) {
-        this.firstTimeAbout = false;
-
-        this.firstAboutAnimation.play();
-      }
       this.edipAndFamillyAnimation.play();
       this.quickCoffeeSteam.play();
 

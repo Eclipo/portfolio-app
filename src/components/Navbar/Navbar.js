@@ -367,18 +367,6 @@ export const Navbar = () => {
               <li className="nav-item">
                 <Link
                   smooth={true}
-                  to={"testimonials"}
-                  id="navLinkAboutID"
-                  className="nav-link"
-                  href="#"
-                  tabIndex={1}>
-                  <h3 className="navLinkH3">About</h3>
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  smooth={true}
                   to={"skills"}
                   id="navLinkSkillsID"
                   className="nav-link"
@@ -409,6 +397,18 @@ export const Navbar = () => {
                   href="#"
                   tabIndex={4}>
                   <h3 className="navLinkH3">Resumé Overview</h3>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link
+                  smooth={true}
+                  to={"testimonials"}
+                  id="navLinkAboutID"
+                  className="nav-link"
+                  href="#"
+                  tabIndex={1}>
+                  <h3 className="navLinkH3">ABOUT</h3>
                 </Link>
               </li>
 

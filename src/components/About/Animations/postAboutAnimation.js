@@ -1,6 +1,7 @@
 import anime from "animejs";
 
 export var selectedIndex = 0;
+
 async function bounceFlagAnimation() {
   const windowHeight = window.outerHeight;
   const windowWidht = window.outerWidth;
@@ -421,12 +422,12 @@ async function marioAnimation() {
 export async function playPostFunc(index) {
   removeAboutAnimations();
 
-  if (index !== false){
-  selectedIndex=index;
+  if (index !== false) {
+    selectedIndex = index;
 
     switch (index) {
       case 0:
-
+        break;
       case 1:
         bounceFlagAnimation();
         break;

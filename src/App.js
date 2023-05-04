@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Navbar } from "./components/Navbar/Navbar";
 import QuickFacts from "./components/QuickFacts/QuickFacts";
-import Testimonials from "./components/About/Testimonials";
+import About from "./components/About/About";
 import Skills from "./components/skills/skills";
 import Personality from "./components/personality/personality";
 import ResumeOverview from "./components/resumeOverview/resumeOverview";
@@ -14,11 +14,12 @@ function App() {
     <>
       <Navbar></Navbar>
       <QuickFacts></QuickFacts>
-      <Testimonials></Testimonials>
       <Skills></Skills>
       <Experiences></Experiences>
       <ResumeOverview></ResumeOverview>
-      <Personality></Personality> <Contact></Contact>
+      <About></About>
+      <Personality></Personality>
+      <Contact></Contact>
     </>
   );
 }

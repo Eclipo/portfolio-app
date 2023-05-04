@@ -10,10 +10,10 @@ export const Family = () => {
             {/* Edip */}
             <div className="wrapper">
               <div className="background-circle" style={{ background: "none" }}>
-                <div className="edip-body" id="bodyStart"></div>
+                <div className="edip-body"></div>
               </div>
 
-              <div className="head" id="headOne">
+              <div className="head">
                 <div className="hair-main"></div>
 
                 <div className="face" id="faceID">

@@ -71,7 +71,9 @@
 }
 
 #quickFacts h1,
-#quickFacts h3 {
+#quickFacts h3,
+#quickFacts #bodyStart,
+#quickFacts #headOne {
   opacity: 0;
 }
 

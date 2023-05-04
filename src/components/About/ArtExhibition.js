@@ -15,7 +15,7 @@ import { LightSaber } from "./lightSaber/lightSaber";
 import { PlaySlide } from "../../PlayAnimation.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
-class TestimonialsCarousel extends Component {
+class ArtExhibition extends Component {
   constructor(props) {
     super(props);
   }
@@ -195,4 +195,4 @@ class TestimonialsCarousel extends Component {
   }
 }
 
-export default TestimonialsCarousel;
+export default ArtExhibition;
