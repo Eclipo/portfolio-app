@@ -71,14 +71,14 @@ setTimeout(function () {
           // Quick Facts Section - TURN ON QuickFacts&About + Turn OFF Skills
           case 0:
             currentNavLink(0);
-            animationQuickFactAbout.playOrStop(true);
+            animationQuickFactAbout.playOrStop(0);
             PlayAnimation("SkillAnimation", 1);
             break;
 
           //About me Section - Turn ON QuickFacts&About and Skills
           case 1:
             currentNavLink(1);
-            animationQuickFactAbout.playOrStop(true);
+            animationQuickFactAbout.playOrStop(1);
             break;
 
           default:
