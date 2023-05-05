@@ -39,9 +39,10 @@
 
   /* Colors */
   --primary-white: rgba(245, 237, 237, 0.993);
+  --primary-red: rgba(197, 12, 12, 0.993);
 
   /*About */
-  --primary-blue: #4485c6;
+  --primary-blue: #1d42bd;
   --primary-darker-blue: #2d6296;
   --primary-darker-green: #2f8f5f;
   --primary-dark-brown: #5f3314;
@@ -89,12 +90,13 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
+  --bg-nav: #cfae6c;
+
   --bg: #f8f1b827;
 
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfaee;
   --primaryText: #533905ef;
-  --bg-nav: #cfae6c;
 
   --secondaryColor: #c58e20;
   --secondaryColor-dark: #916610;
@@ -157,14 +159,15 @@ button:active {
 }
 
 .menuBtn {
-  border-radius: 15% 15% 50% 50%;
+  border-radius: 15% 15% 50% 50% !important;
 
-  transition: var(--transition);
-  box-shadow: var(--menuBtnShadow);
+  transition: var(--transition) !important;
+  box-shadow: var(--menuBtnShadow) !important;
 }
 
 .menuBtn .fntAwesome {
   background-color: var(--secondaryColor);
+  margin: auto;
 }
 .menuBtn:hover {
   background-color: var(--btnHoverColor);
@@ -465,120 +468,12 @@ ul > li {
 .fntAwesome {
   color: var(--primary-white);
   margin-top: 0.5rem;
-}
-
-.accordion ::-webkit-scrollbar-track {
-  background-color: var(--bg-sub-dark);
-  box-shadow: inset 0 0 0.5rem var(--slate);
-  border-radius: 0;
-}
-
-.accordion ::-webkit-scrollbar-thumb:vertical {
-  background-color: var(--slate);
-}
-
-.accordion ::-webkit-scrollbar-thumb:vertical:hover {
-  background: var(--tint-navy);
-  height: 0.25rem !important;
-}
-
-#navbarSupportedContent.accordion ::-webkit-scrollbar-thumb:vertical:active {
-  background: var(--dark-slate);
-  height: 0.25rem !important;
-}
-
-#navbarSupportedContent ::-webkit-scrollbar-thumb:vertical {
-  background-color: var(--primary-lightDarkGrey);
-}
-
-#navbarSupportedContent ::-webkit-scrollbar-thumb:vertical:hover {
-  background-color: var(--tint-navy);
-  height: 0.25rem !important;
-}
-
-#navbarSupportedContent ::-webkit-scrollbar-thumb:vertical:active {
-  background: var(--dark-slate);
-  height: 0.25rem !important;
-}
-
-#navbarSupportedContent ::-webkit-scrollbar-track {
-  background-color: var(--primary-white);
-  box-shadow: inset 0 0 0.5rem var(--slate);
-  border-radius: 0 0 5px 0;
-}
-.accordion {
-  margin-top: 2.75rem;
-  display: block;
-  margin-bottom: 1.25rem;
-  width: fit-content;
-  min-width: 95%;
-  max-width: 35rem;
-  padding-right: 0.5rem;
-}
-
-.accordion-header {
-  border: none !important;
-  background-color: var(--secondaryColor-dark) !important;
-}
-
-.accordion-button {
-  background-color: var(--secondaryColor) !important;
-  border: 0.1rem black solid !important;
-  height: 3rem;
-
-  justify-content: center !important;
-  transition: var(--transition) !important;
-  padding: 0.45rem !important;
-  margin-right: 0.25rem !important;
-  border-radius: 5px !important;
-  border: 0.15rem solid black !important;
-  box-shadow: var(--menuBtnShadow) !important;
-}
-
-.accordion-button:hover {
-  background-color: var(--secondaryColor-dark) !important;
-}
-
-.accordion-button:active {
-  scale: 1 !important;
-}
-.accordion-button.collapsed::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  border-bottom: 0 !important;
-}
-
-.accordion-button:not(.collapsed)::after {
-  border-bottom: 0 !important;
-
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
-}
-
-.accordion-body {
-  height: fit-content !important;
-  max-height: 80vh !important;
-  overflow-y: auto !important;
-  border-radius: 0 5px 5px 5px !important;
-}
-
-.accordion-item {
-  border: none !important;
-}
-
-.accordion-item:last-of-type .accordion-collapse {
-  transition: all 1.25s ease-in-out !important;
+  height: 1.05rem !important;
+  width: 1.25rem !important;
 }
 
 .navLinkH3 {
   font-size: 1.05rem;
-  color: var(--primary-white) !important;
-}
-
-h4.navP {
-  color: var(--primary-white) !important;
-}
-
-.accordion-body p {
-  color: var(--darkest-navy);
 }
 
 .navbar-light .navbar-toggler {
@@ -586,64 +481,98 @@ h4.navP {
   border: none !important;
 }
 
-.navBtnMenu {
-  display: block;
+.navbar-nav > li > a:hover {
+  border-bottom: 0.1875rem solid var(--secondaryColor) !important;
+}
+#navLinkHomeID:focus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
 }
 
-.navSubMenu {
-  margin-left: 0.1%;
+#navLinkHomeID.navFocus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
 }
 
-.navSubIcon {
-  background-color: var(--secondaryColor) !important;
-  padding-bottom: 0.5rem !important;
-  width: fit-content;
-  display: block;
-  border-radius: 18px;
-  transition: var(--transition);
-  box-shadow: var(--btnShadow);
+#navLinkQuickFactsID:focus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
 }
 
-.navSubIcon:hover {
-  background-color: var(--secondaryColor-dark) !important;
-  transition: var(--transition) !important;
+#navLinkQuickFactsID.navFocus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
 }
 
-.navSubIcon:active {
-  background-color: var(--secondaryColor-darkest);
-  scale: 0.95;
-  transition: var(--transition) !important;
+#navLinkAboutID:focus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
 }
 
-/* default state */
-.containerNavbar {
-  z-index: 1000 !important;
-  position: fixed;
-  right: 0;
-  background-color: none;
-  width: fit-content !important;
-  max-width: 98vw;
-  margin-right: 1rem;
-  border-radius: 5%;
+#navLinkAboutID.navFocus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
 }
 
-/* scrolling state */
-.containerNavbar.fixed-top {
-  position: fixed;
-  left: 0;
-  right: 0;
-  background-color: none;
+#navLinkSkillsID:focus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
 }
 
-#customNav {
-  background-color: none;
-  width: 12vh;
+#navLinkSkillsID.navFocus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
+}
+
+#navLinkPersonalityID:focus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
+}
+
+#navLinkPersonalityID.navFocus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
+}
+
+#navLinkResumeOverviewID:focus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
+}
+
+#navLinkResumeOverviewID.navFocus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
+}
+
+#navLinkExperiencesID:focus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
+}
+
+#navLinkExperiencesID.navFocus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
+}
+
+#navLinkContactID:focus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
+}
+
+#navLinkContactID.navFocus {
+  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  transition: all 2s ease-out;
+}
+
+.navbar {
   top: 0 !important;
-  right: 0 !important;
-  padding-top: 0.25rem !important;
-  margin-right: -0.75rem !important;
-  position: sticky;
-  position: -webkit-sticky;
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  z-index: 2 !important;
+}
+
+.customNav {
+  background-color: var(--bg-nav);
 }
 
 #navbarTogglerID {
@@ -655,36 +584,72 @@ h4.navP {
   background-color: var(--btnHoverColor);
 }
 
-#navbarSupportedContent {
-  position: fixed;
-  top: 0;
-  right: 0;
-  min-width: 25%;
+.linksContainer {
+  display: flex;
+  height: max-content;
+  min-height: 5rem;
   width: fit-content;
+}
+
+.linksContainer h4 {
   margin: 0;
   padding: 0;
-  z-index: -2;
-  border-radius: 5px 0 0 5px;
+}
+
+.toolsContainer {
+  display: flex;
+  align-items: center;
+  border-radius: 18px;
+  padding: 0.5rem;
+  background-color: var(--bg-sub-dark);
+  width: fit-content;
+}
+.toolsContainer h4 {
+  margin-top: -0.85rem;
+  margin-left: -0.45rem;
+  padding: 0;
+}
+
+.navSubIcon {
+  background-color: var(--secondaryColor) !important;
+  width: 2.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  transition: var(--transition);
+  box-shadow: var(--btnShadow);
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 0.45rem !important;
+  padding-right: 0.45rem !important;
+}
+
+.navSubIcon:hover {
+  background-color: var(--secondaryColor-dark) !important;
+  transition: var(--transition) !important;
+}
+
+.navSubIcon:active {
+  background-color: var(--btnActiveColor) !important;
+  scale: 0.95 !important;
+  transition: var(--transition) !important;
+}
+
+.toolBtnActive {
+  background-color: var(--btnActiveColor) !important;
+  scale: 0.95 !important;
 }
 
 #navIconID {
   color: var(--primary-white) !important;
-  padding-top: 0.5rem !important;
+  padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
 }
 
-nav {
-  z-index: 2;
-  width: fit-content !important;
-  overflow: auto !important;
+.green {
+  color: #0eff06;
 }
-
 nav a.nav-link {
-  padding: 0;
   cursor: pointer;
-  display: block;
-  width: 98%;
-  margin-bottom: 0.25rem;
 }
 
 a.nav-link h3 {
@@ -693,218 +658,4 @@ a.nav-link h3 {
 
 nav ul li {
   text-transform: uppercase;
-}
-
-.navbar-nav {
-  background-color: var(--secondaryColor-dark);
-  padding: 1rem !important;
-  margin: auto !important;
-  overflow-y: auto !important;
-  max-height: 98vh;
-  -webkit-overflow-scrolling: auto !important;
-  border-radius: 5px 0 0 5px;
-  border: 0.15rem solid black;
-  box-shadow: var(--blackWhiteShadow) !important;
-}
-
-.navbar-nav > li > a {
-  color: var(--primary-white) !important;
-  padding: 0.25rem !important;
-  background-position: right bottom;
-  width: 95% !important;
-}
-
-.navbar-brand {
-  max-width: 17.25rem;
-  padding: 0 !important;
-  height: 6rem !important;
-}
-
-.navbar-nav > li > a:hover {
-  border-bottom: 0.1875rem solid var(--secondaryColor);
-  color: var(--slate) !important;
-}
-
-#navLinkHomeID:focus {
-  background: linear-gradient(
-    to right,
-    var(--primary-white) 50%,
-    var(--darkest-slate) 50%
-  );
-  color: var(--dark-navy) !important;
-
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 2s ease-out;
-}
-
-#navLinkHomeID.navFocus {
-  background: linear-gradient(
-    to left,
-    var(--primary-white) 50%,
-    var(--secondaryColor-shadow) 50%
-  );
-  color: var(--secondaryColor-shadow) !important;
-  background-size: 200%;
-}
-
-#navLinkQuickFactsID:focus {
-  background: linear-gradient(
-    to right,
-    var(--secondaryColor-darkest) 50%,
-    var(--secondaryColor-dark) 50%
-  );
-  color: var(--dark-navy) !important;
-
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 2s ease-out;
-}
-
-#navLinkQuickFactsID.navFocus {
-  background: linear-gradient(
-    to left,
-    var(--secondaryColor-dark) 50%,
-    var(--secondaryColor-darkest) 50%
-  );
-  color: var(--dark-navy) !important;
-  background-size: 200%;
-}
-
-#navLinkAboutID:focus {
-  background: linear-gradient(
-    to right,
-    var(--secondaryColor-darkest) 50%,
-    var(--secondaryColor-dark) 50%
-  );
-  color: var(--dark-navy) !important;
-
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 2s ease-out;
-}
-
-#navLinkAboutID.navFocus {
-  background: linear-gradient(
-    to left,
-    var(--secondaryColor-dark) 50%,
-    var(--secondaryColor-darkest) 50%
-  );
-  color: var(--dark-navy) !important;
-  background-size: 200%;
-}
-
-#navLinkSkillsID:focus {
-  background: linear-gradient(
-    to right,
-    var(--secondaryColor-darkest) 50%,
-    var(--secondaryColor-dark) 50%
-  );
-  color: var(--dark-navy) !important;
-
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 2s ease-out;
-}
-
-#navLinkSkillsID.navFocus {
-  background: linear-gradient(
-    to left,
-    var(--secondaryColor-dark) 50%,
-    var(--secondaryColor-darkest) 50%
-  );
-  color: var(--dark-navy) !important;
-  background-size: 200%;
-}
-
-#navLinkPersonalityID:focus {
-  background: linear-gradient(
-    to right,
-    var(--secondaryColor-darkest) 50%,
-    var(--secondaryColor-dark) 50%
-  );
-  color: var(--dark-navy) !important;
-
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 2s ease-out;
-}
-
-#navLinkPersonalityID.navFocus {
-  background: linear-gradient(
-    to left,
-    var(--secondaryColor-dark) 50%,
-    var(--secondaryColor-darkest) 50%
-  );
-  color: var(--dark-navy) !important;
-  background-size: 200%;
-}
-
-#navLinkResumeOverviewID:focus {
-  background: linear-gradient(
-    to right,
-    var(--secondaryColor-darkest) 50%,
-    var(--secondaryColor-dark) 50%
-  );
-  color: var(--dark-navy) !important;
-
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 2s ease-out;
-}
-
-#navLinkResumeOverviewID.navFocus {
-  background: linear-gradient(
-    to left,
-    var(--secondaryColor-dark) 50%,
-    var(--secondaryColor-darkest) 50%
-  );
-  color: var(--dark-navy) !important;
-  background-size: 200%;
-}
-
-#navLinkExperiencesID:focus {
-  background: linear-gradient(
-    to right,
-    var(--secondaryColor-darkest) 50%,
-    var(--secondaryColor-dark) 50%
-  );
-  color: var(--dark-navy) !important;
-
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 2s ease-out;
-}
-
-#navLinkExperiencesID.navFocus {
-  background: linear-gradient(
-    to left,
-    var(--secondaryColor-dark) 50%,
-    var(--secondaryColor-darkest) 50%
-  );
-  color: var(--dark-navy) !important;
-  background-size: 200%;
-}
-
-#navLinkContactID:focus {
-  background: linear-gradient(
-    to right,
-    var(--secondaryColor-darkest) 50%,
-    var(--secondaryColor-dark) 50%
-  );
-  color: var(--dark-navy) !important;
-
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 2s ease-out;
-}
-
-#navLinkContactID.navFocus {
-  background: linear-gradient(
-    to left,
-    var(--secondaryColor-dark) 50%,
-    var(--secondaryColor-darkest) 50%
-  );
-  color: var(--dark-navy) !important;
-  background-size: 200%;
 }

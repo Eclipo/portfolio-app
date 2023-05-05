@@ -329,11 +329,7 @@ class Skills extends Component {
 
         <div className="container-sm primaryContainer" id="duckContainerID">
           <div className="row">
-            <h1>
-              MY
-              <br></br>
-              SPIRIT ANIMAL
-            </h1>
+            <h1>Full-stack developer</h1>
 
             <div className="flexCenter duckContainer">
               <Duck></Duck>

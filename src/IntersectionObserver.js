@@ -11,12 +11,12 @@ setTimeout(function () {
   const experienceSection = document.querySelector("#experiencesID");
   const contactSection = document.querySelector("#contactID");
 
-  const firstWrapper = [quickFactsSection, aboutMeSection];
-
-  const secondWrapper = [
+  const observerWrapper = [
+    quickFactsSection,
     skillsSection,
     experienceSection,
     resumeSection,
+    aboutMeSection,
     personalitySection,
     contactSection,
   ];
@@ -32,10 +32,10 @@ setTimeout(function () {
 
   const navLinksID = [
     navLinkQuickID,
-    navLinkAboutID,
     navLinkSkillsID,
     navLinkExperienceID,
     navLinkResumeID,
+    navLinkAboutID,
     navLinkPersonalityID,
     navLinkContactID,
   ];
@@ -62,68 +62,51 @@ setTimeout(function () {
     navLinks[inputIndex].classList.add("navFocus");
   }
 
-  const firstHandleScrollPosY = (entries, observer) => {
+  const secondHandleScrollPosY = (entries, observer) => {
     entries.forEach((entry) => {
-      const currentIndex = Array.from(firstWrapper).indexOf(entry.target);
-
+      const currentIndex = Array.from(observerWrapper).indexOf(entry.target);
       if (entry.isIntersecting) {
+        console.log("currentIndex:" + currentIndex);
+
         switch (currentIndex) {
-          // Quick Facts Section - TURN ON QuickFacts&About + Turn OFF Skills
+          //Skills Section
+
           case 0:
             currentNavLink(0);
             animationQuickFactAbout.playOrStop(0);
             PlayAnimation("SkillAnimation", 1);
             break;
 
-          //About me Section - Turn ON QuickFacts&About and Skills
           case 1:
             currentNavLink(1);
-            animationQuickFactAbout.playOrStop(1);
-            break;
-
-          default:
-          // code block
-        }
-      }
-    });
-  };
-
-  const secondHandleScrollPosY = (entries, observer) => {
-    entries.forEach((entry) => {
-      const currentIndex = Array.from(secondWrapper).indexOf(entry.target);
-      if (entry.isIntersecting) {
-        switch (currentIndex) {
-          //Skills Section
-          case 0:
-            currentNavLink(2);
             PlayAnimation("SkillAnimation", 2);
-
             break;
 
           //Selected Work - Turn OFF QuickAbout and Personality
-          case 1:
-            currentNavLink(3);
+          case 2:
+            currentNavLink(2);
             animationQuickFactAbout.playOrStop(false);
             PlayAnimation("PersonalityAnimation", 1);
             break;
 
           //Resume Overview Section - Turn OFF Skills
-          case 2:
+          case 3:
             PlayAnimation("SkillAnimation", 1);
 
-            currentNavLink(4);
+            currentNavLink(3);
             // PlayAnimation("PortfolioAnimation", 1);
 
             break;
-
+          case 4:
+            currentNavLink(4);
+            animationQuickFactAbout.playOrStop(1);
           //Personality
-          case 3:
+          case 5:
             currentNavLink(5);
             PlayAnimation("PersonalityAnimation", 2);
-
             break;
 
-          case 4:
+          case 6:
             currentNavLink(6);
 
             break;
@@ -146,20 +129,15 @@ setTimeout(function () {
     threshold: 0.15,
   };
 
-  const firstObserver = new IntersectionObserver(
-    firstHandleScrollPosY,
-    firstOptions
-  );
-  firstObserver.observe(quickFactsSection);
-  firstObserver.observe(aboutMeSection);
-
   const myObserver = new IntersectionObserver(
     secondHandleScrollPosY,
     secondOptions
   );
+  myObserver.observe(quickFactsSection);
   myObserver.observe(skillsSection);
-  myObserver.observe(personalitySection);
   myObserver.observe(resumeSection);
   myObserver.observe(experienceSection);
+  myObserver.observe(aboutMeSection);
+  myObserver.observe(personalitySection);
   myObserver.observe(contactSection);
 }, 100);
