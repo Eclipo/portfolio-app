@@ -278,6 +278,7 @@ h4 {
 }
 
 p,
+label,
 ul > li {
   font-family: Rubik, cursive !important;
   font-weight: 400 !important;
@@ -467,100 +468,100 @@ ul > li {
 
 .fntAwesome {
   color: var(--primary-white);
-  margin-top: 0.5rem;
-  height: 1.05rem !important;
-  width: 1.25rem !important;
+  padding-top: 0.5rem;
+  height: 1.3rem !important;
+  width: 1.6rem !important;
 }
 
 .navLinkH3 {
   font-size: 1.05rem;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-toggler {
   border-color: none !important;
   border: none !important;
 }
 
 .navbar-nav > li > a:hover {
-  border-bottom: 0.1875rem solid var(--secondaryColor) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor) !important;
 }
 #navLinkHomeID:focus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkHomeID.navFocus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkQuickFactsID:focus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkQuickFactsID.navFocus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkAboutID:focus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkAboutID.navFocus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkSkillsID:focus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkSkillsID.navFocus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkPersonalityID:focus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkPersonalityID.navFocus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkResumeOverviewID:focus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkResumeOverviewID.navFocus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkExperiencesID:focus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkExperiencesID.navFocus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkContactID:focus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
 #navLinkContactID.navFocus {
-  border-bottom: 0.5rem solid var(--secondaryColor-dark) !important;
+  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 2s ease-out;
 }
 
@@ -586,7 +587,6 @@ ul > li {
 
 .linksContainer {
   display: flex;
-  height: max-content;
   min-height: 5rem;
   width: fit-content;
 }
@@ -597,13 +597,47 @@ ul > li {
 }
 
 .toolsContainer {
-  display: flex;
-  align-items: center;
   border-radius: 18px;
-  padding: 0.5rem;
+  padding: 1.25rem;
   background-color: var(--bg-sub-dark);
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  width: max-content;
+  min-width: 90%;
+}
+
+.button-col {
+  display: inline-block;
+  padding: 0.1rem;
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
+#labelRedGreen {
+  margin-left: -0.95rem !important;
+}
+
+#labelYellowBlue {
+  margin-left: -1.15rem !important;
+}
+
+.button-row button {
+  margin: auto !important;
+  display: inline-flex !important;
+}
+
+.toolsContainer > .row {
+  width: fit-content !important;
+}
+
 .toolsContainer h4 {
   margin-top: -0.85rem;
   margin-left: -0.45rem;
@@ -613,14 +647,15 @@ ul > li {
 .navSubIcon {
   background-color: var(--secondaryColor) !important;
   width: 2.5rem;
-  display: inline-block;
+  display: flex;
   border-radius: 50%;
   transition: var(--transition);
   box-shadow: var(--btnShadow);
   padding-top: 0.3rem !important;
   padding-bottom: 0.5rem !important;
-  padding-left: 0.45rem !important;
-  padding-right: 0.45rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  margin-left: 0.15rem !important;
 }
 
 .navSubIcon:hover {
@@ -658,4 +693,24 @@ a.nav-link h3 {
 
 nav ul li {
   text-transform: uppercase;
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav > li > a {
+  border-bottom-color: transparent;
+  padding-bottom: 0.1rem;
+  margin-bottom: 0.1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.btnLabelNav {
+  margin: auto !important;
+  padding-left: 0.25rem !important;
+  display: flex;
+  /* margin-left: 0.25rem; */
 }

@@ -1,4 +1,4 @@
-import { React, useRef, useState } from "react";
+import { React, useRef, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -162,8 +162,27 @@ export const Navbar = () => {
     setIsActive((current) => !current);
   };
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <nav className="customNav navbar navbar-expand-lg">
+    <nav
+      className={`mx-auto customNav navbar navbar-expand-lg${
+        visible ? "" : " navbar-hidden"
+      }`}>
+      {" "}
       <div className="container-fluid ">
         <button
           id="navbarTogglerID"
@@ -178,148 +197,182 @@ export const Navbar = () => {
           <FontAwesomeIcon icon={isActive ? faClose : faBars} id="navIconID" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <div className="linksContainer">
-            <ul className="navbar-nav" id="ulNavID">
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to={"quickFacts"}
-                  id="navLinkQuickFactsID"
-                  className="nav-link active"
-                  aria-current="page"
-                  href="#"
-                  tabIndex={0}>
-                  <h4>Start</h4>
-                  <span className="sr-only">(current)</span>
-                </Link>
-              </li>
+          <div className="container-sm p-0 pb-3">
+            <div className="linksContainer row">
+              <ul className="navbar-nav flexCenter" id="ulNavID">
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to={"quickFacts"}
+                    id="navLinkQuickFactsID"
+                    className="nav-link active"
+                    aria-current="page"
+                    href="#"
+                    tabIndex={0}>
+                    <h4>Start</h4>
+                    <span className="sr-only">(current)</span>
+                  </Link>
+                </li>
 
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to={"skills"}
-                  id="navLinkSkillsID"
-                  className="nav-link"
-                  href="#"
-                  tabIndex={1}>
-                  <h4>Skills</h4>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to={"experiencesID"}
-                  id="navLinkExperiencesID"
-                  className="nav-link"
-                  href="#"
-                  tabIndex={2}>
-                  <h4>Work</h4>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to={"resumeOverview"}
-                  id="navLinkResumeOverviewID"
-                  className="nav-link"
-                  href="#"
-                  tabIndex={4}>
-                  <h4>Resumé</h4>
-                </Link>
-              </li>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to={"skills"}
+                    id="navLinkSkillsID"
+                    className="nav-link"
+                    href="#"
+                    tabIndex={1}>
+                    <h4>Skills</h4>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to={"experiencesID"}
+                    id="navLinkExperiencesID"
+                    className="nav-link"
+                    href="#"
+                    tabIndex={2}>
+                    <h4>Work</h4>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to={"resumeOverview"}
+                    id="navLinkResumeOverviewID"
+                    className="nav-link"
+                    href="#"
+                    tabIndex={4}>
+                    <h4>Resumé</h4>
+                  </Link>
+                </li>
 
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to={"testimonials"}
-                  id="navLinkAboutID"
-                  className="nav-link"
-                  href="#"
-                  tabIndex={1}>
-                  <h4>ABOUT</h4>
-                </Link>
-              </li>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to={"testimonials"}
+                    id="navLinkAboutID"
+                    className="nav-link"
+                    href="#"
+                    tabIndex={1}>
+                    <h4>ABOUT</h4>
+                  </Link>
+                </li>
 
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to={"personality"}
-                  id="navLinkPersonalityID"
-                  className="nav-link"
-                  href="#"
-                  tabIndex={5}>
-                  <h4 id="navLinkPersonalityH3ID">Persona</h4>
-                </Link>
-              </li>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to={"personality"}
+                    id="navLinkPersonalityID"
+                    className="nav-link"
+                    href="#"
+                    tabIndex={5}>
+                    <h4 id="navLinkPersonalityH3ID">Persona</h4>
+                  </Link>
+                </li>
 
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to={"contactID"}
-                  id="navLinkContactID"
-                  className="nav-link"
-                  href="#"
-                  tabIndex={6}>
-                  <h4>Contact</h4>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="toolsContainer">
-            <h4>TOOLS</h4>
-            <button
-              className={isRed ? "navSubIcon toolBtnActive" : "navSubIcon"}
-              onClick={outlineMode}>
-              <FontAwesomeIcon
-                className="fntAwesome"
-                icon={faPen}
-                style={{
-                  color: isRed
-                    ? "var(--secondaryColor-darkest)"
-                    : "var(--primary-red)",
-                }}></FontAwesomeIcon>
-            </button>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to={"contactID"}
+                    id="navLinkContactID"
+                    className="nav-link"
+                    href="#"
+                    tabIndex={6}>
+                    <h4>Contact</h4>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="toolsContainer mx-auto">
+              <div className="webToolsH3">
+                {" "}
+                <h3 className="p-1">WEB TOOLS</h3>
+              </div>
+              <div className="d-inline-block">
+                <h4 htmlFor="button" className="m-auto pr-2 pb-1">
+                  Outliner
+                </h4>
+                <button
+                  className={
+                    isRed
+                      ? "navSubIcon toolBtnActive mx-auto"
+                      : "navSubIcon mx-auto"
+                  }
+                  onClick={outlineMode}>
+                  <FontAwesomeIcon
+                    className="fntAwesome"
+                    icon={faPen}
+                    style={{
+                      color: isRed
+                        ? "var(--secondaryColor-darkest)"
+                        : "var(--primary-red)",
+                    }}></FontAwesomeIcon>
+                </button>
+              </div>
+              <h4 className="m-auto pr-2 pb-1">Color blindness</h4>
+              <div class="button-row">
+                <div className="button-col">
+                  <label className="btnLabelNav" id="labelRedGreen">
+                    Red/Green
+                  </label>
+                  <button
+                    className={
+                      isCbRedGreen ? "navSubIcon toolBtnActive" : "navSubIcon"
+                    }
+                    onClick={cbRedGreenMode}>
+                    <FontAwesomeIcon
+                      className="fntAwesome"
+                      icon={isCbRedGreen ? faEye : faEyeSlash}
+                      style={{
+                        color: isCbRedGreen
+                          ? "var(--secondaryColor-darkest)"
+                          : "var(--primary-red)",
+                      }}></FontAwesomeIcon>
+                  </button>
+                </div>
 
-            <button
-              className={
-                isCbRedGreen ? "navSubIcon toolBtnActive" : "navSubIcon"
-              }
-              onClick={cbRedGreenMode}>
-              <FontAwesomeIcon
-                className="fntAwesome"
-                icon={isCbRedGreen ? faEye : faEyeSlash}
-                style={{
-                  color: isCbRedGreen
-                    ? "var(--secondaryColor-darkest)"
-                    : "var(--primary-red)",
-                }}></FontAwesomeIcon>
-            </button>
+                <div className="button-col">
+                  <label className="btnLabelNav" id="labelYellowBlue">
+                    Yellow/Blue
+                  </label>
 
-            <button
-              className={
-                isCbYellowBlue ? "navSubIcon toolBtnActive" : "navSubIcon"
-              }
-              onClick={cbYellowBlueMode}>
-              <FontAwesomeIcon
-                className="fntAwesome"
-                icon={isCbYellowBlue ? faEye : faEyeSlash}
-                style={{
-                  color: isCbYellowBlue
-                    ? "var(--secondaryColor-darkest)"
-                    : "var(--primary-blue)",
-                }}></FontAwesomeIcon>
-            </button>
+                  <button
+                    className={
+                      isCbYellowBlue ? "navSubIcon toolBtnActive" : "navSubIcon"
+                    }
+                    onClick={cbYellowBlueMode}>
+                    <FontAwesomeIcon
+                      className="fntAwesome"
+                      icon={isCbYellowBlue ? faEye : faEyeSlash}
+                      style={{
+                        color: isCbYellowBlue
+                          ? "var(--secondaryColor-darkest)"
+                          : "var(--primary-blue)",
+                      }}></FontAwesomeIcon>
+                  </button>
+                </div>
 
-            <button
-              className={isCbTotal ? "navSubIcon toolBtnActive" : "navSubIcon"}
-              onClick={cbTotalMode}>
-              <FontAwesomeIcon
-                className="fntAwesome"
-                icon={isCbTotal ? faEye : faEyeSlash}
-                style={{
-                  color: isCbTotal ? "var(--secondaryColor-darkest)" : "black",
-                }}></FontAwesomeIcon>
-            </button>
+                <div className="button-col">
+                  <label className="btnLabelNav">Grey</label>
+                  <button
+                    className={
+                      isCbTotal ? "navSubIcon toolBtnActive" : "navSubIcon"
+                    }
+                    onClick={cbTotalMode}>
+                    <FontAwesomeIcon
+                      className="fntAwesome"
+                      icon={isCbTotal ? faEye : faEyeSlash}
+                      style={{
+                        color: isCbTotal
+                          ? "var(--secondaryColor-darkest)"
+                          : "black",
+                      }}></FontAwesomeIcon>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
