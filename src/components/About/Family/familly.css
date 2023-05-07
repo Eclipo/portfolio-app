@@ -457,7 +457,7 @@
   width: 1.875rem;
   height: 0.9375rem;
   border-radius: 0 0 0.9375rem 0.9375rem;
-  background: rgba(149, 36, 0, 0.1);
+  background: rgba(149, 35, 0, 0.178);
   position: absolute;
   top: 4.375rem;
 }
@@ -485,8 +485,8 @@
 }
 
 .eye {
-  width: 1.25rem;
-  height: 1.75rem;
+  width: 1.45rem;
+  height: 1.95rem;
   border-radius: 0.625rem;
   background: #453116;
   position: absolute;

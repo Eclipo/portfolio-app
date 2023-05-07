@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import "../../IntersectionObserver.js";
+import { EdipBrand } from "./edip-brand/EdipBrand.js";
 
 export const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -168,7 +169,7 @@ export const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 50);
       setPrevScrollPos(currentScrollPos);
     };
 
@@ -184,6 +185,17 @@ export const Navbar = () => {
       }`}>
       {" "}
       <div className="container-fluid ">
+        <a class="customNavBrand" href="#">
+          <Link
+            smooth={true}
+            to={"quickFacts"}
+            id="navLinkQuickFactsID"
+            className="nav-link m-0 p-0"
+            href="#"
+            tabIndex={0}>
+            <EdipBrand></EdipBrand>
+          </Link>
+        </a>
         <button
           id="navbarTogglerID"
           className="menuBtn navbar-toggler"
@@ -200,20 +212,6 @@ export const Navbar = () => {
           <div className="container-sm p-0 pb-3">
             <div className="linksContainer row">
               <ul className="navbar-nav flexCenter" id="ulNavID">
-                <li className="nav-item">
-                  <Link
-                    smooth={true}
-                    to={"quickFacts"}
-                    id="navLinkQuickFactsID"
-                    className="nav-link active"
-                    aria-current="page"
-                    href="#"
-                    tabIndex={0}>
-                    <h4>Start</h4>
-                    <span className="sr-only">(current)</span>
-                  </Link>
-                </li>
-
                 <li className="nav-item">
                   <Link
                     smooth={true}
@@ -243,7 +241,7 @@ export const Navbar = () => {
                     id="navLinkResumeOverviewID"
                     className="nav-link"
                     href="#"
-                    tabIndex={4}>
+                    tabIndex={3}>
                     <h4>Resumé</h4>
                   </Link>
                 </li>
@@ -251,11 +249,11 @@ export const Navbar = () => {
                 <li className="nav-item">
                   <Link
                     smooth={true}
-                    to={"testimonials"}
+                    to={"about"}
                     id="navLinkAboutID"
                     className="nav-link"
                     href="#"
-                    tabIndex={1}>
+                    tabIndex={4}>
                     <h4>ABOUT</h4>
                   </Link>
                 </li>

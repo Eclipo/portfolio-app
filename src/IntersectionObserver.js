@@ -4,7 +4,7 @@ import { QuickAboutAnimation } from "./components/QuickFacts/QuickAboutAnimation
 setTimeout(function () {
   //Sections
   const quickFactsSection = document.querySelector("#quickFacts");
-  const aboutMeSection = document.querySelector("#aboutMe");
+  const aboutMeSection = document.querySelector("#about");
   const skillsSection = document.querySelector("#skills");
   const personalitySection = document.querySelector("#personality");
   const resumeSection = document.querySelector("#resumeOverview");
@@ -100,6 +100,7 @@ setTimeout(function () {
           case 4:
             currentNavLink(4);
             animationQuickFactAbout.playOrStop(1);
+            break;
           //Personality
           case 5:
             currentNavLink(5);
@@ -117,16 +118,10 @@ setTimeout(function () {
     });
   };
 
-  const firstOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.2,
-  };
-
   const secondOptions = {
     root: null,
-    rootMargin: "0px",
-    threshold: 0.15,
+    rootMargin: "10px",
+    threshold: 0.2,
   };
 
   const myObserver = new IntersectionObserver(

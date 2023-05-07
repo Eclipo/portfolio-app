@@ -122,7 +122,7 @@
 
 .sectionAnimation {
   background-color: var(--bg);
-  min-height: 105vh;
+  min-height: 110vh;
   margin: auto;
   display: block;
   flex-wrap: wrap;
@@ -487,82 +487,82 @@ ul > li {
 }
 #navLinkHomeID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkHomeID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkQuickFactsID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkQuickFactsID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkAboutID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkAboutID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkSkillsID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkSkillsID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkPersonalityID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkPersonalityID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkResumeOverviewID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkResumeOverviewID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkExperiencesID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkExperiencesID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkContactID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 #navLinkContactID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 .navbar {
@@ -570,10 +570,18 @@ ul > li {
   position: sticky !important;
   position: -webkit-sticky !important;
   z-index: 2 !important;
+  transition: transform 0.5s ease-in-out !important;
+  min-height: 5rem !important;
 }
 
 .customNav {
   background-color: var(--bg-nav);
+}
+
+.customNavBrand {
+  display: flex;
+  margin-bottom: 3.75rem;
+  
 }
 
 #navbarTogglerID {
@@ -589,6 +597,7 @@ ul > li {
   display: flex;
   min-height: 5rem;
   width: fit-content;
+  margin-top: 2rem;
 }
 
 .linksContainer h4 {
@@ -603,6 +612,8 @@ ul > li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 95vw;
+  width: fit-content;
 }
 
 .button-row {
@@ -697,7 +708,7 @@ nav ul li {
 
 .navbar-hidden {
   transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 
 .navbar-nav > li > a {
@@ -712,5 +723,7 @@ nav ul li {
   margin: auto !important;
   padding-left: 0.25rem !important;
   display: flex;
+  font-weight: bold !important;
+  color: var(--darkest-slate);
   /* margin-left: 0.25rem; */
 }

@@ -1,0 +1,216 @@
+﻿:root {
+  --size-edipGuyDivisor: 1.5;
+}
+
+@media (max-width: 19.9rem) {
+  :root {
+    --size-edipGuyDivisor: 6;
+  }
+}
+
+@media (min-width: 20rem) {
+  :root {
+    --size-edipGuyDivisor: 4;
+  }
+}
+@media (min-width: 25rem) {
+  :root {
+    --size-edipGuyDivisor: 3.75;
+  }
+}
+
+@media (min-width: 120rem) {
+  :root {
+    --size-edipGuyDivisor: 3.65;
+  }
+}
+
+#brandGuyID {
+  transform: scale(calc(0.62 / var(--size-edipGuyDivisor)));
+  display: inline-block;
+}
+
+.wrapper-brand {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -12rem;
+  margin-left: -12rem;
+}
+
+.background-circle-brand {
+  width: 29.5rem;
+  height: 29.5rem;
+  border-radius: 100%;
+  overflow: hidden;
+  background: #95b3bf !important;
+  background: transparent;
+  position: relative;
+  border: 1rem solid var(--secondaryColor-dark);
+  z-index: -1;
+  opacity: 1;
+}
+.triangle-light-brand {
+  width: 24rem;
+  height: 37.5rem;
+  background: #ffffff;
+  opacity: 0.2;
+  position: absolute;
+  right: -50%;
+  z-index: 0;
+}
+
+.edipCircleBackground-circle {
+  width: 29.5rem;
+  height: 29.5rem;
+  border-radius: 100%;
+  overflow: hidden;
+  background: #95b3bf !important;
+  background: transparent;
+  position: relative;
+  border: 1rem solid var(--secondaryColor-dark);
+  z-index: -1;
+}
+.head-brand {
+  width: 12.25rem;
+  height: 16.25rem;
+  border-radius: 3.125rem;
+  background: #ffdaa7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13.125rem;
+  margin-left: -6.125rem;
+}
+
+.body-brand {
+  width: 70%;
+  font-family: "Open Sans", sans-serif;
+  height: 50%;
+  margin: 0 auto;
+  background: #423c0a !important;
+  border-radius: 6.25rem;
+  position: relative;
+  top: 13.5rem;
+  margin-top: 10%;
+  z-index: 1;
+  box-shadow: 0.15rem 2rem 2.5rem -1rem #cecbb7,
+    inset 0 1rem 1.5rem 2.25rem #373206;
+  opacity: 1;
+}
+
+.hair-main-brand {
+  width: 13.75rem;
+  height: 8.5625rem;
+  background: linear-gradient(#141313 60%, rgb(83, 77, 77) 40%) !important;
+  border-radius: 3.375rem 3.375rem 0rem 0rem;
+  margin-left: -0.75rem;
+  margin-top: -0.625rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0.25rem 0.25rem 0.5rem -0.5rem #adabab,
+    inset 0.25rem 0.5rem 1rem 0.5rem #3c3939;
+}
+
+.face-brand {
+  width: 11.25rem;
+  height: 8.5625rem;
+  border-radius: 3rem 3rem 0 0;
+  background: #ffdaa7;
+  position: absolute;
+  top: 2.5rem;
+  left: 0.5rem;
+  z-index: 3;
+  box-shadow: 0 0 0.25rem 0 #f4c37e, inset 0 0 1.5rem 0.25rem #9c7742;
+}
+
+.beard-brand {
+  width: 13.7rem;
+  height: 8.6rem;
+  background: #111111 !important;
+  border-radius: 0.3125rem 0rem 3.375rem 3.375rem;
+  margin-left: -6%;
+  margin-top: -0.15rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0.5rem -0.5rem #adabab,
+    inset 0.25rem 0.5rem 2rem 0.5rem #3c3939;
+}
+
+.nose-brand {
+  background: #e7ab57;
+  width: 1.25rem;
+  height: 2.8125rem;
+  border-radius: 2.125rem;
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  margin-left: -0.625rem;
+
+  z-index: 4;
+  box-shadow: 0 0.1rem 0.5rem 0.1rem #e7ab57,
+    inset 0rem -0.45rem 0.5rem 0.25rem #5a4322;
+}
+
+.mouth-brand {
+  width: 4.125rem;
+  height: 2.0625rem;
+  border-radius: 0 0 2.0625rem 2.0625rem;
+  background: white;
+  position: absolute;
+  top: 9.375rem;
+  left: 50%;
+  margin-left: -2.0625rem;
+}
+
+.eye-brand {
+  width: 1.45rem;
+  height: 1.95rem;
+  border-radius: 0.625rem;
+  background: #453116;
+  position: absolute;
+  top: -1.125rem;
+  left: 50%;
+  margin-left: -0.625rem;
+}
+
+.laleh-kawai-brand {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 0.15rem;
+  background-color: white;
+}
+
+.eye-shadow-brand {
+  width: 1.875rem;
+  height: 0.9375rem;
+  border-radius: 0 0 0.9375rem 0.9375rem;
+  background: rgba(149, 36, 0, 0.1);
+  position: absolute;
+  top: 4.375rem;
+}
+
+.eye-shadow-brand#left {
+  left: 2.1875rem;
+  z-index: 5;
+}
+
+.eye-shadow-brand#right {
+  right: 2.1875rem;
+}
+
+.eyebrow-brand {
+  width: 2.5rem;
+  height: 0.625rem;
+  background: #3f2a14;
+  position: absolute;
+  top: -2.1875rem;
+  left: 50%;
+  margin-left: -1.25rem;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+}

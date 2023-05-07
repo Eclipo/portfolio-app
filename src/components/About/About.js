@@ -4,7 +4,7 @@ import "../../IntersectionObserver.js";
 import "./about.css";
 const About = () => {
   return (
-    <div id="aboutMe" className="sectionAnimation">
+    <div id="about" className="sectionAnimation">
       <div id="testimonials" className="testimonials">
         <h1 className="testimonials-h1">About</h1>
         <p className="duckText">
