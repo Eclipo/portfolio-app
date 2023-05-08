@@ -480,6 +480,11 @@ ul > li {
 .navbar-toggler {
   border-color: none !important;
   border: none !important;
+  right: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  margin: 0.15rem !important;
+  height: 2.5rem !important;
 }
 
 .navbar-nav > li > a:hover {
@@ -491,16 +496,6 @@ ul > li {
 }
 
 #navLinkHomeID.navFocus {
-  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
-}
-
-#navLinkQuickFactsID:focus {
-  border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
-}
-
-#navLinkQuickFactsID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
   transition: all 1s ease-out;
 }
@@ -580,12 +575,21 @@ ul > li {
 
 .customNavBrand {
   display: flex;
-  margin-bottom: 3.75rem;
-  
+  top: -0.5rem;
+  position: absolute;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.navTest {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
 }
 
 #navbarTogglerID {
   width: 3rem;
+
   background-color: var(--secondaryColor);
   border: 0.1rem black solid !important;
 }
