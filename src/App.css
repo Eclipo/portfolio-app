@@ -488,85 +488,114 @@ ul > li {
 }
 
 .navbar-nav > li > a:hover {
-  border-bottom: 0.15rem solid var(--secondaryColor) !important;
+  opacity: 0.75 !important;
 }
+
 #navLinkHomeID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+  opacity: 1 !important;
 }
 
 #navLinkHomeID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+  opacity: 1 !important;
 }
 
 #navLinkAboutID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+  opacity: 1 !important;
 }
 
 #navLinkAboutID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+  opacity: 1 !important;
 }
 
 #navLinkSkillsID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
 }
 
 #navLinkSkillsID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
 }
 
 #navLinkPersonalityID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
 }
 
 #navLinkPersonalityID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
 }
 
 #navLinkResumeOverviewID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
 }
 
 #navLinkResumeOverviewID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
 }
 
 #navLinkExperiencesID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
 }
 
 #navLinkExperiencesID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
 }
 
 #navLinkContactID:focus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
 }
 
 #navLinkContactID.navFocus {
   border-bottom: 0.15rem solid var(--secondaryColor-dark) !important;
-  transition: all 1s ease-out;
+
+  opacity: 1 !important;
+}
+
+#navLinkSkillsID.navFocus > h4,
+#navLinkResumeOverviewID.navFocus > h4,
+#navLinkExperiencesID.navFocus > h4,
+#navLinkAboutID.navFocus > h4,
+#navLinkPersonalityID.navFocus > h4,
+#navLinkContactID.navFocus > h4 {
+  color: var(--darkest-navy) !important;
+}
+
+#navLinkSkillsID.focus > h4,
+#navLinkResumeOverviewID.focus > h4,
+#navLinkExperiencesID.focus > h4,
+#navLinkAboutID.focus > h4,
+#navLinkPersonalityID.focus > h4,
+#navLinkContactID.focus > h4 {
+  color: var(--darkest-navy) !important;
 }
 
 .navbar {
-  top: 0 !important;
   position: sticky !important;
   position: -webkit-sticky !important;
   z-index: 2 !important;
   transition: transform 0.5s ease-in-out !important;
   min-height: 5rem !important;
+  overflow: auto !important;
 }
 
 .customNav {
@@ -577,7 +606,7 @@ ul > li {
   right: 0;
   bottom: 0;
   z-index: 1000;
-  overflow: auto;
+  overflow-y: auto !important;
 }
 
 .customNavBrand {
@@ -606,9 +635,8 @@ ul > li {
 
 .linksContainer {
   display: flex;
-  min-height: 5rem;
-  width: fit-content;
-  margin-top: 0.5rem;
+  height: min-content;
+  width: min-content;
 }
 
 .linksContainer h4 {
@@ -619,9 +647,9 @@ ul > li {
 .toolsContainer {
   border-radius: 18px;
   padding-bottom: 0.5rem;
-  padding-top:0.5rem;
+  padding-top: 0.5rem;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
   background-color: var(--bg-sub-dark);
@@ -720,6 +748,8 @@ a.nav-link h3 {
 
 nav ul li {
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-hidden {
@@ -731,6 +761,26 @@ nav ul li {
   .collapse {
     display: none !important;
   }
+}
+
+@media (max-width: 767.98px) {
+  .align-self {
+    align-self: baseline !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .align-self {
+    align-self: center !important;
+  }
+}
+
+.align-self {
+  margin: 0.25rem;
+}
+
+.align-self > h3 {
+  margin-bottom: 0.1rem;
 }
 
 .navbar-nav > li > a {

@@ -1,12 +1,9 @@
 ﻿#brandGuyID {
-  display: block;
-  top: 0;
-  left: 40%;
+  display: inline-flex;
 }
 
 .wrapper-brand {
-  display: inline-block;
-  top: 0;
+  display: inline-flex;
 }
 
 .background-circle-brand {

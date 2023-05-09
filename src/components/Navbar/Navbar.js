@@ -10,10 +10,9 @@ import {
 import { Link } from "react-scroll";
 import "../../IntersectionObserver.js";
 import { EdipBrand } from "./edip-brand/EdipBrand.js";
+import { isVisible } from "@testing-library/user-event/dist/utils/index.js";
 
 export const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
-
   const [isRed, setRedOutline] = useState(false);
 
   const [isCbRedGreen, setCbRedGreen] = useState(false);
@@ -161,11 +160,29 @@ export const Navbar = () => {
     }
   };
 
+  const clickNavToLink = () => {
+    setIsActive(false);
+    changeToggleIcon();
+  };
+
+  const [closeIcon, setCloseIcon] = useState(false);
+
+  const changeToggleIcon = () => {
+    setCloseIcon(true);
+    setVisible(false);
+  };
+
+  const [isActive, setIsActive] = useState(false);
+
   const handleClick = () => {
     //  toggle
     setIsActive((current) => !current);
+    setCloseIcon((current) => !current);
+    if (closeIcon && !isActive) {
+      setIsActive(false);
+    }
+    console.log("handle clicked!", isActive);
   };
-
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -174,8 +191,13 @@ export const Navbar = () => {
       const currentScrollPos = window.pageYOffset;
       if (isActive) {
         const screenHeight = window.innerHeight;
-        const scrollThreshold = screenHeight * 0.25;
-        setVisible(currentScrollPos <= scrollThreshold);
+        if (screenHeight > 667) {
+          // Only hide navbar if screen height is greater than 400px
+          const scrollThreshold = screenHeight * 0.25;
+          setVisible(currentScrollPos <= scrollThreshold);
+        } else {
+          setVisible(true); // Show navbar for small screens
+        }
       } else {
         setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
       }
@@ -201,6 +223,7 @@ export const Navbar = () => {
               to={"quickFacts"}
               id="navLinkQuickFactsID"
               className="nav-link"
+              onClick={clickNavToLink}
               href="#"
               tabIndex={0}>
               <EdipBrand></EdipBrand>
@@ -218,6 +241,7 @@ export const Navbar = () => {
                     to={"skills"}
                     id="navLinkSkillsID"
                     className="nav-link"
+                    onClick={clickNavToLink}
                     href="#"
                     tabIndex={1}>
                     <h4>Skills</h4>
@@ -276,6 +300,7 @@ export const Navbar = () => {
                     to={"contactID"}
                     id="navLinkContactID"
                     className="nav-link"
+                    onClick={clickNavToLink}
                     href="#"
                     tabIndex={6}>
                     <h4>Contact</h4>
@@ -284,12 +309,8 @@ export const Navbar = () => {
               </ul>
             </div>
             <div className="toolsContainer">
-              <div className="webToolsH3">
-                {" "}
-                <h3 className="p-1">WEB TOOLS</h3>
-              </div>
-              <div className="d-inline-block">
-                <h4 htmlFor="button" className="m-auto pr-2 pb-1">
+              <div className="d-inline-block align-self">
+                <h4 htmlFor="button" className="m-auto pr-1 pb-0">
                   Outliner
                 </h4>
                 <button
@@ -309,8 +330,11 @@ export const Navbar = () => {
                     }}></FontAwesomeIcon>
                 </button>
               </div>
-              <h4 className="m-auto pr-2 pb-1">Color blindness</h4>
-              <div class="button-row">
+              <div className="d-inline-block align-self">
+                <h4 className="m-auto pr-2 pb-0">Color blindness</h4>
+              </div>
+
+              <div className="button-row">
                 <div className="button-col">
                   <label className="btnLabelNav" id="labelRedGreen">
                     Red/Green
@@ -385,7 +409,7 @@ export const Navbar = () => {
               aria-expanded="false"
               aria-label="Toggle navigation">
               <FontAwesomeIcon
-                icon={isActive ? faClose : faBars}
+                icon={closeIcon ? faClose : faBars}
                 id="navIconID"
               />
             </button>
