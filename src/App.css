@@ -571,6 +571,13 @@ ul > li {
 
 .customNav {
   background-color: var(--bg-nav);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow: auto;
 }
 
 .customNavBrand {
@@ -601,7 +608,7 @@ ul > li {
   display: flex;
   min-height: 5rem;
   width: fit-content;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .linksContainer h4 {
@@ -611,12 +618,17 @@ ul > li {
 
 .toolsContainer {
   border-radius: 18px;
-  padding: 1.25rem;
+  padding-bottom: 0.5rem;
+  padding-top:0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
   background-color: var(--bg-sub-dark);
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 95vw;
+  max-width: 23rem;
   width: fit-content;
 }
 
@@ -713,6 +725,12 @@ nav ul li {
 .navbar-hidden {
   transform: translateY(-100%);
   transition: transform 2s ease-in-out;
+}
+
+@media (min-width: 45rem) {
+  .collapse {
+    display: none !important;
+  }
 }
 
 .navbar-nav > li > a {
