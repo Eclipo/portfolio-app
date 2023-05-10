@@ -161,7 +161,6 @@ export const Navbar = () => {
   };
 
   const clickNavToLink = () => {
-    setIsActive(false);
     changeToggleIcon();
   };
 
@@ -170,17 +169,24 @@ export const Navbar = () => {
   const changeToggleIcon = () => {
     setCloseIcon(true);
     setVisible(false);
+    setIsActive(false);
   };
+
+  const [firstTime, setfirstTime] = useState(true);
 
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
     //  toggle
+
     setIsActive((current) => !current);
     setCloseIcon((current) => !current);
+
     if (closeIcon && !isActive) {
       setIsActive(false);
+      setfirstTime(true);
     }
+
     console.log("handle clicked!", isActive);
   };
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -189,17 +195,33 @@ export const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
+
       if (isActive) {
         const screenHeight = window.innerHeight;
+
         if (screenHeight > 667) {
           // Only hide navbar if screen height is greater than 400px
           const scrollThreshold = screenHeight * 0.25;
-          setVisible(currentScrollPos <= scrollThreshold);
+
+          if (firstTime === false) {
+            setVisible(
+              prevScrollPos > currentScrollPos || currentScrollPos < 10
+            );
+            setPrevScrollPos(currentScrollPos);
+          }
+
+          if (firstTime === true) {
+            setTimeout(() => {
+              setVisible(true);
+              setfirstTime(false);
+            }, 1000);
+          }
         } else {
           setVisible(true); // Show navbar for small screens
         }
       } else {
         setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+        setfirstTime(true);
       }
       setPrevScrollPos(currentScrollPos);
     };
