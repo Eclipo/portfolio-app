@@ -1,4 +1,5 @@
-import { React, useRef, useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -7,10 +8,8 @@ import {
   faEye,
   faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-scroll";
 import "../../IntersectionObserver.js";
 import { EdipBrand } from "./edip-brand/EdipBrand.js";
-import { isVisible } from "@testing-library/user-event/dist/utils/index.js";
 
 export const Navbar = () => {
   const [isRed, setRedOutline] = useState(false);
@@ -73,9 +72,7 @@ export const Navbar = () => {
     //
     if (cbRedGreenToggle.current === false) {
       addColors("colorBlindRedGreen");
-      setTimeout(() => {
-        // code to be executed after 2 seconds
-      }, 2000);
+
       document.body.classList.remove("bodyDefaultBg");
       document.getElementById("root").classList.remove("bodyDefaultBg");
 
@@ -96,7 +93,6 @@ export const Navbar = () => {
 
       document.body.classList.add("bodyDefaultBg");
       document.getElementById("root").classList.add("bodyDefaultBg");
-      console.log("redgren...", isCbRedGreen);
     }
   };
 
@@ -161,16 +157,19 @@ export const Navbar = () => {
   };
 
   const clickNavToLink = () => {
-    changeToggleIcon();
+    setIsActive(false);
+    setTimeout(() => {
+      setVisible(false);
+    }, 2250);
+  };
+
+  const clickEdipNav = () => {
+    setTimeout(() => {
+      setVisible(false);
+    }, 2000);
   };
 
   const [closeIcon, setCloseIcon] = useState(false);
-
-  const changeToggleIcon = () => {
-    setCloseIcon(true);
-    setVisible(false);
-    setIsActive(false);
-  };
 
   const [firstTime, setfirstTime] = useState(true);
 
@@ -214,7 +213,7 @@ export const Navbar = () => {
             setTimeout(() => {
               setVisible(true);
               setfirstTime(false);
-            }, 1000);
+            }, 2000);
           }
         } else {
           setVisible(true); // Show navbar for small screens
@@ -245,7 +244,7 @@ export const Navbar = () => {
               to={"quickFacts"}
               id="navLinkQuickFactsID"
               className="nav-link"
-              onClick={clickNavToLink}
+              onClick={clickEdipNav}
               href="#"
               tabIndex={0}>
               <EdipBrand></EdipBrand>
@@ -275,6 +274,7 @@ export const Navbar = () => {
                     to={"experiencesID"}
                     id="navLinkExperiencesID"
                     className="nav-link"
+                    onClick={clickNavToLink}
                     href="#"
                     tabIndex={2}>
                     <h4>Work</h4>
@@ -285,6 +285,7 @@ export const Navbar = () => {
                     smooth={true}
                     to={"resumeOverview"}
                     id="navLinkResumeOverviewID"
+                    onClick={clickNavToLink}
                     className="nav-link"
                     href="#"
                     tabIndex={3}>
@@ -298,6 +299,7 @@ export const Navbar = () => {
                     to={"about"}
                     id="navLinkAboutID"
                     className="nav-link"
+                    onClick={clickNavToLink}
                     href="#"
                     tabIndex={4}>
                     <h4>ABOUT</h4>
@@ -310,6 +312,7 @@ export const Navbar = () => {
                     to={"personality"}
                     id="navLinkPersonalityID"
                     className="nav-link"
+                    onClick={clickNavToLink}
                     href="#"
                     tabIndex={5}>
                     <h4 id="navLinkPersonalityH3ID">Persona</h4>
@@ -399,7 +402,7 @@ export const Navbar = () => {
                 </div>
 
                 <div className="button-col">
-                  <label className="btnLabelNav">Grey</label>
+                  <label className="btnLabelNav">Total</label>
                   <button
                     className={
                       isCbTotal ? "navSubIcon toolBtnActive" : "navSubIcon"

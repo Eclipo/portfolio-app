@@ -757,12 +757,6 @@ nav ul li {
   transition: transform 1s ease-in-out;
 }
 
-@media (min-width: 45rem) {
-  .collapse {
-    display: none !important;
-  }
-}
-
 @media (max-width: 767.98px) {
   .align-self {
     align-self: baseline !important;
