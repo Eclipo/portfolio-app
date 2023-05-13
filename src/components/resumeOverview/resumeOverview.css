@@ -59,8 +59,7 @@ h4 {
   border-radius: 18px;
   margin-bottom: 2vh !important;
   margin: auto !important;
-  opacity: 0;
-  display: none;
+  display: block;
   padding: 0.5rem;
   max-width: 47.5rem;
 }
@@ -182,26 +181,31 @@ h4 {
   margin-top: 0.5rem;
 }
 
-.experienceTable {
-  display: inline-block;
+#resumeLangSectionID,
+#resumeExpSectionID,
+#resumeEduSectionID {
   justify-content: center;
+  display: none;
+  opacity: 0;
 }
 
 .expSubContainer {
   background-color: var(--primaryColor);
-  padding: 1rem;
   border: 0.1rem solid black !important;
   padding-bottom: 1.5rem;
   border: 0.1rem solid;
   justify-items: center;
   border-radius: 18px;
-  width: 99%;
+  width: fit-content;
+  min-width: 50%;
   margin: auto;
 }
 
 .expSubContainer > .row {
-  width: 95% !important;
+  width: 80% !important;
   margin: auto !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
 }
 
 .expRow {

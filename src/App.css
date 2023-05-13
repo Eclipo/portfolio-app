@@ -404,6 +404,26 @@ ul > li {
 }
 
 @media (min-width: 120rem) {
+  h1 {
+    font-size: 5.5rem !important;
+  }
+
+  h2 {
+    font-size: 4.75rem !important;
+  }
+
+  h3 {
+    font-size: 2.5rem !important;
+  }
+
+  .navLinkH4 {
+    font-size: 1.4rem !important;
+  }
+
+  h4 {
+    font-size: 1.3rem !important;
+  }
+
   .carousel-root {
     max-width: 50vw;
   }
@@ -418,26 +438,6 @@ ul > li {
 
   .skillCategory {
     font-size: 3rem !important;
-  }
-
-  h1 {
-    font-size: 5rem !important;
-  }
-
-  h2 {
-    font-size: 4rem !important;
-  }
-
-  h3 {
-    font-size: 3.25rem !important;
-  }
-
-  .navLinkH4 {
-    font-size: 1.4rem !important;
-  }
-
-  h4 {
-    font-size: 1.3rem !important;
   }
 
   p,
