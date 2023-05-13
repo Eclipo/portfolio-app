@@ -18,7 +18,7 @@
   }
 
   .welcomeText {
-    max-width: 75%;
+    max-width: 100%;
   }
 }
 
@@ -40,7 +40,7 @@
   }
 
   .welcomeText {
-    max-width: 50%;
+    max-width: 70%;
   }
 
   #choiceID {
@@ -60,13 +60,13 @@
     margin-top: -5rem;
   }
   .welcomeText {
-    max-width: 40%;
+    max-width: 60%;
   }
 }
 
 @media (min-width: 85rem) {
   .welcomeText {
-    max-width: 30%;
+    max-width: 50%;
   }
 }
 
@@ -175,10 +175,14 @@
 
 .welcomeText {
   margin: auto !important;
-  text-align: left;
-  display: block;
-  width: fit-content;
-  padding: 0.25rem !important;
+  margin-top: -4.5rem !important;
+
+  text-align: left !important;
+  width: fit-content !important;
+  /* padding: 0.25rem !important; */
+  white-space: none !important;
+  /* display: block !important; */
+  /* align-content: center !important; */
 }
 
 /* Logo */

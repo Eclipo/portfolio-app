@@ -14,6 +14,24 @@ class Skills extends Component {
 
   constructor(props) {
     super(props);
+    this.animeSkillNav = null;
+    this.filterSkills = this.filterSkills.bind(this);
+  }
+
+  componentDidMount() {
+    this.animeSkillNav = anime.timeline({
+      loop: true,
+      autoplay: false,
+      direction: "alternate",
+    });
+
+    this.animeSkillNav.add({
+      targets: ".skillNav",
+      scale: [1, 0.9, 1],
+      delay: anime.stagger(750),
+      easing: "easeInOutSine",
+    });
+    this.animeSkillNav.play();
   }
 
   resetSkills(event) {
@@ -41,9 +59,10 @@ class Skills extends Component {
     const backEnd = document.getElementById("backEnd");
     const roles = document.getElementById("roles");
 
-    frontEnd.classList.remove("shadowAnimation");
-    backEnd.classList.remove("shadowAnimation_2");
-    roles.classList.remove("shadowAnimation_3");
+    //Wantto add code here animeSkillNav
+    if (this.animeSkillNav) {
+      this.animeSkillNav.pause();
+    }
 
     switch (filter) {
       case "frontEnd":
@@ -113,27 +132,28 @@ class Skills extends Component {
       <div id="skills" className="sectionAnimation">
         <div className="container-sm skillContainer" id="skillContainerID">
           <h2>Skills</h2>
+          <hr></hr>
 
           <div className="resumeNavMenu align-items-center">
             <div className="resumeNavRow">
               <button
-                className="col skillNav frontEndTheme shadowAnimation"
+                className="col skillNav frontEndTheme"
                 id="frontEnd"
-                onClick={this.filterSkills}>
-                <h3 className="skillNavh3">Frontend</h3>
+                onClick={this.filterSkills.bind(this)}>
+                <h3 className="skillNavh3">Front-end</h3>
               </button>
 
               <button
-                className="skillNav col backEndTheme shadowAnimation_2"
+                className="skillNav col backEndTheme"
                 id="backEnd"
-                onClick={this.filterSkills}>
-                <h3 className="skillNavh3">Backend</h3>
+                onClick={this.filterSkills.bind(this)}>
+                <h3 className="skillNavh3">Back-end</h3>
               </button>
 
               <button
-                className="skillNav col rolesTheme shadowAnimation_3"
+                className="skillNav col rolesTheme"
                 id="roles"
-                onClick={this.filterSkills}>
+                onClick={this.filterSkills.bind(this)}>
                 <h3 className="skillNavh3">Profession</h3>
               </button>
             </div>
@@ -180,7 +200,7 @@ class Skills extends Component {
                     className="skillPointGround"
                     id="Intermediate"
                     style={{ marginBottom: "2%" }}>
-                    Mid-level
+                    Mid-Level
                   </h3>
                   <div className="sectionLine "></div>
                 </td>
@@ -313,7 +333,7 @@ class Skills extends Component {
         </div>
 
         <div className="container-sm primaryContainer" id="duckContainerID">
-          <div className="row m-0 p-0">
+          <div className="row mt-5 m-0 p-0">
             <h2>
               My spirit<br></br> animal
             </h2>

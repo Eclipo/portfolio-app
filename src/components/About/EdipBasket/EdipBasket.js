@@ -2,11 +2,25 @@ import React from "react";
 import "./edipGuyBasket.css";
 import basketBall from "./images/edipBall.png";
 import basketRim from "./images/edipRim.png";
+import cloud from "../images/miniCloud.png";
 
 export const EdipBasket = () => {
   return (
     <div id="tableStartBasketGuyID">
       <div className="row">
+        <div className="col-1">
+          <img
+            src={cloud}
+            alt="moln"
+            style={{
+              transform: "scale(2.75)",
+              padding: "0",
+              left: "-25rem",
+              top: "-15rem",
+              position: "absolute",
+            }}
+          />
+        </div>
         <div className="col">
           <div className="row">
             <div className="col">

@@ -24,6 +24,10 @@
   scale: 0.95 !important;
 }
 
+#contactID {
+  margin-top: 7.5rem;
+}
+
 #contactID .duckText {
   margin-top: 0;
   margin: 0;

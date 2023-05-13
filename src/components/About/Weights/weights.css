@@ -54,7 +54,7 @@
 #tableStartWeightsGuyID {
   transform: scale(calc(0.5 / var(--size-divisorWeights)));
   margin: auto;
-  top: 0.5rem;
+  top: 0.325rem;
   z-index: 1;
   position: absolute;
 }

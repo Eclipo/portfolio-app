@@ -103,10 +103,6 @@
   position: relative;
 }
 
-#experiencesID h2 {
-  color: var(--primary-white);
-}
-
 .techCategory {
   margin: auto;
   margin-top: 0.75rem;

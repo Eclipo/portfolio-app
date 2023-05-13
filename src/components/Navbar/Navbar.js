@@ -402,7 +402,9 @@ export const Navbar = () => {
                 </div>
 
                 <div className="button-col">
-                  <label className="btnLabelNav">Total</label>
+                  <label className="btnLabelNav" id="labelTotalGreyColor">
+                    Total
+                  </label>
                   <button
                     className={
                       isCbTotal ? "navSubIcon toolBtnActive" : "navSubIcon"

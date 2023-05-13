@@ -62,7 +62,7 @@ class ArtExhibition extends Component {
               <Family></Family>
             </div>
 
-            <div className="d-block " style={{ marginTop: "-15.5rem" }}>
+            <div className="d-block " style={{ marginTop: "-15rem" }}>
               <h3>Family</h3>
               <p>
                 Me, Erika, our son Noah<br></br> and baby girl Laleh
@@ -127,25 +127,11 @@ class ArtExhibition extends Component {
               background: "var(--primary-darker-blue)",
               height: "26.5rem",
             }}>
-            <img
-              src={cloud}
-              alt="moln"
-              style={{
-                transform: "scale(0.25)",
-                padding: "0",
-                left: "0",
-                top: "-5vh",
-                position: "absolute",
-              }}
-            />
-
             <EdipBasket></EdipBasket>
 
             <div className="basketBg">
-              <h3 style={{ marginTop: "2.7rem" }}>Basket</h3>
-              <p>
-                I play basketball<br></br>from time to time
-              </p>
+              <h3 className="mt-4">Basket</h3>
+              <p>I like to play basketball</p>
             </div>
           </div>
         </>
@@ -161,9 +147,7 @@ class ArtExhibition extends Component {
 
             <div className="basketBg">
               <h3 className="weightsText">Weights</h3>
-              <p>
-                Nowdays I try<br></br>lifting some weights
-              </p>
+              <p>Trying to workout sometimes</p>
             </div>
           </div>
         </>

@@ -47,8 +47,6 @@ ul.a {
 .skillTable {
   width: 100%;
   table-layout: fixed;
-  border-radius: 18px;
-  transform: scale(0.925);
   border-collapse: separate;
 }
 
@@ -67,6 +65,7 @@ button .skillCategory {
 .skillNavh3 {
   color: var(--primary-white);
   text-align: center !important;
+  white-space: nowrap !important;
 }
 
 .skillNav {
@@ -123,73 +122,25 @@ button .selectedBtn.rolesTheme {
   background-color: #3b2801 !important;
 }
 
-.shadowAnimation {
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-name: animateShadow;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-name: animateShadow;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-iteration-count: infinite;
-}
-
-.shadowAnimation_2 {
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-name: animateShadow;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-name: animateShadow;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-iteration-count: infinite;
-}
-
-.shadowAnimation_3 {
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-name: animateShadow;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-name: animateShadow;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-iteration-count: infinite;
-}
-
-@keyframes animateShadow {
-  from {
-    box-shadow: var(--btnShadow);
-  }
-
-  to {
-    scale: 0.925;
-  }
-}
-
 .skillPointGround {
   padding: 0% !important;
-  color: var(--secondaryColor-dark);
-  border-radius: 5px;
-  width: fit-content;
+  /* color: var(--secondaryColor-dark); */
+  width: min-content;
   margin: auto !important;
+  word-break: keep-all !important;
+  word-spacing: 0% !important;
+  white-space: nowrap !important;
 }
 
-tr > td > .sectionLine {
-  margin-bottom: 0.25rem !important;
-  background-color: var(--dark-slate) !important;
-  height: 0.25rem;
-  width: 100%;
-}
-
+/* tr > td > .sectionLine {
+  background-color: var(--secondaryColor-shadow) !important;
+  height: 0.3rem;
+  width: fit-content;
+  max-width: 100%;
+  min-width: 75%;
+  margin: auto !important;
+  margin-bottom: 0.75rem !important;
+} */
 .skill {
   width: 85%;
   margin: auto;

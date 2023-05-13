@@ -7,7 +7,8 @@ const Contact = () => {
   return (
     <div id="contactID" className="sectionAnimation">
       <div className="container-sm">
-        <h1 className="flexCenter">Contact</h1>
+        <h2 className="flexCenter">Contact</h2>
+        <hr></hr>
         <p className="duckText mx-auto">
           I am always open to connecting with decent and honest people who enjoy
           technology.

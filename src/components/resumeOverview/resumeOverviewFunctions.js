@@ -1,99 +1,103 @@
 import anime from "animejs";
 
 export const animateResume = (inputID) => {
-    const langSection = document.getElementById('resumeLangSectionID');
-    const expSection = document.getElementById('resumeExpSectionID');
-    const eduSection = document.getElementById('resumeEduSectionID');    
-    const resumeNavs = document.querySelectorAll(".resumeNav");
+  const langSection = document.getElementById("resumeLangSectionID");
+  const expSection = document.getElementById("resumeExpSectionID");
+  const eduSection = document.getElementById("resumeEduSectionID");
+  const resumeNavs = document.querySelectorAll(".resumeNav");
 
-    const resumeNavH2 = document.querySelectorAll(".resumeNavH2");
+  const resumeNavH2 = document.querySelectorAll(".resumeNavH2");
 
-    resumeNavs.forEach((el) => {
-          el.classList.remove("resumeNavFocus");
-        });
-    
-    let section ='#'+inputID.slice(0,-2)+'SectionID';
+  resumeNavs.forEach((el) => {
+    el.classList.remove("resumeNavFocus");
+  });
 
-    let animate = anime.timeline({});
-    
-    switch (inputID) {
-        case 'resumeLangID':
-            document.getElementById(inputID).classList.add("resumeNavFocus");
+  let section = "#" + inputID.slice(0, -2) + "SectionID";
 
-            animate.add({
-                begin(){
-                    resetSections();
-                },
-                endDelay:100
-            })
+  let animate = anime.timeline({});
 
-            animate.add({
-                targets:section,
-                opacity:[0,1],
-                easing:'easeInOutQuad',
-                begin(){
-                    langSection.style.display='block';
-                    
-                }
-            });
-                
-            break;
+  switch (inputID) {
+    case "resumeLangID":
+      document.getElementById(inputID).classList.add("resumeNavFocus");
 
-        case 'resumeExpID': 
-            document.getElementById(inputID).classList.add("resumeNavFocus");
-            animate.add({
-                begin(){
-                    resetSections();
-                },
-                endDelay:100
-            })
+      animate.add({
+        begin() {
+          resetSections();
+        },
+        endDelay: 50,
+        duration: 50,
+      });
 
-            animate.add({
-                targets:section,
-                opacity:[0,1],
-                easing:'easeInOutQuad',
-                begin(){
-                    expSection.style.display='block';
-                }
-            });
-            
-        break;
+      animate.add({
+        targets: section,
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        begin() {
+          langSection.style.display = "block";
+        },
+      });
 
-        case 'resumeEduID':
-            document.getElementById(inputID).classList.add("resumeNavFocus");
-            animate.add({
-                begin(){
-                    resetSections();
-                },
-                endDelay:100
-            })
+      break;
 
-            animate.add({
-                targets:section,
-                opacity:[0,1],
-                easing:'easeInOutQuad',
-                begin(){
-                    eduSection.style.display='block';
-                }
-            });
-            break;
-    
-        default:
-            break;
-    }
+    case "resumeExpID":
+      document.getElementById(inputID).classList.add("resumeNavFocus");
+      animate.add({
+        begin() {
+          resetSections();
+        },
+        endDelay: 50,
+        duration: 50,
+      });
 
+      animate.add({
+        targets: section,
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        begin() {
+          expSection.style.display = "block";
+        },
+      });
 
-    function resetSections(){
-        anime({
-            targets:['#resumeLangSectionID','#resumeExpSectionID','#resumeEduSectionID'],
-            opacity:0,
-            duration:10,
-            complete:function(){        
-                langSection.style.display='none';
-                expSection.style.display='none';
-                eduSection.style.display='none';
-            }
-        });
-    
-    }
-}
+      break;
+
+    case "resumeEduID":
+      document.getElementById(inputID).classList.add("resumeNavFocus");
+      animate.add({
+        begin() {
+          resetSections();
+        },
+        endDelay: 50,
+        duration: 50,
+      });
+
+      animate.add({
+        targets: section,
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        begin() {
+          eduSection.style.display = "block";
+        },
+      });
+      break;
+
+    default:
+      break;
+  }
+
+  function resetSections() {
+    anime({
+      targets: [
+        "#resumeLangSectionID",
+        "#resumeExpSectionID",
+        "#resumeEduSectionID",
+      ],
+      opacity: 0,
+      duration: 10,
+      complete: function () {
+        langSection.style.display = "none";
+        expSection.style.display = "none";
+        eduSection.style.display = "none";
+      },
+    });
+  }
+};

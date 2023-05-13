@@ -6,18 +6,24 @@ import "./edipLogo.css";
 const QuickFacts = () => {
   return (
     <div id="quickFacts" className="sectionAnimation">
-      <div className="container primaryContainer">
-        <h1 className="flexCenter">
-          Welcome! <br></br>I'm Edip
-        </h1>
+      <div className="container primaryContainer mt-5">
+        <h3 className="welcomeText text-black text-start mt-5 pt-5 pb-0">
+          Welcome, the name is
+        </h3>
+        <h1 className="flexCenter text-start pt-1 mt-0">Edip Sarac</h1>
 
-        <div className="flexCenter mb-lg-4 pb-0" style={{ marginTop: "-6rem" }}>
+        <div className="flexCenter pb-0 mb-0" style={{ marginTop: "-6rem" }}>
           <EdipGuy></EdipGuy>
         </div>
-        <div className="text-left mb-4" style={{ marginTop: "-6rem" }}>
+        <div className="row welcomeText">
           <h3 className="text-start">
-            A full-stack developer from Sweden who enjoys front-end and playful
-            design.
+            I'm a <span className="text-black">full-stack developer</span>
+            <br></br>
+            from <span className="text-black">Sweden</span>
+            <br></br>
+            who enjoys <span className="text-black"> front-end</span>
+            <br></br>
+            and playful<span className="text-black"> web design</span>.
           </h3>
         </div>
       </div>

@@ -22,10 +22,9 @@ class Experiences extends Component {
 
   render() {
     return (
-      <div className="sectionAnimation" id="experiencesID">
-        <h1>
-          Selected<br></br>work
-        </h1>
+      <div className="sectionAnimation container-sm" id="experiencesID">
+        <h2>Selected work</h2>
+        <hr></hr>
 
         <div className="smallScreen">
           <FontAwesomeIcon
@@ -55,7 +54,7 @@ class Experiences extends Component {
                         className="col techCategory"
                         id="fintech"
                         onClick={this.handleClick}>
-                        <h2>Fintech Company</h2>
+                        <h3>Fintech Company</h3>
                       </button>
                       <div className="scrollLine" id="fintech_scrollLine"></div>
                     </td>
@@ -65,7 +64,7 @@ class Experiences extends Component {
                         className="col techCategory"
                         id="municipality_3"
                         onClick={this.handleClick}>
-                        <h2>#3 Municipality</h2>
+                        <h3>#3 Municipality</h3>
                       </button>
 
                       <div
@@ -77,7 +76,7 @@ class Experiences extends Component {
                         className="col techCategory"
                         id="municipality_2"
                         onClick={this.handleClick}>
-                        <h2>#2 Municipality</h2>
+                        <h3>#2 Municipality</h3>
                       </button>
                       <div
                         className="scrollLine"
@@ -89,7 +88,7 @@ class Experiences extends Component {
                         className="col techCategory"
                         id="municipality_1"
                         onClick={this.handleClick}>
-                        <h2>#1 Municipality</h2>
+                        <h3>#1 Municipality</h3>
                       </button>
                       <div
                         className="scrollLine"

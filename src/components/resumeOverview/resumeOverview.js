@@ -16,10 +16,9 @@ class ResumeOverview extends Component {
 
   render() {
     return (
-      <div id="resumeOverview" className="sectionAnimation">
-        <h2>
-          Resumé <br></br>Overview
-        </h2>
+      <div id="resumeOverview" className="sectionAnimation container-sm">
+        <h2>Resumé</h2>
+        <hr></hr>
         <div id="resumeContainerID">
           <div className="resumeTable">
             <div className="resumeNavMenu ">
@@ -59,7 +58,7 @@ class ResumeOverview extends Component {
                     <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
                       <h4>Swedish</h4>
                       <div className="header3UnderLine"></div>
-                      <p className="roHeader4 m-auto p-1">Native</p>
+                      <h4 className="roHeader4 m-auto p-1">Native</h4>
                     </div>
                   </div>
                   <div className="col m-2">
@@ -81,9 +80,9 @@ class ResumeOverview extends Component {
                 <div className="row m-auto">
                   <div className="col m-2">
                     <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
-                      <h3>Kurdish, French and Mandarin</h3>
+                      <h3>Kurdish</h3>
                       <div className="header3UnderLine w-100"></div>
-                      <h4 className="m-auto p-1">Almost nothing</h4>
+                      <h4 className="m-auto p-1">Very little :-(</h4>
                     </div>
                   </div>
                 </div>

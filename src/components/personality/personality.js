@@ -407,12 +407,12 @@ class Personality extends Component {
         </div>
 
         <div className="personalityTextContainer" id="bookSection">
-          <h1 className="mb-1">
+          <h2 className="mt-5 mb-1">
             Don't judge
             <br></br>a book
             <br></br>
             by its cover
-          </h1>
+          </h2>
           <div className="flexCenter bookContainer">
             <Book></Book>
           </div>
