@@ -8,18 +8,16 @@ const QuickFacts = () => {
     <div id="quickFacts" className="sectionAnimation">
       <div className="container primaryContainer">
         <h1 className="flexCenter">
-          Hey!<br></br>
-          I'm Edip Sarac!
+          Welcome! <br></br>I'm Edip
         </h1>
 
         <div className="flexCenter mb-lg-4 pb-0" style={{ marginTop: "-6rem" }}>
           <EdipGuy></EdipGuy>
         </div>
         <div className="text-left mb-4" style={{ marginTop: "-6rem" }}>
-          <h3>
-            A full-stack developer
-            <br></br>from Sweden who enjoys
-            <br></br>front-end and playful design.
+          <h3 className="text-start">
+            A full-stack developer from Sweden who enjoys front-end and playful
+            design.
           </h3>
         </div>
       </div>

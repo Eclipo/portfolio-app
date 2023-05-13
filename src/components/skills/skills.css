@@ -1,8 +1,5 @@
 /***************** SKILLS *********************/
 
-@media (min-width: 120rem) {
-}
-
 .bg-transparent {
   border: none;
 }
@@ -62,17 +59,44 @@ ul.a {
 
 button .skillCategory {
   padding: 0;
-  margin: 0;
+  margin-left: 5rem;
+  margin-right: 5rem;
   background-color: var(--secondaryColor);
 }
-.skillCategory {
-  padding: 0.75rem !important;
-  margin: 0.25rem !important;
-  width: fit-content;
 
+.skillNavh3 {
+  color: var(--primary-white);
+  text-align: center !important;
+}
+
+.skillNav {
+  background-color: var(--secondaryColor);
+  border-radius: 18px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  width: fit-content;
+  min-width: 17.5rem;
+  height: fit-content;
+  display: inline-flex !important;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.25rem !important;
+  margin-bottom: 1.25rem !important;
+  box-shadow: var(--btnShadow);
+  border: 0.1rem black solid;
+}
+
+.skillCategory {
+  padding: 1rem !important;
+  width: fit-content;
+  height: fit-content;
   opacity: 1;
-  margin-bottom: 0.25rem;
-  margin-top: 0.25rem;
+  margin-bottom: 1.5rem !important;
+  margin-top: 0.25rem !important;
+  margin-left: 3.75rem !important;
+  margin-right: 3.75rem !important;
   border-radius: 18px;
   border: 0.1rem solid black;
   transition: var(--transition);
@@ -153,7 +177,7 @@ button .selectedBtn.rolesTheme {
 
 .skillPointGround {
   padding: 0% !important;
-  color: var(--lightest-slate);
+  color: var(--secondaryColor-dark);
   border-radius: 5px;
   width: fit-content;
   margin: auto !important;

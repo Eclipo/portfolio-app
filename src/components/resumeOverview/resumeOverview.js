@@ -17,36 +17,36 @@ class ResumeOverview extends Component {
   render() {
     return (
       <div id="resumeOverview" className="sectionAnimation">
-        <h1>
+        <h2>
           Resumé <br></br>Overview
-        </h1>
+        </h2>
         <div id="resumeContainerID">
           <div className="resumeTable">
-            <div className="resumeNavMenu mt-5">
+            <div className="resumeNavMenu ">
               <div className="resumeNavRow">
                 <button
                   id="resumeLangID"
                   className="resumeNav col"
                   onClick={this.handleClick}>
-                  <h2 className="resumeNavH2" id="langH2">
+                  <h3 className="resumeNavH2" id="langH2">
                     Languages
-                  </h2>
+                  </h3>
                 </button>
                 <button
                   className="resumeNav col"
                   id="resumeExpID"
                   onClick={this.handleClick}>
-                  <h2 className="resumeNavH2" id="expH2">
+                  <h3 className="resumeNavH2" id="expH2">
                     Experiences
-                  </h2>
+                  </h3>
                 </button>
                 <button
                   className="resumeNav col"
                   id="resumeEduID"
                   onClick={this.handleClick}>
-                  <h2 className="resumeNavH2" id="eduH2">
+                  <h3 className="resumeNavH2" id="eduH2">
                     Education
-                  </h2>
+                  </h3>
                 </button>
               </div>
             </div>
@@ -57,9 +57,9 @@ class ResumeOverview extends Component {
                 <div className="row m-auto">
                   <div className="col m-2">
                     <div className="expOverviewPeriod expOverviewPeriod-dotted p-2">
-                      <h3>Swedish</h3>
+                      <h4>Swedish</h4>
                       <div className="header3UnderLine"></div>
-                      <h4 className="roHeader4 m-auto p-1">Native</h4>
+                      <p className="roHeader4 m-auto p-1">Native</p>
                     </div>
                   </div>
                   <div className="col m-2">

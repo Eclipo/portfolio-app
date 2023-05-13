@@ -17,9 +17,9 @@ class Skills extends Component {
   }
 
   resetSkills(event) {
-    const frontEnd = document.getElementById("frontEndHeaderBtn");
-    const backEnd = document.getElementById("backEndHeaderBtn");
-    const roles = document.getElementById("rolesHeaderBtn");
+    const frontEnd = document.getElementById("frontEnd");
+    const backEnd = document.getElementById("backEnd");
+    const roles = document.getElementById("roles");
 
     frontEnd.classList.remove("selectedBtn");
     backEnd.classList.remove("selectedBtn");
@@ -37,9 +37,9 @@ class Skills extends Component {
     const skillsFrontEnd = document.querySelectorAll(".skill.frontEndTheme");
     const skillsBackend = document.querySelectorAll(".skill.backEndTheme");
     const skillsRoles = document.querySelectorAll(".skill.rolesTheme");
-    const frontEnd = document.getElementById("frontEndHeaderBtn");
-    const backEnd = document.getElementById("backEndHeaderBtn");
-    const roles = document.getElementById("rolesHeaderBtn");
+    const frontEnd = document.getElementById("frontEnd");
+    const backEnd = document.getElementById("backEnd");
+    const roles = document.getElementById("roles");
 
     frontEnd.classList.remove("shadowAnimation");
     backEnd.classList.remove("shadowAnimation_2");
@@ -112,44 +112,29 @@ class Skills extends Component {
     return (
       <div id="skills" className="sectionAnimation">
         <div className="container-sm skillContainer" id="skillContainerID">
-          <h1>Skills</h1>
+          <h2>Skills</h2>
 
-          <div className="row"></div>
-          <div className="row m-auto">
-            <div className="col">
+          <div className="resumeNavMenu align-items-center">
+            <div className="resumeNavRow">
               <button
-                className="bg-transparent"
+                className="col skillNav frontEndTheme shadowAnimation"
                 id="frontEnd"
                 onClick={this.filterSkills}>
-                <h2
-                  className="skillCategory frontEndTheme shadowAnimation"
-                  id="frontEndHeaderBtn">
-                  Front <br></br> end
-                </h2>
+                <h3 className="skillNavh3">Frontend</h3>
               </button>
-            </div>
-            <div className="col">
+
               <button
-                className="bg-transparent"
+                className="skillNav col backEndTheme shadowAnimation_2"
                 id="backEnd"
                 onClick={this.filterSkills}>
-                <h2
-                  className="skillCategory backEndTheme shadowAnimation_2"
-                  id="backEndHeaderBtn">
-                  Back <br></br> end
-                </h2>
+                <h3 className="skillNavh3">Backend</h3>
               </button>
-            </div>
-            <div className="col">
+
               <button
-                className="bg-transparent"
+                className="skillNav col rolesTheme shadowAnimation_3"
                 id="roles"
                 onClick={this.filterSkills}>
-                <h2
-                  className="skillCategory rolesTheme shadowAnimation_3"
-                  id="rolesHeaderBtn">
-                  JOB<br></br> roles
-                </h2>
+                <h3 className="skillNavh3">Profession</h3>
               </button>
             </div>
           </div>
@@ -328,15 +313,17 @@ class Skills extends Component {
         </div>
 
         <div className="container-sm primaryContainer" id="duckContainerID">
-          <div className="row">
-            <h1>Full-stack developer</h1>
+          <div className="row m-0 p-0">
+            <h2>
+              My spirit<br></br> animal
+            </h2>
 
-            <div className="flexCenter duckContainer">
+            <div className="flexCenter duckContainer m-0 p-0">
               <Duck></Duck>
             </div>
           </div>
 
-          <div className="row">
+          <div className="row m-0 p-0">
             <div className="duckText">
               <p className="mb-0">
                 As a developer I am

@@ -63,7 +63,7 @@ class ArtExhibition extends Component {
             </div>
 
             <div className="d-block " style={{ marginTop: "-15.5rem" }}>
-              <h2>Family</h2>
+              <h3>Family</h3>
               <p>
                 Me, Erika, our son Noah<br></br> and baby girl Laleh
               </p>
@@ -91,7 +91,7 @@ class ArtExhibition extends Component {
                 display: "block position-absolute",
                 marginTop: "3.5rem",
               }}>
-              <h2>Origin</h2>
+              <h3>Origin</h3>
               <p>
                 I am born in Sweden with <br></br>Kurdish origin from Turkey
               </p>
@@ -114,7 +114,7 @@ class ArtExhibition extends Component {
                 marginBottom: "1.15rem",
                 height: "10rem",
               }}>
-              <h2>Stockholm</h2>
+              <h3>Stockholm</h3>
               <p>My beautiful hometown</p>
             </div>
           </div>
@@ -142,7 +142,7 @@ class ArtExhibition extends Component {
             <EdipBasket></EdipBasket>
 
             <div className="basketBg">
-              <h2 style={{ marginTop: "2.7rem" }}>Basket</h2>
+              <h3 style={{ marginTop: "2.7rem" }}>Basket</h3>
               <p>
                 I play basketball<br></br>from time to time
               </p>
@@ -160,7 +160,7 @@ class ArtExhibition extends Component {
             <Weights></Weights>
 
             <div className="basketBg">
-              <h2 className="weightsText">Weights</h2>
+              <h3 className="weightsText">Weights</h3>
               <p>
                 Nowdays I try<br></br>lifting some weights
               </p>
@@ -183,7 +183,7 @@ class ArtExhibition extends Component {
                 height: "65%",
                 marginTop: "-6.75rem",
               }}>
-              <h2>Star Wars</h2>
+              <h3>Star Wars</h3>
               <p style={{ backgroundColor: "black", width: "fit-content" }}>
                 A huge inspiration to me.
               </p>

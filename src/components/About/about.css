@@ -26,8 +26,9 @@
   transform: (0.95);
 }
 
-.testimonials h2 {
+.testimonials h3 {
   color: var(--secondaryColor);
+  margin-top: 3rem !important;
 }
 
 .testimonials p {

@@ -96,7 +96,7 @@ h4 {
   border: 0.1rem black solid;
 }
 
-.resumeNav h2 {
+.resumeNav h3 {
   margin: auto;
   color: var(--primary-white);
   transition: var(--transition);
