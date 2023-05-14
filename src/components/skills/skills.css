@@ -198,7 +198,6 @@ button .rolesTheme:active {
 .duckText {
   margin: auto;
   text-align: left;
-  color: var(--light-slate);
   margin-top: 16rem;
   display: block;
   width: 90%;

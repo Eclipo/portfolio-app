@@ -79,7 +79,7 @@ export const animate = (inputID) => {
                 period.innerText = "02/22 - Present";
                 system.innerText = "Custom SPA";
                 descOneEl.innerHTML =
-                  'The customer is within the fintech industry and we are building a new application where my role is<span class="highLight"> web developer</span>.';
+                  'We are building a new application within fintech where I work as a<span class="highLight"> web developer</span>.';
                 descTwoEl.innerHTML =
                   'From the specifications and requirements I have been able to code and design the solution in the front-end where I have used <span class="highLight">Angular,TypeScript, HTML and CSS </span>.';
                 descThreeEl.innerHTML =
@@ -107,13 +107,13 @@ export const animate = (inputID) => {
                 liThree.style.display = "flex";
                 liFour.style.display = "flex";
                 descOneEl.innerHTML =
-                  'Due to my broad set of skills and experience regarding the ECM-system Platina and the Swedish public sector, I have had<span class="highLight"> many different roles</span>: solution architect, developer, deployer, business consultant, application specialist, and system tester. To put it simply, I was a<span class="highLight"> handyman</span>.';
+                  'I have had<span class="highLight"> many different roles</span>: solution architect, developer, deployer, business consultant, application specialist, and system tester.';
                 descTwoEl.innerHTML =
-                  'I have formulated solution documents and developed in<span class="highLight"> SQL and PowerShell </span>where I had to take into account of the existing architecture, integrations and legacy-code.';
+                  'Formulated solution documents, developed in<span class="highLight"> SQL and PowerShell </span>where I had to take into account of the existing architecture, integrations and legacy-code.';
                 descThreeEl.innerHTML =
-                  'I deployed the configurations into production, where I later verified the deployment with my<span class="highLight"> custom SQL test scripts</span>.';
+                  'Deployed the configurations into production, where I later verified the deployment with my<span class="highLight"> custom SQL test scripts</span>.';
                 descFourEl.innerHTML =
-                  'I developed a bookmarkscanner application in<span class="highLight"> C# </span>which scanned through several Microsoft Word templates and classified if the bookmarks were either standard or customized.';
+                  'Furthermore I developed a bookmarkscanner application in<span class="highLight"> C# </span>which scanned through several Microsoft Word templates and classified if the bookmarks were either standard or customized.';
                 chosenTechSkillContainer.style.display = "block";
                 chosenTechSkillContainer.style.opacity = "1";
 
@@ -136,9 +136,9 @@ export const animate = (inputID) => {
                 descOneEl.innerHTML =
                   'Together with a project leader, I acted as a<span class="highLight"> developer, deployer and solution architect</span>.';
                 descTwoEl.innerHTML =
-                  "My colleague and I managed to upgrade Platina from version 7.2 to 11 and its module Webdiary from version 1.0 to 2.0.";
+                  "We upgraded Platina from version 7.2 to 11 and its module Webdiary from version 1.0 to 2.0.";
                 descThreeEl.innerHTML =
-                  "During the project, I worked throughout the whole stack, consisting of MS SQL, JavaScript, HTML/CSS and C#.";
+                  "I worked throughout the whole stack, consisting of MS SQL, JavaScript, HTML/CSS and C#.";
                 descFourEl.innerHTML =
                   "Some of the major customizations were a simplified admin menu in Platina and implementing the customized design patterns for the Webdiary module.";
                 liTwo.style.display = "flex";
@@ -167,9 +167,9 @@ export const animate = (inputID) => {
                 descOneEl.innerHTML =
                   'In this project, I acted as a<span class="highLight"> full-stack developer and solution architect</span>.';
                 descTwoEl.innerHTML =
-                  "Together with a senior developer/deployer and a project leader, we upgraded Platina from version 7.2 to 10.3.";
+                  "We upgraded Platina from version 7.2 to 10.3.";
                 descThreeEl.innerHTML =
-                  "Among many things we did in this project were improvements to a customized approval process and the UI of the meeting-module.";
+                  "I improved the customer's customized approval process and the UI of the meeting-module.";
                 descFourEl.innerHTML = "";
                 liTwo.style.display = "flex";
                 liThree.style.display = "flex";

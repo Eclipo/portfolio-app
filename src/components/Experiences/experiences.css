@@ -43,13 +43,13 @@
   }
 
   .techText {
-    max-width: 75%;
+    max-width: 85%;
   }
 }
 
 @media (min-width: 60rem) {
-  .smallScreen {
-    display: none;
+  .techText {
+    max-width: 75%;
   }
 
   #municipality_3_sql {
@@ -285,12 +285,9 @@
 }
 
 .techText {
-  color: var(--primaryText);
   text-align: left;
   white-space: normal !important;
   opacity: 0;
-
-  width: 95% !important;
   border-radius: 18px;
   display: block;
 }

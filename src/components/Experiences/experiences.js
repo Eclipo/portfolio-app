@@ -122,10 +122,10 @@ class Experiences extends Component {
                 <div className="techUnderLine mt-2 mb-3"></div>
               </div>
 
-              <div className="row" id="_periodSystem">
-                <h2 className="headerTech justify-content-start">0%</h2>
-                <h2 className="headerTech mx-auto">Time</h2>
-                <h2 className="headerTech justify-content-end">100%</h2>
+              <div className="row mb-3" id="_periodSystem">
+                <h3 className="headerTech justify-content-start">0%</h3>
+                <h3 className="headerTech mx-auto">Time</h3>
+                <h3 className="headerTech justify-content-end">100%</h3>
 
                 <div className="techSkillContainer" id="municipality_3_tech">
                   <div className="techRow" id="municipality_3_csharp">
@@ -186,7 +186,6 @@ class Experiences extends Component {
                     <h4 className="techSkill">C#</h4>
                   </div>
                 </div>
-                <div className="techUnderLine mt-2 mb-3"></div>
               </div>
 
               <div className="techText">

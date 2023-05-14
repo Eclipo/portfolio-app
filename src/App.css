@@ -96,7 +96,7 @@
 
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfaee;
-  --primaryText: #533905ef;
+  --primaryText: #533903ef;
   --subHeaderText: #6b4906ef;
 
   --secondaryColor: #d3961d;
@@ -196,7 +196,7 @@ button:active {
 }
 
 .highLight {
-  color: var(--secondaryColor-dark);
+  color: black;
   font-weight: 600;
 }
 
@@ -294,14 +294,14 @@ p,
 label,
 ul > li {
   font-family: Rubik, cursive !important;
-  font-weight: 400 !important;
+  font-weight: 550 !important;
 
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   vertical-align: middle !important;
   word-wrap: break-word;
   word-spacing: normal;
 
-  color: var(--darkest-navy);
+  color: var(--primaryText);
 }
 
 .p-italic {
@@ -431,6 +431,10 @@ ul > li {
 
   h4 {
     font-size: 1.3rem !important;
+  }
+
+  p {
+    font-size: 1.25rem !important;
   }
 
   .carousel-root {

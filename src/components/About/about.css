@@ -38,10 +38,6 @@
   padding-right: 1rem;
 }
 
-.duckText {
-  color: var(--darkest-navy) !important;
-}
-
 .carousel .slide img {
   width: 10rem !important;
   margin-top: 2rem;
