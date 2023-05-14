@@ -84,16 +84,42 @@
 /************************* EXP Menu *********************************/
 
 #expMenu {
-  opacity: 1;
+  background-color: var(--bg-sub-dark);
+  justify-items: center !important;
+  box-shadow: var(--blackWhiteShadow);
+
+  /* display: contents; */
+  /* opacity: 1;
   position: relative;
-  width: 100%;
+  width: fit-content;
+  max-width: 10rem;
+  justify-items: center !important;
+
   margin: auto;
   border-radius: 18px;
   background-color: var(--bg-sub-dark);
   border: 0.15rem solid black;
-  box-shadow: var(--blackWhiteShadow);
-  padding: 0.75rem;
-  margin: 0.75rem;
+  padding: 0.75rem; */
+}
+
+#expMenu button {
+  margin: auto !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
+  display: inline-flex !important;
+  white-space: nowrap !important;
+}
+
+.techCategory:focus {
+  background: linear-gradient(
+    to left,
+    var(--btnHoverColor) 50%,
+    var(--secondaryColor-darkest)
+  );
+  background-size: 200%;
+  background-position: right bottom;
+  transition: all 2s ease-out;
+  border: none !important;
 }
 
 .expTable {
@@ -103,53 +129,38 @@
   position: relative;
 }
 
-.techCategory {
-  margin: auto;
-  margin-top: 0.75rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  width: fit-content;
-  padding: 1rem;
-
+.techCategory h3 {
   color: var(--primary-white);
-  border: 0.1rem black solid;
-  border-style: solid;
-  opacity: 1;
-  background-color: var(--secondaryColor);
-  display: flex;
-  transition: var(--transition);
-  box-shadow: var(--btnShadow);
-  border-radius: 18px;
+  white-space: nowrap;
 }
-
-.techCategory:hover {
-  background-color: var(--btnHoverColor) !important;
-}
-
-.techCategory:active {
-  background-color: var(--btnActiveColor) !important;
-}
-.scrollLine {
-  margin: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.25rem;
-  height: 0.25rem;
-}
-
-.scrollIcon {
-  color: var(--secondaryColor-dark);
-  scale: 1.5;
-  margin: 0.5rem;
+@media (min-width: 768px) {
+  #expMenu {
+    width: 75%;
+  }
 }
 
 #expCategoryMenu {
-  overflow: auto;
+  /* overflow: auto; */
   border-radius: 18px;
   padding: 0.5rem;
+
+  width: fit-content;
+  /* display: inline-flex; */
   /* background-color: var(--bg-sub-dark); */
-  /* width: 90%; */
 }
 
+.techCategory {
+  background-color: var(--secondaryColor);
+
+  border-radius: 18px;
+  padding: 1rem;
+  margin-bottom: 2vh !important;
+  margin: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: var(--btnShadow);
+  border: 0.1rem black solid;
+}
 /* Handle */
 ::-webkit-scrollbar {
   width: 1rem;
@@ -211,11 +222,11 @@
   height: fit-content;
   max-width: 11.25rem;
   width: max-content;
-  margin: auto;
   align-content: center;
   position: relative;
   text-align: left;
   word-break: keep-all;
+  white-space: nowrap !important;
   border-width: 1rem;
   margin: 0.25rem;
   margin-left: 0;

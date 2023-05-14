@@ -34,12 +34,6 @@ export const animate = (inputID) => {
 
   var tabScrollLine = "#" + inputID + "_scrollLine";
 
-  var tabScrollLineEl = document.getElementById(inputID + "_scrollLine");
-
-  var rect = tabScrollLineEl.getBoundingClientRect();
-
-  var tabContent = "#_container";
-
   var contentHeader = "#_header";
 
   var contentPeriod = "#_periodSystem";
@@ -62,162 +56,152 @@ export const animate = (inputID) => {
       anime({
         targets: ".techCategory",
         backgroundColor: "#cf9625",
+        duration: 50,
         easing: "linear",
-        duration: 250,
+        scale: 1,
+        endDelay: 0,
+        beginDelay: 0,
         complete: function () {
           anime({
             targets: tab,
-            backgroundColor: "#5c3e03",
-            easing: "linear",
+            backgroundColor: "#ac7b1b",
+            scale: 0.98,
             duration: 150,
+            easing: "linear",
+            endDelay: 0,
+            beginDelay: 0,
             complete: function () {
+              document.getElementById(inputID).classList.add("expNavFocus");
+
+              if (inputID === "fintech") {
+                confidentialParagraph.style.display = "block";
+                jobTitle = "Web developer";
+                linkCustomerTitle = "Fintech *";
+                linkToCustomer = "";
+                period.innerText = "02/22 - Present";
+                system.innerText = "Custom SPA";
+                descOneEl.innerHTML =
+                  'The customer is within the fintech industry and we are building a new application where my role is<span class="highLight"> web developer</span>.';
+                descTwoEl.innerHTML =
+                  'From the specifications and requirements I have been able to code and design the solution in the front-end where I have used <span class="highLight">Angular,TypeScript, HTML and CSS </span>.';
+                descThreeEl.innerHTML =
+                  'I have improved the<span class="highLight"> UX </span>and in<span class="highLight"> Angular </span>I have worked with forms, validators, services, and formguards. Occasionally I code in<span class="highLight"> C# </span>to ensure the front-/and the back-end work well with each other.';
+                descFourEl.innerText = "";
+                liThree.style.display = "";
+                liFour.style.display = "none";
+                chosenTechSkillContainer.style.display = "block";
+                chosenTechSkillContainer.style.opacity = "1";
+                jobTitleEl.innerText = jobTitle;
+                for (const el of linkEl) {
+                  el.innerText = linkCustomerTitle;
+                  el.href = linkToCustomer;
+                }
+              }
+
+              if (inputID === "municipality_3") {
+                confidentialParagraph.style.display = "block";
+                jobTitle = "Handyman";
+                linkCustomerTitle = "#3 Municipality *";
+                linkToCustomer = "";
+                period.innerText = "08/20 - 02/22";
+                system.innerText = "Platina (.Net)";
+                liTwo.style.display = "flex";
+                liThree.style.display = "flex";
+                liFour.style.display = "flex";
+                descOneEl.innerHTML =
+                  'Due to my broad set of skills and experience regarding the ECM-system Platina and the Swedish public sector, I have had<span class="highLight"> many different roles</span>: solution architect, developer, deployer, business consultant, application specialist, and system tester. To put it simply, I was a<span class="highLight"> handyman</span>.';
+                descTwoEl.innerHTML =
+                  'I have formulated solution documents and developed in<span class="highLight"> SQL and PowerShell </span>where I had to take into account of the existing architecture, integrations and legacy-code.';
+                descThreeEl.innerHTML =
+                  'I deployed the configurations into production, where I later verified the deployment with my<span class="highLight"> custom SQL test scripts</span>.';
+                descFourEl.innerHTML =
+                  'I developed a bookmarkscanner application in<span class="highLight"> C# </span>which scanned through several Microsoft Word templates and classified if the bookmarks were either standard or customized.';
+                chosenTechSkillContainer.style.display = "block";
+                chosenTechSkillContainer.style.opacity = "1";
+
+                jobTitleEl.innerText = jobTitle;
+
+                for (const el of linkEl) {
+                  el.innerText = linkCustomerTitle;
+                  el.href = linkToCustomer;
+                }
+              }
+
+              if (inputID === "municipality_2") {
+                confidentialParagraph.style.display = "block";
+                jobTitle = "Handyman";
+
+                linkCustomerTitle = "#2 Municipality *";
+                linkToCustomer = "";
+                period.innerText = "05/20 - 10/20";
+                system.innerText = "Platina (.Net)";
+                descOneEl.innerHTML =
+                  'Together with a project leader, I acted as a<span class="highLight"> developer, deployer and solution architect</span>.';
+                descTwoEl.innerHTML =
+                  "My colleague and I managed to upgrade Platina from version 7.2 to 11 and its module Webdiary from version 1.0 to 2.0.";
+                descThreeEl.innerHTML =
+                  "During the project, I worked throughout the whole stack, consisting of MS SQL, JavaScript, HTML/CSS and C#.";
+                descFourEl.innerHTML =
+                  "Some of the major customizations were a simplified admin menu in Platina and implementing the customized design patterns for the Webdiary module.";
+                liTwo.style.display = "flex";
+                liThree.style.display = "flex";
+                liFour.style.display = "flex";
+
+                chosenTechSkillContainer.style.display = "block";
+                chosenTechSkillContainer.style.opacity = "1";
+                jobTitleEl.innerText = jobTitle;
+
+                for (const el of linkEl) {
+                  el.innerText = linkCustomerTitle;
+                  el.href = linkToCustomer;
+                }
+              }
+
+              if (inputID === "municipality_1") {
+                confidentialParagraph.style.display = "block";
+                jobTitle = "Handyman";
+
+                linkCustomerTitle = "#1 Municipality *";
+                linkToCustomer = "";
+                period.innerText = "02/20 - 06/20";
+                system.innerText = "Platina (.Net)";
+
+                descOneEl.innerHTML =
+                  'In this project, I acted as a<span class="highLight"> full-stack developer and solution architect</span>.';
+                descTwoEl.innerHTML =
+                  "Together with a senior developer/deployer and a project leader, we upgraded Platina from version 7.2 to 10.3.";
+                descThreeEl.innerHTML =
+                  "Among many things we did in this project were improvements to a customized approval process and the UI of the meeting-module.";
+                descFourEl.innerHTML = "";
+                liTwo.style.display = "flex";
+                liThree.style.display = "flex";
+                liFour.style.display = "none";
+                chosenTechSkillContainer.style.display = "block";
+                chosenTechSkillContainer.style.opacity = "1";
+
+                jobTitleEl.innerText = jobTitle;
+
+                for (const el of linkEl) {
+                  el.innerText = linkCustomerTitle;
+                  el.href = linkToCustomer;
+                }
+              }
+
               anime({
-                targets: ".scrollLine",
-                opacity: 0,
-                duration: 150,
+                targets: [
+                  contentHeader,
+                  contentPeriod,
+                  ".techRow",
+                  ".li_icon",
+                  ".techText",
+                  ".techText ul li",
+                ],
+                opacity: [0.25, 1],
+                display: "block",
+                duration: 500,
+                easing: "linear",
                 complete: function () {
-                  anime({
-                    targets: tabScrollLine,
-                    opacity: [0, 1],
-                    translateX: ["-50px", "50px", 0],
-                    width: [0, 100],
-                    duration: 500,
-                    easing: "easeInOutQuad",
-                    backgroundColor: "#916610",
-                    complete: function () {
-                      if (inputID === "fintech") {
-                        confidentialParagraph.style.display = "block";
-                        jobTitle = "Web developer";
-                        linkCustomerTitle = "Fintech *";
-                        linkToCustomer = "";
-                        period.innerText = "02/22 - Present";
-                        system.innerText = "Custom SPA";
-                        descOneEl.innerHTML =
-                          'The customer is within the fintech industry and we are building a new application where my role is<span class="highLight"> web developer</span>.';
-                        descTwoEl.innerHTML =
-                          'From the specifications and requirements I have been able to code and design the solution in the front-end where I have used <span class="highLight">Angular,TypeScript, HTML and CSS </span>.';
-                        descThreeEl.innerHTML =
-                          'I have improved the<span class="highLight"> UX </span>and in<span class="highLight"> Angular </span>I have worked with forms, validators, services, and formguards. Occasionally I code in<span class="highLight"> C# </span>to ensure the front-/and the back-end work well with each other.';
-                        descFourEl.innerText = "";
-                        liThree.style.display = "";
-                        liFour.style.display = "none";
-                        chosenTechSkillContainer.style.display = "block";
-                        chosenTechSkillContainer.style.opacity = "1";
-                        jobTitleEl.innerText = jobTitle;
-                        for (const el of linkEl) {
-                          el.innerText = linkCustomerTitle;
-                          el.href = linkToCustomer;
-                        }
-                      }
-
-                      if (inputID === "municipality_3") {
-                        confidentialParagraph.style.display = "block";
-                        jobTitle = "Handyman";
-                        linkCustomerTitle = "#3 Municipality *";
-                        linkToCustomer = "";
-                        period.innerText = "08/20 - 02/22";
-                        system.innerText = "Platina (.Net)";
-                        liTwo.style.display = "flex";
-                        liThree.style.display = "flex";
-                        liFour.style.display = "flex";
-                        descOneEl.innerHTML =
-                          'Due to my broad set of skills and experience regarding the ECM-system Platina and the Swedish public sector, I have had<span class="highLight"> many different roles</span>: solution architect, developer, deployer, business consultant, application specialist, and system tester. To put it simply, I was a<span class="highLight"> handyman</span>.';
-                        descTwoEl.innerHTML =
-                          'I have formulated solution documents and developed in<span class="highLight"> SQL and PowerShell </span>where I had to take into account of the existing architecture, integrations and legacy-code.';
-                        descThreeEl.innerHTML =
-                          'I deployed the configurations into production, where I later verified the deployment with my<span class="highLight"> custom SQL test scripts</span>.';
-                        descFourEl.innerHTML =
-                          'I developed a bookmarkscanner application in<span class="highLight"> C# </span>which scanned through several Microsoft Word templates and classified if the bookmarks were either standard or customized.';
-                        chosenTechSkillContainer.style.display = "block";
-                        chosenTechSkillContainer.style.opacity = "1";
-
-                        jobTitleEl.innerText = jobTitle;
-
-                        for (const el of linkEl) {
-                          el.innerText = linkCustomerTitle;
-                          el.href = linkToCustomer;
-                        }
-                      }
-
-                      if (inputID === "municipality_2") {
-                        confidentialParagraph.style.display = "block";
-                        jobTitle = "Handyman";
-
-                        linkCustomerTitle = "#2 Municipality *";
-                        linkToCustomer = "";
-                        period.innerText = "05/20 - 10/20";
-                        system.innerText = "Platina (.Net)";
-                        descOneEl.innerHTML =
-                          'Together with a project leader, I acted as a<span class="highLight"> developer, deployer and solution architect</span>.';
-                        descTwoEl.innerHTML =
-                          "My colleague and I managed to upgrade Platina from version 7.2 to 11 and its module Webdiary from version 1.0 to 2.0.";
-                        descThreeEl.innerHTML =
-                          "During the project, I worked throughout the whole stack, consisting of MS SQL, JavaScript, HTML/CSS and C#.";
-                        descFourEl.innerHTML =
-                          "Some of the major customizations were a simplified admin menu in Platina and implementing the customized design patterns for the Webdiary module.";
-                        liTwo.style.display = "flex";
-                        liThree.style.display = "flex";
-                        liFour.style.display = "flex";
-
-                        chosenTechSkillContainer.style.display = "block";
-                        chosenTechSkillContainer.style.opacity = "1";
-                        jobTitleEl.innerText = jobTitle;
-
-                        for (const el of linkEl) {
-                          el.innerText = linkCustomerTitle;
-                          el.href = linkToCustomer;
-                        }
-                      }
-
-                      if (inputID === "municipality_1") {
-                        confidentialParagraph.style.display = "block";
-                        jobTitle = "Handyman";
-
-                        linkCustomerTitle = "#1 Municipality *";
-                        linkToCustomer = "";
-                        period.innerText = "02/20 - 06/20";
-                        system.innerText = "Platina (.Net)";
-
-                        descOneEl.innerHTML =
-                          'In this project, I acted as a<span class="highLight"> full-stack developer and solution architect</span>.';
-                        descTwoEl.innerHTML =
-                          "Together with a senior developer/deployer and a project leader, we upgraded Platina from version 7.2 to 10.3.";
-                        descThreeEl.innerHTML =
-                          "Among many things we did in this project were improvements to a customized approval process and the UI of the meeting-module.";
-                        descFourEl.innerHTML = "";
-                        liTwo.style.display = "flex";
-                        liThree.style.display = "flex";
-                        liFour.style.display = "none";
-                        chosenTechSkillContainer.style.display = "block";
-                        chosenTechSkillContainer.style.opacity = "1";
-
-                        jobTitleEl.innerText = jobTitle;
-
-                        for (const el of linkEl) {
-                          el.innerText = linkCustomerTitle;
-                          el.href = linkToCustomer;
-                        }
-                      }
-
-                      anime({
-                        targets: [
-                          contentHeader,
-                          contentPeriod,
-                          ".techRow",
-                          ".li_icon",
-                          ".techText",
-                          ".techText ul li",
-                        ],
-                        opacity: [0.25, 1],
-                        display: "block",
-                        duration: 500,
-                        easing: "linear",
-                        complete: function () {
-                          expCategoryMenu.style.pointerEvents = "all";
-                        },
-                      });
-                    },
-                  });
+                  expCategoryMenu.style.pointerEvents = "all";
                 },
               });
             },

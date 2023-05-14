@@ -153,12 +153,12 @@
 }
 
 .eyebrow-brand {
-  width: 0.65rem;
-  height: 0.175rem;
+  width: 0.75rem;
+  height: 0.3rem;
   background: #3f2a14;
   position: absolute;
   top: 0.45rem;
-  left: 50%;
+  left: 42.5%;
   margin-left: -0.675rem;
   opacity: 1;
   -webkit-backface-visibility: hidden;

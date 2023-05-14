@@ -23,7 +23,7 @@ class Experiences extends Component {
   render() {
     return (
       <div className="sectionAnimation container-sm" id="experiencesID">
-        <h2>Selected work</h2>
+        <h2>Experiences</h2>
         <hr></hr>
 
         <div className="smallScreen">
@@ -38,70 +38,43 @@ class Experiences extends Component {
             className="scrollIcon"></FontAwesomeIcon>
         </div>
 
-        <p className="smallScreen">
-          Scroll the selected work horizontally to view more.
-        </p>
         <div className="container-sm">
           <div className="row">
-            <div className="container-sm row" id="expMenu">
-              <table
-                className="d-block mx-auto justify-content-center"
+            <div className="resumeNavMenu align-items-center" id="expMenu">
+              <div
+                className="col row-lg justify-items-center"
                 id="expCategoryMenu">
-                <tbody>
-                  <tr>
-                    <td>
-                      <button
-                        className="col techCategory"
-                        id="fintech"
-                        onClick={this.handleClick}>
-                        <h3>Fintech Company</h3>
-                      </button>
-                      <div className="scrollLine" id="fintech_scrollLine"></div>
-                    </td>
+                <button
+                  className="row col-lg techCategory"
+                  id="fintech"
+                  onClick={this.handleClick}>
+                  <h3 className="resumeNavRow">Fintech Company</h3>
+                </button>
 
-                    <td>
-                      <button
-                        className="col techCategory"
-                        id="municipality_3"
-                        onClick={this.handleClick}>
-                        <h3>#3 Municipality</h3>
-                      </button>
+                <button
+                  className="row col-lg techCategory"
+                  id="municipality_3"
+                  onClick={this.handleClick}>
+                  <h3 className="resumeNavRow">#3 Municipality</h3>
+                </button>
 
-                      <div
-                        className="scrollLine"
-                        id="municipality_3_scrollLine"></div>
-                    </td>
-                    <td>
-                      <button
-                        className="col techCategory"
-                        id="municipality_2"
-                        onClick={this.handleClick}>
-                        <h3>#2 Municipality</h3>
-                      </button>
-                      <div
-                        className="scrollLine"
-                        id="municipality_2_scrollLine"></div>
-                    </td>
+                <button
+                  className="row col-lg techCategory"
+                  id="municipality_2"
+                  onClick={this.handleClick}>
+                  <h3 className="resumeNavRow">#2 Municipality</h3>
+                </button>
 
-                    <td>
-                      <button
-                        className="col techCategory"
-                        id="municipality_1"
-                        onClick={this.handleClick}>
-                        <h3>#1 Municipality</h3>
-                      </button>
-                      <div
-                        className="scrollLine"
-                        id="municipality_1_scrollLine"></div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                <button
+                  className="row col-lg techCategory"
+                  id="municipality_1"
+                  onClick={this.handleClick}>
+                  <h3 className="resumeNavRow">#1 Municipality</h3>
+                </button>
+              </div>
             </div>
 
-            <div
-              className="d-block container-md expTable expInfo mb-2"
-              id="_container">
+            <div className="container-md expTable expInfo mb-2" id="_container">
               <div
                 className="row row-cols-2 row-cols-lg-5 row-cols-md-2 row-cols-sm-2 row-cols-xs-2 expInfo"
                 id="_periodSystem">

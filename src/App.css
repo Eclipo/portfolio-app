@@ -313,6 +313,9 @@ ul > li {
 }
 
 @media (max-width: 25rem) {
+  #expMenu {
+    max-width: 10rem;
+  }
   .skillPointGround {
     font-size: 0.95rem;
   }
@@ -341,6 +344,10 @@ ul > li {
 }
 
 @media (min-width: 25.1rem) {
+  #expMenu {
+    max-width: 12.5rem;
+  }
+
   .resumeNavMenu {
     width: 8rem;
     display: flex;
@@ -623,12 +630,17 @@ ul > li {
   overflow-y: auto !important;
 }
 
-.customNavBrand {
+/* .customNavBrand {
   display: flex;
   top: -0.5rem;
   position: absolute;
   margin: 1rem;
   padding: 0.5rem;
+  margin-right: 0.5rem;
+} */
+
+.customBrand {
+  width: fit-content !important;
 }
 
 .navTest {

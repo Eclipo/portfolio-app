@@ -238,7 +238,7 @@ export const Navbar = () => {
       {" "}
       <div className="container">
         <div className="row">
-          <div className="col-2">
+          <div className="col-1 customBrand">
             <Link
               smooth={true}
               to={"quickFacts"}
@@ -252,7 +252,7 @@ export const Navbar = () => {
           </div>
 
           <div
-            className="col-8 align-vertical-center flex-column collapse navbar-collapse"
+            className="col-9 align-vertical-center flex-column collapse navbar-collapse"
             id="navbarNavDropdown">
             <div className=" linksContainer">
               <ul className="navbar-nav flexCenter" id="ulNavID">
@@ -277,7 +277,7 @@ export const Navbar = () => {
                     onClick={clickNavToLink}
                     href="#"
                     tabIndex={2}>
-                    <h4>Work</h4>
+                    <h4>Experiences</h4>
                   </Link>
                 </li>
                 <li className="nav-item">
