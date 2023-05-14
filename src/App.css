@@ -345,9 +345,8 @@ ul > li {
 
 @media (min-width: 25.1rem) {
   #expMenu {
-    max-width: 12.5rem;
+    max-width: 15rem;
   }
-
   .resumeNavMenu {
     width: 8rem;
     display: flex;
@@ -382,7 +381,7 @@ ul > li {
   }
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 65rem) {
   .resumeNavMenu {
     width: 50%;
     display: inline-flex;
@@ -391,6 +390,9 @@ ul > li {
   .resumeNavRow {
     display: inline-flex;
     width: min-content;
+  }
+  #expMenu {
+    max-width: 80rem;
   }
 }
 

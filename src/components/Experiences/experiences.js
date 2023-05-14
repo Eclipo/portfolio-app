@@ -26,24 +26,10 @@ class Experiences extends Component {
         <h2>Experiences</h2>
         <hr></hr>
 
-        <div className="smallScreen">
-          <FontAwesomeIcon
-            icon={faArrowLeftLong}
-            className="scrollIcon"></FontAwesomeIcon>
-          <FontAwesomeIcon
-            icon={faHand}
-            className="scrollIcon"></FontAwesomeIcon>
-          <FontAwesomeIcon
-            icon={faArrowRightLong}
-            className="scrollIcon"></FontAwesomeIcon>
-        </div>
-
         <div className="container-sm">
-          <div className="row">
-            <div className="resumeNavMenu align-items-center" id="expMenu">
-              <div
-                className="col row-lg justify-items-center"
-                id="expCategoryMenu">
+          <div className="resumeTable row">
+            <div className="align-items-center resumeNavMenu" id="expMenu">
+              <div className="resumeNavRow flex-row-lg" id="expCategoryMenu">
                 <button
                   className="row col-lg techCategory"
                   id="fintech"
@@ -207,21 +193,21 @@ class Experiences extends Component {
                 <ul className="">
                   <li className="row">
                     <p className="li_icon">▹</p>
-                    <p className="col-md-auto" id="_descOne"></p>
+                    <p className="col" id="_descOne"></p>
                   </li>
 
                   <li className="row">
-                    <span className="li_icon" id="_liTwo">
+                    <p className="li_icon" id="_liTwo">
                       ▹
-                    </span>
-                    <p className="col-md-auto" id="_descTwo"></p>
+                    </p>
+                    <p className="col" id="_descTwo"></p>
                   </li>
 
                   <li className="row" id="_liThree">
                     <p className="li_icon" id="_liThreeIcon">
                       ▹
                     </p>
-                    <p className="col-md-auto" id="_descThree"></p>
+                    <p className="col" id="_descThree"></p>
                   </li>
 
                   <li className="row" id="_liFour">

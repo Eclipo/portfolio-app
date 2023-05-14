@@ -32,8 +32,6 @@ export const animate = (inputID) => {
 
   var tab = "#" + inputID;
 
-  var tabScrollLine = "#" + inputID + "_scrollLine";
-
   var contentHeader = "#_header";
 
   var contentPeriod = "#_periodSystem";
