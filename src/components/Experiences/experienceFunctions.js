@@ -107,13 +107,13 @@ export const animate = (inputID) => {
                 liThree.style.display = "flex";
                 liFour.style.display = "flex";
                 descOneEl.innerHTML =
-                  'I have had<span class="highLight"> many different roles</span>: solution architect, developer, deployer, business consultant, application specialist, and system tester.';
+                  'Experienced in <span class="highLight"> various roles</span> including solution architecture, development, deployment, business consulting, application specialization, and system testing.';
                 descTwoEl.innerHTML =
-                  'Formulated solution documents, developed in<span class="highLight"> SQL and PowerShell </span>where I had to take into account of the existing architecture, integrations and legacy-code.';
+                  'Designed and developed solution documents using <span class="highLight"> SQL and PowerShell</span>, taking into consideration the existing architecture, integrations, and legacy code.';
                 descThreeEl.innerHTML =
-                  'Deployed the configurations into production, where I later verified the deployment with my<span class="highLight"> custom SQL test scripts</span>.';
+                  'Successfully deployed and verified configurations using <span class="highLight">custom SQL test scripts</span>, <span class="highLight">reducing the testing process</span>, improving bug detection and project efficiency.';
                 descFourEl.innerHTML =
-                  'Furthermore I developed a bookmarkscanner application in<span class="highLight"> C# </span>which scanned through several Microsoft Word templates and classified if the bookmarks were either standard or customized.';
+                  'Furthermore I developed a <span class="highLight">bookmarkscanner</span> application in<span class="highLight"> C# </span>which scanned through several Microsoft Word templates and classified if the bookmarks were either standard or customized.';
                 chosenTechSkillContainer.style.display = "block";
                 chosenTechSkillContainer.style.opacity = "1";
 

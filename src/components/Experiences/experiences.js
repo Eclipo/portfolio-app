@@ -22,12 +22,12 @@ class Experiences extends Component {
 
   render() {
     return (
-      <div className="sectionAnimation container-sm" id="experiencesID">
+      <div className="sectionAnimation container-sm p-0" id="experiencesID">
         <h2>Experiences</h2>
         <hr></hr>
 
-        <div className="container-sm">
-          <div className="resumeTable row">
+        <div className="container-sm p-0 m-0 mx-auto">
+          <div className="resumeTable w-100 m-0 p-0 row">
             <div className="align-items-center resumeNavMenu" id="expMenu">
               <div className="resumeNavRow flex-row-lg" id="expCategoryMenu">
                 <button
@@ -122,105 +122,101 @@ class Experiences extends Component {
                 <div className="techUnderLine mt-2 mb-3"></div>
               </div>
 
-              <div className="row mb-3" id="_periodSystem">
-                <h3 className="headerTech justify-content-start">0%</h3>
-                <h3 className="headerTech mx-auto">Time</h3>
-                <h3 className="headerTech justify-content-end">100%</h3>
+              <div className="row m-0 float-left" id="_periodSystem">
+                <h3 className="m-0 headerTech justify-content-start">0%</h3>
+                <h3 className="m-0 headerTech mx-auto">Time</h3>
+                <h3 className="m-0 headerTech justify-content-end">100%</h3>
+              </div>
 
-                <div className="techSkillContainer" id="municipality_3_tech">
-                  <div className="techRow" id="municipality_3_csharp">
-                    <h4 className="techSkill">C#</h4>
-                  </div>
-                  <div className="techRow" id="municipality_3_ps1">
-                    <h4 className="techSkill">Powershell</h4>
-                  </div>
-                  <div className="techRow" id="municipality_3_sql">
-                    <h4 className="techSkill">MS SQL</h4>
-                  </div>
+              <div className="techSkillContainer" id="municipality_3_tech">
+                <div className="techRow" id="municipality_3_csharp">
+                  <h4 className="techSkill">C#</h4>
                 </div>
-
-                <div className="techSkillContainer" id="fintech_tech">
-                  <div className="techRow" id="fintech_csharp">
-                    <h4 className="techSkill">C#</h4>
-                  </div>
-                  <div className="techRow" id="fintech_css">
-                    <h4 className="techSkill">CSS</h4>
-                  </div>
-                  <div className="techRow" id="fintech_angular">
-                    <h4 className="techSkill">HTML</h4>
-                  </div>
-                  <div className="techRow" id="fintech_angular">
-                    <h4 className="techSkill">Typescript</h4>
-                  </div>
-                  <div className="techRow" id="fintech_angular">
-                    <h4 className="techSkill">Angular</h4>
-                  </div>
+                <div className="techRow" id="municipality_3_ps1">
+                  <h4 className="techSkill">Powershell</h4>
                 </div>
-
-                <div className="techSkillContainer" id="municipality_2_tech">
-                  <div className="techRow" id="municipality_2_sql">
-                    <h4 className="techSkill">MS SQL</h4>
-                  </div>
-                  <div className="techRow" id="municipality_2_javascript">
-                    <h4 className="techSkill">Javascript</h4>
-                  </div>
-                  <div className="techRow" id="municipality_2_htmlcss">
-                    <h4 className="techSkill">HTML/CSS</h4>
-                  </div>
-                  <div className="techRow" id="municipality_2_csharp">
-                    <h4 className="techSkill">C#</h4>
-                  </div>
-                </div>
-
-                <div className="techSkillContainer" id="municipality_1_tech">
-                  <div className="techRow" id="municipality_2_sql">
-                    <h4 className="techSkill">MS SQL</h4>
-                  </div>
-                  <div className="techRow" id="municipality_2_javascript">
-                    <h4 className="techSkill">Javascript</h4>
-                  </div>
-                  <div className="techRow" id="municipality_2_htmlcss">
-                    <h4 className="techSkill">HTML/CSS</h4>
-                  </div>
-                  <div className="techRow" id="municipality_2_csharp">
-                    <h4 className="techSkill">C#</h4>
-                  </div>
+                <div className="techRow" id="municipality_3_sql">
+                  <h4 className="techSkill">MS SQL</h4>
                 </div>
               </div>
 
-              <div className="techText">
-                <ul className="">
+              <div className="techSkillContainer" id="fintech_tech">
+                <div className="techRow" id="fintech_csharp">
+                  <h4 className="techSkill">C#</h4>
+                </div>
+                <div className="techRow" id="fintech_css">
+                  <h4 className="techSkill">CSS</h4>
+                </div>
+                <div className="techRow" id="fintech_angular">
+                  <h4 className="techSkill">HTML</h4>
+                </div>
+                <div className="techRow" id="fintech_angular">
+                  <h4 className="techSkill">Typescript</h4>
+                </div>
+                <div className="techRow" id="fintech_angular">
+                  <h4 className="techSkill">Angular</h4>
+                </div>
+              </div>
+
+              <div className="techSkillContainer" id="municipality_2_tech">
+                <div className="techRow" id="municipality_2_sql">
+                  <h4 className="techSkill">MS SQL</h4>
+                </div>
+                <div className="techRow" id="municipality_2_javascript">
+                  <h4 className="techSkill">Javascript</h4>
+                </div>
+                <div className="techRow" id="municipality_2_htmlcss">
+                  <h4 className="techSkill">HTML/CSS</h4>
+                </div>
+                <div className="techRow" id="municipality_2_csharp">
+                  <h4 className="techSkill">C#</h4>
+                </div>
+              </div>
+
+              <div className="techSkillContainer" id="municipality_1_tech">
+                <div className="techRow" id="municipality_2_sql">
+                  <h4 className="techSkill">MS SQL</h4>
+                </div>
+                <div className="techRow" id="municipality_2_javascript">
+                  <h4 className="techSkill">Javascript</h4>
+                </div>
+                <div className="techRow" id="municipality_2_htmlcss">
+                  <h4 className="techSkill">HTML/CSS</h4>
+                </div>
+                <div className="techRow" id="municipality_2_csharp">
+                  <h4 className="techSkill">C#</h4>
+                </div>
+              </div>
+
+              <div className="row techText">
+                <ul className="m-0 p-0">
                   <li className="row">
-                    <p className="li_icon">▹</p>
+                    <p className="li_icon"></p>
                     <p className="col" id="_descOne"></p>
                   </li>
 
                   <li className="row">
-                    <p className="li_icon" id="_liTwo">
-                      ▹
-                    </p>
+                    <p className="li_icon" id="_liTwo"></p>
                     <p className="col" id="_descTwo"></p>
                   </li>
 
                   <li className="row" id="_liThree">
-                    <p className="li_icon" id="_liThreeIcon">
-                      ▹
-                    </p>
+                    <p className="li_icon" id="_liThreeIcon"></p>
                     <p className="col" id="_descThree"></p>
                   </li>
 
                   <li className="row" id="_liFour">
-                    <p className="li_icon">▹</p>
+                    <p className="li_icon"></p>
                     <p className="col" id="_descFour"></p>
                   </li>
                 </ul>
               </div>
-              <span className="d-block">
-                <p id="confidentialParagraph">
-                  *Due to confidentiality I cannot share the name of the
-                  customer.
-                </p>
-              </span>
+            </div>
+
+            <div className="row">
+              <p id="confidentialParagraph">
+                *Due to confidentiality I cannot share the name of the customer.
+              </p>
             </div>
           </div>
         </div>

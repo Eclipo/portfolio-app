@@ -1,47 +1,12 @@
 /************************* MEDIA QUERIES *********************************/
 
 @media (min-width: 15rem) {
-  #municipality_3_sql {
-    width: 95%;
-  }
-  #municipality_3_ps1 {
-    width: 45%;
-  }
-
-  #municipality_3_csharp {
-    width: 20%;
-  }
-
   .techText {
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 25rem) {
-  #municipality_3_sql {
-    width: 85%;
-  }
-  #municipality_3_ps1 {
-    width: 35%;
-  }
-
-  #municipality_3_csharp {
-    width: 20%;
+    min-width: 100%;
   }
 }
 
 @media (min-width: 40rem) {
-  #municipality_3_sql {
-    width: 75%;
-  }
-  #municipality_3_ps1 {
-    width: 25%;
-  }
-
-  #municipality_3_csharp {
-    width: 15%;
-  }
-
   .techText {
     max-width: 85%;
   }
@@ -49,36 +14,12 @@
 
 @media (min-width: 60rem) {
   .techText {
-    max-width: 75%;
-  }
-
-  #municipality_3_sql {
-    width: 75%;
-  }
-  #municipality_3_ps1 {
-    width: 25%;
-  }
-
-  #municipality_3_csharp {
-    width: 15%;
-  }
-
-  .techText {
-    max-width: 50%;
+    min-width: 75%;
   }
 }
 
-@media (min-width: 80rem) {
-  #municipality_3_sql {
-    width: 75%;
-  }
-  #municipality_3_ps1 {
-    width: 25%;
-  }
-
-  #municipality_3_csharp {
-    width: 15%;
-  }
+.techText {
+  max-width: 50%;
 }
 
 /************************* EXP Menu *********************************/
@@ -115,10 +56,12 @@
   margin-bottom: 0.5rem !important;
   margin-left: 0rem !important;
   margin-right: 1.25rem !important;
-
   display: inline-block !important;
-
   width: 100% !important;
+}
+
+.techCategory:hover {
+  background-color: var(--btnHoverColor) !important;
 }
 
 .techCategory:focus {
@@ -288,8 +231,17 @@
   text-align: left;
   white-space: normal !important;
   opacity: 0;
-  border-radius: 18px;
-  display: block;
+  /* display: inline-block; */
+  float: left;
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+#_descOne,
+#_descTwo,
+#_descThree,
+#_descFour {
+  padding-left: 0;
 }
 
 .majorExphighLight {
@@ -305,20 +257,31 @@ ul {
 }
 
 .li_icon {
-  font-weight: bold;
+  /* font-weight: bold;
   display: inline-block;
   width: 0.2rem;
   margin-left: -0.8rem;
   margin-right: 0.6rem;
   color: var(--secondaryColor-darkest);
-
+  border: 0.1rem solid black;
   position: relative;
-  opacity: 0;
+  opacity: 0; */
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 0.325rem solid transparent; /* adjust size as desired */
+  border-bottom: 0.325rem solid transparent; /* adjust size as desired */
+  border-left: 0.425rem solid var(--secondaryColor-dark); /* adjust color and size as desired */
+  margin-top: 0.25rem;
+  margin-left: 1rem;
+  /* margin-right: 0.6rem; */
 }
 
 .techSkillContainer {
   display: none;
   opacity: 0;
+  width: 100%;
 }
 
 /************************* Tech skills *********************************/
