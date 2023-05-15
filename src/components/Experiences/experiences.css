@@ -168,6 +168,7 @@
   font-style: italic;
   display: none;
   text-align: left;
+  margin: 0.5rem;
 }
 .header3Tech {
   color: var(--primaryText);

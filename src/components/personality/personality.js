@@ -417,14 +417,20 @@ class Personality extends Component {
             <Book></Book>
           </div>
           <div className="mx-auto">
-            <p className="mb-0">
-              Hopefully you didn't stare at my personality for too long and it
-              shouldn't be taken too seriously though.
+            <p className="duckText mb-0">
+              I hope you didn't get too distracted by the personality matrix
+              above - it's just a fun way to introduce some of my personal
+              attributes.
               <br></br>
               <br></br>
-              In the cards shown below, I will go through some of my personal
-              attributes in more detail. Hopefully you will have a better
-              understanding of who my persona.
+              <span class="highLight">
+                But now, let's get to the real me.
+              </span>{" "}
+              In the cards below, I'll provide some more detail about my
+              personal traits. I believe it's important to be open about who we
+              are and what we value, so that we can work together effectively
+              and authentically. So, take a look and get to know me a little
+              better.
             </p>
           </div>
 
@@ -449,20 +455,25 @@ class Personality extends Component {
                       <h3 className="card-title" id="honestyCard_h3">
                         Honesty
                       </h3>
-                      <h4 id="honestyCard_h4">I'm just telling the truth</h4>
+                      <h4 id="honestyCard_h4">Runs in the family</h4>
                       <p className="card-text" id="honestyCard_p">
-                        In my family the phrase{" "}
+                        Honesty is a core value that I hold dear, but my
+                        approach to it may differ from what others consider
+                        typical. Growing up, my family often used the phrase
                         <span className="highLight">
-                          {" "}
-                          "I'm just telling the truth"{" "}
-                        </span>
-                        was and is still abusively applied. Later in life (30+
-                        years), I finally understood I have another take on
-                        honesty compared to most people.<br></br>
+                          "I'm just telling the truth"
+                        </span>{" "}
+                        in a way that felt abusive at times. As I've gotten
+                        older, I've come to realize that my interpretation of
+                        honesty is unique, and that it's important to be honest
+                        without causing harm to others.
                         <br></br>
-                        Nowadays, I try to be more diplomatic while expressing
-                        my opinion. Often I encourage others to be more honest
-                        with me. Honesty is a trait I value very highly.
+                        <br></br>
+                        These days, I try to be diplomatic when expressing my
+                        opinions, but I still value honesty above all else. In
+                        fact, I often encourage those around me to be more
+                        honest with me, even if it may be uncomfortable at
+                        times.
                       </p>
                     </button>
                   </div>
@@ -488,23 +499,23 @@ class Personality extends Component {
                       <h3 className="card-title" id="stubbornCard_h3">
                         Stubborn
                       </h3>
-                      <h4 id="stubbornCard_h4">A curse and a blessing</h4>
+                      <h4 id="stubbornCard_h4">The Family Curse</h4>
                       <p className="card-text" id="stubbornCard_p">
-                        Being stubborn is another family attribute and it is
-                        both
-                        <span className="highLight">
-                          {" "}
-                          a curse and a blessing
-                        </span>
-                        . Thanks to my stubbornness, it has taken me where I am
-                        today.
-                        <br></br>
-                        <br></br>
-                        On the other hand, I might have overdone it at times
-                        which has made me a bit wiser. Rather than brute-forcing
-                        myself through the obstacles I face nowadays I try to
-                        take a step back, breathe a lot, and find a more elegant
-                        solution to the problem.
+                        Being stubborn is another family trait that has both
+                        helped and hindered me. Despite facing unemployment at
+                        times I refused to give up. In the end I pursued a
+                        career as a developer while studying part-time and
+                        working full-time at CGI Sverige.
+                        <br></br> <br></br>
+                        This website is another example and it was a challenging
+                        journey that helped me improve my limited front-end
+                        skills. It played a critical role in landing my current
+                        job at a fintech company through CGI Sverige. My website
+                        is a testament to my determination and resilience.
+                        <br></br> <br></br>
+                        In the end,I've learned that sometimes taking a step
+                        back and finding a more elegant solution is better than
+                        brute-forcing through obstacles.
                       </p>
                     </button>
                   </div>

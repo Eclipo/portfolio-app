@@ -294,9 +294,9 @@ p,
 label,
 ul > li {
   font-family: Rubik, cursive !important;
-  font-weight: 550 !important;
+  font-weight: 500 !important;
 
-  font-size: 0.95rem;
+  font-size: 1rem;
   vertical-align: middle !important;
   word-wrap: break-word;
   word-spacing: normal;
