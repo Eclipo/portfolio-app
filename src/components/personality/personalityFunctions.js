@@ -9,31 +9,36 @@ export const startAttributeAnimation = (inputID) => {
       targets: card,
       backgroundColor: "#fcfaee",
       scale: [1, 1.15],
-      duration: 250,
+      duration: 150,
+      easing: "easeInOutSine",
     });
 
     anime({
       targets: [card + "_h3", card + "_h4"],
       color: "rgba(245, 237, 237, 0.993)",
-      duration: 250,
+      duration: 150,
+      easing: "easeInOutSine",
     });
 
     anime({
       targets: [card + "_h3"],
       color: "#5c3e03",
-      duration: 250,
+      duration: 150,
+      easing: "easeInOutSine",
     });
 
     anime({
       targets: [card + "_h4"],
       color: "#462f02",
-      duration: 250,
+      duration: 150,
+      easing: "easeInOutSine",
     });
 
     anime({
       targets: card + "_p",
       color: "#1d232f",
-      duration: 250,
+      duration: 150,
+      easing: "easeInOutSine",
       begin: function () {
         document.getElementById(inputID + "_p").style.display = "block";
         document.getElementById(inputID + "_closeBtn").style.display = "block";

@@ -4,6 +4,11 @@ export const animateResume = (inputID) => {
   const langSection = document.getElementById("resumeLangSectionID");
   const expSection = document.getElementById("resumeExpSectionID");
   const eduSection = document.getElementById("resumeEduSectionID");
+
+  const langBtn = document.getElementById("resumeLangID");
+  const expBtn = document.getElementById("resumeExpID");
+  const eduBtn = document.getElementById("resumeEduID");
+
   const resumeNavs = document.querySelectorAll(".resumeNav");
 
   resumeNavs.forEach((el) => {
@@ -28,6 +33,7 @@ export const animateResume = (inputID) => {
         duration: 250,
         begin: function () {
           langSection.style.display = "block";
+          langBtn.classList.add("resumeNavFocus");
         },
       });
 
@@ -43,6 +49,7 @@ export const animateResume = (inputID) => {
         duration: 250,
         begin: function () {
           expSection.style.display = "block";
+          expBtn.classList.add("resumeNavFocus");
         },
       });
 
@@ -58,6 +65,7 @@ export const animateResume = (inputID) => {
         duration: 250,
         begin: function () {
           eduSection.style.display = "block";
+          eduBtn.classList.add("resumeNavFocus");
         },
       });
 

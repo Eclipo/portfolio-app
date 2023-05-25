@@ -134,8 +134,8 @@ class Skills extends Component {
           <h2>Skills</h2>
           <hr></hr>
 
-          <div className="resumeNavMenu align-items-center">
-            <div className="resumeNavRow">
+          <div id="skillsNavMenu" className="resumeNavMenu align-items-center">
+            <div id="skillsNavRow" className="resumeNavRow">
               <button
                 className="col skillNav frontEndTheme"
                 id="frontEnd"

@@ -224,6 +224,7 @@ h1 {
 
 .personalityCard.selectedPersonalityCard:hover {
   background-color: var(--secondaryColor-dark);
+  transition: var(--transition);
 }
 
 .personalityCard:active {
@@ -238,6 +239,7 @@ h1 {
   box-shadow: var(--blackWhiteShadow) !important;
   border: 0.125rem solid black !important;
   border-radius: 18px !important;
+  transition: var(--transition);
 }
 
 .btnPersonalityCard {
@@ -296,7 +298,6 @@ h1 {
 }
 
 .personalityCard p {
-  color: var(--primary-green);
   display: none;
   transition: var(--transition);
 }

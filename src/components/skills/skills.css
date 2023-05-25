@@ -73,10 +73,6 @@ button .skillCategory {
   border-radius: 18px;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  width: fit-content;
-  min-width: 17.5rem;
   height: fit-content;
   display: inline-flex !important;
   margin-left: 1rem;

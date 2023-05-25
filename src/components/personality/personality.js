@@ -463,15 +463,12 @@ class Personality extends Component {
                         <span className="highLight">
                           "I'm just telling the truth"
                         </span>{" "}
-                        in a way that felt abusive at times. As I've gotten
-                        older, I've come to realize that my interpretation of
-                        honesty is unique, and that it's important to be honest
-                        without causing harm to others.
+                        in a way that felt abusive at times.
                         <br></br>
                         <br></br>
-                        These days, I try to be diplomatic when expressing my
-                        opinions, but I still value honesty above all else. In
-                        fact, I often encourage those around me to be more
+                        As I've gotten older, I try to be diplomatic when
+                        expressing my opinions and hopefully not causing harm to
+                        others. I often encourage those around me to be more
                         honest with me, even if it may be uncomfortable at
                         times.
                       </p>
@@ -509,9 +506,8 @@ class Personality extends Component {
                         <br></br> <br></br>
                         This website is another example and it was a challenging
                         journey that helped me improve my limited front-end
-                        skills. It played a critical role in landing my current
-                        job at a fintech company through CGI Sverige. My website
-                        is a testament to my determination and resilience.
+                        skills. It helped me in landing my current job at a
+                        fintech company through CGI Sverige.
                         <br></br> <br></br>
                         In the end,I've learned that sometimes taking a step
                         back and finding a more elegant solution is better than
@@ -541,21 +537,21 @@ class Personality extends Component {
                       <h3 className="card-title" id="structureCard_h3">
                         Structure
                       </h3>
-                      <h4 id="structureCard_h4">Feng shui</h4>
+                      <h4 id="structureCard_h4">Feng Shui</h4>
 
                       <p className="card-text" id="structureCard_p">
-                        Even though I write task lists and set reminders, being
-                        structured isn't my core attribute. Despite this, I
-                        still need
-                        <span className="highLight"> feng shui </span>where
-                        everything is in harmonious order. Feng shui calms my
-                        mind and I can channel my focus on more pressing
-                        matters.
+                        While structure may not be my strongest attribute, I
+                        recognize its significance. That's why I need{" "}
+                        <span className="highLight"> feng shui </span>
+                        to have harmony and balance in whatever I do. The web
+                        design needs to look good. The format on the code needs
+                        to be well formated. Working in a project must have a
+                        structured plan and goals.
                         <br></br>
                         <br></br>
-                        Besides a structured environment, it is also important
-                        for me to team up with someone who is great at project
-                        management.
+                        It is important for me to team up with a skilled project
+                        manager who can help me to prioritze and direct my
+                        effort and focus.
                       </p>
                     </button>
                   </div>

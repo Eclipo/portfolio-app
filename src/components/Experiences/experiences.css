@@ -26,34 +26,16 @@
 
 #expMenu {
   background-color: var(--bg-sub-dark);
-  /* justify-items: center !important; */
   box-shadow: var(--blackWhiteShadow);
   margin: auto;
-  padding: 2rem;
+  padding: 0.25rem;
   border-radius: 18px;
   border: 0.15rem solid black;
-  /* justify-items: center;
-
-  max-width: 55%; */
-  /* display: block; */
-  /* display: contents; */
-  /* opacity: 1;
-  position: relative;
-  width: fit-content;
-  max-width: 10rem;
-  justify-items: center !important;
-
-  margin: auto;
-  border-radius: 18px;
-  background-color: var(--bg-sub-dark);
-  
-  padding: 0.75rem; */
 }
 
 #expMenu button {
   margin: auto !important;
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 1rem !important;
   margin-left: 0rem !important;
   margin-right: 1.25rem !important;
   display: inline-block !important;

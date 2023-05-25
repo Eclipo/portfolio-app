@@ -84,10 +84,12 @@ h4 {
 .resumeNav {
   background-color: var(--secondaryColor);
   color: var(--primary-white) !important;
-
   border-radius: 18px;
-  padding: 1rem;
-  margin-bottom: 2vh !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  margin-bottom: 1.25rem !important;
   margin: auto;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -111,7 +113,6 @@ h4 {
     var(--btnHoverColor) 50%,
     var(--secondaryColor-darkest)
   );
-  color: var(--primary-white) !important;
   background-size: 200%;
   background-position: right bottom;
   border: none !important;

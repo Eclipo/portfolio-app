@@ -21,14 +21,14 @@ class ResumeOverview extends Component {
         <hr></hr>
         <div id="resumeContainerID">
           <div className="resumeTable">
-            <div className="resumeNavMenu ">
-              <div className="resumeNavRow">
+            <div id="resumeNavMenuID" className="resumeNavMenu ">
+              <div id="resumeNavRowID" className="resumeNavRow">
                 <button
                   id="resumeLangID"
                   className="resumeNav col"
                   onClick={this.handleClick}>
                   <h3 className="resumeNavH2" id="langH2">
-                    Languages
+                    Language
                   </h3>
                 </button>
                 <button
@@ -36,7 +36,7 @@ class ResumeOverview extends Component {
                   id="resumeExpID"
                   onClick={this.handleClick}>
                   <h3 className="resumeNavH2" id="expH2">
-                    Experiences
+                    Experience
                   </h3>
                 </button>
                 <button
