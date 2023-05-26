@@ -165,7 +165,7 @@
 .personalityTextContainer {
   margin: auto;
   opacity: 1;
-  display: block;
+  display: none;
 }
 
 .bookContainer {

@@ -436,7 +436,7 @@ class Personality extends Component {
 
           <div className="container flexCenter">
             <div className="row flexCenter">
-              <div className="col flexCenter">
+              <div className="col flexCenter mb-3">
                 <div
                   className="card personalityCard"
                   id="honestyCard"
@@ -459,7 +459,7 @@ class Personality extends Component {
                       <p className="card-text" id="honestyCard_p">
                         Honesty is a core value that I hold dear, but my
                         approach to it may differ from what others consider
-                        typical. Growing up, my family often used the phrase
+                        typical. Growing up, my family often used the phrase{" "}
                         <span className="highLight">
                           "I'm just telling the truth"
                         </span>{" "}
@@ -498,16 +498,12 @@ class Personality extends Component {
                       </h3>
                       <h4 id="stubbornCard_h4">The Family Curse</h4>
                       <p className="card-text" id="stubbornCard_p">
-                        Being stubborn is another family trait that has both
-                        helped and hindered me. Despite facing unemployment at
-                        times I refused to give up. In the end I pursued a
-                        career as a developer while studying part-time and
-                        working full-time at CGI Sverige.
-                        <br></br> <br></br>
-                        This website is another example and it was a challenging
-                        journey that helped me improve my limited front-end
-                        skills. It helped me in landing my current job at a
-                        fintech company through CGI Sverige.
+                        Being stubborn is another family trait. It certainly
+                        helped me when I faced unemployment at times where I
+                        refused to give up. When I pursued a career as a
+                        developer while studying part-time and working full-time
+                        at CGI Sverige was very challenging but I was able to
+                        accomplish it due to my stubbornness.
                         <br></br> <br></br>
                         In the end,I've learned that sometimes taking a step
                         back and finding a more elegant solution is better than
@@ -541,17 +537,18 @@ class Personality extends Component {
 
                       <p className="card-text" id="structureCard_p">
                         While structure may not be my strongest attribute, I
-                        recognize its significance. That's why I need{" "}
+                        recognize its significance. I need{" "}
                         <span className="highLight"> feng shui </span>
                         to have harmony and balance in whatever I do. The web
-                        design needs to look good. The format on the code needs
-                        to be well formated. Working in a project must have a
-                        structured plan and goals.
+                        design needs to be in harmony regarding its usage of
+                        colors and the layout having a logical structure. The
+                        format on the code needs to be well organized. Working
+                        in a project must have a structured plan and goals.
                         <br></br>
                         <br></br>
-                        It is important for me to team up with a skilled project
-                        manager who can help me to prioritze and direct my
-                        effort and focus.
+                        Therefore it is important for me to team up with a
+                        skilled project manager who can assist me in
+                        prioritizing and direct my effort and focus.
                       </p>
                     </button>
                   </div>
@@ -582,7 +579,7 @@ class Personality extends Component {
 
                       <p className="card-text" id="focusCard_p">
                         To reach the very heights of my hyperfocus I need feng
-                        shui and enjoyable tasks.
+                        shui, honest co-workers I can trust and enjoyable tasks.
                         <br></br>
                         <br></br>
                         In contrast a chaotic environment and boredom will
@@ -667,6 +664,8 @@ class Personality extends Component {
                         <br></br>
                         Fortunately, I have learned to take a step back, calm
                         down, and breath alot in order to regain more patience.
+                        Doing this website and intensive long-term projects at
+                        work have increased my patience though.
                       </p>
                     </button>
                   </div>
@@ -695,11 +694,13 @@ class Personality extends Component {
                       <h4 id="temperCard_h4">Engine</h4>
 
                       <p className="card-text" id="temperCard_p">
-                        Most of the time I am calm. It's true! Nevertheless, if
-                        I am having some sort of a setback such as facing a
-                        code-bug from hell then it will trigger me. However, I
-                        am truly grateful to have some temper since it is my
-                        very<span className="highLight"> engine </span>in life.
+                        Most of the time I am calm. Nevertheless, if I am having
+                        some sort of a setback such as facing a code-bug from
+                        hell then it will trigger me. However, I am truly
+                        grateful to have some temper since it is my very
+                        <span className="highLight"> engine </span>in life.
+                        <br></br>
+                        <br></br>
                         My emotions provide me with energy and focus in order to
                         handle various challenging situations.
                       </p>
@@ -730,9 +731,8 @@ class Personality extends Component {
                       <h4 id="empathyCard_h4">Coordinator</h4>
 
                       <p className="card-text" id="empathyCard_p">
-                        It is possible I could be an good leader one day but at
-                        the moment in terms of anything that resemble leadership
-                        then I guess I would do fine as the
+                        I could be an good leader one day but at the moment I
+                        would do okay as the
                         <span className="highLight"> coordinator </span>in a
                         team.
                         <br></br>
