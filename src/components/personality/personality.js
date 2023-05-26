@@ -43,12 +43,10 @@ class Personality extends Component {
             id="PersonalityAnimation"
             playBoolean={0}
             playText={
-              <p className="introPersonalitytext ">
-                For those who <br></br>want to know me.
-                <br></br>
-                <br></br>A warning. <br></br>
-                Don't stare at it.
-                <br></br>I have spoken.
+              <p className="introPersonalitytext">
+                <br></br>A warning <br></br>
+                Don't stare at it
+                <br></br>I have spoken
               </p>
             }></PlayRefresh>
           <div id="greenSquareTableID" className="flexCenter">

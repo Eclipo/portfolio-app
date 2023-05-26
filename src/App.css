@@ -313,6 +313,10 @@ ul > li {
 }
 
 @media (max-width: 25rem) {
+  #resumeOverview,
+  #about {
+    margin-top: 5rem;
+  }
   .skillNav,
   .resumeNav {
     width: 12.5rem;
@@ -349,6 +353,10 @@ ul > li {
 }
 
 @media (min-width: 25.1rem) {
+  #resumeOverview,
+  #about {
+    margin-top: 5rem;
+  }
   .skillNav,
   .resumeNav {
     width: 12.75rem;
@@ -493,6 +501,11 @@ ul > li {
   .personalityBaseTraits,
   .personalityTraits {
     font-size: 1.25rem !important;
+  }
+
+  #resumeOverview,
+  #about {
+    margin-top: 0;
   }
 }
 

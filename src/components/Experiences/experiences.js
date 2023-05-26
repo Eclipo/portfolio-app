@@ -22,7 +22,9 @@ class Experiences extends Component {
 
   render() {
     return (
-      <div className="sectionAnimation container-sm p-0" id="experiencesID">
+      <div
+        className="sectionAnimation container-sm p-0 mt-5"
+        id="experiencesID">
         <h2>Experiences</h2>
         <hr></hr>
 

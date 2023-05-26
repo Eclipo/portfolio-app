@@ -334,7 +334,11 @@ export const Navbar = () => {
               </ul>
             </div>
             <div className="toolsContainer">
-              <div className="d-inline-block align-self">
+              <div className="d-inline-block pr-1 align-self">
+                <h3 className="m-auto pr-5">Web tools</h3>
+              </div>
+
+              <div className="d-inline-block align-self m-0">
                 <h4 htmlFor="button" className="m-auto pr-1 pb-0">
                   Outliner
                 </h4>
@@ -355,8 +359,8 @@ export const Navbar = () => {
                     }}></FontAwesomeIcon>
                 </button>
               </div>
-              <div className="d-inline-block align-self">
-                <h4 className="m-auto pr-2 pb-0">Color blindness</h4>
+              <div className="d-inline-block m-0 align-self">
+                <h4 className="m-auto pb-0">Color blindness</h4>
               </div>
 
               <div className="button-row">
