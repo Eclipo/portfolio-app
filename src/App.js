@@ -9,9 +9,10 @@ import Personality from "./components/personality/personality";
 import ResumeOverview from "./components/resumeOverview/resumeOverview";
 import Experiences from "./components/Experiences/experiences";
 import Contact from "./components/Contact/Contact";
+import LocomotiveScrollWrapper from "./locomotivesroll";
 function App() {
   return (
-    <>
+    <LocomotiveScrollWrapper>
       <Navbar></Navbar>
       <QuickFacts></QuickFacts>
       <Skills></Skills>
@@ -20,7 +21,7 @@ function App() {
       <About></About>
       <Personality></Personality>
       <Contact></Contact>
-    </>
+    </LocomotiveScrollWrapper>
   );
 }
 

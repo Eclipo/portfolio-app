@@ -367,3 +367,25 @@ svg path {
   margin-top: 2rem;
   z-index: 1;
 }
+
+.scrollIntro {
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 4rem;
+  height: 4rem;
+  border: 0.5rem solid var(--secondaryColor);
+  border-radius: 50%;
+  position: relative;
+}
+.scrollDown {
+  margin: auto;
+  margin-top: 0.5rem;
+  display: inline-flex;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  border-bottom: 0.5rem solid var(--secondaryColor-shadow);
+  border-left: 0.5rem solid var(--secondaryColor-shadow);
+  transform: rotate(-45deg) !important;
+}

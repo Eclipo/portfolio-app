@@ -51,6 +51,15 @@ export class QuickAboutAnimation {
       delay: 100,
     });
 
+    this.firstIntroAnimation.add({
+      targets: ".scrollIntro",
+      easing: "easeInOutSine",
+      opacity: [0, 1],
+      translateY: ["-2rem", "2rem", 0],
+      duration: 250,
+      delay: 100,
+    });
+
     this.edipAndFamillyAnimation = anime.timeline({
       loop: true,
       autoplay: false,
@@ -79,6 +88,19 @@ export class QuickAboutAnimation {
       delay: anime.stagger(500),
       height: ["0%", "100%"],
     });
+
+    this.scrollIntro = anime.timeline({
+      loop: true,
+      autoplay: false,
+    });
+
+    this.scrollIntro.add({
+      targets: [".scrollIntro", ".scrollDown"],
+      easing: "easeInOutSine",
+      translateY: [0, "-0.25rem", "0.25rem", 0],
+      duration: 750,
+      endDelay: 1750,
+    });
   }
 
   async playOrStop(input) {
@@ -88,6 +110,7 @@ export class QuickAboutAnimation {
         document.getElementById("bodyStart").style.opacity = 0;
         this.firstTimeIntro = false;
         this.firstIntroAnimation.play();
+        this.scrollIntro.play();
       }
       this.edipAndFamillyAnimation.play();
       this.quickCoffeeSteam.play();
@@ -109,6 +132,7 @@ export class QuickAboutAnimation {
     if (input === false) {
       this.edipAndFamillyAnimation.pause();
       this.quickCoffeeSteam.pause();
+      this.scrollIntro.pause();
       playPostFunc(false);
     }
   }

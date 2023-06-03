@@ -2,6 +2,7 @@ import React from "react";
 import { EdipGuy } from "./EdipAvatar/EdipGuy";
 import "../../IntersectionObserver.js";
 import "./edipLogo.css";
+import { Link } from "react-scroll";
 
 const QuickFacts = () => {
   return (
@@ -26,6 +27,12 @@ const QuickFacts = () => {
             and playful<span className="text-black"> web design</span>.
           </h3>
         </div>
+
+        <Link smooth={true} to={"skills"} href="#" tabIndex={1}>
+          <div className="scrollIntro">
+            <div className="scrollDown"></div>
+          </div>
+        </Link>
       </div>
     </div>
   );
