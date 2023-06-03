@@ -12,16 +12,18 @@ import Contact from "./components/Contact/Contact";
 import LocomotiveScrollWrapper from "./locomotivesroll";
 function App() {
   return (
-    <LocomotiveScrollWrapper>
+    <>
       <Navbar></Navbar>
-      <QuickFacts></QuickFacts>
-      <Skills></Skills>
-      <Experiences></Experiences>
-      <ResumeOverview></ResumeOverview>
-      <About></About>
-      <Personality></Personality>
-      <Contact></Contact>
-    </LocomotiveScrollWrapper>
+      <LocomotiveScrollWrapper>
+        <QuickFacts></QuickFacts>
+        <Skills></Skills>
+        <Experiences></Experiences>
+        <ResumeOverview></ResumeOverview>
+        <About></About>
+        <Personality></Personality>
+        <Contact></Contact>
+      </LocomotiveScrollWrapper>
+    </>
   );
 }
 
