@@ -18,14 +18,14 @@ const QuickFacts = () => {
         </div>
         <div className="row welcomeText">
           <h3 className="text-start">
-            I'm a <span className="text-black">full-stack developer</span>
+            I'm a <span className="text-black">full-stack developer </span><br></br>
+            from <span className="text-black">Sweden</span><br></br>
+            building <span className="text-black"> IT-systems</span>
             <br></br>
-            from <span className="text-black">Sweden</span>
-            <br></br>
-            who enjoys <span className="text-black"> front-end</span>
-            <br></br>
-            and playful<span className="text-black"> web design</span>.
+            with solid<span className="text-black"> web design</span>.
           </h3>
+
+          
         </div>
 
         <Link smooth={true} to={"skills"} href="#" tabIndex={1}>

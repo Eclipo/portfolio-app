@@ -90,14 +90,17 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg-nav: #cfae6c;
+  --bg-nav: #ddc188e1;
 
-  --bg: #f8f1b827;
-
+  --bg: #f8f1b81c;
+  --bg_2: #f5cd772f;
+  
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfaee;
   --primaryText: #533803f8;
-  --subHeaderText: #6b4906ef;
+  --paragraphText: #412c04f8;
+
+  --subHeaderText: #462f02;
 
   --secondaryColor: #d3961d;
   --secondaryColor-dark: #865b04;
@@ -122,7 +125,8 @@
 /************************* MAIN CSS CLASSES *********************************/
 
 .sectionAnimation {
-  background-color: var(--bg);
+  background: linear-gradient(to bottom right, var(--bg_2) 37%,var(--bg)   0%);
+
   min-height: 110vh;
   margin: auto;
   display: block;
@@ -131,6 +135,13 @@
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.sectionAnimation:nth-child(odd){
+
+}
+.sectionAnimation:nth-child(even){
+  background: linear-gradient(to bottom left, var(--bg) 55%,var(--bg_2)   0%);
 }
 
 .primaryContainer {
@@ -301,7 +312,7 @@ ul > li {
   word-wrap: break-word;
   word-spacing: normal;
 
-  color: var(--primaryText);
+  color: var(--paragraphText);
 }
 
 .p-italic {
