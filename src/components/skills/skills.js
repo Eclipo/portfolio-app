@@ -132,7 +132,6 @@ class Skills extends Component {
       <div id="skills" className="sectionAnimation">
         <div className="container-sm skillContainer" id="skillContainerID">
           <h2>Skills</h2>
-          <hr></hr>
 
           <div id="skillsNavMenu" className="resumeNavMenu align-items-center">
             <div id="skillsNavRow" className="resumeNavRow">

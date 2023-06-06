@@ -9,8 +9,8 @@
 
   /*NYA KNAPP SHADOW!!!! */
   --btnShadow: 0.1rem 0.1rem 0.1rem 0.1rem black,
-    inset -0.1rem -0.1rem 0.5rem 0.1rem var(--secondaryColor-shadow),
-    inset 0.6rem 0.65rem 0.25rem -0.4rem var(--primary-white);
+    inset -0.1rem -0.1rem 0.25rem 0.1rem var(--secondaryColor-shadow),
+    inset 0.6rem 0.65rem 0.25rem -0.3rem var(--primary-white);
 
   --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--secondary-shadow);
@@ -38,7 +38,7 @@
     inset 0.2rem -0.5rem 0.25rem -0.1rem var(--primary-white);
 
   /* Colors */
-  --primary-white: rgba(245, 237, 237, 0.993);
+  --primary-white: rgba(248, 255, 255, 0.993);
   --primary-red: rgba(197, 12, 12, 0.993);
 
   /*About */
@@ -90,7 +90,7 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg-nav: #ddc188e1;
+  --bg-nav: #ece2d4d7;
 
   --bg: #f8f1b81c;
   --bg_2: #f5cd772f;
@@ -102,8 +102,8 @@
 
   --subHeaderText: #462f02;
 
-  --secondaryColor: #d3961d;
-  --secondaryColor-dark: #865b04;
+  --secondaryColor: #d19e37;
+  --secondaryColor-dark: #a78032;
   --secondaryColor-darkest: #5c3e03;
   --secondaryColor-shadow: #462f02;
 
@@ -125,8 +125,7 @@
 /************************* MAIN CSS CLASSES *********************************/
 
 .sectionAnimation {
-  background: linear-gradient(to bottom right, var(--bg_2) 37%,var(--bg)   0%);
-
+  background-color: var(--bg_2);
   min-height: 110vh;
   margin: auto;
   display: block;
@@ -137,17 +136,14 @@
   padding-bottom: 0.5rem;
 }
 
-.sectionAnimation:nth-child(odd){
-
-}
 .sectionAnimation:nth-child(even){
-  background: linear-gradient(to bottom left, var(--bg) 55%,var(--bg_2)   0%);
+  background: var(--bg);
 }
 
 .primaryContainer {
   /* background-color: var(--primaryColor); */
   /* box-shadow: var(--blackWhiteShadow); */
-  max-width: 90vw;
+  max-width: 60vw !important;
   width: fit-content;
   border-radius: 18px;
   display: block;
@@ -552,11 +548,12 @@ ul > li {
 }
 
 .fntAwesome {
-  color: var(--primary-white);
+  color: var(--darkest-navy);
   padding-top: 0.5rem;
   height: 1.3rem !important;
   width: 1.6rem !important;
 }
+
 
 .navLinkH4 {
   font-size: 1.05rem;
@@ -692,6 +689,8 @@ ul > li {
   bottom: 0;
   z-index: 1000;
   overflow-y: auto !important;
+  border-bottom: 0.1rem solid black;
+  padding-bottom: 0rem !important;
 }
 
 /* .customNavBrand {
@@ -705,6 +704,12 @@ ul > li {
 
 .customBrand {
   width: fit-content !important;
+}
+
+.customBrand >.nav-link{
+  padding-bottom: 0rem !important;
+  padding-left:0rem !important;
+  padding-right: 0rem !important;
 }
 
 .navTest {
@@ -732,64 +737,6 @@ ul > li {
 .linksContainer h4 {
   margin: 0;
   padding: 0;
-}
-
-.toolsContainer {
-  border-radius: 18px;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  background-color: var(--bg-sub-dark);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 23rem;
-  width: fit-content;
-}
-
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: center;
-  width: max-content;
-  min-width: 90%;
-}
-
-.button-col {
-  display: inline-block;
-  padding: 0.1rem;
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-}
-
-#labelRedGreen {
-  margin-left: -0.95rem !important;
-}
-
-#labelYellowBlue {
-  margin-left: -1.15rem !important;
-}
-
-#labelTotalGreyColor {
-  margin-left: 0.175rem !important;
-}
-
-.button-row button {
-  margin: auto !important;
-  display: inline-flex !important;
-}
-
-.toolsContainer > .row {
-  width: fit-content !important;
-}
-
-.toolsContainer h4 {
-  margin-top: -0.85rem;
-  margin-left: -0.45rem;
 }
 
 .navSubIcon {

@@ -1,4 +1,8 @@
 /***************** SKILLS *********************/
+#skills{
+  margin-top: 3rem;
+  padding-top: 3rem;
+}
 
 .bg-transparent {
   border: none;
@@ -61,6 +65,7 @@ button .skillCategory {
   margin-right: 5rem;
   background-color: var(--secondaryColor);
 }
+
 
 .skillNavh3 {
   color: var(--primary-white);
@@ -165,6 +170,19 @@ button .selectedBtn.rolesTheme {
 .rolesTheme {
   background-color: var(--secondaryColor-darkest) !important;
   color: var(--primary-white);
+}
+
+#frontEnd:hover{
+  background-color: var(--btnHoverColor) !important;
+}
+
+#backEnd:hover{
+  background-color: #7a5408 !important;
+}
+
+#roles:hover{
+  background-color: #3b2801 !important;
+
 }
 
 button .frontEndTheme:hover {

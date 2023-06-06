@@ -21,7 +21,7 @@
 
 @media (min-width: 120rem) {
   :root {
-    --size-edipGuyDivisor: 3.65;
+    --size-edipGuyDivisor: 2;
   }
 }
 

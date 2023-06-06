@@ -2,6 +2,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Navbar } from "./components/Navbar/Navbar";
+import { WebTools } from "./components/WebTools/WebTools";
+
 import QuickFacts from "./components/QuickFacts/QuickFacts";
 import About from "./components/About/About";
 import Skills from "./components/skills/skills";
@@ -14,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
+      <WebTools></WebTools>
       <LocomotiveScrollWrapper>
         <QuickFacts></QuickFacts>
         <Skills></Skills>
@@ -23,6 +26,7 @@ function App() {
         <Personality></Personality>
         <Contact></Contact>
       </LocomotiveScrollWrapper>
+
     </>
   );
 }

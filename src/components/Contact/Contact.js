@@ -8,7 +8,6 @@ const Contact = () => {
     <div id="contactID" className="sectionAnimation">
       <div className="container-sm">
         <h2 className="flexCenter">Contact</h2>
-        <hr></hr>
         <p className="duckText mx-auto">
           I am always open to connecting with decent and honest people who enjoy
           technology.

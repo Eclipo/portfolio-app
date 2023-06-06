@@ -18,7 +18,6 @@ class ResumeOverview extends Component {
     return (
       <div id="resumeOverview" className="sectionAnimation container-sm">
         <h2>Resumé</h2>
-        <hr></hr>
         <div id="resumeContainerID">
           <div className="resumeTable">
             <div id="resumeNavMenuID" className="resumeNavMenu ">

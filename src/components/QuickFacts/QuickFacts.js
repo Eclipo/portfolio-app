@@ -8,23 +8,22 @@ const QuickFacts = () => {
   return (
     <div id="quickFacts" className="sectionAnimation">
       <div className="container primaryContainer mt-5">
-        <h3 className="welcomeText text-black text-start mt-5 pt-5 pb-0">
-          Welcome, the name is
-        </h3>
-        <h1 className="flexCenter text-start pt-1 mt-0">Edip Sarac</h1>
+        
+        <div className="row">
+          <div className="col-6">
 
-        <div className="flexCenter pb-0 mb-0" style={{ marginTop: "-6rem" }}>
-          <EdipGuy></EdipGuy>
-        </div>
-        <div className="row welcomeText">
-          <h3 className="text-start">
-            I'm a <span className="text-black">full-stack developer </span><br></br>
-            from <span className="text-black">Sweden</span><br></br>
-            building <span className="text-black"> IT-systems</span>
-            <br></br>
-            with solid<span className="text-black"> web design</span>.
+          
+          <h3 className="text-start text-black mb-0">
+          Building web applications with
           </h3>
+          <h1 className="text-start pt-0 mt-0 ">mindful web design and solid code</h1>
+          </div>
+            <div className="col d-flex">
+              <span className="mx-auto mt-5">
+              <EdipGuy></EdipGuy>    
 
+              </span>
+            </div>
           
         </div>
 

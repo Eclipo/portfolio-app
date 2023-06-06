@@ -23,10 +23,9 @@ class Experiences extends Component {
   render() {
     return (
       <div
-        className="sectionAnimation container-sm p-0 mt-5"
+        className="sectionAnimation"
         id="experiencesID">
-        <h2>Experiences</h2>
-        <hr></hr>
+        <h2 cllassName="mt-5">Experiences</h2>
 
         <div className="container-sm p-0 m-0 mx-auto">
           <div className="resumeTable w-100 m-0 p-0 row">
