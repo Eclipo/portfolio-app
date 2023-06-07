@@ -3,7 +3,7 @@ import "./edipguy.css";
 import "../QuickAboutAnimation.js";
 export const EdipGuy = () => {
   return (
-    <div className="wrapper" id="tableStartGuyID">
+    <div className="wrapper split-border" id="tableStartGuyID">
       <div className="edipCircleBackground-circle">
         <div className="triangle-light"></div>
 

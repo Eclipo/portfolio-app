@@ -71,8 +71,29 @@
 }
 
 #quickFacts {
-  background: linear-gradient(to bottom right, var(--bg) 37.5%,var(--bg_2)   0%);
-  /* height: 100vh; */
+  background: linear-gradient(
+    to bottom right,
+    var(--bg) 39.5%,
+    #d3bd8152 0%
+  ); /* height: 100vh; */
+}
+#quickFacts .skillNav {
+  background-color: var(--lime-dark-green);
+  width: fit-content;
+  padding: 1rem;
+}
+#quickFacts .skillNav:hover {
+  background-color: var(--lime-darker-green);
+}
+
+#quickContact {
+  background-color: var(
+    --secondaryColor
+  ) !important; /* box-shadow: var(--btnDesinShadow); */
+}
+
+#quickContact:hover {
+  background-color: var(--btnHoverColor) !important;
 }
 
 #quickFacts h1,
@@ -377,8 +398,8 @@ svg path {
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border: 0.5rem solid var(--secondaryColor);
   border-radius: 50%;
   position: relative;
@@ -386,7 +407,7 @@ svg path {
 }
 .scrollDown {
   margin: auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   display: inline-flex;
 
   width: 1.5rem;

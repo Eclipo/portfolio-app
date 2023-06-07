@@ -139,11 +139,9 @@ export const animate = (inputID) => {
                   "Successfully upgraded Platina from version 7.2 to 11 and its module Webdiary from version 1.0 to 2.0.";
                 descThreeEl.innerHTML =
                   "Worked throughout the entire stack, utilizing expertise in <span class='highLight'>MS SQL, JavaScript, HTML/CSS, and C#</span>";
-                descFourEl.innerHTML =
-                  "Major customizations included <span class='highLight'>streamlining the admin menu in Platina and implementing customized design patterns for the Webdiary module</span>";
+
                 liTwo.style.display = "flex";
                 liThree.style.display = "flex";
-                liFour.style.display = "flex";
 
                 chosenTechSkillContainer.style.display = "block";
                 chosenTechSkillContainer.style.opacity = "1";

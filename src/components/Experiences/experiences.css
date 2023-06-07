@@ -22,7 +22,7 @@
   max-width: 50%;
 }
 
-#experiencesID{
+#experiencesID {
   margin-top: 3rem;
   padding-top: 3rem;
 }
@@ -273,10 +273,6 @@ ul {
 
 /************************* Tech skills *********************************/
 
-#fintech_angular {
-  width: 90%;
-}
-
 #fintech_css {
   width: 40%;
 }
@@ -284,6 +280,22 @@ ul {
 #fintech_csharp {
   width: 20%;
   padding: 0.25rem;
+}
+
+#municipality_3_csharp {
+  width: 10%;
+}
+
+#municipality_3_ps1 {
+  width: 30%;
+}
+
+#fintech_angular {
+  width: 90%;
+}
+
+#municipality_3_sql {
+  width: 90%;
 }
 
 #municipality_2_sql {

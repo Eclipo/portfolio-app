@@ -33,6 +33,9 @@
   display: table-cell;
   vertical-align: middle;
   position: relative;
+  /* border: 1rem solid var(--primary-white); */
+  border-radius: 50%;
+  padding: 1rem;
 }
 
 .edipCircleBackground-circle {
@@ -43,7 +46,10 @@
   background: #95b3bf !important;
   background: transparent;
   position: relative;
-  border: 1rem solid var(--secondaryColor-dark);
+  border-top: 0.1rem solid var(--primary-white);
+  border-bottom: 0.75rem solid var(--primary-white);
+  border-right: 0.2rem solid var(--primary-white);
+
   z-index: -1;
   opacity: 0;
 }

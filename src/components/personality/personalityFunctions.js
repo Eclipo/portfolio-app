@@ -60,7 +60,7 @@ export const resetAttributeAnimation = (inputID) => {
 
   anime({
     targets: card,
-    backgroundColor: "#cf9625",
+    backgroundColor: "#a1964e",
     scale: [1.15, 1],
     duration: 1250,
     complete: function () {

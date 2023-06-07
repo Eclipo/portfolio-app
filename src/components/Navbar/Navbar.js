@@ -176,7 +176,7 @@ export const Navbar = () => {
                   </Link>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" id="navItemContact">
                   <Link
                     smooth={true}
                     to={"contactID"}
@@ -185,7 +185,7 @@ export const Navbar = () => {
                     onClick={clickNavToLink}
                     href="#"
                     tabIndex={6}>
-                    <h4>Contact</h4>
+                    <h4 id='navItemContactH4'>Contact</h4>
                   </Link>
                 </li>
               </ul>

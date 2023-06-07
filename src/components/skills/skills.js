@@ -14,24 +14,7 @@ class Skills extends Component {
 
   constructor(props) {
     super(props);
-    this.animeSkillNav = null;
     this.filterSkills = this.filterSkills.bind(this);
-  }
-
-  componentDidMount() {
-    this.animeSkillNav = anime.timeline({
-      loop: true,
-      autoplay: false,
-      direction: "alternate",
-    });
-
-    this.animeSkillNav.add({
-      targets: ".skillNav",
-      scale: [1, 0.9, 1],
-      delay: anime.stagger(750),
-      easing: "easeInOutSine",
-    });
-    this.animeSkillNav.play();
   }
 
   resetSkills(event) {
@@ -58,11 +41,6 @@ class Skills extends Component {
     const frontEnd = document.getElementById("frontEnd");
     const backEnd = document.getElementById("backEnd");
     const roles = document.getElementById("roles");
-
-    //Wantto add code here animeSkillNav
-    if (this.animeSkillNav) {
-      this.animeSkillNav.pause();
-    }
 
     switch (filter) {
       case "frontEnd":
