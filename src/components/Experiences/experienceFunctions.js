@@ -53,7 +53,7 @@ export const animate = (inputID) => {
 
       anime({
         targets: ".techCategory",
-        backgroundColor: "#cf9625",
+        backgroundColor: "#aa9f5a",
         duration: 50,
         easing: "linear",
         scale: 1,
@@ -62,7 +62,7 @@ export const animate = (inputID) => {
         complete: function () {
           anime({
             targets: tab,
-            backgroundColor: "#ac7b1b",
+            backgroundColor: "#aa9f5a",
             scale: 0.98,
             duration: 150,
             easing: "linear",

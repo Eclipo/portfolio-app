@@ -16,9 +16,9 @@ class ResumeOverview extends Component {
 
   render() {
     return (
-      <div id="resumeOverview" className="sectionAnimation container-sm">
+      <div id="resumeOverview" className="sectionAnimation">
         <h2>Resumé</h2>
-        <div id="resumeContainerID">
+        <div id="resumeContainerID container-sm">
           <div className="resumeTable">
             <div id="resumeNavMenuID" className="resumeNavMenu ">
               <div id="resumeNavRowID" className="resumeNavRow">

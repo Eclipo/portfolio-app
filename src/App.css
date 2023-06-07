@@ -1,7 +1,7 @@
 :root {
   /*Claymorphism boxShadows*/
   --menuBtnShadow: 0rem 0rem 0.1rem -0.1rem black,
-    inset -0.1rem -0.1rem 0.5rem 0.1rem var(--secondaryColor-shadow),
+    inset -0.1rem -0.3rem 0.25rem 0.1rem var(--secondaryColor-dark),
     inset 0rem 0.2rem 0.25rem 0.1rem var(--primary-white);
 
   --menuBtnHoverShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
@@ -19,7 +19,7 @@
     inset 0 0 3rem 0 var(--secondary-shadow);
 
   --btnDesinShadow: 0 0 0.1rem -0.1rem var(--darkest-navy),
-    inset -0rem -0.1rem 0.2rem 0.2rem var(--light-navy),
+    inset -0rem -0.1rem 0.2rem 0.2rem var(--secondaryColor-dark),
     inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
 
   --btnDesinHoverShadow: 0 0 0 0 black, inset 0 0rem 0.25rem 0.25rem var(--navy);
@@ -90,25 +90,25 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg-nav: #ece2d4d7;
+  --bg-nav: #f0ecd2f8;
 
-  --bg: #f8f1b81c;
-  --bg_2: #f5cd772f;
+  --bg: #f7f3da1c;
+  --bg_2: #d1b82c13;
   
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfaee;
-  --primaryText: #533803f8;
-  --paragraphText: #412c04f8;
+  --primaryText: #3c3d06f8;
+  --paragraphText: #272b02f8;
 
-  --subHeaderText: #462f02;
+  --subHeaderText: #404409;
 
-  --secondaryColor: #d19e37;
-  --secondaryColor-dark: #a78032;
-  --secondaryColor-darkest: #5c3e03;
-  --secondaryColor-shadow: #462f02;
+  --secondaryColor: #b6ac6e;
+  --secondaryColor-dark: #686135;
+  --secondaryColor-darkest: #4d4204;
+  --secondaryColor-shadow: rgb(51, 48, 2);
 
-  --btnHoverColor: #ac7b1b;
-  --btnActiveColor: #a3710c;
+  --btnHoverColor: #7a7341;
+  --btnActiveColor: #a08e1c;
 
   --accent: #9ae7a7;
 
@@ -548,7 +548,7 @@ ul > li {
 }
 
 .fntAwesome {
-  color: var(--darkest-navy);
+  color: var(--primary-white);
   padding-top: 0.5rem;
   height: 1.3rem !important;
   width: 1.6rem !important;
@@ -557,6 +557,7 @@ ul > li {
 
 .navLinkH4 {
   font-size: 1.05rem;
+  
 }
 
 .navbar-toggler {
@@ -783,12 +784,13 @@ nav a.nav-link {
 }
 
 a.nav-link h4 {
+  color:var(--paragraphText) !important;
   text-align: left !important;
   padding-bottom: 0.1rem !important;
 }
 
 a.nav-link h4:hover {
-  color: var(--secondaryColor-shadow);
+  color: var(--darkest-navy) !important;
 }
 
 nav ul li {

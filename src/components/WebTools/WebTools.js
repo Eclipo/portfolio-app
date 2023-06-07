@@ -4,7 +4,7 @@ import {
   faPen,
   faEye,
   faEyeSlash,
-  faTools,
+  faWrench,
   faAnglesLeft,
   faAnglesRight
 } from "@fortawesome/free-solid-svg-icons";
@@ -216,7 +216,7 @@ export const WebTools = () => {
      color="text-black"
      className="fntAwesome" icon={faAnglesLeft} />
       <FontAwesomeIcon 
-     className="fntAwesome" icon={faTools} />
+     className="fntAwesome" icon={faWrench} />
      </span>
 
 
