@@ -62,7 +62,7 @@ class ArtExhibition extends Component {
               <Family></Family>
             </div>
 
-            <div className="d-block " style={{ marginTop: "-21.5rem" }}>
+            <div className="d-block " style={{ marginTop: "-22.25rem" }}>
               <h3>Family</h3>
               <p>
                 Me, Erika, our son Noah<br></br> and baby girl Laleh

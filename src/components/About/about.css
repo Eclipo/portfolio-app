@@ -7,7 +7,24 @@
     max-width: 75vw !important;
   }
 }
-#about{
+
+@media (min-width: 19rem) {
+  :root {
+    --size-familyDivisor: 2.75;
+  }
+
+  .testimonials-content {
+    max-width: 75vw !important;
+  }
+}
+
+@media (max-width: 25rem) {
+  .carousel-root {
+    max-width: 100% !important;
+  }
+}
+
+#about {
   margin-top: 3rem;
   padding-top: 3rem;
 }
@@ -76,7 +93,8 @@
   margin-top: 2.5rem !important;
   /* background-color: var(--primaryColor) !important; */
   /* box-shadow: var(--blackWhiteShadow) !important; */
-  max-width: 98% !important;
+  width: fit-content !important;
+  min-width: 50% !important;
   max-height: 29rem !important;
   padding: 0.1rem !important;
   border-radius: 18px !important;
@@ -134,7 +152,7 @@
   align-items: center;
   text-align: center;
   max-height: 22rem;
-  max-width: 98%;
+  max-width: 35rem;
   margin-top: 2rem !important;
   margin: auto;
   border-radius: 18px !important;
@@ -310,4 +328,23 @@
   border: none;
   margin: auto;
   margin-top: 0.15rem;
+}
+
+.clayHouseContainer {
+  border-radius: 18px;
+  margin: auto;
+  padding: 0;
+  top: 5.75rem;
+  display: inline-flex;
+  position: absolute;
+}
+.clayHouse {
+  border-radius: 18px;
+  scale: 3.5;
+  bottom: 0;
+  right: 50;
+  left: 50;
+  top: 1rem;
+
+  overflow: hidden;
 }
