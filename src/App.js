@@ -24,9 +24,8 @@ function App() {
         <ResumeOverview></ResumeOverview>
         <About></About>
         <Personality></Personality>
-        <Contact></Contact>
       </LocomotiveScrollWrapper>
-
+      <Contact></Contact>
     </>
   );
 }

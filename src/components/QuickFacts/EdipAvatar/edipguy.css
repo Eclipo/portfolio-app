@@ -18,15 +18,36 @@
     --size-edipGuyDivisor: 3.75;
   }
 }
+@media (min-width: 40rem) {
+  :root {
+    --size-edipGuyDivisor: 3.5;
+  }
+}
+
+@media (min-width: 50rem) {
+  :root {
+    --size-edipGuyDivisor: 3;
+  }
+}
+
+@media (min-width: 60rem) {
+  :root {
+    --size-edipGuyDivisor: 2.5;
+  }
+}
 
 @media (min-width: 120rem) {
   :root {
     --size-edipGuyDivisor: 2;
   }
 }
-
 #tableStartGuyID {
   transform: scale(calc(2.1 / var(--size-edipGuyDivisor)));
+  width: 100%;
+  transform-origin: top left;
+  /* display: flex; */
+  /* margin: 0;
+  padding: 0; */
 }
 
 .wrapper {

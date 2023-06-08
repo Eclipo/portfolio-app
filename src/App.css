@@ -93,7 +93,7 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg-nav: #e0dcc1de;
+  --bg-nav: #e6e2cb;
 
   --bg: #f7f3da1c;
   --bg_2: #fde6a52d;
@@ -219,7 +219,6 @@ body {
 
 #root {
   background-color: var(--bg);
-  height: 100vh;
 }
 
 .bodyDefaultBg {
@@ -783,20 +782,26 @@ nav a.nav-link {
   cursor: pointer;
 }
 
+.hideNavbar {
+  opacity: 0;
+}
+
 #navItemContact {
   background-color: var(--lime-dark-green);
   width: fit-content;
   border-radius: 18px;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   height: fit-content;
   display: inline-flex !important;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 0.25rem !important;
   margin-bottom: 1.25rem !important;
-  box-shadow: var(--btnShadow);
   border: 0.1rem black solid;
+}
+#navItemContact:hover {
+  background-color: var(--lime-darker-green);
 }
 #navItemContactH4 {
   color: var(--primary-white) !important;

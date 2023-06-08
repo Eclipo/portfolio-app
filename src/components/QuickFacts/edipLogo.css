@@ -394,20 +394,24 @@ svg path {
   z-index: 1;
 }
 
+.scrollContainer {
+  margin-top: -4rem;
+}
+
 .scrollIntro {
-  margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  /* margin: auto; */
+  /* margin-top: 3rem;
+  margin-bottom: 3rem; */
   width: 5rem;
   height: 5rem;
   border: 0.5rem solid var(--secondaryColor);
   border-radius: 50%;
   position: relative;
   background-color: var(--primary-white);
+  display: inline-flex;
 }
 .scrollDown {
   margin: auto;
-  margin-top: 1rem;
   display: inline-flex;
 
   width: 1.5rem;

@@ -421,7 +421,7 @@ class Personality extends Component {
               attributes.
               <br></br>
               <br></br>
-              <span class="highLight">
+              <span className="highLight">
                 But now, let's get to the real me.
               </span>{" "}
               In the cards below, I'll provide some more detail about my

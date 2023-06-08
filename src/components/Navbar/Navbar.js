@@ -12,7 +12,6 @@ import "../../IntersectionObserver.js";
 import { EdipBrand } from "./edip-brand/EdipBrand.js";
 
 export const Navbar = () => {
-
   const clickNavToLink = () => {
     setIsActive(false);
     setTimeout(() => {
@@ -111,7 +110,7 @@ export const Navbar = () => {
           <div
             className="col-9 align-vertical-center flex-column collapse navbar-collapse"
             id="navbarNavDropdown">
-            <div className=" linksContainer">
+            <div className="my-auto linksContainer">
               <ul className="navbar-nav flexCenter" id="ulNavID">
                 <li className="nav-item">
                   <Link
@@ -146,7 +145,7 @@ export const Navbar = () => {
                     className="nav-link"
                     href="#"
                     tabIndex={3}>
-                    <h4>Resumé</h4>
+                    <h4>Résumé</h4>
                   </Link>
                 </li>
 
@@ -176,7 +175,7 @@ export const Navbar = () => {
                   </Link>
                 </li>
 
-                <li className="nav-item" id="navItemContact">
+                <li className="nav-item">
                   <Link
                     smooth={true}
                     to={"contactID"}
@@ -185,12 +184,13 @@ export const Navbar = () => {
                     onClick={clickNavToLink}
                     href="#"
                     tabIndex={6}>
-                    <h4 id='navItemContactH4'>Contact</h4>
+                    <button className="skillNav" id="navItemContact">
+                      <h4 id="navItemContactH4">Contact</h4>
+                    </button>
                   </Link>
                 </li>
               </ul>
             </div>
-
           </div>
 
           <div className="col-2">
