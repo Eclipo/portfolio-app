@@ -46,7 +46,7 @@ export const animate = (inputID) => {
       ".techRow",
       ".li_icon",
     ],
-    opacity: 0.25,
+    opacity: 0,
     duration: 250,
     complete: function () {
       expCategoryMenu.style.pointerEvents = "none";

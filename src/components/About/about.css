@@ -1,26 +1,41 @@
-@media (min-width: 60rem) {
+@media (max-width: 39.9rem) {
   :root {
     --size-familyDivisor: 2.75;
   }
 
   .testimonials-content {
-    max-width: 75vw !important;
+    max-width: 95vw !important;
   }
-}
-
-@media (min-width: 19rem) {
-  :root {
-    --size-familyDivisor: 2.75;
-  }
-
-  .testimonials-content {
-    max-width: 75vw !important;
-  }
-}
-
-@media (max-width: 25rem) {
   .carousel-root {
     max-width: 100% !important;
+  }
+}
+
+@media (min-width: 40rem) {
+  .testimonials-content {
+    max-width: 75vw !important;
+  }
+  .carousel-root {
+    max-width: 95% !important;
+  }
+}
+
+@media (min-width: 60rem) {
+  :root {
+    --size-familyDivisor: 2.7;
+  }
+
+  .testimonials-content {
+    max-width: 50vw !important;
+  }
+}
+
+@media (min-width: 75rem) {
+  .testimonials-content {
+    max-width: 60vw !important;
+  }
+  .carousel-root {
+    max-width: 75% !important;
   }
 }
 
@@ -38,9 +53,9 @@
 
 .testimonials-content {
   text-align: center;
-  max-width: 90vw;
   height: max-content;
   margin: auto;
+  justify-content: center;
   margin-top: -2rem;
   background: none;
   transform: (0.95);
@@ -93,7 +108,7 @@
   margin-top: 2.5rem !important;
   /* background-color: var(--primaryColor) !important; */
   /* box-shadow: var(--blackWhiteShadow) !important; */
-  width: fit-content !important;
+  /* width: fit-content !important; */
   min-width: 50% !important;
   max-height: 29rem !important;
   padding: 0.1rem !important;
@@ -151,8 +166,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-height: 22rem;
-  max-width: 35rem;
+  /* max-width: 40rem; */
+  width: 100%;
   margin-top: 2rem !important;
   margin: auto;
   border-radius: 18px !important;
@@ -174,14 +189,15 @@
 }
 
 .basketBg {
-  display: block;
+  display: inline-block;
   background-color: var(--primary-grey);
-  margin: auto;
-  width: 100%;
+  justify-content: center;
+  width: 85%;
   height: 40%;
   margin-left: -0.25rem;
-  margin-top: 12.5rem;
+  margin-top: 12.75rem;
   margin-bottom: 0.75rem;
+  border-radius: 18px;
 
   border-radius: 5px;
 }
@@ -189,6 +205,7 @@
 .starWarsBg {
   background-color: black;
   overflow-x: hidden;
+  height: 26.5rem;
 }
 
 .stars {
@@ -256,6 +273,8 @@
   transform: scale(1.5);
   margin: auto;
   display: block;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .weightsText {

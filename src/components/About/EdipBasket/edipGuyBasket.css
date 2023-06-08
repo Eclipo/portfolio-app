@@ -4,7 +4,7 @@
 
 @media (max-width: 19.9rem) {
   :root {
-    --size-divisorBasket: 3.25 !important;
+    --size-divisorBasket: 3.5 !important;
   }
 }
 
@@ -52,11 +52,13 @@
 /* ******** HEAD  ******** */
 
 #tableStartBasketGuyID {
-  transform: scale(calc(0.475 / var(--size-divisorBasket)));
+  transform: scale(calc(0.475 / var(--size-divisorBasket))) !important;
   margin: auto;
-  top: -4.75rem;
+  top: -2.5rem;
+  margin-left: -2.5rem;
   z-index: 1;
   position: absolute;
+  width: 50%;
 }
 
 .headBasket {

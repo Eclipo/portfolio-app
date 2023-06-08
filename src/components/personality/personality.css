@@ -187,6 +187,8 @@ h1 {
 .personalityFont {
   font-family: "PressStart" !important;
   color: rgb(83, 255, 120) !important;
+  white-space: pre-wrap !important;
+  font-size: xx-large !important;
 }
 
 .personalityBaseTraits h4 {

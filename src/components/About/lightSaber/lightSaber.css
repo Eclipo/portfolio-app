@@ -8,8 +8,7 @@
   z-index: 1 !important;
   display: flex;
   transform: scale(0.525);
-  margin-top: -14rem;
-  margin-bottom: 1.1rem;
+  margin-top: -12rem;
 }
 
 .lightSaberTable td {

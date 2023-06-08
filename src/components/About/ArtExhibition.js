@@ -58,11 +58,11 @@ class ArtExhibition extends Component {
               background: "var(--primary-darker-blue)",
               height: "26.5rem",
             }}>
-            <div className="d-flex" style={{ marginTop: "-19.5rem" }}>
+            <div className="d-flex" style={{ marginTop: "-20rem" }}>
               <Family></Family>
             </div>
 
-            <div className="d-block " style={{ marginTop: "-22.25rem" }}>
+            <div className="d-block " style={{ marginTop: "-20rem" }}>
               <h3>Family</h3>
               <p>
                 Me, Erika, our son Noah<br></br> and baby girl Laleh
@@ -106,11 +106,13 @@ class ArtExhibition extends Component {
               background: "var(--primary-darker-blue)",
               height: "26.5rem",
             }}>
-            <img className="cityHall" src={stadshus} alt="Stockholm Stadshus" />
+            <span className="cityHall">
+              <img src={stadshus} alt="Stockholm Stadshus" />
+            </span>
 
             <div
               style={{
-                marginTop: "3rem",
+                marginTop: "5rem",
                 marginBottom: "1.15rem",
                 height: "10rem",
               }}>
@@ -130,7 +132,7 @@ class ArtExhibition extends Component {
             <EdipBasket></EdipBasket>
 
             <div className="basketBg">
-              <h3 className="mt-4">Basket</h3>
+              <h3 className="mt-5">Basket</h3>
               <p>I like to play basketball</p>
             </div>
           </div>
@@ -165,7 +167,7 @@ class ArtExhibition extends Component {
               style={{
                 width: "110%",
                 height: "65%",
-                marginTop: "-6.75rem",
+                marginTop: "-1.5rem",
               }}>
               <h3>Star Wars</h3>
               <p style={{ backgroundColor: "black", width: "fit-content" }}>

@@ -177,7 +177,7 @@ class Skills extends Component {
                     className="skillPointGround"
                     id="Intermediate"
                     style={{ marginBottom: "2%" }}>
-                    Mid-Level
+                    Midlevel
                   </h3>
                   <div className="sectionLine "></div>
                 </td>
@@ -309,7 +309,7 @@ class Skills extends Component {
           </table>
         </div>
 
-        <div className="container-sm primaryContainer" id="duckContainerID">
+        <div className="container-sm" id="duckContainerID">
           <div className="row mt-5 m-0 p-0">
             <h2>
               My spirit<br></br> animal
