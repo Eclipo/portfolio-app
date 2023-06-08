@@ -19,7 +19,7 @@ const QuickFacts = () => {
                 mindful design & solid code
               </h1>
             </div>
-            <div className="row d-inline-block ">
+            <div className="row d-inline-block" id="heroBtns">
               {" "}
               <Link smooth={true} to={"resumeOverview"} href="#" tabIndex={3}>
                 <button className="skillNav float-start m-0 me-3">

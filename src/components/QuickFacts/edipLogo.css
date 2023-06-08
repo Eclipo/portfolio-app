@@ -77,6 +77,11 @@
     #d3bd8152 0%
   ); /* height: 100vh; */
 }
+
+#heroBtns {
+  opacity: 0;
+}
+
 #quickFacts .skillNav {
   background-color: var(--lime-dark-green);
   width: fit-content;

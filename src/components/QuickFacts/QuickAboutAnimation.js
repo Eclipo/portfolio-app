@@ -17,47 +17,46 @@ export class QuickAboutAnimation {
       easing: "linear",
       opacity: [0, 1],
       duration: 250,
-      complete: function () {
-        anime({
-          targets: [
-            "#quickFacts #bodyStart",
-            "#quickFacts #headOne",
-            ".right-hand",
-            ".left-hand",
-            ".coffee-cup-container",
-            ".steam-container",
-          ],
-          easing: "easeInOutSine",
-          translateY: ["-2rem", "2rem", 0],
-          opacity: [0, 1],
-          delay: anime.stagger(150),
-        });
-      },
     });
 
     this.firstIntroAnimation.add({
-      targets: "#quickFacts h1",
-      easing: "linear",
+      targets: [
+        "#quickFacts #bodyStart",
+        "#quickFacts #headOne",
+        ".right-hand",
+        ".left-hand",
+        ".coffee-cup-container",
+        ".steam-container",
+      ],
+      easing: "easeInOutSine",
+      translateY: ["-2rem", "2rem", 0],
       opacity: [0, 1],
-      duration: 250,
-      delay: 100,
+      delay: anime.stagger(150),
     });
 
     this.firstIntroAnimation.add({
       targets: "#quickFacts h3",
-      easing: "linear",
+      easing: "easeInOutSine",
       opacity: [0, 1],
-      duration: 250,
-      delay: 100,
+      duration: 500,
+      beginDelay: 500,
     });
 
     this.firstIntroAnimation.add({
-      targets: ".scrollIntro",
+      targets: "#quickFacts h1",
       easing: "easeInOutSine",
       opacity: [0, 1],
-      translateY: ["-2rem", "2rem", 0],
-      duration: 250,
-      delay: 100,
+      duration: 500,
+      beginDelay: 250,
+    });
+
+    this.firstIntroAnimation.add({
+      targets: "#heroBtns",
+      easing: "easeInOutSine",
+      opacity: [0, 1],
+      translateY: ["-2rem", "1rem", 0],
+      duration: 750,
+      beginDelay: 250,
     });
 
     this.edipAndFamillyAnimation = anime.timeline({
