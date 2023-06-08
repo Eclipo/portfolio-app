@@ -4,7 +4,7 @@
   border-collapse: collapse;
   height: fit-content;
   max-width: 50rem;
-  transform: scale(0.275) !important;
+  transform: scale(0.27) !important;
 }
 
 #tableFamilyID td {
@@ -12,16 +12,24 @@
 }
 
 .wrapper {
-  display: grid !important;
+  /* display: table-cell; */
   vertical-align: middle;
   position: relative;
+  padding: 0rem;
+  /* border: 1rem solid var(--primary-white); */
+  border-radius: 50%;
+  padding: 1rem;
+  /* width: 100%; */
+  height: fit-content;
 }
+
 .background-circle {
   width: 25rem;
   height: 25rem;
   border-radius: 100%;
   overflow: hidden;
   margin: 0 auto;
+
   background: #95b3bf;
   position: relative;
 }

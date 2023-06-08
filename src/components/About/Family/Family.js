@@ -8,7 +8,7 @@ export const Family = () => {
         <tr>
           <td>
             {/* Edip */}
-            <div className="wrapper">
+            <div className="wrapper col-auto">
               <div className="background-circle" style={{ background: "none" }}>
                 <div className="edip-body"></div>
               </div>
@@ -44,13 +44,7 @@ export const Family = () => {
 
           <td>
             {/* Erika */}
-            <div
-              className="wrapper"
-              style={{
-                marginTop: "-12rem",
-                marginLeft: "-5rem",
-                position: "absolute",
-              }}>
+            <div className="wrapper col-auto">
               <div className="background-circle" style={{ background: "none" }}>
                 <div className="erika-body"></div>
               </div>
@@ -96,12 +90,9 @@ export const Family = () => {
           <td>
             {/* NOAH */},
             <div
-              className="wrapper"
+              className="wrapper col-auto m-auto"
               style={{
                 transform: "scale(0.9)",
-                marginLeft: "5rem",
-                marginTop: "-16rem",
-                position: "absolute",
               }}>
               <div className="background-circle" style={{ background: "none" }}>
                 <div className="noah-body"></div>
@@ -178,11 +169,9 @@ export const Family = () => {
           <td>
             {/* LALEH */}
             <div
-              className="wrapper"
+              className="wrapper col-auto"
               style={{
                 transform: "scale(0.5)",
-                bottom: "5rem",
-                right: "5rem",
               }}>
               <div className="head laleh-head">
                 <div className="laleh-hair-bg">

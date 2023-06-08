@@ -58,11 +58,11 @@ class ArtExhibition extends Component {
               background: "var(--primary-darker-blue)",
               height: "26.5rem",
             }}>
-            <div className="d-block" style={{ marginTop: "-15.5rem" }}>
+            <div className="d-flex" style={{ marginTop: "-19.5rem" }}>
               <Family></Family>
             </div>
 
-            <div className="d-block " style={{ marginTop: "-17rem" }}>
+            <div className="d-block " style={{ marginTop: "-21.5rem" }}>
               <h3>Family</h3>
               <p>
                 Me, Erika, our son Noah<br></br> and baby girl Laleh
