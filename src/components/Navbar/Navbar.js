@@ -184,7 +184,7 @@ export const Navbar = () => {
                     onClick={clickNavToLink}
                     href="#"
                     tabIndex={6}>
-                    <button className="skillNav" id="navItemContact">
+                    <button className="ms-0 p-2 skillNav" id="navItemContact">
                       <h4 id="navItemContactH4">Contact</h4>
                     </button>
                   </Link>

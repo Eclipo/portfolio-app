@@ -21,36 +21,31 @@ const QuickFacts = () => {
             </div>
 
             <div className="row">
-              <div className="col m-0 mb-4 pb-0">
+              <div className="col m-0 mb-2 pb-0">
                 <span className="" style={{ display: "grid", height: "17rem" }}>
                   <EdipGuy></EdipGuy>
                 </span>
               </div>
               <div className="col m-auto" id="heroBtns">
                 {" "}
-                <Link smooth={true} to={"resumeOverview"} href="#" tabIndex={3}>
-                  <button className="skillNav float-start m-0 me-2">
+                <Link smooth={true} to={"experiencesID"} href="#" tabIndex={2}>
+                  <button className="skillNav float-start ms-2 me-2">
                     <h4
                       className="m-auto"
                       style={{ color: "var(--primary-white)" }}>
-                      RÉSUMÉ
+                      Experiences
                     </h4>
                   </button>
                 </Link>
                 <Link smooth={true} to={"contactID"} href="#" tabIndex={6}>
                   <button
                     id="quickContact"
-                    className="skillNav float-start m-0">
+                    className="skillNav text-start float-start m-0">
                     <h4
                       className="m-auto"
                       style={{ color: "var(--primary-white)" }}>
                       CONTACT
                     </h4>
-                  </button>
-                </Link>
-                <Link smooth={true} to={"skills"} href="#" tabIndex={1}>
-                  <button className="scrollIntro float-start ms-2">
-                    <div className="scrollDown"></div>
                   </button>
                 </Link>
               </div>

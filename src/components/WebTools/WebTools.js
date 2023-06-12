@@ -192,7 +192,7 @@ export const WebTools = () => {
 
   return (
     <div id="tools" className="toolsContainer">
-      <span>
+      <div className="row">
         <button
           className={
             isTools ? "navSubIcon btnShowTools" : "navSubIcon extraWidth"
@@ -218,7 +218,7 @@ export const WebTools = () => {
             </span>
           )}
         </button>
-      </span>
+      </div>
 
       {isTools ? (
         <div className="showToolsMenu">
@@ -228,9 +228,9 @@ export const WebTools = () => {
             </h3>
           </div>
 
-          <div className="row">
+          <div className="row mt-2 m-auto">
             <div className="col">
-              <h4 htmlFor="button" className="text-start my-auto pr-1 pb-0">
+              <h4 htmlFor="button" className="p-2 m-2">
                 Outliner
               </h4>
             </div>
@@ -238,8 +238,8 @@ export const WebTools = () => {
               <button
                 className={
                   isRed
-                    ? "float-end navSubIcon toolBtnActive mx-auto"
-                    : "float-end navSubIcon mx-auto"
+                    ? "float-end navSubIcon toolBtnActive"
+                    : "float-end navSubIcon"
                 }
                 onClick={outlineMode}>
                 <FontAwesomeIcon
@@ -254,16 +254,16 @@ export const WebTools = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row mt-2">
             <div className="col">
               {" "}
-              <h4 className="text-sart my-auto">Color blindness</h4>
+              <h4 className="text-start my-auto p-2 m-2 ">Color blindness</h4>
             </div>
           </div>
 
           <div className="row">
             <div className="col">
-              <label className="btnLabelNav text-start" id="labelRedGreen">
+              <label className="btnLabelNav p-2 m-2" id="labelRedGreen">
                 Red/Green
               </label>
             </div>
@@ -272,8 +272,8 @@ export const WebTools = () => {
               <button
                 className={
                   isCbRedGreen
-                    ? "float-end navSubIcon toolBtnActive mx-auto"
-                    : "float-end  navSubIcon mx-auto"
+                    ? "float-end mt-0 navSubIcon toolBtnActive"
+                    : "float-end mt-0 navSubIcon"
                 }
                 onClick={cbRedGreenMode}>
                 <FontAwesomeIcon
@@ -290,7 +290,7 @@ export const WebTools = () => {
           <div className="row">
             <div className="col">
               {" "}
-              <label className="btnLabelNav" id="labelYellowBlue">
+              <label className="btnLabelNav p-2 m-2" id="labelYellowBlue">
                 Yellow/Blue
               </label>
             </div>
@@ -298,8 +298,8 @@ export const WebTools = () => {
               <button
                 className={
                   isCbYellowBlue
-                    ? "float-end  navSubIcon toolBtnActive mx-auto"
-                    : "float-end navSubIcon mx-auto"
+                    ? "float-end mt-0 navSubIcon toolBtnActive"
+                    : "float-end mt-0 navSubIcon"
                 }
                 onClick={cbYellowBlueMode}>
                 <FontAwesomeIcon
@@ -316,7 +316,7 @@ export const WebTools = () => {
           <div className="row">
             <div className="col">
               {" "}
-              <label className="btnLabelNav" id="labelTotalGreyColor">
+              <label className="btnLabelNav p-2 m-2" id="labelTotalGreyColor">
                 Total
               </label>
             </div>
@@ -325,8 +325,8 @@ export const WebTools = () => {
               <button
                 className={
                   isCbTotal
-                    ? "float-end navSubIcon toolBtnActive  mx-auto"
-                    : "float-end navSubIcon  mx-auto"
+                    ? "float-end mt-0 navSubIcon toolBtnActive"
+                    : "float-end mt-0 navSubIcon"
                 }
                 onClick={cbTotalMode}>
                 <FontAwesomeIcon

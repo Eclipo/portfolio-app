@@ -2,15 +2,15 @@
   /*Claymorphism boxShadows*/
   --menuBtnShadow: 0rem 0rem 0.1rem -0.1rem black,
     inset -0.1rem -0.3rem 0.25rem 0.1rem var(--secondaryColor-dark),
-    inset 0rem 0.2rem 0.25rem 0.1rem var(--primary-white);
+    inset 0.05rem 0.025rem 0.1rem 0.1rem var(--primary-white);
 
   --menuBtnHoverShadow: 0 0.1rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--navy);
 
   /*NYA KNAPP SHADOW!!!! */
-  --btnShadow: 0.1rem 0.1rem 0.1rem 0.1rem black,
-    inset -0.1rem -0.1rem 0.25rem 0.1rem var(--secondaryColor-shadow),
-    inset 0.6rem 0.65rem 0.25rem -0.3rem var(--primary-white);
+  --btnShadow: 0.1rem 0.1rem 0.1rem 0.1rem transparent,
+    inset -0.1rem -0.15rem 0.2rem 0.1rem var(--secondaryColor-shadow),
+    inset 0.4rem 0.425rem 0.2rem -0.3rem var(--primary-white);
 
   --btnHoverShadow: 0 0.2rem 0.25rem 0 var(--primary-white),
     inset 0 0 1rem 0.5rem var(--secondary-shadow);
@@ -131,7 +131,7 @@
 
 .sectionAnimation {
   background-color: var(--bg_2);
-  min-height: 110vh;
+  min-height: 125vh;
   margin: auto;
   display: block;
   flex-wrap: wrap;
@@ -176,7 +176,7 @@ button:active {
 
 .menuBtn {
   border-radius: 15% 15% 50% 50% !important;
-
+  border: 0.1rem solid black !important;
   transition: var(--transition) !important;
   box-shadow: var(--menuBtnShadow) !important;
 }
@@ -421,7 +421,7 @@ ul > li {
 
   #skillsNavMenu,
   #resumeNavMenuID {
-    width: 50%;
+    width: 45rem;
     display: inline-flex;
   }
 
@@ -810,6 +810,7 @@ nav a.nav-link {
 #navItemContactH4 {
   color: var(--primary-white) !important;
   margin-top: -0.55rem;
+  padding: 0.25rem;
 }
 
 a.nav-link h4 {
