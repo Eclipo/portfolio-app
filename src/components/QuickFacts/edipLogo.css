@@ -85,7 +85,7 @@
 #quickFacts .skillNav {
   background-color: var(--lime-dark-green);
   width: fit-content;
-  padding: 0.25rem;
+  padding: 0.75rem;
 }
 #quickFacts .skillNav:hover {
   background-color: var(--lime-darker-green);

@@ -4,8 +4,6 @@ import anime from "animejs";
 
 export const EdipBrand = () => {
   const hoverEnterAnimation = () => {
-    console.log("hoooover");
-
     anime({
       targets: "#eyeBrowLeftID",
       translateY: [0, ".1rem"],

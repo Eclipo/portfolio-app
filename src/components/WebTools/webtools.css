@@ -11,7 +11,7 @@
   margin-right: 0.25rem;
   background-color: var(--bg-nav);
   display: flex;
-  max-width: 12.5rem;
+  max-width: 20rem;
   width: fit-content;
   z-index: 999;
   opacity: 1;
@@ -42,7 +42,8 @@
   flex-direction: column;
   align-items: center;
   transition: var(--transition);
-  width: 12.5rem;
+  width: 15rem;
+  padding: 0.25rem;
 }
 .extraWidth {
   width: 3rem;

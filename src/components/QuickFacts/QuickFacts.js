@@ -11,12 +11,11 @@ const QuickFacts = () => {
         <div className="row m-0">
           <div className="col m-0">
             <div className="row m-0">
-              {" "}
               <h3 className="text-start text-black mb-0">
                 I build web applications with
               </h3>
               <h1 className="text-start pt-0 mt-0 ">
-                mindful design & solid code
+                mindful design <br></br>& solid code
               </h1>
             </div>
 
