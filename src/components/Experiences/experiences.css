@@ -27,6 +27,9 @@
   padding-top: 3rem;
 }
 /************************* EXP Menu *********************************/
+#experiencesID .fntAwesome {
+  color: var(--secondaryColor);
+}
 
 #expMenu {
   margin: auto;
@@ -297,16 +300,16 @@ ul {
 }
 
 #fintech_csharp {
-  width: 20%;
+  width: 35%;
   padding: 0.25rem;
 }
 
 #municipality_3_csharp {
-  width: 10%;
+  width: 15%;
 }
 
 #municipality_3_ps1 {
-  width: 30%;
+  width: 37.5%;
 }
 
 #fintech_angular {

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeftLong,
   faArrowRightLong,
+  faHandPointer,
 } from "@fortawesome/free-solid-svg-icons";
 import { faHand } from "@fortawesome/free-solid-svg-icons";
 
@@ -24,6 +25,14 @@ class Experiences extends Component {
     return (
       <div className="sectionAnimation" id="experiencesID">
         <h2 className="mt-5">Experiences</h2>
+        <div class="d-lg-none">
+          <FontAwesomeIcon className="fntAwesome me-1" icon={faArrowLeftLong} />
+          <FontAwesomeIcon className="fntAwesome" icon={faHandPointer} />
+          <FontAwesomeIcon
+            className="fntAwesome ms-1"
+            icon={faArrowRightLong}
+          />
+        </div>
 
         <div className="container-sm p-0 m-0 mx-auto">
           <div className="resumeTable w-100 m-0 p-0 row">
