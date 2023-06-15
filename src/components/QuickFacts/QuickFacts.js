@@ -32,7 +32,7 @@ const QuickFacts = () => {
                     <h4
                       className="m-auto"
                       style={{ color: "var(--primary-white)" }}>
-                      Experiences
+                      EXPERIENCES
                     </h4>
                   </button>
                 </Link>
