@@ -29,12 +29,10 @@
 /************************* EXP Menu *********************************/
 
 #expMenu {
-  background-color: var(--bg-sub-dark);
-  box-shadow: var(--blackWhiteShadow);
   margin: auto;
   padding: 0.25rem;
-  border-radius: 18px;
-  border: 0.15rem solid black;
+  border-radius: 25%;
+  /* border: 0.15rem solid black; */
 }
 
 #expMenu button {
@@ -66,19 +64,39 @@
   width: 90%;
   display: inline-block;
   margin: auto;
+  margin-top: 0.5rem;
   position: relative;
+  background-color: var(--primaryColor);
+  padding: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 18px;
 }
 
 .techCategory h3 {
   color: var(--primary-white);
   white-space: nowrap;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   #expMenu {
     width: 75%;
   }
+} */
+
+#expCategoryMenu {
+  background-color: var(--bg-sub-dark);
+  box-shadow: var(--blackWhiteShadow);
+  border: 0.1rem solid black;
+  padding-top: 1.25rem;
+  padding-left: 1rem;
+  /* 
+  padding-right: 0.5rem; */
+  border-radius: 0.65rem;
+  overflow-x: auto;
+  width: 100%;
 }
 
+#backGroundExp {
+}
 /* #expCategoryMenu {
   /* overflow: auto; */
 /* border-radius: 18px;
@@ -218,9 +236,6 @@
   text-align: left;
   white-space: normal !important;
   opacity: 0;
-  background-color: var(--primaryColor);
-  border-radius: 18px;
-  border: 0.15rem solid black;
   padding: 1rem;
   /* display: inline-block; */
   float: left;
