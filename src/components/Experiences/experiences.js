@@ -27,8 +27,8 @@ class Experiences extends Component {
 
         <div className="container-sm p-0 m-0 mx-auto">
           <div className="resumeTable w-100 m-0 p-0 row">
-            <div className="align-items-center resumeNavMenu" id="expMenu">
-              <div className="resumeNavRow flex-row-lg" id="expCategoryMenu">
+            <div className="align-items-center" id="expMenu">
+              <div className="d-flex flex-row-lg" id="expCategoryMenu">
                 <button
                   className="row col-lg techCategory"
                   id="fintech"

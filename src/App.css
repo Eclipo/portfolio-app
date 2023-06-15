@@ -334,9 +334,9 @@ ul > li {
     width: 12.5rem;
   }
 
-  #expMenu {
+  /* #expMenu {
     max-width: 10rem;
-  }
+  } */
   .skillPointGround {
     font-size: 0.95rem;
   }
@@ -374,11 +374,10 @@ ul > li {
     width: 12.75rem;
   }
 
-  #expMenu {
+  /* #expMenu {
     max-width: 10rem;
-  }
+  } */
 
-  #expMenu,
   .resumeNavMenu {
     width: 8rem;
     display: flex;
@@ -447,9 +446,9 @@ ul > li {
     display: inline-flex;
     width: min-content;
   }
-  #expMenu {
+  /* #expMenu {
     max-width: 80rem;
-  }
+  } */
 }
 
 @media (min-width: 60rem) {
@@ -529,11 +528,16 @@ ul > li {
   width: 0.9rem;
 }
 
+::-webkit-scrollbar:horizontal {
+  height: 0.65rem !important;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0.5rem var(--dark-slate);
-  background-color: var(--darkest-navy);
+  box-shadow: var(--blackWhiteShadow);
+  background-color: var(--primary-white);
   border-radius: 10px;
+  border: 0.15rem black solid;
 }
 
 /* Handle */
