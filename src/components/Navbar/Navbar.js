@@ -122,6 +122,7 @@ export const Navbar = () => {
                     href="#"
                     tabIndex={1}>
                     <h4>Skills</h4>
+                    <span className="underline-animation"></span>
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -134,6 +135,7 @@ export const Navbar = () => {
                     href="#"
                     tabIndex={2}>
                     <h4>Experiences</h4>
+                    <span className="underline-animation"></span>
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -146,6 +148,7 @@ export const Navbar = () => {
                     href="#"
                     tabIndex={3}>
                     <h4>Résumé</h4>
+                    <span className="underline-animation"></span>
                   </Link>
                 </li>
 
@@ -159,6 +162,7 @@ export const Navbar = () => {
                     href="#"
                     tabIndex={4}>
                     <h4>ABOUT</h4>
+                    <span className="underline-animation"></span>
                   </Link>
                 </li>
 
@@ -172,6 +176,7 @@ export const Navbar = () => {
                     href="#"
                     tabIndex={5}>
                     <h4 id="navLinkPersonalityH3ID">Persona</h4>
+                    <span className="underline-animation"></span>
                   </Link>
                 </li>
 

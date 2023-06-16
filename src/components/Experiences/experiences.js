@@ -25,7 +25,7 @@ class Experiences extends Component {
     return (
       <div className="sectionAnimation" id="experiencesID">
         <h2 className="mt-5">Experiences</h2>
-        <div class="d-lg-none">
+        <div className="d-lg-none">
           <FontAwesomeIcon className="fntAwesome me-1" icon={faArrowLeftLong} />
           <FontAwesomeIcon className="fntAwesome" icon={faHandPointer} />
           <FontAwesomeIcon
@@ -33,41 +33,39 @@ class Experiences extends Component {
             icon={faArrowRightLong}
           />
         </div>
+        <div className="" id="expMenu">
+          <div className="d-flex flex-row-lg" id="expCategoryMenu">
+            <button
+              className="row col-lg techCategory"
+              id="fintech"
+              onClick={this.handleClick}>
+              <h3 className="resumeNavRow">Fintech Company</h3>
+            </button>
 
+            <button
+              className="row col-lg techCategory"
+              id="municipality_3"
+              onClick={this.handleClick}>
+              <h3 className="resumeNavRow">#3 Municipality</h3>
+            </button>
+
+            <button
+              className="row col-lg techCategory"
+              id="municipality_2"
+              onClick={this.handleClick}>
+              <h3 className="resumeNavRow">#2 Municipality</h3>
+            </button>
+
+            <button
+              className="row col-lg techCategory"
+              id="municipality_1"
+              onClick={this.handleClick}>
+              <h3 className="resumeNavRow">#1 Municipality</h3>
+            </button>
+          </div>
+        </div>
         <div className="container-sm p-0 m-0 mx-auto">
-          <div className="resumeTable w-100 m-0 p-0 row">
-            <div className="align-items-center" id="expMenu">
-              <div className="d-flex flex-row-lg" id="expCategoryMenu">
-                <button
-                  className="row col-lg techCategory"
-                  id="fintech"
-                  onClick={this.handleClick}>
-                  <h3 className="resumeNavRow">Fintech Company</h3>
-                </button>
-
-                <button
-                  className="row col-lg techCategory"
-                  id="municipality_3"
-                  onClick={this.handleClick}>
-                  <h3 className="resumeNavRow">#3 Municipality</h3>
-                </button>
-
-                <button
-                  className="row col-lg techCategory"
-                  id="municipality_2"
-                  onClick={this.handleClick}>
-                  <h3 className="resumeNavRow">#2 Municipality</h3>
-                </button>
-
-                <button
-                  className="row col-lg techCategory"
-                  id="municipality_1"
-                  onClick={this.handleClick}>
-                  <h3 className="resumeNavRow">#1 Municipality</h3>
-                </button>
-              </div>
-            </div>
-
+          <div className="resumeTable em-0 p-0 row">
             <div className="container-md expTable expInfo mb-2" id="_container">
               <div
                 className="row row-cols-2 row-cols-lg-5 row-cols-md-2 row-cols-sm-2 row-cols-xs-2 expInfo"
@@ -85,7 +83,7 @@ class Experiences extends Component {
                 </div>
 
                 <div className="col">
-                  <span className="periodColContainer">
+                  <span className="ms-2 periodColContainer">
                     <h4 className="header3Tech pb-0 mb-0">Customer:</h4>
 
                     <h4
@@ -107,7 +105,7 @@ class Experiences extends Component {
                 </div>
 
                 <div className="col">
-                  <span className="periodColContainer">
+                  <span className="ms-2 periodColContainer">
                     <h4 className="header3Tech pb-0 mb-0">Role:</h4>
 
                     <h4
@@ -156,43 +154,23 @@ class Experiences extends Component {
                   <h4 className="techSkill">CSS</h4>
                 </div>
                 <div className="techRow" id="fintech_angular">
-                  <h4 className="techSkill">HTML</h4>
-                </div>
-                <div className="techRow" id="fintech_angular">
-                  <h4 className="techSkill">Typescript</h4>
-                </div>
-                <div className="techRow" id="fintech_angular">
-                  <h4 className="techSkill">Angular</h4>
+                  <h4 className="techSkill">Angular, Typescript, HTML</h4>
                 </div>
               </div>
 
               <div className="techSkillContainer" id="municipality_2_tech">
                 <div className="techRow" id="municipality_2_sql">
-                  <h4 className="techSkill">MS SQL</h4>
-                </div>
-                <div className="techRow" id="municipality_2_javascript">
-                  <h4 className="techSkill">Javascript</h4>
-                </div>
-                <div className="techRow" id="municipality_2_htmlcss">
-                  <h4 className="techSkill">HTML/CSS</h4>
-                </div>
-                <div className="techRow" id="municipality_2_csharp">
-                  <h4 className="techSkill">C#</h4>
+                  <h4 className="techSkill">
+                    C#, MS SQL , HTML/CSS , Javascript{" "}
+                  </h4>
                 </div>
               </div>
 
               <div className="techSkillContainer" id="municipality_1_tech">
-                <div className="techRow" id="municipality_2_sql">
-                  <h4 className="techSkill">MS SQL</h4>
-                </div>
-                <div className="techRow" id="municipality_2_javascript">
-                  <h4 className="techSkill">Javascript</h4>
-                </div>
-                <div className="techRow" id="municipality_2_htmlcss">
-                  <h4 className="techSkill">HTML/CSS</h4>
-                </div>
-                <div className="techRow" id="municipality_2_csharp">
-                  <h4 className="techSkill">C#</h4>
+                <div className="techRow" id="municipality_1_sql">
+                  <h4 className="techSkill">
+                    C#, MS SQL, HTML/CSS, Javascript{" "}
+                  </h4>
                 </div>
               </div>
 

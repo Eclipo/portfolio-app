@@ -39,7 +39,7 @@ const QuickFacts = () => {
                 <Link smooth={true} to={"contactID"} href="#" tabIndex={6}>
                   <button
                     id="quickContact"
-                    className="skillNav text-start float-start m-0">
+                    className="skillNav text-start float-start ms-2 me-2">
                     <h4
                       className="m-auto"
                       style={{ color: "var(--primary-white)" }}>

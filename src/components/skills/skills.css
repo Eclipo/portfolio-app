@@ -73,7 +73,7 @@ button .skillCategory {
 }
 
 .skillNav {
-  background-color: var(--secondaryColor);
+  background-color: var(--bg-sub-dark);
   border-radius: 18px;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -141,6 +141,7 @@ button .selectedBtn.rolesTheme {
   border-radius: 18px;
   text-align: center !important;
   font-weight: 700 !important;
+  box-shadow: var(--btnDesinShadow);
 }
 
 .skillP {
@@ -158,7 +159,7 @@ button .selectedBtn.rolesTheme {
 }
 
 .rolesTheme {
-  background-color: var(--secondaryColor-darkest) !important;
+  background-color: var(--secondaryColor-shadow) !important;
   color: var(--primary-white);
 }
 

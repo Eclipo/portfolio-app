@@ -18,8 +18,8 @@
   --btnActiveShadow: 0 0.3rem 0.25rem 0 var(--lightest-slate),
     inset 0 0 3rem 0 var(--secondary-shadow);
 
-  --btnDesinShadow: 0 0 0.1rem -0.1rem var(--darkest-navy),
-    inset -0rem -0.1rem 0.2rem 0.2rem var(--secondaryColor-dark),
+  --btnDesinShadow: 0 0 0.1rem -0.1rem black,
+    inset -0rem -0.1rem 0.2rem 0.1rem var(--secondaryColor-shadow),
     inset 0.2rem 0.4rem 0.5rem -0.3rem var(--primary-white);
 
   --btnDesinHoverShadow: 0 0 0 0 black, inset 0 0rem 0.25rem 0.25rem var(--navy);
@@ -95,10 +95,10 @@
   /*THESE COLORS ONLY!!!!*/
   /* #ebebc7; */
 
-  --bg-nav: #e6e2cb;
+  --bg-nav: #fbf7ec;
 
   --bg: #f7f3da1c;
-  --bg_2: #fde6a52d;
+  --bg_2: #e0c98b52;
 
   --bg-sub-dark: #7757272f;
   --primaryColor: #fcfcf3;
@@ -107,7 +107,9 @@
 
   --subHeaderText: #584710;
 
-  --secondaryColor: #a1964e;
+  --secondaryColor-light: #b8a841;
+
+  --secondaryColor: #918430;
   --secondaryColor-dark: #685a35;
   --secondaryColor-darkest: #4d3a04;
   --secondaryColor-shadow: rgb(51, 40, 2);
@@ -542,19 +544,19 @@ ul > li {
 
 /* Handle */
 ::-webkit-scrollbar-thumb:vertical {
-  background: var(--slate);
+  background: var(--secondaryColor-dark);
   border-radius: 18px;
   height: 0.25rem !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:vertical:hover {
-  background: var(--tint-navy);
+  background: var(--secondaryColor);
   height: 0.25rem !important;
 }
 
 ::-webkit-scrollbar-thumb:vertical:active {
-  background: var(--dark-slate);
+  background: var(--secondaryColor-darkest);
   height: 0.25rem !important;
 }
 
@@ -824,7 +826,27 @@ a.nav-link h4 {
 }
 
 a.nav-link h4:hover {
-  color: var(--darkest-navy) !important;
+  color: var(--secondaryColor-dark) !important;
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondaryColor-darkest);
+}
+
+.underline-animation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--secondaryColor-dark);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover .underline-animation {
+  width: 100%;
 }
 
 nav ul li {

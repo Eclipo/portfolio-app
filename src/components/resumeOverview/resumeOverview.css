@@ -73,7 +73,7 @@
   margin: auto;
   margin-top: 2rem;
   justify-content: center;
-  box-shadow: var(--blackWhiteShadow);
+  box-shadow: var(--btnDesinShadow);
   border: 0.15rem solid black;
 }
 
@@ -201,6 +201,7 @@
   width: fit-content;
   min-width: 50%;
   margin: auto;
+  box-shadow: var(--btnDesinShadow);
 }
 
 .expSubContainer > .row {

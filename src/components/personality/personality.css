@@ -205,7 +205,6 @@ h1 {
   text-align: left;
   display: inline-block;
   padding: 0.5rem;
-  font-family: "Press Start 2P" !important;
 }
 
 .personalityTextContainer .col {
@@ -215,7 +214,7 @@ h1 {
 .personalityCard {
   border: none !important;
   border-radius: 18px !important;
-  background-color: var(--secondaryColor);
+  background-color: var(--secondaryColor-light);
   width: 25rem;
   height: fit-content;
   margin: 2rem;

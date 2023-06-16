@@ -53,7 +53,7 @@ export const animate = (inputID) => {
 
       anime({
         targets: ".techCategory",
-        backgroundColor: "#aa9f5a",
+        backgroundColor: "#918430",
         duration: 50,
         easing: "linear",
         scale: 1,
@@ -62,7 +62,7 @@ export const animate = (inputID) => {
         complete: function () {
           anime({
             targets: tab,
-            backgroundColor: "#aa9f5a",
+            backgroundColor: "#685a35",
             scale: 0.98,
             duration: 150,
             easing: "linear",
@@ -73,7 +73,7 @@ export const animate = (inputID) => {
 
               if (inputID === "fintech") {
                 confidentialParagraph.style.display = "block";
-                jobTitle = "Web developer";
+                jobTitle = "Fullstack Dev";
                 linkCustomerTitle = "Fintech *";
                 linkToCustomer = "";
                 period.innerText = "02/22 - Present";
@@ -99,7 +99,7 @@ export const animate = (inputID) => {
 
               if (inputID === "municipality_3") {
                 confidentialParagraph.style.display = "block";
-                jobTitle = "Handyman";
+                jobTitle = "Fullstack Dev";
                 linkCustomerTitle = "#3 Municipality *";
                 linkToCustomer = "";
                 period.innerText = "08/20 - 02/22";
@@ -127,7 +127,7 @@ export const animate = (inputID) => {
 
               if (inputID === "municipality_2") {
                 confidentialParagraph.style.display = "block";
-                jobTitle = "Handyman";
+                jobTitle = "Fullstack Dev";
 
                 linkCustomerTitle = "#2 Municipality *";
                 linkToCustomer = "";
@@ -155,7 +155,7 @@ export const animate = (inputID) => {
 
               if (inputID === "municipality_1") {
                 confidentialParagraph.style.display = "block";
-                jobTitle = "Handyman";
+                jobTitle = "Fullstack Dev";
 
                 linkCustomerTitle = "#1 Municipality *";
                 linkToCustomer = "";

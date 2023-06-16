@@ -416,19 +416,19 @@ class Personality extends Component {
           </div>
           <div className="mx-auto">
             <p className="duckText mb-0">
-              I hope you didn't get too distracted by the personality matrix
-              above - it's just a fun way to introduce some of my personal
-              attributes.
+              I hope your eyes didn't get too hurt from looking at my
+              personality (although I did warn you). Also, please note that the
+              matrix above shouldn't be taken too seriously, even though it
+              contains some grain of truth.
               <br></br>
               <br></br>
-              <span className="highLight">
-                But now, let's get to the real me.
-              </span>{" "}
-              In the cards below, I'll provide some more detail about my
-              personal traits. I believe it's important to be open about who we
-              are and what we value, so that we can work together effectively
-              and authentically. So, take a look and get to know me a little
-              better.
+              <span className="highLight">However...</span> The personality
+              cards below will tell you more about me and what I value. I
+              believe it's important to be more open about ourselves, especially
+              in this era where social media often pressures individuals to
+              portray themselves as something they are not. One of the reasons
+              behind my website is to encourage others to embrace their
+              authentic selves more fully.
             </p>
           </div>
 
