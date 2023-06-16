@@ -240,7 +240,7 @@ h1 {
 .personalityCard.selectedPersonalityCard {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: var(--primaryColor) !important;
+  background-color: var(--primary-white) !important;
   box-shadow: var(--blackWhiteShadow) !important;
   border: 0.125rem solid black !important;
   border-radius: 18px !important;

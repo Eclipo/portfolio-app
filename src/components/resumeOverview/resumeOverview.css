@@ -36,7 +36,7 @@
 }
 
 .expOverviewPeriod {
-  background-color: var(--primaryColor);
+  background-color: var(--primary-white);
   color: var(--primaryText);
   border-radius: 18px;
   margin: auto !important;
@@ -192,7 +192,7 @@
 }
 
 .expSubContainer {
-  background-color: var(--primaryColor);
+  background-color: var(--primary-white);
   border: 0.1rem solid black !important;
   padding-bottom: 1.5rem;
   border: 0.1rem solid;

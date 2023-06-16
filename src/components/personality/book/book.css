@@ -57,6 +57,7 @@
   width: 12rem;
   height: 16rem;
   border-radius: 18px;
+  border: 0.2rem var(--secondaryColor-shadow) solid;
   background: #817663;
   background: repeating-linear-gradient(
     110deg,
@@ -67,13 +68,13 @@
   );
   position: absolute;
   top: 5rem;
-  left: 20%;
+  left: 6rem;
   z-index: 2 !important;
 }
 
 .bookFace_2 {
-  width: 13rem;
-  height: 16rem;
+  width: 11.75rem;
+  height: 16.5rem;
   border-radius: 18px;
   background: repeating-linear-gradient(
     100deg,
@@ -83,20 +84,20 @@
     #5f5240 2px
   );
   position: absolute;
-  top: 3.1rem;
-  left: 20%;
+  top: 2.2rem;
+  left: 5.5rem;
   z-index: -1 !important;
 }
 
 .bookBody {
-  width: 12rem;
-  height: 16rem;
+  width: 11rem;
+  height: 15.75rem;
   margin: 0 auto;
   background: #eeebe6;
   border-radius: 18px;
   position: relative;
-  left: -2%;
-  top: 3.7rem;
+  margin-left: 5.5rem;
+  top: 2.75rem;
   margin-bottom: 5%;
   z-index: 1 !important;
 }
