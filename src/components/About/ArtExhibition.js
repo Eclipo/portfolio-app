@@ -4,11 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // AVATARS IMPORTS
 import stadshus from "./images/stadshuset.png";
-import cloud from "./images/miniCloud.png";
 import flags from "./images/flags.png";
-
-//Family
-import { Family } from "./Family/Family";
 import { EdipBasket } from "./EdipBasket/EdipBasket";
 import { Weights } from "./Weights/Weights";
 import { LightSaber } from "./lightSaber/lightSaber";
@@ -51,26 +47,6 @@ class ArtExhibition extends Component {
             </button>
           ))
         }>
-        <>
-          <div
-            className="containerSlide PT-4"
-            style={{
-              background: "var(--primary-darker-blue)",
-              height: "26.5rem",
-            }}>
-            <div className="d-flex" style={{ marginTop: "-20rem" }}>
-              <Family></Family>
-            </div>
-
-            <div className="d-block " style={{ marginTop: "-20rem" }}>
-              <h3>Family</h3>
-              <p>
-                Me, Erika, our son Noah<br></br> and baby girl Laleh
-              </p>
-            </div>
-          </div>
-        </>
-
         <>
           <div
             className="containerSlide container"
