@@ -427,25 +427,20 @@ export async function playPostFunc(index) {
 
     switch (index) {
       case 0:
-        break;
-      case 1:
         bounceFlagAnimation();
         break;
-      case 2:
+      case 1:
         bounceCityHallAnimation();
         break;
-      case 3:
+      case 2:
         basketAnimation();
         break;
 
-      case 4:
+      case 3:
         weightsAnimation();
         break;
-      case 5:
+      case 4:
         lightSaberAnimation();
-        break;
-      case 6:
-        marioAnimation();
         break;
       default:
         break;

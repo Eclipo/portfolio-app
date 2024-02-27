@@ -39,23 +39,6 @@ const Contact = () => {
         className="bottom-0"
         style={{ marginTop: "1rem", marginBottom: "0rem" }}>
         <p>Designed and built by Edip Sarac</p>
-        <a
-          href="https://www.simpleanalytics.com/?utm_source=edipsarac.com&utm_content=badge"
-          referrerPolicy="origin"
-          target="_blank">
-          <picture>
-            <source
-              srcSet="https://simpleanalyticsbadges.com/edipsarac.com?mode=dark"
-              media="(prefers-color-scheme: dark)"
-            />
-            <img
-              src="https://simpleanalyticsbadges.com/edipsarac.com?mode=dark&text=a8b2d1"
-              loading="lazy"
-              referrerPolicy="no-referrer"
-              crossOrigin="anonymous"
-            />
-          </picture>
-        </a>
       </div>
     </div>
   );
