@@ -1,5 +1,6 @@
 import React from "react";
 import "./edipguy.css";
+import "../../About/Family/familly.css";
 import "../QuickAboutAnimation.js";
 export const EdipGuy = () => {
   return (
